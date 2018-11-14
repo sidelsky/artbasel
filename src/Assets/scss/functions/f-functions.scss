@@ -1,0 +1,30 @@
+// Function to calculate px to em
+$browser-reset-font: 16 !default; //reset default browser font size to 16px. Dont change.
+
+@function convert-px($px, $font-base: $browser-reset-font) {
+  @return ($px / $font-base) * 1em;
+}
+
+@function set-line-height($font-size, $increase: 50%) {
+  @return ($heading-font-size-large * $increase) / 100%;
+}
+
+/**
+* To actually call our palettes in our styles,
+* we use a very simple custom Sassfunction to access
+* colours in our palette by name and optional tone/shade:
+*/
+
+/**
+* Colour palette
+*/
+@function palette($palette, $tone: 'base') {
+  @return map-get(map-get($palettes, $palette), $tone);
+}
+
+/**
+* Fonts
+*/
+@function font-family($font-family, $weight: 'base') {
+  @return map-get(map-get($font-families, $font-family), $weight);
+}

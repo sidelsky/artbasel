@@ -1,0 +1,40 @@
+/** 
+* Subpage Hero
+*/
+.c-subpage-hero {
+    background-color: palette(greys, xx-light);
+    color: palette(primary, base);
+    padding: 40px 0 30px;
+    position: relative;
+    margin-bottom: $spacing--large;
+
+    @include media('>tablet') {
+        padding: 180px 0 80px 0;
+    }
+
+   //Content
+   &__content {
+
+      //Large title
+      &--large {
+         @include set-font-size(1.8rem, 1.8rem, 2.0rem, 2.0rem);
+         line-height: 1.5;
+      }
+
+   }
+
+    p {
+        margin-bottom: $spacing--small;
+        @include set-font-size(1.8rem, 2rem, 2.4rem, 2.4rem);
+        color: lighten(palette(greys, dark), 15%);
+        line-height: 1.5;
+
+        a {
+            color: currentColor;
+            text-decoration: underline;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,76 @@
+/*
+ * Reset default form styling for browser consistency
+ */
+.s-content {
+    p {
+        margin: 0 0 1rem;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 1.5em;
+    }
+
+    h2,
+    h3,
+    h4 {
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0 0 1rem;
+    }
+
+    img {
+        display: block;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: $primary-font-color;
+        text-decoration: underline;
+    }
+}
+
+
+.default-template{
+    padding-top: $spacing--jumbo;
+}
+
+.stntos {
+
+    ol {
+        counter-reset: item;
+    }
+
+    li {
+        display: block;
+        padding: 2px 0 2px 35px;
+
+        &::before {
+            content: counters(item, ".") " ";
+            font-weight:bold;
+            counter-increment: item;
+        }
+
+    }
+}
+
+ 
+.privacypolicy table {
+    width: 100%;
+    margin: 0 0 15px 0;
+    border: 1px solid #eee;
+    text-align: left
+}
+
+.privacypolicy thead th,
+.privacypolicy tr th {
+    padding: 9px 24px;
+    color: #555;
+    font-weight: 700
+}
+
+.privacypolicy tr td {
+    padding: 6px 24px;
+    border-top: 1px solid #eee
+}

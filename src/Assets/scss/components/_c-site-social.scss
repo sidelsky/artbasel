@@ -1,0 +1,32 @@
+.c-site-social {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+
+    @include breakpoint($medium) {
+        justify-content: flex-end;
+    }
+
+    &__item {
+        height: 2rem;
+        margin-right: 2rem;
+        width: 2rem;
+
+        @include breakpoint($medium) {
+            margin-left: 2rem;
+            margin-right: inherit;
+        }
+    }
+
+    &__link {
+        display: block;
+        height: 100%;
+    }
+
+    &__icon {
+        height: 100%;
+        width: 100%;
+    }
+}

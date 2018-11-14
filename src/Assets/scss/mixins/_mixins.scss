@@ -1,0 +1,124 @@
+/*
+ * Helpful mixins
+ */
+
+// Mixin for creating media queries
+@mixin breakpoint($min-width: null, $min-height: null, $medium: screen) {
+    @if ($min-width != null and $min-height != null) {
+        @media #{$medium} and (min-width: $min-width) and (min-height: $min-height) {
+            @content
+        }
+    } @else if ($min-width != null and $min-height == null) {
+        @media #{$medium} and (min-width: $min-width) {
+            @content
+        }
+    } @else if ($min-width == null and $min-height != null) {
+        @media #{$medium} and (min-height: $min-height) {
+            @content
+        }
+    }
+}
+
+// Breakpoint-loop
+// @include breakpoint-loop(width, (($medium, 80%), ($large, 50%)));
+@mixin breakpoint-loop($element, $properties) {
+    @each $property in $properties {
+        $size: nth($property, 1);
+        $value: nth($property, 2);
+
+        @include breakpoint($size) {
+            #{$element}: $value;
+        }
+    }
+}
+
+// scss-lint:disable Indentation
+@mixin web-font(
+  $font-name: 'FONT NAME',
+  $file-path: '/PATHTOFONT/',
+  $file-name: 'FONTNAME'
+  ){
+  $full-path: $file-path + $file-name;
+  @font-face {
+    font-family: '#{$font-name}';
+    font-style: normal;
+    font-weight: normal;
+   // Modern Browsers
+	src: url('#{$full-path}.woff') format('woff');
+   // Safari, Android, iOS
+	src: url('#{$full-path}.ttf') format('truetype');
+    }
+}
+
+@mixin vertical-align($position: absolute, $top: 50%, $left: 50%, $scale: 1) {
+	position: $position;
+	top: $top;
+	left: $left;
+	transform: translateX(-$left) translateY(-$top) scale($scale);
+	z-index: 1;
+  }
+
+
+@mixin set-font-size($small-font: '1.8rem', $medium-font: '1.8rem', $large-font: '2.4rem', $x-large-font: '3.6rem') {
+
+	font-size: #{$small-font};
+
+	@include media('>phone') {
+		font-size: #{$medium-font};
+	}
+
+	@include media('>tablet') {
+		font-size: #{$large-font};
+	}
+
+	@include media('>desktop') {
+		font-size: #{$x-large-font};
+	}
+
+}
+
+
+
+//Keep the aspect ratio fixed for certain elements. i.e. Video
+ 
+/* aspect ratio  | padding-bottom value
+--------------|----------------------
+    16:9      |       56.25%
+    4:3       |       75%
+    3:2       |       66.66%
+    8:5       |       62.5%
+ 
+@include aspect-ratio(3,2); */
+ 
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+ 
+    &::before {
+        content: '';
+        display: block;
+        padding-top: ($height / $width) * 100%;
+        width: 100%;
+    }
+ 
+    .canvas {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@mixin absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+   
+  @mixin vertical-align($position: relative, $top: 50%) {
+    position: $position;
+    top: $top;
+    // -webkit-transform: translateY(-50%);
+    // -ms-transform: translateY(-50%);
+    transform: translateY(-$top);
+  }

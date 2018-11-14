@@ -1,0 +1,108 @@
+
+.c-plan-card {
+    background-color: pallete(bw, white);
+    box-shadow: 0 0 20px 0 rgba($black, 0.06);
+    border-radius: 6px;
+    padding: $spacing--medium $spacing--large $spacing--large;
+    color: palette(primary, base);
+    text-align: center;
+
+    @include media('>tablet') {
+        lost-column: 6/12 0 50px;
+     }
+
+     strong {
+        color: palette(primary, base);
+     }
+
+    //First card
+    &:nth-of-type(1) {
+        color: palette(secondary, base);
+
+        strong {
+            color: palette(secondary, base);
+        }
+        
+        .c-plan-card__detail {
+            $color: 1AA8A8;
+            background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M20%2010c0%205.523-4.477%2010-10%2010S0%2015.523%200%2010%204.477%200%2010%200s10%204.477%2010%2010zM8.843%2015.295l7.42-7.42a.645.645%200%200%200%200-.912l-.913-.912a.645.645%200%200%200-.912%200l-6.05%206.05-2.826-2.824a.645.645%200%200%200-.912%200l-.913.912a.645.645%200%200%200%200%20.912l4.194%204.194c.252.252.66.252.912%200z%22%20fill%3D%22%23#{$color}%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fsvg%3E');
+        }
+
+        //Button
+        .u-button {
+            background-color: palette(secondary, base);
+        }
+    }
+
+    //Card Header
+    &__header {
+        text-align: center;
+        border-bottom: 1px solid palette(greys, light);
+        padding-bottom: $spacing--medium;
+        margin-bottom: $spacing--medium;
+    }
+
+    //Card Title
+    &__title {
+        text-align: center;
+        @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
+        font-family: font-family(primary, medium);
+        text-transform: uppercase;
+    }
+
+    //Description
+    &__description {
+        color: palette(greys, base);
+        font-family: font-family(primary, medium);
+    }
+
+    //Logo Mark
+    &__logo-mark {
+        max-width: 80px;
+        display: inline;
+    }
+
+    //Detail
+    &__detail {
+        $color: 3B5998;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M20%2010c0%205.523-4.477%2010-10%2010S0%2015.523%200%2010%204.477%200%2010%200s10%204.477%2010%2010zM8.843%2015.295l7.42-7.42a.645.645%200%200%200%200-.912l-.913-.912a.645.645%200%200%200-.912%200l-6.05%206.05-2.826-2.824a.645.645%200%200%200-.912%200l-.913.912a.645.645%200%200%200%200%20.912l4.194%204.194c.252.252.66.252.912%200z%22%20fill%3D%22%23#{$color}%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fsvg%3E');
+        color: palette(greys, base);
+        margin-bottom: $spacing--medium;
+        padding-left: $spacing--medium;
+        text-align: left;
+    }
+
+    //Price Container
+    &__price-container {
+        text-align: center;
+        font-family: font-family(primary, medium);
+        margin-bottom: $spacing--medium;
+    }
+
+    //Price
+    &__price {
+        @include set-font-size(4.8rem, 4.8rem, 4.8rem, 4.8rem);
+        margin-bottom: $spacing--medium;
+    }
+    
+    //Sup
+    &__sup {
+        vertical-align: super;
+        font-size: .5em;
+    }
+
+    //Button
+    .u-button {
+        background-color: palette(primary, base);
+        display: inline-block;
+        margin: 0 auto;
+        
+        @include media('>tablet') {
+            //display: inline;
+        }
+
+    }
+
+}

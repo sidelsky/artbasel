@@ -1,0 +1,71 @@
+.c-campaign-banner {
+    color: palette(bw, white);
+    width: 100%;
+    padding: $spacing--small $spacing--x-medium;
+    background-color: rgba(palette(primary, base), 1);
+    border-radius: 20px;
+    display: table;
+
+    @include media('>tablet') {
+        border-radius: 100px;
+    }
+
+    &--cell {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+
+        @include media('>tablet') {
+            display: table-cell;
+        }
+
+        &:nth-of-type(2) {
+            text-align: right;
+        }
+    }
+
+    &__title {
+        font-family: font-family(primary, medium);
+        @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
+        line-height: 1.3;
+        margin-bottom: $spacing--small;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: block;
+        margin-bottom: $spacing--small;
+        
+        a {
+            color: currentColor;
+        }
+        
+        @include media('>tablet') {
+            vertical-align: middle;
+            text-align: left;
+            margin-bottom: 0;
+            display: inline;
+        }
+    }
+    
+    &__button {
+        display: block;
+        width: 100%;
+        text-align: center;
+
+        @include media('>tablet') {
+            width: 30%;
+        }
+    }
+}
+
+// .is-scrolled {
+
+//     .c-campaign-banner {
+
+//         .u-l-container--large {
+//             background-color: rgba(palette(primary, base), 1);
+//         }
+
+//     }
+
+// }

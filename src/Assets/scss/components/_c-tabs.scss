@@ -1,0 +1,69 @@
+.tabs {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	//box-shadow: 0px 10px 30px -5px rgba($black, 0.2);
+}
+
+.input {
+	position: absolute;
+	opacity: 0;
+}
+
+.label {
+	width: 100%;
+	padding: 20px 30px;
+	background: palette(greys, xx-light);
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	color: #7f7f7f;
+	//transition: background 0.1s, color 0.1s;
+
+	@include media('>phone') {
+		width: auto;
+	}
+
+} 
+
+.label:hover {
+	background: #d8d8d8;
+}
+
+.label:active {
+	background: #ccc;
+}
+
+.input:focus + .label {
+	box-shadow: inset 0px 0px 0px 3px #2aa1c0;
+	z-index: 1;
+}
+
+.input:checked + .label {
+	background: #fff;
+	color: #000;
+	border-bottom: solid 1px palette(greys, xx-light);
+}
+
+.panel {
+	display: none;
+	padding: $spacing--x-tiny $spacing--small;
+	width: 100%;
+
+	@include media('>phone') {
+		order: 99;;
+	}
+
+}
+
+.input:checked + .label + .panel {
+	display: block;
+}
+
+.gform_body {
+	padding-top: $spacing--medium;
+}
+
+.gform_title {
+	@include set-font-size(2.8rem, 2.8rem, 2.8rem, 2.8rem);
+}

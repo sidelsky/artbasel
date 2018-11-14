@@ -1,0 +1,51 @@
+.c-feature-card {
+   text-align: center;
+   margin-bottom: $spacing--medium;
+   
+   @include media('>tablet') {
+      lost-column: 4/12 3;
+      //margin-bottom: 0;
+   }
+
+   //Title
+   &__title {
+      color: palette(primary, base);
+   }
+
+   //Icon
+   &__icon {
+      background-color: palette(greys, xx-light);
+      display: inline-block;
+      margin-bottom: $spacing--small;
+      padding: $spacing--small;
+      border-radius: 50%;
+   }
+
+   //Image
+   &__image {
+    display: inline-block;
+    margin-bottom: $spacing--small;
+    padding: $spacing--small;
+    max-width: 55%;
+
+    img {
+        opacity: 0.8;
+    }
+
+   }
+
+   //Blockquote
+   &__blockquote {
+
+    p {
+        margin-bottom: $spacing--small;
+    }
+
+    cite {
+
+    }
+
+   }
+
+
+}

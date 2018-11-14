@@ -1,0 +1,22 @@
+.c-site-title {
+
+    &__link {
+        position: relative;
+        //font-size: $text-large;
+        //font-weight: $weight-bold;
+        //line-height: 1.2;
+        //text-transform: uppercase;
+        display: inline-block;
+    }
+    
+    
+    &__icon {
+        // width: 150px;
+        height: 22px;
+        position: absolute;
+        top: -18px;
+        z-index: 0;
+    }
+    
+   
+}

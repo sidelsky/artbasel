@@ -1,0 +1,43 @@
+{
+    "name": "wordpress-starter",
+    "version": "1.0.0",
+    "description": "The package json that defines the build tools for the WordPress Starter repo",
+    "dependencies": {},
+    "devDependencies": {
+        "babel-eslint": "^8.2.*",
+        "babel-jest": "^22.4.*",
+        "babel-plugin-transform-object-rest-spread": "^6.26.*",
+        "babel-plugin-transform-runtime": "^6.23.*",
+        "babel-preset-env": "^1.6.*",
+        "browser-sync": "^2.23.6",
+        "browser-sync-webpack-plugin": "^2.2.2",
+        "import-glob-loader": "^1.1.*",
+        "jest": "^22.4.*",
+        "laravel-mix": "^2.1.14",
+        "lost": "^8.2.*",
+        "postcss-encode-background-svgs": "^1.0.*",
+        "webpack-svgstore-plugin": "^4.0.*"
+    },
+    "scripts": {
+        "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test-watch": "jest --watch",
+        "test": "jest --coverage --verbose src/Assets/js/__test__",
+        "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "json"
+        ],
+        "transform": {
+            "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+        },
+        "moduleNameMapper": {
+            "^@/(.*)$": "<rootDir>/src/$1"
+        }
+    },
+    "author": "Chris Boakes <chris@chrisboakes.com>",
+    "license": "MIT"
+}

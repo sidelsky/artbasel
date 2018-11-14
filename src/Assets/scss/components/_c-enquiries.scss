@@ -1,0 +1,15 @@
+.c-enquiries {
+
+    margin-bottom: $spacing--small;
+    line-height: 1.75;
+    //font-family: font-family(primary, medium);
+    border: solid 1px palette(greys, light);
+    padding: $spacing--small;
+    lost-column: 12/12;
+
+    a {
+        color: currentColor;
+        font-family: font-family(primary, medium);
+    }
+
+}

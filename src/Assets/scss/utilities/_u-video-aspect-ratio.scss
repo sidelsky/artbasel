@@ -1,0 +1,22 @@
+/*
+ * Scalable video utility to keep a video's aspect ratio responsively
+ */
+
+.u-video-aspect-ratio {
+    position: relative;
+    width: 100%;
+
+    &::before {
+        content: '';
+        display: block;
+        padding-top: 56.25%;
+    }
+ 
+    iframe {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+}

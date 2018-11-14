@@ -1,0 +1,22 @@
+/*
+ * Background colour utility
+ */
+
+// .u-bg-color {
+//     @each $color, $color-value in $colors {
+//         &--#{$color} {
+//             background-color: $color-value;
+//         }
+//     }
+// }
+
+   
+.u-bg-color {
+    @each $palette, $palette-value in $palettes {
+        @each $color, $color-value in $palette-value {
+            &--#{$palette}-#{$color} {
+                background: $color-value;
+            }
+        }
+    }
+}

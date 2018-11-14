@@ -1,0 +1,90 @@
+/*
+ * Custom colors and color mapping setup
+ */
+
+// $black: #000;
+// $white: #fff;
+// $grey-darker: #111;
+// $grey-dark: #333;
+// $grey: #999;
+// $grey-light: #ccc;
+// $grey-lighter: #f5f5f5;
+// $gold: #ac955f;
+
+/**
+* Base colors
+*/
+$white: #fff;
+$black: #000;
+$grey: #8A8A8A;
+// .u-bg-color--color
+$colors: (
+    black: $black,
+    white: $white
+);
+
+/**
+* Colors
+*/
+$primary: #3B5998; //SafeToNet Blue
+$secondary: #1AA8A8; //SafeTonet Teal
+$tertiary: #00264F; //SafeTonet Dark Blue
+$quaternary: #FFC233; //SafeTonet Yellow
+
+$light: #4C4C4C;
+$dark: #1F1F1F;
+
+
+$info: #00529b;
+$success: #4f8a10;
+$warning: #9f6000;
+$error: #d8000c;
+
+
+.color--primary {
+    color: $primary;
+}
+
+$text-color: #303030;
+
+
+/**
+* Colour Palette
+* @useage: palette(primary, base);
+*/
+
+$palettes: (
+   bw: (
+      white: $white,
+      black: $black
+   ),
+   greys: (
+      base: $grey, 
+      xxx-light: lighten($grey, 44%),
+      xx-light: lighten($grey, 42%),
+      x-light: lighten($grey, 30%),
+      light: lighten($grey, 25%),
+      dark: darken($grey, 25%)
+   ),
+   primary: ( 
+      base: $primary,
+      light: lighten($primary, 25%),
+      dark: darken($primary, 25%),
+      ),
+   secondary: ( 
+      base: $secondary,
+      light: lighten($secondary, 25%),
+      dark: darken($secondary, 25%),
+      ),
+   tertiary: (
+      base: $tertiary,
+      light: lighten($tertiary, 25%),
+      dark: darken($tertiary, 25%),
+      ),
+      //Yellow
+    quaternary: (
+        base: $quaternary,
+        light: lighten($quaternary, 25%),
+        dark: darken($quaternary, 25%),
+      )
+   );

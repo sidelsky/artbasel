@@ -1,0 +1,107 @@
+/*
+ * Font faces, sizing and defaults
+ */
+
+// Typefaces
+$arial: 'Arial', sans-serif;
+
+/**
+* Fonts
+*/
+$font-name: 'hind';
+
+$file-path: 'fonts/';
+
+$font-weight--light: 'light';
+$font-weight--regular: 'regular';
+$font-weight--medium: 'medium';
+$font-weight--semibold: 'semibold';
+$font-weight--bold: 'bold';
+
+/**
+* Hind Light
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--light}', 
+    '#{$file-path}', 
+    '#{$font-name}-#{$font-weight--light}'
+    );
+
+/**
+* Hind Regular
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--regular}',
+    '#{$file-path}',
+    '#{$font-name}-#{$font-weight--regular}'
+);
+
+/**
+* Hind Medium
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--medium}',
+    '#{$file-path}',
+    '#{$font-name}-#{$font-weight--medium}'
+);
+
+/**
+* Hind Semibold
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--semibold}',
+    '#{$file-path}',
+    '#{$font-name}-#{$font-weight--semibold}'
+);
+
+/**
+* Hind Medium
+*/
+@include web-font(
+    '#{$font-name}-#{$font-weight--bold}',
+    '#{$file-path}',
+    '#{$font-name}-#{$font-weight--bold}'
+);
+
+
+/**
+* Typefaces
+* @useage: font-family(primary, regular);
+*/
+$system-fonts: Helvetica, Arial, sans-serif;
+
+$font-primary--light: '#{$font-name}-#{$font-weight--light}', $system-fonts;
+$font-primary--regular: '#{$font-name}-#{$font-weight--regular}', $system-fonts;
+$font-primary--medium: '#{$font-name}-#{$font-weight--medium}', $system-fonts;
+$font-primary--semibold: '#{$font-name}-#{$font-weight--semibold}', $system-fonts;
+$font-primary--bold: '#{$font-name}-#{$font-weight--bold}', $system-fonts;
+
+$font-families: (
+   primary: (
+        light: $font-primary--light,
+        regular: $font-primary--regular,
+        medium: $font-primary--medium,
+        semibold: $font-primary--semibold,
+        bold: $font-primary--bold
+   )
+);
+
+// Font sizes
+$text-small: 1.4rem;
+$text-regular: 1.6rem;
+$text-medium: 2.2rem;
+$text-large: 3rem;
+$text-xlarge: 4rem;
+
+// Font weights
+$weight-regular: normal;
+$weight-bold: bold;
+
+// Global
+$primary-font: $arial;
+$primary-font-color: $text-color;
+$primary-font-weight: $weight-regular;
+$primary-font-size: $text-regular;
+$primary-link-color: $text-color;
+
+

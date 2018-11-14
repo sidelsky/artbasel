@@ -1,0 +1,26 @@
+.single-campaign {
+
+    &__content {
+
+        p, h2, h3, h4 {
+            text-align: center;
+        }
+    
+        h2, h3 {
+            color: palette(primary, base);
+            font-family: font-family(primary, medium);
+            margin-bottom: $spacing--medium;
+        }
+    
+        h2 {
+            @include set-font-size(2.4rem, 2.4rem, 3.0rem, 3.0rem);
+            line-height: 1.35;
+        }
+    
+        h3 {
+            @include set-font-size(1.8rem, 1.8rem, 2.4rem, 2.4rem);
+            line-height: 1.35;
+        }
+    }
+    
+}

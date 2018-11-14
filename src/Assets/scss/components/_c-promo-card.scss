@@ -1,0 +1,32 @@
+.c-promo-card {
+   lost-flex-container: row;
+   margin-bottom: $spacing--medium;
+   color: palette(bw, white);
+
+   //Icon
+   &__icon {
+      lost-column: 2/12;
+
+      @include media('>tablet') {
+        lost-column: 1.5/12;
+      }
+
+   }
+
+   //Content
+   &__content {
+      lost-column: 10/12;
+
+      @include media('>tablet') {
+        lost-column: 10.5/12;
+      }
+
+      p {
+         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+         line-height: 1.4;
+         margin-bottom: $spacing--small;
+      }
+
+   }
+
+}

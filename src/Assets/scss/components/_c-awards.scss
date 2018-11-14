@@ -1,0 +1,57 @@
+.c-awards {
+    text-align: center;
+    background-image: url('img/reath.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include aspect-ratio(3,3);
+    background-size: contain;
+    margin: 10px 0;
+    lost-column: 12/12 0 0;
+    
+    //Phone upwards
+    @include media('>phone') {
+        lost-column: 6/12 2 20px;
+        
+    }
+    
+    
+    //Tablet upwards
+    @include media('>tablet') {
+        lost-column: 3/12 4 20px;
+    }
+    
+    //Canvas
+    .canvas {
+        padding: $spacing--large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -10px;
+    }
+
+    //Title
+    &__title {
+        @include set-font-size(1.8rem, 1.6rem, 1.6rem, 1.8rem);
+        color: palette(primary, base);
+        font-family: font-family(primary, medium);
+        text-transform: uppercase;
+        line-height: 1.2;
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 1px;
+            margin: $spacing--tiny auto;
+            background: palette(greys, light);
+        }
+    }
+
+    //Description
+    &__description {
+        @include set-font-size(1.2rem, 1.2rem, 1rem, 1.2rem);
+        color: palette(greys, base);
+    }
+
+}

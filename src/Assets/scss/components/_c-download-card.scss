@@ -1,0 +1,86 @@
+.c-download-card {
+    text-align: center;
+    lost-column: 6/12 0 15px;
+
+    @include media('>phone') {
+        lost-column: 6/12 0 15px;
+     }
+
+     @include media('>tablet') {
+        lost-column: 6/12 0 50px;
+     }
+
+     a {
+         display: block;
+
+         &:hover {
+             .c-download-card__device-type {
+                 transform: scale(1.025);
+                 opacity: 1;
+                 //margin-top: $spacing--tiny;
+                }
+            }
+        }
+        
+    //Device Type
+    img {
+        display: inline;
+    }
+
+    &__device {
+        position: relative;
+    }
+    
+    //Device Type
+    &__device-type {
+        // height: 450px;
+        // max-height: 450px;
+        width: auto;
+        margin-bottom: $spacing--small;
+        transition: all ease-in-out .1s;
+        position: relative;
+
+    }
+
+     //Feaure Image
+     &__feature-image {
+         position: absolute;
+         top: 70px;
+         left: 19px;
+         //width: 176px;
+         width: 84%;
+         
+     }
+
+    //Store Logo
+    &__store-logo {
+        max-width: 125px;
+        height: auto;
+        margin-bottom: $spacing--tiny;
+    }
+   
+
+     //Detils
+     &__details {
+        color: palette(bw, base);
+        @include set-font-size(1.3rem, 1.3rem, 1.3rem, 1.3rem);
+        line-height: 1.50;
+        
+        h4 {
+            margin-bottom: $spacing--x-tiny;
+        }
+    }
+
+    //List
+    &__list {
+        color: palette(greys, base);
+    }
+
+
+    &:nth-child(2) {
+        .c-download-card__feature-image {
+            top: 40px;
+        }
+     }
+
+}

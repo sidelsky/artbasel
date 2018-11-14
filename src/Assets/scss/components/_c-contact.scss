@@ -1,0 +1,34 @@
+.c-contact {
+
+    margin-bottom: $spacing--small;
+    line-height: 1.75;
+
+    @include media('>phone') {
+        lost-column: 12/12;
+
+        &:nth-of-type(2) {
+            lost-column: 12/12;
+        }
+
+    }
+
+    @include media('>tablet') {
+        lost-column: 4/12 0 30px;
+
+        &:nth-of-type(2) {
+            lost-column: 8/12;
+        }
+
+    }
+
+    p {
+        margin-bottom: $spacing--medium;
+    }
+
+    //Title
+    &__title {
+        font-family: font-family(primary, medium);
+        color: palette(primary, base);
+    }
+
+}
