@@ -4,9 +4,43 @@
           <form>
               <div class="c-meta__section">
                 <h3 class="c-meta__title">Sort By</h3>
-                <p><label class="c-meta__label"><input class="c-meta__radio" type="radio" checked name="sortby" value="artist-a-z"><span>Artist A-Z</span></label></p>
-                <p><label class="c-meta__label"><input class="c-meta__radio" type="radio" name="sortby" value="price-low-to-high"><span>Price: low to high</span></label></p>
-                <p><label class="c-meta__label"><input class="c-meta__radio" type="radio" name="sortby" value="price-high-to-low"><span>Price: high to low</span></label></p>
+                <p>
+                  <label class="c-meta__label">
+                    <input
+                      class="c-meta__radio"
+                      type="radio"
+                      checked
+                      name="sortby"
+                      value="artist-a-z"
+                      @input="$emit('order', { order: 'asc', key: 'title' })"
+                    >
+                    <span>Artist A-Z</span>
+                  </label>
+                </p>
+                <p>
+                  <label class="c-meta__label">
+                    <input
+                      class="c-meta__radio"
+                      type="radio"
+                      name="sortby"
+                      value="price-low-to-high"
+                      @input="$emit('order', { order: 'asc', key: 'price' })"
+                    >
+                    <span>Price: low to high</span>
+                  </label>
+                </p>
+                <p>
+                  <label class="c-meta__label">
+                    <input
+                      class="c-meta__radio"
+                      type="radio"
+                      name="sortby"
+                      value="price-high-to-low"
+                      @input="$emit('order', { order: 'desc', key: 'price' })"
+                    >
+                    <span>Price: high to low</span>
+                  </label>
+                </p>
               </div>
 
               <div class="c-meta__section">

@@ -9,7 +9,7 @@
     <div class="c-works__date">{{ date }}</div>
     <div class="c-works__medium">{{ medium }}</div>
     <div class="c-works__dimensions">{{ dimensions }}</div>
-    <div class="c-works__price">${{ price }}</div>
+    <div class="c-works__price">{{ formattedPrice }}</div>
     <span class="c-works__href-wrap"><a :href="link" class="c-works__href">Learn more</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>
     <span class="c-works__href-wrap">
       <a
@@ -22,6 +22,12 @@
 </template>
 
 <script>
+const formatter = new Intl.NumberFormat('en-US', {
+  style: 'currency',
+  currency: 'USD',
+  minimumFractionDigits: 2
+})
+
 export default {
   props: {
     title: String,
@@ -29,8 +35,13 @@ export default {
     medium: String,
     dimensions: String,
     image: String,
-    price: String,
+    price: Number,
     link: String
+  },
+  computed: {
+    formattedPrice() {
+      return formatter.format(this.price)
+    }
   }
 }
 </script>
