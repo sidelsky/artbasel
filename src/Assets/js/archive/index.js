@@ -7,10 +7,11 @@ if (window.WORKS) {
 
   new Vue({
     components: { App },
-    template: '<App :works="works" />',
+    template: '<App :works="works" :filters="filters" />',
     data () {
       return {
-        works: window.WORKS
+        works: window.WORKS,
+        filters: window.FILTERS
       }
     }
   }).$mount('#app')

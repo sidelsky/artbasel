@@ -2,11 +2,12 @@
   <div class="c-works">
     <VCard
       v-for="work in works"
+      :key="work.title"
       :title="work.title"
       :date="work.date"
       :medium="work.medium"
       :dimensions="work.dimensions"
-      :image="work.iamge"
+      :image="work.image"
       :price="work.price"
       :link="work.link"
     />
@@ -19,6 +20,9 @@ import VCard from './VCard'
 export default {
   props: {
     works: Array
+  },
+  components: {
+    VCard
   }
 }
 </script>

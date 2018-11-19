@@ -37,11 +37,20 @@
 
     endwhile;
 
-    echo 'var WORKS = ' . json_encode($artwork);
+    echo 'var WORKS = ' . json_encode($artwork) . ';';
+
+    $filters = [
+      'priceRange' => get_field_object('price_range')['choices'],
+      'medium' => get_field_object('medium')['choices'],
+      'decade' => get_field_object('decade')['choices']
+    ];
+
+    echo 'var FILTERS = ' . json_encode($filters);
 ?>
 </script>
+
 <section class="u-section ">
-  <div id="app"></div>
+    <div id="app"></div>
 </section>
 
 
