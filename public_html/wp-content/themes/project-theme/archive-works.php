@@ -31,7 +31,7 @@
         'decade' => get_field('decade'),
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
-        'price_range' => get_field('price_range'),
+        'priceRange' => get_field('price_range'),
         'learn_more' => get_the_permalink()
       ];
 
@@ -39,10 +39,32 @@
 
     echo 'var WORKS = ' . json_encode($artwork) . ';';
 
+    function createFilters($array) {
+      $newArray = [
+        [
+          'label' => 'All',
+          'value' => 'all'
+        ]
+      ];
+
+      foreach ($array as $key => $value) {
+        $newArray[] = [
+          'label' => $value,
+          'value' => $key
+        ];
+      }
+
+      return $newArray;
+    };
+
+    $priceRange = createFilters(get_field_object('price_range')['choices']);
+    $medium = createFilters(get_field_object('medium')['choices']);
+    $decade = createFilters(get_field_object('decade')['choices']);
+
     $filters = [
-      'priceRange' => get_field_object('price_range')['choices'],
-      'medium' => get_field_object('medium')['choices'],
-      'decade' => get_field_object('decade')['choices']
+      'priceRange' => $priceRange,
+      'medium' => $medium,
+      'decade' => $decade
     ];
 
     echo 'var FILTERS = ' . json_encode($filters);
@@ -50,7 +72,7 @@
 </script>
 
 <section class="u-section ">
-    <div id="app"></div>
+  <div id="app"></div>
 </section>
 
 
