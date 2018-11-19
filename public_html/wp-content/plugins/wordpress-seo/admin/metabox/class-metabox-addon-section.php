@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin
  */
 
@@ -24,7 +22,7 @@ class WPSEO_Metabox_Addon_Tab_Section extends WPSEO_Metabox_Tab_Section {
 			</div>
 			<?php do_action( 'wpseo_tab_content' ); ?>
 		</div>
-		<?php
+	<?php
 	}
 
 	/**

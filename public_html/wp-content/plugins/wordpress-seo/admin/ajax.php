@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin
  */
 
@@ -180,7 +178,7 @@ function wpseo_upsert_meta( $post_id, $new_meta_value, $orig_meta_value, $meta_k
 		$upsert_results['status']  = 'failure';
 		$upsert_results['results'] = sprintf(
 			/* translators: %s expands to post type. */
-			__( 'Post has an invalid Content Type: %s.', 'wordpress-seo' ),
+			__( 'Post has an invalid Post Type: %s.', 'wordpress-seo' ),
 			$the_post->post_type
 		);
 
@@ -285,6 +283,23 @@ function wpseo_upsert_new( $what, $post_id, $new, $original ) {
 }
 
 /**
+ * Handles the posting of a new FB admin.
+ */
+function wpseo_add_fb_admin() {
+	check_ajax_referer( 'wpseo_fb_admin_nonce' );
+
+	if ( ! current_user_can( 'manage_options' ) ) {
+		die( '-1' );
+	}
+
+	$facebook_social = new Yoast_Social_Facebook();
+
+	wp_die( $facebook_social->add_admin( filter_input( INPUT_POST, 'admin_name' ), filter_input( INPUT_POST, 'admin_id' ) ) );
+}
+
+add_action( 'wp_ajax_wpseo_add_fb_admin', 'wpseo_add_fb_admin' );
+
+/**
  * Retrieves the keyword for the keyword doubles.
  */
 function ajax_get_keyword_usage() {
@@ -332,21 +347,6 @@ function ajax_get_term_keyword_usage() {
 
 add_action( 'wp_ajax_get_term_keyword_usage', 'ajax_get_term_keyword_usage' );
 
-/**
- * Registers hooks for all AJAX integrations.
- *
- * @return void
- */
-function wpseo_register_ajax_integrations() {
-	$integrations = array( new Yoast_Network_Admin() );
-
-	foreach ( $integrations as $integration ) {
-		$integration->register_ajax_hooks();
-	}
-}
-
-wpseo_register_ajax_integrations();
-
 // Crawl Issue Manager AJAX hooks.
 new WPSEO_GSC_Ajax();
 
@@ -362,7 +362,8 @@ new WPSEO_Taxonomy_Columns();
 // Setting the notice for the recalculate the posts.
 new Yoast_Dismissable_Notice_Ajax( 'recalculate', Yoast_Dismissable_Notice_Ajax::FOR_SITE );
 
-/* ********************* DEPRECATED FUNCTIONS ********************* */
+/********************** DEPRECATED METHODS **********************/
+
 
 /**
  * Removes stopword from the sample permalink that is generated in an AJAX request
@@ -385,19 +386,5 @@ function wpseo_remove_stopwords_sample_permalink() {
 function wpseo_kill_blocking_files() {
 	_deprecated_function( __FUNCTION__, 'WPSEO 7.0', 'This method is deprecated.' );
 
-	wpseo_ajax_json_echo_die( '' );
-}
-
-/**
- * Handles the posting of a new FB admin.
- *
- * @deprecated 7.1
- * @codeCoverageIgnore
- */
-function wpseo_add_fb_admin() {
-	if ( ! current_user_can( 'manage_options' ) ) {
-		die( '-1' );
-	}
-	_deprecated_function( __FUNCTION__, 'WPSEO 7.0', 'This method is deprecated.' );
 	wpseo_ajax_json_echo_die( '' );
 }

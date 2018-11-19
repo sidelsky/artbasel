@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Frontend
  */
 
@@ -29,7 +27,6 @@ class WPSEO_JSON_LD implements WPSEO_WordPress_Integration {
 		add_action( 'wpseo_head', array( $this, 'json_ld' ), 90 );
 		add_action( 'wpseo_json_ld', array( $this, 'website' ), 10 );
 		add_action( 'wpseo_json_ld', array( $this, 'organization_or_person' ), 20 );
-		add_action( 'wpseo_json_ld', array( $this, 'breadcrumb' ), 20 );
 	}
 
 	/**
@@ -92,50 +89,6 @@ class WPSEO_JSON_LD implements WPSEO_WordPress_Integration {
 	}
 
 	/**
-	 * Outputs code to allow recognition of page's position in the site hierarchy
-	 *
-	 * @Link https://developers.google.com/search/docs/data-types/breadcrumb
-	 *
-	 * @return void
-	 */
-	public function breadcrumb() {
-		if ( is_front_page() || ! WPSEO_Options::get( 'breadcrumbs-enable', false ) ) {
-			return;
-		}
-
-		$this->data = array(
-			'@context'        => 'https://schema.org',
-			'@type'           => 'BreadcrumbList',
-			'itemListElement' => array(),
-		);
-
-		$breadcrumbs_instance = WPSEO_Breadcrumbs::get_instance();
-		$breadcrumbs          = $breadcrumbs_instance->get_links();
-		$broken               = false;
-
-		foreach ( $breadcrumbs as $index => $breadcrumb ) {
-			if ( ! array_key_exists( 'url', $breadcrumb ) || ! array_key_exists( 'text', $breadcrumb ) ) {
-				$broken = true;
-				break;
-			}
-
-			$this->data['itemListElement'][] = array(
-				'@type'    => 'ListItem',
-				'position' => ( $index + 1 ),
-				'item'     => array(
-					'@id'  => $breadcrumb['url'],
-					'name' => $breadcrumb['text'],
-				),
-			);
-		}
-
-		// Only output if JSON is correctly formatted.
-		if ( ! $broken ) {
-			$this->output( 'breadcrumb' );
-		}
-	}
-
-	/**
 	 * Outputs the JSON LD code in a valid JSON+LD wrapper.
 	 *
 	 * @since 1.8
@@ -166,7 +119,7 @@ class WPSEO_JSON_LD implements WPSEO_WordPress_Integration {
 	private function organization() {
 		if ( '' !== WPSEO_Options::get( 'company_name', '' ) ) {
 			$this->data['@type'] = 'Organization';
-			$this->data['@id']   = $this->get_home_url() . '#organization';
+			$this->data['@id']   = '#organization';
 			$this->data['name']  = WPSEO_Options::get( 'company_name' );
 			$this->data['logo']  = WPSEO_Options::get( 'company_logo', '' );
 

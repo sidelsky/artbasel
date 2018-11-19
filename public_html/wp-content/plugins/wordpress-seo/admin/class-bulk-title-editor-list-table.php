@@ -1,9 +1,7 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Bulk Editor
- * @since   1.5.0
+ * @since      1.5.0
  */
 
 /**

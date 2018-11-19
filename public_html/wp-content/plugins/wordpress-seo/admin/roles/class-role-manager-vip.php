@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Roles
  */
 
@@ -9,7 +7,6 @@
  * VIP implementation of the Role Manager.
  */
 final class WPSEO_Role_Manager_VIP extends WPSEO_Abstract_Role_Manager {
-
 	/**
 	 * Adds a role to the system.
 	 *

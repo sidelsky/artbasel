@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\XML_Sitemaps
  */
 
@@ -336,11 +334,6 @@ class WPSEO_Sitemaps_Renderer {
 	 */
 	protected function get_xsl_url() {
 		if ( home_url() !== site_url() ) {
-			return home_url( 'main-sitemap.xsl' );
-		}
-
-		// Fallback to circumvent a cross-domain security problem when the XLS file is loaded from a different (sub)domain.
-		if ( strpos( plugins_url(), home_url() ) !== 0 ) {
 			return home_url( 'main-sitemap.xsl' );
 		}
 

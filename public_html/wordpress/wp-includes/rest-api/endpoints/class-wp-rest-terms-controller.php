@@ -376,10 +376,7 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 		}
 
 		$taxonomy_obj = get_taxonomy( $this->taxonomy );
-		if ( ( is_taxonomy_hierarchical( $this->taxonomy )
-				&& ! current_user_can( $taxonomy_obj->cap->edit_terms ) )
-			|| ( ! is_taxonomy_hierarchical( $this->taxonomy )
-				&& ! current_user_can( $taxonomy_obj->cap->assign_terms ) ) ) {
+		if ( ! current_user_can( $taxonomy_obj->cap->edit_terms ) ) {
 			return new WP_Error( 'rest_cannot_create', __( 'Sorry, you are not allowed to create new terms.' ), array( 'status' => rest_authorization_required_code() ) );
 		}
 
@@ -685,42 +682,42 @@ class WP_REST_Terms_Controller extends WP_REST_Controller {
 	 */
 	public function prepare_item_for_response( $item, $request ) {
 
-		$fields = $this->get_fields_for_response( $request );
+		$schema = $this->get_item_schema();
 		$data   = array();
 
-		if ( in_array( 'id', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['id'] ) ) {
 			$data['id'] = (int) $item->term_id;
 		}
 
-		if ( in_array( 'count', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['count'] ) ) {
 			$data['count'] = (int) $item->count;
 		}
 
-		if ( in_array( 'description', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['description'] ) ) {
 			$data['description'] = $item->description;
 		}
 
-		if ( in_array( 'link', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['link'] ) ) {
 			$data['link'] = get_term_link( $item );
 		}
 
-		if ( in_array( 'name', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['name'] ) ) {
 			$data['name'] = $item->name;
 		}
 
-		if ( in_array( 'slug', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['slug'] ) ) {
 			$data['slug'] = $item->slug;
 		}
 
-		if ( in_array( 'taxonomy', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['taxonomy'] ) ) {
 			$data['taxonomy'] = $item->taxonomy;
 		}
 
-		if ( in_array( 'parent', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['parent'] ) ) {
 			$data['parent'] = (int) $item->parent;
 		}
 
-		if ( in_array( 'meta', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['meta'] ) ) {
 			$data['meta'] = $this->meta->get_value( $item->term_id, $request );
 		}
 

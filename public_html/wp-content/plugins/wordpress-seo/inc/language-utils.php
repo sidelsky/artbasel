@@ -1,9 +1,7 @@
 <?php
 /**
- * WPSEO plugin file.
- *
- * @package WPSEO\Internals
- * @since   5.9.0
+ * @package    WPSEO\Internals
+ * @since      5.9.0
  */
 
 /**
@@ -11,7 +9,6 @@
  * All methods are static, this is just a sort of namespacing class wrapper.
  */
 class WPSEO_Language_Utils {
-
 	/**
 	 * Returns the language part of a given locale, defaults to english when the $locale is empty.
 	 *

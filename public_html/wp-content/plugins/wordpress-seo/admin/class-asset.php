@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin
  */
 
@@ -66,20 +64,6 @@ class WPSEO_Admin_Asset {
 	protected $suffix;
 
 	/**
-	 * Default asset arguments.
-	 *
-	 * @var array
-	 */
-	private $defaults = array(
-		'deps'      => array(),
-		'version'   => WPSEO_VERSION,
-		'in_footer' => true,
-		'rtl'       => true,
-		'media'     => 'all',
-		'suffix'    => WPSEO_CSSJS_SUFFIX,
-	);
-
-	/**
 	 * @param array $args The arguments for this asset.
 	 *
 	 * @throws InvalidArgumentException Throws when no name or src has been provided.
@@ -93,7 +77,14 @@ class WPSEO_Admin_Asset {
 			throw new InvalidArgumentException( 'src is a required argument' );
 		}
 
-		$args = array_merge( $this->defaults, $args );
+		$args = array_merge( array(
+			'deps'      => array(),
+			'version'   => WPSEO_VERSION,
+			'in_footer' => true,
+			'rtl'       => true,
+			'media'     => 'all',
+			'suffix'    => WPSEO_CSSJS_SUFFIX,
+		), $args );
 
 		$this->name      = $args['name'];
 		$this->src       = $args['src'];

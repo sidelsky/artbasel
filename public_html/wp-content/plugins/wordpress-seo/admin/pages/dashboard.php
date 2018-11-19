@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin
  */
 
@@ -53,7 +51,7 @@ $tabs->add_tab(
 $tabs->add_tab(
 	new WPSEO_Option_Tab(
 		'webmaster-tools',
-		__( 'Webmaster Tools', 'wordpress-seo' ),
+		__( 'Webmaster tools', 'wordpress-seo' ),
 		array( 'video_url' => WPSEO_Shortlinker::get( 'https://yoa.st/screencast-general-search-console' ) )
 	)
 );

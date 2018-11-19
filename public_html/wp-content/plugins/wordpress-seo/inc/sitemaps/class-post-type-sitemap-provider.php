@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\XML_Sitemaps
  */
 
@@ -30,6 +28,15 @@ class WPSEO_Post_Type_Sitemap_Provider implements WPSEO_Sitemap_Provider {
 	 */
 	public function __construct() {
 		add_filter( 'save_post', array( $this, 'save_post' ) );
+	}
+
+	/**
+	 * Get all the options
+	 *
+	 * @deprecated 7.0
+	 */
+	protected function get_options() {
+		_deprecated_function( __METHOD__, 'WPSEO 7.0', 'WPSEO_Options::get' );
 	}
 
 	/**
@@ -560,7 +567,7 @@ class WPSEO_Post_Type_Sitemap_Provider implements WPSEO_Sitemap_Provider {
 		// Based on WP_Query->get_posts(). R.
 		if ( 'attachment' === $post_type ) {
 			$join   = " LEFT JOIN {$wpdb->posts} AS p2 ON ({$wpdb->posts}.post_parent = p2.ID) ";
-			$status = "p2.post_status = 'publish' AND p2.post_password = ''";
+			$status = "p2.post_status = 'publish'";
 		}
 
 		$where_clause = "
@@ -628,17 +635,5 @@ class WPSEO_Post_Type_Sitemap_Provider implements WPSEO_Sitemap_Provider {
 		$url['images'] = $this->get_image_parser()->get_images( $post );
 
 		return $url;
-	}
-
-	/* ********************* DEPRECATED METHODS ********************* */
-
-	/**
-	 * Get all the options
-	 *
-	 * @deprecated 7.0
-	 * @codeCoverageIgnore
-	 */
-	protected function get_options() {
-		_deprecated_function( __METHOD__, 'WPSEO 7.0', 'WPSEO_Options::get' );
 	}
 }

@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Notifications
  */
 
@@ -87,8 +85,7 @@ class Yoast_Alerts {
 
 		$notification = $this->get_notification_from_ajax_request();
 		if ( $notification ) {
-			$notification_center = Yoast_Notification_Center::get();
-			$notification_center->restore_notification( $notification );
+			delete_user_meta( get_current_user_id(), $notification->get_dismissal_key() );
 
 			$this->output_ajax_response( $notification->get_type() );
 		}

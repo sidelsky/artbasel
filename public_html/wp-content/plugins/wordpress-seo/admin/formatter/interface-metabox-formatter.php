@@ -1,8 +1,6 @@
 <?php
 /**
- * WPSEO plugin file.
- *
- * @package WPSEO\Admin\Formatter
+ * @package WPSEO\Admin|Formatter
  */
 
 /**
@@ -16,4 +14,5 @@ interface WPSEO_Metabox_Formatter_Interface {
 	 * @return array
 	 */
 	public function get_values();
+
 }

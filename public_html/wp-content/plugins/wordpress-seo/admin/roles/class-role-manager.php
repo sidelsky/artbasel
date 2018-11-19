@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Roles
  */
 
@@ -9,7 +7,6 @@
  * Role Manager interface.
  */
 interface WPSEO_Role_Manager {
-
 	/**
 	 * Registers a role.
 	 *

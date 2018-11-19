@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin
  */
 
@@ -10,6 +8,19 @@
  */
 final class WPSEO_Admin_Asset_Dev_Server_Location implements WPSEO_Admin_Asset_Location {
 	const DEFAULT_URL = 'http://localhost:8080';
+
+	/**
+	 * @var array
+	 */
+	private static $dev_server_script = array(
+		'commons',
+		'configuration-wizard',
+		'wp-seo-dashboard-widget',
+		'wp-seo-help-center',
+		'wp-seo-metabox',
+		'wp-seo-post-scraper',
+		'wp-seo-term-scraper',
+	);
 
 	/**
 	 * @var string
@@ -44,7 +55,7 @@ final class WPSEO_Admin_Asset_Dev_Server_Location implements WPSEO_Admin_Asset_L
 		$flat_version        = $asset_manager->flatten_version( WPSEO_VERSION );
 		$version_less_source = str_replace( '-' . $flat_version, '', $asset->get_src() );
 
-		if ( false !== strpos( $version_less_source, 'select2' ) ) {
+		if ( ! in_array( $version_less_source, self::$dev_server_script, true ) ) {
 			return $this->get_default_url( $asset, $type );
 		}
 

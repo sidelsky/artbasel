@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Options\Tabs
  */
 
@@ -21,8 +19,6 @@ class WPSEO_Option_Tabs {
 
 	/**
 	 * WPSEO_Option_Tabs constructor.
-	 *
-	 * @codeCoverageIgnore
 	 *
 	 * @param string $base       Base of the tabs.
 	 * @param string $active_tab Currently active tab.

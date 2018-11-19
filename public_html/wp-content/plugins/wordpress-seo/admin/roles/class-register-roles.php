@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Roles
  */
 
@@ -9,7 +7,6 @@
  * Role registration class.
  */
 class WPSEO_Register_Roles implements WPSEO_WordPress_Integration {
-
 	/**
 	 * Adds hooks.
 	 *

@@ -2,7 +2,9 @@
     "name": "wordpress-starter",
     "version": "1.0.0",
     "description": "The package json that defines the build tools for the WordPress Starter repo",
-    "dependencies": {},
+    "dependencies": {
+        "vue": "^2.5.17"
+    },
     "devDependencies": {
         "babel-eslint": "^8.2.*",
         "babel-jest": "^22.4.*",

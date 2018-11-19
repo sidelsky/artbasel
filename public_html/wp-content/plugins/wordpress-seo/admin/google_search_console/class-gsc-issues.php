@@ -1,8 +1,6 @@
 <?php
 /**
- * WPSEO plugin file.
- *
- * @package WPSEO\Admin\Google_Search_Console
+ * @package WPSEO\Admin|Google_Search_Console
  */
 
 /**
@@ -44,7 +42,6 @@ class WPSEO_GSC_Issues {
 			$this->save_fetched_issues( $fetched_issues );
 		}
 	}
-
 	/**
 	 * Getting the issues from the options.
 	 *

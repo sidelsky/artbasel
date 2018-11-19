@@ -19,7 +19,7 @@ const scssSrcPath = 'src/Assets/scss/style.scss';
 const themePath = 'public_html/wp-content/themes/project-theme';
 const destPath = `${themePath}/assets/build`;
 
-const vhost = "http://safetonet.localhost:8888/";
+const vhost = "http://artbasel:8888/";
 
 mix.setPublicPath('public_html');
 

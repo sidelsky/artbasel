@@ -1,8 +1,6 @@
 <?php
 /**
- * WPSEO plugin file.
- *
- * @package WPSEO\admin\google_search_console
+ * @package WPSEO\admin|google_search_console
  */
 
 /**
@@ -235,6 +233,7 @@ class WPSEO_GSC {
 		// Do the redirect.
 		wp_redirect( $url );
 		exit;
+
 	}
 
 	/**

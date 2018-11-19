@@ -88,15 +88,15 @@
 				return ! isIdentical;
 			case 'emoji':
 				/*
-				 * She's the hero Emoji deserves, but not the one it needs right now.
+				 * Emoji allows people of all gender levitate and so does WordPress.
 				 *
-				 * To test for support, try to render a new emoji (female superhero),
+				 * To test for support, try to render a new emoji (woman in business suit levitating),
 				 * then compare it to how it would look if the browser doesn't render it correctly
-				 * (superhero + female sign).
+				 * (person in business suit levitating + female sign).
 				 */
 				isIdentical = emojiSetsRenderIdentically(
-					[55358, 56760, 9792, 65039],
-					[55358, 56760, 8203, 9792, 65039]
+					[55357, 56692, 8205, 9792, 65039],
+					[55357, 56692, 8203, 9792, 65039]
 				);
 				return ! isIdentical;
 		}

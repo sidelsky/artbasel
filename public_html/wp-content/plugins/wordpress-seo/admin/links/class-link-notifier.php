@@ -1,12 +1,10 @@
 <?php
 /**
- * WPSEO plugin file.
- *
- * @package WPSEO\Admin
+ * @package WPSEO\Premium
  */
 
 /**
- * Represents the notifier for adding link indexing notification to the dashboard.
+ * Repressents the notifier for adding link indexing notification to the dashboard.
  */
 class WPSEO_Link_Notifier {
 

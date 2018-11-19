@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Capabilities
  */
 
@@ -9,7 +7,6 @@
  * VIP implementation of the Capability Manager.
  */
 final class WPSEO_Capability_Manager_VIP extends WPSEO_Abstract_Capability_Manager {
-
 	/**
 	 * Adds the registered capabilities to the system.
 	 *

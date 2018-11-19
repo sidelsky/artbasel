@@ -186,20 +186,6 @@ class WP_REST_Users_Controller extends WP_REST_Controller {
 			return new WP_Error( 'rest_forbidden_orderby', __( 'Sorry, you are not allowed to order users by this parameter.' ), array( 'status' => rest_authorization_required_code() ) );
 		}
 
-		if ( 'authors' === $request['who'] ) {
-			$can_view = false;
-			$types = get_post_types( array( 'show_in_rest' => true ), 'objects' );
-			foreach ( $types as $type ) {
-				if ( post_type_supports( $type->name, 'author' )
-					&& current_user_can( $type->cap->edit_posts ) ) {
-					$can_view = true;
-				}
-			}
-			if ( ! $can_view ) {
-				return new WP_Error( 'rest_forbidden_who', __( 'Sorry, you are not allowed to query users by this parameter.' ), array( 'status' => rest_authorization_required_code() ) );
-			}
-		}
-
 		return true;
 	}
 
@@ -264,9 +250,7 @@ class WP_REST_Users_Controller extends WP_REST_Controller {
 			$prepared_args['orderby'] = $orderby_possibles[ $request['orderby'] ];
 		}
 
-		if ( isset( $registered['who'] ) && ! empty( $request['who'] ) && 'authors' === $request['who'] ) {
-			$prepared_args['who'] = 'authors';
-		} elseif ( ! current_user_can( 'list_users' ) ) {
+		if ( ! current_user_can( 'list_users' ) ) {
 			$prepared_args['has_published_posts'] = get_post_types( array( 'show_in_rest' => true ), 'names' );
 		}
 
@@ -837,78 +821,78 @@ class WP_REST_Users_Controller extends WP_REST_Controller {
 	public function prepare_item_for_response( $user, $request ) {
 
 		$data   = array();
-		$fields = $this->get_fields_for_response( $request );
+		$schema = $this->get_item_schema();
 
-		if ( in_array( 'id', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['id'] ) ) {
 			$data['id'] = $user->ID;
 		}
 
-		if ( in_array( 'username', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['username'] ) ) {
 			$data['username'] = $user->user_login;
 		}
 
-		if ( in_array( 'name', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['name'] ) ) {
 			$data['name'] = $user->display_name;
 		}
 
-		if ( in_array( 'first_name', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['first_name'] ) ) {
 			$data['first_name'] = $user->first_name;
 		}
 
-		if ( in_array( 'last_name', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['last_name'] ) ) {
 			$data['last_name'] = $user->last_name;
 		}
 
-		if ( in_array( 'email', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['email'] ) ) {
 			$data['email'] = $user->user_email;
 		}
 
-		if ( in_array( 'url', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['url'] ) ) {
 			$data['url'] = $user->user_url;
 		}
 
-		if ( in_array( 'description', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['description'] ) ) {
 			$data['description'] = $user->description;
 		}
 
-		if ( in_array( 'link', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['link'] ) ) {
 			$data['link'] = get_author_posts_url( $user->ID, $user->user_nicename );
 		}
 
-		if ( in_array( 'locale', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['locale'] ) ) {
 			$data['locale'] = get_user_locale( $user );
 		}
 
-		if ( in_array( 'nickname', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['nickname'] ) ) {
 			$data['nickname'] = $user->nickname;
 		}
 
-		if ( in_array( 'slug', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['slug'] ) ) {
 			$data['slug'] = $user->user_nicename;
 		}
 
-		if ( in_array( 'roles', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['roles'] ) ) {
 			// Defensively call array_values() to ensure an array is returned.
 			$data['roles'] = array_values( $user->roles );
 		}
 
-		if ( in_array( 'registered_date', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['registered_date'] ) ) {
 			$data['registered_date'] = date( 'c', strtotime( $user->user_registered ) );
 		}
 
-		if ( in_array( 'capabilities', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['capabilities'] ) ) {
 			$data['capabilities'] = (object) $user->allcaps;
 		}
 
-		if ( in_array( 'extra_capabilities', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['extra_capabilities'] ) ) {
 			$data['extra_capabilities'] = (object) $user->caps;
 		}
 
-		if ( in_array( 'avatar_urls', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['avatar_urls'] ) ) {
 			$data['avatar_urls'] = rest_get_avatar_urls( $user->user_email );
 		}
 
-		if ( in_array( 'meta', $fields, true ) ) {
+		if ( ! empty( $schema['properties']['meta'] ) ) {
 			$data['meta'] = $this->meta->get_value( $user->ID, $request );
 		}
 
@@ -1375,14 +1359,6 @@ class WP_REST_Users_Controller extends WP_REST_Controller {
 			'type'               => 'array',
 			'items'              => array(
 				'type'           => 'string',
-			),
-		);
-
-		$query_params['who'] = array(
-			'description' => __( 'Limit result set to users who are considered authors.' ),
-			'type'        => 'string',
-			'enum'        => array(
-				'authors',
 			),
 		);
 

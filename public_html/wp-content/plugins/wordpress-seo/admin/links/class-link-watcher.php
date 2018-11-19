@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Links
  */
 
@@ -50,9 +48,8 @@ class WPSEO_Link_Watcher {
 			return;
 		}
 
-		$post_statuses_to_skip = array( 'auto-draft', 'trash' );
-
-		if ( in_array( $post->post_status, $post_statuses_to_skip, true ) ) {
+		// When the post status is auto-draft.
+		if ( $post->post_status === 'auto-draft' ) {
 			return;
 		}
 

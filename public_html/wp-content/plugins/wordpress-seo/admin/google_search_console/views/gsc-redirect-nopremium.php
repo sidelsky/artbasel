@@ -1,10 +1,8 @@
 <?php
 /**
- * WPSEO plugin file.
+ * @package WPSEO\Admin|Google_Search_Console
  *
  * This is the view for the modal box that appears when premium isn't loaded.
- *
- * @package WPSEO\Admin\Google_Search_Console
  */
 
 echo '<h1 class="wpseo-redirect-url-title">';

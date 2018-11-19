@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\OnPage
  */
 
@@ -88,7 +86,7 @@ class WPSEO_Ryte_Service {
 			return array(
 				'score'     => 'na',
 				'label'     => esc_html( sprintf(
-					/* translators: %1$s: expands to Yoast SEO, %2$s: expands to Ryte. */
+				/* translators: %1$s: expands to Yoast SEO, %2$s: expands to Ryte. */
 					__( '%1$s has not fetched your site\'s indexability status yet from %2$s', 'wordpress-seo' ),
 					'Yoast SEO',
 					'Ryte'

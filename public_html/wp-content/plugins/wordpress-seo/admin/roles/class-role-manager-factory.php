@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Roles
  */
 
@@ -9,7 +7,6 @@
  * Role Manager Factory.
  */
 class WPSEO_Role_Manager_Factory {
-
 	/**
 	 * Retrieves the Role manager to use.
 	 *

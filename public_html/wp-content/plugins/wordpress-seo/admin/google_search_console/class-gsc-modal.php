@@ -1,8 +1,6 @@
 <?php
 /**
- * WPSEO plugin file.
- *
- * @package WPSEO\Admin\Google_Search_Console
+ * @package WPSEO\Admin|Google_Search_Console
  */
 
 /**
@@ -13,7 +11,7 @@ class WPSEO_GSC_Modal {
 	/** @var string */
 	protected $view;
 
-	/** @var int */
+	/** @var int  */
 	protected $height;
 
 	/** @var array */

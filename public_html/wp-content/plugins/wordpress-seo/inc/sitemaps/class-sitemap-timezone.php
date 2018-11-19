@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\XML_Sitemaps
  */
 
@@ -35,7 +33,6 @@ class WPSEO_Sitemap_Timezone {
 
 		return $date_time->format( $format );
 	}
-
 	/**
 	 * Get the datetime object, in site's time zone, if the datetime string was valid
 	 *

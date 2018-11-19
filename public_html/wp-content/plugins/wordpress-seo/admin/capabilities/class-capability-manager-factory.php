@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Capabilities
  */
 
@@ -9,7 +7,6 @@
  * Capability Manager Factory.
  */
 class WPSEO_Capability_Manager_Factory {
-
 	/**
 	 * Returns the Manager to use.
 	 *

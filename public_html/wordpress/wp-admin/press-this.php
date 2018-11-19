@@ -18,7 +18,7 @@ function wp_load_press_this() {
 	if ( ! current_user_can( 'edit_posts' ) || ! current_user_can( get_post_type_object( 'post' )->cap->create_posts ) ) {
 		wp_die(
 			__( 'Sorry, you are not allowed to create posts as this user.' ),
-			__( 'You need a higher level of permission.' ),
+			__( 'Cheatin&#8217; uh?' ),
 			403
 		);
 	} elseif ( is_plugin_active( $plugin_file ) ) {

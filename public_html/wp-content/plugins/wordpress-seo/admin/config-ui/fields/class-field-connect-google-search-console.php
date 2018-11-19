@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\ConfigurationUI
  */
 
@@ -9,7 +7,6 @@
  * Class WPSEO_Config_Field_Connect_Google_Search_Console
  */
 class WPSEO_Config_Field_Connect_Google_Search_Console extends WPSEO_Config_Field {
-
 	/**
 	 * WPSEO_Config_Field_Connect_Google_Search_Console constructor.
 	 */

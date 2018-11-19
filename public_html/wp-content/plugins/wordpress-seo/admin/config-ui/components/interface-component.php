@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\ConfigurationUI
  */
 
@@ -9,7 +7,6 @@
  * Config Component interface
  */
 interface WPSEO_Config_Component {
-
 	/**
 	 * @return string
 	 */

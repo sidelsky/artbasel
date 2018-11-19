@@ -1,7 +1,5 @@
 <?php
 /**
- * WPSEO plugin file.
- *
  * @package WPSEO\Admin\Export
  */
 
@@ -49,6 +47,7 @@ class WPSEO_Export {
 	 * @var array
 	 */
 	private $dir = array();
+
 
 	/**
 	 * Class constructor
