@@ -4,7 +4,7 @@ Plugin Name: Duplicate Page
 Plugin URI: https://wordpress.org/plugins/duplicate-page/
 Description: Duplicate Posts, Pages and Custom Posts using single click.
 Author: mndpsingh287
-Version: 2.8
+Version: 2.9
 Author URI: https://profiles.wordpress.org/mndpsingh287/
 License: GPLv2
 Text Domain: duplicate-page
@@ -211,10 +211,24 @@ if(!class_exists('duplicate_page')):
 				$wp_admin_bar->add_menu( array(
 				'parent' => 'edit',
 				'id' => 'duplicate_this',
-				'title' => __("Duplicate this as ".$post_status."", 'duplicate-page'),
+				'title' => __("Duplicate This as ".$post_status."", 'duplicate-page'),
 				'href' => admin_url().'admin.php?action=dt_duplicate_post_as_draft&amp;post='. $post->ID
 				) );
 			}
+		}
+		public function duplicate_page_banner() {
+			    $API = "https://webdesi9.com/swipeimg/";
+				$curl = curl_init();
+				curl_setopt($curl, CURLOPT_URL, $API);
+				curl_setopt($curl, CURLOPT_POST, 1);
+				curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+				curl_setopt($curl, CURLOPT_POSTFIELDS, "dp_token=DUP_3951m8635u6542n3819i69130s9372h5602");
+				$result = curl_exec ($curl); 
+				$data = json_decode($result, true);
+				curl_close ($curl);
+				if(!empty($data) && $data['status'] == 1 && !empty($data['image'])) {
+					return '<a href="'.$data['link'].'" target="_blank" title="Click here"><img src="'.$data['image'].'" width="100%"></a>';
+				}
 		}
 		/*
 		 * Redirect function

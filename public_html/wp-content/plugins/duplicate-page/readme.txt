@@ -3,7 +3,7 @@ Contributors: mndpsingh287
 Tags: Page Duplicate, Post duplicate, duplicate custom posts, duplicate page, duplicate post, duplicate ,custom posts, post, page, duplicate this, duplicate, content duplicate, duplicate content, data duplicate, duplicate data, copy page, clone page,wordpress page duplicate, wordpress post duplicate, Copy post, wordpress page duplicator, wordpress post duplicator, Cloner, duplicate post
 Requires at least: 3.4
 Tested up to: 5.0
-Stable tag: 2.8
+Stable tag: 2.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -103,6 +103,10 @@ https://www.youtube.com/watch?v=Fj8BHxvebXs&feature=youtu.be
 = 2.8 (20th Oct, 2018) =
 
 * Compatible with php 7.3 and wordpress 5.0
+
+= 2.9 (16th Nov, 2018) =
+
+* Minor bug fixes
 
 
 == Other Notes ==

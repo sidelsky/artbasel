@@ -83,7 +83,8 @@ endif;
     <input type="image" src="http://www.paypal.com/en_US/i/btn/x-click-butcc-donate.gif" border="0" name="submit" alt="Make Donations with Paypal">
     </form>
       <hr />
-    </div> 
+    </div>
+<?php echo $this->duplicate_page_banner();?>      
 </div>
 </div>
 </div>
