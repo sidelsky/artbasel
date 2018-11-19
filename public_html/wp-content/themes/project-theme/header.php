@@ -37,50 +37,35 @@ $wordpress = new WordpressHelper;
 		include('Theme/Data/en.php');
 	?>
 
-	<div class="c-mobile-navigation">
-		<?php
-			// $menu_args = [
-			// 	'menu' => 'Tertiary navigation',
-			// 	'container' => '',
-			// 	'echo' => true,
-			// 	'items_wrap' => '<ul class="c-mobile-navigation__menu">%3$s</ul>'
-			// ];
-			// echo '<nav>';
-			// 	wp_nav_menu($menu_args); 
-			// echo '</nav>';
-		?>
-	</div>
-		
-		<div id="header" class="header l-site-header-container <?= is_front_page() ? 'l-site-header-container--blue' : 'l-site-header-container--white'; ?>">
 
-			<!-- START: Hamburger -->
-			<a class="c-hamburger js-hamburger">
-				<span class="c-hamburger__bar"></span>
-			</a>
-			<!-- END: Hamburger -->
+	<header class="c-header">
+		<a href="/" class="c-header__link">
+			<svg class="c-header__icon">
+				<use xlink:href='#shape-hauserwirth-logo'></use>
+			</svg>
+		</a>
+	</header>
 
-			<div class="u-l-container u-l-horizontal-padding">
-				<div class="l-site-header c-site-header">
-					<div class="l-site-header__title">
-						
-					</div>
-					<div class="l-site-header__nav">
-						<?php
-							// $menu_args = [
-							// 	'menu' => 'Primary navigation',
-							// 	'container' => '',
-							// 	'echo' => true,
-							// 	'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
-							// ];
-							// echo '<nav class="c-site-nav">';
-							// 	wp_nav_menu($menu_args); 
-							// echo '</nav>';
-						?>
-					</div>
-				</div>
+
+	<section class="u-section ">
+		<div class="u-l-container--center" data-in-viewport>
+			<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--bottom">
+				<?php
+				
+				$front_page_id = '6';
+				$currentPost_id = get_the_ID();
+
+				if( is_front_page() ) {
+				 	the_title('<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">','</h1>'); 
+				} elseif( is_archive( 'works' ) ) {
+					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_the_title( $front_page_id ) . '</h1>';
+				} else {
+					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_the_title( $currentPost_id ) . '</h1>';
+				}
+
+				?>
 			</div>
-
 		</div>
+	</section>
 
-
-		<main role="main" class="main">
+<main role="main" class="main">

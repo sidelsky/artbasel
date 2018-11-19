@@ -1,33 +1,34 @@
 <?php
-/*
-	Template Name: Login - page template
-*/
-
-include("header.php");
-
+/**
+ * Template Name: Login - page template
+ */
+ 
+	$url = site_url();
+	
+    if ( is_user_logged_in() ) {
+        wp_redirect( $url . '../../works' );
+        exit;
+    } 
+ 
+    include("header.php");
+ 
 ?>
 
-	<section role="main">
-
-		<div class="login">
-			<div class="login-canvas">
-
-				<?php /* include('partials/mediastage-logo.php'); */ ?>
-
-				<?php
-					$blog_name = get_bloginfo();
-					//Lets check to see if the 'Theme my login plugin is active...
-					if( function_exists( 'theme_my_login' ) ) {
-						echo do_shortcode( '[theme-my-login show_title=0]' );
-					} else {
-						//We might want a message here...
-						//echo "Please <a href='mailto:someone@yoursite.com?subject=User login request from $blog_name&body=Please may be granted access to $blog_name  '>email us</a> for your personal login details...";
-					}
-				?>
-
-			</div>
+<section class="u-section c-login">
+	<div class="u-l-container--center" data-in-viewport>
+		<div class="u-l-container u-l-container--row u-l-vertical-padding">
+			<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre">Enter Password to View</h3>
+		<?php
+				//$blog_name = get_bloginfo();
+				//Lets check to see if the 'Theme my login plugin is active...
+				if( function_exists( 'theme_my_login' ) ) {
+					echo do_shortcode( '[theme-my-login show_title=0]' );
+				}
+			?>
 		</div>
+	</div>
+</section>
 
-	</section>
+
 
 <?php include("footer.php"); ?>

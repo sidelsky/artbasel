@@ -34,6 +34,8 @@ $quaternary: #FFC233; //SafeTonet Yellow
 $light: #4C4C4C;
 $dark: #1F1F1F;
 
+$lighter: lighten($light, 60%);
+
 
 $info: #00529b;
 $success: #4f8a10;
@@ -88,3 +90,8 @@ $palettes: (
         dark: darken($quaternary, 25%),
       )
    );
+
+
+   .light-grey {
+      background-color: #e8e8e8;
+   }

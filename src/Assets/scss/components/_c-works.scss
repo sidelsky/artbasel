@@ -1,0 +1,113 @@
+.c-works {
+    lost-column: 12/12;
+
+    //Tablet
+    @include media('>tablet') {
+        lost-column: 9/12;
+        lost-flex-container: row;
+    }
+
+    //Card
+    &__card {
+        //padding: $spacing--small;
+        padding: 0 $spacing--small $spacing--small;
+        @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        
+        //Tablet
+        @include media('>tablet') {
+            lost-column: 6/12 3 0;
+        }
+
+        //Desktop
+        @include media('>desktop') {
+            lost-column: 4/12 3 0;
+        }
+
+    }
+
+    //Figure
+    &__figure {
+        position: relative;
+        margin-bottom: $spacing--tiny;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        min-height: 310px;
+    }
+
+    //Image
+    &__image {
+        //Tablet
+        @include media('>tablet') {
+            max-height: 310px;  
+            max-width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+    }
+
+    //Title
+    &__title {
+        font-family: font-family(primary, semibold);
+        @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
+        line-height: 2;
+    }
+
+    //Date
+    &__date {
+        font-family: font-family(primary, medium);
+        line-height: 2;
+    }
+
+    //Medium
+    &__medium,
+    //Demensions
+    &__dimensions {
+        font-family: font-family(primary, regular);
+        color: $light;
+        margin-bottom: $spacing--tiny;
+    }
+
+    //Demensions
+    &__dimensions {
+        font-family: font-family(primary, medium);
+    }
+
+    //Price
+    &__price {
+        font-family: font-family(primary, bold);
+        line-height: 2;
+    }
+
+    //Href Wrap
+    &__href-wrap {
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+
+            .c-works__icon {
+                transform: translate3d(5px,0,0);
+            }
+        }
+
+    }
+
+    //Icon
+    &__icon {
+        top: .2em !important;
+        margin-left: $spacing--tiny;
+        transition: all ease-in-out 200ms;
+    }
+
+    //Href
+    &__href {
+        text-decoration: none;
+        line-height: 2;
+        color: currentColor;
+    }
+
+}

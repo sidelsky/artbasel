@@ -1,0 +1,147 @@
+
+%centre {
+    height: 100vh;
+    lost-align: center;
+    width: 100%;
+  }
+
+.c-login {
+  //@extend %centre;
+  font-family: font-family(primary, medium);
+  
+  &-canvas {
+    max-width: 280px;
+    padding: 2rem;
+	width: 100%;
+	
+    &__logo {
+      //@include aspect-ratio(65, 50);
+      margin-bottom: 4rem;
+      position: relative;
+    }
+
+    &__your-profile {
+      max-width: 1280px;
+    }
+
+    svg {
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+  }
+}
+
+.username {
+    display: none;
+    visibility: hidden;
+}
+
+
+.input {
+	$font-size: 1.4rem;
+	background-color: $white;
+	border: solid 1px rgba($white, .6);
+    @include set-font-size(1.8rem, 1.8rem, 1.8rem, 1.8rem);
+    text-align: center;
+	color: #9b9b9b;
+    width: 100%;
+    padding-left: $spacing--tiny;
+    margin-bottom: $spacing--small;
+    border-radius: 3px;
+    line-height: 4;
+
+	&:focus {
+		border: solid 2px $white;
+		//box-shadow: 0 0 10px 1px rgba($white, 1),;
+	}
+
+}
+
+.tml-rememberme-wrap {
+
+	label {
+        color: $white;
+		@include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+
+	}
+
+}
+
+
+.tml-submit-wrap {
+
+	text-align: center;
+
+	.submit {
+		background-color: transparent;
+		// $dimentions: 48px;
+		// height: $dimentions;
+		width: 100%;
+        @include set-font-size(2rem, 2rem, 2rem, 2rem);
+        font-family: font-family(primary, semibold);
+		background-color: rgba($black, .2);
+        border: solid 1px #4a4a4a;
+        color: $white;
+		transition: ease .2s opacity 1s;
+        border-radius: 3px;
+        line-height: 3.5;
+
+		&:hover {
+			transition: ease-in-out .2s background-position;
+			background-position: 15px center;
+			cursor: pointer;
+		}
+
+		&:disabled {
+			background-position: center center;
+			opacity: 0;
+
+			&:hover {
+				background-position: 15px center;
+				cursor: default;
+			}
+
+		}
+
+	}
+
+}
+
+.error {
+    color: $white;
+    margin-bottom: $spacing--tiny;
+    text-align: center;
+    
+    strong {
+        color: currentColor;
+        font-weight: 700;
+    }
+    a {
+        color: currentColor;
+        text-decoration: underline;
+        display: none;
+        visibility: hidden;
+    }
+}
+
+.tml.tml-user-panel {
+	display: none;
+	visibility: hidden;
+}
+
+
+.tml-login {
+    width: 100%;
+
+    form {
+        margin: 0 auto;
+        width:100%;
+        max-width: 540px;
+    }
+
+}

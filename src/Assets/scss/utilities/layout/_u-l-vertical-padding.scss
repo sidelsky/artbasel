@@ -21,4 +21,15 @@
             padding-bottom: $spacing--large;
         }
     }
+
+        //Small
+        &--bottom {
+            padding-top: $spacing--large;
+            padding-bottom: $spacing--medium;
+    
+            @include breakpoint($medium) {
+                padding-top: $spacing--jumbo;
+                padding-bottom: $spacing--large;
+            }
+        }
 }
