@@ -13,6 +13,8 @@ const mix = require('laravel-mix');
 const SvgStore = require('webpack-svgstore-plugin');
 const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
+mix.disableNotifications()
+
 // Assets Path
 const jsSrcPath = 'src/Assets/js/app.js';
 const scssSrcPath = 'src/Assets/scss/style.scss';
