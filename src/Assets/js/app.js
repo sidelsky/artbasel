@@ -8,5 +8,6 @@ import './svg-sprite';
 
 // import './components/header';
 
-import './archive';
 import './components/login-form';
+
+import './archive';

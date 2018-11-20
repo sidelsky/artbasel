@@ -32,7 +32,7 @@
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
         'priceRange' => get_field('price_range'),
-        'learn_more' => get_the_permalink()
+        'link' => get_the_permalink()
       ];
 
     endwhile;
