@@ -1149,6 +1149,10 @@ table {
   font-family: "hind-medium", Helvetica, Arial, sans-serif;
 }
 
+.c-works__medium {
+  text-transform: capitalize;
+}
+
 .c-works__price {
   font-family: "hind-bold", Helvetica, Arial, sans-serif;
   line-height: 2;

@@ -8,6 +8,7 @@
         />
         <VWorkList
           :works="sortedWorks"
+          :pageNumberOverride="pageNumberOverride"
           v-if="filteredWorks.length"
         />
         <h3 v-else>No results found..</h3>
@@ -22,6 +23,7 @@ import VFilter from './components/VFilter'
 export default {
   data () {
     return {
+      pageNumberOverride: null,
       selectedFilters: {},
       sort: {
         order: 'asc',
@@ -41,10 +43,12 @@ export default {
     handleSortClick (payload) {
       let { order, key } = payload
       this.sort = payload
+      this.pageNumberOverride = 0
     },
     handleFilterClick (payload) {
       let { type, key } = payload
       this.$set(this.selectedFilters, type, key)
+      this.pageNumberOverride = 0
     }
   },
   computed: {

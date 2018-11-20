@@ -27,12 +27,18 @@ export default {
     VCard
   },
   props: {
-    works: Array
+    works: Array,
+    pageNumberOverride: Number
   },
   data () {
     return {
       pageNumber: 0,
       size: 9
+    }
+  },
+  watch: {
+    pageNumberOverride(newVal) {
+      this.pageNumber = newVal
     }
   },
   methods: {
