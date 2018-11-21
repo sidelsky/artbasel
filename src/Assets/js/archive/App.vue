@@ -15,6 +15,7 @@
       </div>
   </div>
 </template>
+
 <script>
 import _ from 'lodash'
 import VWorkList from './components/VWorkList'

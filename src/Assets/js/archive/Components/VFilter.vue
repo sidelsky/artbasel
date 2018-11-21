@@ -46,7 +46,7 @@
               <div class="c-meta__section">
                 <h3 class="c-meta__title">By Medium</h3>
 
-                <p v-for="(item, index) in filters.medium">
+                <p v-for="(item, index) in filters.medium" :key="item.label">
                   <label class="c-meta__label">
                     <input class="c-meta__radio"
                     type="radio"
@@ -62,7 +62,7 @@
 
               <div class="c-meta__section">
                 <h3 class="c-meta__title">By Price</h3>
-                <p v-for="(item, index) in filters.priceRange" >
+                <p v-for="(item, index) in filters.priceRange" :key="item.label">
                   <label class="c-meta__label">
                     <input class="c-meta__radio"
                     type="radio"
@@ -78,7 +78,7 @@
 
               <div class="c-meta__section">
                 <h3 class="c-meta__title">By Decade</h3>
-                <p v-for="(item, index) in filters.decade">
+                <p v-for="(item, index) in filters.decade" :key="item.label">
                   <label class="c-meta__label">
                     <input class="c-meta__radio"
                     type="radio"

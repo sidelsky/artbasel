@@ -4,7 +4,7 @@
     "description": "The package json that defines the build tools for the WordPress Starter repo",
     "dependencies": {
         "lodash": "^4.17.11",
-        "vue": "^2.5.17"
+        "vue": "^2.5.16"
     },
     "devDependencies": {
         "babel-eslint": "^8.2.*",
