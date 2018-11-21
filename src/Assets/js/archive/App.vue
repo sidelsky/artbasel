@@ -1,10 +1,16 @@
 <template>
   <div class="u-l-container--center" data-in-viewport>
       <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+        <!-- to go here -->
+        <button @click="showFilter = !showFilter">
+          <span v-if="showFilter">Hide Filter</span>
+          <span v-else>Show Filter</span>
+        </button>
         <VFilter
           :filters="filters"
           @input="handleFilterClick"
           @order="handleSortClick"
+          v-if="showFilter"
         />
         <VWorkList
           :works="sortedWorks"
@@ -26,6 +32,7 @@ export default {
     return {
       pageNumberOverride: null,
       selectedFilters: {},
+      showFilter: true,
       sort: {
         order: 'asc',
         key: 'title'

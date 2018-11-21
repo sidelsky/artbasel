@@ -1,3 +1,21 @@
 .c-login {
     background-color: $dark;
+    height: calc(100vh - 368px);
+
+    &__footer {
+        color: $white;
+        text-align: center;
+        display: block;
+        width: 100%;
+        font-family: font-family(primary, regular);
+    }
+
+    &__href {
+        text-decoration: underline;
+        color: currentColor;
+    }
+
+    &__detail {
+        font-size: 14px;
+    }
 }

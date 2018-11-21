@@ -11,3 +11,4 @@ import './svg-sprite';
 import './components/login-form';
 
 import './archive';
+

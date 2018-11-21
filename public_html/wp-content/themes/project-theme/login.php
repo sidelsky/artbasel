@@ -18,17 +18,20 @@
 	<div class="u-l-container--center" data-in-viewport>
 		<div class="u-l-container u-l-container--row u-l-vertical-padding">
 			<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre">Enter Password to View</h3>
-		<?php
+			<?php
 				//$blog_name = get_bloginfo();
 				//Lets check to see if the 'Theme my login plugin is active...
 				if( function_exists( 'theme_my_login' ) ) {
 					echo do_shortcode( '[theme-my-login show_title=0]' );
 				}
-			?>
+
+			?>	
+				<div class="c-login__footer">
+					<a href="mailto:weneedanemailaddress@me.com" class="c-login__href">Request a Password</a>
+					<p class="c-login__detail">Please note: By submitting a password request you are consenting to join the Hauser &amp; Wirth mailing list.</p>
+				</div>
 		</div>
 	</div>
 </section>
-
-
 
 <?php include("footer.php"); ?>

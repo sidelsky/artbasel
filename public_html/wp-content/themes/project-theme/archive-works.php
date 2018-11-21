@@ -8,8 +8,11 @@
 
 ?>
 
+  
 <script>
+
 <?php
+
     $loop = new WP_Query(
         [
             'post_type' => 'works',

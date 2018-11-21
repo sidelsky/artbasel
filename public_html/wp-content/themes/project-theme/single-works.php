@@ -25,13 +25,6 @@ include("header.php"); ?>
             
                 <article class="c-work-single">
                     <div class="c-work-single__column">
-                        <a href="/works">
-                            <svg class="u-icon">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-left-arrow-blk" viewBox="0 0 32 32"></use>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="c-work-single__column">
                         <figure class="c-work-single__figure"><img src="<?= $image ?>" alt="<?= $title ?>" class="c-work-single__image materialboxed"></figure>
                     </div>
                     <div class="c-work-single__column">
@@ -42,7 +35,7 @@ include("header.php"); ?>
                         <div class="c-works__price">$<?= $price ?></div>
                         <span class="c-works__href-wrap"><a href="mailto:errol@squie.com?subject=Inquire to purchase - <?= $title ?>&body=Hello, I'd to inquire about '<?= $title ?>'..." class="c-works__href">Inquire to purchase</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>
 
-                        <a href="#" class="c-button">View all available works</a>
+                        <a href="/works" class="c-button">View all available works</a>
                     </div>
                 </article>
 

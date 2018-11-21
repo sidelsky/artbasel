@@ -10,8 +10,9 @@
     //Card
     &__card {
         //padding: $spacing--small;
-        padding: 0 $spacing--small $spacing--small;
+        padding: 0 $spacing--small $spacing--medium;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        outline: solid 1px red;
 
         //Tablet
         @include media('>tablet') {
@@ -55,39 +56,42 @@
         line-height: 2;
     }
 
-    //Date
-    &__date {
-        font-family: font-family(primary, medium);
-        line-height: 2;
-    }
+    // //Date
+    // &__date {
+    //     font-family: font-family(primary, medium);
+    //     line-height: 2;
+    // }
 
+    //Date
+    &__date,
     //Medium
     &__medium,
     //Demensions
     &__dimensions {
         font-family: font-family(primary, regular);
         color: $light;
-        margin-bottom: $spacing--tiny;
+        line-height: 1.7;
     }
-
+    
     //Demensions
-    &__dimensions {
-        font-family: font-family(primary, medium);
-    }
+    // &__dimensions {
+        
+    // }
 
-    &__medium {
-      text-transform: capitalize;
-    }
+    // &__medium {
+    //   text-transform: capitalize;
+    // }
 
     //Price
     &__price {
         font-family: font-family(primary, bold);
-        line-height: 2;
+        line-height: 4;
     }
 
     //Href Wrap
     &__href-wrap {
         display: block;
+        line-height: 1.7;
 
         &:hover {
             text-decoration: underline;
@@ -109,7 +113,6 @@
     //Href
     &__href {
         text-decoration: none;
-        line-height: 2;
         color: currentColor;
     }
 
