@@ -1,5 +1,5 @@
 <template>
-  <div class="c-meta">
+
       <div class="c-meta__data">
           <form>
               <div class="c-meta__section">
@@ -93,7 +93,6 @@
               </div>
           </form>
       </div>
-  </div>
 </template>
 
 <script>
