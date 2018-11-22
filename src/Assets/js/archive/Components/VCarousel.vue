@@ -6,20 +6,6 @@
     @touchstart="handleTouchstart"
   >
 
-    <ul v-if="arrowNavigation" class="v-m-carousel__controls">
-      <li class="v-m-carousel__control v-m-carousel__control--prev" @click="previous()">
-        <button v-if="loop || currentSlide > 0">
-        Prev
-        </button>
-      </li>
-
-      <li class="v-m-carousel__control v-m-carousel__control--next" @click="next()">
-        <button v-if="loop || currentSlide < totalSlideNumber - 1">
-        Next
-        </button>
-      </li>
-    </ul>
-
     <div class="v-m-carousel__wrapper">
       <div
         class="v-m-carousel__inner"
@@ -50,6 +36,7 @@ import debounce from '../../helpers/debounce'
 export default {
   name: 'VCarousel',
   props: {
+    currentSlide: Number,
     loop: {
       type: Boolean,
       default: false
@@ -60,13 +47,12 @@ export default {
     },
     arrowNavigation: {
       type: Boolean,
-      default: true
+      default: false
     }
   },
   data () {
     return {
       carouselWidth: 0,
-      currentSlide: 0,
       totalSlideNumber: 0,
       touchstartX: 0,
       touchendX: 0
@@ -94,6 +80,7 @@ export default {
       })
 
       this.totalSlideNumber = slides.length
+      this.$emit('calculatedTotalSlides', this.totalSlideNumber)
     },
     calculateDimensions () {
       if (this.$refs.carousel) {

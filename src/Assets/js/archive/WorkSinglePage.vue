@@ -2,13 +2,29 @@
   <div class="u-l-container--center" data-in-viewport>
       <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
         <!-- to go here -->
+        <div class="c-lightbox" v-if="showLightbox" @click="showLightbox = false">
+          <button @click="showLightbox = false" class="c-lightbox__close">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 31.112 31.112">
+              <polygon points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97
+            	29.698,31.112 31.112,29.698 16.97,15.556 "/>
+            </svg>
+          </button>
+          <img :src="currentImage" class="c-lightbox__image">
+        </div>
         <article class="c-work-single">
             <div class="c-work-single__column">
               <figure class="c-work-single__figure">
-                <VCarousel>
-                  <VCarouselSlide v-for="item in gallery">
-                    <img :src="item" class="c-work-single__image">
-                  </VCarouselSlide>
+                <VCarousel :currentSlide="currentSlide" @calculatedTotalSlides="(total) => this.totalSlideNumber = total">
+                  <template v-if="!gallery.length">
+                    <VCarouselSlide>
+                      <img :src="work.image" class="c-work-single__image" @click="handleItemClick(work.image)">
+                    </VCarouselSlide>
+                  </template>
+                  <template v-else>
+                    <VCarouselSlide v-for="item in gallery" :key="item">
+                      <img :src="item" class="c-work-single__image" @click="handleItemClick(item)">
+                    </VCarouselSlide>
+                  </template>
                 </VCarousel>
               </figure>
             </div>
@@ -25,6 +41,24 @@
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
                   </svg>
                 </span>
+
+                <ul class="c-carousel-controls">
+                  <li class="v-m-carousel__control v-m-carousel__control--prev" @click="previous()">
+                    <button
+                      :class="[
+                        currentSlide > 0 ? '' : 'disabled',
+                        'carousel-button'
+                      ]"
+                    >Prev</button>
+                  </li>
+
+                  <li class="v-m-carousel__control v-m-carousel__control--next" @click="next()">
+                    <button :class="[
+                      currentSlide < totalSlideNumber - 1 ? '' : 'disabled',
+                      'carousel-button'
+                    ]">Next</button>
+                  </li>
+                </ul>
 
                 <a href="/works" class="c-button">View all available works</a>
             </div>
@@ -48,6 +82,14 @@ export default {
     VCarousel,
     VCarouselSlide
   },
+  data () {
+    return {
+      currentSlide: 0,
+      totalSlideNumber: 0,
+      currentImage: '',
+      showLightbox: false
+    }
+  },
   props: {
     gallery: Array,
     work: Object
@@ -55,6 +97,26 @@ export default {
   computed: {
     formattedPrice() {
       return formatter.format(this.work.price)
+    }
+  },
+  methods: {
+    handleItemClick (item) {
+      this.currentImage = item
+      this.showLightbox = true
+    },
+    previous () {
+      if (this.currentSlide > 0) {
+        this.currentSlide -= 1
+      } else if (this.loop) {
+        this.currentSlide = this.totalSlideNumber - 1
+      }
+    },
+    next () {
+      if (this.currentSlide < this.totalSlideNumber - 1) {
+        this.currentSlide += 1
+      } else if (this.loop) {
+        this.currentSlide = 0
+      }
     }
   }
 }

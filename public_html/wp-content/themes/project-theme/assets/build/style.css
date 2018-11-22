@@ -237,6 +237,41 @@ table {
   height: 15px;
 }
 
+.c-lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 4rem;
+  z-index: 20;
+  background: #fff;
+}
+
+.c-lightbox__image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.c-lightbox__close {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.c-lightbox__close svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .c-login {
   font-family: "hind-medium", Helvetica, Arial, sans-serif;
 }
