@@ -1,10 +1,5 @@
 <template lang="html">
   <div class="c-works">
-    <div class="c-pagination c-pagination--top">
-      <button @click="prevPage" :disabled="pageNumber === 0">Previous</button>
-      <span>{{pageNumber + 1}}/{{ pageCount }}</span>
-      <button @click="nextPage" :disabled="pageNumber >= pageCount -1">Next</button>
-    </div>
 
     <div class="c-works__list" name="fade">
       <VCard
