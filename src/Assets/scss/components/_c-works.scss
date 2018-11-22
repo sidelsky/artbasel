@@ -4,7 +4,15 @@
     //Tablet
     @include media('>tablet') {
         lost-column: 9/12;
+    }
+
+    &__list {
+      margin-left: -2.8rem;
+      margin-right: -2.8rem;
+
+      @include media('>tablet') {
         lost-flex-container: row;
+      }
     }
 
     //Card

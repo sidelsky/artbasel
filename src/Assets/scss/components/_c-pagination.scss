@@ -1,12 +1,27 @@
 .c-pagination {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  border-top: 1px solid $grey;
-  padding-top: 1rem;
-  height: 1.5rem;
+  justify-content: space-between;
+
+  &--top {
+    border-bottom: 1px solid $grey;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  &--bottom {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid $grey;
+  }
+
+  div {
+    font-size: 1.4rem;
+  }
 
   button {
+    font-size: 1.4rem;
+    padding: 0;
     cursor: pointer;
 
     &:focus {

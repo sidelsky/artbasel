@@ -651,15 +651,30 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  border-top: 1px solid #8A8A8A;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.c-pagination--top {
+  border-bottom: 1px solid #8A8A8A;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.c-pagination--bottom {
   padding-top: 1rem;
-  height: 1.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid #8A8A8A;
+}
+
+.c-pagination div {
+  font-size: 1.4rem;
 }
 
 .c-pagination button {
+  font-size: 1.4rem;
+  padding: 0;
   cursor: pointer;
 }
 
@@ -1027,13 +1042,6 @@ table {
         flex-basis: calc(99.9999% * 9/12 - (3rem - 3rem * 9/12));
     max-width: calc(99.9999% * 9/12 - (3rem - 3rem * 9/12));
     width: calc(99.9999% * 9/12 - (3rem - 3rem * 9/12));
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
   }
   .c-works:nth-child(1n) {
     margin-right: 3rem;
@@ -1041,6 +1049,23 @@ table {
   }
   .c-works:last-child {
     margin-right: 0;
+  }
+}
+
+.c-works__list {
+  margin-left: -2.8rem;
+  margin-right: -2.8rem;
+}
+
+@media (min-width: 769px) {
+  .c-works__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 
@@ -1352,6 +1377,17 @@ body {
   height: 100%;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }
 
 *,

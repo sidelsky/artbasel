@@ -1,19 +1,28 @@
 <template lang="html">
   <div class="c-works">
-    <VCard
-      v-for="work in paginatedData"
-      :key="work.title"
-      :title="work.title"
-      :date="work.date"
-      :medium="work.medium"
-      :dimensions="work.dimensions"
-      :image="work.image"
-      :price="work.price"
-      :link="work.link"
-    />
-
-    <div class="c-pagination">
+    <div class="c-pagination c-pagination--top">
       <button @click="prevPage" :disabled="pageNumber === 0">Previous</button>
+      <span>{{pageNumber + 1}}/{{ pageCount }}</span>
+      <button @click="nextPage" :disabled="pageNumber >= pageCount -1">Next</button>
+    </div>
+
+    <div class="c-works__list" name="fade">
+      <VCard
+        v-for="work in paginatedData"
+        :key="work.title"
+        :title="work.title"
+        :date="work.date"
+        :medium="work.medium"
+        :dimensions="work.dimensions"
+        :image="work.image"
+        :price="work.price"
+        :link="work.link"
+      />
+    </div>
+
+    <div class="c-pagination c-pagination--bottom">
+      <button @click="prevPage" :disabled="pageNumber === 0">Previous</button>
+      <span>{{pageNumber + 1}}/{{ pageCount }}</span>
       <button @click="nextPage" :disabled="pageNumber >= pageCount -1">Next</button>
     </div>
   </div>
@@ -33,7 +42,7 @@ export default {
   data () {
     return {
       pageNumber: 0,
-      size: 9
+      size: 12
     }
   },
   watch: {
