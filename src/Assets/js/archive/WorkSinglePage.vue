@@ -49,14 +49,14 @@
                         currentSlide > 0 ? '' : 'disabled',
                         'carousel-button'
                       ]"
-                    >Prev</button>
+                    ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
 
                   <li class="v-m-carousel__control v-m-carousel__control--next" @click="next()">
                     <button :class="[
                       currentSlide < totalSlideNumber - 1 ? '' : 'disabled',
                       'carousel-button'
-                    ]">Next</button>
+                    ]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
                 </ul>
 

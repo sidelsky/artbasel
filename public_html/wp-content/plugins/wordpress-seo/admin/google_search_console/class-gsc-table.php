@@ -1,6 +1,8 @@
 <?php
 /**
- * @package WPSEO\Admin|Google_Search_Console
+ * WPSEO plugin file.
+ *
+ * @package WPSEO\Admin\Google_Search_Console
  */
 
 if ( ! class_exists( 'WP_List_Table' ) ) {
@@ -172,7 +174,7 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	 * @return string
 	 */
 	protected function column_last_crawled( $item ) {
-		return date_i18n( get_option( 'date_format' ), strtotime( $item['last_crawled'] ) );
+		return date_i18n( get_option( 'date_format' ), (int) $item['last_crawled_raw'] );
 	}
 
 	/**
@@ -183,7 +185,7 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	 * @return string
 	 */
 	protected function column_first_detected( $item ) {
-		return date_i18n( get_option( 'date_format' ), strtotime( $item['first_detected'] ) );
+		return date_i18n( get_option( 'date_format' ), (int) $item['first_detected_raw'] );
 	}
 
 	/**

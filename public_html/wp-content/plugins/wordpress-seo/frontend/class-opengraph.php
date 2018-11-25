@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Frontend
  */
 
@@ -24,7 +26,7 @@ class WPSEO_OpenGraph {
 			add_action( 'wpseo_opengraph', array( $this, 'locale' ), 1 );
 			add_action( 'wpseo_opengraph', array( $this, 'type' ), 5 );
 			add_action( 'wpseo_opengraph', array( $this, 'og_title' ), 10 );
-			add_action( 'wpseo_opengraph', array( $this, 'site_owner' ), 20 );
+			add_action( 'wpseo_opengraph', array( $this, 'app_id' ), 20 );
 			add_action( 'wpseo_opengraph', array( $this, 'description' ), 11 );
 			add_action( 'wpseo_opengraph', array( $this, 'url' ), 12 );
 			add_action( 'wpseo_opengraph', array( $this, 'site_name' ), 13 );
@@ -116,9 +118,6 @@ class WPSEO_OpenGraph {
 		$namespaces = array(
 			'og: http://ogp.me/ns#',
 		);
-		if ( WPSEO_Options::get( 'fbadminapp' ) != 0 || ( is_array( WPSEO_Options::get( 'fb_admins' ) ) && WPSEO_Options::get( 'fb_admins' ) !== array() ) ) {
-			$namespaces[] = 'fb: http://ogp.me/ns/fb#';
-		}
 
 		/**
 		 * Allow for adding additional namespaces to the <html> prefix attributes.
@@ -187,41 +186,6 @@ class WPSEO_OpenGraph {
 			$this->og_tag( 'article:publisher', WPSEO_Options::get( 'facebook_site' ) );
 
 			return true;
-		}
-
-		return false;
-	}
-
-	/**
-	 * Outputs the site owner.
-	 *
-	 * @link https://developers.facebook.com/docs/reference/opengraph/object-type/article/
-	 * @return boolean
-	 */
-	public function site_owner() {
-		if ( WPSEO_Options::get( 'fbadminapp' ) != 0 ) {
-			$this->og_tag( 'fb:app_id', WPSEO_Options::get( 'fbadminapp' ) );
-
-			return true;
-		}
-		elseif ( is_array( WPSEO_Options::get( 'fb_admins' ) ) && WPSEO_Options::get( 'fb_admins' ) !== array() ) {
-			$adminstr = implode( ',', array_keys( WPSEO_Options::get( 'fb_admins' ) ) );
-			/**
-			 * Filter: 'wpseo_opengraph_admin' - Allow developer to filter the fb:admins string put out by Yoast SEO.
-			 *
-			 * @api string $adminstr The admin string
-			 */
-			$adminstr = apply_filters( 'wpseo_opengraph_admin', $adminstr );
-			if ( is_string( $adminstr ) && $adminstr !== '' ) {
-
-				$admins = explode( ',', $adminstr );
-
-				foreach ( $admins as $admin_id ) {
-					$this->og_tag( 'fb:admins', $admin_id );
-				}
-
-				return true;
-			}
 		}
 
 		return false;
@@ -299,12 +263,23 @@ class WPSEO_OpenGraph {
 	 * @return boolean
 	 */
 	public function url() {
+		$url         = WPSEO_Frontend::get_instance()->canonical( false, false );
+		$unpaged_url = WPSEO_Frontend::get_instance()->canonical( false, true );
+
+		/*
+		 * If the unpaged URL is the same as the normal URL but just with pagination added, use that.
+		 * This makes sure we always use the unpaged URL when we can, but doesn't break for overridden canonicals.
+		 */
+		if ( is_string( $unpaged_url ) && strpos( $url, $unpaged_url ) === 0 ) {
+			$url = $unpaged_url;
+		}
+
 		/**
 		 * Filter: 'wpseo_opengraph_url' - Allow changing the OpenGraph URL.
 		 *
 		 * @api string $unsigned Canonical URL.
 		 */
-		$url = apply_filters( 'wpseo_opengraph_url', WPSEO_Frontend::get_instance()->canonical( false ) );
+		$url = apply_filters( 'wpseo_opengraph_url', $url );
 
 		if ( is_string( $url ) && $url !== '' ) {
 			$this->og_tag( 'og:url', esc_url( $url ) );
@@ -369,6 +344,7 @@ class WPSEO_OpenGraph {
 			'az_AZ', // Azerbaijani.
 			'be_BY', // Belarusian.
 			'bg_BG', // Bulgarian.
+			'bp_IN', // Bhojpuri.
 			'bn_IN', // Bengali.
 			'br_FR', // Breton.
 			'bs_BA', // Bosnian.
@@ -383,17 +359,14 @@ class WPSEO_OpenGraph {
 			'de_DE', // German.
 			'el_GR', // Greek.
 			'en_GB', // English (UK).
-			'en_IN', // English (India).
 			'en_PI', // English (Pirate).
 			'en_UD', // English (Upside Down).
 			'en_US', // English (US).
+			'em_ZM',
 			'eo_EO', // Esperanto.
-			'es_CL', // Spanish (Chile).
-			'es_CO', // Spanish (Colombia).
 			'es_ES', // Spanish (Spain).
 			'es_LA', // Spanish.
 			'es_MX', // Spanish (Mexico).
-			'es_VE', // Spanish (Venezuela).
 			'et_EE', // Estonian.
 			'eu_ES', // Basque.
 			'fa_IR', // Persian.
@@ -414,11 +387,14 @@ class WPSEO_OpenGraph {
 			'hi_IN', // Hindi.
 			'hr_HR', // Croatian.
 			'hu_HU', // Hungarian.
+			'ht_HT', // Haitian Creole.
 			'hy_AM', // Armenian.
 			'id_ID', // Indonesian.
 			'ig_NG', // Igbo.
 			'is_IS', // Icelandic.
 			'it_IT', // Italian.
+			'ik_US',
+			'iu_CA',
 			'ja_JP', // Japanese.
 			'ja_KS', // Japanese (Kansai).
 			'jv_ID', // Javanese.
@@ -427,6 +403,7 @@ class WPSEO_OpenGraph {
 			'km_KH', // Khmer.
 			'kn_IN', // Kannada.
 			'ko_KR', // Korean.
+			'ks_IN', // Kashmiri.
 			'ku_TR', // Kurdish (Kurmanji).
 			'ky_KG', // Kyrgyz.
 			'la_VA', // Latin.
@@ -451,14 +428,20 @@ class WPSEO_OpenGraph {
 			'nl_BE', // Dutch (Belgie).
 			'nl_NL', // Dutch.
 			'nn_NO', // Norwegian (nynorsk).
+			'nr_ZA', // Southern Ndebele.
+			'ns_ZA', // Northern Sotho.
 			'ny_MW', // Chewa.
+			'om_ET', // Oromo.
 			'or_IN', // Oriya.
 			'pa_IN', // Punjabi.
 			'pl_PL', // Polish.
 			'ps_AF', // Pashto.
 			'pt_BR', // Portuguese (Brazil).
 			'pt_PT', // Portuguese (Portugal).
+			'qc_GT', // Quiché.
 			'qu_PE', // Quechua.
+			'qr_GR',
+			'qz_MM', // Burmese (Zawgyi).
 			'rm_CH', // Romansh.
 			'ro_RO', // Romanian.
 			'ru_RU', // Russian.
@@ -467,12 +450,15 @@ class WPSEO_OpenGraph {
 			'sc_IT', // Sardinian.
 			'se_NO', // Northern Sami.
 			'si_LK', // Sinhala.
+			'su_ID', // Sundanese.
 			'sk_SK', // Slovak.
 			'sl_SI', // Slovenian.
 			'sn_ZW', // Shona.
 			'so_SO', // Somali.
 			'sq_AL', // Albanian.
 			'sr_RS', // Serbian.
+			'ss_SZ', // Swazi.
+			'st_ZA', // Southern Sotho.
 			'sv_SE', // Swedish.
 			'sw_KE', // Swahili.
 			'sy_SY', // Syriac.
@@ -484,12 +470,15 @@ class WPSEO_OpenGraph {
 			'tk_TM', // Turkmen.
 			'tl_PH', // Filipino.
 			'tl_ST', // Klingon.
+			'tn_BW', // Tswana.
 			'tr_TR', // Turkish.
+			'ts_ZA', // Tsonga.
 			'tt_RU', // Tatar.
 			'tz_MA', // Tamazight.
 			'uk_UA', // Ukrainian.
 			'ur_PK', // Urdu.
 			'uz_UZ', // Uzbek.
+			've_ZA', // Venda.
 			'vi_VN', // Vietnamese.
 			'wo_SN', // Wolof.
 			'xh_ZA', // Xhosa.
@@ -567,37 +556,13 @@ class WPSEO_OpenGraph {
 	/**
 	 * Create new WPSEO_OpenGraph_Image class and get the images to set the og:image.
 	 *
-	 * @param string|boolean $image Optional image URL.
+	 * @param string|bool $image Optional. Image URL.
+	 *
+	 * @return void
 	 */
 	public function image( $image = false ) {
-		$opengraph_images = new WPSEO_OpenGraph_Image( $image );
-
-		foreach ( $opengraph_images->get_images() as $img ) {
-			$this->og_tag( 'og:image', esc_url( $img ) );
-
-			if ( 0 === strpos( $img, 'https://' ) ) {
-				$this->og_tag( 'og:image:secure_url', esc_url( $img ) );
-			}
-		}
-
-		$dimensions = $opengraph_images->get_dimensions();
-
-		if ( ! empty( $dimensions['width'] ) ) {
-			$this->og_tag( 'og:image:width', absint( $dimensions['width'] ) );
-		}
-
-		if ( ! empty( $dimensions['height'] ) ) {
-			$this->og_tag( 'og:image:height', absint( $dimensions['height'] ) );
-		}
-	}
-
-	/**
-	 * Fallback method for plugins using image_output.
-	 *
-	 * @param string $image Image URL.
-	 */
-	public function image_output( $image ) {
-		$this->image( $image );
+		$opengraph_image = new WPSEO_OpenGraph_Image( $image, $this );
+		$opengraph_image->show();
 	}
 
 	/**
@@ -652,6 +617,7 @@ class WPSEO_OpenGraph {
 			if ( $ogdesc === '' ) {
 				$ogdesc = WPSEO_Taxonomy_Meta::get_meta_without_term( 'desc' );
 			}
+			$ogdesc = wpseo_replace_vars( $ogdesc, get_queried_object() );
 		}
 
 		// Strip shortcodes if any.
@@ -741,10 +707,10 @@ class WPSEO_OpenGraph {
 
 		$terms = get_the_category();
 
-		if ( ! is_wp_error( $terms ) && ( is_array( $terms ) && $terms !== array() ) ) {
+		if ( ! is_wp_error( $terms ) && is_array( $terms ) && ! empty( $terms ) ) {
 			// We can only show one section here, so we take the first one.
-			$this->og_tag( 'article:section', $terms[0]->name );
-
+			$term = reset( $terms );
+			$this->og_tag( 'article:section', $term->name );
 			return true;
 		}
 
@@ -772,15 +738,63 @@ class WPSEO_OpenGraph {
 			}
 		}
 
-		$pub = get_the_date( DATE_W3C );
+		$post = get_post();
+
+		$pub = mysql2date( DATE_W3C, $post->post_date_gmt, false );
 		$this->og_tag( 'article:published_time', $pub );
 
-		$mod = get_the_modified_date( DATE_W3C );
+		$mod = mysql2date( DATE_W3C, $post->post_modified_gmt, false );
 		if ( $mod !== $pub ) {
 			$this->og_tag( 'article:modified_time', $mod );
 			$this->og_tag( 'og:updated_time', $mod );
 		}
 
 		return true;
+	}
+
+	/**
+	 * Outputs the Facebook app_id.
+	 *
+	 * @link https://developers.facebook.com/docs/reference/opengraph/object-type/article/
+	 *
+	 * @return void
+	 */
+	public function app_id() {
+		$app_id = WPSEO_Options::get( 'fbadminapp', '' );
+		if ( $app_id !== '' ) {
+			$this->og_tag( 'fb:app_id', $app_id );
+		}
+	}
+
+	/* ********************* DEPRECATED METHODS ********************* */
+
+	/**
+	 * Outputs the site owner.
+	 *
+	 * @link https://developers.facebook.com/docs/reference/opengraph/object-type/article/
+	 * @return void
+	 *
+	 * @deprecated 7.1
+	 * @codeCoverageIgnore
+	 */
+	public function site_owner() {
+		// As this is a frontend method, we want to make sure it is not displayed for non-logged in users.
+		if ( function_exists( 'wp_get_current_user' ) && current_user_can( 'manage_options' ) ) {
+			_deprecated_function( 'WPSEO_OpenGraph::site_owner', '7.1', null );
+		}
+	}
+
+	/**
+	 * Fallback method for plugins using image_output.
+	 *
+	 * @param string|bool $image Image URL.
+	 *
+	 * @deprecated 7.4
+	 * @codeCoverageIgnore
+	 */
+	public function image_output( $image = false ) {
+		_deprecated_function( 'WPSEO_OpenGraph::image_output', '7.4', 'WPSEO_OpenGraph::image' );
+
+		$this->image( $image );
 	}
 } /* End of class */

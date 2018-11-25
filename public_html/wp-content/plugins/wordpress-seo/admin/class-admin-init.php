@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\Admin
  */
 
@@ -41,9 +43,21 @@ class WPSEO_Admin_Init {
 		add_action( 'admin_init', array( $this, 'yoast_plugin_compatibility_notification' ), 15 );
 		add_action( 'admin_init', array( $this, 'yoast_plugin_suggestions_notification' ), 15 );
 		add_action( 'admin_init', array( $this, 'recalculate_notice' ), 15 );
+		add_action( 'admin_init', array( $this, 'unsupported_php_notice' ), 15 );
 		add_action( 'admin_init', array( $this->asset_manager, 'register_assets' ) );
 		add_action( 'admin_init', array( $this, 'show_hook_deprecation_warnings' ) );
 		add_action( 'admin_init', array( 'WPSEO_Plugin_Conflict', 'hook_check_for_plugin_conflicts' ) );
+		add_action( 'admin_init', array( $this, 'handle_notifications' ), 15 );
+		add_action( 'admin_notices', array( $this, 'permalink_settings_notice' ) );
+		add_action( 'admin_enqueue_scripts', array( $this->asset_manager, 'register_wp_assets' ), PHP_INT_MAX );
+
+		$listeners   = array();
+		$listeners[] = new WPSEO_Post_Type_Archive_Notification_Handler();
+
+		/** @var WPSEO_Listener $listener */
+		foreach ( $listeners as $listener ) {
+			$listener->listen();
+		}
 
 		$this->load_meta_boxes();
 		$this->load_taxonomy_class();
@@ -51,6 +65,24 @@ class WPSEO_Admin_Init {
 		$this->load_admin_user_class();
 		$this->load_xml_sitemaps_admin();
 		$this->load_plugin_suggestions();
+	}
+
+	/**
+	 * Handles the notifiers for the dashboard page.
+	 *
+	 * @return void
+	 */
+	public function handle_notifications() {
+		/**
+		 * @var WPSEO_Notification_Handler[] $handlers
+		 */
+		$handlers   = array();
+		$handlers[] = new WPSEO_Post_Type_Archive_Notification_Handler();
+
+		$notification_center = Yoast_Notification_Center::get();
+		foreach ( $handlers as $handler ) {
+			$handler->handle( $notification_center );
+		}
 	}
 
 	/**
@@ -79,9 +111,11 @@ class WPSEO_Admin_Init {
 
 		$current_url   = ( is_ssl() ? 'https://' : 'http://' );
 		$current_url  .= sanitize_text_field( $_SERVER['SERVER_NAME'] ) . sanitize_text_field( $_SERVER['REQUEST_URI'] );
-		$customize_url = add_query_arg( array(
-			'url' => urlencode( $current_url ),
-		), wp_customize_url() );
+		$query_args    = array(
+			'autofocus[control]' => 'blogdescription',
+			'url'                => urlencode( $current_url ),
+		);
+		$customize_url = add_query_arg( $query_args, wp_customize_url() );
 
 		$info_message = sprintf(
 			/* translators: 1: link open tag; 2: link close tag. */
@@ -148,7 +182,7 @@ class WPSEO_Admin_Init {
 
 		$info_message .= sprintf(
 			/* translators: %1$s resolves to the opening tag of the link to the comment setting page, %2$s resolves to the closing tag of the link */
-			__( 'Simply uncheck the box before "Break comments into pages..." on the %1$sComment settings page%2$s.', 'wordpress-seo' ),
+			__( 'To fix this uncheck the box in front of the "Break comments into pages..." on the %1$sComment settings page%2$s.', 'wordpress-seo' ),
 			'<a href="' . esc_url( admin_url( 'options-discussion.php' ) ) . '">',
 			'</a>'
 		);
@@ -181,7 +215,7 @@ class WPSEO_Admin_Init {
 
 		// We are checking against the WordPress internal translation.
 		// @codingStandardsIgnoreLine
-		$translated_blog_description = __( 'Just another WordPress site' );
+		$translated_blog_description = __( 'Just another WordPress site', 'default' );
 
 		return $translated_blog_description === $blog_description || $default_blog_description === $blog_description;
 	}
@@ -409,6 +443,16 @@ class WPSEO_Admin_Init {
 	}
 
 	/**
+	 * Creates an unsupported PHP version notification in the notification center.
+	 *
+	 * @return void
+	 */
+	public function unsupported_php_notice() {
+		$notification_center = Yoast_Notification_Center::get();
+		$notification_center->remove_notification_by_id( 'wpseo-dismiss-unsupported-php' );
+	}
+
+	/**
 	 * Check if the user has dismissed the given notice (by $notice_name)
 	 *
 	 * @param string $notice_name The name of the notice that might be dismissed.
@@ -526,7 +570,8 @@ class WPSEO_Admin_Init {
 				'textdomain'  => 'wordpress-seo',
 				'plugin_name' => 'Yoast SEO',
 				'hook'        => 'wpseo_admin_promo_footer',
-			), false
+			),
+			false
 		);
 
 		$message = $i18n_module->get_promo_message();
@@ -661,5 +706,22 @@ class WPSEO_Admin_Init {
 	 */
 	private function has_postname_in_permalink() {
 		return ( false !== strpos( get_option( 'permalink_structure' ), '%postname%' ) );
+	}
+
+	/**
+	 * Shows a notice on the permalink settings page.
+	 */
+	public function permalink_settings_notice() {
+		global $pagenow;
+
+		if ( $pagenow === 'options-permalink.php' ) {
+			$warning = esc_html__( 'WARNING:', 'wordpress-seo' );
+			/* translators: %1$s and %2$s expand to <i> items to emphasize the word in the middle. */
+			$message = esc_html__( 'Changing your permalinks settings can seriously impact your search engine visibility. It should almost %1$s never %2$s be done on a live website.', 'wordpress-seo' );
+			$link = esc_html__( 'Learn about why permalinks are important for SEO.', 'wordpress-seo' );
+			$url = WPSEO_Shortlinker::get( 'https://yoa.st/why-permalinks/' );
+
+			echo '<div class="notice notice-warning"><p><strong>' . $warning . '</strong><br>' . sprintf( $message, '<i>', '</i>' ) . '<br><a href="' . $url . '" target="_blank">' . $link . '</a></p></div>';
+		}
 	}
 }

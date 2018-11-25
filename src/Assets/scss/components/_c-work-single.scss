@@ -36,3 +36,41 @@
 
     }
 }
+
+.c-carousel-controls {
+    display: flex;
+    padding: $spacing--small 0 0 0 
+}
+
+
+.carousel-button {
+    border: 1px solid #4a4a4a;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    border-radius: 3px;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    outline: 0;
+
+    &:hover {
+        cursor: pointer;
+      }
+
+    svg {
+        height: 14px;
+    }
+}
+
+.v-m-carousel__control--prev {
+    .carousel-button {
+        margin-right: $spacing--tiny;
+
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}

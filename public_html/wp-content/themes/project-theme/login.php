@@ -6,7 +6,7 @@
 	$url = site_url();
 	
     if ( is_user_logged_in() ) {
-        wp_redirect( $url . '../../works' );
+        wp_redirect( $url . '/works' );
         exit;
     } 
  

@@ -1,5 +1,7 @@
 <?php
 /**
+ * WPSEO plugin file.
+ *
  * @package WPSEO\XML_Sitemaps
  */
 
@@ -69,10 +71,10 @@ class WPSEO_Sitemaps {
 		add_action( 'wpseo_hit_sitemap_index', array( $this, 'hit_sitemap_index' ) );
 		add_action( 'wpseo_ping_search_engines', array( __CLASS__, 'ping_search_engines' ) );
 
-		$this->timezone    = new WPSEO_Sitemap_Timezone();
-		$this->router      = new WPSEO_Sitemaps_Router();
-		$this->renderer    = new WPSEO_Sitemaps_Renderer();
-		$this->cache       = new WPSEO_Sitemaps_Cache();
+		$this->timezone = new WPSEO_Sitemap_Timezone();
+		$this->router   = new WPSEO_Sitemaps_Router();
+		$this->renderer = new WPSEO_Sitemaps_Renderer();
+		$this->cache    = new WPSEO_Sitemaps_Cache();
 
 		if ( ! empty( $_SERVER['SERVER_PROTOCOL'] ) ) {
 			$this->http_protocol = sanitize_text_field( $_SERVER['SERVER_PROTOCOL'] );
@@ -351,7 +353,7 @@ class WPSEO_Sitemaps {
 	 */
 	public function build_root_map() {
 
-		$links = array();
+		$links            = array();
 		$entries_per_page = $this->get_entries_per_page();
 
 		foreach ( $this->providers as $provider ) {
@@ -417,9 +419,15 @@ class WPSEO_Sitemaps {
 	}
 
 	/**
-	 * Make a request for the sitemap index so as to cache it before the arrival of the search engines.
+	 * Makes a request to the sitemap index to cache it before the arrival of the search engines.
+	 *
+	 * @return void
 	 */
 	public function hit_sitemap_index() {
+		if ( ! $this->cache->is_enabled() ) {
+			return;
+		}
+
 		wp_remote_get( WPSEO_Sitemaps_Router::get_base_url( 'sitemap_index.xml' ) );
 	}
 
