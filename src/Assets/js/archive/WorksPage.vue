@@ -20,7 +20,7 @@
           :pageNumberOverride="pageNumberOverride"
           v-if="filteredWorks.length"
         />
-        <h3 v-else>No results found..</h3>
+        <h3 v-else>No results found.</h3>
       </div>
   </div>
 </template>

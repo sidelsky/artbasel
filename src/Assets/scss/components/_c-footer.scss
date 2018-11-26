@@ -3,4 +3,13 @@
     background-color: $dark;
     height: 76px;
     line-height: 76px;
+
+    a {
+        text-decoration: none;
+        color: currentColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

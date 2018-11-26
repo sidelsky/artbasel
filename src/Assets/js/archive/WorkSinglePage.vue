@@ -96,7 +96,11 @@ export default {
   },
   computed: {
     formattedPrice() {
-      return formatter.format(this.work.price)
+      if( this.price ) {
+      return formatter.format(this.price)
+      } else {
+        return 'Price on request'
+      }
     }
   },
   methods: {

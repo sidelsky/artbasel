@@ -8,7 +8,7 @@ $wordpress = new WordpressHelper;
 	<footer class="u-section c-footer">
 
 		<div class="u-l-container">		
-			<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?></p>
+			<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.hauserwirth.com/terms-and-conditions" target="_blank">Terms &amp; Conditions</a></p>
 		</div>
 
 	</footer>

@@ -1,9 +1,9 @@
 .c-login {
     background-color: $dark;
     height: calc(100vh - 368px);
-
+    
     &__footer {
-        color: $white;
+        color: lighten(grey, 10%);
         text-align: center;
         display: block;
         width: 100%;
