@@ -1,6 +1,6 @@
 <?php if( $data['showPromo'] ) : ?>
   <section class="u-section">
-    <div class="u-l-container--center" <?= $data['background'] ? 'style="background-image:url('. $data['background'] .')"' : ''; ?> data-in-viewport>   
+    <div class="u-l-container--center" data-in-viewport>   
         <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding">   
         
         <!-- Content -->

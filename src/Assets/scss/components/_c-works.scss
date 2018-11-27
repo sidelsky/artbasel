@@ -29,13 +29,13 @@
         //Desktop
         @include media('>desktop') {
             lost-column: 4/12 3 0;
-        }
+        } 
     }
 
     //Figure
     &__figure {
         position: relative;
-        margin-bottom: $spacing--tiny;
+        margin-bottom: $spacing--medium;
         display: flex;
         align-items: flex-end;
         position: relative;

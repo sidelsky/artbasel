@@ -18,25 +18,16 @@ $wordpress = new WordpressHelper;
 		<?php 
 		wp_footer(); 
 
-		// $googleAnalyticID = get_field('google_analytics', 'option');
+		$googleAnalyticID = get_field('google_analytics', 'option');
 		
-		// //Google Analytics
-		// $template = 'c-google-analytics';
-		// $data = [
-		// 	'UA' => $googleAnalyticID
-		// ];
+		//Google Analytics
+		$template = 'c-google-analytics';
+		$data = [
+			'UA' => $googleAnalyticID
+		];
 
-		// echo $render->view('Components/' . $template, $data);
+		echo $render->view('Components/' . $template, $data);
 
 		?>
-
-		<!-- 
-			Chat 
-			<div class="chat">
-				<div class="chat__button"></div>
-				<div class="chat__modal"></div>
-			</div>
-		-->
-		
 	</body>
 </html>
