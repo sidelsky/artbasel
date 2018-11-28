@@ -5,6 +5,7 @@
       <VCard
         v-for="work in paginatedData"
         :key="work.title"
+        :surname="work.surname"
         :title="work.title"
         :date="work.date"
         :medium="work.medium"

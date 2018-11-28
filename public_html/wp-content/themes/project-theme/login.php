@@ -27,7 +27,7 @@
 
 			?>	
 				<div class="c-login__footer">
-					<a href="mailto:weneedanemailaddress@me.com" class="c-login__href">Request a Password</a>
+					<a href="mailto:passwordrequest@hauserwirth.com" class="c-login__href">Request a Password</a>
 					<p class="c-login__detail">Please note: By submitting a password request you are consenting to join the Hauser &amp; Wirth mailing list.</p>
 				</div>
 		</div>

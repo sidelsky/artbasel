@@ -5,7 +5,7 @@
         
         <!-- Content -->
           <div class="u-column u-column--half-width <?= $data['position'] ? '' : 'u-column--half-width--right'; ?>">
-              <h2 class="c-site-headings c-site-headings--uppercase c-site-headings--underline c-site-headings--h2"><?= $data['title'] ?></h2>
+              <h2 class="c-site-headings c-site-headings--h2"><?= $data['title'] ?></h2>
               <?php foreach($data['items'] as $promo) { ?>
                 <div class="c-promo-card">
                     

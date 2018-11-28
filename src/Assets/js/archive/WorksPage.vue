@@ -38,7 +38,7 @@ export default {
       showFilter: false,
       sort: {
         order: 'asc',
-        key: 'title'
+        key: 'surname'
       }
     }
   },

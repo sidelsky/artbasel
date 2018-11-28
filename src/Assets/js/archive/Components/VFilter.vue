@@ -12,7 +12,7 @@
                       checked
                       name="sortby"
                       value="artist-a-z"
-                      @input="$emit('order', { order: 'asc', key: 'title' })"
+                      @input="$emit('order', { order: 'asc', key: 'surname' })"
                     >
                     <span>Artist A-Z</span>
                   </label>

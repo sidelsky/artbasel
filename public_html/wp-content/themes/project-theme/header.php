@@ -35,11 +35,20 @@ $wordpress = new WordpressHelper;
 		 * Theme Data
 		 */
 		include('Theme/Data/en.php');
+
+		$homeUrl = get_home_url();
+		$worksUrl = '/works';
+
+		if( is_archive( 'works' ) || is_single( ) ) {
+			$baseUrl = $worksUrl;
+		} else {
+			$baseUrl = $homeUrl;
+		}
 	?>
 
 
 	<header class="c-header">
-		<a href="/" class="c-header__link">
+		<a href="<?= $baseUrl ?>" class="c-header__link">
 			<svg class="c-header__icon">
 				<use xlink:href='#shape-hauserwirth-logo'></use>
 			</svg>

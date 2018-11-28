@@ -15,18 +15,21 @@
 
     $loop = new WP_Query(
         [
-            'post_type' => 'works',
-            'posts_per_page' => -1,
-            'orderby' => 'post_date',
-            'order' => 'ASC'
+          'post_type' => 'works',
+          'posts_per_page' => -1,
+          'meta_key' => 'surname',
+          'orderby' => 'meta_value',
+          'order' => 'ASC'
         ]
      );
 
     $artwork = [];
 
     while ( $loop->have_posts() ) : $loop->the_post();
+
       $artwork[] = [
         'title' => get_the_title(),
+        'surname' => get_field('surname'),
         'image' => get_the_post_thumbnail_url(),
         'date' => get_field('date'),
         'description' => get_field('description'),
