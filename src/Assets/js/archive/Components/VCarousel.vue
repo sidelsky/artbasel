@@ -171,10 +171,14 @@ export default {
 
   &__control {
     cursor: pointer;
-    opacity: .3;
     transition: opacity .3s;
 
-    &:hover {
+    button {
+      transition: all .3s;
+      opacity: .7;
+    }
+
+    button:hover {
       opacity: 1;
     }
   }

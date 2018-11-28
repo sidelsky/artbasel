@@ -42,13 +42,15 @@
                   </svg>
                 </span>
 
-                <ul class="c-carousel-controls">
+
+                <ul class="c-carousel-controls" v-if="totalSlideNumber > 1">
                   <li class="v-m-carousel__control v-m-carousel__control--prev" @click="previous()">
                     <button
                       :class="[
                         currentSlide > 0 ? '' : 'disabled',
                         'carousel-button'
                       ]"
+                      :disabled="currentSlide > 0"
                     ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
 
@@ -56,7 +58,9 @@
                     <button :class="[
                       currentSlide < totalSlideNumber - 1 ? '' : 'disabled',
                       'carousel-button'
-                    ]"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
+                    ]"
+                    :disabled="currentSlide < totalSlideNumber - 1"
+                    ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
                 </ul>
 
@@ -127,6 +131,9 @@ export default {
 </script>
 <style lang="css">
   .c-carousel-controls .disabled {
-    display: none;
+    cursor: default;
+    opacity: .3 !important;
+    background: none !important;
+    border: 1px solid #aaa !important;
   }
 </style>
