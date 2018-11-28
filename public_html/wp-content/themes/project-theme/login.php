@@ -2,16 +2,16 @@
 /**
  * Template Name: Login - page template
  */
- 
+
 	// $url = site_url();
-	
+
     // if ( is_user_logged_in() ) {
     //     wp_redirect( $url . '/works' );
     //     exit;
-    // } 
- 
+    // }
+
     include("header.php");
- 
+
 ?>
 
 <section class="u-section c-login">
@@ -25,9 +25,9 @@
 					echo do_shortcode( '[theme-my-login show_title=0]' );
 				}
 
-			?>	
+			?>
 				<div class="c-login__footer">
-					<a href="mailto:passwordrequest@hauserwirth.com" class="c-login__href">Request a Password</a>
+					<a href="mailto:passwordrequest@hauserwirth.com?subject=Hello, I would like a password to enter the online viewing room for Art Basel Miami Beach 2018" target="_blank" class="c-login__href">Request a Password</a>
 					<p class="c-login__detail">Please note: By submitting a password request you are consenting to join the Hauser &amp; Wirth mailing list.</p>
 				</div>
 		</div>

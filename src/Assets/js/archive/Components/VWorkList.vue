@@ -1,10 +1,10 @@
 <template lang="html">
   <div class="c-works">
 
-    <div class="c-works__list" name="fade">
+    <div class="c-works__list" name="fade" ref="cardlist">
       <VCard
         v-for="work in paginatedData"
-        :key="work.title"
+        :key="work.id"
         :surname="work.surname"
         :title="work.title"
         :date="work.date"
@@ -27,6 +27,7 @@
 
 <script>
 import VCard from './VCard'
+import getCoords from '../../helpers/get-coords'
 
 export default {
   components: {
@@ -39,6 +40,7 @@ export default {
   data () {
     return {
       pageNumber: 0,
+      listOffset: 0,
       size: 12
     }
   },
@@ -47,11 +49,16 @@ export default {
       this.pageNumber = newVal
     }
   },
+  mounted () {
+    this.listOffset = getCoords(this.$refs.cardlist)
+  },
   methods: {
     nextPage () {
+      window.scrollTo(0, this.listOffset.top - 100)
       this.pageNumber += 1
     },
     prevPage () {
+      window.scrollTo(0, this.listOffset.top - 100)
       this.pageNumber -= 1
     }
   },
