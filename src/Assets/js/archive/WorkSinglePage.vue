@@ -32,7 +32,7 @@
                 <h2 class="c-works__title">{{ work.title }}</h2>
                 <div class="c-works__date">{{ work.date }}</div>
                 <div class="c-works__medium">{{ work.medium }}</div>
-                <div class="c-works__dimensions">{{ work.dimension }}</div>
+                <div class="c-works__dimensions">{{ work.dimensions }}</div>
                 <div class="c-works__price">{{ formattedPrice }}</div>
                 <span class="c-works__href-wrap">
                   <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.titlw }&body=Hello, I'd to inquire about ${work.title}...`"
