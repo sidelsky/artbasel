@@ -12,7 +12,7 @@
                       checked
                       name="sortby"
                       value="artist-a-z"
-                      @input="$emit('order', { order: 'asc', key: 'surname' })"
+                      @change="$emit('order', { order: 'asc', key: 'surname' })"
                     >
                     <span>Artist A-Z</span>
                   </label>
@@ -24,7 +24,7 @@
                       type="radio"
                       name="sortby"
                       value="price-low-to-high"
-                      @input="$emit('order', { order: 'asc', key: 'price' })"
+                      @change="$emit('order', { order: 'asc', key: 'price' })"
                     >
                     <span>Price: low to high</span>
                   </label>
@@ -36,7 +36,7 @@
                       type="radio"
                       name="sortby"
                       value="price-high-to-low"
-                      @input="$emit('order', { order: 'desc', key: 'price' })"
+                      @change="$emit('order', { order: 'desc', key: 'price' })"
                     >
                     <span>Price: high to low</span>
                   </label>
@@ -53,7 +53,7 @@
                     name="bymedium"
                     :checked="index === 0"
                     :value="item.value"
-                    @input="$emit('input', { type: 'medium', key: item.value })
+                    @change="$emit('input', { type: 'medium', key: item.value })
                   ">
                     <span>{{ item.label }}</span>
                   </label>
@@ -69,7 +69,7 @@
                     name="byprice"
                     :checked="index === 0"
                     :value="item.value"
-                    @input="$emit('input', { type: 'priceRange', key: item.value })
+                    @change="$emit('input', { type: 'priceRange', key: item.value })
                   ">
                     <span>{{ item.label }}</span>
                   </label>
@@ -85,7 +85,7 @@
                     name="bydecade"
                     :checked="index === 0"
                     :value="item.value"
-                    @input="$emit('input', { type: 'decade', key: item.value })
+                    @change="$emit('input', { type: 'decade', key: item.value })
                   ">
                     <span>{{ item.label }}</span>
                   </label>

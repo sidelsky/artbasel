@@ -42,6 +42,9 @@ export default {
       }
     }
   },
+  mounted () {
+
+  },
   methods: {
     isEmpty (obj) {
       for (let key in obj) {
