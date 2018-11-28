@@ -13,6 +13,7 @@
         :image="work.image"
         :price="work.price"
         :link="work.link"
+        :mediumText="work.mediumText"
       />
     </div>
 

@@ -15,6 +15,7 @@ include("header.php"); ?>
       'image' => get_the_post_thumbnail_url(),
       'date' => get_field('date'),
       'medium' => get_field('medium'),
+      'mediumText' => get_field('medium_free_text'),
       'dimensions' => get_field('dimensions'),
       'price' => get_field('price'),
       'learn_more' => get_the_permalink()

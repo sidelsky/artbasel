@@ -8,7 +8,7 @@
 
 ?>
 
-  
+
 <script>
 
 <?php
@@ -34,6 +34,7 @@
         'date' => get_field('date'),
         'description' => get_field('description'),
         'medium' => get_field('medium'),
+        'mediumText' => get_field('medium_free_text'),
         'decade' => get_field('decade'),
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
