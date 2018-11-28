@@ -31,7 +31,7 @@
             <div class="c-work-single__column">
                 <h2 class="c-works__title">{{ work.title }}</h2>
                 <div class="c-works__date">{{ work.date }}</div>
-                <div class="c-works__medium">{{ work.medium }}</div>
+                <div class="c-works__medium">{{ work.mediumText }}</div>
                 <div class="c-works__dimensions">{{ work.dimensions }}</div>
                 <div class="c-works__price">{{ formattedPrice }}</div>
                 <span class="c-works__href-wrap">
@@ -96,8 +96,8 @@ export default {
   },
   computed: {
     formattedPrice() {
-      if( this.price ) {
-      return formatter.format(this.price)
+      if ( this.work.price ) {
+        return formatter.format(this.work.price)
       } else {
         return 'Price on request'
       }
