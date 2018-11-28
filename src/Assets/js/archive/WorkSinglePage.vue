@@ -125,3 +125,8 @@ export default {
   }
 }
 </script>
+<style lang="css">
+  .c-carousel-controls .disabled {
+    display: none;
+  }
+</style>
