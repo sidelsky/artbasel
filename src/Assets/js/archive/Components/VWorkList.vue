@@ -34,8 +34,7 @@ export default {
     VCard
   },
   props: {
-    works: Array,
-    pageNumberOverride: Number
+    works: Array
   },
   data () {
     return {
@@ -45,8 +44,8 @@ export default {
     }
   },
   watch: {
-    pageNumberOverride(newVal) {
-      this.pageNumber = newVal
+    works (newVal) {
+      this.pageNumber = 0
     }
   },
   mounted () {

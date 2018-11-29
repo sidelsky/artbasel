@@ -17,7 +17,6 @@
 
         <VWorkList
           :works="sortedWorks"
-          :pageNumberOverride="pageNumberOverride"
           v-if="filteredWorks.length"
         />
         <h3 v-else>No results found.</h3>
@@ -33,7 +32,6 @@ import VFilter from './components/VFilter'
 export default {
   data () {
     return {
-      pageNumberOverride: null,
       selectedFilters: {},
       showFilter: false,
       sort: {
@@ -57,12 +55,10 @@ export default {
     handleSortClick (payload) {
       let { order, key } = payload
       this.sort = payload
-      this.pageNumberOverride = 0
     },
     handleFilterClick (payload) {
       let { type, key } = payload
       this.$set(this.selectedFilters, type, key)
-      this.pageNumberOverride = 0
     }
   },
   computed: {
@@ -76,12 +72,18 @@ export default {
     },
     filteredWorks () {
       let filters = this.selectedFilters
+      let sort = this.sort
 
       if (!this.isEmpty(filters)) {
         return this.calculatedWorks.filter(work => {
           let filterConditions = []
           for (let key in filters) {
             let render = work[key] === filters[key] || filters[key] === 'all' ? true : false
+
+            if (key === 'priceRange' && filters[key] !== 'all' && !work.price) {
+              render = false
+            }
+
             filterConditions.push(render)
           }
 
@@ -99,8 +101,16 @@ export default {
       let sortedWorks = _.sortBy(this.filteredWorks, this.sort.key)
 
       if (this.sort.order === 'desc') {
-        return _.reverse(sortedWorks)
+        sortedWorks = _.reverse(sortedWorks)
       }
+
+      sortedWorks = sortedWorks.filter(work => {
+        if (this.sort.key === 'price' && !work.price) {
+          return false
+        }
+
+        return true
+      })
 
       return sortedWorks
     }
