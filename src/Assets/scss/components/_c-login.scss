@@ -1,6 +1,8 @@
 .c-login {
     background-color: $dark;
-    height: calc(100vh - 368px);
+    @include media('>tablet') {
+        height: calc(100vh - 392px);
+      }
     
     &__footer {
         color: lighten(grey, 10%);
@@ -19,4 +21,8 @@
     &__detail {
         font-size: 14px;
     }
+}
+
+.tml-rememberme-wrap {
+    padding: 0 $spacing--small;
 }

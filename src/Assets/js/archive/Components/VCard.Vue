@@ -13,9 +13,8 @@
     <span class="c-works__href-wrap"><a :href="link" class="c-works__href">Learn more</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>
     <span class="c-works__href-wrap">
       <a
-        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${title}&body=Hello, I'd to inquire about ${title}...`"
+        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${title}&body=Hello, I'd to inquire about ${title}`"
         class="c-works__href"
-        target="_blank"
       >Inquire to purchase</a>
       <svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
     </span>

@@ -8,7 +8,7 @@ $wordpress = new WordpressHelper;
 	<footer class="u-section c-footer">
 
 		<div class="u-l-container">		
-			<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.hauserwirth.com/terms-and-conditions" target="_blank">Terms &amp; Conditions</a></p>
+			<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.hauserwirth.com/terms-and-conditions" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
 		</div>
 
 	</footer>
