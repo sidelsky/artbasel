@@ -8,7 +8,7 @@
 
 ?>
 
-
+  
 <script>
 
 <?php
@@ -28,14 +28,12 @@
     while ( $loop->have_posts() ) : $loop->the_post();
 
       $artwork[] = [
-        'id' => get_the_id(),
         'title' => get_the_title(),
         'surname' => get_field('surname'),
         'image' => get_the_post_thumbnail_url(),
         'date' => get_field('date'),
         'description' => get_field('description'),
         'medium' => get_field('medium'),
-        'mediumText' => get_field('medium_free_text'),
         'decade' => get_field('decade'),
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
