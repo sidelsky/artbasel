@@ -17,6 +17,7 @@ include("header.php"); ?>
       'medium' => get_field('medium'),
       'dimensions' => get_field('dimensions'),
       'price' => get_field('price'),
+      'sold' => get_field('sold'),
       'learn_more' => get_the_permalink()
     ];
 

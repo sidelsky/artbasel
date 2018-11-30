@@ -1,0 +1,14 @@
+.c-sold {
+   background-color: red;
+   $dimensions: 10px;
+   width: $dimensions; 
+   height: $dimensions;
+   margin-right: 5px;  
+   border-radius: 50px;
+   display: none;
+ 
+   &--active {
+      display: inline-block;
+   }
+
+}

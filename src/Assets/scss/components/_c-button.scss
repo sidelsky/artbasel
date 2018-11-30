@@ -8,8 +8,8 @@
     font-family: font-family(primary, medium);
     transition: padding ease-in-out 300ms;
     border-radius: 3px;
-
+ 
     &:hover {
         padding: $spacing--x-small $spacing--x-medium;
     }
-}
+}     

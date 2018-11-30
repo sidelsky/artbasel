@@ -33,7 +33,13 @@
                 <div class="c-works__date">{{ work.date }}</div>
                 <div class="c-works__medium">{{ work.mediumText }}</div>
                 <div class="c-works__dimensions">{{ work.dimensions }}</div>
-                <div class="c-works__price">{{ formattedPrice }}</div>
+                  <div class="c-works__price">
+                  <span
+                  :class="[
+                          'c-sold',
+                          `${ work.sold ? 'c-sold--active' : ''}`
+                        ]"
+                  ></span>{{ formattedPrice }}</div>
                 <span class="c-works__href-wrap">
                   <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
                   class="c-works__href">Inquire to purchase</a>
@@ -100,10 +106,16 @@ export default {
   },
   computed: {
     formattedPrice() {
-      if ( this.work.price ) {
-        return formatter.format(this.work.price)
+      if( this.work.sold != 1 ) {
+      
+        if ( this.work.price ) {
+          return formatter.format(this.work.price)
+        } else {
+          return 'Price on request'
+        }
+
       } else {
-        return 'Price on request'
+        return 'Sold'
       }
     }
   },

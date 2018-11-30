@@ -12,6 +12,7 @@
         :dimensions="work.dimensions"
         :image="work.image"
         :price="work.price"
+        :sold="work.sold"
         :link="work.link"
         :mediumText="work.mediumText"
       />

@@ -9,7 +9,13 @@
     <div class="c-works__date">{{ date }}</div>
     <div class="c-works__medium">{{ mediumText }}</div>
     <div class="c-works__dimensions">{{ dimensions }}</div>
-    <div class="c-works__price">{{ formattedPrice }}</div>
+    <div class="c-works__price">
+      <span
+      :class="[
+              'c-sold',
+              `${ sold ? 'c-sold--active' : ''}`
+            ]"
+      ></span>{{ formattedPrice }}</div>
     <span class="c-works__href-wrap"><a :href="link" class="c-works__href">Learn more</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>
     <span class="c-works__href-wrap">
       <a
@@ -36,15 +42,22 @@ export default {
     dimensions: String,
     image: String,
     price: Number,
+    sold: Boolean,
     link: String,
     mediumText: String
   },
   computed: {
     formattedPrice() {
-      if( this.price ) {
-      return formatter.format(this.price)
+      if( this.sold != 1 ) {
+      
+        if ( this.price ) {
+          return formatter.format(this.price)
+        } else {
+          return 'Price on request'
+        }
+
       } else {
-        return 'Price on request'
+        return 'Sold'
       }
     }
   }

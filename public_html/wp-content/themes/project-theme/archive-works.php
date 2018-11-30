@@ -38,6 +38,7 @@
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
         'priceRange' => get_field('price_range'),
+        'sold' => get_field('sold'),
         'link' => get_the_permalink()
       ];
 
