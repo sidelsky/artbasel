@@ -15,9 +15,9 @@ include("header.php"); ?>
       'image' => get_the_post_thumbnail_url(),
       'date' => get_field('date'),
       'medium' => get_field('medium'),
+      'mediumText' => get_field('medium_free_text'),
       'dimensions' => get_field('dimensions'),
       'price' => get_field('price'),
-      'sold' => get_field('sold'),
       'learn_more' => get_the_permalink()
     ];
 
@@ -30,7 +30,7 @@ include("header.php"); ?>
 
     <script>
       var GALLERY = <?php echo json_encode($images) ?>;
-      var WORK = <?php echo json_encode($work) ?>
+      var WORK = <?php echo json_encode($work) ?>;
     </script>
 
     <section class="u-section light-grey ">

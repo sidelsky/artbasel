@@ -17,7 +17,7 @@
 <section class="u-section c-login">
 	<div class="u-l-container--center" data-in-viewport>
 		<div class="u-l-container u-l-container--row u-l-vertical-padding">
-			<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre grey-copy">Enter Password to View</h3>
+			<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre grey-copy">Enter email to view</h3>
 			<?php
 				//$blog_name = get_bloginfo();
 				//Lets check to see if the 'Theme my login plugin is active...
@@ -26,10 +26,34 @@
 				}
 
 			?>
+			<div class="tml tml-login" id="theme-my-login1">
+				<!-- Begin Mailchimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="https://hauserwirth.us14.list-manage.com/subscribe/post?u=4f151f95a189c32d4d5205374&amp;id=84804d8fbd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate loginform1" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<div class="mc-field-group">
+							<p class="tml-user-pass-wrap">
+								<input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="Email address">
+							</p>
+							</div>
+							<div id="mce-responses" class="clear">
+								<div class="response" id="mce-error-response" style="display:none"></div>
+								<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f151f95a189c32d4d5205374_84804d8fbd" tabindex="-1" value=""></div>
+							<div class="clear" style="display:none;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</div>
+					</form>
+				</div>
+				<!--End mc_embed_signup-->
+			</div>
+
+			<?php/*
 				<div class="c-login__footer">
-					<a href="mailto:passwordrequest@hauserwirth.com?subject=Password request — Art Basel Miami Beach 2018&body=Hello, I would like a password to enter the online viewing room for Art Basel Miami Beach 2018" class="c-login__href">Request a Password</a>
+					<a href="mailto:passwordrequest@hauserwirth.com?subject=Password request - Online Viewing Room&body=Hello, I would like a password to enter the Online Viewing Room" class="c-login__href">Request a Password</a>
 					<p class="c-login__detail">Please note: By submitting a password request you are consenting to join the Hauser &amp; Wirth mailing list.</p>
 				</div>
+				*/?>
 		</div>
 	</div>
 </section>

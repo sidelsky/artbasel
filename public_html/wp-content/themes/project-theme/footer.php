@@ -14,7 +14,10 @@ $wordpress = new WordpressHelper;
 	</footer>
 
 </div>
-
+		<script src="https://pawelgrzybek.com/siema/assets/siema.min.js"></script>
+		<script>
+			new Siema();
+		</script>
 		<?php 
 		wp_footer(); 
 
@@ -29,5 +32,6 @@ $wordpress = new WordpressHelper;
 		echo $render->view('Components/' . $template, $data);
 
 		?>
+
 	</body>
 </html>
