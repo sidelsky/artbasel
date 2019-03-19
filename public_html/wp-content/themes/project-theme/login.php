@@ -17,7 +17,7 @@
 <section class="u-section c-login">
 	<div class="u-l-container--center" data-in-viewport>
 		<div class="u-l-container u-l-container--row u-l-vertical-padding">
-			<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre grey-copy">Enter email to view</h3>
+			<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre grey-copy">Enter email to view<br></h3>
 			<?php
 				//$blog_name = get_bloginfo();
 				//Lets check to see if the 'Theme my login plugin is active...
@@ -28,6 +28,26 @@
 			?>
 			<div class="tml tml-login" id="theme-my-login1">
 				<!-- Begin Mailchimp Signup Form -->
+				<?php /*
+				
+				<div id="mc_embed_signup">
+					<form class="sign-up">
+
+						<!-- <label for="mce-EMAIL">Email Address </label>
+						<input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="your@email-address.com"> -->
+<!-- 
+						<label for="mce-FNAME">First Name </label>
+						<input type="text" value="" name="FNAME" class="required" id="mce-FNAME"> -->
+
+						<input type="email" value="" name="EMAIL" class="required email input" id="mce-EMAIL" placeholder="example@email.com">
+
+						<input type="hidden" value="Yes" name="WPRESS">
+						<input class="button btn c-button" type="submit" value="Submit">
+
+					</form>
+				</div>
+				
+
 				<div id="mc_embed_signup">
 					<form action="https://hauserwirth.us14.list-manage.com/subscribe/post?u=4f151f95a189c32d4d5205374&amp;id=84804d8fbd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate loginform1" novalidate>
 						<div id="mc_embed_signup_scroll">
@@ -41,12 +61,19 @@
 								<div class="response" id="mce-success-response" style="display:none"></div>
 							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f151f95a189c32d4d5205374_84804d8fbd" tabindex="-1" value=""></div>
-							<div class="clear" style="display:none;"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+							<div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="button c-button"></div>
 						</div>
 					</form>
+					*/ ?>
+
+					<!--G form -->
+					<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
+					<p class="c-footer"><small>By submitting your email you are consenting to join the Hauser &amp; Wirth mailing list.<small></p>
 				</div>
+				
 				<!--End mc_embed_signup-->
 			</div>
+			
 
 			<?php/*
 				<div class="c-login__footer">
@@ -58,4 +85,6 @@
 	</div>
 </section>
 
+
 <?php include("footer.php"); ?>
+

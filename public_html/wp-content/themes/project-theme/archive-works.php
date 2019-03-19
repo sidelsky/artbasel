@@ -27,15 +27,22 @@
 
     while ( $loop->have_posts() ) : $loop->the_post();
 
+    // $title = get_the_title( $this->get_the_ID() );
+    // $title = esc_html( strip_tags( $title ) ); //ADD - strip tags before sending to template
+
+    // return $title;
+
       $artwork[] = [
         'id' => get_the_id(),
         'title' => get_the_title(),
+        'subPostTitle' => get_field('sub_post_title'),
         'surname' => get_field('surname'),
         'image' => get_the_post_thumbnail_url(),
         'date' => get_field('date'),
         'description' => get_field('description'),
         'medium' => get_field('medium'),
         'mediumText' => get_field('medium_free_text'),
+        'mediumChinese' => get_field('medium_chinese'),
         'decade' => get_field('decade'),
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
@@ -89,17 +96,40 @@
 
 ?>
 
+<?php if($gallery) : ?>
+	<section class="u-section" id="carousel">
+		<div class="zu-l-container--center" data-in-viewport>
+      <div class="zu-l-container zu-l-container--row">
+      
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+          <?php foreach ($gallery as $galleryImage) :  ?>
+            <div class="swiper-slide">
+              <figure class="swiper-slide__image" style="background-image:url('<?php echo $galleryImage['sizes']['large']; ?>');"></figure>
+            </div>
+          <?php endforeach; ?>
+          </div>
+          
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          
+        </div>
 
-<?php foreach ($gallery as $galleryImage) :  ?>
-	<img src="<?php echo $galleryImage['sizes']['thumbnail']; ?>" alt="<?php echo $galleryImage['alt']; ?>" />
-<?php endforeach; ?>
+        <?php /*
+				<ul class="c-carousel-controls">
+					<li class="v-m-carousel__control v-m-carousel__control--prev">
+						<button class="disabled carousel-button prev swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
+					</li>
+					<li class="v-m-carousel__control v-m-carousel__control--next">
+						<button class="carousel-button next swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
+					</li>
+        </ul>
+        */ ?>
 
-<div class="yo">
-  <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-  <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-  <div><img src="https://pawelgrzybek.com/siema/assets/siema--pink.svg" alt="Siema image" /></div>
-  <div><img src="https://pawelgrzybek.com/siema/assets/siema--yellow.svg" alt="Siema image" /></div>
-</div>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
 		  
  
 <section class="u-section ">

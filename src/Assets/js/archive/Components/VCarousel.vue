@@ -156,7 +156,7 @@ export default {
     .v-m-carousel-slide {
       height: 100%;
       min-width: 100%;
-      justify-content: center;
+      //justify-content: center;
       align-items: center;
     }
   }

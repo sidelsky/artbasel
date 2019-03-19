@@ -5,10 +5,12 @@
         <img :src="image" :alt="title" class="c-works__image">
       </a>
     </figure>
-    <h2 class="c-works__title">{{ title }}</h2>
+    <h2 class="c-works__title"><span v-html="title"></span></h2>
+    <h2 class="c-works__title"><span v-html="subPostTitle"></span></h2>
     <div class="c-works__date">{{ date }}</div>
-    <div class="c-works__medium">{{ mediumText }}</div>
-    <div class="c-works__dimensions">{{ dimensions }}</div>
+    <div class="c-works__medium"><span v-html="mediumText"></span></div>
+    <div class="c-works__medium"><span v-html="mediumChinese"></span></div>
+    <div class="c-works__dimensions"><span v-html="dimensions"></span></div>
     <div class="c-works__price">
       <span
       :class="[
@@ -16,29 +18,34 @@
               `${ sold ? 'c-sold--active' : ''}`
             ]"
       ></span>{{ formattedPrice }}</div>
-    <span class="c-works__href-wrap"><a :href="link" class="c-works__href">Learn more</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>
+    <span class="c-works__href-wrap"><a :href="link" class="c-works__href">Learn more / 了解更多</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>
     <span class="c-works__href-wrap">
       <a
         :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${title}&body=Hello, I'd like to inquire about: ${title}`"
         class="c-works__href"
-      >Inquire to purchase</a>
+      >Inquire to purchase / 作品咨詢</a>
       <svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
     </span>
   </article>
 </template>
 
 <script>
+
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
+  currencyDisplay: 'code',
+  useGrouping: true,
   minimumFractionDigits: 2
 })
 
 export default {
   props: {
     title: String,
+    subPostTitle: String,
     date: String,
     medium: String,
+    mediumChinese: String,
     dimensions: String,
     image: String,
     price: Number,

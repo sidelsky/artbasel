@@ -24,7 +24,7 @@ $wordpress = new WordpressHelper;
 		<link data-n-head="true" rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon/favicon-16x16.png"/>
 		<link data-n-head="true" rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon/favicon-32x32.png"/>
 		<link data-n-head="true" rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon/favicon-96x96.png"/>
-
+		
 		<?php wp_head(); ?>
 	</head>
 
@@ -54,22 +54,25 @@ $wordpress = new WordpressHelper;
 			</svg>
 		</a>
 	</header>
-
-
+ 
 	<section class="u-section ">
 		<div class="u-l-container--center" data-in-viewport>
-			<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--bottom">
+			<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
 				<?php
 				
 				$front_page_id = '6';
 				$currentPost_id = get_the_ID();
+				$content = get_post_field('post_content', $front_page_id);
 
 				if( is_front_page() ) {
 				 	the_title('<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">','</h1>'); 
 				} elseif( is_archive( 'works' ) ) {
 					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_the_title( $front_page_id ) . '</h1>';
+					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_field( 'works_title_chinese', $front_page_id ) . '</h1>';
+					echo '<div class="c-works-content">' . $content . '</div>';
 				} else {
 					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_the_title( $currentPost_id ) . '</h1>';
+					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_field( 'sub_post_title', $currentPost_id ) . '</h1>';
 				}
 
 				?>

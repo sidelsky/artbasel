@@ -83,6 +83,7 @@
         font-family: font-family(primary, regular);
         color: $light;
         line-height: 1.7;
+        margin-bottom: 10px;
     }
 
     //Demensions
@@ -133,4 +134,9 @@
 
 .v-m-carousel-slide img {
     cursor: pointer;
+}
+
+.c-works-content {
+    text-align: center;
+    padding-top: 20px;
 }

@@ -12,6 +12,7 @@
           <img :src="currentImage" class="c-lightbox__image">
         </div>
         <article class="c-work-single">
+
             <div class="c-work-single__column">
               <figure class="c-work-single__figure">
                 <VCarousel :currentSlide="currentSlide" @calculatedTotalSlides="(total) => this.totalSlideNumber = total">
@@ -28,11 +29,14 @@
                 </VCarousel>
               </figure>
             </div>
+
             <div class="c-work-single__column">
-                <h2 class="c-works__title">{{ work.title }}</h2>
+                <h2 class="c-works__title"><span v-html="work.title"></span></h2>
+                <h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
                 <div class="c-works__date">{{ work.date }}</div>
-                <div class="c-works__medium">{{ work.mediumText }}</div>
-                <div class="c-works__dimensions">{{ work.dimensions }}</div>
+                <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
+                <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
+                <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
                   <div class="c-works__price">
                   <span
                   :class="[
@@ -42,7 +46,7 @@
                   ></span>{{ formattedPrice }}</div>
                 <span class="c-works__href-wrap">
                   <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-                  class="c-works__href">Inquire to purchase</a>
+                  class="c-works__href">Inquire to purchase / 作品咨詢</a>
                   <svg class="u-icon c-works__icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
                   </svg>
@@ -70,7 +74,9 @@
                   </li>
                 </ul>
 
-                <a href="/works" class="c-button">View all available works</a>
+                <a href="/works" class="c-button">View all available works / 查看所有可售作品</a>
+                <p style="margin-bottom: 20px;">&nbsp;</p>
+                <div class="s-content" v-html="work.content"></div>
             </div>
         </article>
       </div>
@@ -84,6 +90,8 @@ import VCarouselSlide from './components/VCarouselSlide'
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
+  currencyDisplay: 'code',
+  useGrouping: true,
   minimumFractionDigits: 2
 })
 
