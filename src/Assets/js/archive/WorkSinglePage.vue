@@ -46,7 +46,7 @@
                   ></span>{{ formattedPrice }}</div>
                 <span class="c-works__href-wrap">
                   <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-                  class="c-works__href">Inquire to purchase / 作品咨詢</a>
+                  class="c-works__href">Inquire to purchase</a>
                   <svg class="u-icon c-works__icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
                   </svg>
@@ -74,7 +74,7 @@
                   </li>
                 </ul>
 
-                <a href="/works" class="c-button">View all available works / 查看所有可售作品</a>
+                <a href="/works" class="c-button">View all available works</a>
                 <p style="margin-bottom: 20px;">&nbsp;</p>
                 <div class="s-content" v-html="work.content"></div>
             </div>

@@ -68,7 +68,7 @@
 
 					<!--G form -->
 					<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
-					<p class="c-footer"><small>By submitting your email you are consenting to join the Hauser &amp; Wirth mailing list.<small></p>
+					<p class="c-footer"><small>By submitting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsletter. The Newsletter is sent in accordance with our <a href="https://www.hauserwirth.com/terms-and-conditions" target="_blank">Privacy Policy</a> and to advertise products and services of Hauser & Wirth Ltd. and its affiliated companies.<small></p>
 				</div>
 				
 				<!--End mc_embed_signup-->

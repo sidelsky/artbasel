@@ -83,6 +83,10 @@
         font-family: font-family(primary, regular);
         color: $light;
         line-height: 1.7;
+        //margin-bottom: 10px;
+    }
+
+    &__date {
         margin-bottom: 10px;
     }
 
@@ -98,7 +102,8 @@
     //Price
     &__price {
         font-family: font-family(primary, bold);
-        line-height: 4;
+        margin-bottom: 10px;
+        //line-height: 4;
     }
 
     //Href Wrap

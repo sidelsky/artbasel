@@ -18,9 +18,15 @@
     }
 
     small {
-        font-size: 12px;
+        font-size: 15px;
+        margin: 0 auto;
         color: lighten(grey, 10%);
         line-height: 1.5;
         display: block; 
+        max-width: 540px;
+
+        a {
+            text-decoration: underline;
+        }
     }
 }  
