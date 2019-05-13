@@ -100,7 +100,26 @@
 	<section class="u-section" id="carousel">
 		<div class="zu-l-container--center" data-in-viewport>
       <div class="zu-l-container zu-l-container--row">
+
+
+        <?php foreach ($gallery as $galleryImage) :  ?>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>">
+
+          <!-- <div class="parallax-window__content">
+            <h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">
+              <?php echo get_the_title( $front_page_id ); ?><br>
+              <span class="c-site-headings c-site-headings--h1--small"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
+          </h1>
+            <?php if($content ) : ?>
+              <div class="c-works-content"><?php $content; ?></div>
+            <?php endif; ?>
+          </div> -->
+
+        </div>
+        <?php endforeach; ?>
       
+        
+        <?php/*
         <div class="swiper-container">
           <div class="swiper-wrapper">
           <?php foreach ($gallery as $galleryImage) :  ?>
@@ -109,22 +128,10 @@
             </div>
           <?php endforeach; ?>
           </div>
-          
           <!-- Add Pagination -->
           <div class="swiper-pagination"></div>
-          
         </div>
-
-        <?php /*
-				<ul class="c-carousel-controls">
-					<li class="v-m-carousel__control v-m-carousel__control--prev">
-						<button class="disabled carousel-button prev swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
-					</li>
-					<li class="v-m-carousel__control v-m-carousel__control--next">
-						<button class="carousel-button next swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
-					</li>
-        </ul>
-        */ ?>
+        */?>
 
 			</div>
 		</div>

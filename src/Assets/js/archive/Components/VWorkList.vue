@@ -25,6 +25,7 @@
       <span>{{pageNumber + 1}}/{{ pageCount }}</span>
       <button @click="nextPage" :disabled="pageNumber >= pageCount -1">Next</button>
     </div>
+    
   </div>
 </template>
 

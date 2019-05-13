@@ -22,9 +22,12 @@ $wordpress = new WordpressHelper;
 </footer>
 
 </div>
-
+		<?php/*
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+		*/?>
+		
+		<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 		<?php 
 		wp_footer(); 
 
@@ -37,6 +40,7 @@ $wordpress = new WordpressHelper;
 		];
 
 		echo $render->view('Components/' . $template, $data);
+		
 
 		?>
 		

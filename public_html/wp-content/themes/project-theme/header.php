@@ -55,29 +55,46 @@ $wordpress = new WordpressHelper;
 		</a>
 	</header>
  
-	<section class="u-section ">
-		<div class="u-l-container--center" data-in-viewport>
-			<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
-				<?php
+	
+			<?php
+			$front_page_id = '6';
+			$currentPost_id = get_the_ID();
+			$content = get_post_field('post_content', $front_page_id);
+
+			if( is_front_page() ) { ?>
+			<section class="u-section ">
+				<div class="u-l-container--center" data-in-viewport>
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+						<?php the_title('<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">','</h1>'); ?>
+					</div>
+				</div>
+			</section>
+			<?php } elseif( is_archive( 'works' ) ) { ?>
+			<section class="u-section parallax-window__content">
+				<div class="u-l-container--center" data-in-viewport>
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+					<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">
+						<?php echo get_the_title( $front_page_id ); ?><br>
+						<span class="c-site-headings c-site-headings--h1--small"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
+					</h1>
+						<?php if($content ) : ?>
+							<div class="c-works-content"><?php $content; ?></div>
+						<?php endif; ?>
+					</div>
+				</div>
+			</section>
+			<?php } else { ?>
+			<section class="u-section ">
+				<div class="u-l-container--center" data-in-viewport>
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+						<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre "><?php echo get_the_title( $currentPost_id ); ?></h1>
+						<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre "><?php echo get_field( 'sub_post_title', $currentPost_id ); ?></h1>
+					</div>
+				</div>
+			</section>
+			<?php } ?>
 				
-				$front_page_id = '6';
-				$currentPost_id = get_the_ID();
-				$content = get_post_field('post_content', $front_page_id);
 
-				if( is_front_page() ) {
-				 	the_title('<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">','</h1>'); 
-				} elseif( is_archive( 'works' ) ) {
-					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_the_title( $front_page_id ) . '</h1>';
-					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_field( 'works_title_chinese', $front_page_id ) . '</h1>';
-					echo '<div class="c-works-content">' . $content . '</div>';
-				} else {
-					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_the_title( $currentPost_id ) . '</h1>';
-					echo '<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">' . get_field( 'sub_post_title', $currentPost_id ) . '</h1>';
-				}
 
-				?>
-			</div>
-		</div>
-	</section>
 
 <main role="main" class="main">
