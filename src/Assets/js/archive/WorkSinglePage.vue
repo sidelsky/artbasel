@@ -12,6 +12,7 @@
           <img :src="currentImage" class="c-lightbox__image">
         </div>
         <article class="c-work-single">
+
             <div class="c-work-single__column">
               <figure class="c-work-single__figure">
                 <VCarousel :currentSlide="currentSlide" @calculatedTotalSlides="(total) => this.totalSlideNumber = total">
@@ -28,16 +29,24 @@
                 </VCarousel>
               </figure>
             </div>
+
             <div class="c-work-single__column">
-                <h2 class="c-works__title">{{ work.title }}</h2>
+                <h2 class="c-works__title"><span v-html="work.title"></span></h2>
+                <h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
                 <div class="c-works__date">{{ work.date }}</div>
-                <div class="c-works__medium">{{ work.mediumText }}</div>
-                <div class="c-works__dimensions">{{ work.dimensions }}</div>
-                <div class="c-works__price">{{ formattedPrice }}</div>
+                <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
+                <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
+                <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
+                  <div class="c-works__price">
+                  <span
+                  :class="[
+                          'c-sold',
+                          `${ work.sold ? 'c-sold--active' : ''}`
+                        ]"
+                  ></span>{{ formattedPrice }}</div>
                 <span class="c-works__href-wrap">
-                  <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title }&body=Hello, I'd to inquire about ${work.title}...`"
-                  class="c-works__href"
-                  target="_blank">Inquire to purchase</a>
+                  <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
+                  class="c-works__href">Inquire to purchase</a>
                   <svg class="u-icon c-works__icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
                   </svg>
@@ -51,7 +60,7 @@
                         currentSlide > 0 ? '' : 'disabled',
                         'carousel-button'
                       ]"
-                      :disabled="currentSlide > 0"
+                      
                     ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
 
@@ -60,12 +69,14 @@
                       currentSlide < totalSlideNumber - 1 ? '' : 'disabled',
                       'carousel-button'
                     ]"
-                    :disabled="currentSlide < totalSlideNumber - 1"
+                    
                     ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
                 </ul>
 
                 <a href="/works" class="c-button">View all available works</a>
+                <p style="margin-bottom: 20px;">&nbsp;</p>
+                <div class="s-content" v-html="work.content"></div>
             </div>
         </article>
       </div>
@@ -79,6 +90,8 @@ import VCarouselSlide from './components/VCarouselSlide'
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
+  currencyDisplay: 'code',
+  useGrouping: true,
   minimumFractionDigits: 2
 })
 
@@ -101,10 +114,16 @@ export default {
   },
   computed: {
     formattedPrice() {
-      if ( this.work.price ) {
-        return formatter.format(this.work.price)
+      if( this.work.sold != 1 ) {
+      
+        if ( this.work.price ) {
+          return formatter.format(this.work.price)
+        } else {
+          return 'Price on request'
+        }
+
       } else {
-        return 'Price on request'
+        return 'Sold'
       }
     }
   },

@@ -17,14 +17,14 @@ export default {
 
 <style lang="scss">
 .v-m-carousel-slide {
-  padding: 1rem;
+  //padding: 1rem;
   user-select: none;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    object-position: center;
+    object-position: center top;
   }
 }
 </style>

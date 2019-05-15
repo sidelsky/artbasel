@@ -42,7 +42,7 @@
 }
 
 
-.input {
+.input, .medium {
 	$font-size: 1.4rem;
 	background-color: $white;
 	border: solid 1px rgba($white, .6);
@@ -77,44 +77,47 @@
 
 	text-align: center;
 
-	.submit {
-		background-color: transparent;
-		// $dimentions: 48px;
-		// height: $dimentions;
-		width: 100%;
-        @include set-font-size(2rem, 2rem, 2rem, 2rem);
-        font-family: font-family(primary, semibold);
-		background-color: rgba($black, .2);
-        border: solid 1px #4a4a4a;
-        color: $white;
-		transition: ease .2s opacity 1s;
-        border-radius: 3px;
-        line-height: 3.5;
 
-		&:hover {
-			transition: ease-in-out .2s background-position;
-			background-position: 15px center;
-			cursor: pointer;
-		}
 
-		&:disabled {
-			background-position: center center;
-            opacity: 0;
-            display: none;
-            visibility: hidden;
-
-			&:hover {
-				background-position: 15px center;
-				cursor: default;
-			}
-
-		}
-
-	}
 
 }
 
-.error {
+.submit, #gform_submit_button_1, input[type='submit'] {
+    background-color: transparent;
+    // $dimentions: 48px;
+    // height: $dimentions;
+    width: 100%;
+    @include set-font-size(2rem, 2rem, 2rem, 2rem);
+    font-family: font-family(primary, semibold);
+    background-color: rgba($black, .2);
+    border: solid 1px #4a4a4a;
+    color: $white;
+    transition: ease .2s opacity 1s;
+    border-radius: 3px;
+    line-height: 3.5;
+
+    &:hover {
+        transition: ease-in-out .2s background-position;
+        background-position: 15px center;
+        cursor: pointer;
+    }
+
+    &:disabled {
+        background-position: center center;
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+
+        &:hover {
+            background-position: 15px center;
+            cursor: default;
+        }
+
+    }
+
+}
+
+.error, .validation_error, .gfield_description.validation_message {
     color: $white;
     margin-bottom: $spacing--tiny;
     text-align: center;
@@ -146,4 +149,10 @@
         max-width: 540px;
     }
 
+}
+
+
+.gfield_label {
+    display: none;
+    visibility: hidden;
 }

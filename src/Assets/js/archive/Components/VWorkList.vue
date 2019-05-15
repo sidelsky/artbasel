@@ -7,11 +7,14 @@
         :key="work.id"
         :surname="work.surname"
         :title="work.title"
+        :subPostTitle="work.subPostTitle"
         :date="work.date"
         :medium="work.medium"
+        :mediumChinese="work.mediumChinese"
         :dimensions="work.dimensions"
         :image="work.image"
         :price="work.price"
+        :sold="work.sold"
         :link="work.link"
         :mediumText="work.mediumText"
       />
@@ -22,6 +25,7 @@
       <span>{{pageNumber + 1}}/{{ pageCount }}</span>
       <button @click="nextPage" :disabled="pageNumber >= pageCount -1">Next</button>
     </div>
+    
   </div>
 </template>
 

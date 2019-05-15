@@ -7,6 +7,7 @@
  *
 */
  
+/*
 function redirect_homepage() {
  
   //Get the home url - Output example: http://www.example.com.

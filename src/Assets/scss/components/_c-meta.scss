@@ -6,7 +6,6 @@
 
     &__filter-button {
       text-transform: uppercase;
-      //margin: 0 0 $spacing--small -9px;
       margin-bottom: $spacing--small;
       padding: $spacing--small;
       border: solid 1px $dark;
@@ -130,4 +129,9 @@
 
    [type="radio"]:checked + span:after {
         transform: scale(1.02);
+   }
+
+
+   .c-works__href-wrap {
+     margin-bottom: 20px;
    }

@@ -1,15 +1,15 @@
 .c-button {
     color: $dark;
-    padding: $spacing--x-small;
-    display: inline-block;
-    margin: $spacing--large 0;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
     border: solid 1px currentColor;
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
     font-family: font-family(primary, medium);
-    transition: padding ease-in-out 300ms;
+    //transition: padding ease-in-out 300ms;
     border-radius: 3px;
-
+ 
     &:hover {
-        padding: $spacing--x-small $spacing--x-medium;
+        //padding: $spacing--x-small $spacing--x-medium;
     }
-}
+}     

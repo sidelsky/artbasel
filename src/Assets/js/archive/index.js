@@ -6,9 +6,11 @@ Vue.config.productionTip = false
 
 if (window.WORKS) {
   new Vue({
-    components: { WorksPage },
+    components: {
+      WorksPage
+    },
     template: '<WorksPage :works="works" :filters="filters" />',
-    data () {
+    data() {
       return {
         works: window.WORKS,
         filters: window.FILTERS
@@ -19,9 +21,11 @@ if (window.WORKS) {
 
 if (window.GALLERY) {
   new Vue({
-    components: { WorkSinglePage },
+    components: {
+      WorkSinglePage
+    },
     template: '<WorkSinglePage :gallery="gallery" :work="work" />',
-    data () {
+    data() {
       return {
         gallery: window.GALLERY,
         work: window.WORK

@@ -1,8 +1,12 @@
 .c-footer {
     color: $white;
     background-color: $dark;
-    height: 76px;
-    line-height: 76px;
+    padding: $spacing--small;
+    text-align: center;
+
+    @include media('>tablet') {
+        height: 100px;
+    }
 
     a {
         text-decoration: none;
@@ -12,4 +16,17 @@
             text-decoration: underline;
         }
     }
-}
+
+    small {
+        font-size: 15px;
+        margin: 0 auto;
+        color: lighten(grey, 10%);
+        line-height: 1.5;
+        display: block; 
+        max-width: 540px;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}  
