@@ -17,6 +17,8 @@
 /public_html/wp-content/debug.log
 /public_html/wp-content/languages/
 /public_html/hot
+/public_html/wordpress
+
 .env
 mix.*.js
 mix.js
