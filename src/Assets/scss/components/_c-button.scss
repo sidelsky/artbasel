@@ -6,10 +6,7 @@
     border: solid 1px currentColor;
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
     font-family: font-family(primary, medium);
-    //transition: padding ease-in-out 300ms;
+    cursor: pointer;
+    user-select: none;
     border-radius: 3px;
- 
-    &:hover {
-        //padding: $spacing--x-small $spacing--x-medium;
-    }
-}     
+}

@@ -3,7 +3,7 @@
 
     <div class="c-works__list" name="fade" ref="cardlist">
       <VCard
-        v-for="work in paginatedData"
+        v-for="work in list"
         :key="work.id"
         :surname="work.surname"
         :title="work.title"
@@ -20,12 +20,10 @@
       />
     </div>
 
-    <div class="c-pagination c-pagination--bottom">
-      <button @click="prevPage" :disabled="pageNumber === 0">Previous</button>
-      <span>{{pageNumber + 1}}/{{ pageCount }}</span>
-      <button @click="nextPage" :disabled="pageNumber >= pageCount -1">Next</button>
+    <div class="c-pagination c-pagination--bottom" v-if="!allLoaded">
+      <div class="c-button" @click="loadMore">Load More</div>
     </div>
-    
+
   </div>
 </template>
 
@@ -42,9 +40,9 @@ export default {
   },
   data () {
     return {
-      pageNumber: 0,
-      listOffset: 0,
-      size: 12
+      pageNumber: 1,
+      size: 12,
+      list: []
     }
   },
   watch: {
@@ -53,28 +51,20 @@ export default {
     }
   },
   mounted () {
+    this.loadMore()
     this.listOffset = getCoords(this.$refs.cardlist)
   },
   methods: {
-    nextPage () {
-      window.scrollTo(0, this.listOffset.top - 100)
+    loadMore () {
+      if (this.allLoaded) return
+      const chunk = this.size * this.pageNumber
+      this.list = this.works.slice(0, chunk)
       this.pageNumber += 1
-    },
-    prevPage () {
-      window.scrollTo(0, this.listOffset.top - 100)
-      this.pageNumber -= 1
     }
   },
   computed: {
-    paginatedData () {
-      const start = this.pageNumber * this.size
-      const end = start + this.size
-      return this.works.slice(start, end)
-    },
-    pageCount () {
-      let l = this.works.length
-      let s = this.size
-      return Math.ceil(l / s)
+    allLoaded () {
+      return this.list.length === this.works.length
     }
   }
 }
