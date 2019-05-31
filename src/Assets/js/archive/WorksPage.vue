@@ -21,6 +21,16 @@
         />
         <h3 v-else>No results found.</h3>
       </div>
+      <cookie-law>
+        <div slot-scope="props">
+          <button class="skew" @click="props.accept"><span>I accept</span></button>
+          <p>
+            This site uses 🍪
+          </p>
+          <button class="skew" @click="props.close"><span>Ignore me</span></button>
+        </div>
+      
+      </cookie-law>
   </div>
 </template>
 
@@ -28,6 +38,7 @@
 import _ from 'lodash'
 import VWorkList from './components/VWorkList'
 import VFilter from './components/VFilter'
+import CookieLaw from 'vue-cookie-law'
 
 export default {
   data () {
@@ -121,7 +132,8 @@ export default {
   },
   components: {
     VWorkList,
-    VFilter
+    VFilter,
+    CookieLaw
   }
 }
 </script>
