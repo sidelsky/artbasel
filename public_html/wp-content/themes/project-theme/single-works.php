@@ -21,7 +21,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'mediumChinese' => get_field('medium_chinese'),
       'dimensions' => get_field('dimensions'),
       'price' => get_field('price'),
-      'learn_more' => get_the_permalink()
+      'learn_more' => get_the_permalink(),
+      'sold' => get_field('sold'),
     ];
 
     $gallery = get_field('image_gallery');

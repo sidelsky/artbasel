@@ -185,6 +185,11 @@ table {
   border: solid 1px currentColor;
   font-size: 1.4rem;
   font-family: "hind-medium", Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   border-radius: 3px;
 }
 

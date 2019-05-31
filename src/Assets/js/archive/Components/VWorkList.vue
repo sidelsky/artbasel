@@ -41,20 +41,25 @@ export default {
   data () {
     return {
       pageNumber: 1,
-      size: 12,
+      size: 6,
       list: []
     }
   },
   watch: {
     works (newVal) {
-      this.pageNumber = 0
+      this.pageNumber = 1
+      this.list = []
+      this.initialize()
     }
   },
   mounted () {
-    this.loadMore()
-    this.listOffset = getCoords(this.$refs.cardlist)
+    this.initialize()
   },
   methods: {
+    initialize () {
+      this.loadMore()
+      this.listOffset = getCoords(this.$refs.cardlist)
+    },
     loadMore () {
       if (this.allLoaded) return
       const chunk = this.size * this.pageNumber

@@ -47,7 +47,8 @@
         'dimensions' => get_field('dimensions'),
         'price' => get_field('price'),
         'priceRange' => get_field('price_range'),
-        'link' => get_the_permalink()
+        'link' => get_the_permalink(),
+        'sold' => get_field('sold')
       ];
 
     endwhile;
