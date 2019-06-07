@@ -60,7 +60,7 @@ export default {
         if ( this.price ) {
           return formatter.format(this.price)
         } else {
-          return 'Price on request'
+          return ''
         }
 
       } else {
