@@ -60,7 +60,8 @@
                 </p>
               </div>
 
-              <div class="c-meta__section">
+              <!-- Price hidden -->
+              <div class="c-meta__section" style="display:none;">
                 <h3 class="c-meta__title">By Price</h3>
                 <p v-for="(item, index) in filters.priceRange" :key="item.label">
                   <label class="c-meta__label">

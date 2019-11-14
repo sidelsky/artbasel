@@ -37,16 +37,20 @@
                 <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
                 <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
                 <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
-                  <div class="c-works__price">
-                  <span
-                  :class="[
-                          'c-sold',
-                          `${ work.sold ? 'c-sold--active' : ''}`
-                        ]"
-                  ></span>{{ formattedPrice }}</div>
+                <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
+
+                <div class="c-works__price">
+                    <span
+                    :class="[
+                            'c-sale-marker',
+                            `${ work.sold ? 'c-sale-marker--sold' : 'c-sale-marker--available'}`
+                          ]"
+                    ></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
+                </div>
+
                 <span class="c-works__href-wrap">
                   <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-                  class="c-works__href">Inquire to purchase</a>
+                  class="c-works__href">Purchase</a>
                   <svg class="u-icon c-works__icon">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
                   </svg>
@@ -60,7 +64,6 @@
                         currentSlide > 0 ? '' : 'disabled',
                         'carousel-button'
                       ]"
-                      
                     ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
                   </li>
 
@@ -74,7 +77,7 @@
                   </li>
                 </ul>
 
-                <a href="/works" class="c-button">View all available works</a>
+                <a href="/works" class="c-button c-button--dark">View all works</a>
                 <p style="margin-bottom: 20px;">&nbsp;</p>
                 <div class="s-content" v-html="work.content"></div>
             </div>
@@ -131,17 +134,21 @@ export default {
     work: Object
   },
   computed: {
-    formattedPrice() {
+    formattedSold() {
       if( this.work.sold != 1 ) {
-      
-        if ( this.work.price ) {
-          return formatter.format(this.work.price)
-        } else {
-          return ''
-        }
-
+        return 'Available'
       } else {
         return 'Sold'
+      }
+    },
+    formattedPrice() {
+      if( this.work.sold != 1 ) {
+        if ( this.work.price ) {
+        //return formatter.format(this.work.price)
+        return this.work.price
+      } else {
+        return ''
+      }
       }
     }
   },
@@ -167,6 +174,7 @@ export default {
   }
 }
 </script>
+
 <style lang="css">
   .c-carousel-controls .disabled {
     cursor: default;

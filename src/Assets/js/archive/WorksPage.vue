@@ -83,7 +83,7 @@ export default {
       return this.works.map(work => {
         return {
           ...work,
-          price: parseInt(work.price, 10)
+          //price: parseInt(work.price, 10)
         }
       })
     },

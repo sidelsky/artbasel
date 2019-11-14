@@ -52,7 +52,7 @@
       ];
 
     endwhile;
-
+    //var_dump( $artwork );
     echo 'var WORKS = ' . json_encode($artwork) . ';';
 
     function createFilters($array) {

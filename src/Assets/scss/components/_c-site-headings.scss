@@ -22,15 +22,16 @@
            }
        }
 
-       //Uppercase title
-       &--uppercase {
-           text-transform: uppercase;
-       }
+        //Uppercase title
+        &--uppercase {
+            text-transform: uppercase;
+        }
 
         //Uppercase title
         &--text-align-center {
             text-align: center;
             width: 100%;
+            margin-bottom: $spacing--small;
         }
  
        //Large title
@@ -39,22 +40,14 @@
            line-height: 1.5;
            color: $dark;
 
-           @include media('>tablet') {
-               //margin-bottom: $spacing--large;
-           }
-
            &--small {
-            @include set-font-size(2.8rem, 3.6rem, 3.6rem, 4rem);
-            margin-bottom: $spacing--tiny;
+            //@include set-font-size(2.8rem, 3.6rem, 3.6rem, 4rem);
+            font-family: font-family(primary, medium);
             text-transform: initial;
             color: currentColor;
-            font-family: font-family(primary, medium);
             line-height: 1.3;
-            
-            @include media('>phone') {
-                font-family: font-family(primary, book);
-            }
-
+            font-size: 15px !important;
+            padding-top: $spacing--small;
            }
        }
 

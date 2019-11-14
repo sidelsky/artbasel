@@ -1,5 +1,4 @@
-.c-sold {
-   background-color: red;
+.c-sale-marker {
    $dimensions: 10px;
    width: $dimensions; 
    height: $dimensions;
@@ -7,8 +6,14 @@
    border-radius: 50px;
    display: none;
  
-   &--active {
+   &--sold {
+      background-color: red; 
       display: inline-block;
    }
 
+   &--available {
+      background-color: green;
+      display: inline-block;
+   } 
+   
 }

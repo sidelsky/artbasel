@@ -62,6 +62,7 @@ $wordpress = new WordpressHelper;
 			$content = get_post_field('post_content', $front_page_id);
 
 			if( is_front_page() ) { ?>
+			
 			<section class="u-section ">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
@@ -69,21 +70,25 @@ $wordpress = new WordpressHelper;
 					</div>
 				</div>
 			</section>
+
 			<?php } elseif( is_archive( 'works' ) ) { ?>
-			<section class="u-section parallax-window__content">
+
+			<section class="u-sectionz parallax-window__content">
 				<div class="u-l-container--center" data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding 	u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--tiny' ?>">
 					<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">
 						<?php echo get_the_title( $front_page_id ); ?><br>
-						<span class="c-site-headings c-site-headings--h1--small"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
 					</h1>
+						<span class="c-site-headings c-site-headings--h1--small c-text-align-centre"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
 						<?php if($content ) : ?>
 							<div class="c-works-content"><?php $content; ?></div>
 						<?php endif; ?>
 					</div>
 				</div>
 			</section>
+
 			<?php } else { ?>
+
 			<section class="u-section ">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
@@ -92,6 +97,7 @@ $wordpress = new WordpressHelper;
 					</div>
 				</div>
 			</section>
+
 			<?php } ?>
 				
 

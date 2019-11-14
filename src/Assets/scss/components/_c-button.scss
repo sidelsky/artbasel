@@ -6,7 +6,15 @@
     border: solid 1px currentColor;
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
     font-family: font-family(primary, medium);
-    cursor: pointer;
+    cursor: pointer; 
     user-select: none;
-    border-radius: 3px;
+    border-radius: 4px;
+    text-align: center;
+ 
+    &--dark {
+
+        background-color: #222222;
+        color: white;
+        display: inline;
+    }
 }

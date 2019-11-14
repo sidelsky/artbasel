@@ -2,6 +2,8 @@
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
     line-height: 2;
     lost-column: 12/12;
+    display: none;
+    visibility: hidden;
 
 
     &__filter-button {
