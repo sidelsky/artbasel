@@ -2,11 +2,25 @@
 use Theme\Model\Single;
 use App\Helper\Render;
 
+include("header.php");
 $render = new Render;
 
-include("header.php");
 
 $single = new Single($post->ID);
-echo $render->view('components/c-single-post', $single->getSingle());
 
+$images = get_field('gallery');
+
+print_r($images);
+
+
+
+?>
+
+<script>
+  var GALLERY = <?php echo json_encode($gallery) ?>;
+</script>
+
+<?php
+// echo $render->view('components/c-single-post', $single->getSingle());
 include("footer.php");
+?>

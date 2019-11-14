@@ -1,11 +1,11 @@
 <?php if( $data['showPromo'] ) : ?>
   <section class="u-section">
-    <div class="u-l-container--center" <?= $data['background'] ? 'style="background-image:url('. $data['background'] .')"' : ''; ?> data-in-viewport>   
+    <div class="u-l-container--center" data-in-viewport>   
         <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding">   
         
         <!-- Content -->
           <div class="u-column u-column--half-width <?= $data['position'] ? '' : 'u-column--half-width--right'; ?>">
-              <h2 class="c-site-headings c-site-headings--uppercase c-site-headings--underline c-site-headings--h2"><?= $data['title'] ?></h2>
+              <h2 class="c-site-headings c-site-headings--h2"><?= $data['title'] ?></h2>
               <?php foreach($data['items'] as $promo) { ?>
                 <div class="c-promo-card">
                     

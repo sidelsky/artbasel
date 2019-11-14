@@ -2,8 +2,8 @@
 Contributors: mndpsingh287
 Tags: Page Duplicate, Post duplicate, duplicate custom posts, duplicate page, duplicate post, duplicate ,custom posts, post, page, duplicate this, duplicate, content duplicate, duplicate content, data duplicate, duplicate data, copy page, clone page,wordpress page duplicate, wordpress post duplicate, Copy post, wordpress page duplicator, wordpress post duplicator, Cloner, duplicate post
 Requires at least: 3.4
-Tested up to: 5.0
-Stable tag: 2.9
+Tested up to: 5.0.2
+Stable tag: 3.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,7 +34,7 @@ https://www.youtube.com/watch?v=Fj8BHxvebXs&feature=youtu.be
 
 == Installation ==
 
-1. Upload the `duplicatepage` folder to the directory `/wp-content/plugins/`.
+1. Upload the `duplicate-page` folder to the directory `/wp-content/plugins/`.
 2. Activate the plugin using the 'Plugins' menu in WordPress.
 
 == Frequently asked questions ==
@@ -42,8 +42,8 @@ https://www.youtube.com/watch?v=Fj8BHxvebXs&feature=youtu.be
 ## How to use
 
 1. First Activate Plugin.
-2. Go Select to Duplicate Page settings Menu from Settings Tab and savings settings . 
-1. Then Create New Post/Page Or Use old.
+2. Go Select to Duplicate Page settings Menu from Settings Tab and savings settings. 
+1. Then Create New Post/Page or Use old.
 2. After click on duplicate this link, then duplicate post/ page will be created and saved as draft,publish,pending,private depending upon settings.
 
 == Screenshots ==
@@ -56,58 +56,69 @@ https://www.youtube.com/watch?v=Fj8BHxvebXs&feature=youtu.be
 
 == Changelog ==
 
-= 1.1 (04th May ,2016) =
+= 3.2 (25th Dec, 2018) =
 
-* fix some Bug in 1.0
+* Gutenberg Compatible
 
-= 1.2 (05th May, 2016) =
+= 3.1 (5th Dec, 2018) =
 
-* Duplicate Page Settings Menu Added.
+* removed nag
 
-= 1.3 (23th May, 2016) =
+= 3.0 (3rd Dec, 2018) =
 
-* New Features added
-
-= 1.4 (18th Jun, 2016) =
-
-* New Features added
-
-= 2.1 (25th Aug, 2016) =
-
-* New Text field added in settings page for duplicate post title suffix to remove confusion of currently duplicate page.
-
-= 2.2 (28th Jan, 2017) =
-
-* Strings Translations
-
-= 2.3 (27st april, 2017) =
-
-* Minor Fixes
-
-= 2.4 (29th Nov, 2017) =
-
-* Duplicate Page appends original post name issue fixed.
-
-= 2.5 (5th Feb, 2018) =
-
-* Translations issue resolve.
-
-= 2.6 (24th March, 2018) =
-
-* Added signup popup and minor fixes.
-
-= 2.7 (28th July, 2018) =
-
-* removed useless adsense code
-
-= 2.8 (20th Oct, 2018) =
-
-* Compatible with php 7.3 and wordpress 5.0
+* German Formal lang added
 
 = 2.9 (16th Nov, 2018) =
 
 * Minor bug fixes
 
+= 2.8 (20th Oct, 2018) =
+
+* Compatible with php 7.3 and wordpress 5.0
+
+= 2.7 (28th July, 2018) =
+
+* removed useless adsense code
+
+= 2.6 (24th March, 2018) =
+
+* Added signup popup and minor fixes.
+
+= 2.5 (5th Feb, 2018) =
+
+* Translations issue resolve.
+
+= 2.4 (29th Nov, 2017) =
+
+* Duplicate Page appends original post name issue fixed.
+
+= 2.3 (27st april, 2017) =
+
+* Minor Fixes
+
+= 2.2 (28th Jan, 2017) =
+
+* Strings Translations
+
+= 2.1 (25th Aug, 2016) =
+
+* New Text field added in settings page for duplicate post title suffix to remove confusion of currently duplicate page.
+
+= 1.4 (18th Jun, 2016) =
+
+* New Features added
+
+= 1.3 (23th May, 2016) =
+
+* New Features added
+
+= 1.2 (05th May, 2016) =
+
+* Duplicate Page Settings Menu Added.
+
+= 1.1 (04th May ,2016) =
+
+* fix some Bug in 1.0
 
 == Other Notes ==
 

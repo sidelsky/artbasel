@@ -1,19 +1,39 @@
-[type="radio"]:not(:checked),
-[type="radio"]:checked {
-    position: absolute;
-    opacity: 0;
-    pointer-events: none;
-}
-
 .c-meta {
-    
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
     line-height: 2;
     lost-column: 12/12;
+    display: none;
+    visibility: hidden;
+
+
+    &__filter-button {
+      text-transform: uppercase;
+      margin-bottom: $spacing--small;
+      padding: $spacing--small;
+      border: solid 1px $dark;
+      width: 100%;
+      display: block;
+      border-radius: 3px;
+      
+      @include media('>tablet') {
+        display: none;
+      }
+    
+      &:hover {
+        cursor: pointer;
+      }
+
+    }
 
     //Desktop
     @include media('>tablet') {
         lost-column: 3/12;
+
+        &__data {
+          display: block !important;
+        }
+
+
     }
 
     //Section
@@ -47,7 +67,7 @@
      opacity: 0;
      pointer-events: none;
    }
-   
+
    [type="radio"]:not(:checked) + span,
    [type="radio"]:checked + span {
     position: relative;
@@ -59,7 +79,7 @@
     transition: .28s ease;
     user-select: none;
    }
-   
+
    [type="radio"] + span:before,
    [type="radio"] + span:after {
      content: '';
@@ -72,7 +92,7 @@
      z-index: 0;
      transition: .28s ease;
    }
-   
+
    /* Unchecked styles */
    [type="radio"]:not(:checked) + span:before,
    [type="radio"]:not(:checked) + span:after,
@@ -82,34 +102,38 @@
    [type="radio"].with-gap:checked + span:after {
      border-radius: 50%;
    }
-   
+
    [type="radio"]:not(:checked) + span:before,
    [type="radio"]:not(:checked) + span:after {
      //border: 2px solid $lighter;
      background-color: $lighter;
    }
-   
+
    [type="radio"]:not(:checked) + span:after {
              transform: scale(0);
    }
-   
+
    /* Checked styles */
 //    [type="radio"]:checked + span:before {
 //      border: 2px solid transparent;
 //    }
-   
+
    [type="radio"]:checked + span:after,
    [type="radio"].with-gap:checked + span:before,
    [type="radio"].with-gap:checked + span:after {
      border: 3px solid $lighter;
    }
-   
+
    [type="radio"]:checked + span:after,
    [type="radio"].with-gap:checked + span:after {
      background-color: $dark;
    }
-   
+
    [type="radio"]:checked + span:after {
         transform: scale(1.02);
    }
-   
+
+
+   .c-works__href-wrap {
+     margin-bottom: 20px;
+   }

@@ -4,27 +4,17 @@
 
     //Column
     &__column {
-
+        width: 100%;
         &:nth-of-type(1) {
-
-            @include set-font-size(2rem, 2rem, 2rem, 2rem);
 
             //Desktop
             @include media('>tablet') {
-                lost-column: 0.5/12;
+                lost-column: 8/12;
             }
+
         }
 
         &:nth-of-type(2) {
-
-            //Desktop
-            @include media('>tablet') {
-                lost-column: 7.5/12;
-            }
-
-        }
-
-        &:nth-of-type(3) {
 
             //Desktop
             @include media('>tablet') {
@@ -44,5 +34,43 @@
     //Image
     &__image {
 
+    }
+}
+
+.c-carousel-controls {
+    display: flex;
+    padding: $spacing--small 0;
+}
+
+
+.carousel-button {
+    border: 1px solid #4a4a4a;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    border-radius: 3px;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    outline: 0;
+
+    &:hover {
+        cursor: pointer;
+      }
+
+    svg {
+        height: 14px;
+    }
+}
+
+.v-m-carousel__control--prev {
+    .carousel-button {
+        margin-right: $spacing--tiny;
+
+        svg {
+            transform: rotate(180deg);
+        }
     }
 }

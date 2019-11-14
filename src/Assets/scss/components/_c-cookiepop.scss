@@ -1,0 +1,64 @@
+.c-cookiepop {
+   
+   //Desktop
+   @include media('>desktop') {
+      display: flex;
+  }
+
+  p {
+   @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+  }
+
+}
+
+
+.Cookie--base {
+
+}
+
+.Cookie--hauser-theme {
+   background-color: #222222;
+   color: white;
+   padding: 20px;
+
+   button {
+       display: block;
+       width: 100%;
+       text-align: center;
+       background: none;
+       border: solid 1.5px rgba(255, 255, 255, .25);
+       border-radius: 3px;
+       font-size: 14px;
+       line-height: 1.43;
+       letter-spacing: 0.3px;
+       color: #ffffff;
+       -webkit-appearance: button;
+       padding: 10px;
+       
+       &:hover {
+          cursor: pointer;
+         }
+         
+         a {
+            color: white;
+         }
+      }
+   }
+   
+   .hw-button-wrapper {
+      width: 100%;
+      line-height: 1.43;
+      margin: 10px 0;
+      
+      //Desktop
+      @include media('>desktop') {
+         margin: 0 0 0 10px;
+         width: 200px;
+     }
+
+}
+
+
+// .Cookie--mytheme div.Cookie__button:hover {
+   
+// }

@@ -22,14 +22,25 @@
         }
     }
 
+        //Tiny
+        &--tiny {
+            padding-top: $spacing--small;
+            padding-bottom: $spacing--small;
+    
+            @include breakpoint($medium) {
+                padding-top: $spacing--medium;
+                padding-bottom: $spacing--medium;
+            }
+        }
+
         //Small
         &--bottom {
-            padding-top: $spacing--large;
+            padding-top: $spacing--medium;
             padding-bottom: $spacing--medium;
     
             @include breakpoint($medium) {
-                padding-top: $spacing--jumbo;
-                padding-bottom: $spacing--large;
+                padding-top: $spacing--large-xxx;
+                padding-bottom: $spacing--large-xxx;
             }
         }
 }

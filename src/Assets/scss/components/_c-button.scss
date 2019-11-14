@@ -1,14 +1,20 @@
 .c-button {
     color: $dark;
-    padding: $spacing--x-small;
-    display: inline-block;
-    margin: $spacing--large 0;
-    outline: solid 1px currentColor;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    border: solid 1px currentColor;
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
     font-family: font-family(primary, medium);
-    transition: padding ease-in-out 300ms;
+    cursor: pointer; 
+    user-select: none;
+    border-radius: 4px;
+    text-align: center;
+ 
+    &--dark {
 
-    &:hover {
-        padding: $spacing--x-small $spacing--x-medium;
+        background-color: #222222;
+        color: white;
+        display: inline;
     }
 }

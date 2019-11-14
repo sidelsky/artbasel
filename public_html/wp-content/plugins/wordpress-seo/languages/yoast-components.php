@@ -106,6 +106,9 @@ $generated_i18n_strings = array(
 	// Reference: js/src/components/MediaUpload.js:18 js/src/components/MediaUpload.js:17
 	__( 'Choose an image', 'wordpress-seo' ),
 
+	// Reference: node_modules/yoast-components/app/ComponentsExample.js:156
+	__( 'Free', 'wordpress-seo' ),
+
 	// Reference: node_modules/yoast-components/composites/AlgoliaSearch/AlgoliaSearcher.js:229
 	__( 'Something went wrong. Please try again later.', 'wordpress-seo' ),
 
@@ -139,19 +142,19 @@ $generated_i18n_strings = array(
 	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/AnalysisList.js:67
 	__( 'Highlight this result in the text', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:131
+	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:103
 	__( 'Errors', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:134
+	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:106
 	__( 'Problems', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:137
+	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:109
 	__( 'Improvements', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:140
+	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:112
 	__( 'Considerations', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:143
+	// Reference: node_modules/yoast-components/composites/Plugin/ContentAnalysis/components/ContentAnalysis.js:115
 	__( 'Good results', 'wordpress-seo' ),
 
 	// Reference: node_modules/yoast-components/composites/Plugin/CornerstoneContent/components/CornerstoneToggle.js:23
@@ -234,7 +237,7 @@ $generated_i18n_strings = array(
 	// Reference: node_modules/yoast-components/composites/basic/Notification.js:100
 	__( 'Dismiss this notice', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/utils/makeOutboundLink.js:34
+	// Reference: node_modules/yoast-components/utils/makeOutboundLink.js:42
 	__( '(Opens in a new browser tab)', 'wordpress-seo' )
 );
 /* THIS IS THE END OF THE GENERATED FILE */

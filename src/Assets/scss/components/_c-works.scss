@@ -1,34 +1,45 @@
 .c-works {
-    lost-column: 12/12;
-
+    //lost-column: 12/12;
+    width: 100%;
+    max-width: 864px;
+    margin: 0 auto;  
+     
     //Tablet
     @include media('>tablet') {
-        lost-column: 9/12;
-        lost-flex-container: row;
+        //lost-column: 9/12;
+ 
     }
 
-    //Card
-    &__card {
+    &__list {
+      margin-left: -2.8rem;
+      margin-right: -2.8rem;
+
+      @include media('>tablet') {
+        lost-flex-container: row;
+      }
+    }
+
+    //Card 
+    &__card { 
         //padding: $spacing--small;
-        padding: 0 $spacing--small $spacing--small;
+        padding: 0 $spacing--small $spacing--medium;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
-        
+  
         //Tablet
-        @include media('>tablet') {
+        @include media('>tablet') {  
             lost-column: 6/12 3 0;
         }
 
         //Desktop
         @include media('>desktop') {
             lost-column: 4/12 3 0;
-        }
-
+        }   
     }
 
-    //Figure
+    //Figure 
     &__figure {
         position: relative;
-        margin-bottom: $spacing--tiny;
+        margin-bottom: $spacing--medium;
         display: flex;
         align-items: flex-end;
         position: relative;
@@ -39,57 +50,74 @@
     &__image {
         //Tablet
         @include media('>tablet') {
-            max-height: 310px;  
+            max-height: 310px;
             max-width: 100%;
             position: absolute;
             bottom: 0;
             left: 50%;
             transform: translate(-50%);
         }
-
+        
+        &:hover {
+            cursor: pointer; 
+        } 
+ 
     }
 
     //Title
-    &__title {
+    &__title { 
         font-family: font-family(primary, semibold);
         @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
-        line-height: 2;
+        line-height: 1.25;
+        margin-bottom: 10px;  
+        color: $text-color; 
     }
+
+    // //Date
+    // &__date {
+    //     font-family: font-family(primary, medium);
+    //     line-height: 2;
+    //  }
 
     //Date
-    &__date {
-        font-family: font-family(primary, medium);
-        line-height: 2;
-    }
-
-    //Medium
-    &__medium,
+    &__date, 
+    //Medium  
+    &__medium,  
     //Demensions
     &__dimensions {
         font-family: font-family(primary, regular);
         color: $light;
-        margin-bottom: $spacing--tiny;
-    }
-
+        line-height: 1.7;
+    }   
+ 
+    &__date {
+        margin-bottom: 10px; 
+    }  
     //Demensions
-    &__dimensions {
-        font-family: font-family(primary, medium);
-    }
+    // &__dimensions {
+   
+    // }  
+
+    // &__medium { 
+    //   text-transform: capitalize;
+    // }
 
     //Price
     &__price {
         font-family: font-family(primary, bold);
-        line-height: 2;
+        margin-bottom: 10px;
+        //line-height: 4;
     }
 
     //Href Wrap
-    &__href-wrap {
-        display: block;
+    &__href-wrap { 
+        display: block; 
+        line-height: 1.7; 
 
         &:hover {
             text-decoration: underline;
 
-            .c-works__icon {
+            .c-works__icon { 
                 transform: translate3d(5px,0,0);
             }
         }
@@ -106,8 +134,21 @@
     //Href
     &__href {
         text-decoration: none;
-        line-height: 2;
         color: currentColor;
     }
 
+}
+
+
+.v-m-carousel-slide img {
+    cursor: pointer;
+}
+
+.c-works-content {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.c-works__dimensions {
+    margin-bottom: 10px;
 }

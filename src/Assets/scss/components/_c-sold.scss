@@ -1,0 +1,19 @@
+.c-sale-marker {
+   $dimensions: 10px;
+   width: $dimensions; 
+   height: $dimensions;
+   margin-right: 5px;  
+   border-radius: 50px;
+   display: none;
+ 
+   &--sold {
+      background-color: red; 
+      display: inline-block;
+   }
+
+   &--available {
+      background-color: green;
+      display: inline-block;
+   } 
+   
+}
