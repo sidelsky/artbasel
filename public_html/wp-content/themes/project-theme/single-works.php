@@ -18,6 +18,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'price' => get_field('price'),
       'learn_more' => get_the_permalink(),
       'sold' => get_field('sold'),
+      'video' => get_field('video'),
     ];
     $gallery = get_field('image_gallery');
     $images = [];

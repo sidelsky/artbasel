@@ -6,7 +6,8 @@
         "lodash": "^4.17.11",
         "siema": "^1.5.1",
         "vue": "^2.5.16",
-        "vue-cookie-law": "^1.10.0"
+        "vue-cookie-law": "^1.10.0",
+        "vue-owl-carousel": "^2.0.3"
     },
     "devDependencies": {
         "babel-eslint": "^8.2.*",

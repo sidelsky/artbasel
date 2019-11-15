@@ -15,20 +15,22 @@
         <article class="c-work-single--full-width">
 
             <div class="c-work-single__column">
-              <figure class="c-work-single__figure">
-                <VCarousel :currentSlide="currentSlide" @calculatedTotalSlides="(total) => this.totalSlideNumber = total">
-                  <template v-if="!gallery.length">
-                    <VCarouselSlide>
-                      <img :src="work.image" class="c-work-single__image" @click="handleItemClick(work.image)">
-                    </VCarouselSlide>
-                  </template>
-                  <template v-else>
-                    <VCarouselSlide v-for="item in gallery" :key="item">
-                      <img :src="item" class="c-work-single__image" @click="handleItemClick(item)">
-                    </VCarouselSlide>
-                  </template>
-                </VCarousel>
-              </figure>
+
+			<figure class="c-work-single__figure">
+				<carousel :autoplay="true" :nav="false" :dots="false">
+				<div v-for="item in gallery" :key="item">
+					<!-- <img :src="item" class="c-work-single__image" @click="handleItemClick(item)"> -->
+					<img :src="item" class="c-work-single__image">
+				</div>
+			</carousel>
+			</figure>
+
+			<!-- Video content -->
+			<div v-if="work.video" class="video-wrapper" v-html="work.video"></div>
+
+			<!-- WP content -->
+			<div class="s-content c-works-content" v-html="work.content"></div>
+
             </div>
 
             <div class="c-work-single__column">
@@ -51,16 +53,14 @@
 					</div>
 
 					<span class="c-works__href-wrap">
-					<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-					class="c-works__href">Purchase</a>
-					<svg class="u-icon c-works__icon">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
-					</svg>
+						<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
+						class="c-works__href">Purchase</a>
+						<svg class="u-icon c-works__icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
+						</svg>
 					</span>
 
 					<a href="/works" class="c-button c-button--dark">View all works</a>
-					<p style="margin-bottom: 20px;">&nbsp;</p>
-					<div class="s-content" v-html="work.content"></div>
 				</div>
 			</div>
         </article>
@@ -85,8 +85,9 @@
 </template>
 
 <script>
-import VCarousel from './components/VCarousel'
-import VCarouselSlide from './components/VCarouselSlide'
+//import VCarousel from './components/VCarousel'
+//import VCarouselSlide from './components/VCarouselSlide'
+import carousel from 'vue-owl-carousel'
 import CookieLaw from 'vue-cookie-law'
 
 const formatter = new Intl.NumberFormat('en-US', {
@@ -99,8 +100,9 @@ const formatter = new Intl.NumberFormat('en-US', {
 
 export default {
   components: {
-    VCarousel,
-    VCarouselSlide,
+    // VCarousel,
+	// VCarouselSlide,
+	carousel,
     CookieLaw
   },
   data () {

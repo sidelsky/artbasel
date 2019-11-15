@@ -135,8 +135,15 @@
 }
 
 .c-works-content {
-    text-align: center;
-    padding-top: 20px;
+
+    padding: 40px 70px 70px 70px;
+
+    //Tablet
+    @include media('>tablet') {
+        padding: 40px;
+        max-width: 768px;
+        margin: 0 auto;
+    }
 }
 
 .c-works__dimensions {
@@ -145,4 +152,15 @@
 
 a .c-works__title {
     color: $text-color;
+}
+
+.archive {
+    color: $text-color;
+    .c-works {
+            //Href
+        &__href, 
+        &__price {
+            color: $text-color;
+        }
+    }
 }
