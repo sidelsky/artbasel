@@ -70,14 +70,15 @@
         @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
         line-height: 1.25;
         margin-bottom: 10px;  
-        color: $text-color; 
+        //color: $text-color; 
+        color: currentColor;
     }
  
     //Medium  
     &__medium,  
     //Demensions
     &__dimensions {
-        color: $light;
+        color: currentColor;
         line-height: 1.7;
     }   
     
@@ -139,4 +140,8 @@
 
 .c-works__dimensions {
     margin-bottom: 10px;
+}
+
+a .c-works__title {
+    color: $text-color;
 }

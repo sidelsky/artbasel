@@ -84,8 +84,8 @@ $wordpress = new WordpressHelper;
 			<section class="u-section ">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
-						<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre "><?php echo get_the_title( $currentPost_id ); ?></h1>
-						<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre "><?php echo get_field( 'sub_post_title', $currentPost_id ); ?></h1>
+						<h1 class="c-site-headings  c-site-headings--h1"><?php echo get_the_title( $currentPost_id ); ?></h1>
+						<h1 class="c-site-headings  c-site-headings--h1"><?php echo get_field( 'sub_post_title', $currentPost_id ); ?></h1>
 					</div>
 				</div>
 			</section>

@@ -19,7 +19,13 @@
     position: relative;
 
     &--row {
-        lost-flex-container: row;
+        //lost-flex-container: row;
+    }
+
+    &--full-width {
+        margin: auto;
+        width: 100%;
+        position: relative;
     }
 
     &--small {
@@ -39,13 +45,16 @@
 }
 
 .u-l-container--center {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background-size: cover;
+    //height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    //height: 100vh;
 }
 
  .u-section {

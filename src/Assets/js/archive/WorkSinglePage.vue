@@ -1,6 +1,6 @@
 <template>
   <div class="u-l-container--center" data-in-viewport>
-      <div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+      <div class="u-l-container--full-width u-l-container--row">
         <!-- to go here -->
         <div class="c-lightbox" v-if="showLightbox" @click="showLightbox = false">
           <button @click="showLightbox = false" class="c-lightbox__close">
@@ -11,7 +11,8 @@
           </button>
           <img :src="currentImage" class="c-lightbox__image">
         </div>
-        <article class="c-work-single">
+
+        <article class="c-work-single--full-width">
 
             <div class="c-work-single__column">
               <figure class="c-work-single__figure">
@@ -31,56 +32,37 @@
             </div>
 
             <div class="c-work-single__column">
-                <h2 class="c-works__title"><span v-html="work.title"></span></h2>
-                <h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
-                <div class="c-works__date">{{ work.date }}</div>
-                <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
-                <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
-                <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
-                <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
+				<div class="c-work-single__content">
+					<h2 class="c-works__title"><span v-html="work.title"></span></h2>
+					<h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
+					<div class="c-works__date">{{ work.date }}</div>
+					<div class="c-works__medium"><span v-html="work.mediumText"></span></div>
+					<div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
+					<div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
+					<div class="c-works__price"><span>{{ formattedPrice }}</span></div>
 
-                <div class="c-works__availability">
-                    <span
-                    :class="[
-                            'c-sale-marker',
-                            `${ work.sold ? 'c-sale-marker--sold' : 'c-sale-marker--available'}`
-                          ]"
-                    ></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
-                </div>
+					<div class="c-works__availability">
+						<span
+						:class="[
+								'c-sale-marker',
+								`${ work.sold ? 'c-sale-marker--sold' : 'c-sale-marker--available'}`
+							]"
+						></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
+					</div>
 
-                <span class="c-works__href-wrap">
-                  <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-                  class="c-works__href">Purchase</a>
-                  <svg class="u-icon c-works__icon">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
-                  </svg>
-                </span>
+					<span class="c-works__href-wrap">
+					<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
+					class="c-works__href">Purchase</a>
+					<svg class="u-icon c-works__icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
+					</svg>
+					</span>
 
-
-                <ul class="c-carousel-controls" v-if="totalSlideNumber > 1">
-                  <li class="v-m-carousel__control v-m-carousel__control--prev" @click="previous()">
-                    <button
-                      :class="[
-                        currentSlide > 0 ? '' : 'disabled',
-                        'carousel-button'
-                      ]"
-                    ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
-                  </li>
-
-                  <li class="v-m-carousel__control v-m-carousel__control--next" @click="next()">
-                    <button :class="[
-                      currentSlide < totalSlideNumber - 1 ? '' : 'disabled',
-                      'carousel-button'
-                    ]"
-                    
-                    ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 14" id="next" width="100%" height="100%"><path fill="currentColor" d="M6.5 7L0 14v-2l4.5-4.941L0 2V0z"></path></svg></button>
-                  </li>
-                </ul>
-
-                <a href="/works" class="c-button c-button--dark">View all works</a>
-                <p style="margin-bottom: 20px;">&nbsp;</p>
-                <div class="s-content" v-html="work.content"></div>
-            </div>
+					<a href="/works" class="c-button c-button--dark">View all works</a>
+					<p style="margin-bottom: 20px;">&nbsp;</p>
+					<div class="s-content" v-html="work.content"></div>
+				</div>
+			</div>
         </article>
       </div>
 
