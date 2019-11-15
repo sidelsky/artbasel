@@ -31,7 +31,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       var WORK = <?php echo json_encode($work) ?>;
     </script>
 
-    <section class="u-section light-grey ">
+    <section class="u-section">
       <div id="app"></div>
     </section>
 

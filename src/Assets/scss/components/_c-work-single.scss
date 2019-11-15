@@ -3,17 +3,22 @@
     // lost-column: 12/12;
 
     &--full-width {
-        position: relative;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        align-items: center;
-        height: 800px;
+        display: block;
+        height: auto;
+
+        @include media('>tablet') {
+            position: relative;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            height: 800px;
+        }
     }
 
     //Content
     &__content {
-        color: white;
+        color: #8A8A8A;
     }
 
     //Column
@@ -34,6 +39,8 @@
         }
 
         &:nth-of-type(2) {
+            background: #222222;
+            padding: 70px;
 
             //Desktop
             @include media('>tablet') {
@@ -47,9 +54,8 @@
                 -webkit-box-align: center;
                 -ms-flex-align: center;
                 align-items: center;
-                padding: 0px 70px;
                 height: 100%;
-                background: #222222;
+                padding: 0px 70px;
             }
 
         }
