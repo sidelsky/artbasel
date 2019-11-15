@@ -105,14 +105,14 @@
     //Price
     &__price {
         font-family: font-family(primary, bold);
-        margin-bottom: 10px;
-        //line-height: 4;
+        margin-bottom: 5px;
     }
 
     //Href Wrap
     &__href-wrap { 
         display: block; 
-        line-height: 1.7; 
+        line-height: 1.7;
+        margin: 20px 0;
 
         &:hover {
             text-decoration: underline;

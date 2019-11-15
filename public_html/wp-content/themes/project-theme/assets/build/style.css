@@ -1405,12 +1405,13 @@ table {
 
 .c-works__price {
   font-family: "hind-bold", Helvetica, Arial, sans-serif;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .c-works__href-wrap {
   display: block;
   line-height: 1.7;
+  margin: 20px 0;
 }
 
 .c-works__href-wrap:hover {
