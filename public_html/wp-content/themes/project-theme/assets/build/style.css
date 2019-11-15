@@ -179,7 +179,7 @@ table {
 */
 .c-button {
   color: #1F1F1F;
-  padding: 10px 20px;
+  padding: 12px 25px;
   display: block;
   margin: 0 auto;
   border: solid 1px currentColor;
@@ -215,7 +215,11 @@ table {
 .c-button--dark {
   background-color: #222222;
   color: white;
-  display: inline;
+  display: inline-block;
+}
+
+.c-button--dark:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1025px) {

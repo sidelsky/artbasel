@@ -1,6 +1,6 @@
 .c-button {
     color: $dark;
-    padding: 10px 20px;
+    padding: 12px 25px;
     display: block;
     margin: 0 auto;
     border: solid 1px currentColor;
@@ -12,9 +12,12 @@
     text-align: center;
  
     &--dark {
-
         background-color: #222222;
         color: white;
-        display: inline; 
+        display: inline-block; 
+        
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
     }
 }
