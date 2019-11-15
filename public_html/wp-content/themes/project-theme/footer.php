@@ -5,16 +5,6 @@ $wordpress = new WordpressHelper;
 
 </main>
 
-<?php
-//  Get the content
-?>
-<!-- <div class="u-section light-grey s-content">
-	<div class="u-l-container u-l-container--row u-l-horizontal-padding">
-		<?php /* the_content(); */?>
-	</div>
-</div> -->
-
-
 <footer class="u-section c-footer">
 	<div class="u-l-container">
 		<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
