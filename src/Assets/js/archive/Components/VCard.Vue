@@ -1,4 +1,4 @@
-<template>
+<template> 
   <article class="c-works__card">
     <figure class="c-works__figure">
       <a :href="link">
@@ -39,6 +39,8 @@
 
 <script>
 
+console.log('working');
+
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
   currency: 'USD',
@@ -46,7 +48,6 @@ const formatter = new Intl.NumberFormat('en-US', {
   useGrouping: true,
   minimumFractionDigits: 2
 })
-
 export default {
   props: {
     title: String,

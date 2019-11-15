@@ -1,15 +1,10 @@
 <?php
-
 use App\Helper\Render;
-
 $render = new Render;
-
 include("header.php"); ?>
 
 <?php
-
 if ( have_posts() ) : while ( have_posts() ) : the_post();
-
     $work = [
       'title' => get_the_title(),
       'content' => get_the_content(),
@@ -24,7 +19,6 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'learn_more' => get_the_permalink(),
       'sold' => get_field('sold'),
     ];
-
     $gallery = get_field('image_gallery');
     $images = [];
     foreach ($gallery as $galleryImage) {

@@ -13,9 +13,9 @@ $browser-reset-font: 16 !default; //reset default browser font size to 16px. Don
 * To actually call our palettes in our styles,
 * we use a very simple custom Sassfunction to access
 * colours in our palette by name and optional tone/shade:
-*/
+*/ 
 
-/**
+/** 
 * Colour palette
 */
 @function palette($palette, $tone: 'base') {

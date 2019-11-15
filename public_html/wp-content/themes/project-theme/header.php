@@ -2,10 +2,8 @@
 use App\Helper\Page;
 use App\Helper\Render;
 use App\Helper\WordpressHelper;
-
 //use Theme\Model\Hero;
 //use Theme\Model\SubpageHero;
-
 $page = new Page;
 $render = new Render;
 //$hero = new Hero;
@@ -35,10 +33,8 @@ $wordpress = new WordpressHelper;
 		 * Theme Data
 		 */
 		include('Theme/Data/en.php');
-
 		$homeUrl = get_home_url();
 		$worksUrl = '/works';
-
 		if( is_archive( 'works' ) || is_single( ) ) {
 			$baseUrl = $worksUrl;
 		} else {
@@ -60,9 +56,7 @@ $wordpress = new WordpressHelper;
 			$front_page_id = '6';
 			$currentPost_id = get_the_ID();
 			$content = get_post_field('post_content', $front_page_id);
-
 			if( is_front_page() ) { ?>
-			
 			<section class="u-section ">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
@@ -72,21 +66,19 @@ $wordpress = new WordpressHelper;
 			</section>
 
 			<?php } elseif( is_archive( 'works' ) ) { ?>
-
-			<section class="u-sectionz parallax-window__content">
+			<section class="u-section parallax-window__content">
 				<div class="u-l-container--center" data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding 	u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--tiny' ?>">
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
 					<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">
 						<?php echo get_the_title( $front_page_id ); ?><br>
+						<span class="c-site-headings c-site-headings--h1--small"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
 					</h1>
-						<span class="c-site-headings c-site-headings--h1--small c-text-align-centre"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
 						<?php if($content ) : ?>
 							<div class="c-works-content"><?php $content; ?></div>
 						<?php endif; ?>
 					</div>
 				</div>
 			</section>
-
 			<?php } else { ?>
 
 			<section class="u-section ">
@@ -97,7 +89,7 @@ $wordpress = new WordpressHelper;
 					</div>
 				</div>
 			</section>
-
+			
 			<?php } ?>
 				
 

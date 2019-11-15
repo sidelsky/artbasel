@@ -22,17 +22,6 @@
         }
     }
 
-        //Tiny
-        &--tiny {
-            padding-top: $spacing--small;
-            padding-bottom: $spacing--small;
-    
-            @include breakpoint($medium) {
-                padding-top: $spacing--medium;
-                padding-bottom: $spacing--medium;
-            }
-        }
-
         //Small
         &--bottom {
             padding-top: $spacing--medium;

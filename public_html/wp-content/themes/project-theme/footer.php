@@ -17,20 +17,19 @@ $wordpress = new WordpressHelper;
 
 <footer class="u-section c-footer">
 	<div class="u-l-container">
-		<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
+		<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
 	</div>
 </footer>
 
 </div>
-		<?php/*
+		<?php /*
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
-		*/?>
+		*/ ?>
 		
 		<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 		<?php 
 		wp_footer(); 
-
 		$googleAnalyticID = get_field('google_analytics', 'option');
 		
 		//Google Analytics
@@ -38,10 +37,8 @@ $wordpress = new WordpressHelper;
 		$data = [
 			'UA' => $googleAnalyticID
 		];
-
 		echo $render->view('Components/' . $template, $data);
 		
-
 		?>
 		
 

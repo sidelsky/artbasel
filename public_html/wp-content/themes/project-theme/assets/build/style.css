@@ -171,7 +171,7 @@ table {
 * we use a very simple custom Sassfunction to access
 * colours in our palette by name and optional tone/shade:
 */
-/**
+/** 
 * Colour palette
 */
 /**
@@ -2183,18 +2183,6 @@ table {
   .u-l-vertical-padding--small {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-}
-
-.u-l-vertical-padding--tiny {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  .u-l-vertical-padding--tiny {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 }
 

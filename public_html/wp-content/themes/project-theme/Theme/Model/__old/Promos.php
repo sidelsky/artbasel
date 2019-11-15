@@ -13,6 +13,8 @@ class Promos {
    public function getPromos() {
         $promoItems = [];
         $acfPromoItems = $this->layout['promo_item'];
+        $contentPosition = $this->layout['content_position'];
+        $promosBackground = $this->layout['background_image']['url'];
         $promosTitle = $this->layout['promo_title'];
         $position = $this->layout['content_position'];
         $image = $this->layout['image']['url'];
