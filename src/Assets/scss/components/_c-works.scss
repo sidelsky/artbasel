@@ -72,47 +72,35 @@
         margin-bottom: 10px;  
         color: $text-color; 
     }
-
-    // //Date
-    // &__date {
-    //     font-family: font-family(primary, medium);
-    //     line-height: 2;
-    //  }
-
-    //Date
-    &__date, 
+ 
     //Medium  
     &__medium,  
     //Demensions
     &__dimensions {
-        font-family: font-family(primary, regular);
         color: $light;
         line-height: 1.7;
     }   
- 
+    
+    //
     &__date {
-        margin-bottom: 10px; 
-    }  
-    //Demensions
-    // &__dimensions {
-   
-    // }  
 
-    // &__medium { 
-    //   text-transform: capitalize;
-    // }
+    }  
 
     //Price
     &__price {
-        font-family: font-family(primary, bold);
-        margin-bottom: 5px;
+
+    }
+
+    //Price
+    &__availability {
+        font-weight: bold;
+        margin: 15px 0;
     }
 
     //Href Wrap
     &__href-wrap { 
         display: block; 
-        line-height: 1.7;
-        margin: 20px 0;
+        font-weight: bold;
 
         &:hover {
             text-decoration: underline;

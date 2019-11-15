@@ -39,7 +39,7 @@
                 <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
                 <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
 
-                <div class="c-works__price">
+                <div class="c-works__availability">
                     <span
                     :class="[
                             'c-sale-marker',

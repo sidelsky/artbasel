@@ -1393,25 +1393,19 @@ table {
   }
 }
 
-.c-works__date, .c-works__medium, .c-works__dimensions {
-  font-family: "hind-regular", Helvetica, Arial, sans-serif;
+.c-works__medium, .c-works__dimensions {
   color: #4C4C4C;
   line-height: 1.7;
 }
 
-.c-works__date {
-  margin-bottom: 10px;
-}
-
-.c-works__price {
-  font-family: "hind-bold", Helvetica, Arial, sans-serif;
-  margin-bottom: 5px;
+.c-works__availability {
+  font-weight: bold;
+  margin: 15px 0;
 }
 
 .c-works__href-wrap {
   display: block;
-  line-height: 1.7;
-  margin: 20px 0;
+  font-weight: bold;
 }
 
 .c-works__href-wrap:hover {
