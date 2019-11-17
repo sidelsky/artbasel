@@ -26,7 +26,7 @@
 			</figure>
 
 			<!-- Video content -->
-			<div v-if="work.video" class="video-wrapper" v-html="work.video"></div>
+			<div v-if="work.video" class="video video__wrapper" v-html="work.video"></div>
 
 			<!-- WP content -->
 			<div class="s-content c-works-content" v-html="work.content"></div>
