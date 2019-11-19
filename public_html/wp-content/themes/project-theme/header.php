@@ -83,19 +83,23 @@ $wordpress = new WordpressHelper;
 			</section>
 
 			<?php } else { ?>
-			
-				<section class="u-section ">
-					<div class="u-l-container--center" data-in-viewport>
-						<div class="u-l-container--center u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
-							<h1 class="c-site-headings c-site-headings--h1 <?= is_page_template('thanks.php') === ( TRUE ) ? 'c-text-align-centre c-site-headings--h2--thanks' : '' ?>">
-								<?= get_the_title( $currentPost_id ); ?>
-							</h1>
-							<h1 class="c-site-headings  c-site-headings--h1">
-								<?= get_field( 'sub_post_title', $currentPost_id ); ?>
-							</h1>
+				
+				<?php if( is_singular('works') ) : ?>
+
+					<?php else : ?>
+					<section class="u-section ">
+						<div class="u-l-container--center" data-in-viewport>
+							<div class="u-l-container--center u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+								<h1 class="c-site-headings c-site-headings--h1 <?= is_page_template('thanks.php') === ( TRUE ) ? 'c-text-align-centre c-site-headings--h2--thanks' : '' ?>">
+									<?= get_the_title( $currentPost_id ); ?>
+								</h1>
+								<h1 class="c-site-headings  c-site-headings--h1">
+									<?= get_field( 'sub_post_title', $currentPost_id ); ?>
+								</h1>
+							</div>
 						</div>
-					</div>
-				</section>
+					</section>
+				<?php endif; ?>
 			
 			<?php } ?>
 				

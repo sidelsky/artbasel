@@ -30,7 +30,7 @@
             //Desktop
             @include media('>tablet') {
                 //lost-column: 8/12;
-                width: calc(100% - 480px);
+                width: calc(100% - 400px);
                 -ms-flex-negative: 0;
                 flex-shrink: 0;
                 height: 100%;
@@ -46,7 +46,7 @@
             //Desktop
             @include media('>tablet') {
                 //lost-column: 4/12;
-                width: 480px;
+                width: 400px;
                 -ms-flex-negative: 0;
                 flex-shrink: 0;
                 display: -webkit-box;

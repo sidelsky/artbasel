@@ -111,4 +111,23 @@ if($gallery) : ?>
 	</div>
 </section>
 
+<section class="u-section">
+	<div class="u-l-container--center">
+		<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+			<div class="s-content c-works__footer c-works__footer__hr">
+			<?php
+				// query for the about page
+				$your_query = new WP_Query( 'pagename=works-list-footer' );
+				// "loop" through query (even though it's just one page) 
+				while ( $your_query->have_posts() ) : $your_query->the_post();
+					the_content();
+				endwhile;
+				// reset post data (important!)
+				wp_reset_postdata();
+			?>
+			</div>
+		</div>
+	</div>
+</section>
+
 <?php include("footer.php"); ?>

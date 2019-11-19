@@ -17,9 +17,8 @@
             <div class="c-work-single__column">
 
 			<figure class="c-work-single__figure">
-				<carousel :autoplay="true" :nav="false" :dots="false">
+				<carousel :autoHeight="true" :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:1},600:{items:1},768:{items:2}}">
 				<div v-for="item in gallery" :key="item">
-					<!-- <img :src="item" class="c-work-single__image" @click="handleItemClick(item)"> -->
 					<img :src="item" class="c-work-single__image">
 				</div>
 			</carousel>
@@ -34,15 +33,15 @@
             </div>
 
             <div class="c-work-single__column">
-				<div class="c-work-single__content">
-					<h2 class="c-works__title"><span v-html="work.title"></span></h2>
-					<h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
-          <div class="c-works__name">{{ work.fullName }}</div>
-					<!-- <div class="c-works__date">{{ work.date }}</div> -->
-					<div class="c-works__medium"><span v-html="work.mediumText"></span></div>
-					<div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
-					<div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
-					<div class="c-works__price"><span>{{ formattedPrice }}</span></div>
+              <div class="c-work-single__content">
+                <h2 class="c-works__title"><span v-html="work.title"></span></h2>
+                <h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
+                <div class="c-works__name">{{ work.fullName }}</div>
+                <div class="c-works__date">{{ work.date }}</div>
+                <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
+                <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
+                <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
+                <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
 
 					<div class="c-works__availability">
 						<span
@@ -101,9 +100,7 @@ const formatter = new Intl.NumberFormat('en-US', {
 
 export default {
   components: {
-    // VCarousel,
-	// VCarouselSlide,
-	carousel,
+	  carousel,
     CookieLaw
   },
   data () {

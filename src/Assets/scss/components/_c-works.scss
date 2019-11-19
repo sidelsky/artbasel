@@ -13,7 +13,6 @@
     &__list {
       margin-left: -2.8rem;
       margin-right: -2.8rem;
-      border-bottom: solid 1px palette(greys, x-light);
 
       @include media('>tablet') {
         lost-flex-container: row;
@@ -106,7 +105,7 @@
     &__href-wrap { 
         display: block; 
         font-family: font-family(primary, bold);
-        margin-bottom: 60px;
+        //margin-bottom: 60px;
         color: white;
         
 
@@ -132,6 +131,21 @@
         text-decoration: none;
         color: currentColor;
     }
+
+    //Footer
+    &__footer {
+        padding-top: 50px;
+        margin-top: -40px;
+        text-align: center;
+
+        //HR
+        &__hr {
+            border-top: solid 1px palette(greys, x-light);
+        }
+        
+    }
+
+    
 
 }
 
@@ -168,5 +182,13 @@ a .c-works__title {
         &__price {
             color: $text-color;
         }
+    }
+}
+
+
+.single-works {
+
+    .c-works__href-wrap {
+        margin-bottom: 60px;
     }
 }
