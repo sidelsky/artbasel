@@ -8,11 +8,9 @@
 
         @include media('>tablet') {
             position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
             align-items: center;
-            height: 800px;
+            height: 100vh;
         }
     }
 
@@ -31,8 +29,6 @@
             @include media('>tablet') {
                 //lost-column: 8/12;
                 width: calc(100% - 400px);
-                -ms-flex-negative: 0;
-                flex-shrink: 0;
                 height: 100%;
                 overflow: scroll;
             }
@@ -47,13 +43,7 @@
             @include media('>tablet') {
                 //lost-column: 4/12;
                 width: 400px;
-                -ms-flex-negative: 0;
-                flex-shrink: 0;
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
                 height: 100%;
                 padding: 0px 70px;

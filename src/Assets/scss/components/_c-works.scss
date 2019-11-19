@@ -157,13 +157,15 @@
 .c-works-content {
 
     padding: 40px 70px 70px 70px;
+    max-width: 100%;
+    padding: 40px;
+    margin: 0 auto;
 
     //Tablet
-    @include media('>tablet') {
-        padding: 40px;
-        max-width: 768px;
-        margin: 0 auto;
-    }
+    @include media('>desktop') {
+        max-width: 75%;
+    } 
+    
 }
 
 .c-works__dimensions {
@@ -182,13 +184,5 @@ a .c-works__title {
         &__price {
             color: $text-color;
         }
-    }
-}
-
-
-.single-works {
-
-    .c-works__href-wrap {
-        margin-bottom: 60px;
     }
 }
