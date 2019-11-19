@@ -1311,6 +1311,11 @@ table {
           transform: rotate(180deg);
 }
 
+.video {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
 .video__wrapper {
   position: relative;
   padding-bottom: 56.25%;
