@@ -9,6 +9,7 @@
         :title="work.title"
         :subPostTitle="work.subPostTitle"
         :date="work.date"
+        :fullName="work.fullName"
         :medium="work.medium"
         :mediumChinese="work.mediumChinese"
         :dimensions="work.dimensions"
@@ -41,7 +42,7 @@ export default {
   data () {
     return {
       pageNumber: 1,
-      size: 6,
+      size: 200,
       list: []
     }
   },

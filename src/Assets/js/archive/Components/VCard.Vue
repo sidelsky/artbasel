@@ -9,7 +9,8 @@
       <h2 class="c-works__title" v-html="title"></h2>
     </a>
     <h2 class="c-works__title" v-html="subPostTitle"></h2>
-    <div class="c-works__date">{{ date }}</div>
+    <div class="c-works__name">{{ fullName }}</div>
+    <!-- <div class="c-works__date">{{ date }}</div> -->
     <!-- <div class="c-works__medium"><span v-html="mediumText"></span></div> -->
     <!-- <div class="c-works__medium"><span v-html="mediumChinese"></span></div> -->
     <!-- <div class="c-works__dimensions"><span v-html="dimensions"></span></div> -->
@@ -53,6 +54,7 @@ export default {
     title: String,
     subPostTitle: String,
     date: String,
+    fullName: String,
     medium: String,
     mediumChinese: String,
     dimensions: String,

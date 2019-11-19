@@ -11,6 +11,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'subPostTitle' => get_field('sub_post_title'),
       'image' => get_the_post_thumbnail_url(),
       'date' => get_field('date'),
+      'fullName' => get_field('full_name'),
       'medium' => get_field('medium'),
       'mediumText' => get_field('medium_free_text'),
       'mediumChinese' => get_field('medium_chinese'),

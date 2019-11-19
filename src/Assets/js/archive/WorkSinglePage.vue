@@ -37,7 +37,8 @@
 				<div class="c-work-single__content">
 					<h2 class="c-works__title"><span v-html="work.title"></span></h2>
 					<h2 class="c-works__title"><span v-html="work.subPostTitle"></span></h2>
-					<div class="c-works__date">{{ work.date }}</div>
+          <div class="c-works__name">{{ work.fullName }}</div>
+					<!-- <div class="c-works__date">{{ work.date }}</div> -->
 					<div class="c-works__medium"><span v-html="work.mediumText"></span></div>
 					<div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
 					<div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>

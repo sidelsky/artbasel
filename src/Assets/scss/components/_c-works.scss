@@ -13,6 +13,7 @@
     &__list {
       margin-left: -2.8rem;
       margin-right: -2.8rem;
+      border-bottom: solid 1px palette(greys, x-light);
 
       @include media('>tablet') {
         lost-flex-container: row;
@@ -73,33 +74,38 @@
     }
  
     //Medium  
-    &__medium,  
+    &__medium,
     //Demensions
     &__dimensions {
         color: currentColor;
         line-height: 1.7;
     }   
     
-    //
+    //Date
     &__date {
         margin-bottom: 15px;
     }  
 
+    //Name
+    &__name {
+        
+    }  
+
     //Price
     &__price {
-        font-weight: bold;
-        color: white;
+        color: white; 
     }
 
     //Price
     &__availability {
         margin-bottom: 30px;
+        font-family: font-family(primary, bold);
     }
 
     //Href Wrap
     &__href-wrap { 
         display: block; 
-        font-weight: bold;
+        font-family: font-family(primary, bold);
         margin-bottom: 60px;
         color: white;
         

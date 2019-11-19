@@ -5,18 +5,11 @@
    display: block;
    position: fixed;
    top: -70px;
-   margin-bottom: 200px;
- 
-
-   &__content {}
+   margin-bottom: 200px; 
 
    &__image {
-      // position: absolute;
-      // top: 0;
-      // left: 0;
       height: 100%;
       width: 100%;
-      // z-index: 1;
       background-repeat: no-repeat;
       background-position: 50%;
       background-size: cover;
@@ -25,15 +18,16 @@
 
 
 .parallax-window {
-	min-height: 650px;
+   min-height: 650px;
    top: -70px;
-   // display: flex;
-   // justify-content: center;
-   // align-items: center;
+
+   @include media('>tablet') {
+      min-height: 650px;
+      top: -70px;
+  }
+
 
    &__content {
-      //width: 720px !important;
       background-color: rgba(255, 255, 255, .6);
-      //padding: 30px;
    }
 }
