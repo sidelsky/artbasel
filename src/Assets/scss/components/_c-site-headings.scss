@@ -1,3 +1,12 @@
+
+.page-template-login {
+
+    .c-site-headings--h1 {
+        padding-top: 20px;
+    }
+
+}
+
 .c-site-headings {
 
     font-family: font-family(primary, medium);
@@ -39,6 +48,10 @@
            @include set-font-size(2.4rem, 2.4rem, 3.0rem, 3.6rem);
            line-height: 1.5;
            color: $dark;
+
+           &--light {
+               color: white;
+           }
 
            &--small {
             //@include set-font-size(2.8rem, 3.6rem, 3.6rem, 4rem);
@@ -85,6 +98,16 @@
            &--has-subcopy {
             margin-bottom: $spacing--small;
             padding-bottom: 0;
+        }
+
+        &--thanks {
+            padding-top: 30vh;
+            margin-bottom: -20px;
+        }
+        
+        &--email {
+            @include set-font-size(1.8rem, 1.8rem, 1.8rem, 2rem);
+            margin: 0px auto 40vh;
            }
 
        }

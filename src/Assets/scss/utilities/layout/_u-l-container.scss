@@ -31,6 +31,7 @@
     &--small {
         margin: auto;
         max-width: $max-width-small;
+
     }
 
     &--shallow {
@@ -52,9 +53,11 @@
     // background-position: center center;
     // background-size: cover;
     //height: 100vh;
+    width: 100%;
     position: relative;
     display: flex;
     align-items: center;
+    
 }
 
  .u-section {

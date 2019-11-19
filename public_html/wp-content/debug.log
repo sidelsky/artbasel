@@ -5335,3 +5335,41 @@ Stack trace:
 [15-Nov-2019 15:30:20 UTC] PHP Warning:  include(/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-google-analytics.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
 [15-Nov-2019 15:30:20 UTC] PHP Warning:  include(): Failed opening '/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-google-analytics.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
 [15-Nov-2019 15:31:57 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 25
+[18-Nov-2019 16:19:24 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 57
+[18-Nov-2019 16:19:39 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 68
+[18-Nov-2019 16:19:41 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 68
+[18-Nov-2019 16:20:14 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 23
+[18-Nov-2019 16:49:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_page_tamplate() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:69
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/thanks.php(5): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(74): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 69
+[18-Nov-2019 16:50:03 UTC] PHP Parse error:  syntax error, unexpected '?>' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 69
+[18-Nov-2019 16:51:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_page_tamplate() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:69
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/thanks.php(5): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(74): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 69
+[18-Nov-2019 16:51:23 UTC] PHP Parse error:  syntax error, unexpected '?>' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 69
+[18-Nov-2019 16:51:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function is_page_tamplate() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:69
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/thanks.php(5): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(74): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 69
+[18-Nov-2019 16:55:02 UTC] PHP Parse error:  syntax error, unexpected 'is_front_page' (T_STRING), expecting ',' or ';' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 89
+[18-Nov-2019 17:01:43 UTC] PHP Parse error:  syntax error, unexpected '>' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 90
+[18-Nov-2019 17:11:25 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ';' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 95
+[18-Nov-2019 17:22:32 UTC] PHP Notice:  Object of class App\Helper\Page could not be converted to int in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/post-template.php on line 284
+[18-Nov-2019 17:22:58 UTC] PHP Notice:  Object of class App\Helper\Page could not be converted to int in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/post-template.php on line 284
+[18-Nov-2019 17:23:41 UTC] PHP Notice:  Object of class App\Helper\Page could not be converted to int in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/post-template.php on line 284
+[18-Nov-2019 17:25:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 107
+[18-Nov-2019 17:26:04 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 107

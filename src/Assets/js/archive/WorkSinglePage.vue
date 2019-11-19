@@ -54,7 +54,7 @@
 
 					<span class="c-works__href-wrap">
 						<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-						class="c-works__href">Purchase</a>
+						class="c-works__href">Inquire to Purchase</a>
 						<svg class="u-icon c-works__icon">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
 						</svg>

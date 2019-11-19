@@ -56,16 +56,18 @@ $wordpress = new WordpressHelper;
 			$front_page_id = '6';
 			$currentPost_id = get_the_ID();
 			$content = get_post_field('post_content', $front_page_id);
+
 			if( is_front_page() ) { ?>
-			<section class="u-section ">
-				<div class="u-l-container--center" data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
-						<?php the_title('<h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">','</h1>'); ?>
+			<section class="u-section c-login--background-dark ">
+				<div class="u-l-container--center u-l-container--narrow " data-in-viewport>
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding">
+						<?php the_title('<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--light c-text-align-centre ">','</h1>'); ?>
 					</div>
 				</div>
 			</section>
 
 			<?php } elseif( is_archive( 'works' ) ) { ?>
+
 			<section class="u-section parallax-window__content">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
@@ -79,16 +81,21 @@ $wordpress = new WordpressHelper;
 					</div>
 				</div>
 			</section>
-			<?php } else { ?>
 
-			<section class="u-section ">
-				<div class="u-l-container--center" data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
-						<h1 class="c-site-headings  c-site-headings--h1"><?php echo get_the_title( $currentPost_id ); ?></h1>
-						<h1 class="c-site-headings  c-site-headings--h1"><?php echo get_field( 'sub_post_title', $currentPost_id ); ?></h1>
+			<?php } else { ?>
+			
+				<section class="u-section ">
+					<div class="u-l-container--center" data-in-viewport>
+						<div class="u-l-container--center u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+							<h1 class="c-site-headings c-site-headings--h1 <?= is_page_template('thanks.php') === ( TRUE ) ? 'c-text-align-centre c-site-headings--h2--thanks' : '' ?>">
+								<?= get_the_title( $currentPost_id ); ?>
+							</h1>
+							<h1 class="c-site-headings  c-site-headings--h1">
+								<?= get_field( 'sub_post_title', $currentPost_id ); ?>
+							</h1>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 			
 			<?php } ?>
 				

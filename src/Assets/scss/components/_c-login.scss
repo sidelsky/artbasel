@@ -1,7 +1,12 @@
 .c-login {
-    background-color: $dark;
+    
+    &--background-dark {
+        background-color: $dark;
+        color: white;
+    }
+
     @include media('>tablet') {
-        height: calc(100vh - 392px);
+        //height: calc(100vh - 392px);
       }
     
     &__footer {
