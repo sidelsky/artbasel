@@ -1,11 +1,24 @@
 .c-paralax-header {
-
    width: 100%;
-   height: 680px;
-   display: block;
-   position: fixed;
-   top: -70px;
-   margin-bottom: 200px; 
+   // height: 680px;
+   // display: block;
+   // position: fixed;
+   // top: -70px;
+   // margin-bottom: 200px; 
+
+   &--mobile {
+      display: block;
+      @include media('>tablet') {
+         display: none;
+     }
+   }
+   &--desktop {
+      display: none;
+      @include media('>tablet') {
+         display: block;
+     }
+   }
+
 
    &__image {
       height: 100%;

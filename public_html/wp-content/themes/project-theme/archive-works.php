@@ -97,16 +97,22 @@ $gallery = get_field('image_gallery', 6);
 $images = [];
 
 if($gallery) : ?>
-<!-- Parallax -->
-	<section class="u-section" id="carousel">
+
+	<!-- Parallax mobile -->
+	<section class="u-section c-paralax-header c-paralax-header--mobile">
+		<?php foreach ($gallery as $galleryImage) :  ?>
+			<img src="<?php echo $galleryImage['sizes']['large']; ?>">
+		<?php endforeach; ?>
+	</section>
+	
+	<!-- Parallax desktop -->
+	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div>
 			<?php foreach ($gallery as $galleryImage) :  ?>
 				<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div>
 			<?php endforeach; ?>
 		</div>
 	</section>
-
-
 
 <?php endif; ?>
 			
