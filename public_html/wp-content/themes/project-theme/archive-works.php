@@ -50,7 +50,7 @@
 				'priceRange' => get_field('price_range'),
 				'link' => get_the_permalink(),
 				'sold' => get_field('sold'),
-				'ids'  => get_the_id()
+				'ids'  => get_field('code_id')
 			];
 
 		endwhile;
