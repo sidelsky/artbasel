@@ -26,14 +26,14 @@
 		$artwork = [];
 
 		while ( $loop->have_posts() ) : $loop->the_post();
-
+		get_the_id();
 		// $title = get_the_title( $this->get_the_ID() );
 		// $title = esc_html( strip_tags( $title ) ); //ADD - strip tags before sending to template
 
 		// return $title;
 
 			$artwork[] = [
-				'id' => get_the_id(),
+				'key' => get_the_id(),
 				'title' => get_the_title(),
 				'subPostTitle' => get_field('sub_post_title'),
 				'surname' => get_field('surname'),
@@ -49,7 +49,8 @@
 				'price' => get_field('price'),
 				'priceRange' => get_field('price_range'),
 				'link' => get_the_permalink(),
-				'sold' => get_field('sold')
+				'sold' => get_field('sold'),
+				'ids'  => get_the_id()
 			];
 
 		endwhile;
@@ -96,6 +97,7 @@ $gallery = get_field('image_gallery', 6);
 $images = [];
 
 if($gallery) : ?>
+<!-- Parallax -->
 	<section class="u-section" id="carousel">
 		<div>
 			<?php foreach ($gallery as $galleryImage) :  ?>
@@ -103,6 +105,9 @@ if($gallery) : ?>
 			<?php endforeach; ?>
 		</div>
 	</section>
+
+
+
 <?php endif; ?>
 			
  

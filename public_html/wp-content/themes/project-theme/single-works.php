@@ -6,6 +6,7 @@ include("header.php"); ?>
 <?php
 if ( have_posts() ) : while ( have_posts() ) : the_post();
     $work = [
+      'key' => get_the_id(),
       'title' => get_the_title(),
       'content' => get_the_content(),
       'subPostTitle' => get_field('sub_post_title'),
@@ -20,6 +21,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'learn_more' => get_the_permalink(),
       'sold' => get_field('sold'),
       'video' => get_field('video'),
+      'ids'  => get_the_id()
     ];
     $gallery = get_field('image_gallery');
     $images = [];

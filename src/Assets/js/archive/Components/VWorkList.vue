@@ -18,6 +18,7 @@
         :sold="work.sold"
         :link="work.link"
         :mediumText="work.mediumText"
+        :ids="work.ids"
       />
     </div>
 

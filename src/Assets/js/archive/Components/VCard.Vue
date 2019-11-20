@@ -25,11 +25,9 @@
       ></span><span v-html="formattedSold"></span>
     </div>
 
-  <!--<span class="c-works__href-wrap"><a :href="link" class="c-works__href">Learn more</a><svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg></span>-->
-
     <span class="c-works__href-wrap">
       <a
-        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${title}&body=Hello, I'd like to inquire about: ${title}`"
+        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - id:${ids}, ${title}&body=Hello, I'd like to inquire about: id:${ids}, ${title}`"
         class="c-works__href"
       >Purchase</a>
       <svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
@@ -62,7 +60,8 @@ export default {
     price: String,
     sold: Boolean,
     link: String,
-    mediumText: String
+    mediumText: String,
+    ids: Number
   },
     computed: {
     formattedSold() {

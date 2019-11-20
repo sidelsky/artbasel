@@ -16,13 +16,13 @@
 
             <div class="c-work-single__column">
 
-			<figure class="c-work-single__figure">
-				<carousel :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:1},600:{items:1},768:{items:2}}">
-				<div v-for="item in gallery" :key="item">
-					<img :src="item" class="c-work-single__image">
-				</div>
-			</carousel>
-			</figure>
+          <figure class="c-work-single__figure">
+            <carousel :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:1},600:{items:1},768:{items:2}}">
+            <div v-for="item in gallery" :key="item">
+              <img :src="item" class="c-work-single__image">
+            </div>
+          </carousel>
+          </figure>
 
 			<!-- Video content -->
       <div class="video" v-if="work.video">
@@ -54,15 +54,15 @@
 						></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
 					</div>
 
-					<span class="c-works__href-wrap">
-						<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - ${work.title}&body=Hello, I'd like to inquire about: ${work.title}`"
-						class="c-works__href">Purchase</a>
+					<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase - id:${work.ids}, ${work.tite}&body=Hello, I'd like to inquire about: id:${work.ids}, ${work.title}`" class="c-button c-button--dark">Purchase</a>
+
+          <span class="c-works__href-wrap">
+						<a href="/works" class="c-works__href">View all works</a>
 						<svg class="u-icon c-works__icon">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
 						</svg>
 					</span>
 
-					<a href="/works" class="c-button c-button--dark">View all works</a>
 				</div>
 			</div>
         </article>
@@ -158,12 +158,3 @@ export default {
   }
 }
 </script>
-
-<style lang="css">
-  .c-carousel-controls .disabled {
-    cursor: default;
-    opacity: .3 !important;
-    background: none !important;
-    border: 1px solid #aaa !important;
-  }
-</style>
