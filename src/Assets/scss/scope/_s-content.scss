@@ -2,6 +2,11 @@
  * Reset default form styling for browser consistency
  */
 .s-content {
+
+    iframe {
+        margin-bottom: 30px;
+    }
+
     p {
         margin: 0 0 1rem;
     }

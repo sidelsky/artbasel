@@ -17,7 +17,7 @@
             <div class="c-work-single__column">
 
           <figure class="c-work-single__figure">
-            <carousel :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:1},600:{items:1},768:{items:2}}">
+            <carousel :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:1},600:{items:1},768:{items:1}}">
             <div v-for="item in gallery" :key="item">
               <img :src="item" class="c-work-single__image">
             </div>
