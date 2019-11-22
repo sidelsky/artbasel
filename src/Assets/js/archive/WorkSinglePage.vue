@@ -14,25 +14,32 @@
 
         <article class="c-work-single--full-width">
 
-            <div class="c-work-single__column">
+			<div class="c-work-single__column">
 
-          <figure class="c-work-single__figure">
-            <carousel :autoplay="true" :nav="false" :dots="false" :responsive="{0:{items:1},600:{items:1},768:{items:1}}">
-            <div v-for="item in gallery" :key="item">
-              <img :src="item" class="c-work-single__image">
-            </div>
-          </carousel>
-          </figure>
+				<figure class="c-work-single__figure">
+					<carousel 
+						:autoplay="true"
+						:loop="true"
+						:nav="false"
+						:dots="true"
+						:mouseDrag="false"
+						:responsive="{0:{items:1},600:{items:1},768:{items:1}}
+						">
+						<div v-for="item in gallery" :key="item">
+							<img :src="item" class="c-work-single__image" v-on:click="handleItemClick(item)">
+						</div>
+					</carousel>
+				</figure>
 
-			<!-- Video content -->
-      <div class="video" v-if="work.video">
-			  <div class="video__wrapper" v-html="work.video"></div>
-      </div>
+				<!-- Video content -->
+				<div class="video" v-if="work.video">
+					<div class="video__wrapper" v-html="work.video"></div>
+				</div>
 
-			<!-- WP content -->
-			<div class="s-content c-works-content" v-html="work.content"></div>
+				<!-- WP content -->
+				<div class="s-content c-works-content" v-html="work.content"></div>
 
-            </div>
+			</div>
 
             <div class="c-work-single__column">
               <div class="c-work-single__content">
@@ -57,7 +64,7 @@
 					<a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--dark">Purchase</a>
 
           <span class="c-works__href-wrap">
-						<a href="/works" class="c-works__href">View all works</a>
+						<a href="/" class="c-works__href">View all works</a>
 						<svg class="u-icon c-works__icon">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
 						</svg>

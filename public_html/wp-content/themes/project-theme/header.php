@@ -34,8 +34,8 @@ $wordpress = new WordpressHelper;
 		 */
 		include('Theme/Data/en.php');
 		$homeUrl = get_home_url();
-		$worksUrl = '/works';
-		if( is_archive( 'works' ) || is_single( ) ) {
+		$worksUrl = '/';
+		if( is_page( 'works' ) || is_single( ) ) {
 			$baseUrl = $worksUrl;
 		} else {
 			$baseUrl = $homeUrl;
@@ -58,16 +58,6 @@ $wordpress = new WordpressHelper;
 			$content = get_post_field('post_content', $front_page_id);
 
 			if( is_front_page() ) { ?>
-			<section class="u-section c-login--background-dark ">
-				<div class="u-l-container--center u-l-container--narrow " data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding">
-						<?php the_title('<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--light c-text-align-centre ">','</h1>'); ?>
-					</div>
-				</div>
-			</section>
-
-			<?php } elseif( is_archive( 'works' ) ) { ?>
-
 			<section class="u-section parallax-window__content">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">

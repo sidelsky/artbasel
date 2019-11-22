@@ -1,4 +1,7 @@
 <?php
+/**
+ * Template Name: Works
+ */
 
 		use App\Helper\Render;
 

@@ -9,11 +9,12 @@
   background: #fff;
 
   &__image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    // object-fit: cover;
+    // object-position: center;
+    @include absolute-center();
   }
 
   &__close {
@@ -22,11 +23,18 @@
     top: 2rem;
     width: 4rem;
     height: 4rem;
+    z-index: 5;
+    background-color: white;
 
     svg {
       display: block;
       width: 100%;
       height: 100%;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
+
   }
 }

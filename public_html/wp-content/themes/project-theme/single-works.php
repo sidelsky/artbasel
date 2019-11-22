@@ -26,7 +26,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
     $gallery = get_field('image_gallery');
     $images = [];
     foreach ($gallery as $galleryImage) {
-      $images[] = $galleryImage['url'];
+      $images[] = $galleryImage['sizes']['large'];
     }
     ?>
 

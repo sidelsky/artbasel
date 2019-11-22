@@ -1,0 +1,15 @@
+[21-Nov-2019 16:15:56 UTC] PHP Notice:  Undefined offset: 1 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 27
+[21-Nov-2019 16:16:24 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 27
+[21-Nov-2019 16:16:33 UTC] PHP Notice:  Undefined offset: 1 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 27
+[21-Nov-2019 16:19:21 UTC] PHP Notice:  Undefined offset: 1 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 27
+[21-Nov-2019 16:19:25 UTC] PHP Notice:  Undefined offset: 1 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 27
+[21-Nov-2019 16:23:52 UTC] PHP Notice:  Undefined index: sizes in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 27
+[21-Nov-2019 16:24:15 UTC] PHP Warning:  Illegal string offset 'sizes' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 31
+[21-Nov-2019 16:24:15 UTC] PHP Warning:  Illegal string offset 'large' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 31
+[22-Nov-2019 15:08:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\Previews' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/index.php:9
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/index.php on line 9
