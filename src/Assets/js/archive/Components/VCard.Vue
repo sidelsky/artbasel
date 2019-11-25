@@ -25,7 +25,7 @@
       ></span><span v-html="formattedSold"></span>
     </div>
 
-    <span class="c-works__href-wrap">
+    <span v-if="!sold" class="c-works__href-wrap">
       <a
         :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${ids}&body=Hello, I'd like to inquire about: ${ids}`"
         class="c-works__href"
