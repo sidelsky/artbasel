@@ -1,0 +1,39 @@
+.c-clock { 
+    color: #fff; 
+    display: inline-block;
+    text-align: center; 
+    @include set-font-size(5rem, 8rem, 10rem, 15rem);
+    margin-bottom: $spacing--small;
+    font-family: font-family(primary, light);
+
+    > div{ 
+        padding: 0; 
+        display: inline-block;
+
+        @include media('>desktop') {
+            margin-top: -30px;
+        }
+
+    }
+
+    div > span{ 
+        //padding: 0 15px; 
+        display: inline-block; 
+    }
+
+    .seconds {
+        width: 170px;
+    }
+
+    .smalltext {
+        @include set-font-size(1.8rem, 1.8rem, 1.8rem, 2rem);
+        text-transform: uppercase;
+
+        @include media('>desktop') {
+            margin-top: -30px;
+        }
+
+    }
+
+
+} 

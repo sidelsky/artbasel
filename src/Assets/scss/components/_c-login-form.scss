@@ -51,9 +51,10 @@
 	color: #9b9b9b;
     width: 100%;
     padding-left: $spacing--tiny;
-    margin-bottom: $spacing--small;
+    margin-bottom: $spacing--tiny;
     border-radius: 3px;
-    line-height: 4;
+    height: 48px;
+    //line-height: 3;
 
 	&:focus {
 		border: solid 2px $white;
@@ -74,18 +75,11 @@
 
 
 .tml-submit-wrap {
-
 	text-align: center;
-
-
-
-
 }
 
 .submit, #gform_submit_button_1, input[type='submit'] {
     background-color: transparent;
-    // $dimentions: 48px;
-    // height: $dimentions;
     width: 100%;
     @include set-font-size(2rem, 2rem, 2rem, 2rem);
     font-family: font-family(primary, semibold);
@@ -94,7 +88,8 @@
     color: $white;
     transition: ease .2s opacity 1s;
     border-radius: 3px;
-    line-height: 3.5;
+    height: 48px;
+    //line-height: 2.5;
 
     &:hover {
         transition: ease-in-out .2s background-position;
@@ -146,7 +141,7 @@
     form {
         margin: 0 auto;
         width:100%;
-        max-width: 540px;
+        max-width: 340px;
     }
 
 }

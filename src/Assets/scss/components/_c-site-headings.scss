@@ -46,7 +46,7 @@
        //Large title
        &--h1 {
            @include set-font-size(2.4rem, 2.4rem, 3.0rem, 3.6rem);
-           line-height: 1.5;
+           line-height: 1.2;
            color: $dark;
 
            &--hero {
@@ -61,6 +61,11 @@
 
            &--light {
                color: white;
+           }
+
+           &--email-sub {
+               margin-bottom: $spacing--large;
+               font-family: font-family(primary, light);
            }
 
            &--small {

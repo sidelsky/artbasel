@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Template Name: Works
@@ -8,6 +9,9 @@
 		$render = new Render;
 
 		include("header.php");
+
+		/* Include login modal */
+		include("login.php");
 
 ?>
 
