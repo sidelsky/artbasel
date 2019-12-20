@@ -117,11 +117,14 @@
         &--thanks {
             padding-top: 30vh;
             margin-bottom: -20px;
+            @include set-font-size(1.8rem, 1.8rem, 1.8rem, 3rem);
+            font-family: font-family(primary, light);
         }
         
         &--email {
-            @include set-font-size(1.8rem, 1.8rem, 1.8rem, 2rem);
+            @include set-font-size(1.8rem, 1.8rem, 1.8rem, 3rem);
             margin: 0px auto 40vh;
+            font-family: font-family(primary, light);
            }
 
        }
