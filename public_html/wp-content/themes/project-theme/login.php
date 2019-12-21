@@ -1,6 +1,16 @@
 <?php
-	$post_id = 2435;
-	//$post_id_prod = 2716;
+	
+	$post_id_dev = 2435;
+	$post_id_prod = 2716;
+
+	$localhost = 'artbasilvip:8888';
+
+	if ($_SERVER['HTTP_HOST'] == $localhost) {
+		$post_id = $post_id_dev;
+	} else {
+		$post_id = $post_id_prod;
+	}
+
     $post = get_post($post_id, ARRAY_A);
     //$title = $post['post_title'];
 	//$content = $post['post_content'];
@@ -79,10 +89,11 @@
 		var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
 		var seconds = Math.floor((t % (1000 * 60)) / 1000); 
 
-		document.getElementById("day").innerHTML =days ; 
-		document.getElementById("hour").innerHTML =hours; 
+		document.getElementById("day").innerHTML = days; 
+		document.getElementById("hour").innerHTML = hours; 
 		document.getElementById("minute").innerHTML = minutes;  
-		document.getElementById("second").innerHTML =seconds;  
+		document.getElementById("second").innerHTML = seconds;
+
 		if (t < 0) { 
 				clearInterval(x); 
 				document.getElementById("demo").innerHTML = "TIME UP"; 

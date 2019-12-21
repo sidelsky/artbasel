@@ -40,3 +40,10 @@ Stack trace:
 #4 {main}
   thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
 [20-Dec-2019 11:28:00 UTC] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 6
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 10
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 11
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 12
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 13
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 14
+[21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 15
