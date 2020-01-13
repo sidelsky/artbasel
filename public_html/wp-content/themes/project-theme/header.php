@@ -57,10 +57,10 @@ $wordpress = new WordpressHelper;
 			$currentPost_id = get_the_ID();
 			$content = get_post_field('post_content', $front_page_id);
 
-			if( is_front_page() ) { ?>
+			if( is_front_page() || is_page('Works preview') ) { ?>
 			<section class="u-section parallax-window__content">
 				<div class="u-l-container--center" data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() || is_page('Works preview') === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
 					<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre ">
 						<?php echo get_the_title( $front_page_id ); ?>
 					</h1>
@@ -79,7 +79,7 @@ $wordpress = new WordpressHelper;
 					<?php else : ?>
 					<section class="u-section ">
 						<div class="u-l-container--center" data-in-viewport>
-							<div class="u-l-container--center u-l-horizontal-padding <?= is_front_page() === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
+							<div class="u-l-container--center u-l-horizontal-padding <?= is_front_page() || is_page('Works preview') === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
 								<h1 class="c-site-headings c-site-headings--h1 <?= is_page_template('thanks.php') === ( TRUE ) ? 'c-text-align-centre c-site-headings--h2--thanks' : '' ?>">
 									<?= get_the_title( $currentPost_id ); ?>
 								</h1>

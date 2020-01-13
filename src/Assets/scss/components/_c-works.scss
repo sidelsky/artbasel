@@ -185,3 +185,27 @@ a .c-works__title {
         }
     }
 }
+
+.page-id-2475 {
+    color: $text-color;
+    .c-works {
+            //Href
+        &__href, 
+        &__price {
+            color: $text-color;
+        }
+    }
+}
+
+
+/** Live **/
+.page-id-2751 {
+    color: $text-color;
+    .c-works {
+            //Href
+        &__href, 
+        &__price {
+            color: $text-color;
+        }
+    }
+}

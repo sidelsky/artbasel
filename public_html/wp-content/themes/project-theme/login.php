@@ -23,64 +23,65 @@
 	$consent = get_field('consent', $post_id);
 
 ?>
+<?php if( is_front_page() ) : ?>
+	<?php if($show_email_submission) : ?>
 
-<?php if($show_email_submission) : ?>
+		<section class="c-login c-login--background-dark">
 
-	<section class="c-login c-login--background-dark">
+				<header class="c-header c-header--modal">
+					<a href="<?= $baseUrl ?>" class="c-header__link">
+						<svg class="c-header__icon">
+							<use xlink:href='#shape-hauserwirth-logo'></use>
+						</svg>
+					</a>
+				</header>
 
-			<header class="c-header c-header--modal">
-				<a href="<?= $baseUrl ?>" class="c-header__link">
-					<svg class="c-header__icon">
-						<use xlink:href='#shape-hauserwirth-logo'></use>
-					</svg>
-				</a>
-			</header>
-
-		<div class="u-l-container--center" data-in-viewport>
-			<div class="u-l-container u-l-container--row u-l-vertical-padding--small">
-				
-				
-				<h1 class="c-site-headings c-site-headings--h1--email-sub c-site-headings--h1 c-site-headings--h1--light c-text-align-centre"><?= $title; ?></h1>
-				
-				<?php if($show_countdown) : ?>
-					<div id="clockdiv" class="c-clock c-text-align-centre"> 
-						<div> 
-							<span class="days" id="day"></span> 
-							<div class="smalltext">Days</div> 
-						</div> 
-						<div> 
-							<span class="hours" id="hour"></span> 
-							<div class="smalltext">Hours</div> 
-						</div> 
-						<div> 
-							<span class="minutes" id="minute"></span> 
-							<div class="smalltext">Minutes</div> 
-						</div> 
-						<div> 
-							<span class="seconds" id="second"></span> 
-							<div class="smalltext">Seconds</div> 
-						</div> 
-					</div>
-				<?php endif; ?>
+			<div class="u-l-container--center" data-in-viewport>
+				<div class="u-l-container u-l-container--row u-l-vertical-padding--small">
 					
-				<p id="demo"></p>
+					
+					<h1 class="c-site-headings c-site-headings--h1--email-sub c-site-headings--h1 c-site-headings--h1--light c-text-align-centre"><?= $title; ?></h1>
+					
+					<?php if($show_countdown) : ?>
+						<div id="clockdiv" class="c-clock c-text-align-centre"> 
+							<div> 
+								<span class="days" id="day"></span> 
+								<div class="smalltext">Days</div> 
+							</div> 
+							<div> 
+								<span class="hours" id="hour"></span> 
+								<div class="smalltext">Hours</div> 
+							</div> 
+							<div> 
+								<span class="minutes" id="minute"></span> 
+								<div class="smalltext">Minutes</div> 
+							</div> 
+							<div> 
+								<span class="seconds" id="second"></span> 
+								<div class="smalltext">Seconds</div> 
+							</div> 
+						</div>
+					<?php endif; ?>
+						
+					<p id="demo"></p>
 
-				<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre"><?= $subtitle; ?></h3>
-					<div class="tml tml-login" id="theme-my-login1">
-						<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
-						<p class="c-footer"><small><?= $consent; ?></small></p>
+					<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre"><?= $subtitle; ?></h3>
+						<div class="tml tml-login" id="theme-my-login1">
+							<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
+							<p class="c-footer"><small><?= $consent; ?></small></p>
 
-						<footer class="u-section c-footer c-footer--modal">
-				<div class="u-l-container">
-					<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
-				</div>
-			</footer>
-			
+							<footer class="u-section c-footer c-footer--modal">
+					<div class="u-l-container">
+						<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
+					</div>
+				</footer>
+				
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	<?php endif; ?>
 <?php endif; ?>
 
 <script> 

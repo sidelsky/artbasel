@@ -47,3 +47,5 @@ Stack trace:
 [21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 13
 [21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 14
 [21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 15
+[13-Jan-2020 23:14:18 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
+[13-Jan-2020 23:17:52 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
