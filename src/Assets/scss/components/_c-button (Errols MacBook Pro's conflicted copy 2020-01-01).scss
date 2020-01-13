@@ -1,0 +1,12 @@
+.c-button {
+    color: $dark;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    border: solid 1px currentColor;
+    @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+    font-family: font-family(primary, medium);
+    cursor: pointer;
+    user-select: none;
+    border-radius: 3px;
+}

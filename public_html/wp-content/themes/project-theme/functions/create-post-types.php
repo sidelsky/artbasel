@@ -14,9 +14,12 @@
         $instance = new CustomPostType();
 
         $instance->createPostType('Works', 'Works', $args=[
-            'hierarchical' => true,
-            'has_archive' => true,
+            'hierarchical' => TRUE,
+            'has_archive' => TRUE,
             'menu_icon' => 'dashicons-format-image',
+            'supports' => [
+                'revisions' => TRUE
+            ],
             'rewrite' => [
                 'slug' => FALSE,
                 'with_front' => TRUE

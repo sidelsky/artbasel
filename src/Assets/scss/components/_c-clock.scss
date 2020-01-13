@@ -22,7 +22,9 @@
     }
 
     .seconds {
-        width: 170px;
+        @include media('>desktop') {
+            width: 170px;
+        }
     }
 
     .smalltext {

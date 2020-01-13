@@ -12,6 +12,13 @@
             <?php while ( have_posts() ) : the_post(); ?>    
             <h2 class="c-site-headings--h2--email c-text-align-centre">
                 <?php the_content(); ?>
+                <br>
+                <script>
+                    setTimeout(function(){
+                        window.location.href = 'https://www.hauserwirth.com';
+                    }, 5000);
+                </script>
+                <div style="font-size: 19px;">Redirecting to 'hauserwirth.com' in 5 seconds...</div>
             </h2>
             <?php endwhile; ?>
         <?php endif; ?>
