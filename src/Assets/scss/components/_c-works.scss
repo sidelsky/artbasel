@@ -101,19 +101,33 @@
         font-family: font-family(primary, bold);
     }
 
+
+
     //Href Wrap
     &__href-wrap { 
         display: block; 
         font-family: font-family(primary, bold);
-        //margin-bottom: 60px;
         color: white;
+        font-weight: 100;
         
-
         &:hover {
             text-decoration: underline;
 
             .c-works__icon { 
                 transform: translate3d(5px,0,0);
+            }
+        }
+
+        &--center {
+            text-align: center;
+            .c-works__href {
+                color: white !important;
+                font-family: font-family(primary, medium);
+            }
+            .c-works__icon {
+                top: 0 !important;
+                margin-left: 0;
+                transition: all ease-in-out 200ms;
             }
         }
 

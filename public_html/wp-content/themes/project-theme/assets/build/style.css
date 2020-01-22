@@ -911,7 +911,7 @@ table {
 }
 
 .c-header-background-image {
-  height: 500px;
+  height: calc(100vh - 70px);
   width: 100%;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -929,6 +929,17 @@ table {
   overflow: auto;
 }
 
+.c-header-background-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 .c-paralax-header {
   width: 100%;
 }
@@ -944,22 +955,24 @@ table {
 }
 
 .parallax-window {
-  min-height: 650px;
+  min-height: calc(100vh - 70px);
   background: transparent;
 }
 
 @media (min-width: 769px) {
   .parallax-window {
-    min-height: 650px;
+    min-height: calc(100vh - 70px);
   }
 }
 
 .parallax-window__content {
   color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .parallax-window__footer {
-  min-height: 500px;
+  min-height: 670px;
 }
 
 .page-template-login .c-site-headings--h1 {
@@ -1025,14 +1038,15 @@ table {
 }
 
 .c-site-headings--h1--hero {
-  font-size: 2rem;
+  font-family: "hind-regular", Helvetica, Arial, sans-serif;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   color: white;
 }
 
 @media (min-width: 376px) {
   .c-site-headings--h1--hero {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -1044,30 +1058,31 @@ table {
 
 @media (min-width: 1025px) {
   .c-site-headings--h1--hero {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 }
 
 .c-site-headings--h1--sub {
-  font-size: 2.4rem;
+  font-size: 4.4rem;
   font-family: "hind-semibold", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
 }
 
 @media (min-width: 376px) {
   .c-site-headings--h1--sub {
-    font-size: 2.4rem;
+    font-size: 5.4rem;
   }
 }
 
 @media (min-width: 769px) {
   .c-site-headings--h1--sub {
-    font-size: 3rem;
+    font-size: 6.4rem;
   }
 }
 
 @media (min-width: 1025px) {
   .c-site-headings--h1--sub {
-    font-size: 3.6rem;
+    font-size: 6.4rem;
   }
 }
 
@@ -1654,6 +1669,7 @@ table {
   display: block;
   font-family: "hind-bold", Helvetica, Arial, sans-serif;
   color: white;
+  font-weight: 100;
 }
 
 .c-works__href-wrap:hover {
@@ -1663,6 +1679,22 @@ table {
 .c-works__href-wrap:hover .c-works__icon {
   -webkit-transform: translate3d(5px, 0, 0);
           transform: translate3d(5px, 0, 0);
+}
+
+.c-works__href-wrap--center {
+  text-align: center;
+}
+
+.c-works__href-wrap--center .c-works__href {
+  color: white !important;
+  font-family: "hind-medium", Helvetica, Arial, sans-serif;
+}
+
+.c-works__href-wrap--center .c-works__icon {
+  top: 0 !important;
+  margin-left: 0;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
 }
 
 .c-works__icon {

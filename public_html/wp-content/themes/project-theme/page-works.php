@@ -107,12 +107,14 @@ $images = [];
 
 if($gallery) : ?>
 
-	<!-- Parallax mobile -->
-	<!-- <section class="u-section c-paralax-header c-paralax-header--mobile">
+	<?php /**
+	 * Parallax mobile 
+	<section class="u-section c-paralax-header c-paralax-header--mobile">
 		<?php foreach ($gallery as $galleryImage) :  ?>
 			<img src="<?php echo $galleryImage['sizes']['large']; ?>">
 		<?php endforeach; ?>
-	</section> -->
+	</section>
+	*/ ?>
 	
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
@@ -131,6 +133,14 @@ if($gallery) : ?>
 							<?php if($content ) : ?>
 								<div class="u-l-container--narrow c-site-headings c-site-headings--h1--small c-site-headings--text-align-center"><?= $content; ?></div>
 							<?php endif; ?>
+
+							<span class="c-works__href-wrap c-works__href-wrap--center">
+								<a href="#top" class="c-works__href">View all works</a>
+								<svg class="u-icon c-works__icon">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+								</svg>
+							</span>
+
 						</div>
  
 					<?php } ?>
@@ -142,7 +152,7 @@ if($gallery) : ?>
 <?php endif; ?>
 			
  
-<section class="u-section ">
+<section class="u-section" id="top">
 	<div id="app">
 	</div>
 </section>
@@ -157,12 +167,15 @@ $images = [];
 
 if($gallery) : ?>
 
-	<!-- Parallax mobile -->
+	<?php /**
+	 * Parallax mobile
+	 
 	<section class="u-section c-paralax-header c-paralax-header--mobile">
 		<?php foreach ($gallery as $galleryImage) :  ?>
 			<img src="<?php echo $galleryImage['sizes']['large']; ?>">
 		<?php endforeach; ?>
 	</section>
+	*/ ?>
 	
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">

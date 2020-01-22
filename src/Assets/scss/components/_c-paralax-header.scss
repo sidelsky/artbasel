@@ -1,5 +1,8 @@
+$hero-height: calc(100vh - 70px);
+$footer-height: 670px;
+
 .c-header-background-image {
-   height: 500px;
+   height: $hero-height;
    width: 100%;
    background-repeat: no-repeat;
    background-position: 50%;
@@ -9,6 +12,17 @@
    align-items: center;
    resize: both;
    overflow: auto;
+
+   &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($black, 0.5);
+      z-index: 1;
+   }
 }
 
 .c-paralax-header {
@@ -28,20 +42,21 @@
    }
 }
 
-$height: 650px;
+
 
 .parallax-window {
-   min-height: $height;
+   min-height: $hero-height;
    background: transparent;
 
    @include media('>tablet') {
-      min-height: $height;
+      min-height: $hero-height;
   }
 
 
    &__content {
-
       color: white;
+      position: relative;
+      z-index: 2;
    }
 
    &__copy {
@@ -52,5 +67,5 @@ $height: 650px;
 
 //Footer image
 .parallax-window__footer {
-   min-height: 500px;
+   min-height: $footer-height;
 }
