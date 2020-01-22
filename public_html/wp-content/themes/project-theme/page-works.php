@@ -99,8 +99,60 @@
 
 
 <?php 
-
+/**
+ * Hero paralax image
+ */
 $gallery = get_field('image_gallery', 6);
+$images = [];
+
+if($gallery) : ?>
+
+	<!-- Parallax mobile -->
+	<!-- <section class="u-section c-paralax-header c-paralax-header--mobile">
+		<?php foreach ($gallery as $galleryImage) :  ?>
+			<img src="<?php echo $galleryImage['sizes']['large']; ?>">
+		<?php endforeach; ?>
+	</section> -->
+	
+	<!-- Parallax desktop -->
+	<section class="u-section c-paralax-header c-paralax-header--desktop">
+		<?php foreach ($gallery as $galleryImage) :  ?>
+			<div class="c-header-background-image" style="background-image: url('<?php echo $galleryImage['sizes']['large']; ?>')">
+				<?php
+					$front_page_id = '6';
+					$currentPost_id = get_the_ID();
+					$content = get_post_field('post_content', $front_page_id);
+		
+					if( is_front_page() || is_page('Works preview') ) { ?>
+						 
+						<div class="parallax-window__content">
+							<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?php echo get_the_title( $front_page_id ); ?></h1>
+							<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></h2>
+							<?php if($content ) : ?>
+								<div class="u-l-container--narrow c-site-headings c-site-headings--h1--small c-site-headings--text-align-center"><?= $content; ?></div>
+							<?php endif; ?>
+						</div>
+ 
+					<?php } ?>
+				<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div> -->
+			</div>
+			<?php endforeach; ?>
+	</section>
+
+<?php endif; ?>
+			
+ 
+<section class="u-section ">
+	<div id="app">
+	</div>
+</section>
+
+<?php 
+/**
+ * Footer paralax image
+ */
+
+$gallery = get_field('footer_gallery', 6);
 $images = [];
 
 if($gallery) : ?>
@@ -116,19 +168,18 @@ if($gallery) : ?>
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div>
 			<?php foreach ($gallery as $galleryImage) :  ?>
-				<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div>
+				<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div>
 			<?php endforeach; ?>
 		</div>
 	</section>
 
 <?php endif; ?>
-			
- 
-<section class="u-section ">
-	<div id="app">
-	</div>
-</section>
 
+<?php 
+/**
+ * Footer content
+ */
+?>
 <section class="u-section">
 	<div class="u-l-container--center">
 		<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">

@@ -1,46 +1,56 @@
+.c-header-background-image {
+   height: 500px;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-position: 50%;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   resize: both;
+   overflow: auto;
+}
+
 .c-paralax-header {
    width: 100%;
-   // height: 680px;
-   // display: block;
-   // position: fixed;
-   // top: -70px;
-   // margin-bottom: 200px; 
 
-   &--mobile {
-      display: block;
-      @include media('>tablet') {
-         display: none;
-     }
-   }
+   // &--mobile {
+   //    display: block;
+   //    @include media('>tablet') {
+   //       display: none;
+   //   }
+   // }
    &--desktop {
-      display: none;
+      display: block;
       @include media('>tablet') {
          display: block;
      }
    }
-
-
-   &__image {
-      height: 100%;
-      width: 100%;
-      background-repeat: no-repeat;
-      background-position: 50%;
-      background-size: cover;
-   }
 }
 
+$height: 650px;
 
 .parallax-window {
-   min-height: 650px;
-   top: -70px;
+   min-height: $height;
+   background: transparent;
 
    @include media('>tablet') {
-      min-height: 650px;
-      top: -70px;
+      min-height: $height;
   }
 
 
    &__content {
-      background-color: rgba(255, 255, 255, .6);
+
+      color: white;
    }
+
+   &__copy {
+
+   }
+   
+}
+
+//Footer image
+.parallax-window__footer {
+   min-height: 500px;
 }

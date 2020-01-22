@@ -58,7 +58,7 @@ $wordpress = new WordpressHelper;
 			$content = get_post_field('post_content', $front_page_id);
 
 			if( is_front_page() || is_page('Works preview') ) { ?>
-			<section class="u-section parallax-window__content">
+			<!-- <section class="u-section parallax-window__content">
 				<div class="u-l-container--center" data-in-viewport>
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() || is_page('Works preview') === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
 					<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre ">
@@ -70,7 +70,7 @@ $wordpress = new WordpressHelper;
 						<?php endif; ?>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<?php } else { ?>
 				

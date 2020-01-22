@@ -101,39 +101,9 @@
 	<section class="u-section" id="carousel">
 		<div class="zu-l-container--center" data-in-viewport>
       <div class="zu-l-container zu-l-container--row">
-
-
         <?php foreach ($gallery as $galleryImage) :  ?>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>">
-
-          <!-- <div class="parallax-window__content">
-            <h1 class="c-site-headings  c-site-headings--h1 c-text-align-centre ">
-              <?php echo get_the_title( $front_page_id ); ?><br>
-              <span class="c-site-headings c-site-headings--h1--small"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></span>
-          </h1>
-            <?php if($content ) : ?>
-              <div class="c-works-content"><?php $content; ?></div>
-            <?php endif; ?>
-          </div> -->
-
-        </div>
+          <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div>
         <?php endforeach; ?>
-      
-        
-        <?php/*
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-          <?php foreach ($gallery as $galleryImage) :  ?>
-            <div class="swiper-slide">
-              <figure class="swiper-slide__image" style="background-image:url('<?php echo $galleryImage['sizes']['large']; ?>');"></figure>
-            </div>
-          <?php endforeach; ?>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
-        </div>
-        */?>
-
 			</div>
 		</div>
 	</section>

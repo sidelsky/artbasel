@@ -49,3 +49,5 @@ Stack trace:
 [21-Dec-2019 17:41:06 UTC] PHP Notice:  Undefined variable: post_id in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 15
 [13-Jan-2020 23:14:18 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
 [13-Jan-2020 23:17:52 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
+[22-Jan-2020 11:41:49 UTC] PHP Notice:  Use of undefined constant z6 - assumed 'z6' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 105
+[22-Jan-2020 13:01:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 28
