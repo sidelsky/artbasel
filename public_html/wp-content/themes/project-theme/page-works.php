@@ -34,10 +34,6 @@
 
 		while ( $loop->have_posts() ) : $loop->the_post();
 		get_the_id();
-		// $title = get_the_title( $this->get_the_ID() );
-		// $title = esc_html( strip_tags( $title ) ); //ADD - strip tags before sending to template
-
-		// return $title;
 
 			$artwork[] = [
 				'key' => get_the_id(),
@@ -105,6 +101,8 @@
 $gallery = get_field('image_gallery', 6);
 $images = [];
 
+print_r($artwork);
+
 if($gallery) : ?>
 
 	<?php /**
@@ -140,14 +138,67 @@ if($gallery) : ?>
 									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
 								</svg>
 							</span>
-
 						</div>
- 
+						 
 					<?php } ?>
 				<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div> -->
 			</div>
 			<?php endforeach; ?>
 	</section>
+
+	<!-- Content carousel -->
+	<section class="u-section">
+	<div class="u-l-container--center">
+		<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+			<div class="s-content c-works__footer c-works__footer__hr">
+				
+			<?php
+				/**
+				 * Get Works content
+				 */
+				foreach($artwork as $art):
+				/**
+				 * Works card
+				 */
+
+				// function formattedSold() {
+					// if( $art['sold'] != 1 ) {
+					//   echo 'Available';
+					// } else {
+					//   echo 'Sold';
+					// }
+
+					// $sold ? 'Available' : 'Sold';
+					// $soldMarker ? 'c-sale-marker--sold' : 'c-sale-marker--available';
+				//   }
+
+				?>
+					<article class="c-works__card" surname="Johnson">
+						<figure class="c-works__figure">
+							<a href="<?= $art['link']; ?>">
+								<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__image">
+							</a>
+						</figure> 
+						<a href="http://artbasilvip:8888/works/johnr101396/">
+							<h2 class="c-works__title"><?= $art['title']; ?></h2>
+						</a>
+						<div class="c-works__name"><?= $art['fullName']; ?></div>
+						<div class="c-works__price"><span><?= $art['price']; ?></span></div>
+						<div class="c-works__availability">
+							<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Available' : 'Sold'; ?></span>
+						</div>
+						<span class="c-works__href-wrap">
+							<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Purchase</a>
+							<svg class="u-icon c-works__icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
+							</svg>
+						</span>
+					</article>
+				<?php endforeach; ?>
+			</div>
+		</div>
+	</div>
+</section>
 
 <?php endif; ?>
 			

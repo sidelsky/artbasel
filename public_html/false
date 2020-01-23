@@ -51,3 +51,77 @@ Stack trace:
 [13-Jan-2020 23:17:52 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
 [22-Jan-2020 11:41:49 UTC] PHP Notice:  Use of undefined constant z6 - assumed 'z6' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 105
 [22-Jan-2020 13:01:14 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 28
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:38:12 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 174
+[23-Jan-2020 12:42:19 UTC] PHP Notice:  Undefined index: title in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 162
+[23-Jan-2020 15:54:18 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 166
+[23-Jan-2020 15:58:39 UTC] PHP Fatal error:  Cannot redeclare formattedSold() (previously declared in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:165) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 164
+[23-Jan-2020 15:59:00 UTC] PHP Fatal error:  Cannot redeclare formattedSold() (previously declared in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:165) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 164
+[23-Jan-2020 15:59:51 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 165
+[23-Jan-2020 15:59:51 UTC] PHP Fatal error:  Cannot redeclare formattedSold() (previously declared in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:165) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 164
+[23-Jan-2020 16:00:27 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 165
+[23-Jan-2020 16:00:27 UTC] PHP Fatal error:  Cannot redeclare formattedIsSold() (previously declared in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:165) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 164
+[23-Jan-2020 16:00:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function formazttedIsSold() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:185
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 185
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:01:26 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 157
+[23-Jan-2020 16:03:19 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 165
+[23-Jan-2020 16:03:19 UTC] PHP Fatal error:  Cannot redeclare formattedSold() (previously declared in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:165) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 164
+[23-Jan-2020 16:04:34 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 166
+[23-Jan-2020 16:04:34 UTC] PHP Fatal error:  Cannot redeclare formattedSold() (previously declared in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:166) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 165
+[23-Jan-2020 16:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function formattedSold() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php:186
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 186
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:12:11 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 188
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
