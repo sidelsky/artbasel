@@ -134,12 +134,13 @@
         font-family: font-family(primary, bold);
         color: white;
         font-weight: 100;
+        text-align: center;
         
         &:hover {
             text-decoration: underline;
 
             .c-works__icon { 
-                transform: translate3d(5px,0,0);
+                transform: translate3d(3px,0,0);
             }
         }
 
@@ -161,7 +162,7 @@
     //Icon
     &__icon {
         top: .2em !important;
-        margin-left: $spacing--tiny;
+        margin-left: 2px;
         transition: all ease-in-out 200ms;
     }
 

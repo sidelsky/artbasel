@@ -10,8 +10,8 @@
     </a>
     <h2 class="c-works__title" v-html="subPostTitle"></h2>
     <div class="c-works__name">{{ fullName }}</div>
-    <!-- <div class="c-works__date">{{ date }}</div> -->
-    <!-- <div class="c-works__medium"><span v-html="mediumText"></span></div> -->
+    <div class="c-works__date">{{ date }}</div>
+    <div class="c-works__medium"><span v-html="mediumText"></span></div>
     <!-- <div class="c-works__medium"><span v-html="mediumChinese"></span></div> -->
     <!-- <div class="c-works__dimensions"><span v-html="dimensions"></span></div> -->
     <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
@@ -25,11 +25,17 @@
       ></span><span v-html="formattedSold"></span>
     </div>
 
+      <a 
+        v-if="!sold" 
+        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${ids}&body=Hello, I'd like to inquire about: ${ids}`"
+        class="c-button c-button--light"
+      >Purchase</a>
+
     <span v-if="!sold" class="c-works__href-wrap">
       <a
         :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${ids}&body=Hello, I'd like to inquire about: ${ids}`"
         class="c-works__href"
-      >Purchase</a>
+      >Learn more</a>
       <svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
     </span>
   

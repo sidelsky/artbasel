@@ -62,6 +62,7 @@
 					</div>
 
 					<a v-if="!work.sold" :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--dark">Purchase</a>
+          <a v-if="!work.sold" :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--light">Inquire to learn more</a>
 
           <span class="c-works__href-wrap">
 						<a href="/" class="c-works__href">View all works</a>

@@ -10,18 +10,28 @@
     user-select: none;
     border-radius: 4px;
     text-align: center;
+    display: block; 
+    width: 100%;
+    margin-bottom: $spacing--small;
  
     &--dark {
         background-color: #222222;
         color: white;
-        display: block; 
-        width: 100%;
-        margin-bottom: 50px;
-        
         &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: underline;
         }
     }
+
+    &--light {
+        color: #222222;
+        background-color: white;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
 }
 
  
