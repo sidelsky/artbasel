@@ -1,6 +1,10 @@
 import './svg-sprite';
 import './components/login-form';
 import './archive';
+import './components/paralax';
+import './components/smoothscroll-api';
+import './components/owl-home-hero';
+import './components/owl-home-hero-api';
 //import './components/siema';
-//import './components/swiper';
-//import './components/swiper-api';
+// import './components/swiper';
+// import './components/swiper-api';

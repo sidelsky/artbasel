@@ -3,7 +3,7 @@
  * @documentation http://lostgrid.org/docs.html
  */
 
- //@lost gutter 0px;
+ @lost gutter 0px;
  @lost flexbox flex;
  @lost cycle none;
  
@@ -76,10 +76,11 @@
     
      //Half width
      &--half-width {
-         
+        
          // Tablet upwards
          @include media('>tablet') { 
-            lost-column: 1/2;
+            lost-column: 1/2 2;
+            float: left;
 
             &--left {
                 lost-move: -1/2;

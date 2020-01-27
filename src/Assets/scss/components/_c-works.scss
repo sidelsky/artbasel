@@ -19,6 +19,31 @@
       }
     }
 
+    //Home hero carousel card
+    &__hero-figure {
+        position: relative;
+        margin-bottom: $spacing--medium;
+        // position: relative;
+    }
+
+    //Image
+    &__hero-image {
+        //Tablet
+        @include media('>tablet') {
+            max-width: 180px;
+        }
+        
+        &:hover {
+            cursor: pointer; 
+        } 
+    
+    }
+
+    &__hero-card {
+        //lost-column: 1/1 1 0;
+        text-align: center !important;
+    }
+
     //Card 
     &__card { 
         //padding: $spacing--small;

@@ -125,3 +125,7 @@ Stack trace:
 [23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
 [23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: soldMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
 [23-Jan-2020 16:13:41 UTC] PHP Notice:  Undefined variable: sold in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 190
+[24-Jan-2020 21:38:40 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216
+[24-Jan-2020 21:40:48 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216
+[24-Jan-2020 21:41:51 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216
+[24-Jan-2020 21:45:16 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216

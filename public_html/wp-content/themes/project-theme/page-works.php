@@ -101,7 +101,7 @@
 $gallery = get_field('image_gallery', 6);
 $images = [];
 
-print_r($artwork);
+//print_r($artwork);
 
 if($gallery) : ?>
 
@@ -117,7 +117,7 @@ if($gallery) : ?>
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<?php foreach ($gallery as $galleryImage) :  ?>
-			<div class="c-header-background-image" style="background-image: url('<?php echo $galleryImage['sizes']['large']; ?>')">
+			<div class="c-header-background-image" style="background-image: url('<?= $galleryImage['sizes']['large']; ?>')">
 				<?php
 					$front_page_id = '6';
 					$currentPost_id = get_the_ID();
@@ -145,63 +145,85 @@ if($gallery) : ?>
 			</div>
 			<?php endforeach; ?>
 	</section>
+<?php endif; ?>
 
-	<!-- Content carousel -->
-	<section class="u-section">
-	<div class="u-l-container--center">
-		<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
-			<div class="s-content c-works__footer c-works__footer__hr">
-				
-			<?php
-				/**
-				 * Get Works content
-				 */
-				foreach($artwork as $art):
-				/**
-				 * Works card
-				 */
 
-				// function formattedSold() {
-					// if( $art['sold'] != 1 ) {
-					//   echo 'Available';
-					// } else {
-					//   echo 'Sold';
-					// }
+<?php 
+/**
+ * Hero Content carousel
+ */
+$hero_text_content = get_field('hero_text_content', 6); 
+if($hero_text_content) :?>
 
-					// $sold ? 'Available' : 'Sold';
-					// $soldMarker ? 'c-sale-marker--sold' : 'c-sale-marker--available';
-				//   }
-
-				?>
-					<article class="c-works__card" surname="Johnson">
-						<figure class="c-works__figure">
-							<a href="<?= $art['link']; ?>">
-								<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__image">
-							</a>
-						</figure> 
-						<a href="http://artbasilvip:8888/works/johnr101396/">
-							<h2 class="c-works__title"><?= $art['title']; ?></h2>
+<section class="u-section c-hero-carousel">
+	<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
+		<div class="c-hero-carousel--inner-container">
+			<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?php echo $hero_text_content ?></h3>
+		</div>
+	</div>
+	<div class="u-column--table u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
+		<div class="c-hero-carousel--inner-container">
+			<div class="owl-carousel owl-carousel-home owl-theme">
+				<?php
+					/**
+					 * Get Works content
+					 */
+					foreach($artwork as $art):
+					/**
+					 * Works card
+					 */
+					?>
+				<article class="c-works__hero-card">
+					<figure class="c-works__hero-figure">
+						<a href="<?= $art['link']; ?>">
+							<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
 						</a>
-						<div class="c-works__name"><?= $art['fullName']; ?></div>
-						<div class="c-works__price"><span><?= $art['price']; ?></span></div>
-						<div class="c-works__availability">
-							<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Available' : 'Sold'; ?></span>
-						</div>
-						<span class="c-works__href-wrap">
-							<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Purchase</a>
-							<svg class="u-icon c-works__icon">
-								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
-							</svg>
-						</span>
-					</article>
+					</figure> 
+					<a href="http://artbasilvip:8888/works/johnr101396/">
+						<h2 class="c-works__title"><?= $art['title']; ?></h2>
+					</a>
+					<div class="c-works__name"><?= $art['fullName']; ?></div>
+					<div class="c-works__price"><span><?= $art['price']; ?></span></div>
+					<div class="c-works__availability">
+						<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Available' : 'Sold'; ?></span>
+					</div>
+					<span class="c-works__href-wrap">
+						<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Purchase</a>
+						<svg class="u-icon c-works__icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
+						</svg>
+					</span>
+				</article>
 				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
 </section>
-
 <?php endif; ?>
-			
+
+<?php
+/**
+ * Hero Content carousel
+ */
+$fifty_fifty_image= get_field('fifty_fifty_image', 6);
+$fifty_fifty_title = get_field('fifty_fifty_title', 6);
+$fifty_fifty_text = get_field('fifty_fifty_text', 6);
+
+if($fifty_fifty_image) :?>
+	<section class="u-section c-hero-carousel c-hero-carousel--dark-background">
+		<div class="u-column u-column--half-width c-hero-carousel--container">
+			<div class="c-hero-carousel--inner-container">
+				<img src="<?= $fifty_fifty_image['sizes']['large']; ?>" alt="">
+			</div>
+		</div>
+		<div class="u-column--table u-column--half-width c-hero-carousel--container">
+			<div class="c-hero-carousel--inner-container c-hero-carousel--container--padding">
+				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?= $fifty_fifty_title ?></h3>
+				<?= $fifty_fifty_text ?>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
  
 <section class="u-section" id="top">
 	<div id="app">
