@@ -1,0 +1,119 @@
+.c-hero-carousel {
+    margin: $spacing--small 0;
+    
+    @include media('>tablet') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    &--container {
+
+        &--padding {
+            @include media('>tablet') {
+                padding: $spacing--small $spacing--large-x;
+            }
+        }
+  
+    }
+
+    &--inner-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    &--content {
+
+    }
+
+    &--gallery {
+
+    }
+
+    &--dark-background {
+        background-color: #323232;
+        color: white !important;
+
+        h3 {
+            color: currentColor;
+            margin-bottom: $spacing--small;
+        }
+
+        p {
+            @include set-font-size(1.5rem, 1.8rem, 2rem, 2.2rem);
+        }
+
+        .c-hero-carousel--container--padding {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: $spacing--large-x;
+        }
+        
+    }
+}
+
+.carousel-wrap {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+  }
+
+.owl-nav {
+    overflow: hidden;
+    height: 0px;
+  }
+ 
+  .owl-theme .owl-dots .owl-dot.active span, 
+  .owl-theme .owl-dots .owl-dot:hover span {
+      background: grey;
+  }
+ 
+ 
+.item {
+      text-align: center;
+      outline: solid 1px red;
+  }
+  .owl-carousel .nav-btn{
+      height: 47px;
+      width: 26px;
+      position: absolute;
+      cursor: pointer;
+      top: 200px !important;
+  }
+ 
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled{
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  
+  $position: 20px;
+
+  .owl-carousel .prev-slide{
+      background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0 0;
+      left: $position;
+  }
+  .owl-carousel .next-slide{
+      background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -24px 0px;
+      right: $position;
+  }
+  .owl-carousel .prev-slide:hover{
+     background-position: 0px -53px;
+  }
+  .owl-carousel .next-slide:hover{
+    background-position: -24px -53px;
+  }
+ 
+  span.img-text {
+    text-decoration: none;
+    outline: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    width: 100%;
+    font-size: 23px;
+    display: block;
+    text-transform: capitalize;
+  }
+  span.img-text:hover {
+    color: grey;
+  }
