@@ -4,14 +4,11 @@
  * Template Name: Works
  */
 
-		use App\Helper\Render;
-
-		$render = new Render;
-
-		include("header.php");
-
-		/* Include login modal */
-		include("login.php");
+	use App\Helper\Render;
+	$render = new Render;
+	include("header.php");
+	/* Include login modal */
+	include("login.php");
 
 ?>
 
@@ -21,13 +18,13 @@
 <?php
 
 		$loop = new WP_Query(
-				[
-					'post_type' => 'works',
-					'posts_per_page' => -1,
-					'meta_key' => 'surname',
-					'orderby' => 'meta_value',
-					'order' => 'ASC'
-				]
+			[
+				'post_type' => 'works',
+				'posts_per_page' => -1,
+				'meta_key' => 'surname',
+				'orderby' => 'meta_value',
+				'order' => 'ASC'
+			]
 		 );
 
 		$artwork = [];
@@ -105,15 +102,6 @@ $images = [];
 
 if($gallery) : ?>
 
-	<?php /**
-	 * Parallax mobile 
-	<section class="u-section c-paralax-header c-paralax-header--mobile">
-		<?php foreach ($gallery as $galleryImage) :  ?>
-			<img src="<?php echo $galleryImage['sizes']['large']; ?>">
-		<?php endforeach; ?>
-	</section>
-	*/ ?>
-	
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<?php foreach ($gallery as $galleryImage) :  ?>
@@ -125,7 +113,7 @@ if($gallery) : ?>
 		
 					if( is_front_page() || is_page('Works preview') ) { ?>
 						 
-						<div class="parallax-window__content">
+						<div class="parallax-window__content" id="title">
 							<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?php echo get_the_title( $front_page_id ); ?></h1>
 							<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></h2>
 							<?php if($content ) : ?>
@@ -141,7 +129,6 @@ if($gallery) : ?>
 						</div>
 						 
 					<?php } ?>
-				<!-- <div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $galleryImage['sizes']['large']; ?>"></div> -->
 			</div>
 			<?php endforeach; ?>
 	</section>
@@ -185,7 +172,7 @@ if($hero_text_content) :?>
 					<div class="c-works__name"><?= $art['fullName']; ?></div>
 					<div class="c-works__price"><span><?= $art['price']; ?></span></div>
 					<div class="c-works__availability">
-						<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Available' : 'Sold'; ?></span>
+						<span class="c-sale-marker <?= $soldMarker = !$art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Available' : 'Sold'; ?></span>
 					</div>
 					<span class="c-works__href-wrap">
 						<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Purchase</a>
@@ -212,8 +199,8 @@ $fifty_fifty_text = get_field('fifty_fifty_text', 6);
 if($fifty_fifty_image) :?>
 	<section class="u-section c-hero-carousel c-hero-carousel--dark-background">
 		<div class="u-column u-column--half-width c-hero-carousel--container">
-			<div class="c-hero-carousel--inner-container">
-				<img src="<?= $fifty_fifty_image['sizes']['large']; ?>" alt="">
+			<div class="c-hero-carousel--image-container" style="background-image: url('<?= $fifty_fifty_image['sizes']['large']; ?>')">
+
 			</div>
 		</div>
 		<div class="u-column--table u-column--half-width c-hero-carousel--container">

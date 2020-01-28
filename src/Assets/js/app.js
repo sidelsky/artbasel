@@ -5,6 +5,7 @@ import './components/paralax';
 import './components/smoothscroll-api';
 import './components/owl-home-hero';
 import './components/owl-home-hero-api';
+import './components/hero-paralax';
 //import './components/siema';
 // import './components/swiper';
 // import './components/swiper-api';
