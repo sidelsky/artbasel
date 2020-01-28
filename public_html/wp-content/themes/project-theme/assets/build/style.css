@@ -442,10 +442,6 @@ table {
   height: 15px;
 }
 
-.c-hero-carousel {
-  margin: 2rem 0;
-}
-
 @media (min-width: 769px) {
   .c-hero-carousel {
     display: -webkit-box;
@@ -458,6 +454,10 @@ table {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.c-hero-carousel--container--padding {
+  padding: 4rem 5rem 1rem;
 }
 
 @media (min-width: 769px) {
@@ -548,7 +548,7 @@ table {
   width: 26px;
   position: absolute;
   cursor: pointer;
-  top: 200px !important;
+  top: 280px !important;
 }
 
 .owl-carousel .owl-prev.disabled,
@@ -1024,10 +1024,6 @@ span.img-text:hover {
 [type="radio"]:checked + span:after {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-}
-
-.c-works__href-wrap {
-  margin-bottom: 20px;
 }
 
 .c-pagination {
@@ -1723,6 +1719,10 @@ span.img-text:hover {
   text-align: center !important;
 }
 
+.c-works__hero-card .c-button {
+  max-width: 220px;
+}
+
 .c-works__card {
   padding: 0 2rem 3rem;
   font-size: 1.5rem;
@@ -1853,18 +1853,24 @@ span.img-text:hover {
 .c-works__medium, .c-works__dimensions {
   color: currentColor;
   line-height: 1.7;
+  margin-bottom: 0.5rem;
 }
 
 .c-works__date {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+}
+
+.c-works__name {
+  font-family: "hind-semibold", Helvetica, Arial, sans-serif;
 }
 
 .c-works__price {
   color: white;
+  margin-bottom: 2rem;
 }
 
 .c-works__availability {
-  margin-bottom: 30px;
+  margin: 1rem 0;
   font-family: "hind-bold", Helvetica, Arial, sans-serif;
 }
 

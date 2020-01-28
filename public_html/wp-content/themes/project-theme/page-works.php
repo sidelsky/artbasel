@@ -148,7 +148,7 @@ if($hero_text_content) :?>
 			<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?php echo $hero_text_content ?></h3>
 		</div>
 	</div>
-	<div class="u-column--table u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
+	<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 		<div class="c-hero-carousel--inner-container">
 			<div class="owl-carousel owl-carousel-home owl-theme">
 				<?php
@@ -170,16 +170,24 @@ if($hero_text_content) :?>
 						<h2 class="c-works__title"><?= $art['title']; ?></h2>
 					</a>
 					<div class="c-works__name"><?= $art['fullName']; ?></div>
+					<div class="c-works__date"><?= $art['date']; ?></div>
+					<div class="c-works__medium"><?= $art['mediumText']; ?></div>
 					<div class="c-works__price"><span><?= $art['price']; ?></span></div>
 					<div class="c-works__availability">
-						<span class="c-sale-marker <?= $soldMarker = !$art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Available' : 'Sold'; ?></span>
+						<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Sold' : 'Available'; ?></span>
 					</div>
+						
+					<?php if( !$art['sold'] ) : ?>
+						<a href="" class="c-button c-button--light">Purchase</a>
+					<?php endif; ?>
+
 					<span class="c-works__href-wrap">
-						<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Purchase</a>
+						<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Learn more</a>
 						<svg class="u-icon c-works__icon">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
 						</svg>
 					</span>
+
 				</article>
 				<?php endforeach; ?>
 			</div>

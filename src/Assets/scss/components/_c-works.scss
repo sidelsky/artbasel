@@ -42,6 +42,11 @@
     &__hero-card {
         //lost-column: 1/1 1 0;
         text-align: center !important;
+
+
+        .c-button {
+            max-width: 220px;
+        }
     }
 
     //Card 
@@ -103,26 +108,29 @@
     &__dimensions {
         color: currentColor;
         line-height: 1.7;
+        margin-bottom: $spacing--x-tiny;
     }   
     
     //Date
     &__date {
-        margin-bottom: 15px;
+        margin-bottom: $spacing--tiny;
     }  
 
     //Name
     &__name {
-        
+        //margin-bottom: $spacing--x-tiny;
+        font-family: font-family(primary, semibold);
     }  
 
     //Price
     &__price {
-        color: white; 
+        color: white;
+        margin-bottom: $spacing--small;
     }
 
     //Price
     &__availability {
-        margin-bottom: 30px;
+        margin: $spacing--tiny 0;
         font-family: font-family(primary, bold);
     }
 

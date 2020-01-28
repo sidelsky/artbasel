@@ -31,9 +31,9 @@
         class="c-button c-button--light"
       >Purchase</a>
 
-    <span v-if="!sold" class="c-works__href-wrap">
+    <span class="c-works__href-wrap">
       <a
-        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${ids}&body=Hello, I'd like to inquire about: ${ids}`"
+        :href="link"
         class="c-works__href"
       >Learn more</a>
       <svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>

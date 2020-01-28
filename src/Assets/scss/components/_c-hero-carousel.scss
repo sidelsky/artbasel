@@ -1,5 +1,4 @@
 .c-hero-carousel {
-    margin: $spacing--small 0;
     
     @include media('>tablet') {
         display: flex;
@@ -10,8 +9,10 @@
     &--container {
 
         &--padding {
+          padding: $spacing--large $spacing--large-x $spacing--tiny;
+
             @include media('>tablet') {
-                padding: $spacing--small $spacing--large-x;
+              padding: $spacing--small $spacing--large-x;
             }
         }
   
@@ -90,7 +91,7 @@
       width: 26px;
       position: absolute;
       cursor: pointer;
-      top: 200px !important;
+      top: 280px !important;
   }
  
   .owl-carousel .owl-prev.disabled,

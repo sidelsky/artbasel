@@ -7,11 +7,11 @@ $(document).ready(function(){
         lazyLoad: true,
         loop: true,
         margin: 20,
-        autoHeight: true,
+        autoHeight: false,
         navText:["<div class='nav-btn prev-slide'></div>","<div class='nav-btn next-slide'></div>"],
         responsive:{
             0: {
-                items: 1
+                items: 1,
               },
           
               600: {
