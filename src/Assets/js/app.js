@@ -6,6 +6,7 @@ import './components/smoothscroll-api';
 import './components/owl-home-hero';
 import './components/owl-home-hero-api';
 import './components/hero-paralax';
+import './components/form-modal';
 //import './components/siema';
 // import './components/swiper';
 // import './components/swiper-api';

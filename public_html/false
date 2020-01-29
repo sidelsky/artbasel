@@ -129,3 +129,64 @@ Stack trace:
 [24-Jan-2020 21:40:48 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216
 [24-Jan-2020 21:41:51 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216
 [24-Jan-2020 21:45:16 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 216
+[29-Jan-2020 20:03:44 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 11
+[29-Jan-2020 20:05:42 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 9
+[29-Jan-2020 20:10:36 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 10
+[29-Jan-2020 20:11:33 UTC] PHP Parse error:  syntax error, unexpected 'use' (T_USE), expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 9
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:40:46 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Uninitialized string offset: 0 in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Notice:  Use of undefined constant ids - assumed 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 20:42:23 UTC] PHP Warning:  Illegal string offset 'ids' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 35
+[29-Jan-2020 21:30:30 UTC] PHP Parse error:  syntax error, unexpected '<' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 45
+[29-Jan-2020 21:43:34 UTC] PHP Notice:  Undefined variable: work in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 25
+[29-Jan-2020 21:43:34 UTC] PHP Notice:  Undefined variable: work in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 25
+[29-Jan-2020 21:43:34 UTC] PHP Notice:  Undefined variable: work in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 25
+[29-Jan-2020 21:43:53 UTC] PHP Notice:  Undefined variable: work in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 25
+[29-Jan-2020 21:43:53 UTC] PHP Notice:  Undefined variable: work in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 25
+[29-Jan-2020 21:43:53 UTC] PHP Notice:  Undefined variable: work in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php on line 25

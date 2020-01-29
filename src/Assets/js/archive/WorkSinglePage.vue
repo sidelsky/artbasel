@@ -48,7 +48,7 @@
                 <div class="c-works__name">{{ work.fullName }}</div>
                 <div class="c-works__date">{{ work.date }}</div>
                 <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
-                <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div>
+                <!-- <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div> -->
                 <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
                 <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
 
@@ -60,8 +60,9 @@
 							]"
 						></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
 					</div>
-
-					<a v-if="!work.sold" :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--dark">Purchase</a>
+          
+          <button v-if="!work.sold" id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
+					<!-- <a v-if="!work.sold" :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--dark">Purchase</a> -->
           <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--light">Inquire to learn more</a>
 
           <span class="c-works__href-wrap">

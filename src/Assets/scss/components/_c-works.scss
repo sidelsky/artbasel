@@ -101,19 +101,23 @@
         line-height: 1.25;
         color: white;
     }
+
+    &__medium {
+        height: 44px;
+    }
  
     //Medium  
     &__medium,
     //Demensions
     &__dimensions {
         color: currentColor;
-        line-height: 1.7;
+        line-height: 1.5;
         margin-bottom: $spacing--x-tiny;
     }   
     
     //Date
     &__date {
-        margin-bottom: $spacing--tiny;
+        //margin-bottom: $spacing--tiny;
     }  
 
     //Name
@@ -125,13 +129,14 @@
     //Price
     &__price {
         color: white;
-        margin-bottom: $spacing--small;
+        //margin-bottom: $spacing--small;
+        font-family: font-family(primary, semibold);
     }
 
     //Price
     &__availability {
-        margin: $spacing--tiny 0;
-        font-family: font-family(primary, bold);
+        margin-bottom: $spacing--small;
+        font-family: font-family(primary, semibold);
     }
 
     //Href Wrap

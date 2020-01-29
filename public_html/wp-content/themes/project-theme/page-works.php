@@ -1,4 +1,3 @@
-
 <?php
 /**
  * Template Name: Works
@@ -235,16 +234,6 @@ $images = [];
 
 if($gallery) : ?>
 
-	<?php /**
-	 * Parallax mobile
-	 
-	<section class="u-section c-paralax-header c-paralax-header--mobile">
-		<?php foreach ($gallery as $galleryImage) :  ?>
-			<img src="<?php echo $galleryImage['sizes']['large']; ?>">
-		<?php endforeach; ?>
-	</section>
-	*/ ?>
-	
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div>
