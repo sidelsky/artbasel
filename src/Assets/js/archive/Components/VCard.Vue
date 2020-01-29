@@ -14,7 +14,8 @@
     <div class="c-works__medium"><span v-html="mediumText"></span></div>
     <!-- <div class="c-works__medium"><span v-html="mediumChinese"></span></div> -->
     <!-- <div class="c-works__dimensions"><span v-html="dimensions"></span></div> -->
-    <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
+	<!-- <div class="c-works__price"><span>{{ formattedPrice }}</span></div> -->
+	<div class="c-works__price"><span v-html="formattedPrice"></span></div>
 
     <div class="c-works__availability">
       <span
@@ -25,19 +26,25 @@
       ></span><span v-html="formattedSold"></span>
     </div>
 
-      <a 
-        v-if="!sold" 
-        :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${ids}&body=Hello, I'd like to inquire about: ${ids}`"
-        class="c-button c-button--light"
-      >Purchase</a>
+		
+		<span v-if="sold" class="c-works__href-wrap c-works__href-wrap--spacer"></span>
 
-    <span class="c-works__href-wrap">
-      <a
-        :href="link"
-        class="c-works__href"
-      >Learn more</a>
-      <svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
-    </span>
+		<a 
+			v-if="!sold" 
+			:href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${ids}&body=Hello, I'd like to inquire about: ${ids}`"
+			class="c-button c-button--light"
+			aria-disabled
+		>Purchase</a>
+
+		<span class="c-works__href-wrap">
+		<a
+			:href="link"
+			class="c-works__href"
+		>Learn more</a>
+		<svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
+		</span>
+
+	
   
   </article>
 </template>
@@ -77,13 +84,10 @@ export default {
     },
     formattedPrice() {
       if( this.sold != 1 ) {
-        if ( this.price ) {
-        //return formatter.format(this.work.price)
-        return this.price
+		  return this.price 
       } else {
-        return this.price
-      }
-      }
+		  return "&nbsp;"
+	  }
     }
   }
 }

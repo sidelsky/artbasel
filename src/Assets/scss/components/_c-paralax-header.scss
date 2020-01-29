@@ -11,18 +11,18 @@ $footer-height: 670px;
    justify-content: center;
    align-items: center;
    resize: both;
-   overflow: auto;
+   overflow: hidden;
 
-   &::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: rgba($black, 0.25);
-      z-index: 1;
-   }
+   // &::after {
+   //    content: '';
+   //    position: absolute;
+   //    top: 0;
+   //    right: 0;
+   //    bottom: 0;
+   //    left: 0;
+   //    background-color: rgba($black, 0.25);
+   //    z-index: 1;
+   // }
 }
 
 .c-paralax-header {

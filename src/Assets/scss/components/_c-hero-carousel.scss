@@ -100,15 +100,23 @@
     opacity: 0.2;
   }
   
-  $position: 20px;
+  //Tablet
+
 
   .owl-carousel .prev-slide{
       background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0 0;
-      left: $position;
+      left: -35px;
+      @include media('>tablet') {  
+        $position: 20px;
+        left: 10px;
+    }
   }
   .owl-carousel .next-slide{
       background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -24px 0px;
-      right: $position;
+      right: -35px;
+      @include media('>tablet') {  
+        right: 10px;
+    }
   }
   .owl-carousel .prev-slide:hover{
      background-position: 0px -53px;
