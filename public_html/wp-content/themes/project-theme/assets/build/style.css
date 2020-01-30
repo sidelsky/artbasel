@@ -235,6 +235,13 @@ table {
   text-decoration: underline;
 }
 
+button:disabled,
+button[disabled] {
+  color: #e2e2e2;
+  cursor: default !important;
+  text-decoration: none !important;
+}
+
 .c-clock {
   color: #fff;
   display: inline-block;

@@ -154,7 +154,7 @@ if($hero_text_content) :?>
 					/**
 					 * Get Works content
 					 */
-					foreach($artwork as $art):
+					foreach($artwork as $index => $art):
 					/**
 					 * Works card
 					 */
@@ -176,9 +176,7 @@ if($hero_text_content) :?>
 						<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Sold' : 'Available'; ?></span>
 					</div>
 						
-					<?php if( !$art['sold'] ) : ?>
-						<a href="" class="c-button c-button--light">Purchase</a>
-					<?php endif; ?>
+					<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light">Purchase</button>
 
 					<span class="c-works__href-wrap">
 						<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Learn more</a>
@@ -188,11 +186,29 @@ if($hero_text_content) :?>
 					</span>
 
 				</article>
+
 				<?php endforeach; ?>
 			</div>
 		</div>
 	</div>
 </section>
+
+<?php
+	/**
+	 * Get Works content
+	 */
+	foreach($artwork as $index => $art): ?>
+	<div id="purchaseModal_<?= $index ?>" class="modal">
+		<div class="modal-content">
+			<?= $art['price'] ?>
+			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
+			<span class="close">&times;</span>
+			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $art['fullName'] .', ' . $art['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $art['ids'] . '"]'); ?>
+			<small>*By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it's afiliated companies.</small>
+		</div>
+	</div>
+<?php endforeach; ?>
+
 <?php endif; ?>
 
 <?php
@@ -218,6 +234,26 @@ if($fifty_fifty_image) :?>
 		</div>
 	</section>
 <?php endif; ?>
+
+<?php
+// $the_title = get_the_title();
+// $the_full_name = get_field('full_name');
+// $the_id_code = get_field('code_id');
+?>
+
+<?php
+	/**
+	 * Purchase modal
+	 */
+		// echo '<div id="purchaseModal" class="modal">';
+		// 	echo '<div class="modal-content">';
+		// 		echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
+		// 		echo '<span class="close closep">&times;</span>';
+		// 		echo do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $the_full_name .', ' . $the_title . '. \nPlease contact me to finalize the purchase details.&id_code=' . $the_id_code . '"]');
+		// 		echo '<small> *By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s afiliated companies.</small>';
+		// 		echo '</div>';
+		// echo '</div>';
+	?>
  
 <section class="u-section" id="top">
 	<div id="app">

@@ -61,9 +61,8 @@
 						></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
 					</div>
           
-          <button v-if="!work.sold" id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
-					<!-- <a v-if="!work.sold" :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--dark">Purchase</a> -->
-          <a :href="`mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: ${work.ids}&body=Hello, I'd like to inquire about: ${work.ids}`" class="c-button c-button--light">Inquire to learn more</a>
+          <button v-if="!work.sold" id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
+          <button id="inquireBtn_0" data-id="inquireBtn" class="c-button c-button--light">Inquire to learn more</button>
 
           <span class="c-works__href-wrap">
 						<a href="/" class="c-works__href">View all works</a>
