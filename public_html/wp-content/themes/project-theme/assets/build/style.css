@@ -237,7 +237,7 @@ table {
 
 button:disabled,
 button[disabled] {
-  color: #e2e2e2;
+  color: #adadad;
   cursor: default !important;
   text-decoration: none !important;
 }

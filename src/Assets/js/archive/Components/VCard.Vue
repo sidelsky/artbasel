@@ -23,19 +23,11 @@
       ></span><span v-html="formattedSold"></span>
     </div>
 
-		<button 
+		<button
+      id="purchaseBtn_<?= $index ?>" 
       :disabled="sold"
 			class="c-button c-button--light"
-      id="purchaseBtn"
 		>Purchase</button>
-
-		<span class="c-works__href-wrap">
-		<a
-			:href="link"
-			class="c-works__href"
-		>Learn more</a>
-		<svg class="u-icon c-works__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use></svg>
-		</span>
 
   </article>
 </template>

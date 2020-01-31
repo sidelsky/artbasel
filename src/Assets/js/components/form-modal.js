@@ -55,6 +55,21 @@ for (let index = 0; index < purchaseButtonsLength; index++) {
 
 }
 
+/** List purchase button */
+const ListPurchaseButtons = [...document.querySelectorAll("[data-id='ListPurchaseBtn']")]
+const ListPurchaseButtonsLength = ListPurchaseButtons.length;
+
+for (let i = 0; i < ListPurchaseButtonsLength; i++) {
+  const ListPurchaseButton = ListPurchaseButtons[i];
+  const ListPurchaseModal = document.getElementById(`ListPurchaseModal_${i}`);
+  //debugger
+  ListPurchaseButton.addEventListener('click', () => {
+    ListPurchaseModal.style.display = "block";
+  })
+
+  Array.apply(null, ListPurchaseModal.querySelectorAll('.close')).forEach(closeButton => closeButton.addEventListener('click', () => {ListPurchaseModal.style.display = 'none'}) )
+
+}
 
 /** count */
 const inquireButtons = [...document.querySelectorAll("[data-id='inquireBtn']")]

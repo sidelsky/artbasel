@@ -54,6 +54,7 @@
 
 		endwhile;
 
+		/**
 		echo 'var WORKS = ' . json_encode($artwork) . ';';
 
 		function createFilters($array) {
@@ -85,6 +86,7 @@
 		];
 
 		echo 'var FILTERS = ' . json_encode($filters);
+		 */
 ?>
 		
 </script>
@@ -152,41 +154,28 @@ if($hero_text_content) :?>
 			<div class="owl-carousel owl-carousel-home owl-theme">
 				<?php
 					/**
-					 * Get Works content
+					 * Get Works content for mini carousel
 					 */
 					foreach($artwork as $index => $art):
-					/**
-					 * Works card
-					 */
 					?>
-				<article class="c-works__hero-card">
-					<figure class="c-works__hero-figure">
-						<a href="<?= $art['link']; ?>">
-							<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
+					<article class="c-works__hero-card">
+						<figure class="c-works__hero-figure">
+							<a href="<?= $art['link']; ?>">
+								<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
+							</a>
+						</figure> 
+						<a href="http://artbasilvip:8888/works/johnr101396/">
+							<h2 class="c-works__title"><?= $art['title']; ?></h2>
 						</a>
-					</figure> 
-					<a href="http://artbasilvip:8888/works/johnr101396/">
-						<h2 class="c-works__title"><?= $art['title']; ?></h2>
-					</a>
-					<div class="c-works__name"><?= $art['fullName']; ?></div>
-					<div class="c-works__date"><?= $art['date']; ?></div>
-					<div class="c-works__medium"><?= $art['mediumText']; ?></div>
-					<div class="c-works__price"><span><?= $art['price']; ?></span></div>
-					<div class="c-works__availability">
-						<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Sold' : 'Available'; ?></span>
-					</div>
-						
-					<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light">Purchase</button>
-
-					<span class="c-works__href-wrap">
-						<a href="mailto:viewingroom@hauserwirth.com?subject=Inquire to purchase: Untitled Bust (JOHNR101396)&amp;body=Hello, I'd like to inquire about: Untitled Bust (JOHNR101396)" class="c-works__href">Learn more</a>
-						<svg class="u-icon c-works__icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
-						</svg>
-					</span>
-
-				</article>
-
+						<div class="c-works__name"><?= $art['fullName']; ?></div>
+						<div class="c-works__date"><?= $art['date']; ?></div>
+						<div class="c-works__medium"><?= $art['mediumText']; ?></div>
+						<div class="c-works__price"><span><?= $art['price']; ?></span></div>
+						<div class="c-works__availability">
+							<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Sold' : 'Available'; ?></span>
+						</div>
+						<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $soldMarker = $art['sold'] ? 'disabled' : ''; ?>>Purchase</button>
+					</article>
 				<?php endforeach; ?>
 			</div>
 		</div>
@@ -195,12 +184,11 @@ if($hero_text_content) :?>
 
 <?php
 	/**
-	 * Get Works content
+	 * Purchase modal
 	 */
 	foreach($artwork as $index => $art): ?>
 	<div id="purchaseModal_<?= $index ?>" class="modal">
 		<div class="modal-content">
-			<?= $art['price'] ?>
 			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
 			<span class="close">&times;</span>
 			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $art['fullName'] .', ' . $art['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $art['ids'] . '"]'); ?>
@@ -234,31 +222,59 @@ if($fifty_fifty_image) :?>
 		</div>
 	</section>
 <?php endif; ?>
+ 
+<section class="u-section" id="top">
+	<div class="u-l-container--center">
+		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+			<div class="c-works">
+				<div class="c-works__list">
+				<?php
+					/**
+					 * Get Works content for list of works
+					 */
+					foreach($artwork as $i => $artworks):
+					?>
+					<article class="c-works__card"">
+						<figure class="c-works__figure">
+							<a href="<?= $artworks['link']; ?>">
+								<img src="<?= $artworks['image']; ?>" alt="<?= $artworks['title']; ?>" class="c-works__image">
+							</a>
+						</figure> 
+						<a href="http://artbasilvip:8888/works/johnr101396/">
+							<h2 class="c-works__title"><?= $artworks['title']; ?></h2>
+						</a>
+						<div class="c-works__name"><?= $artworks['fullName']; ?></div>
+						<div class="c-works__date"><?= $artworks['date']; ?></div>
+						<div class="c-works__medium"><?= $artworks['mediumText']; ?></div>
+						<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
+						<div class="c-works__availability">
+							<span class="c-sale-marker <?= $soldMarker = $artworks['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $artworks['sold'] ? 'Sold' : 'Available'; ?></span>
+						</div>
+						<button id="ListPurchaseBtn_<?= $i ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $soldMarker = $artworks['sold'] ? 'disabled' : ''; ?>>Purchase</button>
+					</article>
 
-<?php
-// $the_title = get_the_title();
-// $the_full_name = get_field('full_name');
-// $the_id_code = get_field('code_id');
-?>
+				<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <div id="app"></div> -->
+</section>
 
 <?php
 	/**
 	 * Purchase modal
 	 */
-		// echo '<div id="purchaseModal" class="modal">';
-		// 	echo '<div class="modal-content">';
-		// 		echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
-		// 		echo '<span class="close closep">&times;</span>';
-		// 		echo do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $the_full_name .', ' . $the_title . '. \nPlease contact me to finalize the purchase details.&id_code=' . $the_id_code . '"]');
-		// 		echo '<small> *By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s afiliated companies.</small>';
-		// 		echo '</div>';
-		// echo '</div>';
-	?>
- 
-<section class="u-section" id="top">
-	<div id="app">
+	foreach($artwork as $i => $artworks): ?>
+	<div id="ListPurchaseModal_<?= $i ?>" class="modal">
+		<div class="modal-content">
+			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
+			<span class="close">&times;</span>
+			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $artworks['fullName'] .', ' . $artworks['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $artworks['ids'] . '"]'); ?>
+			<small>*By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it's afiliated companies.</small>
+		</div>
 	</div>
-</section>
+<?php endforeach; ?>
 
 <?php 
 /**
