@@ -1,14 +1,7 @@
 .c-works {
-    //lost-column: 12/12;
     width: 100%;
     max-width: 864px;
     margin: 0 auto;  
-     
-    //Tablet
-    @include media('>tablet') {
-        //lost-column: 9/12;
- 
-    }
 
     &__list {
       margin-left: -2.8rem;
@@ -23,20 +16,6 @@
     &__hero-figure {
         position: relative;
         margin-bottom: $spacing--small;
-        // position: relative;
-    }
-
-    //Image
-    &__hero-image {
-        //Tablet
-        // @include media('>tablet') {
-        //     max-width: 240px;
-        // }
-        
-        &:hover {
-            cursor: pointer; 
-        } 
-    
     }
 
     &__hero-card {
@@ -60,6 +39,7 @@
     &__card { 
         position: relative;
         padding: 0 $spacing--small $spacing--large-xx;
+        margin-bottom: $spacing--medium;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
   
         //Tablet
@@ -104,47 +84,59 @@
 
     //Title
     &__title { 
-        font-family: font-family(primary, semibold);
-        @include set-font-size(2.4rem, 2.4rem, 2.4rem, 2.4rem);
+        font-family: font-family(nt-primary, medium);
+        @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
         line-height: 1.25;
         color: white;
     }
 
-    &__medium {
-        height: 44px;
-    }
+    // &__medium {
+    //     height: 44px;
+    // }
  
-    //Medium  
     &__medium,
-    //Demensions
-    &__dimensions {
-        color: currentColor;
-        line-height: 1.5;
-        margin-bottom: $spacing--x-tiny;
+    &__dimensions,
+    &__price {
+        margin-bottom: $spacing--tiny;
+        @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        line-height: 1.25;
+        color: white;
+        position: relative;
+        padding-left: 12px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 2px;
+            display: block;
+            border-radius: 50%;
+            height: 3px;
+            width: 3px;
+            background-color: currentColor;
+        }
     }   
     
     //Date
     &__date {
-        margin-bottom: $spacing--tiny;
+        margin-bottom: $spacing--small;
+        font-family: font-family(nt-primary, medium);
+        @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
+        line-height: 1.25;
+        color: white;
     }  
 
     //Name
     &__name {
-        //margin-bottom: $spacing--x-tiny;
-        font-family: font-family(primary, semibold);
+        font-family: font-family(nt-primary, medium);
+        @include set-font-size(2.1rem, 2.1rem, 2.1rem, 2.1rem);
+        line-height: 1.25;
+        color: white;
     }  
 
-    //Price
-    &__price {
-        color: white;
-        //margin-bottom: $spacing--small;
-        font-family: font-family(primary, semibold);
-    }
-
-    //Price
     &__availability {
         margin-bottom: $spacing--small;
-        font-family: font-family(primary, semibold);
+        font-family: font-family(nt-primary, medium);
 
         &__hero {
             margin-bottom: 0;
@@ -177,7 +169,7 @@
             text-align: center;
             .c-works__href {
                 color: white !important;
-                font-family: font-family(primary, medium);
+                font-family: font-family(nt-primary, medium);
             }
             .c-works__icon {
                 top: 0 !important;
@@ -245,19 +237,56 @@
     margin-bottom: 10px;
 }
 
-a .c-works__title {
-    color: $text-color;
-}
+
 
 .home {
     color: $text-color;
-    .c-works {
-            //Href
-        &__href, 
-        &__price {
-            color: $text-color;
+
+    .c-works__card {
+        .c-button {
+            position: absolute;
+            bottom: 0;
         }
     }
+
+    a .c-works__title,
+    .c-works__name,
+    .c-works__date {
+        color: $text-color;
+    }
+
+    .c-works__dimensions {
+        height: 30px;
+    }
+
+    .c-works {
+
+        &__medium,
+        &__dimensions,
+        &__price {
+            margin-bottom: $spacing--tiny;
+            @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+            line-height: 1.25;
+            color: currentColor;
+            position: relative;
+            padding-left: 12px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 2px;
+                display: block;
+                border-radius: 50%;
+                height: 3px;
+                width: 3px;
+                background-color: currentColor;
+            }
+        } 
+
+    }
+    
+
 }
 
 .page-id-2475 {

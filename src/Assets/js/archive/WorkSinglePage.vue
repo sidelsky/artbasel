@@ -47,9 +47,8 @@
                 <div class="c-works__name">{{ work.fullName }}</div>
                 <div class="c-works__date">{{ work.date }}</div>
                 <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
-                <!-- <div class="c-works__medium"><span v-html="work.mediumChinese"></span></div> -->
                 <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
-                <div class="c-works__price"><span>{{ formattedPrice }}</span></div>
+                <span v-html="formattedPrice"></span>
 
 					<div class="c-works__availability">
 						<span
@@ -135,8 +134,7 @@ export default {
     formattedPrice() {
       if( this.work.sold != 1 ) {
         if ( this.work.price ) {
-        //return formatter.format(this.work.price)
-        return this.work.price
+        return  '<div class="c-works__price"><span>' + this.work.price + '</span></div>'
       } else {
         return ''
       }

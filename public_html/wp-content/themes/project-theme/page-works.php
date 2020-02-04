@@ -203,7 +203,9 @@ if($fifty_fifty_image) :?>
 						<div class="c-works__name"><?= $artworks['fullName']; ?></div>
 						<div class="c-works__date"><?= $artworks['date']; ?></div>
 						<div class="c-works__medium"><?= $artworks['mediumText']; ?></div>
+						<?php if(!$artworks['sold']) : ?>
 						<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
+						<?php endif; ?>
 						<div class="c-works__availability">
 							<span class="c-sale-marker <?= $soldMarker = $artworks['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $artworks['sold'] ? 'Sold' : 'Available'; ?></span>
 						</div>

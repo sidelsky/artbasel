@@ -1,28 +1,35 @@
 .c-footer {
     color: $white;
     background-color: $dark;
-    padding: $spacing--small 0;
+    padding: $spacing--small;
 
     &__inner {
-        lost-flex-container: row;
         margin: auto;
         max-width: 1200px;
+        
+        @include media('>desktop') {
+            lost-flex-container: row;
+        }
+
     }
 
     &__column {
 
         &:nth-of-type(1) {
+            text-align: center;
+            width: 100%;
             //Desktop
-            @include media('>tablet') {
-                lost-column: 9.5/12;
+            @include media('>desktop') {
+                text-align: left;
+                lost-column: 9/12;
             }
 
         }
 
         &:nth-of-type(2) {
             //Desktop
-            @include media('>tablet') {
-                lost-column: 2.5/12;
+            @include media('>desktop') {
+                //lost-column: 3/12;
                 display: flex;
                 align-items: center;
             }
