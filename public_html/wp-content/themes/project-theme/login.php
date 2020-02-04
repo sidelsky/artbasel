@@ -12,8 +12,6 @@
 	}   
 
     $post = get_post($post_id, ARRAY_A);
-    //$title = $post['post_title'];
-	//$content = $post['post_content'];
 
 	$show_email_submission = get_field('show_email_submission', $post_id);
 	$title = get_field('title_email_sub', $post_id);
@@ -40,7 +38,7 @@
 				<div class="u-l-container u-l-container--row u-l-vertical-padding--small">
 					
 					
-					<h1 class="c-site-headings c-site-headings--h1--email-sub c-site-headings--h1 c-site-headings--h1--light c-text-align-centre"><?= $title; ?></h1>
+					<h1 class="c-site-headings--h1--email-sub c-text-align-centre"><?= $title; ?></h1>
 					
 					<?php if($show_countdown) : ?>
 						<div id="clockdiv" class="c-clock c-text-align-centre"> 

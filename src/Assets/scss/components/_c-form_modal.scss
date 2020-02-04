@@ -98,3 +98,21 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+
+  .wechat__modal {}
+
+  .wechat__content {
+    background-color: #ffffff;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    position: relative;
+    width: 300px;
+    height: auto;
+  }
+
+  .wechat__title {
+    text-align: center;
+    font-family: font-family(nt-primary, medium);
+    font-size: 20px;
+  }

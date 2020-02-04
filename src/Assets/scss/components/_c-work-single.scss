@@ -8,9 +8,9 @@
 
         @include media('>tablet') {
             position: relative;
-            display: flex;
-            align-items: center;
-            height: 100vh;
+            //display: flex;
+            //align-items: center;
+            //height: 100vh;
         }
     }
 
@@ -27,30 +27,28 @@
     //Column
     &__column {
         width: 100%;
-        &:nth-of-type(1) {
 
+        &:nth-of-type(1) {
+            padding-top: 30px;
             //Desktop
             @include media('>tablet') {
-                //lost-column: 8/12;
                 width: calc(100% - 400px);
-                height: 100%;
-                overflow: scroll;
             }
 
         }
 
         &:nth-of-type(2) {
             background: #222222;
-            padding: 70px;
+            padding: 40px;
 
             //Desktop
             @include media('>tablet') {
-                //lost-column: 4/12;
+                padding: 70px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
                 width: 400px;
-                display: flex;
-                align-items: center;
-                height: 100%;
-                padding: 0px 70px;
             }
 
         }

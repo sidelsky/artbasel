@@ -1,34 +1,42 @@
 .c-button {
     color: $dark;
-    padding: 12px 25px;
+    padding: 16px 25px;
     display: block;
-    margin: 0 auto;
-    border: solid 1px currentColor;
+    border: solid 1px #d2d2d2;
     @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-    font-family: font-family(primary, medium);
+    font-family: font-family(nt-primary, medium);
     cursor: pointer; 
     user-select: none;
     border-radius: 4px;
     text-align: center;
-    display: block; 
     width: 100%;
-    margin-bottom: $spacing--small;
+    max-width: 260px;
+    margin: 0 0 $spacing--small;
+
+    @include media('>tablet') {
+        display: block;
+        margin: 0 auto $spacing--small;
+    }
+
  
     &--dark {
         background-color: #222222;
         color: white;
         &:hover {
             cursor: pointer;
-            text-decoration: underline;
+            color: $dark;
+            background-color: #d2d2d2;
         }
     }
 
     &--light {
         color: #222222;
         background-color: white;
+        margin-bottom: $spacing--tiny;
         &:hover {
             cursor: pointer;
-            text-decoration: underline;
+            background-color: #d2d2d2;
+            border: solid 1px #d2d2d2;
         }
     }
     
@@ -39,5 +47,10 @@ button:disabled,
 button[disabled]{
     color: #adadad;
     cursor: default !important;
-    text-decoration: none !important;
+
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+    }
+
 }

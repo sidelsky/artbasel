@@ -1,0 +1,52 @@
+$spacing: 25px;
+
+.social {
+    //background-color: $color_3;
+    text-align: center;
+    padding: 1rem;
+
+    &__link {
+        display: inline-block;
+        margin: 0px 5px 0;
+    }
+
+    &__icon {
+        $dimensions: 25px;
+        width: $dimensions;
+        height: $dimensions;
+    }
+
+}
+
+
+.copyright {
+    padding: 1.5rem 0;
+    line-height: 1.7;
+
+    a {
+        //color: $color_4;
+        padding: .8rem 0;
+    }
+
+}
+
+.small-copy {
+    .copyright {
+        a {
+            color: $white!important;
+        }
+    }
+}
+
+
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

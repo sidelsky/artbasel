@@ -11,9 +11,6 @@
 
 ?>
 
-
-<script>
-
 <?php
 
 		$loop = new WP_Query(
@@ -49,47 +46,13 @@
 				'priceRange' => get_field('price_range'),
 				'link' => get_the_permalink(),
 				'sold' => get_field('sold'),
-				'ids'  => get_field('code_id')
+				'ids' => get_field('code_id'),
+				'creditLine' => get_field('credit_line'),
 			];
 
 		endwhile;
 
-		/**
-		echo 'var WORKS = ' . json_encode($artwork) . ';';
-
-		function createFilters($array) {
-			$newArray = [
-				[
-					'label' => 'All',
-					'value' => 'all'
-				]
-			];
-
-			foreach ($array as $key => $value) {
-				$newArray[] = [
-					'label' => $value,
-					'value' => $key
-				];
-			}
-
-			return $newArray;
-		};
-
-		$priceRange = createFilters(get_field_object('price_range')['choices']);
-		$medium = createFilters(get_field_object('medium')['choices']);
-		$decade = createFilters(get_field_object('decade')['choices']);
-
-		$filters = [
-			'priceRange' => $priceRange,
-			'medium' => $medium,
-			'decade' => $decade
-		];
-
-		echo 'var FILTERS = ' . json_encode($filters);
-		 */
 ?>
-		
-</script>
 
 
 <?php 
@@ -164,17 +127,11 @@ if($hero_text_content) :?>
 								<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
 							</a>
 						</figure> 
-						<a href="http://artbasilvip:8888/works/johnr101396/">
-							<h2 class="c-works__title"><?= $art['title']; ?></h2>
-						</a>
-						<div class="c-works__name"><?= $art['fullName']; ?></div>
-						<div class="c-works__date"><?= $art['date']; ?></div>
-						<div class="c-works__medium"><?= $art['mediumText']; ?></div>
-						<div class="c-works__price"><span><?= $art['price']; ?></span></div>
-						<div class="c-works__availability">
+						<div class="c-works__hero-credit-line"><?= $art['creditLine']; ?></div>
+						<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $soldMarker = $art['sold'] ? 'disabled' : ''; ?>>Purchase</button>
+						<div class="c-works__availability c-works__availability__hero">
 							<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Sold' : 'Available'; ?></span>
 						</div>
-						<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $soldMarker = $art['sold'] ? 'disabled' : ''; ?>>Purchase</button>
 					</article>
 				<?php endforeach; ?>
 			</div>

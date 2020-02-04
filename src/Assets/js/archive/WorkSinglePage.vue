@@ -18,16 +18,15 @@
 
 				<figure class="c-work-single__figure">
 					<carousel 
-						:autoplay="true"
-						:loop="true"
 						:nav="false"
 						:dots="true"
-						:mouseDrag="false"
-						:responsive="{0:{items:1},600:{items:1},768:{items:1}}
-						">
+						:responsive="{0:{items:1},600:{items:1},768:{items:1}}"
+            >
+            <template slot="prev" class="bob"><span class="prev"></span></template>
 						<div v-for="item in gallery" :key="item">
 							<img :src="item" class="c-work-single__image" v-on:click="handleItemClick(item)">
 						</div>
+            <template slot="next" class="bob"><span class="next"></span></template>
 					</carousel>
 				</figure>
 

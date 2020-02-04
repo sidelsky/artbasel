@@ -2,37 +2,25 @@
     color: #fff; 
     display: inline-block;
     text-align: center; 
-    @include set-font-size(5rem, 8rem, 10rem, 15rem);
-    margin-bottom: $spacing--small;
-    font-family: font-family(primary, light);
+    @include set-font-size(4.8rem, 4.8rem, 4.8rem, 4.8rem);
+    margin-bottom: $spacing--tiny;
+    font-family: font-family(nt-primary, primary);
+    margin: $spacing--medium 0 $spacing--large;
 
     > div{ 
-        padding: 0; 
+        padding: 10px; 
         display: inline-block;
-
-        @include media('>desktop') {
-            margin-top: -30px;
-        }
-
     }
 
     div > span{ 
-        //padding: 0 15px; 
         display: inline-block; 
     }
 
-    .seconds {
-        @include media('>desktop') {
-            width: 170px;
-        }
-    }
-
     .smalltext {
-        @include set-font-size(1.8rem, 1.8rem, 1.8rem, 2rem);
-        text-transform: uppercase;
+        @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
 
         @include media('>desktop') {
-            margin-top: -30px;
+            margin-top: -10px;
         }
 
     }

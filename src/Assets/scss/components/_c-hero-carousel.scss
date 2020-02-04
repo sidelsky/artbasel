@@ -100,12 +100,46 @@
     opacity: 0.2;
   }
   
-  //Tablet
+
+  /* Owl Vue */
+  .c-work-single__figure {
+    div {
+      position: relative;
+    }
+    .next, .prev {
+      background-color: red;
+      z-index: 100;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      position: absolute;
+      height: 47px;
+      width: 26px;
+      cursor: pointer;
+      opacity: .6;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .next {
+      right: 0px;
+      background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -24px 0px;
+    }
+
+    .prev {
+      left: 25px;
+      background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0 0;
+    }
+
+  }
+
 
 
   .owl-carousel .prev-slide{
       background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll 0 0;
       left: -35px;
+      opacity: .6;
       @include media('>tablet') {  
         $position: 20px;
         left: 10px;
@@ -114,15 +148,18 @@
   .owl-carousel .next-slide{
       background: url(https://freakyjolly.com/demo/jquery/OwlCarousel2/nav-icon.png) no-repeat scroll -24px 0px;
       right: -35px;
+      opacity: .6;
       @include media('>tablet') {  
         right: 10px;
     }
   }
   .owl-carousel .prev-slide:hover{
-     background-position: 0px -53px;
+     //background-position: 0px -53px;
+     opacity: 1;
   }
   .owl-carousel .next-slide:hover{
-    background-position: -24px -53px;
+    //background-position: -24px -53px;
+    opacity: 1;
   }
  
   span.img-text {

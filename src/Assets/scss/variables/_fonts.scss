@@ -9,8 +9,10 @@ $arial: 'Arial', sans-serif;
 * Fonts
 */
 $font-name: 'hind';
+$font-name-nt: 'newtransport';
 
 $file-path: 'fonts/';
+$file-path-nt: 'fonts/newtransport/';
 
 $font-weight--light: 'light';
 $font-weight--regular: 'regular';
@@ -63,6 +65,24 @@ $font-weight--bold: 'bold';
     '#{$font-name}-#{$font-weight--bold}'
 );
 
+/**
+* NewTransport Regular
+*/
+@include web-font-nt(
+    '#{$font-name-nt}-#{$font-weight--regular}',
+    '#{$file-path-nt}',
+    '#{$font-name-nt}-#{$font-weight--regular}'
+);
+
+/**
+* NewTransport Medium
+*/
+@include web-font-nt(
+    '#{$font-name-nt}-#{$font-weight--medium}',
+    '#{$file-path-nt}',
+    '#{$font-name-nt}-#{$font-weight--medium}'
+);
+
 
 /**
 * Typefaces
@@ -76,6 +96,12 @@ $font-primary--medium: '#{$font-name}-#{$font-weight--medium}', $system-fonts;
 $font-primary--semibold: '#{$font-name}-#{$font-weight--semibold}', $system-fonts;
 $font-primary--bold: '#{$font-name}-#{$font-weight--bold}', $system-fonts;
 
+/**
+* NewTransport
+*/
+$font-primary-nt--regular: '#{$font-name-nt}-#{$font-weight--regular}', $system-fonts;
+$font-primary-nt--medium: '#{$font-name-nt}-#{$font-weight--medium}', $system-fonts;
+
 $font-families: (
    primary: (
         light: $font-primary--light,
@@ -83,7 +109,12 @@ $font-families: (
         medium: $font-primary--medium,
         semibold: $font-primary--semibold,
         bold: $font-primary--bold
-   )
+   ),
+   nt-primary: (
+    regular: $font-primary-nt--regular,
+    medium: $font-primary-nt--medium
+)
+
 );
 
 // Font sizes

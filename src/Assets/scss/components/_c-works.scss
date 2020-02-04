@@ -22,16 +22,16 @@
     //Home hero carousel card
     &__hero-figure {
         position: relative;
-        margin-bottom: $spacing--medium;
+        margin-bottom: $spacing--small;
         // position: relative;
     }
 
     //Image
     &__hero-image {
         //Tablet
-        @include media('>tablet') {
-            max-width: 180px;
-        }
+        // @include media('>tablet') {
+        //     max-width: 240px;
+        // }
         
         &:hover {
             cursor: pointer; 
@@ -42,11 +42,18 @@
     &__hero-card {
         //lost-column: 1/1 1 0;
         text-align: center !important;
-
+        max-width: 300px;
+        margin: 0 auto;
 
         .c-button {
             max-width: 220px;
         }
+    }
+
+    &__hero-credit-line {
+        @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        line-height: 1.25;
+        margin-bottom: $spacing--x-small;
     }
 
     //Card 
@@ -63,7 +70,8 @@
         //Desktop
         @include media('>desktop') {
             lost-column: 4/12 3 0;
-        }   
+        }
+
     }
 
     //Figure 
@@ -117,7 +125,7 @@
     
     //Date
     &__date {
-        //margin-bottom: $spacing--tiny;
+        margin-bottom: $spacing--tiny;
     }  
 
     //Name
@@ -137,16 +145,20 @@
     &__availability {
         margin-bottom: $spacing--small;
         font-family: font-family(primary, semibold);
+
+        &__hero {
+            margin-bottom: 0;
+        }
     }
 
     //Href Wrap
     &__href-wrap { 
         display: block; 
-        font-family: font-family(primary, bold);
+        font-family: font-family(nt-primary, medium);
         color: white;
-        font-weight: 100;
         text-align: center;
         padding: 12px 25px;
+        max-width: 260px;
 
         &--spacer {
             height: 46px;
@@ -204,6 +216,11 @@
 
     
 
+}
+
+
+.home .c-works__href-wrap {
+    max-width: 100%;
 }
 
 
