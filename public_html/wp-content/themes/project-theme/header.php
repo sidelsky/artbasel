@@ -25,8 +25,14 @@ $wordpress = new WordpressHelper;
 		
 		<?php wp_head(); ?>
 	</head>
-
-	<body <?php body_class(); ?> id="body">
+	<?php 
+		if( is_page('works-preview') ) {
+			$isHome = 'home';
+		} else {
+			$isHome = '';
+		}
+	?>
+	<body <?php body_class($isHome); ?> id="body">
 
 	<?php
 		/**
@@ -58,20 +64,7 @@ $wordpress = new WordpressHelper;
 			$content = get_post_field('post_content', $front_page_id);
 
 			if( is_front_page() || is_page('Works preview') ) { ?>
-			<!-- <section class="u-section parallax-window__content">
-				<div class="u-l-container--center" data-in-viewport>
-					<div class="u-l-container u-l-container--row u-l-horizontal-padding <?= is_front_page() || is_page('Works preview') === ( TRUE ) ? 'u-l-vertical-padding u-l-vertical-padding--bottom' : 'u-l-vertical-padding u-l-vertical-padding--small' ?>">
-					<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre ">
-						<?php echo get_the_title( $front_page_id ); ?>
-					</h1>
-						<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?php echo get_field( 'works_title_chinese', $front_page_id ); ?></h2>
-						<?php if($content ) : ?>
-							<div class="u-l-container--narrow c-site-headings c-site-headings--h1--small c-site-headings--text-align-center"><?= $content; ?></div>
-						<?php endif; ?>
-					</div>
-				</div>
-			</section> -->
-
+			<!-- NULL -->
 			<?php } else { ?>
 				
 				<?php if( is_singular('works') ) : ?>
@@ -93,7 +86,4 @@ $wordpress = new WordpressHelper;
 			
 			<?php } ?>
 				
-
-
-
 <main role="main" class="main">
