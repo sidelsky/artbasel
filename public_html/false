@@ -297,3 +297,64 @@ Stack trace:
 [04-Feb-2020 11:50:12 UTC] PHP Notice:  Undefined variable: localhostz in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
 [04-Feb-2020 14:34:14 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
 [04-Feb-2020 14:34:39 UTC] PHP Notice:  Undefined index: /wp-content/themes/project-theme/assets/build/style.css in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
+[05-Feb-2020 21:35:07 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:39:12 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:39:12 UTC] PHP Warning:  include(partials/footer-content.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:39:12 UTC] PHP Warning:  include(): Failed opening 'partials/footer-content.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:39:13 UTC] PHP Warning:  include(partials/footer-content.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 22
+[05-Feb-2020 21:39:13 UTC] PHP Warning:  include(): Failed opening 'partials/footer-content.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 22
+[05-Feb-2020 21:39:22 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:39:22 UTC] PHP Warning:  include(../partials/footer-content.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:39:22 UTC] PHP Warning:  include(): Failed opening '../partials/footer-content.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:39:23 UTC] PHP Warning:  include(partials/footer-content.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 22
+[05-Feb-2020 21:39:23 UTC] PHP Warning:  include(): Failed opening 'partials/footer-content.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 22
+[05-Feb-2020 21:39:28 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:39:28 UTC] PHP Warning:  include(/partials/footer-content.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:39:28 UTC] PHP Warning:  include(): Failed opening '/partials/footer-content.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:39:29 UTC] PHP Warning:  include(partials/footer-content.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 22
+[05-Feb-2020 21:39:29 UTC] PHP Warning:  include(): Failed opening 'partials/footer-content.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/footer.php on line 22
+[05-Feb-2020 21:40:30 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:40:30 UTC] PHP Warning:  include(/partials/footer-details.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:40:30 UTC] PHP Warning:  include(): Failed opening '/partials/footer-details.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 71
+[05-Feb-2020 21:40:43 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:45:42 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:47:01 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:47:47 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:48:09 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:48:50 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:50:05 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:50:22 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:51:56 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:52:12 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:52:24 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:52:32 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:53:17 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:53:42 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:53:59 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:54:11 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:54:22 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:54:55 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:57:21 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:57:31 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:57:39 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:59:28 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 21:59:46 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:00:15 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:01:09 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:02:14 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:02:18 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:02:42 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:03:28 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:04:23 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:04:35 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:05:37 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:06:17 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:07:13 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:08:43 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:08:58 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:11:16 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:11:59 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:12:07 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:12:17 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:12:23 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[05-Feb-2020 22:12:32 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8

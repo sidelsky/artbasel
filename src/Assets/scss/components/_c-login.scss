@@ -1,10 +1,11 @@
 .c-login {
     position: fixed;
     top: 0;
-    bottom: -100px;
+    bottom: 0;
     left: 0;
     right: 0;
     z-index: 99;
+    overflow: auto;
     
     &--background-dark {
         background-color: $dark;
@@ -31,6 +32,19 @@
 
     &__detail {
         font-size: 14px;
+    }
+
+    .c-footer {
+        &__column {
+            lost-column: 12/12;
+            text-align: center;
+            width: 100%;
+
+            .social {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
     }
 }
 

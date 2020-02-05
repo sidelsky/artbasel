@@ -35,8 +35,7 @@
 				</header>
 
 			<div class="u-l-container--center" data-in-viewport>
-				<div class="u-l-container u-l-container--row u-l-vertical-padding--small">
-					
+				<div class="u-l-container u-l-container--row u-l-vertical-padding--tiny">
 					
 					<h1 class="c-site-headings--h1--email-sub c-text-align-centre"><?= $title; ?></h1>
 					
@@ -66,13 +65,9 @@
 					<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre"><?= $subtitle; ?></h3>
 						<div class="tml tml-login" id="theme-my-login1">
 							<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
-							<p class="c-footer"><small><?= $consent; ?></small></p>
+							<p class="c-footer c-footer__consent"><small><?= $consent; ?></small></p>
 
-							<footer class="u-section c-footer c-footer--modal">
-					<div class="u-l-container">
-						<p class="c-footer__copyright"><?php echo $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT</small></p>
-					</div>
-				</footer>
+							<?php include("partials/footer-details.php"); ?>
 				
 						</div>
 					</div>

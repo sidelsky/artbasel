@@ -23,6 +23,18 @@
     }
 
         //Small
+        &--tiny {
+            padding-top: $spacing--tiny;
+            padding-bottom: $spacing--tiny;
+    
+            @include breakpoint($medium) {
+                padding-top: $spacing--small;
+                padding-bottom: $spacing--small;
+            }
+        }
+
+
+        //Small
         &--bottom {
             padding-top: $spacing--medium;
             padding-bottom: $spacing--medium;
