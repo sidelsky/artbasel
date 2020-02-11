@@ -100,7 +100,7 @@
 
 		if (t < 0) { 
 				clearInterval(x); 
-				document.getElementById("demo").innerHTML = "TIME UP"; 
+				document.getElementById("demo").innerHTML = ""; 
 				document.getElementById("day").innerHTML ='0'; 
 				document.getElementById("hour").innerHTML ='0'; 
 				document.getElementById("minute").innerHTML ='0' ;  
