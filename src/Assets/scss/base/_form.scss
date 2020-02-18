@@ -108,3 +108,21 @@ select {
         display: none;
     }
 }
+
+
+.gfield_captcha_container {
+    img {
+        margin-bottom: 10px;
+    }
+
+    [type = 'text'] {
+        background-color: #fff;
+        border: solid 1px rgba(255, 255, 255, 0.6);
+        font-size: 1.8rem;
+        width: 100%;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 3px;
+        height: 48px;
+    }
+}
