@@ -48,7 +48,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				echo '</div>';
 		echo '</div>';
 	?>
-
+ 
 	<?php
 	/**
 	 * Inquire modal

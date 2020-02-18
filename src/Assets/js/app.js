@@ -8,6 +8,7 @@ import './components/owl-home-hero-api';
 import './components/hero-paralax';
 import './components/form-modal';
 import './components/we-chat-modal';
+import './components/honeypot';
 //import './components/siema';
 // import './components/swiper';
 // import './components/swiper-api';
