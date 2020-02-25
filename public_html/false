@@ -474,3 +474,30 @@ Stack trace:
   thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 40
 [24-Feb-2020 12:19:05 UTC] PHP Notice:  Undefined index: image_content in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-image-content.php on line 2
 [24-Feb-2020 12:20:39 UTC] PHP Notice:  Undefined index: image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-image-content.php on line 2
+[25-Feb-2020 15:44:40 UTC] PHP Notice:  Undefined variable: viewing_room in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[25-Feb-2020 15:44:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:23
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[25-Feb-2020 15:49:14 UTC] PHP Notice:  Undefined variable: viewing_room in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[25-Feb-2020 15:49:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:23
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[25-Feb-2020 15:49:44 UTC] PHP Notice:  Undefined variable: viewing_room in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[25-Feb-2020 15:49:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:23
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[25-Feb-2020 15:50:42 UTC] PHP Notice:  Undefined index: requirements in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 21
+[25-Feb-2020 15:50:42 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 21
+[25-Feb-2020 16:08:18 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 6
