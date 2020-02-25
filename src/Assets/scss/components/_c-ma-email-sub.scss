@@ -1,12 +1,15 @@
 .c-ma-email-sub {
     background: $dark;
     color: white;
-
-    @include media('>tablet') {
-        display: table;
-        width: 100%;
-    }
     
+    &__wrapper {
+        @include max-width();
+        @include media('>tablet') {
+            display: table;
+            width: 100%;
+        }    
+    }
+
     &__column {
         @include media('>tablet') {
             display: table-cell;

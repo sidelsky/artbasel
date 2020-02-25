@@ -73,6 +73,11 @@
 	z-index: 1;
   }
 
+@mixin max-width($max-width: $max-width-large ) {
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
 
 @mixin set-font-size($small-font: '1.8rem', $medium-font: '1.8rem', $large-font: '2.4rem', $x-large-font: '3.6rem') {
 

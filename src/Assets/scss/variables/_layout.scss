@@ -14,6 +14,7 @@
 
 // Grid
 $max-width: 1200px;
+$max-width-large: 1600px;
 $max-width-shallow: 980px;
 $max-width-narrow: 720px;
 $max-width-small: 520px;
@@ -24,3 +25,5 @@ $horizontal-padding-medium: 20px;
 
 // Containers
 $limit-width: $max-width + ($horizontal-padding-medium * 2);
+
+

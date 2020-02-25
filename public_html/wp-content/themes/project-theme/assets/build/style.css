@@ -1191,8 +1191,13 @@ span.img-text:hover {
   color: white;
 }
 
+.c-ma-email-sub__wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 @media (min-width: 769px) {
-  .c-ma-email-sub {
+  .c-ma-email-sub__wrapper {
     display: table;
     width: 100%;
   }
@@ -2816,6 +2821,8 @@ table {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .l-content__title-break {
