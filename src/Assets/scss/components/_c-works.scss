@@ -149,7 +149,7 @@
     &__href-wrap { 
         display: block; 
         font-family: font-family(nt-primary, medium);
-        color: white;
+        //color: white;
         text-align: center;
         padding: 12px 25px;
         max-width: 260px;
@@ -170,7 +170,7 @@
         &--center {
             text-align: center;
             .c-works__href {
-                color: white !important;
+                color: white;
                 font-family: font-family(nt-primary, medium);
             }
             .c-works__icon {

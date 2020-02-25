@@ -1,0 +1,1 @@
+<article class="l-content__block" style="background-image: url('<?= $data['image_content'] ?>')"></article>

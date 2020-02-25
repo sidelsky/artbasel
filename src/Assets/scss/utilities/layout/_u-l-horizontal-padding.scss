@@ -10,4 +10,15 @@
         padding-left: $horizontal-padding-medium;
         padding-right: $horizontal-padding-medium;
     }
+
+    &--large {
+        padding-left: $spacing--large-xx;
+        padding-right: $spacing--large-xx;
+
+        @include media('>desktop') {
+            padding-left: $spacing--jumbo;
+            padding-right: $spacing--jumbo;
+        }
+
+    }
 }

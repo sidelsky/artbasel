@@ -358,3 +358,119 @@ Stack trace:
 [05-Feb-2020 22:12:17 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
 [05-Feb-2020 22:12:23 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
 [05-Feb-2020 22:12:32 UTC] PHP Notice:  Undefined variable: localhostx in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 8
+[24-Feb-2020 10:56:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\TitleBreak' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:29
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 29
+[24-Feb-2020 10:57:49 UTC] PHP Notice:  Undefined variable: currentLayout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 53
+[24-Feb-2020 10:57:50 UTC] PHP Warning:  include(/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 10:57:50 UTC] PHP Warning:  include(): Failed opening '/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 10:59:09 UTC] PHP Notice:  Undefined index: titleBreak in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-title-break.php on line 1
+[24-Feb-2020 10:59:49 UTC] PHP Warning:  include(/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 10:59:49 UTC] PHP Warning:  include(): Failed opening '/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:00:07 UTC] PHP Notice:  Undefined variable: currentLayout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 53
+[24-Feb-2020 11:00:07 UTC] PHP Warning:  include(/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:00:07 UTC] PHP Warning:  include(): Failed opening '/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:00:41 UTC] PHP Notice:  Undefined index: v in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 23
+[24-Feb-2020 11:00:41 UTC] PHP Warning:  include(/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:00:41 UTC] PHP Warning:  include(): Failed opening '/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:01:48 UTC] PHP Notice:  Undefined index: titleBreak in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-title-break.php on line 1
+[24-Feb-2020 11:08:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\Layout' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 11
+[24-Feb-2020 11:08:32 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 13
+[24-Feb-2020 11:08:32 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:13
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 13
+[24-Feb-2020 11:08:52 UTC] PHP Notice:  Undefined variable: allLayouts in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 19
+[24-Feb-2020 11:08:52 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 19
+[24-Feb-2020 11:09:55 UTC] PHP Warning:  include(/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php): failed to open stream: No such file or directory in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:09:55 UTC] PHP Warning:  include(): Failed opening '/Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.8/lib/php') in /Users/errol.sidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php on line 26
+[24-Feb-2020 11:10:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\TitleBreak' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:29
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 29
+[24-Feb-2020 12:07:23 UTC] PHP Fatal error:  Cannot declare class Theme\Model\TextContent, because the name is already in use in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Image.php on line 6
+[24-Feb-2020 12:07:37 UTC] PHP Notice:  Undefined variable: image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 38
+[24-Feb-2020 12:07:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getImage() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:38
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 38
+[24-Feb-2020 12:08:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\Image::getImage() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:38
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 38
+[24-Feb-2020 12:09:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\Image::getImage() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:40
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 40
+[24-Feb-2020 12:09:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\Image' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:39
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 39
+[24-Feb-2020 12:09:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\Image::getImage() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:40
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 40
+[24-Feb-2020 12:15:33 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\ImageContent' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:39
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 39
+[24-Feb-2020 12:16:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\ImageContent::getImageContent() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:40
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 40
+[24-Feb-2020 12:17:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Theme\Model\ImageContent::getImageContent() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php:40
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php(11): Theme\Model\Layout->__construct()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#3 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#4 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 40
+[24-Feb-2020 12:19:05 UTC] PHP Notice:  Undefined index: image_content in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-image-content.php on line 2
+[24-Feb-2020 12:20:39 UTC] PHP Notice:  Undefined index: image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-image-content.php on line 2
