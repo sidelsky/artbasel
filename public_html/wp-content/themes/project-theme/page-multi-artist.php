@@ -17,8 +17,10 @@ $allLayouts = $layout->getLayout();
 
 include("header.php"); ?>
 
-
 <?php
+/**
+ * Viewing room
+ */
     $template = 'c-viewing-room';
     $data = $viewing_room->getData();
     echo $render->view('Components/' . $template, $data);
