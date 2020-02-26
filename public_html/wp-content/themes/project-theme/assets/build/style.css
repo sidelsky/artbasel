@@ -1525,7 +1525,7 @@ span.img-text:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.25);
   z-index: 1;
 }
 
@@ -1654,7 +1654,7 @@ span.img-text:hover {
 .c-site-headings--h1--sub {
   font-size: 4.4rem;
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 @media (min-width: 376px) {
@@ -1665,7 +1665,7 @@ span.img-text:hover {
 
 @media (min-width: 769px) {
   .c-site-headings--h1--sub {
-    font-size: 6.4rem;
+    font-size: 6rem;
   }
 }
 
@@ -2034,6 +2034,70 @@ span.img-text:hover {
 .swiper-pagination-bullet-active {
   color: #fff;
   background-color: #000 !important;
+}
+
+.c-viewing-rooms-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.c-viewing-rooms-header--two-column {
+  height: auto;
+  position: relative;
+  position: relative;
+}
+
+.c-viewing-rooms-header--two-column::before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+  width: 100%;
+}
+
+.c-viewing-rooms-header--two-column .canvas {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 769px) {
+  .c-viewing-rooms-header--two-column {
+    width: 50%;
+  }
+}
+
+.c-viewing-rooms-header--two-column .parallax-window__content--two-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+@media (min-width: 1025px) {
+  .c-viewing-rooms-header--two-column .parallax-window__content--two-column {
+    padding: 10rem;
+  }
+}
+
+.c-viewing-rooms-header--two-column .parallax-window__content--two-column .c-text-align-centre,
+.c-viewing-rooms-header--two-column .parallax-window__content--two-column .c-site-headings--text-align-center,
+.c-viewing-rooms-header--two-column .parallax-window__content--two-column .c-works__href-wrap--center {
+  text-align: left;
+  padding: 0;
 }
 
 .c-work-single--full-width {

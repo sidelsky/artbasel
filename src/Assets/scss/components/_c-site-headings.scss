@@ -57,9 +57,9 @@
            }
 
            &--sub {
-                @include set-font-size(4.4rem, 5.4rem, 6.4rem, 6.4rem);
+                @include set-font-size(4.4rem, 5.4rem, 6rem, 6.4rem);
                 font-family: font-family(nt-primary, medium);
-                line-height: 1.1;
+                line-height: 1;
             }
 
             &--hero-carousel {

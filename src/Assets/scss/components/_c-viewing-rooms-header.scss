@@ -1,0 +1,44 @@
+.c-viewing-rooms-header {
+    //lost-flex-container: row;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    &--one-column {
+
+    }
+
+    &--two-column {
+        //lost-column: 1/2 0;
+        height: auto;
+        position: relative;
+        @include aspect-ratio(1, 1);
+        
+        @include media('>tablet') {
+            width: 50%;
+        }
+        .parallax-window__content--two-column {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: $spacing--large;
+
+            @include media('>desktop') {
+                padding: $spacing--jumbo;
+            }
+
+            .c-text-align-centre,
+            .c-site-headings--text-align-center,
+            .c-works__href-wrap--center {
+                text-align: left;
+                padding: 0;
+            }
+
+        }
+
+    }
+}
+
+
