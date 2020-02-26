@@ -604,3 +604,6 @@ Stack trace:
 [26-Feb-2020 10:18:36 UTC] PHP Notice:  Undefined variable: content in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 8
 [26-Feb-2020 10:59:54 UTC] PHP Warning:  str_replace() expects at least 3 parameters, 2 given in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 39
 [26-Feb-2020 12:27:16 UTC] PHP Parse error:  syntax error, unexpected ':' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 17
+[26-Feb-2020 15:12:29 UTC] PHP Notice:  Undefined index: currentViewingRoom in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 9
+[26-Feb-2020 15:12:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 9
+[26-Feb-2020 15:12:29 UTC] PHP Notice:  Undefined variable: str in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 41

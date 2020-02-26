@@ -73,9 +73,9 @@
 	z-index: 1;
   }
 
-@mixin max-width($max-width: $max-width-large ) {
+@mixin max-width($max-width: $max-width-large, $margins: 0 auto ) {
     max-width: $max-width;
-    margin: 0 auto;
+    margin: $margins;
 }
 
 

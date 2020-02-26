@@ -3,26 +3,34 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-
+    
     &--one-column {
-
+        
     }
-
+    
     &--two-column {
-        //lost-column: 1/2 0;
+        @include max-width(800px);
         height: auto;
         position: relative;
-        @include aspect-ratio(1, 1);
+        @include aspect-ratio(1, 1.1);
         
         @include media('>tablet') {
             width: 50%;
         }
-        .parallax-window__content--two-column {
 
+        &:nth-of-type(1) {
+            margin-right: 0;
+        }
+
+        &:nth-of-type(2) {
+            margin-left: 0;
+        }
+
+
+        .parallax-window__content--two-column {
             display: flex;
             justify-content: center;
             align-items: center;
-
             padding: $spacing--large;
 
             @include media('>desktop') {
@@ -34,6 +42,10 @@
             .c-works__href-wrap--center {
                 text-align: left;
                 padding: 0;
+            }
+
+            .c-works__href-wrap--center {
+                display: inline-block;
             }
 
         }

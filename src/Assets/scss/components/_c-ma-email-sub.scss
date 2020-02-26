@@ -1,6 +1,7 @@
 .c-ma-email-sub {
     background: $dark;
     color: white;
+    @include max-width();
     
     &__wrapper {
         @include max-width();

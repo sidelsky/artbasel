@@ -1189,6 +1189,8 @@ span.img-text:hover {
 .c-ma-email-sub {
   background: #1F1F1F;
   color: white;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .c-ma-email-sub__wrapper {
@@ -1525,7 +1527,7 @@ span.img-text:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -1628,14 +1630,14 @@ span.img-text:hover {
 
 .c-site-headings--h1--hero {
   font-family: "newtransport-regular", Helvetica, Arial, sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: white;
 }
 
 @media (min-width: 376px) {
   .c-site-headings--h1--hero {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1647,12 +1649,12 @@ span.img-text:hover {
 
 @media (min-width: 1025px) {
   .c-site-headings--h1--hero {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
   }
 }
 
 .c-site-headings--h1--sub {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   line-height: 1;
 }
@@ -1671,7 +1673,7 @@ span.img-text:hover {
 
 @media (min-width: 1025px) {
   .c-site-headings--h1--sub {
-    font-size: 6.4rem;
+    font-size: 6.8rem;
   }
 }
 
@@ -2048,6 +2050,8 @@ span.img-text:hover {
 }
 
 .c-viewing-rooms-header--two-column {
+  max-width: 800px;
+  margin: 0 auto;
   height: auto;
   position: relative;
   position: relative;
@@ -2056,7 +2060,7 @@ span.img-text:hover {
 .c-viewing-rooms-header--two-column::before {
   content: '';
   display: block;
-  padding-top: 100%;
+  padding-top: 110%;
   width: 100%;
 }
 
@@ -2072,6 +2076,14 @@ span.img-text:hover {
   .c-viewing-rooms-header--two-column {
     width: 50%;
   }
+}
+
+.c-viewing-rooms-header--two-column:nth-of-type(1) {
+  margin-right: 0;
+}
+
+.c-viewing-rooms-header--two-column:nth-of-type(2) {
+  margin-left: 0;
 }
 
 .c-viewing-rooms-header--two-column .parallax-window__content--two-column {
@@ -2098,6 +2110,10 @@ span.img-text:hover {
 .c-viewing-rooms-header--two-column .parallax-window__content--two-column .c-works__href-wrap--center {
   text-align: left;
   padding: 0;
+}
+
+.c-viewing-rooms-header--two-column .parallax-window__content--two-column .c-works__href-wrap--center {
+  display: inline-block;
 }
 
 .c-work-single--full-width {
