@@ -41,14 +41,14 @@
         }
 
         &:nth-of-type(1) {
-            @include set-font-size(1.6rem, 1.6rem, 1.8rem, 2rem);
+            @include set-font-size(1.6rem, 1.6rem, 1.8rem, 2.2rem);
             font-family: font-family(nt-primary, medium);
             line-height: 1.25;
             text-align: center;
             margin-bottom: $spacing--x-small;
 
             @include media('>tablet') {
-                text-align: right;
+                text-align: left;
                 padding: 0 $spacing--small 0 0;
             }
         }

@@ -25,14 +25,39 @@ add_theme_support( 'post-thumbnails' );
         new Enqueues();
     }
 
+    //Custom taxonomies
+ 
+    //Set all of the taxonomies
+    function customTaxonomies() {
+ 
+        $ad_type = create_custom_taxonomy(
+ 
+            $args = array(
+                'name' => 'Collection',
+                'singular_name' => 'Collection',
+                'slug' => 'collection'
+            )
+ 
+        );
+ 
+        $custom_posts = array(
+            'post_name' => 'works'
+        );
+ 
+        register_taxonomy($args['slug'], $custom_posts['post_name'], $ad_type['args']);
+ 
+ 
+    }
+    add_action('init', 'customTaxonomies');
 
     //Taxonomies
-    add_action('init', 'createTaxonomies');
-    function createTaxonomies()
-    {
-        // $eventType = CustomTaxonomy::createTaxonomy("Event Type", "Event Types", "event_type");
-        // register_taxonomy("event_type", array("event"), $eventType["args"]);
-    }
+    // add_action('init', 'createTaxonomies');
+    // function createTaxonomies()
+    // {   
+    //     //Collection
+    //     $collectionTax = CustomTaxonomy::createTaxonomy("Collection", "Collection", "collection");
+    //     register_taxonomy("event_type", array("works"), $collectionTax["args"]);
+    // }
 
     //Project configuration - menus, image crops etc.
     add_action('init', 'projectConfig');

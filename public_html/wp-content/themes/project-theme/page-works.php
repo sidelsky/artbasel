@@ -11,21 +11,69 @@
 
 ?>
 
-<?php
 
-		$loop = new WP_Query(
-			[
-				'post_type' => 'works',
-				'posts_per_page' => -1,
-				'meta_key' => 'surname',
-				'orderby' => 'meta_value',
-				'order' => 'ASC'
+
+<?php
+$args = array(
+  'post_type'   => 'works',
+  'post_status' => 'publish',
+  'tax_query'   => array(
+  	array(
+  		'taxonomy' => 'collection',
+  		'field'    => 'slug',
+  		'terms'    => 'test-1'
+  	)
+  )
+ );
+ 
+$testimonials = new WP_Query( $args );
+if( $testimonials->have_posts() ) :
+?>
+  <ul>
+    <?php
+      while( $testimonials->have_posts() ) :
+        $testimonials->the_post();
+        ?>
+          <li><?php printf( '%1$s - %2$s', get_the_title(), get_the_content() );  ?></li>
+        <?php
+      endwhile;
+      wp_reset_postdata();
+    ?>
+  </ul>
+<?php
+else :
+  esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
+endif;
+?>
+
+
+
+
+<?php
+		//$terms = get_terms('collection');
+
+		//var_dump($terms);
+
+		$args = array(
+			'post_type'   => 'works',
+			'post_status' => 'publish',
+			'tax_query'   => [
+				[
+					'taxonomy' => 'collection',
+					'field'    => 'term_id',
+					'terms'    => 6
+				]
 			]
-		 );
+		   );
+
+		$loop = new WP_Query($args);
 
 		$artwork = [];
 
 		while ( $loop->have_posts() ) : $loop->the_post();
+		
+		//the_content();
+
 		get_the_id();
 
 			$artwork[] = [
@@ -51,6 +99,7 @@
 			];
 
 		endwhile;
+		wp_reset_postdata();
 
 ?>
 
