@@ -11,7 +11,7 @@ function heroParalax() {
     const titleElems = [...document.querySelectorAll("[data-id='title']")]
     const titleElemsLength = titleElems.length;
 
-    console.log(titleElems);
+    //console.log(titleElems);
 
     for (let index = 0; index < titleElemsLength; index++) {
         const titleElem = titleElems[index];

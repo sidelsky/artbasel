@@ -11,95 +11,45 @@
 
 ?>
 
-
-
 <?php
-$args = array(
-  'post_type'   => 'works',
-  'post_status' => 'publish',
-  'tax_query'   => array(
-  	array(
-  		'taxonomy' => 'collection',
-  		'field'    => 'slug',
-  		'terms'    => 'test-1'
-  	)
-  )
- );
- 
-$testimonials = new WP_Query( $args );
-if( $testimonials->have_posts() ) :
-?>
-  <ul>
-    <?php
-      while( $testimonials->have_posts() ) :
-        $testimonials->the_post();
-        ?>
-          <li><?php printf( '%1$s - %2$s', get_the_title(), get_the_content() );  ?></li>
-        <?php
-      endwhile;
-      wp_reset_postdata();
-    ?>
-  </ul>
-<?php
-else :
-  esc_html_e( 'No testimonials in the diving taxonomy!', 'text-domain' );
-endif;
-?>
 
+	$args = array(
+		'post_type' => 'works',
+		'posts_per_page' => -1,
+		'orderby' => 'post_date',
+		'order' => 'DEC'
+	);
 
+	$loop = new WP_Query($args);
 
+	$artwork = [];
 
-<?php
-		//$terms = get_terms('collection');
+	while ( $loop->have_posts() ) : $loop->the_post();
 
-		//var_dump($terms);
+		$artwork[] = [
+			'key' => get_the_id(),
+			'title' => get_the_title(),
+			'subPostTitle' => get_field('sub_post_title'),
+			'surname' => get_field('surname'),
+			'fullName' => get_field('full_name'),
+			'image' => get_the_post_thumbnail_url(),
+			'date' => get_field('date'),
+			'description' => get_field('description'),
+			'medium' => get_field('medium'),
+			'mediumText' => get_field('medium_free_text'),
+			'mediumChinese' => get_field('medium_chinese'),
+			'decade' => get_field('decade'),
+			'dimensions' => get_field('dimensions'),
+			'price' => get_field('price'),
+			'priceRange' => get_field('price_range'),
+			'link' => get_the_permalink(),
+			'sold' => get_field('sold'),
+			'ids' => get_field('code_id'),
+			'creditLine' => get_field('credit_line'),
+		];
 
-		$args = array(
-			'post_type'   => 'works',
-			'post_status' => 'publish',
-			'tax_query'   => [
-				[
-					'taxonomy' => 'collection',
-					'field'    => 'term_id',
-					'terms'    => 6
-				]
-			]
-		   );
-
-		$loop = new WP_Query($args);
-
-		$artwork = [];
-
-		while ( $loop->have_posts() ) : $loop->the_post();
-		
-		//the_content();
-
-		get_the_id();
-
-			$artwork[] = [
-				'key' => get_the_id(),
-				'title' => get_the_title(),
-				'subPostTitle' => get_field('sub_post_title'),
-				'surname' => get_field('surname'),
-				'fullName' => get_field('full_name'),
-				'image' => get_the_post_thumbnail_url(),
-				'date' => get_field('date'),
-				'description' => get_field('description'),
-				'medium' => get_field('medium'),
-				'mediumText' => get_field('medium_free_text'),
-				'mediumChinese' => get_field('medium_chinese'),
-				'decade' => get_field('decade'),
-				'dimensions' => get_field('dimensions'),
-				'price' => get_field('price'),
-				'priceRange' => get_field('price_range'),
-				'link' => get_the_permalink(),
-				'sold' => get_field('sold'),
-				'ids' => get_field('code_id'),
-				'creditLine' => get_field('credit_line'),
-			];
-
-		endwhile;
-		wp_reset_postdata();
+	endwhile;
+	wp_reset_postdata();
 
 ?>
 
@@ -187,22 +137,6 @@ if($hero_text_content) :?>
 		</div>
 	</div>
 </section>
-
-<?php
-	/**
-	 * Purchase modal
-	 */
-	foreach($artwork as $index => $art): ?>
-	<div id="purchaseModal_<?= $index ?>" class="modal">
-		<div class="modal-content">
-			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
-			<span class="close">&times;</span>
-			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $art['fullName'] .', ' . $art['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $art['ids'] . '"]'); ?>
-			<small>*By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it's afiliated companies.</small>
-		</div>
-	</div>
-<?php endforeach; ?>
-
 <?php endif; ?>
 
 <?php
@@ -246,7 +180,7 @@ if($fifty_fifty_image) :?>
 								<img src="<?= $artworks['image']; ?>" alt="<?= $artworks['title']; ?>" class="c-works__image">
 							</a>
 						</figure> 
-						<a href="http://artbasilvip:8888/works/johnr101396/">
+						<a href="<?= $artworks['link']; ?>">
 							<h2 class="c-works__title"><?= $artworks['title']; ?></h2>
 						</a>
 						<div class="c-works__name"><?= $artworks['fullName']; ?></div>
@@ -268,21 +202,6 @@ if($fifty_fifty_image) :?>
 	</div>
 	<!-- <div id="app"></div> -->
 </section>
-
-<?php
-	/**
-	 * Purchase modal
-	 */
-	foreach($artwork as $i => $artworks): ?>
-	<div id="ListPurchaseModal_<?= $i ?>" class="modal">
-		<div class="modal-content">
-			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
-			<span class="close">&times;</span>
-			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $artworks['fullName'] .', ' . $artworks['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $artworks['ids'] . '"]'); ?>
-			<small>*By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it's afiliated companies.</small>
-		</div>
-	</div>
-<?php endforeach; ?>
 
 <?php 
 /**
@@ -328,5 +247,35 @@ if($gallery) : ?>
 		</div>
 	</div>
 </section>
+
+<?php
+	/**
+	 * Purchase modal
+	 */
+	foreach($artwork as $index => $artworks): ?>
+	<div id="ListPurchaseModal_<?= $index ?>" class="modal">
+		<div class="modal-content">
+			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
+			<span class="close">&times;</span>
+			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $artworks['fullName'] .', ' . $artworks['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $artworks['ids'] . '"]'); ?>
+			<small>*By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it's afiliated companies.</small>
+		</div>
+	</div>
+<?php endforeach; ?>
+
+<?php
+	/**
+	 * Purchase modal
+	 */
+	foreach($artwork as $index => $art): ?>
+	<div id="purchaseModal_<?= $index ?>" class="modal">
+		<div class="modal-content">
+			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
+			<span class="close">&times;</span>
+			<?= do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $art['fullName'] .', ' . $art['title'] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $art['ids'] . '"]'); ?>
+			<small>*By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it's afiliated companies.</small>
+		</div>
+	</div>
+<?php endforeach; ?>
 
 <?php include("footer.php"); ?>

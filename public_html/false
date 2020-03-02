@@ -693,3 +693,82 @@ Stack trace:
 #2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
 #3 {main}
   thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-works.php on line 33
+[28-Feb-2020 11:43:05 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 17
+[28-Feb-2020 11:43:42 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 11:45:09 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 15
+[28-Feb-2020 11:45:09 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 11:45:09 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 17
+[28-Feb-2020 11:45:38 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 17
+[28-Feb-2020 11:45:38 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 11:45:38 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 19
+[28-Feb-2020 11:46:11 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 11:46:44 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 17
+[28-Feb-2020 11:46:44 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 11:46:44 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 17
+[28-Feb-2020 11:46:44 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 11:47:26 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 15
+[28-Feb-2020 11:47:26 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php on line 280
+[28-Feb-2020 11:47:47 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 11:47:47 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php on line 280
+[28-Feb-2020 13:38:05 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:38:05 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php on line 280
+[28-Feb-2020 13:38:37 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:38:37 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php on line 280
+[28-Feb-2020 13:39:54 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:39:54 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php on line 280
+[28-Feb-2020 13:44:01 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:44:01 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-value.php on line 280
+[28-Feb-2020 13:46:35 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 37
+[28-Feb-2020 13:47:02 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:47:02 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 19
+[28-Feb-2020 13:47:02 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 20
+[28-Feb-2020 13:47:02 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:47:02 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 19
+[28-Feb-2020 13:47:02 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 20
+[28-Feb-2020 13:47:23 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:47:23 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 19
+[28-Feb-2020 13:47:23 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:47:23 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 19
+[28-Feb-2020 13:47:31 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 13:47:31 UTC] PHP Notice:  Trying to get property of non-object in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 18
+[28-Feb-2020 14:32:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php:19
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 19
+[28-Feb-2020 14:33:36 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 14:35:10 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 14:35:10 UTC] PHP Warning:  join(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 22
+[28-Feb-2020 14:35:10 UTC] PHP Warning:  join(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 22
+[28-Feb-2020 14:35:45 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 14:35:45 UTC] PHP Warning:  join(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 22
+[28-Feb-2020 14:35:45 UTC] PHP Warning:  join(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 22
+[28-Feb-2020 14:37:50 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 14:37:50 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 24
+[28-Feb-2020 14:37:50 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 24
+[28-Feb-2020 14:38:01 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 22
+[28-Feb-2020 14:38:01 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 22
+[28-Feb-2020 14:39:02 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 25
+[28-Feb-2020 14:39:02 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 25
+[28-Feb-2020 14:48:19 UTC] PHP Warning:  implode(): Invalid arguments passed in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 16
+[28-Feb-2020 14:48:41 UTC] PHP Notice:  Undefined variable: termResult in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 28
+[28-Feb-2020 15:40:52 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 72
+[02-Mar-2020 09:31:34 UTC] PHP Notice:  Undefined variable: hero in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 17
+[02-Mar-2020 11:30:36 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 197
+[02-Mar-2020 11:30:36 UTC] PHP Notice:  Undefined variable: Array in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 197
+[02-Mar-2020 11:35:55 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 230
+[02-Mar-2020 11:36:11 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting elseif (T_ELSEIF) or else (T_ELSE) or endif (T_ENDIF) in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 215
+[02-Mar-2020 11:56:20 UTC] PHP Notice:  Undefined variable: fifty_fifty_image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 131
+[02-Mar-2020 11:56:43 UTC] PHP Notice:  Undefined variable: fifty_fifty_image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 131
+[02-Mar-2020 11:58:05 UTC] PHP Notice:  Undefined variable: fifty_fifty_image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 131
+[02-Mar-2020 11:58:46 UTC] PHP Notice:  Undefined variable: fifty_fifty_image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 134
+[02-Mar-2020 12:00:04 UTC] PHP Notice:  Undefined variable: fifty_fifty_image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 134
+[02-Mar-2020 12:00:28 UTC] PHP Notice:  Undefined variable: fifty_fifty_image in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 134
+[02-Mar-2020 12:13:05 UTC] PHP Notice:  Undefined variable: i in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 114
+[02-Mar-2020 12:13:05 UTC] PHP Notice:  Undefined variable: artworks in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 114
+[02-Mar-2020 12:13:05 UTC] PHP Notice:  Undefined variable: i in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 114
+[02-Mar-2020 12:13:05 UTC] PHP Notice:  Undefined variable: artworks in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 114
+[02-Mar-2020 12:24:38 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 160
+[02-Mar-2020 12:24:38 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 160

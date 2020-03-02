@@ -18,9 +18,9 @@ for (let index = 0; index < purchaseButtonsLength; index++) {
 const ListPurchaseButtons = [...document.querySelectorAll("[data-id='ListPurchaseBtn']")]
 const ListPurchaseButtonsLength = ListPurchaseButtons.length;
 
-for (let i = 0; i < ListPurchaseButtonsLength; i++) {
-  const ListPurchaseButton = ListPurchaseButtons[i];
-  const ListPurchaseModal = document.getElementById(`ListPurchaseModal_${i}`);
+for (let index = 0; index < ListPurchaseButtonsLength; index++) {
+  const ListPurchaseButton = ListPurchaseButtons[index];
+  const ListPurchaseModal = document.getElementById(`ListPurchaseModal_${index}`);
   //debugger
   ListPurchaseButton.addEventListener('click', () => {
     ListPurchaseModal.style.display = "block";

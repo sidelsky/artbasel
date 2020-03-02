@@ -2525,11 +2525,9 @@ span.img-text:hover {
 }
 
 .c-works__href-wrap {
-  display: block;
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   text-align: center;
   padding: 12px 25px;
-  max-width: 260px;
 }
 
 .c-works__href-wrap--spacer {
@@ -2548,6 +2546,9 @@ span.img-text:hover {
 
 .c-works__href-wrap--center {
   text-align: center;
+  max-width: 100%;
+  display: inline-block;
+  margin: 0 140px;
 }
 
 .c-works__href-wrap--center .c-works__href {
@@ -2582,10 +2583,6 @@ span.img-text:hover {
 
 .c-works__footer__hr {
   border-top: solid 1px #d7d6d6;
-}
-
-.home .c-works__href-wrap {
-  max-width: 100%;
 }
 
 .v-m-carousel-slide img {
