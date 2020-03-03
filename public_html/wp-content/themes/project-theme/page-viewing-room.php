@@ -61,6 +61,14 @@ wp_reset_postdata();
  */
 $hero = get_field('hero');
 if($hero) : ?>
+
+	<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
+		<svg class="u-icon c-works__icon c-works__icon--back">
+			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+		</svg>
+		<a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
+	</span>
+
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">

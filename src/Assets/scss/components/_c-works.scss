@@ -136,13 +136,13 @@
     &__href-wrap {
         font-family: font-family(nt-primary, medium);
         text-align: center;
-        padding: 12px 25px;
+        padding: 12px 0;
 
         &--spacer {
             height: 46px;
             margin-bottom: 2rem;
         }
-        
+
         &:hover {
             text-decoration: underline;
 
@@ -152,17 +152,30 @@
 
         }
 
+        &--back {
+            position: absolute;
+            z-index: 100;
+
+            &:hover {
+                .c-works__icon { 
+                    transform: rotate(-180deg) translate3d(3px,0,0);
+                }
+    
+            }
+
+        }
+
         &--center {
             text-align: center;
-            width: 100%;
-            display: inline-block;
+            margin: 0 auto;
+            display: block;
 
             .c-works__href {
                 color: white;
                 font-family: font-family(nt-primary, medium);
             }
             .c-works__icon {
-                top: 0 !important;
+                top: 0;
                 margin-left: 0;
                 transition: all ease-in-out 200ms;
             }
@@ -172,9 +185,18 @@
 
     //Icon
     &__icon {
-        top: .2em !important;
+        top: -1px;
         margin-left: 2px;
         transition: all ease-in-out 200ms;
+
+        &--back {
+            margin-left: 0;
+            margin-right: 2px;
+            top: -2px;
+            transition: all ease-in-out 200ms;
+            transform: rotate(-180deg);
+        }
+
     }
 
     //Href
@@ -196,9 +218,14 @@
         
     }
 
-    
-
 }
+
+.page-template-page-viewing-room {
+    .c-works__href-wrap--back {
+        padding-left: 20px;
+    }
+}
+
 
 
 .v-m-carousel-slide img {

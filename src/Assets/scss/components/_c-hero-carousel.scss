@@ -1,4 +1,6 @@
 .c-hero-carousel {
+
+  @include max-width();
     
     @include media('>tablet') {
         display: flex;

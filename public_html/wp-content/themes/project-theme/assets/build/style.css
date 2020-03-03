@@ -702,6 +702,11 @@ button[disabled]:hover {
   height: 15px;
 }
 
+.c-hero-carousel {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
 @media (min-width: 769px) {
   .c-hero-carousel {
     display: -webkit-box;
@@ -2534,7 +2539,7 @@ span.img-text:hover {
 .c-works__href-wrap {
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   text-align: center;
-  padding: 12px 25px;
+  padding: 12px 0;
 }
 
 .c-works__href-wrap--spacer {
@@ -2551,10 +2556,20 @@ span.img-text:hover {
           transform: translate3d(3px, 0, 0);
 }
 
+.c-works__href-wrap--back {
+  position: absolute;
+  z-index: 100;
+}
+
+.c-works__href-wrap--back:hover .c-works__icon {
+  -webkit-transform: rotate(-180deg) translate3d(3px, 0, 0);
+          transform: rotate(-180deg) translate3d(3px, 0, 0);
+}
+
 .c-works__href-wrap--center {
   text-align: center;
-  width: 100%;
-  display: inline-block;
+  margin: 0 auto;
+  display: block;
 }
 
 .c-works__href-wrap--center .c-works__href {
@@ -2563,17 +2578,27 @@ span.img-text:hover {
 }
 
 .c-works__href-wrap--center .c-works__icon {
-  top: 0 !important;
+  top: 0;
   margin-left: 0;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
 }
 
 .c-works__icon {
-  top: .2em !important;
+  top: -1px;
   margin-left: 2px;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
+}
+
+.c-works__icon--back {
+  margin-left: 0;
+  margin-right: 2px;
+  top: -2px;
+  -webkit-transition: all ease-in-out 200ms;
+  transition: all ease-in-out 200ms;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .c-works__href {
@@ -2589,6 +2614,10 @@ span.img-text:hover {
 
 .c-works__footer__hr {
   border-top: solid 1px #d7d6d6;
+}
+
+.page-template-page-viewing-room .c-works__href-wrap--back {
+  padding-left: 20px;
 }
 
 .v-m-carousel-slide img {
