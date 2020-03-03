@@ -12,6 +12,7 @@ $footer-height: 670px;
    align-items: center;
    resize: both;
    overflow: hidden;
+   position: relative;
 
    &::after {
       content: '';
@@ -22,7 +23,7 @@ $footer-height: 670px;
       left: 0;
       background-color: rgba($black, 0.4);
       z-index: 1;
-      height: 100vh;
+      //height: 100vh;
    }
 }
 

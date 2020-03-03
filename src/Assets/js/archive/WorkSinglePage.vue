@@ -62,12 +62,12 @@
           <button v-if="!work.sold" id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
           <button id="inquireBtn_0" data-id="inquireBtn" class="c-button c-button--light">Inquire to learn more</button>
 
-          <span class="c-works__href-wrap">
-						<a href="/" class="c-works__href">View all works</a>
-						<svg class="u-icon c-works__icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow" viewBox="0 0 32 32"></use>
-						</svg>
-					</span>
+				<span class="c-works__href-wrap c-works__href-wrap--center">
+					<a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
+					<svg class="u-icon c-works__icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+					</svg>
+				</span>
 
 				</div>
 			</div>

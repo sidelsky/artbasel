@@ -24,15 +24,15 @@
       }
       
       &--image-container {
-      width: 100%;
-      padding-top: 100%; /* 1:1 Aspect Ratio */
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
+        width: 100%;
+        padding-top: 100%; /* 1:1 Aspect Ratio */
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
 
     &--content {
@@ -53,14 +53,18 @@
         }
 
         p {
-            @include set-font-size(1.5rem, 1.8rem, 2rem, 2rem);
-            line-height: 1.4;
+            @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.8rem);
+            line-height: 1.5;
         }
 
         .c-hero-carousel--container--padding {
             max-width: 1000px;
             margin: 0 auto;
             padding: $spacing--large-x;
+
+            @include media('>desktop') {
+              padding: $spacing--jumbo;
+            }
         }
         
     }

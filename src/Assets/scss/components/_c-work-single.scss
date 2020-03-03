@@ -8,15 +8,12 @@
 
         @include media('>tablet') {
             position: relative;
-            //display: flex;
-            //align-items: center;
-            //height: 100vh;
         }
     }
 
     //Content
     &__content {
-        color: #8A8A8A;
+        color: white;
         width: 100%;
 
         .c-sale-marker__copy {

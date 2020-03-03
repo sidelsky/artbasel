@@ -19,7 +19,6 @@
     }
 
     &__hero-card {
-        //lost-column: 1/1 1 0;
         text-align: center !important;
         max-width: 300px;
         margin: 0 auto;
@@ -43,6 +42,11 @@
         padding: 0 $spacing--small $spacing--large-xx;
         margin-bottom: $spacing--medium;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        color: $dark;
+
+        a {
+            color: currentColor;
+        }
   
         //Tablet
         @include media('>tablet') {  
@@ -89,12 +93,8 @@
         font-family: font-family(nt-primary, medium);
         @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
         line-height: 1.25;
-        color: white;
+        //color: white;
     }
-
-    // &__medium {
-    //     height: 44px;
-    // }
  
     &__medium,
     &__dimensions,
@@ -102,21 +102,8 @@
         margin-bottom: $spacing--tiny;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
         line-height: 1.25;
-        color: white;
         position: relative;
-        //padding-left: 12px;
-
-        // &:before {
-        //     content: '';
-        //     position: absolute;
-        //     top: 5px;
-        //     left: 2px;
-        //     display: block;
-        //     border-radius: 50%;
-        //     height: 3px;
-        //     width: 3px;
-        //     background-color: currentColor;
-        // }
+        //color: white;
     }   
     
     //Date
@@ -125,7 +112,7 @@
         font-family: font-family(nt-primary, medium);
         @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
         line-height: 1.25;
-        color: white;
+        //color: white;
     }  
 
     //Name
@@ -133,7 +120,7 @@
         font-family: font-family(nt-primary, medium);
         @include set-font-size(2.1rem, 2.1rem, 2.1rem, 2.1rem);
         line-height: 1.25;
-        color: white;
+        //color: white;
     }  
 
     &__availability {
@@ -146,11 +133,10 @@
     }
 
     //Href Wrap
-    &__href-wrap { 
+    &__href-wrap {
         font-family: font-family(nt-primary, medium);
         text-align: center;
         padding: 12px 25px;
-        //max-width: 260px;
 
         &--spacer {
             height: 46px;
@@ -168,9 +154,8 @@
 
         &--center {
             text-align: center;
-            max-width: 100%;
+            width: 100%;
             display: inline-block;
-            margin: 0 140px;
 
             .c-works__href {
                 color: white;
@@ -269,19 +254,6 @@
             line-height: 1.25;
             color: currentColor;
             position: relative;
-            //padding-left: 12px; 
-
-            // &:before {
-            //     content: '';
-            //     position: absolute;
-            //     top: 5px;
-            //     left: 2px;
-            //     display: block;
-            //     border-radius: 50%;
-            //     height: 3px;
-            //     width: 3px;
-            //     background-color: currentColor;
-            // }
         } 
 
     }
@@ -292,7 +264,6 @@
 .page-id-2475 {
     color: $text-color;
     .c-works {
-            //Href
         &__href, 
         &__price {
             color: $text-color;
@@ -305,7 +276,6 @@
 .page-id-2751 {
     color: $text-color;
     .c-works {
-            //Href
         &__href, 
         &__price {
             color: $text-color;

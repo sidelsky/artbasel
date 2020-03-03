@@ -755,25 +755,25 @@ button[disabled]:hover {
 }
 
 .c-hero-carousel--dark-background p {
-  font-size: 1.5rem;
-  line-height: 1.4;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 @media (min-width: 376px) {
   .c-hero-carousel--dark-background p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 769px) {
   .c-hero-carousel--dark-background p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 }
 
 @media (min-width: 1025px) {
   .c-hero-carousel--dark-background p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -781,6 +781,12 @@ button[disabled]:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 5rem;
+}
+
+@media (min-width: 1025px) {
+  .c-hero-carousel--dark-background .c-hero-carousel--container--padding {
+    padding: 10rem;
+  }
 }
 
 .carousel-wrap {
@@ -1518,6 +1524,7 @@ span.img-text:hover {
           align-items: center;
   resize: both;
   overflow: hidden;
+  position: relative;
 }
 
 .c-header-background-image::after {
@@ -1529,7 +1536,6 @@ span.img-text:hover {
   left: 0;
   background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
-  height: 100vh;
 }
 
 .c-paralax-header {
@@ -2129,7 +2135,7 @@ span.img-text:hover {
 }
 
 .c-work-single__content {
-  color: #8A8A8A;
+  color: white;
   width: 100%;
 }
 
@@ -2314,6 +2320,7 @@ span.img-text:hover {
   padding: 0 2rem 6rem;
   margin-bottom: 3rem;
   font-size: 1.5rem;
+  color: #1F1F1F;
 }
 
 @media (min-width: 376px) {
@@ -2332,6 +2339,10 @@ span.img-text:hover {
   .c-works__card {
     font-size: 1.5rem;
   }
+}
+
+.c-works__card a {
+  color: currentColor;
 }
 
 @media (min-width: 769px) {
@@ -2417,7 +2428,6 @@ span.img-text:hover {
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.25;
-  color: white;
 }
 
 @media (min-width: 376px) {
@@ -2442,7 +2452,6 @@ span.img-text:hover {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 1.25;
-  color: white;
   position: relative;
 }
 
@@ -2469,7 +2478,6 @@ span.img-text:hover {
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   line-height: 1.25;
-  color: white;
 }
 
 @media (min-width: 376px) {
@@ -2494,7 +2502,6 @@ span.img-text:hover {
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   font-size: 2.1rem;
   line-height: 1.25;
-  color: white;
 }
 
 @media (min-width: 376px) {
@@ -2546,9 +2553,8 @@ span.img-text:hover {
 
 .c-works__href-wrap--center {
   text-align: center;
-  max-width: 100%;
+  width: 100%;
   display: inline-block;
-  margin: 0 140px;
 }
 
 .c-works__href-wrap--center .c-works__href {
