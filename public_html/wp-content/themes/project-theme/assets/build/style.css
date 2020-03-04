@@ -2007,13 +2007,18 @@ span.img-text:hover {
   display: none;
 }
 
+.c-sale-marker--available {
+  background-color: green;
+  display: inline-block;
+}
+
 .c-sale-marker--sold {
   background-color: red;
   display: inline-block;
 }
 
-.c-sale-marker--available {
-  background-color: green;
+.c-sale-marker--hold {
+  background-color: orange;
   display: inline-block;
 }
 
@@ -2640,26 +2645,22 @@ span.img-text:hover {
   margin-bottom: 10px;
 }
 
-.home {
-  color: #303030;
-}
-
-.home .c-works__card .c-button {
+.c-works__card .c-button {
   position: absolute;
   bottom: 0;
 }
 
-.home a .c-works__title,
-.home .c-works__name,
-.home .c-works__date {
+a .c-works__title,
+.c-works__name,
+.c-works__date {
   color: #303030;
 }
 
-.home .c-works__dimensions {
+.c-works__dimensions {
   height: 30px;
 }
 
-.home .c-works__medium, .home .c-works__dimensions, .home .c-works__price {
+.c-works__medium, .c-works__dimensions, .c-works__price {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   line-height: 1.25;
@@ -2668,38 +2669,21 @@ span.img-text:hover {
 }
 
 @media (min-width: 376px) {
-  .home .c-works__medium, .home .c-works__dimensions, .home .c-works__price {
+  .c-works__medium, .c-works__dimensions, .c-works__price {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 769px) {
-  .home .c-works__medium, .home .c-works__dimensions, .home .c-works__price {
+  .c-works__medium, .c-works__dimensions, .c-works__price {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1025px) {
-  .home .c-works__medium, .home .c-works__dimensions, .home .c-works__price {
+  .c-works__medium, .c-works__dimensions, .c-works__price {
     font-size: 1.5rem;
   }
-}
-
-.page-id-2475 {
-  color: #303030;
-}
-
-.page-id-2475 .c-works__href, .page-id-2475 .c-works__price {
-  color: #303030;
-}
-
-/** Live **/
-.page-id-2751 {
-  color: #303030;
-}
-
-.page-id-2751 .c-works__href, .page-id-2751 .c-works__price {
-  color: #303030;
 }
 
 /*

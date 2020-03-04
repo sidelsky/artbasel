@@ -52,7 +52,6 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 endwhile;
 wp_reset_postdata();
-
 ?>
 
 <?php
@@ -117,10 +116,24 @@ if($hero_text_content) :?>
 								</a>
 							</figure> 
 							<div class="c-works__hero-credit-line"><?= $art['creditLine']; ?></div>
-							<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $soldMarker = $art['sold'] ? 'disabled' : ''; ?>>Purchase</button>
+							
+							<?php if( $art['sold'] == 'sold' ) {
+								$availabilityMarker = 'c-sale-marker--sold';
+								$availabilityTitle = 'Sold';
+							} elseif( $art['sold'] == 'hold' ) {
+								$availabilityMarker = 'c-sale-marker--hold';
+								$availabilityTitle = 'Hold';
+							} else {
+								$availabilityMarker = 'c-sale-marker--available';
+								$availabilityTitle = 'Available';
+							} ?>
+
+							<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $art['sold'] == "sold" || $art['sold'] == "hold" ? 'disabled' : ''; ?>>Purchase</button>
+
 							<div class="c-works__availability c-works__availability__hero">
-								<span class="c-sale-marker <?= $soldMarker = $art['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $art['sold'] ? 'Sold' : 'Available'; ?></span>
+								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 							</div>
+							
 						</article>
 					<?php endforeach; ?>
 				</div>
@@ -176,14 +189,29 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
 						<div class="c-works__name"><?= $artworks['fullName']; ?></div>
 						<div class="c-works__date"><?= $artworks['date']; ?></div>
 						<div class="c-works__medium"><?= $artworks['mediumText']; ?></div>
-						<?php if(!$artworks['sold']) : ?>
+						
+						<?php if($artworks['sold'] === 'available') : ?>
 							<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
 						<?php endif; ?>
+
 						<div class="c-works__availability">
-							<span class="c-sale-marker <?= $soldMarker = $artworks['sold'] ? 'c-sale-marker--sold' : 'c-sale-marker--available'; ?>"></span><span><?= $sold = $artworks['sold'] ? 'Sold' : 'Available'; ?></span>
+
+							<?php if( $artworks['sold'] == 'sold' ) {
+								$availabilityMarker = 'c-sale-marker--sold';
+								$availabilityTitle = 'Sold';
+							} elseif( $artworks['sold'] == 'hold' ) {
+								$availabilityMarker = 'c-sale-marker--hold';
+								$availabilityTitle = 'Hold';
+							} else {
+								$availabilityMarker = 'c-sale-marker--available';
+								$availabilityTitle = 'Available';
+							} ?>
+
+							<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 						</div>
-						<button id="ListPurchaseBtn_<?= $index ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $soldMarker = $artworks['sold'] ? 'disabled' : ''; ?>>Purchase</button>
-						<!-- <button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $soldMarker = $art['sold'] ? 'disabled' : ''; ?>>Purchase</button> -->
+						
+						<button id="ListPurchaseBtn_<?= $index ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $artworks['sold'] === 'sold' || $artworks['sold'] === 'hold' ? 'disabled' : ''; ?>>Purchase</button>
+
 					</article>
 				<?php endforeach; ?>
 				</div>

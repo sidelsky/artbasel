@@ -772,3 +772,10 @@ Stack trace:
 [02-Mar-2020 12:13:05 UTC] PHP Notice:  Undefined variable: artworks in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 114
 [02-Mar-2020 12:24:38 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 160
 [02-Mar-2020 12:24:38 UTC] PHP Notice:  Array to string conversion in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 160
+[04-Mar-2020 22:02:53 UTC] PHP Notice:  Undefined variable: art in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 56
+[04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
+[04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityTitle in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
+[04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
+[04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityTitle in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
+[04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
+[04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityTitle in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187

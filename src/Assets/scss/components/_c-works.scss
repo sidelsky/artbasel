@@ -103,7 +103,6 @@
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
         line-height: 1.25;
         position: relative;
-        //color: white;
     }   
     
     //Date
@@ -250,62 +249,91 @@
 }
 
 
-
-.home {
-    color: $text-color;
-
-    .c-works__card {
-        .c-button {
-            position: absolute;
-            bottom: 0;
-        }
-    }
-
-    a .c-works__title,
-    .c-works__name,
-    .c-works__date {
-        color: $text-color;
-    }
-
-    .c-works__dimensions {
-        height: 30px;
-    }
-
-    .c-works {
-
-        &__medium,
-        &__dimensions,
-        &__price {
-            margin-bottom: $spacing--tiny;
-            @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
-            line-height: 1.25;
-            color: currentColor;
-            position: relative;
-        } 
-
-    }
-    
-
-}
-
-.page-id-2475 {
-    color: $text-color;
-    .c-works {
-        &__href, 
-        &__price {
-            color: $text-color;
-        }
+.c-works__card {
+    .c-button {
+        position: absolute;
+        bottom: 0;
     }
 }
 
-
-/** Live **/
-.page-id-2751 {
+a .c-works__title,
+.c-works__name,
+.c-works__date {
     color: $text-color;
-    .c-works {
-        &__href, 
-        &__price {
-            color: $text-color;
-        }
-    }
 }
+
+.c-works__dimensions {
+    height: 30px;
+}
+
+.c-works {
+
+    &__medium,
+    &__dimensions,
+    &__price {
+        margin-bottom: $spacing--tiny;
+        @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+        line-height: 1.25;
+        color: currentColor;
+        position: relative;
+    } 
+
+}
+
+// .home {
+//     color: $text-color;
+
+//     .c-works__card {
+//         .c-button {
+//             position: absolute;
+//             bottom: 0;
+//         }
+//     }
+
+//     a .c-works__title,
+//     .c-works__name,
+//     .c-works__date {
+//         color: $text-color;
+//     }
+
+//     .c-works__dimensions {
+//         height: 30px;
+//     }
+
+//     .c-works {
+
+//         &__medium,
+//         &__dimensions,
+//         &__price {
+//             margin-bottom: $spacing--tiny;
+//             @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+//             line-height: 1.25;
+//             color: currentColor;
+//             position: relative;
+//         } 
+
+//     }
+
+// }
+
+// .page-id-2475 {
+//     color: $text-color;
+//     .c-works {
+//         &__href, 
+//         &__price {
+//             color: $text-color;
+//         }
+//     }
+// }
+
+
+// /** Live **/
+// .page-id-2751 {
+//     color: $text-color;
+//     .c-works {
+//         &__href, 
+//         &__price {
+//             color: $text-color;
+//         }
+//     }
+// }

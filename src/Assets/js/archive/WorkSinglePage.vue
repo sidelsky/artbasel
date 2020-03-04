@@ -21,12 +21,12 @@
 						:nav="false"
 						:dots="true"
 						:responsive="{0:{items:1},600:{items:1},768:{items:1}}"
-            >
-            <template slot="prev" class="bob"><span class="prev"></span></template>
+					>
+					<template slot="prev" class="bob"><span class="prev"></span></template>
 						<div v-for="item in gallery" :key="item">
 							<img :src="item" class="c-work-single__image" v-on:click="handleItemClick(item)">
 						</div>
-            <template slot="next" class="bob"><span class="next"></span></template>
+					<template slot="next" class="bob"><span class="next"></span></template>
 					</carousel>
 				</figure>
 
@@ -51,25 +51,21 @@
                 <span v-html="formattedPrice"></span>
 
 					<div class="c-works__availability">
-						<span
-						:class="[
-								'c-sale-marker',
-								`${ work.sold ? 'c-sale-marker--sold' : 'c-sale-marker--available'}`
-							]"
-						></span><span class="c-sale-marker__copy" v-html="formattedSold"></span>
+						<span v-if="work.sold === 'sold'" class="c-sale-marker c-sale-marker--sold"></span>
+						<span v-if="work.sold === 'hold'" class="c-sale-marker c-sale-marker--hold"></span>
+						<span v-if="work.sold === 'available'" class="c-sale-marker c-sale-marker--available"></span>
+						<span class="c-sale-marker__copy" v-html="formattedSold"></span>
 					</div>
           
-          <button v-if="!work.sold" id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
-          <button id="inquireBtn_0" data-id="inquireBtn" class="c-button c-button--light">Inquire to learn more</button>
+         		<button v-if="!work.sold" id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
+          		<button id="inquireBtn_0" data-id="inquireBtn" class="c-button c-button--light">Inquire to learn more</button>
 
-
-        	<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center ">
-            <svg class="u-icon c-works__icon c-works__icon--back">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
-            </svg>
-            <a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
-          </span>
-
+				<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center ">
+					<svg class="u-icon c-works__icon c-works__icon--back">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+					</svg>
+					<a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
+				</span>
 
 				</div>
 			</div>
@@ -127,14 +123,16 @@ export default {
   },
   computed: {
     formattedSold() {
-      if( this.work.sold != 1 ) {
+      if( this.work.sold == 'available' ) {
         return 'Available'
+      } else if( this.work.sold == 'hold' ) {
+        return 'Hold'
       } else {
-        return 'Sold'
-      }
+		  return 'Sold'
+	  }
     },
     formattedPrice() {
-      if( this.work.sold != 1 ) {
+      if( this.work.sold == 'available' ) {
         if ( this.work.price ) {
         return  '<div class="c-works__price"><span>' + this.work.price + '</span></div>'
       } else {
