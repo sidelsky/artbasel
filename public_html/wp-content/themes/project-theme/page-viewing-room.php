@@ -87,7 +87,6 @@ if($hero) : ?>
 	<?php _e( 'Oops, please add a Hero image here.' ); ?>
 <?php endif; ?>
 
-
 <?php 
 /**
  * Hero Content carousel
@@ -238,28 +237,33 @@ if($footerParallaxImage) : ?>
  * Footer content
  */
 ?>
-<section class="u-section">
-	<div class="u-l-container--center">
-		<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
-			<div class="s-content c-works__footer c-works__footer__hr">
-			<?php /*
-				$your_query = new WP_Query( 'pagename=works-list-footer' );
-				while ( $your_query->have_posts() ) : $your_query->the_post();
-					the_content();
-				endwhile;
-				wp_reset_postdata();
-			*/?>
-			<?php 
-				if ( have_posts() ) : 
-					while ( have_posts() ) : the_post(); 
+<?php
+	$content = get_post()->post_content;
+	if( !empty($content) ):
+?>
+	<section class="u-section">
+		<div class="u-l-container--center">
+			<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+				<div class="s-content c-works__footer c-works__footer__hr">
+				<?php /*
+					$your_query = new WP_Query( 'pagename=works-list-footer' );
+					while ( $your_query->have_posts() ) : $your_query->the_post();
 						the_content();
-					endwhile; 
-				endif; 
-				?>
+					endwhile;
+					wp_reset_postdata();
+				*/?>
+				<?php 
+					if ( have_posts() ) : 
+						while ( have_posts() ) : the_post(); 
+							the_content();
+						endwhile; 
+					endif; 
+					?>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+<?php endif; ?>
 
 <?php include('partials/purchase-modals.php'); ?>
 
