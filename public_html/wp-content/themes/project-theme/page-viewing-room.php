@@ -71,6 +71,7 @@ if($hero) : ?>
 	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">
+		<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0,<?= get_field('image_shading_cover') ?>);"></span>
 			<div class="parallax-window__content" data-id="title">
 				<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?= $hero['title'] ?></h1>
 				<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $hero['subtitle'] ?></h2>

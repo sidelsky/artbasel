@@ -10,6 +10,7 @@ $output = '';
 
         <?php
         $output .= '<div class="c-viewing-rooms-header[number_of_items] c-header-background-image" style="background-image: url(' . $viewingRoom['currentViewingRoomImage'] . ')">';
+        $output .= '<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, ' . get_field('image_shading_cover') . ');"></span>';
             $output .= '<div class="canvas parallax-window__content parallax-window__content[number_of_items]" data-id="title">';
                 $output .= '<div>';
                     $output .= '<h1 class="c-site-headings c-site-headings--h1--hero c-text-align-centre ">' . $viewingRoom['currentViewingRoomPretitle'] . '</h1>';
