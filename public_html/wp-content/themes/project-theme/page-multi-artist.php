@@ -15,7 +15,9 @@ $viewing_room = new ViewingRoom;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); ?>
+include("header.php"); 
+include("login.php");
+?>
 
 <?php
 /**

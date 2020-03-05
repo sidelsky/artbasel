@@ -1,6 +1,6 @@
 <?php
 	
-	$post_id_dev = 2435;
+	$post_id_dev = 2716;
 	$post_id_prod = 2716;
 
 	$localhost = 'artbasilvip:8888';
@@ -13,7 +13,7 @@
 
     $post = get_post($post_id, ARRAY_A);
 
-	$show_email_submission = get_field('show_email_submission', $post_id);
+	//$show_email_submission = get_field('show_email_submission', $post_id);
 	$title = get_field('title_email_sub', $post_id);
 	$subtitle = get_field('subtitle_email_sub', $post_id);
 	$show_countdown = get_field('show_countdown', $post_id);
@@ -22,7 +22,7 @@
 
 ?>
 <?php if( is_front_page() ) : ?>
-	<?php if($show_email_submission) : ?>
+	<?php //if($show_email_submission) : ?>
 
 		<section class="c-login c-login--background-dark">
 
@@ -39,7 +39,7 @@
 					
 					<h1 class="c-site-headings--h1--email-sub c-text-align-centre"><?= $title; ?></h1>
 					
-					<?php if($show_countdown) : ?>
+					<?php if($show_countdown == 0) : ?>
 						<div id="clockdiv" class="c-clock c-text-align-centre"> 
 							<div> 
 								<span class="days" id="day"></span> 
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 		</section>
-	<?php endif; ?>
+	<?php //endif; ?>
 <?php endif; ?>
 
 <script> 
