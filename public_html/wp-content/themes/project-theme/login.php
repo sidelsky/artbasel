@@ -38,8 +38,8 @@
 				<div class="u-l-container u-l-container--row u-l-vertical-padding--tiny">
 					
 					<h1 class="c-site-headings--h1--email-sub c-text-align-centre"><?= $title; ?></h1>
-					
-					<?php if($show_countdown == 0) : ?>
+					<?php /*
+					<?php if($show_countdown) : ?>
 						<div id="clockdiv" class="c-clock c-text-align-centre"> 
 							<div> 
 								<span class="days" id="day"></span> 
@@ -61,6 +61,8 @@
 					<?php endif; ?>
 						
 					<p id="demo"></p>
+
+					<? */?>
 
 					<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre"><?= $subtitle; ?></h3>
 						<div class="tml tml-login" id="theme-my-login1">

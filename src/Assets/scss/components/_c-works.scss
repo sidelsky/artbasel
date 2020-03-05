@@ -212,7 +212,7 @@
 
         //HR
         &__hr {
-            border-top: solid 1px palette(greys, x-light);
+            //border-top: solid 1px palette(greys, x-light);
         }
         
     }
@@ -280,6 +280,14 @@ a .c-works__title,
 
 }
 
+
+.single-works {
+    .c-works__name,
+    .c-works__date {
+        color: white;
+    }
+}
+
 // .home {
 //     color: $text-color;
 
@@ -296,23 +304,23 @@ a .c-works__title,
 //         color: $text-color;
 //     }
 
-//     .c-works__dimensions {
-//         height: 30px;
-//     }
+    .c-works__dimensions {
+        height: 80px;
+    }
 
-//     .c-works {
+    .c-works {
 
-//         &__medium,
-//         &__dimensions,
-//         &__price {
-//             margin-bottom: $spacing--tiny;
-//             @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
-//             line-height: 1.25;
-//             color: currentColor;
-//             position: relative;
-//         } 
+        &__medium,
+        &__dimensions,
+        &__price {
+            margin-bottom: $spacing--tiny;
+            @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+            line-height: 1.25;
+            color: currentColor;
+            position: relative;
+        } 
 
-//     }
+    }
 
 // }
 

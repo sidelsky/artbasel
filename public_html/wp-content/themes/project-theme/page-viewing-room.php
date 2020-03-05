@@ -11,12 +11,12 @@ include("header.php");
 
 $term_id = get_field('collection');
 $args =[
-	'post_type'   => 'works',
+	'post_type' => 'works',
 	'post_status' => 'publish',
 	'posts_per_page' => -1,
 	'orderby' => 'post_date',
 	'order' => 'DEC',
-	'tax_query'   => [
+	'tax_query' => [
 		[
 			'taxonomy' => 'collection',
 			'field'    => 'term_id',
@@ -92,7 +92,7 @@ if($hero) : ?>
 /**
  * Hero Content carousel
  */
-$hero_text_content = get_field('hero_text_content', 6); 
+$hero_text_content = get_field('mini_carousel_text'); 
 if($hero_text_content) :?>
 	<section class="u-section c-hero-carousel">
 		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">

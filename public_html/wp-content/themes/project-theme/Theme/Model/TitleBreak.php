@@ -11,6 +11,7 @@ class TitleBreak {
    }
 
    public function getTitleBreak() {
+	   
 	   $titleBreakTitle = $this->layout['title_break_title'];
 
 	return [

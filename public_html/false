@@ -779,3 +779,88 @@ Stack trace:
 [04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityTitle in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
 [04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityMarker in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
 [04-Mar-2020 22:29:56 UTC] PHP Notice:  Undefined variable: availabilityTitle in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 187
+[05-Mar-2020 11:33:23 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 18
+[05-Mar-2020 11:33:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 18
+[05-Mar-2020 11:35:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 18
+[05-Mar-2020 11:35:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 18
+[05-Mar-2020 11:37:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 18
+[05-Mar-2020 11:37:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 18
+[05-Mar-2020 11:53:35 UTC] PHP Notice:  Undefined variable: show_email_submission in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 25
+[05-Mar-2020 11:53:48 UTC] PHP Notice:  Undefined variable: show_email_submission in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 25
+[05-Mar-2020 11:53:54 UTC] PHP Notice:  Undefined variable: show_email_submission in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 25
+[05-Mar-2020 11:54:00 UTC] PHP Notice:  Undefined variable: show_email_submission in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 25
+[05-Mar-2020 11:54:06 UTC] PHP Notice:  Undefined variable: show_email_submission in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/login.php on line 25
+[05-Mar-2020 13:38:29 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 13:38:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:15
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 13:49:26 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 13:49:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:15
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 14:22:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Theme\Model\Layoutzzz' not found in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 11
+[05-Mar-2020 14:26:06 UTC] PHP Notice:  Undefined variable: viewingRoom in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 14:26:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 14:27:22 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 14:27:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:15
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 14:28:12 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 14:28:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:15
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(98): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 14:45:57 UTC] PHP Notice:  Undefined variable: themeData in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/partials/ma-email-sub.php on line 4
+[05-Mar-2020 14:45:57 UTC] PHP Notice:  Undefined variable: themeData in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/partials/footer-details.php on line 6
+[05-Mar-2020 14:48:33 UTC] PHP Notice:  Undefined variable: viewingRoom in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 27
+[05-Mar-2020 14:48:33 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(99): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 27
+[05-Mar-2020 14:50:36 UTC] PHP Notice:  Use of undefined constant php - assumed 'php' in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 30
+[05-Mar-2020 14:53:16 UTC] PHP Notice:  Undefined variable: viewingRoom in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 14:53:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(99): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 14:54:06 UTC] PHP Notice:  Undefined variable: viewingRoom in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 14:54:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getData() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(99): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26

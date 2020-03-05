@@ -8,15 +8,14 @@ use App\Helper\Render;
 use Theme\Model\Layout;
 use Theme\Model\ViewingRoom;
 
-$render = new Render;
 $layout = new Layout;
-$viewing_room = new ViewingRoom;
-
+$viewingRoom = new ViewingRoom;
+$render = new Render;
 
 $allLayouts = $layout->getLayout();
 
 include("header.php"); 
-include("login.php");
+//include("login.php");
 ?>
 
 <?php
@@ -24,7 +23,7 @@ include("login.php");
  * Viewing room
  */
     $template = 'c-viewing-room';
-    $data = $viewing_room->getData();
+    $data = $viewingRoom->getData();
     echo $render->view('Components/' . $template, $data);
 ?>
 

@@ -94,6 +94,7 @@ if ( wp_using_themes() ) {
 	 * @param string $template The path of the template to include.
 	 */
 	$template = apply_filters( 'template_include', $template );
+	
 	if ( $template ) {
 		include( $template );
 	} elseif ( current_user_can( 'switch_themes' ) ) {

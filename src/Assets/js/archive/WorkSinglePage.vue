@@ -48,7 +48,7 @@
                 <div class="c-works__date">{{ work.date }}</div>
                 <div class="c-works__medium"><span v-html="work.mediumText"></span></div>
                 <div class="c-works__dimensions"><span v-html="work.dimensions"></span></div>
-                <span v-html="formattedPrice"></span>
+                <div class="c-works__price"><span v-html="formattedPrice"></span></div>
 
 					<div class="c-works__availability">
 						<span v-if="work.sold === 'sold'" class="c-sale-marker c-sale-marker--sold"></span>
@@ -134,7 +134,7 @@ export default {
     formattedPrice() {
       if( this.work.sold == 'available' ) {
         if ( this.work.price ) {
-        return  '<div class="c-works__price"><span>' + this.work.price + '</span></div>'
+        return  this.work.price
       } else {
         return ''
       }

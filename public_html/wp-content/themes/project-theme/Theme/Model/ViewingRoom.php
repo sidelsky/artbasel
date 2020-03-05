@@ -6,8 +6,19 @@ use App\WordPress\WordPress;
 class ViewingRoom {
 	
     public function __construct()
-    {
-		$this->viewingRoomDetails = get_field('current_viewing_rooms');
+    {   
+        $post_id_dev = 2794;
+        $post_id_prod = 3058;
+    
+        $localhost = 'artbasilvip:8888';
+    
+        if ($_SERVER['HTTP_HOST'] == $localhost) {
+            $post_id = $post_id_dev;
+        } else {
+            $post_id = $post_id_prod;
+        }  
+
+		$this->viewingRoomDetails = get_field('current_viewing_rooms', $post_id);
 	}
 	
 	private function optimisedViewingRoom($viewingRoomDetails) {

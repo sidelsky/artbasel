@@ -5373,3 +5373,22 @@ Stack trace:
 [18-Nov-2019 17:23:41 UTC] PHP Notice:  Object of class App\Helper\Page could not be converted to int in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/post-template.php on line 284
 [18-Nov-2019 17:25:50 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 107
 [18-Nov-2019 17:26:04 UTC] PHP Parse error:  syntax error, unexpected end of file in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php on line 107
+[05-Mar-2020 15:12:12 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 15:12:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:15
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(99): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 15:12:26 UTC] PHP Notice:  Undefined variable: layout in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 15:12:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getLayout() on null in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:15
+Stack trace:
+#0 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php(99): include()
+#1 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php(19): require_once('/Users/errol.si...')
+#2 /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/index.php(17): require('/Users/errol.si...')
+#3 {main}
+  thrown in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 15
+[05-Mar-2020 15:14:55 UTC] PHP Notice:  Undefined variable: data in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 15:14:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 26
+[05-Mar-2020 15:14:55 UTC] PHP Notice:  Undefined variable: str in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php on line 57
