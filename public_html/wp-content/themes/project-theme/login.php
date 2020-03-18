@@ -11,9 +11,9 @@
 		$post_id = $post_id_prod;
 	}   
 
-    $post = get_post($post_id, ARRAY_A);
+    //$post = get_post($post_id, ARRAY_A);
 
-	//$show_email_submission = get_field('show_email_submission', $post_id);
+	$show_email_submission = get_field('show_email_submission', $post_id);
 	$title = get_field('title_email_sub', $post_id);
 	$subtitle = get_field('subtitle_email_sub', $post_id);
 	$show_countdown = get_field('show_countdown', $post_id);
@@ -22,7 +22,7 @@
 
 ?>
 <?php if( is_front_page() ) : ?>
-	<?php //if($show_email_submission) : ?>
+	<?php if($show_email_submission) : ?>
 
 		<section class="c-login c-login--background-dark">
 
@@ -38,7 +38,7 @@
 				<div class="u-l-container u-l-container--row u-l-vertical-padding--tiny">
 					
 					<h1 class="c-site-headings--h1--email-sub c-text-align-centre"><?= $title; ?></h1>
-					<?php /*
+
 					<?php if($show_countdown) : ?>
 						<div id="clockdiv" class="c-clock c-text-align-centre"> 
 							<div> 
@@ -62,8 +62,6 @@
 						
 					<p id="demo"></p>
 
-					<? */?>
-
 					<h3 class="c-site-headings c-site-headings--h3 c-text-align-centre"><?= $subtitle; ?></h3>
 						<div class="tml tml-login" id="theme-my-login1">
 							<?php echo do_shortcode('[gravityform id="4" title="false" description="false"]'); ?>
@@ -76,7 +74,7 @@
 				</div>
 			</div>
 		</section>
-	<?php //endif; ?>
+	<?php endif; ?>
 <?php endif; ?>
 
 <script> 

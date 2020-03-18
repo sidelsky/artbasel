@@ -8,7 +8,7 @@
     }
     
     &--two-column {
-        @include max-width(800px);
+        //@include max-width(800px);
         height: auto;
         position: relative;
         @include aspect-ratio(1, 1.1);

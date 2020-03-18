@@ -17,6 +17,7 @@ class TextContent {
        $textContentCopy = $this->layout['text_content_copy'];
        $textContentDate = $this->layout['text_content_date'];
        $textContentLink = $this->layout['text_content_link'];
+       $textContentLinkDescription = $this->layout['text_content_link_description'];
 
 	return [
 		'layoutName' => 'text_content',
@@ -25,7 +26,8 @@ class TextContent {
         'textContentTitle' => $textContentTitle,
         'textContentCopy' => $textContentCopy,
         'textContentDate' => $textContentDate,
-        'textContentLink' => $textContentLink
+        'textContentLink' => $textContentLink,
+        'textContentLinkDescription' => $textContentLinkDescription
 	];
    }
 }

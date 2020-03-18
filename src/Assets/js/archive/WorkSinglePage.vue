@@ -56,16 +56,22 @@
 						<span v-if="work.sold === 'available'" class="c-sale-marker c-sale-marker--available"></span>
 						<span class="c-sale-marker__copy" v-html="formattedSold"></span>
 					</div>
-          
-         		<button v-if="!work.sold" id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
-          		<button id="inquireBtn_0" data-id="inquireBtn" class="c-button c-button--light">Inquire to learn more</button>
 
-				<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center ">
-					<svg class="u-icon c-works__icon c-works__icon--back">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
-					</svg>
-					<a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
-				</span>
+            <span v-bind:hidden="work.hidePurchaseButton ? true : false">
+              <button v-if="work.sold === 'sold' " id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark" disabled>Purchase</button>
+              <button v-if="work.sold === 'hold' " id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark" disabled>Purchase</button>
+              <button v-if="work.sold === 'available' " id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button>
+            </span>
+         		<!-- <button v-if="work.sold === 'available' " id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button> -->
+          	
+            <button id="inquireBtn_0" data-id="inquireBtn" class="c-button c-button--light">Inquire to learn more</button>
+
+            <span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center ">
+              <svg class="u-icon c-works__icon c-works__icon--back">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+              </svg>
+              <a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
+            </span>
 
 				</div>
 			</div>

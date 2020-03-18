@@ -49,8 +49,24 @@ button[disabled]{
     cursor: default !important;
 
     &:hover {
-        cursor: pointer;
+        color: #adadad;
         background-color: white;
     }
 
+}
+
+.single-works {
+    button:disabled,
+    button[disabled]{
+        $color: #696969;
+        color: $color;
+        border: solid 1px $color;
+        cursor: default !important;
+
+        &:hover {
+            color: $color;
+            background-color: transparent;
+        }
+
+    }
 }

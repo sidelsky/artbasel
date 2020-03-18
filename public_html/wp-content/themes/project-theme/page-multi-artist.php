@@ -15,7 +15,7 @@ $render = new Render;
 $allLayouts = $layout->getLayout();
 
 include("header.php"); 
-//include("login.php");
+include("login.php");
 ?>
 
 <?php

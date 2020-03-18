@@ -21,12 +21,19 @@
 				</div>
 			<?php endif; ?>
 
-			<?php if($data['textContentLink']) : ?>
+			<?php if($data['textContentLinkDescription']) : ?>
 				<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">
-					<a href="<?= $data['textContentLink']?>" class="c-works__href">View works</a>
-					<svg class="u-icon c-works__icon">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow<?= $data['darkBackground'] ? '-white' : ''; ?>" viewBox="0 0 32 32"></use>
-					</svg>
+
+				<?php if( $data['textContentLinkDescription'] && !$data['textContentLink'] ) : ?>
+					<?= $data['textContentLinkDescription']; ?>
+				<?php endif; ?>
+
+					<?php if( $data['textContentLink'] && $data['textContentLinkDescription'] ) : ?>
+						<a href="<?= $data['textContentLink']?>" class="c-works__href"><?= $data['textContentLinkDescription']; ?></a>
+						<svg class="u-icon c-works__icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow<?= $data['darkBackground'] ? '-white' : ''; ?>" viewBox="0 0 32 32"></use>
+						</svg>
+					<?php endif; ?>
 				</span>
 			<?php endif; ?>
 			

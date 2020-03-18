@@ -1,6 +1,6 @@
 .c-hero-carousel {
 
-  @include max-width();
+  //@include max-width();
     
     @include media('>tablet') {
         display: flex;
@@ -98,7 +98,7 @@
       width: 26px;
       position: absolute;
       cursor: pointer;
-      top: 280px !important;
+      top: 200px !important;
   }
  
   .owl-carousel .owl-prev.disabled,

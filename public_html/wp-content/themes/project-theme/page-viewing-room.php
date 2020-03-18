@@ -48,6 +48,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 		'sold' => get_field('sold'),
 		'ids' => get_field('code_id'),
 		'creditLine' => get_field('credit_line'),
+		'hidePurchaseButton' => get_field('hide_purchase_button')
 	];
 
 endwhile;
@@ -128,7 +129,9 @@ if($hero_text_content) :?>
 								$availabilityTitle = 'Available';
 							} ?>
 
-							<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $art['sold'] == "sold" || $art['sold'] == "hold" ? 'disabled' : ''; ?>>Purchase</button>
+							<?php if( $art['hidePurchaseButton'] == 0 ) : ?>
+								<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $art['sold'] == "sold" || $art['sold'] == "hold" ? 'disabled' : ''; ?>>Purchase</button>
+							<?php endif; ?>
 
 							<div class="c-works__availability c-works__availability__hero">
 								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
@@ -210,7 +213,9 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
 							<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 						</div>
 						
-						<button id="ListPurchaseBtn_<?= $index ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $artworks['sold'] === 'sold' || $artworks['sold'] === 'hold' ? 'disabled' : ''; ?>>Purchase</button>
+						<?php if( $artworks['hidePurchaseButton'] == 0 ) : ?>
+							<button id="ListPurchaseBtn_<?= $index ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $artworks['sold'] === 'sold' || $artworks['sold'] === 'hold' ? 'disabled' : ''; ?>>Purchase</button>
+						<?php endif; ?>
 
 					</article>
 				<?php endforeach; ?>
