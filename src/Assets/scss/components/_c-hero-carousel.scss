@@ -11,7 +11,7 @@
     &--container {
 
         &--padding {
-          padding: $spacing--large $spacing--large-x $spacing--tiny;
+          padding: $spacing--large $spacing--large $spacing--tiny;
 
             @include media('>tablet') {
               padding: $spacing--small $spacing--large-x;
@@ -62,9 +62,9 @@
         .c-hero-carousel--container--padding {
             max-width: 1000px;
             margin: 0 auto;
-            padding: $spacing--large-x;
+            padding: $spacing--large-x $spacing--medium;
 
-            @include media('>desktop') {
+            @include media('>tablet') {
               padding: $spacing--jumbo;
             }
         }

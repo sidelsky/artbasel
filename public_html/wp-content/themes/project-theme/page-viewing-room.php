@@ -66,7 +66,7 @@ if($hero) : ?>
 		<svg class="u-icon c-works__icon c-works__icon--back">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
 		</svg>
-		<a href="#" class="c-works__href" onclick="history.back(-1)">Back</a>
+		<a href="/" class="c-works__href">Back</a>
 	</span>
 
 	<!-- Parallax desktop -->

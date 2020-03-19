@@ -243,11 +243,11 @@
 .c-works-content {
 
     max-width: 100%;
-    padding: 10px 40px 40px;
+    padding: $spacing--medium;
     margin: 0 auto;
 
     //Tablet
-    @include media('>desktop') {
+    @include media('>tablet') {
         max-width: 75%;
     } 
     
@@ -296,22 +296,6 @@ a .c-works__title,
         color: white;
     }
 }
-
-// .home {
-//     color: $text-color;
-
-//     .c-works__card {
-//         .c-button {
-//             position: absolute;
-//             bottom: 0;
-//         }
-//     }
-
-//     a .c-works__title,
-//     .c-works__name,
-//     .c-works__date {
-//         color: $text-color;
-//     }
 
     .c-works__dimensions {
         height: 80px;

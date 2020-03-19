@@ -17,9 +17,15 @@
         background-size: cover;
         color: $dark;
         background-color: lighten(#212322, 82%);
-        @include aspect-ratio(1, 1);
+        @include aspect-ratio(1, 1.3);
 
         @include media('>tablet') {
+            @include aspect-ratio(1, 1.5);
+            width: 50%;
+        }
+
+        @include media('>desktop') {
+            @include aspect-ratio(1, 1);
             width: 50%;
         }
         
@@ -46,7 +52,11 @@
         }
 
         &--text-content {
-            padding: $spacing--large-xx;
+            padding: $spacing--medium;
+
+            @include media('>tablet') {
+                padding: $spacing--x-large;
+            }
 
             @include media('>desktop') {
                 padding: $spacing--jumbo;

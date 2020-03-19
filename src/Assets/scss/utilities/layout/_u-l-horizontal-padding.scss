@@ -12,8 +12,8 @@
     }
 
     &--large {
-        padding-left: $spacing--large-xx;
-        padding-right: $spacing--large-xx;
+        padding-left: $spacing--large;
+        padding-right: $spacing--large;
 
         @include media('>desktop') {
             padding-left: $spacing--jumbo;
