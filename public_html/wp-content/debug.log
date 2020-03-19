@@ -5418,3 +5418,632 @@ Stack trace:
 [18-Mar-2020 15:13:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
 [18-Mar-2020 15:13:21 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
 [18-Mar-2020 15:13:21 UTC] PHP Notice:  Undefined variable: str in /Users/errol.sidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[19-Mar-2020 15:22:07 UTC] PHP Stack trace:
+[19-Mar-2020 15:22:07 UTC] PHP Stack trace:
+[19-Mar-2020 15:22:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:22:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[19-Mar-2020 15:22:07 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:22:07 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[19-Mar-2020 15:22:07 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:22:07 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:34
+[19-Mar-2020 15:22:07 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:22:07 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:22:07 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:22:07 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:22:07 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php on line 360
+[19-Mar-2020 15:22:07 UTC] PHP Stack trace:
+[19-Mar-2020 15:22:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:22:07 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php on line 360
+[19-Mar-2020 15:22:07 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:22:07 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:22:07 UTC] PHP Stack trace:
+[19-Mar-2020 15:22:07 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:22:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[19-Mar-2020 15:22:07 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[19-Mar-2020 15:22:07 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:22:07 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:34
+[19-Mar-2020 15:22:07 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:22:07 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:22:34 UTC] PHP Warning:  Error while sending QUERY packet. PID=4969 in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 2030
+[19-Mar-2020 15:22:34 UTC] PHP Warning:  Error while sending QUERY packet. PID=4966 in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 2030
+[19-Mar-2020 15:22:34 UTC] PHP Stack trace:
+[19-Mar-2020 15:22:34 UTC] PHP Stack trace:
+[19-Mar-2020 15:22:34 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[19-Mar-2020 15:22:34 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:22:34 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[19-Mar-2020 15:22:34 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:22:34 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:34
+[19-Mar-2020 15:22:34 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:22:34 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:22:34 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:22:34 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:22:34 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:22:34 UTC] PHP   6. include_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:360
+[19-Mar-2020 15:22:34 UTC] PHP   6. include_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:360
+[19-Mar-2020 15:22:34 UTC] PHP   7. register_uninstall_hook() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/peters-login-redirect/wplogin_redirect.php:1574
+[19-Mar-2020 15:22:34 UTC] PHP   7. register_uninstall_hook() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/peters-login-redirect/wplogin_redirect.php:1574
+[19-Mar-2020 15:22:34 UTC] PHP   8. get_option() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:848
+[19-Mar-2020 15:22:34 UTC] PHP   8. get_option() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:848
+[19-Mar-2020 15:22:34 UTC] PHP   9. wpdb->get_row() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/option.php:100
+[19-Mar-2020 15:22:34 UTC] PHP   9. wpdb->get_row() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/option.php:100
+[19-Mar-2020 15:22:34 UTC] PHP  10. wpdb->query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:2569
+[19-Mar-2020 15:22:34 UTC] PHP  10. wpdb->query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:2569
+[19-Mar-2020 15:22:34 UTC] PHP  11. wpdb->_do_query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1918
+[19-Mar-2020 15:22:34 UTC] PHP  12. mysqli_query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:2030
+[19-Mar-2020 15:22:34 UTC] PHP  11. wpdb->_do_query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1918
+[19-Mar-2020 15:22:34 UTC] PHP  12. mysqli_query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:2030
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-format.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:297
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-format.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:297
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-category.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:298
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-category.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:298
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-taxonomy.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:299
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post-taxonomy.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:299
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:300
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-post.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:300
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-template.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:301
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-template.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:301
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-type.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:302
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-type.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:302
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-parent.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:303
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page-parent.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:303
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:304
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-page.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:304
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-current-user.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:305
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-current-user.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:305
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-current-user-role.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:306
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-current-user-role.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:306
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-user-form.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:307
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-user-form.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:307
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-user-role.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:308
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-user-role.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:308
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-taxonomy.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:309
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-taxonomy.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:309
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-attachment.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:310
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-attachment.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:310
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-comment.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:311
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-comment.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:311
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-widget.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:312
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-widget.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:312
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-nav-menu.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:313
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-nav-menu.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:313
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-nav-menu-item.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:314
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/locations/class-acf-location-nav-menu-item.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:314
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/locations/class-acf-location-options-page.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:315
+[19-Mar-2020 15:32:41 UTC] PHP  11. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP  12. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP  13. acf_pro->include_location_rules() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  14. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/acf-pro.php:91
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  include_once(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/locations/class-acf-location-options-page.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/includes/api/api-helpers.php on line 428
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. ACF->init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/acf.php:315
+[19-Mar-2020 15:32:41 UTC] PHP  11. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP  12. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP  13. acf_pro->include_location_rules() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  14. acf_include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/acf-pro.php:91
+[19-Mar-2020 15:32:41 UTC] PHP Warning:  require_once(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/class-gf-background-upgrader.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php on line 5308
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. GFForms::init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. GFForms::init_background_upgrader() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:303
+[19-Mar-2020 15:32:41 UTC] PHP Fatal error:  require_once(): Failed opening required '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/class-gf-background-upgrader.php' (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php on line 5308
+[19-Mar-2020 15:32:41 UTC] PHP Stack trace:
+[19-Mar-2020 15:32:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:32:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:32:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[19-Mar-2020 15:32:41 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 15:32:41 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 15:32:41 UTC] PHP   6. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:523
+[19-Mar-2020 15:32:41 UTC] PHP   7. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[19-Mar-2020 15:32:41 UTC] PHP   8. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[19-Mar-2020 15:32:41 UTC] PHP   9. GFForms::init() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[19-Mar-2020 15:32:41 UTC] PHP  10. GFForms::init_background_upgrader() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:303
+[19-Mar-2020 15:38:28 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[19-Mar-2020 15:38:28 UTC] PHP Stack trace:
+[19-Mar-2020 15:38:28 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:38:28 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:38:28 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[19-Mar-2020 15:38:28 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[19-Mar-2020 15:38:28 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[19-Mar-2020 15:38:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[19-Mar-2020 15:38:58 UTC] PHP Stack trace:
+[19-Mar-2020 15:38:58 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 15:38:58 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 15:38:58 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[19-Mar-2020 15:38:58 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[19-Mar-2020 15:38:58 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[19-Mar-2020 15:38:58 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[19-Mar-2020 16:24:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[19-Mar-2020 16:24:18 UTC] PHP Stack trace:
+[19-Mar-2020 16:24:18 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 16:24:18 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 16:24:18 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[19-Mar-2020 16:24:18 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[19-Mar-2020 16:24:18 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[19-Mar-2020 16:24:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[19-Mar-2020 16:24:19 UTC] PHP Stack trace:
+[19-Mar-2020 16:24:19 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 16:24:19 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 16:24:19 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[19-Mar-2020 16:24:19 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[19-Mar-2020 16:24:19 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[19-Mar-2020 16:24:19 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[19-Mar-2020 16:24:21 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[19-Mar-2020 16:24:21 UTC] PHP Stack trace:
+[19-Mar-2020 16:24:21 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[19-Mar-2020 16:24:21 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[19-Mar-2020 16:24:21 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[19-Mar-2020 16:24:21 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[19-Mar-2020 16:24:21 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[19-Mar-2020 16:24:21 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[19-Mar-2020 16:35:23 UTC] PHP Warning:  include(/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/inc/interface-wpseo-wordpress-ajax-integration.php): failed to open stream: Input/output error in /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php on line 444
+[19-Mar-2020 16:35:23 UTC] PHP Stack trace:
+[19-Mar-2020 16:35:23 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[19-Mar-2020 16:35:23 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[19-Mar-2020 16:35:23 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 16:35:23 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 16:35:23 UTC] PHP   5. include_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:360
+[19-Mar-2020 16:35:23 UTC] PHP   6. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/wp-seo.php:48
+[19-Mar-2020 16:35:23 UTC] PHP   7. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/wp-seo-main.php:501
+[19-Mar-2020 16:35:23 UTC] PHP   8. wpseo_register_ajax_integrations() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:348
+[19-Mar-2020 16:35:23 UTC] PHP   9. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:341
+[19-Mar-2020 16:35:23 UTC] PHP  10. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:341
+[19-Mar-2020 16:35:23 UTC] PHP  11. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[19-Mar-2020 16:35:23 UTC] PHP  12. include() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:444
+[19-Mar-2020 16:35:23 UTC] PHP  13. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/class-yoast-network-admin.php:11
+[19-Mar-2020 16:35:23 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/class-yoast-network-admin.php:11
+[19-Mar-2020 16:35:23 UTC] PHP  15. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[19-Mar-2020 16:35:23 UTC] PHP Warning:  include(): Failed opening '/Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/vendor/composer/../../inc/interface-wpseo-wordpress-ajax-integration.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php on line 444
+[19-Mar-2020 16:35:23 UTC] PHP Stack trace:
+[19-Mar-2020 16:35:23 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[19-Mar-2020 16:35:23 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[19-Mar-2020 16:35:23 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 16:35:23 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 16:35:23 UTC] PHP   5. include_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:360
+[19-Mar-2020 16:35:23 UTC] PHP   6. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/wp-seo.php:48
+[19-Mar-2020 16:35:23 UTC] PHP   7. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/wp-seo-main.php:501
+[19-Mar-2020 16:35:23 UTC] PHP   8. wpseo_register_ajax_integrations() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:348
+[19-Mar-2020 16:35:23 UTC] PHP   9. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:341
+[19-Mar-2020 16:35:23 UTC] PHP  10. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:341
+[19-Mar-2020 16:35:23 UTC] PHP  11. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[19-Mar-2020 16:35:23 UTC] PHP  12. include() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:444
+[19-Mar-2020 16:35:23 UTC] PHP  13. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/class-yoast-network-admin.php:11
+[19-Mar-2020 16:35:23 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/class-yoast-network-admin.php:11
+[19-Mar-2020 16:35:23 UTC] PHP  15. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[19-Mar-2020 16:35:23 UTC] PHP Fatal error:  Interface 'WPSEO_WordPress_AJAX_Integration' not found in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/class-yoast-network-admin.php on line 11
+[19-Mar-2020 16:35:23 UTC] PHP Stack trace:
+[19-Mar-2020 16:35:23 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[19-Mar-2020 16:35:23 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[19-Mar-2020 16:35:23 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[19-Mar-2020 16:35:23 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[19-Mar-2020 16:35:23 UTC] PHP   5. include_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:360
+[19-Mar-2020 16:35:23 UTC] PHP   6. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/wp-seo.php:48
+[19-Mar-2020 16:35:23 UTC] PHP   7. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/wp-seo-main.php:501
+[19-Mar-2020 16:35:23 UTC] PHP   8. wpseo_register_ajax_integrations() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:348
+[19-Mar-2020 16:35:23 UTC] PHP   9. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:341
+[19-Mar-2020 16:35:23 UTC] PHP  10. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/wordpress-seo/admin/ajax.php:341
+[19-Mar-2020 16:35:23 UTC] PHP  11. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[19-Mar-2020 16:35:23 UTC] PHP  12. include() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:444
+[19-Mar-2020 16:35:23 UTC] WordPress database error Server shutdown in progress for query SHOW FULL COLUMNS FROM `wp_options` made by WP_Fatal_Error_Handler->handle, WP_Recovery_Mode->handle_error, WP_Recovery_Mode_Email_Service->maybe_send_recovery_mode_email, update_option
