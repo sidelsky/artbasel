@@ -16,6 +16,14 @@
     &__hero-figure {
         position: relative;
         margin-bottom: $spacing--small;
+        padding-top: $spacing--small;
+    }
+
+    &__hero-image {
+
+        &:hover {
+            outline: solid 6px lighten($grey, 30%);
+        }
     }
 
     &__hero-card {
@@ -39,8 +47,8 @@
     //Card 
     &__card { 
         position: relative;
-        padding: 0 $spacing--small $spacing--large-xx;
-        margin-bottom: $spacing--medium;
+        padding: 0 $spacing--small $spacing--small;
+        //margin-bottom: $spacing--tiny;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
         color: $dark;
 
@@ -84,6 +92,7 @@
         
         &:hover {
             cursor: pointer; 
+            outline: solid 6px lighten($grey, 30%);
         } 
  
     }

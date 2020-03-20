@@ -2317,6 +2317,11 @@ h1 strong {
 .c-works__hero-figure {
   position: relative;
   margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.c-works__hero-image:hover {
+  outline: solid 6px #d7d6d6;
 }
 
 .c-works__hero-card {
@@ -2357,8 +2362,7 @@ h1 strong {
 
 .c-works__card {
   position: relative;
-  padding: 0 2rem 6rem;
-  margin-bottom: 3rem;
+  padding: 0 2rem 2rem;
   font-size: 1.5rem;
   color: #1F1F1F;
 }
@@ -2462,6 +2466,7 @@ h1 strong {
 
 .c-works__image:hover {
   cursor: pointer;
+  outline: solid 6px #d7d6d6;
 }
 
 .c-works__title {

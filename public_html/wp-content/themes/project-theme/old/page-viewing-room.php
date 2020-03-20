@@ -96,52 +96,9 @@ if($hero) : ?>
 $hero_text_content = get_field('mini_carousel_text'); 
 if($hero_text_content) :?>
 	<section class="u-section c-hero-carousel">
-		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
+		<div class="u-column zu-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 			<div class="c-hero-carousel--inner-container">
 				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?php echo $hero_text_content ?></h3>
-			</div>
-		</div>
-		<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
-			<div class="c-hero-carousel--inner-container">
-				<div class="owl-carousel owl-carousel-home owl-theme">
-					<?php
-						/**
-						 * Get Works content for mini carousel
-						 */
-						foreach($artwork as $index => $art):
-						?>
-						<article class="c-works__hero-card">
-							<figure class="c-works__hero-figure">
-								<a href="<?= $art['link']; ?>">
-									<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
-								</a>
-							</figure> 
-							<div class="c-works__hero-credit-line"><?= $art['creditLine']; ?></div>
-							
-							<?php if( $art['sold'] == 'sold' ) {
-								$availabilityMarker = 'c-sale-marker--sold';
-								$availabilityTitle = 'Sold';
-							} elseif( $art['sold'] == 'hold' ) {
-								$availabilityMarker = 'c-sale-marker--hold';
-								$availabilityTitle = 'Hold';
-							} else {
-								$availabilityMarker = 'c-sale-marker--available';
-								$availabilityTitle = 'Available';
-							} ?>
-							
-							<?php /*
-							<?php if( $art['hidePurchaseButton'] == 0 ) : ?>
-								<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $art['sold'] == "sold" || $art['sold'] == "hold" ? 'disabled' : ''; ?>>Purchase</button>
-							<?php endif; ?>
-							*/?>
-
-							<div class="c-works__availability c-works__availability__hero">
-								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-							</div>
-							
-						</article>
-					<?php endforeach; ?>
-				</div>
 			</div>
 		</div>
 	</section>
@@ -215,11 +172,9 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
 							<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 						</div>
 						
-						<?/*
 						<?php if( $artworks['hidePurchaseButton'] == 0 ) : ?>
 							<button id="ListPurchaseBtn_<?= $index ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $artworks['sold'] === 'sold' || $artworks['sold'] === 'hold' ? 'disabled' : ''; ?>>Purchase</button>
 						<?php endif; ?>
-						*/?>
 
 					</article>
 				<?php endforeach; ?>
@@ -229,18 +184,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
 	</div>
 </section>
 
-<?php 
-/**
- * Footer paralax image
- */
-$footerParallaxImage = get_field('footer_parallax_image');
-if($footerParallaxImage) : ?>
-	<section class="u-section c-paralax-header c-paralax-header--desktop">
-		<div>
-			<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
-		</div>
-	</section>
-<?php endif; ?>
+
 
 <?php 
 /**
@@ -275,6 +219,6 @@ if($footerParallaxImage) : ?>
 	</section>
 <?php endif; ?>
 
-<?php /* include('partials/purchase-modals.php'); */?>
+<?php include('partials/purchase-modals.php'); ?>
 
 <?php include("footer.php"); ?>
