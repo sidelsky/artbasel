@@ -25,14 +25,13 @@
        display: block;
        width: 100%;
        text-align: center;
-       background: none;
+       background: transparent;
        border: solid 1.5px rgba(255, 255, 255, .25);
        border-radius: 3px;
        font-size: 14px;
        line-height: 1.43;
        letter-spacing: 0.3px;
        color: #ffffff;
-       -webkit-appearance: button;
        padding: 10px;
        
        &:hover {
@@ -69,18 +68,19 @@
 
    a {
       text-align: center;
-      background: none;
       border: solid 1.5px rgba(255, 255, 255, .25);
       border-radius: 3px;
       font-size: 14px;
       line-height: 1.43;
       letter-spacing: 0.3px;
       color: #ffffff;
-      -webkit-appearance: button;
+      //-webkit-appearance: button;
       padding: 10px;
       width: 100%;
       line-height: 1.43;
       margin: 5px 0 !important;
+      background-color: #212322;
+      display: inline-block;
 
       //Desktop
       @include media('>desktop') {
