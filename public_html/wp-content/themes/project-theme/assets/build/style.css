@@ -428,6 +428,56 @@ button[disabled]:hover {
   }
 }
 
+.cookie-notice-container {
+  display: table;
+}
+
+.cn-buttons-container a {
+  text-align: center;
+  background: none;
+  border: solid 1.5px rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  -webkit-appearance: button;
+  padding: 10px;
+  width: 100%;
+  line-height: 1.43;
+  margin: 5px 0 !important;
+}
+
+@media (min-width: 1025px) {
+  .cn-buttons-container a {
+    width: 200px;
+    margin: 0 10px !important;
+  }
+}
+
+.cn-buttons-container a:hover {
+  cursor: pointer;
+}
+
+.cn-buttons-container a a {
+  color: white;
+}
+
+@media (min-width: 1025px) {
+  .cn-buttons-container {
+    display: table-cell;
+    width: 440px;
+  }
+}
+
+.cn-text-container {
+  display: table-cell;
+  text-align: left;
+  font-size: 15px;
+  padding-top: -10px !important;
+  margin-top: 10px !important;
+}
+
 .c-footer {
   color: #fff;
   background-color: #1F1F1F;
