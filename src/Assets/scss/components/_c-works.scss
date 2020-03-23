@@ -108,7 +108,7 @@
     &__medium,
     &__dimensions,
     &__price {
-        margin-bottom: $spacing--tiny;
+        margin-bottom: $spacing--x-small;
         @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
         line-height: 1.25;
         position: relative;
@@ -280,9 +280,9 @@ a .c-works__title,
     color: $text-color;
 }
 
-.c-works__dimensions {
-    height: 30px;
-}
+// .c-works__dimensions {
+//     height: 30px;
+// }
 
 .c-works {
 
@@ -306,9 +306,9 @@ a .c-works__title,
     }
 }
 
-    .c-works__dimensions {
-        height: 80px;
-    }
+    // .c-works__dimensions {
+    //     height: 80px;
+    // }
 
     .c-works {
 

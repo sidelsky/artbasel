@@ -2543,7 +2543,7 @@ h1 strong {
 }
 
 .c-works__medium, .c-works__dimensions, .c-works__price {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   line-height: 1.25;
   position: relative;
@@ -2736,10 +2736,6 @@ a .c-works__title,
   color: #303030;
 }
 
-.c-works__dimensions {
-  height: 30px;
-}
-
 .c-works__medium, .c-works__dimensions, .c-works__price {
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -2769,10 +2765,6 @@ a .c-works__title,
 .single-works .c-works__name,
 .single-works .c-works__date {
   color: white;
-}
-
-.c-works__dimensions {
-  height: 80px;
 }
 
 .c-works__medium, .c-works__dimensions, .c-works__price {
