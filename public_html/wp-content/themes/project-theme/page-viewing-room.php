@@ -148,13 +148,52 @@ if($hero_text_content) :?>
 <?php endif; ?>
 
 <?php
+
 /**
- * Hero Content carousel
+ * Get Vimeo thumbnails
+*/
+
+/**
+ * Hero Content Fifty Fifty
  */
 $fiftyFifty = get_field('fifty_fifty');
-if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
-	<section class="u-section c-hero-carousel c-hero-carousel--dark-background">
-		<div class="u-column u-column--half-width c-hero-carousel--container">
+if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) :?>
+
+<section class="l-content">
+	
+	<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
+		<article class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></article>
+	<?php endif; ?>
+
+	<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
+		<article class="l-content__block l-content__block--dark-background">
+			<div class="canvas l-content__block--center">
+				<button class="c-video-player__button" onclick="playFunction()">
+					<svg class="c-video-player__play-icon" id="playButton">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
+					</svg>
+				</button>
+				<div class="c-video-player__cover-image" id="cover" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></div>	
+				<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
+					<?= $fiftyFifty['fifty_fifty_video'] ?>
+				</div>
+			</div>
+		</article>
+	<?php endif; ?>
+
+	<article class="l-content__block l-content__block--dark-background">
+		<div class="canvas l-content__block--center l-content__block--text-content">
+			<div>
+				<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
+				<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
+			</div>
+		</div>
+	</article>
+
+</section>
+
+	<!-- <section class="u-section c-hero-carousel c-hero-carousel--dark-background">
+		<div class="u-column--half-width c-hero-carousel--container">
 			<div class="c-hero-carousel--image-container" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></div>
 		</div>
 		<div class="u-column--table u-column--half-width c-hero-carousel--container">
@@ -163,7 +202,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
 				<?= $fiftyFifty['fifty_fifty_content'] ?>
 			</div>
 		</div>
-	</section>
+	</section> -->
 <?php endif; ?>
 
 <?php
@@ -214,13 +253,6 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] ) :?>
 
 							<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 						</div>
-						
-						<?/*
-						<?php if( $artworks['hidePurchaseButton'] == 0 ) : ?>
-							<button id="ListPurchaseBtn_<?= $index ?>" data-id="ListPurchaseBtn" class="c-button c-button--light" <?= $artworks['sold'] === 'sold' || $artworks['sold'] === 'hold' ? 'disabled' : ''; ?>>Purchase</button>
-						<?php endif; ?>
-						*/?>
-
 					</article>
 				<?php endforeach; ?>
 				</div>
@@ -255,13 +287,6 @@ if($footerParallaxImage) : ?>
 		<div class="u-l-container--center">
 			<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 				<div class="s-content c-works__footer c-works__footer__hr">
-				<?php /*
-					$your_query = new WP_Query( 'pagename=works-list-footer' );
-					while ( $your_query->have_posts() ) : $your_query->the_post();
-						the_content();
-					endwhile;
-					wp_reset_postdata();
-				*/?>
 				<?php 
 					if ( have_posts() ) : 
 						while ( have_posts() ) : the_post(); 
@@ -275,6 +300,29 @@ if($footerParallaxImage) : ?>
 	</section>
 <?php endif; ?>
 
-<?php /* include('partials/purchase-modals.php'); */?>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script>
+    var iframe = document.querySelector('iframe');
+	 var player = new Vimeo.Player(iframe);
+	 var playButton = document.querySelector('button');
+	 var cover = document.getElementById('cover');
+
+	 function playFunction() {
+		  player.play();
+	}
+
+    player.on('play', function() {
+		  console.log('played the video!');
+		  cover.style.display = "none";
+		  playButton.style.display = "none";
+	 });
+	 
+	player.on('pause', function() {
+		  console.log('paused the video!');
+		  cover.style.display = "block";
+		  playButton.style.display = "block";
+    });
+
+</script>
 
 <?php include("footer.php"); ?>

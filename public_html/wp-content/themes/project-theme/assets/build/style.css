@@ -2136,6 +2136,43 @@ h1 strong {
   background-color: #000 !important;
 }
 
+.c-video-player__button {
+  padding: 0;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.c-video-player__button:hover {
+  cursor: pointer;
+}
+
+.c-video-player__play-icon {
+  height: 45px;
+  width: 60px;
+}
+
+.c-video-player__cover-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .c-viewing-rooms-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3075,7 +3112,7 @@ table {
 .l-content__block::before {
   content: '';
   display: block;
-  padding-top: 130%;
+  padding-top: 170%;
   width: 100%;
 }
 
@@ -3135,7 +3172,7 @@ table {
 
 @media (min-width: 376px) {
   .l-content__block--title {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -3181,12 +3218,12 @@ table {
 
 .l-content__block--body-text p {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 @media (min-width: 376px) {
   .l-content__block--body-text p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -3561,6 +3598,13 @@ table {
  */
 .u-video-aspect-ratio {
   position: relative;
+}
+
+.u-video-aspect-ratio--half-width {
+  width: 50%;
+}
+
+.u-video-aspect-ratio--full-width {
   width: 100%;
 }
 
