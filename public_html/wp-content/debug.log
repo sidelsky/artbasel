@@ -6525,3 +6525,597 @@ Stack trace:
 [25-Mar-2020 07:01:25 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
 [25-Mar-2020 07:01:25 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
 [25-Mar-2020 07:01:25 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[25-Mar-2020 12:21:28 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 4 by reference in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:37
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(56): App\Helper\Enqueues->getFileName('css')
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php(2670): do_action( in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
+[25-Mar-2020 12:21:41 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 4 by reference in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:37
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(56): App\Helper\Enqueues->getFileName('css')
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#6 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php(2670): do_action( in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 37
+[25-Mar-2020 13:58:25 UTC] PHP Fatal error:  Constant expression contains invalid operations in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 91
+[25-Mar-2020 13:58:25 UTC] PHP Stack trace:
+[25-Mar-2020 13:58:25 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 13:58:25 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[25-Mar-2020 13:58:25 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[25-Mar-2020 13:58:25 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[25-Mar-2020 13:58:25 UTC] PHP   5. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:545
+[25-Mar-2020 13:58:25 UTC] PHP   6. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 13:58:25 UTC] PHP   7. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 13:58:25 UTC] PHP   8. checkForAcf() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 13:58:25 UTC] PHP   9. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/mu-plugins/acf_translator.php:10
+[25-Mar-2020 13:58:25 UTC] PHP  10. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/mu-plugins/acf_translator.php:10
+[25-Mar-2020 13:58:25 UTC] PHP  11. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[25-Mar-2020 13:58:25 UTC] PHP  12. include() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:444
+[25-Mar-2020 13:58:25 UTC] PHP  13. spl_autoload_call() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Acf/Config.php:22
+[25-Mar-2020 13:58:25 UTC] PHP  14. Composer\Autoload\ClassLoader->loadClass() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Acf/Config.php:22
+[25-Mar-2020 13:58:25 UTC] PHP  15. Composer\Autoload\includeFile() /Users/errolsidelsky/Dropbox/www/artbasel/vendor/composer/ClassLoader.php:322
+[25-Mar-2020 15:36:37 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56
+[25-Mar-2020 15:36:40 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56
+[25-Mar-2020 16:01:22 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[25-Mar-2020 16:01:22 UTC] PHP Stack trace:
+[25-Mar-2020 16:01:22 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 16:01:22 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[25-Mar-2020 16:01:22 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[25-Mar-2020 16:01:22 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[25-Mar-2020 16:01:22 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[25-Mar-2020 16:01:22 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[25-Mar-2020 16:01:22 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[25-Mar-2020 16:01:22 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[25-Mar-2020 17:08:02 UTC] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to App\Helper\Enqueues::wpEnqueueStyle() must be of the type array, null given, called in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56 and defined in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php:91
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(56): App\Helper\Enqueues->wpEnqueueStyle('theme_css', 'http://artbasil...', NULL, NULL)
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/errolsidels in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 91
+[25-Mar-2020 17:09:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to App\Helper\Enqueues::wpEnqueueStyle() must be of the type array, null given, called in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56 and defined in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php:91
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(56): App\Helper\Enqueues->wpEnqueueStyle('theme_css', 'http://artbasil...', NULL, NULL, NULL)
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/errol in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 91
+[25-Mar-2020 17:09:14 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to App\Helper\Enqueues::wpEnqueueStyle() must be of the type string, none given, called in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56 and defined in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php:91
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(56): App\Helper\Enqueues->wpEnqueueStyle()
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpres in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 91
+[25-Mar-2020 17:11:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Helper\Enqueues::get() in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:56
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php(2670): do_action('wp_enqueue_scri...')
+#6 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/cl in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56
+[25-Mar-2020 17:12:09 UTC] PHP Fatal error:  Uncaught TypeError: Argument 3 passed to App\Helper\Enqueues::wpEnqueueStyle() must be of the type array, integer given, called in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56 and defined in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php:91
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(56): App\Helper\Enqueues->wpEnqueueStyle('theme_css', 'http://artbasil...', 1335189331)
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php(27): App\Helper\Enqueues->enqueueStyles()
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php(25): App\Helper\Enqueues->__construct()
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(288): enqueueScriptsAndStyles('')
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#5 /Users/errolsid in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 91
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:43:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:43:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:43:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:43:35 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:43:35 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:43:35 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:43:35 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:43:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:13) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:43:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:43:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:43:35 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:43:35 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:43:35 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:43:35 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:43:35 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:44:55 UTC] PHP Warning:  Missing argument 4 for App\Helper\Enqueues::wpEnqueueStyle(), called in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 56 and defined in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 91
+[25-Mar-2020 19:44:55 UTC] PHP Stack trace:
+[25-Mar-2020 19:44:55 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[25-Mar-2020 19:44:55 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[25-Mar-2020 19:44:55 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[25-Mar-2020 19:44:55 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[25-Mar-2020 19:44:55 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php:10
+[25-Mar-2020 19:44:55 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:26
+[25-Mar-2020 19:44:55 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[25-Mar-2020 19:44:55 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:44:55 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:44:55 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:44:55 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[25-Mar-2020 19:44:55 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:44:55 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:44:55 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:44:55 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[25-Mar-2020 19:44:55 UTC] PHP  16. App\Helper\Enqueues->enqueueStyles() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:27
+[25-Mar-2020 19:44:55 UTC] PHP  17. App\Helper\Enqueues->wpEnqueueStyle() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:56
+[25-Mar-2020 19:44:55 UTC] PHP Notice:  Undefined variable: versionNumber in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/WordPress/WordPress.php on line 95
+[25-Mar-2020 19:44:55 UTC] PHP Stack trace:
+[25-Mar-2020 19:44:55 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[25-Mar-2020 19:44:55 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[25-Mar-2020 19:44:55 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[25-Mar-2020 19:44:55 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[25-Mar-2020 19:44:55 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php:10
+[25-Mar-2020 19:44:55 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:26
+[25-Mar-2020 19:44:55 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[25-Mar-2020 19:44:55 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:44:55 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:44:55 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:44:55 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[25-Mar-2020 19:44:55 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:44:55 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:44:55 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:44:55 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[25-Mar-2020 19:44:55 UTC] PHP  16. App\Helper\Enqueues->enqueueStyles() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:27
+[25-Mar-2020 19:44:55 UTC] PHP  17. App\Helper\Enqueues->wpEnqueueStyle() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:56
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:47:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:47:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:47:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:47:35 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:47:35 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:47:35 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:47:35 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:47:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:47:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:47:35 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:47:35 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:47:35 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:47:35 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:47:35 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:49:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:49:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:49:35 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:49:35 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:49:35 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:49:35 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:49:35 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:49:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:49:35 UTC] PHP Stack trace:
+[25-Mar-2020 19:49:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:49:35 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:49:35 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:49:35 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:49:35 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:49:35 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:51:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:51:36 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:36 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:51:36 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:51:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:51:36 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:36 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:51:36 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:51:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:51:36 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:36 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:51:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:51:36 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:36 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:51:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:51:37 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:37 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:37 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:51:37 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:51:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:51:37 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:37 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:37 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:51:37 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:51:37 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:51:37 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:51:37 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:51:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:51:37 UTC] PHP Stack trace:
+[25-Mar-2020 19:51:37 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:51:37 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:51:37 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:51:37 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:51:37 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:51:37 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:52:59 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:52:59 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:52:59 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:52:59 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:52:59 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:52:59 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:52:59 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:52:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:52:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:52:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:52:59 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:52:59 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:52:59 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:52:59 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:52:59 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:54:59 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:54:59 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:54:59 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:54:59 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:54:59 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:54:59 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:54:59 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:54:59 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:54:59 UTC] PHP Stack trace:
+[25-Mar-2020 19:54:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:54:59 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:54:59 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:54:59 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:54:59 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:54:59 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:57:00 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:57:00 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:57:00 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:57:00 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:57:00 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:57:00 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:57:00 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:57:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:57:00 UTC] PHP Stack trace:
+[25-Mar-2020 19:57:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:57:00 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:57:00 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:57:00 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:57:00 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:57:00 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:59:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 19:59:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 19:59:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:59:01 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:59:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:59:01 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 19:59:01 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 19:59:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 19:59:01 UTC] PHP Stack trace:
+[25-Mar-2020 19:59:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 19:59:01 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 19:59:01 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 19:59:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 19:59:01 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 19:59:01 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:01:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:01:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 20:01:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:01:01 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:01:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:01:01 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 20:01:01 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 20:01:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 20:01:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:01:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:01:01 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:01:01 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:01:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:01:01 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 20:01:01 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:03:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:03:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 20:03:01 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:03:01 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:03:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:03:01 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 20:03:01 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 20:03:01 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 20:03:01 UTC] PHP Stack trace:
+[25-Mar-2020 20:03:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:03:01 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:03:01 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:03:01 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:03:01 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 20:03:01 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:13:08 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:13:08 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 20:13:08 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:13:08 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:13:08 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:13:08 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 20:13:08 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 20:13:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 20:13:08 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:08 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:08 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:13:08 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:13:08 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:13:08 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 20:13:08 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 494
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:13:09 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:494
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php on line 495
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. send_origin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:25
+[25-Mar-2020 20:13:09 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/http.php:495
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 27
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:27
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php on line 28
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:28
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 5915
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. send_nosniff_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:41
+[25-Mar-2020 20:13:09 UTC] PHP   3. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:5915
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:13:09 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:13:09 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:13:09 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[25-Mar-2020 20:13:09 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[25-Mar-2020 20:13:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php on line 1252
+[25-Mar-2020 20:13:09 UTC] PHP Stack trace:
+[25-Mar-2020 20:13:09 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[25-Mar-2020 20:13:09 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[25-Mar-2020 20:13:09 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[25-Mar-2020 20:13:09 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[25-Mar-2020 20:13:09 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[25-Mar-2020 20:13:09 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252

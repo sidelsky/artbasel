@@ -4,7 +4,7 @@ namespace App\Helper;
 use App\WordPress\WordPress;
 
 /**
- * @author Chris Boakes <chris@chrisboakes.com>
+ * @author Errol Sidelsky
  * @version v1.0.1
  *
  * Manages custom taxonomy integration with Wordpress

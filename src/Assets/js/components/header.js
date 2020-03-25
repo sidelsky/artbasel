@@ -25,7 +25,6 @@ var w = window,
         top = w.scrollY;
 
         if(title) {
-            //title.style.transform = "translateY(" + +top / distance + "px)";
             title.style.transform = `translate3d(0, ${top / distance}px, 0)`;
         }
 

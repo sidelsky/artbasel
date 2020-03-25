@@ -3239,6 +3239,11 @@ table {
   }
 }
 
+.l-content__block--body-text p a {
+  text-decoration: underline;
+  color: currentColor;
+}
+
 .l-content__block--text-content {
   padding: 3rem;
 }

@@ -7,6 +7,9 @@ use App\Helper\DisableComments;
 use App\Helper\Utilities;
 use App\Helper\ProjectConfig;
 
+$theme = wp_get_theme();
+$versionNumber = $theme->get( 'Version' );
+
 //Featured Image
 add_theme_support( 'post-thumbnails' );
 

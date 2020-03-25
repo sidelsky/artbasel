@@ -8,6 +8,3 @@ import './components/owl-home-hero-api';
 import './components/hero-paralax';
 import './components/form-modal';
 import './components/we-chat-modal';
-//import './components/froogaloop2';
-//import './components/vimeo-player';
-//import './components/video-player';

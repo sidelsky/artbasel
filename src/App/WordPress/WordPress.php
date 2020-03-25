@@ -88,14 +88,18 @@ trait WordPress
         return remove_action($tag, $function, $priority);
     }
 
-    public function wpEnqueueStyle(string $handle, string $src = '', array $deps = [], $ver = false, string $media = 'all')
-    {
-        wp_enqueue_style($handle, $src, $deps, $ver, $media);
+    public function wpEnqueueStyle(string $handle, string $src = '', array $deps = [], bool $ver = true, string $media = 'all')
+    {   
+        $theme = wp_get_theme();
+        $versionNumber = $theme->get( 'Version' );
+        wp_enqueue_style($handle, $src, $deps, $versionNumber, $media);
     }
 
-    public function wpEnqueueScript(string $handle, string $src = '', array $deps = [], $ver = false, bool $inFooter = false)
+    public function wpEnqueueScript(string $handle, string $src = '', array $deps = [], bool $ver = true, bool $inFooter = false)
     {
-        wp_enqueue_script($handle, $src, $deps, $ver, $inFooter);
+        $theme = wp_get_theme();
+        $versionNumber = $theme->get( 'Version' );
+        wp_enqueue_script($handle, $src, $deps, $versionNumber, $inFooter);
     }
 
     public function getTemplateDirectory(): string

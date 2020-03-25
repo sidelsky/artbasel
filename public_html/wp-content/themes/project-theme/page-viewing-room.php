@@ -158,51 +158,34 @@ if($hero_text_content) :?>
  */
 $fiftyFifty = get_field('fifty_fifty');
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) :?>
-
-<section class="l-content">
-	
-	<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
-		<article class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></article>
-	<?php endif; ?>
-
-	<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
+	<section class="l-content">
+		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
+			<article class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></article>
+		<?php endif; ?>
+		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
+			<article class="l-content__block l-content__block--dark-background">
+				<div class="canvas l-content__block--center">
+					<button class="c-video-player__button" onclick="playFunction()">
+						<svg class="c-video-player__play-icon" id="playButton">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
+						</svg>
+					</button>
+					<div class="c-video-player__cover-image" id="cover" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></div>	
+					<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
+						<?= $fiftyFifty['fifty_fifty_video'] ?>
+					</div>
+				</div>
+			</article>
+		<?php endif; ?>
 		<article class="l-content__block l-content__block--dark-background">
-			<div class="canvas l-content__block--center">
-				<button class="c-video-player__button" onclick="playFunction()">
-					<svg class="c-video-player__play-icon" id="playButton">
-						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
-					</svg>
-				</button>
-				<div class="c-video-player__cover-image" id="cover" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></div>	
-				<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
-					<?= $fiftyFifty['fifty_fifty_video'] ?>
+			<div class="canvas l-content__block--center l-content__block--text-content">
+				<div>
+					<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
+					<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
 				</div>
 			</div>
 		</article>
-	<?php endif; ?>
-
-	<article class="l-content__block l-content__block--dark-background">
-		<div class="canvas l-content__block--center l-content__block--text-content">
-			<div>
-				<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
-				<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
-			</div>
-		</div>
-	</article>
-
-</section>
-
-	<!-- <section class="u-section c-hero-carousel c-hero-carousel--dark-background">
-		<div class="u-column--half-width c-hero-carousel--container">
-			<div class="c-hero-carousel--image-container" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></div>
-		</div>
-		<div class="u-column--table u-column--half-width c-hero-carousel--container">
-			<div class="c-hero-carousel--inner-container c-hero-carousel--container--padding">
-				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?= $fiftyFifty['fifty_fifty_title'] ?></h3>
-				<?= $fiftyFifty['fifty_fifty_content'] ?>
-			</div>
-		</div>
-	</section> -->
+	</section>
 <?php endif; ?>
 
 <?php
@@ -300,29 +283,30 @@ if($footerParallaxImage) : ?>
 	</section>
 <?php endif; ?>
 
-<script src="https://player.vimeo.com/api/player.js"></script>
-<script>
-    var iframe = document.querySelector('iframe');
-	 var player = new Vimeo.Player(iframe);
-	 var playButton = document.querySelector('button');
-	 var cover = document.getElementById('cover');
 
-	 function playFunction() {
-		  player.play();
-	}
+<?php if( $fiftyFifty['fifty_fifty_video'] ) : ?>
+	<script src="https://player.vimeo.com/api/player.js"></script>
+	<script>
+			var iframe = document.querySelector('iframe');
+			var player = new Vimeo.Player(iframe);
+			var playButton = document.querySelector('button');
+			var cover = document.getElementById('cover');
 
-    player.on('play', function() {
-		  console.log('played the video!');
-		  cover.style.display = "none";
-		  playButton.style.display = "none";
-	 });
-	 
-	player.on('pause', function() {
-		  console.log('paused the video!');
-		  cover.style.display = "block";
-		  playButton.style.display = "block";
-    });
+			function playFunction() {
+				player.play();
+			}
 
-</script>
+			player.on('play', function() {
+				cover.style.display = "none";
+				playButton.style.display = "none";
+			});
+
+			player.on('pause', function() {
+				cover.style.display = "block";
+				playButton.style.display = "block";
+			});
+
+	</script>
+<?php endif; ?>
 
 <?php include("footer.php"); ?>

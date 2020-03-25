@@ -2,7 +2,6 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    //@include max-width();
 
     &__title-break {
         @include set-font-size(2.4rem, 2.4rem, 2.6rem, 2.8rem);
@@ -49,6 +48,11 @@
         &--body-text p {
             @include set-font-size(1.6rem, 1.8rem, 1.8rem, 1.8rem);
             line-height: 1.5;
+
+            a {
+                text-decoration: underline;
+                color: currentColor;
+            }
         }
 
         &--text-content {
@@ -96,10 +100,6 @@
             }
         }
 
-    }
-
-    &--video {
-        
     }
 
 }
