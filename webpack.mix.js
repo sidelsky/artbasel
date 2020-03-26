@@ -11,7 +11,7 @@
 // Dependencies
 const mix = require('laravel-mix');
 const SvgStore = require('webpack-svgstore-plugin');
-const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
+//const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 
 //mix.disableNotifications()
 
@@ -21,19 +21,44 @@ const scssSrcPath = 'src/Assets/scss/style.scss';
 const themePath = 'public_html/wp-content/themes/project-theme';
 const destPath = `${themePath}/assets/build`;
 
-const vhost = "http://artbasel:8888/";
-
 mix.setPublicPath('public_html');
 
 // Styles
 mix.sass(scssSrcPath, destPath)
     .options({
-        postCss: [require('lost')(), require('postcss-encode-background-svgs')()],
+        postCss: [
+            require('lost')(),
+            require('postcss-encode-background-svgs')()
+        ],
         processCssUrls: false
     });
 
 // Js
 mix.js(jsSrcPath, destPath);
+
+//BrowserSyncPlugin
+// mix.browserSync({
+//     // browse to http://localhost:3000/ during development,
+//     // ./public directory is being served
+//     host: "localhost",
+//     port: 3000,
+//     //files: ["./**/*.php", "./**/*.scss", "./**/*.js"], // Reaload *.php
+//     files: [
+//         {
+//             match: ["wp-content/themes/**/*.php"],
+//             fn: function (event, file) {
+//                 /** Custom event handler **/
+//             },
+//             options: {
+//                 ignored: '*.txt'
+//             }
+//         }
+//     ],
+//     proxy: {
+//         target: 'http://artbasel:8888/'
+//     }
+// });
+    
 
 // SVG Sprite
 mix.webpackConfig({
@@ -46,18 +71,9 @@ mix.webpackConfig({
                 }
             ]
         },
-        prefix: 'shape-'
+        prefix: 'svg-'
     }),
-    new BrowserSyncPlugin({
-        // browse to http://localhost:3000/ during development,
-        // ./public directory is being served
-        host: "localhost",
-        port: 3000,
-        //files: ["./**/*.php", "./**/*.scss", "./**/*.js"], // Reaload *.php
-        proxy: {
-           target: vhost
-        }
-     }),
+
     ],
     module: {
         rules: [

@@ -3,7 +3,7 @@
 <div class="c-footer__inner">
 	
 	<div class="c-footer__container c-footer__column">
-		<p class="c-footer__copyright"><?= $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT<br><?= wp_style_version_no() ?></small></p>
+		<p class="c-footer__copyright"><?= $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT<br></small></p>
 	</div>
 
 	<div class="c-footer__column">

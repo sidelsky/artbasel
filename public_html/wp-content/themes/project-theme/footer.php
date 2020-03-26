@@ -19,7 +19,7 @@ $wordpress = new WordpressHelper;
 
 </div>
 
-<?php include("partials/footer-details.php"); ?> 
+<?php include("partials/footer-details.php"); ?>
 
 </div>
 

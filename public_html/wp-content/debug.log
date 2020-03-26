@@ -7119,3 +7119,164 @@ Stack trace:
 [25-Mar-2020 20:13:09 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
 [25-Mar-2020 20:13:09 UTC] PHP   5. wp_admin_headers() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
 [25-Mar-2020 20:13:09 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/misc.php:1252
+[26-Mar-2020 22:07:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1265
+[26-Mar-2020 22:07:07 UTC] PHP Stack trace:
+[26-Mar-2020 22:07:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:07:07 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:07:07 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:07:07 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:07:07 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1265
+[26-Mar-2020 22:07:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1268
+[26-Mar-2020 22:07:07 UTC] PHP Stack trace:
+[26-Mar-2020 22:07:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:07:07 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:07:07 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:07:07 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:07:07 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1268
+[26-Mar-2020 22:07:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1265
+[26-Mar-2020 22:07:14 UTC] PHP Stack trace:
+[26-Mar-2020 22:07:14 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:07:14 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:07:14 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:07:14 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:07:14 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1265
+[26-Mar-2020 22:07:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1268
+[26-Mar-2020 22:07:14 UTC] PHP Stack trace:
+[26-Mar-2020 22:07:14 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:07:14 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:07:14 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:07:14 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:07:14 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1268
+[26-Mar-2020 22:08:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1265
+[26-Mar-2020 22:08:28 UTC] PHP Stack trace:
+[26-Mar-2020 22:08:28 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:08:28 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:08:28 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:08:28 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:08:28 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1265
+[26-Mar-2020 22:08:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1268
+[26-Mar-2020 22:08:28 UTC] PHP Stack trace:
+[26-Mar-2020 22:08:28 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:08:28 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:08:28 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:08:28 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:08:28 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1268
+[26-Mar-2020 22:08:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1265
+[26-Mar-2020 22:08:36 UTC] PHP Stack trace:
+[26-Mar-2020 22:08:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:08:36 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:08:36 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:08:36 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:08:36 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1265
+[26-Mar-2020 22:08:36 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 1268
+[26-Mar-2020 22:08:36 UTC] PHP Stack trace:
+[26-Mar-2020 22:08:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[26-Mar-2020 22:08:36 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[26-Mar-2020 22:08:36 UTC] PHP   3. auth_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:94
+[26-Mar-2020 22:08:36 UTC] PHP   4. wp_redirect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1085
+[26-Mar-2020 22:08:36 UTC] PHP   5. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:1268
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php on line 496
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:496
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php on line 512
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:512
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php on line 515
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:515
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php on line 6029
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:523
+[26-Mar-2020 22:09:00 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[26-Mar-2020 22:09:00 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[26-Mar-2020 22:09:00 UTC] PHP   5. send_frame_options_header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:286
+[26-Mar-2020 22:09:00 UTC] PHP   6. header() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/functions.php:6029
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 961
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:961
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 962
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:962
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 963
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:963
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 964
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:964
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 965
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:965
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 966
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:966
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 969
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:969
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 970
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:970
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 973
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:973
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 974
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:974
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 975
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:975
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 976
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:976
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 979
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:979
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 980
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:980
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 981
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:981
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 982
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:982
+[26-Mar-2020 22:09:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions/wp-style-version-no.php:1) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php on line 985
+[26-Mar-2020 22:09:00 UTC] PHP Stack trace:
+[26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
+[26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
+[26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:985
