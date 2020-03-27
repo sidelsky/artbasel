@@ -7280,3 +7280,91 @@ Stack trace:
 [26-Mar-2020 22:09:00 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:0
 [26-Mar-2020 22:09:00 UTC] PHP   2. wp_clear_auth_cookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-login.php:1334
 [26-Mar-2020 22:09:00 UTC] PHP   3. setcookie() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/pluggable.php:985
+[27-Mar-2020 00:28:45 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 00:28:45 UTC] PHP Stack trace:
+[27-Mar-2020 00:28:45 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 00:28:45 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 00:28:45 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 00:28:45 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 00:28:45 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 00:28:45 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 00:28:45 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 00:28:45 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 01:02:23 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 01:02:23 UTC] PHP Stack trace:
+[27-Mar-2020 01:02:23 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 01:02:23 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 01:02:23 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 01:02:23 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 01:02:23 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 01:02:23 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 01:02:23 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 01:02:23 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 04:09:27 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 04:09:27 UTC] PHP Stack trace:
+[27-Mar-2020 04:09:27 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 04:09:27 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 04:09:27 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 04:09:27 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 04:09:27 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 04:09:27 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 04:09:27 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 04:09:27 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 06:07:33 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 06:07:33 UTC] PHP Stack trace:
+[27-Mar-2020 06:07:33 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 06:07:33 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 06:07:33 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 06:07:33 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 06:07:33 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 06:07:33 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 06:07:33 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 06:07:33 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 08:17:39 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 08:17:39 UTC] PHP Stack trace:
+[27-Mar-2020 08:17:39 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 08:17:39 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 08:17:39 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 08:17:39 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 08:17:39 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 08:17:39 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 08:17:39 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 08:17:39 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 08:29:42 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 08:29:42 UTC] PHP Stack trace:
+[27-Mar-2020 08:29:42 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 08:29:42 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 08:29:42 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 08:29:42 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 08:29:42 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 08:29:42 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 08:29:42 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 08:29:42 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 08:38:42 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 08:38:42 UTC] PHP Stack trace:
+[27-Mar-2020 08:38:42 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 08:38:42 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 08:38:42 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 08:38:42 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 08:38:42 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 08:38:42 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 08:38:42 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 08:38:42 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 09:21:04 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[27-Mar-2020 09:21:04 UTC] PHP Stack trace:
+[27-Mar-2020 09:21:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[27-Mar-2020 09:21:04 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[27-Mar-2020 09:21:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[27-Mar-2020 09:21:04 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[27-Mar-2020 09:21:04 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[27-Mar-2020 09:21:04 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[27-Mar-2020 09:21:04 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[27-Mar-2020 09:21:04 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[27-Mar-2020 11:41:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method ParagonIE_Sodium_Compat::polyfill_is_fast() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/file.php:1233
+Stack trace:
+#0 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/file.php(1112): verify_file_signature('/var/tmp/wordpr...', '', 'wordpress-seo.1...')
+#1 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/class-wp-upgrader.php(280): download_url('https://downloa...', 300, true)
+#2 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/class-wp-upgrader.php(735): WP_Upgrader->download_package('https://downloa...', true)
+#3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/class-plugin-upgrader.php(290): WP_Upgrader->run(Array)
+#4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/ajax-actions.php(4421): Plugin_Upgrader->bulk_upgrade(Array)
+#5 /Users/errolsidelsky/Dropbox/www/art in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/file.php on line 1233
