@@ -7943,3 +7943,105 @@ Stack trace:
 [27-Mar-2020 14:50:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
 [27-Mar-2020 14:50:56 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
 [27-Mar-2020 14:50:56 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 18
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 18
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(login.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 19
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(): Failed opening 'login.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 19
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Notice:  Undefined variable: foo in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 23
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(partials/ma-email-sub.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 37
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(): Failed opening 'partials/ma-email-sub.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 37
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 69
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:04 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 69
+[27-Mar-2020 21:50:04 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 18
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 18
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(login.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 19
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(): Failed opening 'login.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 19
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(partials/ma-email-sub.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 36
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(): Failed opening 'partials/ma-email-sub.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 36
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 68
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 21:50:13 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/Applications/MAMP/bin/php/php7.0.33/lib/php') in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/blade/storage/views/68435c3e099e6a2861f3e55027866197 on line 68
+[27-Mar-2020 21:50:13 UTC] PHP Stack trace:
+[27-Mar-2020 21:50:13 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 21:50:13 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 21:50:13 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 21:50:13 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99

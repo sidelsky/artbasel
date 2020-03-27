@@ -14,12 +14,16 @@ const SvgStore = require('webpack-svgstore-plugin');
 
 // Assets Path
 const Vhost = 'http://artbasilvip/';
+
 const jsSrcPath = 'src/Assets/js/app.js';
 const scssSrcPath = 'src/Assets/scss/style.scss';
 const themePath = 'public_html/wp-content/themes/project-theme';
 const destPath = `${themePath}/assets/build`;
 
 mix.setPublicPath('public_html');
+
+// Only show error notifications
+mix.disableSuccessNotifications();
 
 // Styles
 mix.sass(scssSrcPath, destPath)
