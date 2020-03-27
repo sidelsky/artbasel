@@ -11,11 +11,9 @@
 // Dependencies
 const mix = require('laravel-mix');
 const SvgStore = require('webpack-svgstore-plugin');
-//const BrowserSyncPlugin = require("browser-sync-webpack-plugin");
-
-//mix.disableNotifications()
 
 // Assets Path
+const Vhost = 'http://artbasilvip/';
 const jsSrcPath = 'src/Assets/js/app.js';
 const scssSrcPath = 'src/Assets/scss/style.scss';
 const themePath = 'public_html/wp-content/themes/project-theme';
@@ -36,28 +34,16 @@ mix.sass(scssSrcPath, destPath)
 // Js
 mix.js(jsSrcPath, destPath);
 
-//BrowserSyncPlugin
-// mix.browserSync({
-//     // browse to http://localhost:3000/ during development,
-//     // ./public directory is being served
-//     host: "localhost",
-//     port: 3000,
-//     //files: ["./**/*.php", "./**/*.scss", "./**/*.js"], // Reaload *.php
-//     files: [
-//         {
-//             match: ["wp-content/themes/**/*.php"],
-//             fn: function (event, file) {
-//                 /** Custom event handler **/
-//             },
-//             options: {
-//                 ignored: '*.txt'
-//             }
-//         }
-//     ],
-//     proxy: {
-//         target: 'http://artbasel:8888/'
-//     }
-// });
+// BrowserSync
+mix.browserSync({
+    watch: true,
+    files: [
+        destPath + "/**/*"
+    ],
+    proxy: {
+        target: Vhost,
+    }
+});
     
 
 // SVG Sprite
@@ -88,13 +74,14 @@ mix.webpackConfig({
             }
         ]
     }
+    
 });
 
 // Versioning and Sourcemaps
 if (mix.config.production) {
     // Enable cache busting in production
     mix.version();
-
+    mix.disableNotifications();
     // Code Splitting Example - More info on this in the README.md file
     // mix.extract(['vue']);
 } else {

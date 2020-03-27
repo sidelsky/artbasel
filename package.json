@@ -15,10 +15,13 @@
         "babel-plugin-transform-object-rest-spread": "^6.26.*",
         "babel-plugin-transform-runtime": "^6.23.*",
         "babel-preset-env": "^1.6.*",
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "2.0.1",
         "import-glob-loader": "^1.1.*",
         "jest": "^22.4.*",
         "laravel-mix": "2.1.*",
         "lost": "^8.2.*",
+        "vue-template-compiler": "^2.6.11",
         "postcss-encode-background-svgs": "^1.0.*",
         "webpack-svgstore-plugin": "^4.0.*"
     },
@@ -42,6 +45,6 @@
             "^@/(.*)$": "<rootDir>/src/$1"
         }
     },
-    "author": "Chris Boakes <chris@chrisboakes.com>",
+    "author": "Errol Sidelsky",
     "license": "MIT"
 }

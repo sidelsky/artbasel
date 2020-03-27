@@ -46,13 +46,6 @@
 }
 
 .u-l-container--center {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    // background-repeat: no-repeat;
-    // background-position: center center;
-    // background-size: cover;
-    //height: 100vh;
     width: 100%;
     position: relative;
     display: flex;
@@ -62,12 +55,7 @@
 
  .u-section {
      width: 100%; //lost-column: 12/12;
-     overflow: hidden;
- 
-     &--white-bg {
-        //background-color: $white;
-     }
- 
+     overflow: hidden; 
  }
  
  .u-column {

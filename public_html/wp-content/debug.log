@@ -7368,3 +7368,578 @@ Stack trace:
 #3 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/class-plugin-upgrader.php(290): WP_Upgrader->run(Array)
 #4 /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/ajax-actions.php(4421): Plugin_Upgrader->bulk_upgrade(Array)
 #5 /Users/errolsidelsky/Dropbox/www/art in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/file.php on line 1233
+[27-Mar-2020 12:36:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 12:36:19 UTC] PHP Stack trace:
+[27-Mar-2020 12:36:19 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 12:36:19 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 12:36:19 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 12:36:19 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 12:36:19 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 12:36:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 12:36:19 UTC] PHP Stack trace:
+[27-Mar-2020 12:36:19 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 12:36:19 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 12:36:19 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 12:36:19 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 12:36:19 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 12:36:19 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 12:36:19 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 12:36:19 UTC] PHP Stack trace:
+[27-Mar-2020 12:36:19 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 12:36:19 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 12:36:19 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 12:36:19 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 12:36:19 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 12:36:19 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:41:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:41:29 UTC] PHP Stack trace:
+[27-Mar-2020 14:41:29 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:41:29 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:41:29 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:41:29 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:41:29 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:41:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:41:29 UTC] PHP Stack trace:
+[27-Mar-2020 14:41:29 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:41:29 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:41:29 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:41:29 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:41:29 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:41:29 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:41:29 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:41:29 UTC] PHP Stack trace:
+[27-Mar-2020 14:41:29 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:41:29 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:41:29 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:41:29 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:41:29 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:41:29 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:42:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:42:26 UTC] PHP Stack trace:
+[27-Mar-2020 14:42:26 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:42:26 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:42:26 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:42:26 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:42:26 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:42:26 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:42:26 UTC] PHP Stack trace:
+[27-Mar-2020 14:42:26 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:42:26 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:42:26 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:42:26 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:42:26 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:42:26 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:42:26 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:42:26 UTC] PHP Stack trace:
+[27-Mar-2020 14:42:26 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:42:26 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:42:26 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:42:26 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:42:26 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:42:26 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:43:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:43:02 UTC] PHP Stack trace:
+[27-Mar-2020 14:43:02 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:43:02 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:43:02 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:43:02 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:43:02 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:43:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:43:02 UTC] PHP Stack trace:
+[27-Mar-2020 14:43:02 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:43:02 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:43:02 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:43:02 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:43:02 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:43:02 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:43:02 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:43:02 UTC] PHP Stack trace:
+[27-Mar-2020 14:43:02 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:43:02 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:43:02 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:43:02 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:43:02 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:43:02 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:44:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:44:41 UTC] PHP Stack trace:
+[27-Mar-2020 14:44:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:44:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:44:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:44:41 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:44:41 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:44:41 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:44:41 UTC] PHP Stack trace:
+[27-Mar-2020 14:44:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:44:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:44:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:44:41 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:44:41 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:44:41 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:44:41 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:44:41 UTC] PHP Stack trace:
+[27-Mar-2020 14:44:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:44:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:44:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:44:41 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:44:41 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:44:41 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:44:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:44:56 UTC] PHP Stack trace:
+[27-Mar-2020 14:44:56 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:44:56 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:44:56 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:44:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:44:56 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:44:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:44:56 UTC] PHP Stack trace:
+[27-Mar-2020 14:44:56 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:44:56 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:44:56 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:44:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:44:56 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:44:56 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:44:56 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:44:56 UTC] PHP Stack trace:
+[27-Mar-2020 14:44:56 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:44:56 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:44:56 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:44:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:44:56 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:44:56 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:45:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:45:01 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:01 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:01 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:01 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:01 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:45:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:45:01 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:01 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:01 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:01 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:01 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:45:01 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:45:01 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:45:01 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:01 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:01 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:01 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:01 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:01 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:45:01 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:45:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:45:18 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:18 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:18 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:18 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:18 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:18 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:45:18 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:45:18 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:18 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:18 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:18 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:18 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:18 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:45:18 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:45:18 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:45:18 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:18 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:18 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:18 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:18 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:18 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:45:18 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:45:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:45:55 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:55 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:55 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:55 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:55 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:55 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:45:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:45:55 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:55 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:55 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:55 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:55 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:55 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:45:55 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:45:55 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:45:55 UTC] PHP Stack trace:
+[27-Mar-2020 14:45:55 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:45:55 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:45:55 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:45:55 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:45:55 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:45:55 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:46:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:46:04 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:04 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:46:04 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:46:04 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:04 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:46:04 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:46:04 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:46:04 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:04 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:04 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:04 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:04 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:04 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:46:04 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:46:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:46:06 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:06 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:06 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:06 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:06 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:06 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:46:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:46:06 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:06 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:06 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:06 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:06 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:06 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:46:06 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:46:06 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:46:06 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:06 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:06 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:06 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:06 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:06 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:46:06 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:46:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:46:11 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:11 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:46:11 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:46:11 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:11 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:46:11 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:46:11 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:46:11 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:11 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:46:11 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:46:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:46:12 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:12 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:12 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:12 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:12 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:12 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:46:12 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:46:12 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:12 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:12 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:12 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:12 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:12 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:46:12 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:46:12 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:46:12 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:12 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:12 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:12 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:12 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:12 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:46:12 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:46:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:46:16 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:16 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:16 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:16 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:16 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:16 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:46:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:46:16 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:16 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:16 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:16 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:16 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:16 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:46:16 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:46:16 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:46:16 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:16 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:16 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:16 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:16 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:16 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:46:16 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:46:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:46:44 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:44 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:44 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:44 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:44 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:44 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:46:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:46:44 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:44 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:44 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:44 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:44 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:44 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:46:44 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:46:44 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:46:44 UTC] PHP Stack trace:
+[27-Mar-2020 14:46:44 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:46:44 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:46:44 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:46:44 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:46:44 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:46:44 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:47:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:47:35 UTC] PHP Stack trace:
+[27-Mar-2020 14:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:47:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:47:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:47:35 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:47:35 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:47:35 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:47:35 UTC] PHP Stack trace:
+[27-Mar-2020 14:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:47:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:47:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:47:35 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:47:35 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:47:35 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:47:35 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:47:35 UTC] PHP Stack trace:
+[27-Mar-2020 14:47:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:47:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:47:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:47:35 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:47:35 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:47:35 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:47:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:47:51 UTC] PHP Stack trace:
+[27-Mar-2020 14:47:51 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:47:51 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:47:51 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:47:51 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:47:51 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:47:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:47:51 UTC] PHP Stack trace:
+[27-Mar-2020 14:47:51 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:47:51 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:47:51 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:47:51 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:47:51 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:47:51 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:47:51 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 65
+[27-Mar-2020 14:47:51 UTC] PHP Stack trace:
+[27-Mar-2020 14:47:51 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:47:51 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:47:51 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:47:51 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:47:51 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:47:51 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:48:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:48:27 UTC] PHP Stack trace:
+[27-Mar-2020 14:48:27 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:48:27 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:48:27 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:48:27 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:48:27 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:48:27 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:48:27 UTC] PHP Stack trace:
+[27-Mar-2020 14:48:27 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:48:27 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:48:27 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:48:27 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:48:27 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:48:27 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:48:27 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 66
+[27-Mar-2020 14:48:27 UTC] PHP Stack trace:
+[27-Mar-2020 14:48:27 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:48:27 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:48:27 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:48:27 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:48:27 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:48:27 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:48:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:48:50 UTC] PHP Stack trace:
+[27-Mar-2020 14:48:50 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:48:50 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:48:50 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:48:50 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:48:50 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:48:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:48:50 UTC] PHP Stack trace:
+[27-Mar-2020 14:48:50 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:48:50 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:48:50 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:48:50 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:48:50 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:48:50 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:48:50 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:48:50 UTC] PHP Stack trace:
+[27-Mar-2020 14:48:50 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:48:50 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:48:50 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:48:50 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:48:50 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:48:50 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:49:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:49:59 UTC] PHP Stack trace:
+[27-Mar-2020 14:49:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:49:59 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:49:59 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:49:59 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:49:59 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:49:59 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:49:59 UTC] PHP Stack trace:
+[27-Mar-2020 14:49:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:49:59 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:49:59 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:49:59 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:49:59 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:49:59 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:49:59 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:49:59 UTC] PHP Stack trace:
+[27-Mar-2020 14:49:59 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:49:59 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:49:59 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:49:59 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:49:59 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:49:59 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:50:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:50:17 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:17 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:17 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:17 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:17 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:17 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:50:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:50:17 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:17 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:17 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:17 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:17 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:17 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:50:17 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:50:17 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:50:17 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:17 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:17 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:17 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:17 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:17 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:50:17 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:50:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:50:30 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:30 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:30 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:30 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:30 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:30 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:50:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:50:30 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:30 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:30 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:30 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:30 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:30 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:50:30 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:50:30 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:50:30 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:30 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:30 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:30 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:30 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:30 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:50:30 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:50:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:50:40 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:40 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:40 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:40 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:40 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:40 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:50:40 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:50:40 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:40 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:40 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:40 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:41 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:41 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:50:41 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:50:41 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:50:41 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:41 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:41 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:41 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:41 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:41 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:50:41 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:50:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:50:44 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:44 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:44 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:44 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:44 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:44 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:50:44 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:50:44 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:44 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:44 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:44 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:44 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:44 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:50:44 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:50:44 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:50:44 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:44 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:44 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:44 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:44 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:44 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:50:44 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
+[27-Mar-2020 14:50:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/Layout.php on line 28
+[27-Mar-2020 14:50:56 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:56 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:56 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:56 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:56 UTC] PHP   5. Theme\Model\Layout->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:11
+[27-Mar-2020 14:50:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php on line 28
+[27-Mar-2020 14:50:56 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:56 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:56 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:56 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:56 UTC] PHP   5. Theme\Model\ViewingRoom->getData() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:26
+[27-Mar-2020 14:50:56 UTC] PHP   6. Theme\Model\ViewingRoom->optimisedViewingRoom() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/Model/ViewingRoom.php:47
+[27-Mar-2020 14:50:56 UTC] PHP Notice:  Undefined variable: str in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/Theme/View/Components/c-viewing-room.php on line 67
+[27-Mar-2020 14:50:56 UTC] PHP Stack trace:
+[27-Mar-2020 14:50:56 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[27-Mar-2020 14:50:56 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[27-Mar-2020 14:50:56 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[27-Mar-2020 14:50:56 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[27-Mar-2020 14:50:56 UTC] PHP   5. App\Helper\Render->view() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-multi-artist.php:27
+[27-Mar-2020 14:50:56 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Render.php:26
