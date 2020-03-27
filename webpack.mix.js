@@ -71,7 +71,7 @@ mix.webpackConfig({
                 }
             ]
         },
-        prefix: 'svg-'
+        prefix: 'shape-'
     }),
 
     ],
