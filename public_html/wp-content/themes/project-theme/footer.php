@@ -23,20 +23,17 @@ $wordpress = new WordpressHelper;
 
 </div>
 
-		<?php 
+		<?php
 			wp_footer(); 
-			$googleAnalyticID = get_field('google_analytics', 'option');
+			//$googleAnalyticID = get_field('google_analytics', 'option');
 			
 			//Google Analytics
-			$template = 'c-google-analytics';
-			$data = [
-				'UA' => $googleAnalyticID
-			];
-			echo $render->view('Components/' . $template, $data);
-		
+			// $template = 'c-google-analytics';
+			// $data = [
+			// 	'UA' => $googleAnalyticID
+			// ];
+			// echo $render->view('Components/' . $template, $data);
 		?>
 		
-
-
 	</body>
 </html>
