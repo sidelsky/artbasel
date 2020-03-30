@@ -1,6 +1,7 @@
 import './svg-sprite';
-import './components/login-form';
 import './archive';
+import './components/jquery';
+import './components/login-form';
 import './components/paralax';
 import './components/smoothscroll-api';
 import './components/owl-home-hero';
