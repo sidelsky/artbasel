@@ -22,9 +22,6 @@ const destPath = `${themePath}/assets/build`;
 
 mix.setPublicPath('public_html');
 
-// Only show error notifications
-mix.disableSuccessNotifications();
-
 // Styles
 mix.sass(scssSrcPath, destPath)
     .options({
@@ -85,10 +82,10 @@ mix.webpackConfig({
 if (mix.config.production) {
     // Enable cache busting in production
     mix.version();
-    mix.disableNotifications();
     // Code Splitting Example - More info on this in the README.md file
     // mix.extract(['vue']);
 } else {
     // Enable sourcemap for development
+    mix.disableNotifications();
     mix.sourceMaps();
 }
