@@ -35,6 +35,7 @@ mix.sass(scssSrcPath, destPath)
 // Js
 mix.js(jsSrcPath, destPath);
 
+
 // BrowserSync
 mix.browserSync({
     watch: true,
@@ -82,6 +83,7 @@ mix.webpackConfig({
 if (mix.config.production) {
     // Enable cache busting in production
     mix.version();
+    //mix.minify(destPath + '/app.js');
     // Code Splitting Example - More info on this in the README.md file
     // mix.extract(['vue']);
 } else {

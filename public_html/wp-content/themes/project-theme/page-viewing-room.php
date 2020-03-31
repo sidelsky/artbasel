@@ -285,7 +285,7 @@ if($footerParallaxImage) : ?>
 
 
 <?php if( $fiftyFifty['fifty_fifty_video'] ) : ?>
-	<script src="https://player.vimeo.com/api/player.js"></script>
+	<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
 	<script>
 			var iframe = document.querySelector('iframe');
 			var player = new Vimeo.Player(iframe);
