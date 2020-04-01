@@ -103,6 +103,12 @@ if($hero_text_content) :?>
 		</div>
 		<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 			<div class="c-hero-carousel--inner-container">
+			
+			<div class="pre-loader">
+				<div class="lds-dual-ring"></div>
+				<div class="pre-loader__text">Loading carousel...</div>
+			</div>
+
 				<div class="owl-carousel owl-carousel-home owl-theme">
 					<?php
 						/**
@@ -285,7 +291,7 @@ if($footerParallaxImage) : ?>
 
 
 <?php if( $fiftyFifty['fifty_fifty_video'] ) : ?>
-	<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
+	<script src="https://player.vimeo.com/api/player.js"></script>
 	<script>
 			var iframe = document.querySelector('iframe');
 			var player = new Vimeo.Player(iframe);

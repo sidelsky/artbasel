@@ -5,9 +5,10 @@ $(document).ready(function() {
     dots: false,
     nav: true,
     responsiveClass: true,
-    lazyLoad: true,
+    lazyLoad: false,
     loop: true,
-    autoHeight: false,
+    autoHeight: true,
+    onInitialize: hasBeenInitialized,
     navText: [
       "<div class='nav-btn prev-slide'></div>",
       "<div class='nav-btn next-slide'></div>"
@@ -30,4 +31,8 @@ $(document).ready(function() {
       }
     }
   });
+
+  function hasBeenInitialized() {
+    $("body").addClass("owl-is-loaded");
+  }
 });
