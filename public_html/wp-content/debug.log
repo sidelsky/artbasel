@@ -10264,3 +10264,190 @@ Stack trace:
 [31-Mar-2020 20:55:21 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
 [31-Mar-2020 20:55:21 UTC] PHP   6. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:497
 [31-Mar-2020 20:55:21 UTC] PHP   7. getFunctions() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:87
+[01-Apr-2020 00:06:11 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[01-Apr-2020 00:06:11 UTC] PHP Stack trace:
+[01-Apr-2020 00:06:12 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 00:06:12 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[01-Apr-2020 00:06:12 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[01-Apr-2020 00:06:12 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[01-Apr-2020 00:06:12 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[01-Apr-2020 00:06:12 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[01-Apr-2020 00:06:12 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[01-Apr-2020 00:06:12 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[01-Apr-2020 00:06:26 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[01-Apr-2020 00:06:26 UTC] PHP Stack trace:
+[01-Apr-2020 00:06:26 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 00:06:26 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[01-Apr-2020 00:06:26 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[01-Apr-2020 00:06:27 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[01-Apr-2020 00:06:27 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[01-Apr-2020 00:06:27 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[01-Apr-2020 00:06:27 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[01-Apr-2020 00:06:27 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[01-Apr-2020 03:31:20 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[01-Apr-2020 03:31:20 UTC] PHP Stack trace:
+[01-Apr-2020 03:31:20 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 03:31:20 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[01-Apr-2020 03:31:20 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[01-Apr-2020 03:31:20 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[01-Apr-2020 03:31:20 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[01-Apr-2020 03:31:20 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[01-Apr-2020 03:31:20 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[01-Apr-2020 03:31:20 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[01-Apr-2020 06:37:07 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[01-Apr-2020 06:37:07 UTC] PHP Stack trace:
+[01-Apr-2020 06:37:07 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 06:37:07 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[01-Apr-2020 06:37:07 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[01-Apr-2020 06:37:07 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[01-Apr-2020 06:37:07 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[01-Apr-2020 06:37:07 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[01-Apr-2020 06:37:07 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[01-Apr-2020 06:37:07 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[01-Apr-2020 07:25:26 UTC] WordPress database error Server shutdown in progress for query SELECT option_value FROM wp_options WHERE option_name = 'cookie_notice_version' LIMIT 1 made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, Cookie_Notice->check_version, get_option
+[01-Apr-2020 07:25:26 UTC] PHP Warning:  Error while sending QUERY packet. PID=27994 in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 2030
+[01-Apr-2020 07:25:26 UTC] PHP Stack trace:
+[01-Apr-2020 07:25:26 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 07:25:26 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[01-Apr-2020 07:25:26 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 07:25:26 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 07:25:26 UTC] PHP   5. Cookie_Notice->check_version() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 07:25:26 UTC] PHP   6. update_option() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/cookie-notice/cookie-notice.php:281
+[01-Apr-2020 07:25:26 UTC] PHP   7. add_option() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/option.php:367
+[01-Apr-2020 07:25:26 UTC] PHP   8. wpdb->query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/option.php:504
+[01-Apr-2020 07:25:26 UTC] PHP   9. wpdb->_do_query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1918
+[01-Apr-2020 07:25:26 UTC] PHP  10. mysqli_query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:2030
+[01-Apr-2020 07:25:31 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[01-Apr-2020 07:25:31 UTC] PHP Stack trace:
+[01-Apr-2020 07:25:31 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 07:25:31 UTC] PHP   2. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:45
+[01-Apr-2020 07:25:31 UTC] PHP   3. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 07:25:31 UTC] PHP   4. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 07:25:31 UTC] PHP   5. Cookie_Notice->check_version() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 07:25:31 UTC] PHP   6. update_option() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/cookie-notice/cookie-notice.php:281
+[01-Apr-2020 07:25:31 UTC] PHP   7. add_option() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/option.php:367
+[01-Apr-2020 07:25:31 UTC] PHP   8. wpdb->query() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/option.php:504
+[01-Apr-2020 07:25:31 UTC] PHP   9. wpdb->check_connection() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1941
+[01-Apr-2020 07:25:31 UTC] PHP  10. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1818
+[01-Apr-2020 07:25:31 UTC] PHP  11. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[01-Apr-2020 07:25:40 UTC] PHP Warning:  mysqli_real_connect(): (HY000/2002): No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php on line 1633
+[01-Apr-2020 07:25:40 UTC] PHP Stack trace:
+[01-Apr-2020 07:25:40 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:0
+[01-Apr-2020 07:25:40 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin-ajax.php:22
+[01-Apr-2020 07:25:40 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[01-Apr-2020 07:25:40 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[01-Apr-2020 07:25:40 UTC] PHP   5. require_wp_db() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:116
+[01-Apr-2020 07:25:40 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
+[01-Apr-2020 07:25:40 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
+[01-Apr-2020 07:25:40 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[01-Apr-2020 22:04:02 UTC] PHP Warning:  file_get_contents(../public_html/mix-manifest.json): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 22
+[01-Apr-2020 22:04:02 UTC] PHP Stack trace:
+[01-Apr-2020 22:04:02 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:0
+[01-Apr-2020 22:04:02 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:17
+[01-Apr-2020 22:04:02 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[01-Apr-2020 22:04:02 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[01-Apr-2020 22:04:02 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/404.php:9
+[01-Apr-2020 22:04:02 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:34
+[01-Apr-2020 22:04:02 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[01-Apr-2020 22:04:02 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:02 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:02 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:02 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[01-Apr-2020 22:04:02 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:02 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:02 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:02 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[01-Apr-2020 22:04:02 UTC] PHP  16. file_get_contents() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:22
+[01-Apr-2020 22:04:02 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 46
+[01-Apr-2020 22:04:02 UTC] PHP Stack trace:
+[01-Apr-2020 22:04:02 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:0
+[01-Apr-2020 22:04:02 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:17
+[01-Apr-2020 22:04:02 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[01-Apr-2020 22:04:02 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[01-Apr-2020 22:04:02 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/404.php:9
+[01-Apr-2020 22:04:02 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:34
+[01-Apr-2020 22:04:02 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[01-Apr-2020 22:04:02 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:02 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:02 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:02 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[01-Apr-2020 22:04:02 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:02 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:02 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:02 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[01-Apr-2020 22:04:02 UTC] PHP  16. App\Helper\Enqueues->detectJsCodeSplit() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:25
+[01-Apr-2020 22:04:02 UTC] PHP  17. array_key_exists() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:46
+[01-Apr-2020 22:04:36 UTC] PHP Warning:  file_get_contents(../public_html/mix-manifest.json): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 22
+[01-Apr-2020 22:04:36 UTC] PHP Stack trace:
+[01-Apr-2020 22:04:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:0
+[01-Apr-2020 22:04:36 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:17
+[01-Apr-2020 22:04:36 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[01-Apr-2020 22:04:36 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[01-Apr-2020 22:04:36 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/404.php:9
+[01-Apr-2020 22:04:36 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:34
+[01-Apr-2020 22:04:36 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[01-Apr-2020 22:04:36 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:36 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:36 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:36 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[01-Apr-2020 22:04:36 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:36 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:36 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:36 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[01-Apr-2020 22:04:36 UTC] PHP  16. file_get_contents() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:22
+[01-Apr-2020 22:04:36 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 46
+[01-Apr-2020 22:04:36 UTC] PHP Stack trace:
+[01-Apr-2020 22:04:36 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:0
+[01-Apr-2020 22:04:36 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:17
+[01-Apr-2020 22:04:36 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[01-Apr-2020 22:04:36 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[01-Apr-2020 22:04:36 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/404.php:9
+[01-Apr-2020 22:04:36 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:34
+[01-Apr-2020 22:04:36 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[01-Apr-2020 22:04:36 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:36 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:36 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:36 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[01-Apr-2020 22:04:36 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:04:36 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:04:36 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:04:36 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[01-Apr-2020 22:04:36 UTC] PHP  16. App\Helper\Enqueues->detectJsCodeSplit() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:25
+[01-Apr-2020 22:04:36 UTC] PHP  17. array_key_exists() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:46
+[01-Apr-2020 22:06:11 UTC] PHP Warning:  file_get_contents(../public_html/mix-manifest.json): failed to open stream: No such file or directory in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 22
+[01-Apr-2020 22:06:11 UTC] PHP Stack trace:
+[01-Apr-2020 22:06:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:0
+[01-Apr-2020 22:06:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:17
+[01-Apr-2020 22:06:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[01-Apr-2020 22:06:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[01-Apr-2020 22:06:11 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/404.php:9
+[01-Apr-2020 22:06:11 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:34
+[01-Apr-2020 22:06:11 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[01-Apr-2020 22:06:11 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:06:11 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:06:11 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:06:11 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[01-Apr-2020 22:06:11 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:06:11 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:06:11 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:06:11 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[01-Apr-2020 22:06:11 UTC] PHP  16. file_get_contents() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:22
+[01-Apr-2020 22:06:11 UTC] PHP Warning:  array_key_exists() expects parameter 2 to be array, null given in /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php on line 46
+[01-Apr-2020 22:06:11 UTC] PHP Stack trace:
+[01-Apr-2020 22:06:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:0
+[01-Apr-2020 22:06:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/index.php:17
+[01-Apr-2020 22:06:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[01-Apr-2020 22:06:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[01-Apr-2020 22:06:11 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/404.php:9
+[01-Apr-2020 22:06:11 UTC] PHP   6. wp_head() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/header.php:34
+[01-Apr-2020 22:06:11 UTC] PHP   7. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/general-template.php:2879
+[01-Apr-2020 22:06:11 UTC] PHP   8. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:06:11 UTC] PHP   9. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:06:11 UTC] PHP  10. wp_enqueue_scripts() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:06:11 UTC] PHP  11. do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/script-loader.php:2670
+[01-Apr-2020 22:06:11 UTC] PHP  12. WP_Hook->do_action() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/plugin.php:478
+[01-Apr-2020 22:06:11 UTC] PHP  13. WP_Hook->apply_filters() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:312
+[01-Apr-2020 22:06:11 UTC] PHP  14. enqueueScriptsAndStyles() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/class-wp-hook.php:288
+[01-Apr-2020 22:06:11 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
+[01-Apr-2020 22:06:11 UTC] PHP  16. App\Helper\Enqueues->detectJsCodeSplit() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:25
+[01-Apr-2020 22:06:11 UTC] PHP  17. array_key_exists() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:46

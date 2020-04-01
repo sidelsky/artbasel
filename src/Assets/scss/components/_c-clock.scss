@@ -1,29 +1,26 @@
-.c-clock { 
-    color: #fff; 
+.c-clock {
+  @include set-font-size(4.8rem, 4.8rem, 4.8rem, 4.8rem);
+  color: #fff;
+  display: inline-block;
+  font-family: font-family(nt-primary, primary);
+  margin-bottom: $spacing--tiny;
+  margin: $spacing--medium 0 $spacing--large;
+  text-align: center;
+
+  > div {
+    padding: 10px;
     display: inline-block;
-    text-align: center; 
-    @include set-font-size(4.8rem, 4.8rem, 4.8rem, 4.8rem);
-    margin-bottom: $spacing--tiny;
-    font-family: font-family(nt-primary, primary);
-    margin: $spacing--medium 0 $spacing--large;
+  }
 
-    > div{ 
-        padding: 10px; 
-        display: inline-block;
+  div > span {
+    display: inline-block;
+  }
+
+  .smalltext {
+    @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
+
+    @include media(">desktop") {
+      margin-top: -10px;
     }
-
-    div > span{ 
-        display: inline-block; 
-    }
-
-    .smalltext {
-        @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
-
-        @include media('>desktop') {
-            margin-top: -10px;
-        }
-
-    }
-
-
-} 
+  }
+}
