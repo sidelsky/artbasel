@@ -1,183 +1,179 @@
 .c-hero-carousel {
-
   //@include max-width();
-    
-    @include media('>tablet') {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+  @include media(">tablet") {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--container {
+    &--padding {
+      padding: $spacing--large $spacing--large $spacing--tiny;
+
+      @include media(">tablet") {
+        padding: $spacing--small $spacing--large-x;
       }
+    }
+  }
 
-    &--container {
+  &--inner-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-        &--padding {
-          padding: $spacing--large $spacing--large $spacing--tiny;
+  &--image-container {
+    width: 100%;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
 
-            @include media('>tablet') {
-              padding: $spacing--small $spacing--large-x;
-            }
-        }
-  
+  &--content {
+  }
+
+  &--gallery {
+  }
+
+  &--dark-background {
+    background-color: #323232;
+    color: white !important;
+
+    h3 {
+      color: currentColor;
+      margin-bottom: $spacing--small;
     }
 
-    &--inner-container {
-        max-width: 1000px;
-        margin: 0 auto;
+    p {
+      @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.8rem);
+      line-height: 1.5;
+    }
+
+    .c-hero-carousel--container--padding {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: $spacing--large-x $spacing--medium;
+
+      @include media(">tablet") {
+        padding: $spacing--jumbo;
       }
-      
-      &--image-container {
-        width: 100%;
-        padding-top: 100%; /* 1:1 Aspect Ratio */
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
     }
-
-    &--content {
-
-    }
-
-    &--gallery {
-
-    }
-
-    &--dark-background {
-        background-color: #323232;
-        color: white !important;
-
-        h3 {
-            color: currentColor;
-            margin-bottom: $spacing--small;
-        }
-
-        p {
-            @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.8rem);
-            line-height: 1.5;
-        }
-
-        .c-hero-carousel--container--padding {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: $spacing--large-x $spacing--medium;
-
-            @include media('>tablet') {
-              padding: $spacing--jumbo;
-            }
-        }
-        
-    }
+  }
 }
 
 .carousel-wrap {
-    width: 1000px;
-    margin: auto;
-    position: relative;
-  }
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
 
 .owl-nav {
-    overflow: hidden;
-    height: 0px;
-  }
- 
-  .owl-theme .owl-dots .owl-dot.active span, 
-  .owl-theme .owl-dots .owl-dot:hover span {
-      background: grey;
-  }
- 
- 
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: grey;
+}
+
 .item {
-      text-align: center;
-      outline: solid 1px red;
-  }
-  .owl-carousel .nav-btn{
-      height: 47px;
-      width: 26px;
-      position: absolute;
-      cursor: pointer;
-      top: 200px !important;
-  }
- 
-  .owl-carousel .owl-prev.disabled,
-  .owl-carousel .owl-next.disabled{
-    pointer-events: none;
-    opacity: 0.2;
-  }
-  
+  text-align: center;
+  outline: solid 1px red;
+}
+.owl-carousel .nav-btn {
+  height: 47px;
+  width: 26px;
+  position: absolute;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 
-  /* Owl Vue */
-  .c-work-single__figure {
-    div {
-      position: relative;
-    }
-    .next, .prev {
-      z-index: 3;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      position: absolute;
-      height: 47px;
-      width: 26px;
-      cursor: pointer;
-      opacity: .6;
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
 
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    .next {
-      right: 0px;
-      background: url(img/nav-icon.png) no-repeat scroll -24px 0px;
-    }
-
-    .prev {
-      left: 25px;
-      background: url(img/nav-icon.png) no-repeat scroll 0 0;
-    }
-
+/* Owl Vue */
+.c-work-single__figure {
+  div {
+    position: relative;
   }
-
-
-
-  .owl-carousel .prev-slide{
-      background: url(img/nav-icon.png) no-repeat scroll 0 0;
-      left: -35px;
-      opacity: .6;
-      @include media('>tablet') {  
-        $position: 20px;
-        left: 10px;
-    }
-  }
-  .owl-carousel .next-slide{
-      background: url(img/nav-icon.png) no-repeat scroll -24px 0px;
-      right: -35px;
-      opacity: .6;
-      @include media('>tablet') {  
-        right: 10px;
-    }
-  }
-  .owl-carousel .prev-slide:hover{
-     //background-position: 0px -53px;
-     opacity: 1;
-  }
-  .owl-carousel .next-slide:hover{
-    //background-position: -24px -53px;
-    opacity: 1;
-  }
- 
-  span.img-text {
-    text-decoration: none;
-    outline: none;
-    transition: all 0.4s ease;
+  .next,
+  .prev {
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    position: absolute;
+    height: 47px;
+    width: 26px;
     cursor: pointer;
-    width: 100%;
-    font-size: 23px;
-    display: block;
-    text-transform: capitalize;
+    opacity: 0.6;
+
+    &:hover {
+      opacity: 1;
+    }
   }
-  span.img-text:hover {
-    color: grey;
+
+  .next {
+    right: 0px;
+    background: url(img/nav-icon.png) no-repeat scroll -24px 0px;
   }
+
+  .prev {
+    left: 25px;
+    background: url(img/nav-icon.png) no-repeat scroll 0 0;
+  }
+}
+
+.owl-nav {
+  margin-top: 0 !important;
+}
+
+.owl-carousel .prev-slide {
+  background: url(img/nav-icon.png) no-repeat scroll 0 0;
+  left: -35px;
+  opacity: 0.6;
+  @include media(">tablet") {
+    $position: 20px;
+    left: 10px;
+  }
+}
+.owl-carousel .next-slide {
+  background: url(img/nav-icon.png) no-repeat scroll -24px 0px;
+  right: -35px;
+  opacity: 0.6;
+  @include media(">tablet") {
+    right: 10px;
+  }
+}
+.owl-carousel .prev-slide:hover {
+  //background-position: 0px -53px;
+  opacity: 1;
+}
+.owl-carousel .next-slide:hover {
+  //background-position: -24px -53px;
+  opacity: 1;
+}
+
+span.img-text {
+  text-decoration: none;
+  outline: none;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  width: 100%;
+  font-size: 23px;
+  display: block;
+  text-transform: capitalize;
+}
+span.img-text:hover {
+  color: grey;
+}
