@@ -10451,3 +10451,63 @@ Stack trace:
 [01-Apr-2020 22:06:11 UTC] PHP  15. App\Helper\Enqueues->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/functions.php:28
 [01-Apr-2020 22:06:11 UTC] PHP  16. App\Helper\Enqueues->detectJsCodeSplit() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:25
 [01-Apr-2020 22:06:11 UTC] PHP  17. array_key_exists() /Users/errolsidelsky/Dropbox/www/artbasel/src/App/Helper/Enqueues.php:46
+[02-Apr-2020 08:58:35 UTC] PHP Warning:  stat(): stat failed for /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/uploads/gravity_forms/0-2f4171515bdc27a05b5dfc9b25ed25ef/262311044.txt in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php on line 266
+[02-Apr-2020 08:58:35 UTC] PHP Stack trace:
+[02-Apr-2020 08:58:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[02-Apr-2020 08:58:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[02-Apr-2020 08:58:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[02-Apr-2020 08:58:35 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[02-Apr-2020 08:58:35 UTC] PHP   5. do_shortcode() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php:47
+[02-Apr-2020 08:58:35 UTC] PHP   6. preg_replace_callback() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:199
+[02-Apr-2020 08:58:35 UTC] PHP   7. do_shortcode_tag() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:199
+[02-Apr-2020 08:58:35 UTC] PHP   8. GFForms::parse_shortcode() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:325
+[02-Apr-2020 08:58:35 UTC] PHP   9. GFForms::get_form() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:1667
+[02-Apr-2020 08:58:35 UTC] PHP  10. GFFormDisplay::get_form() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:2559
+[02-Apr-2020 08:58:35 UTC] PHP  11. GFFormDisplay::get_field() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:1042
+[02-Apr-2020 08:58:35 UTC] PHP  12. GFFormDisplay::get_field_content() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:3035
+[02-Apr-2020 08:58:35 UTC] PHP  13. GFCommon::get_field_input() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:3099
+[02-Apr-2020 08:58:35 UTC] PHP  14. GF_Field_CAPTCHA->get_field_input() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/common.php:3372
+[02-Apr-2020 08:58:35 UTC] PHP  15. GF_Field_CAPTCHA->get_captcha() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:154
+[02-Apr-2020 08:58:35 UTC] PHP  16. ReallySimpleCaptcha->generate_image() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:306
+[02-Apr-2020 08:58:35 UTC] PHP  17. ReallySimpleCaptcha->cleanup() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:105
+[02-Apr-2020 08:58:35 UTC] PHP  18. stat() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:266
+[02-Apr-2020 08:58:35 UTC] PHP Warning:  stat(): stat failed for /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/uploads/gravity_forms/0-2f4171515bdc27a05b5dfc9b25ed25ef/1952435640.png in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php on line 266
+[02-Apr-2020 08:58:35 UTC] PHP Stack trace:
+[02-Apr-2020 08:58:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[02-Apr-2020 08:58:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[02-Apr-2020 08:58:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[02-Apr-2020 08:58:35 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[02-Apr-2020 08:58:35 UTC] PHP   5. do_shortcode() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php:47
+[02-Apr-2020 08:58:35 UTC] PHP   6. preg_replace_callback() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:199
+[02-Apr-2020 08:58:35 UTC] PHP   7. do_shortcode_tag() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:199
+[02-Apr-2020 08:58:35 UTC] PHP   8. GFForms::parse_shortcode() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:325
+[02-Apr-2020 08:58:35 UTC] PHP   9. GFForms::get_form() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:1667
+[02-Apr-2020 08:58:35 UTC] PHP  10. GFFormDisplay::get_form() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:2559
+[02-Apr-2020 08:58:35 UTC] PHP  11. GFFormDisplay::get_field() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:1042
+[02-Apr-2020 08:58:35 UTC] PHP  12. GFFormDisplay::get_field_content() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:3035
+[02-Apr-2020 08:58:35 UTC] PHP  13. GFCommon::get_field_input() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:3099
+[02-Apr-2020 08:58:35 UTC] PHP  14. GF_Field_CAPTCHA->get_field_input() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/common.php:3372
+[02-Apr-2020 08:58:35 UTC] PHP  15. GF_Field_CAPTCHA->get_captcha() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:154
+[02-Apr-2020 08:58:35 UTC] PHP  16. ReallySimpleCaptcha->generate_image() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:306
+[02-Apr-2020 08:58:35 UTC] PHP  17. ReallySimpleCaptcha->cleanup() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:105
+[02-Apr-2020 08:58:35 UTC] PHP  18. stat() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:266
+[02-Apr-2020 08:58:35 UTC] PHP Warning:  stat(): stat failed for /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/uploads/gravity_forms/0-2f4171515bdc27a05b5dfc9b25ed25ef/1311571588.txt in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php on line 266
+[02-Apr-2020 08:58:35 UTC] PHP Stack trace:
+[02-Apr-2020 08:58:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[02-Apr-2020 08:58:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[02-Apr-2020 08:58:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[02-Apr-2020 08:58:35 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[02-Apr-2020 08:58:35 UTC] PHP   5. do_shortcode() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/single-works.php:47
+[02-Apr-2020 08:58:35 UTC] PHP   6. preg_replace_callback() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:199
+[02-Apr-2020 08:58:35 UTC] PHP   7. do_shortcode_tag() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:199
+[02-Apr-2020 08:58:35 UTC] PHP   8. GFForms::parse_shortcode() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/shortcodes.php:325
+[02-Apr-2020 08:58:35 UTC] PHP   9. GFForms::get_form() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:1667
+[02-Apr-2020 08:58:35 UTC] PHP  10. GFFormDisplay::get_form() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/gravityforms.php:2559
+[02-Apr-2020 08:58:35 UTC] PHP  11. GFFormDisplay::get_field() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:1042
+[02-Apr-2020 08:58:35 UTC] PHP  12. GFFormDisplay::get_field_content() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:3035
+[02-Apr-2020 08:58:35 UTC] PHP  13. GFCommon::get_field_input() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/form_display.php:3099
+[02-Apr-2020 08:58:35 UTC] PHP  14. GF_Field_CAPTCHA->get_field_input() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/common.php:3372
+[02-Apr-2020 08:58:35 UTC] PHP  15. GF_Field_CAPTCHA->get_captcha() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:154
+[02-Apr-2020 08:58:35 UTC] PHP  16. ReallySimpleCaptcha->generate_image() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:306
+[02-Apr-2020 08:58:35 UTC] PHP  17. ReallySimpleCaptcha->cleanup() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:105
+[02-Apr-2020 08:58:35 UTC] PHP  18. stat() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:266
