@@ -10511,3 +10511,19 @@ Stack trace:
 [02-Apr-2020 08:58:35 UTC] PHP  16. ReallySimpleCaptcha->generate_image() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/includes/fields/class-gf-field-captcha.php:306
 [02-Apr-2020 08:58:35 UTC] PHP  17. ReallySimpleCaptcha->cleanup() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:105
 [02-Apr-2020 08:58:35 UTC] PHP  18. stat() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/really-simple-captcha/really-simple-captcha.php:266
+[02-Apr-2020 16:51:35 UTC] PHP Deprecated:  Array and string offset access syntax with curly braces is deprecated in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/plugins/gravityforms/common.php on line 4151
+[02-Apr-2020 16:51:35 UTC] PHP Stack trace:
+[02-Apr-2020 16:51:35 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[02-Apr-2020 16:51:35 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[02-Apr-2020 16:51:35 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:13
+[02-Apr-2020 16:51:35 UTC] PHP   4. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-load.php:42
+[02-Apr-2020 16:51:35 UTC] PHP   5. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-config.php:153
+[02-Apr-2020 16:51:35 UTC] PHP   6. include_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-settings.php:360
+[03-Apr-2020 13:36:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/partials/ma-email-sub.php on line 3
+[03-Apr-2020 13:44:31 UTC] PHP Notice:  Undefined variable: smallPrint in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/partials/ma-email-sub.php on line 17
+[03-Apr-2020 13:44:31 UTC] PHP Stack trace:
+[03-Apr-2020 13:44:31 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[03-Apr-2020 13:44:31 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[03-Apr-2020 13:44:31 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[03-Apr-2020 13:44:31 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:99
+[03-Apr-2020 13:44:31 UTC] PHP   5. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php:253

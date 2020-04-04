@@ -250,6 +250,8 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 	</div>
 </section>
 
+<?php include("partials/ma-email-sub.php"); ?>
+
 <?php 
 /**
  * Footer paralax image

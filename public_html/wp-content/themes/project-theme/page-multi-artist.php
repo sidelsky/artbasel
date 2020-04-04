@@ -18,12 +18,7 @@ include("header.php");
 include("login.php");
 ?>
 
-
-
 <?php
-
-
-
 /**
  * Viewing room
  */
