@@ -8,9 +8,9 @@ use App\Helper\Render;
 use Theme\Model\Layout;
 use Theme\Model\ViewingRoom;
 
+$render = new Render;
 $layout = new Layout;
 $viewingRoom = new ViewingRoom;
-$render = new Render;
 
 $allLayouts = $layout->getLayout();
 
@@ -34,7 +34,7 @@ include("login.php");
 
             foreach($allLayouts as $value) {
 
-                $templateName = '';
+                $templateName = NULL;
                 
                 switch ($value['layoutName']) {
                     

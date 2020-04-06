@@ -15,7 +15,8 @@ class ImageContent {
 
 	return [
 		'layoutName' => 'image_content',
-      'image_content' => $image_content
+      'image_content' => $image_content,
+      'wide_image' => $wide_image
 	];
    }
 }

@@ -3,16 +3,16 @@ namespace Theme\Model;
 
 use App\WordPress\WordPress;
 use \WP_Query;
-use Theme\Model\TitleBreak;
 use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
+use Theme\Model\WorksContent;
 
-class Layout {
+class LayoutVr {
 
    public function __construct()
    {
 
-      $this->layoutBuilder = get_field('content');
+      $this->layoutBuilder = get_field('content_builder');
       $this->layoutOutput = [];
       
       foreach($this->layoutBuilder as $layout) {
@@ -22,23 +22,23 @@ class Layout {
          //Add another module here
          switch ($layoutName) {
 
-            //Get Title break
-            case 'title_break':
-               $titleBreak = new TitleBreak($layout);
-               $currentLayout = $titleBreak->getTitleBreak();
-				break;
-			   
-			   //Get Text content
+            //Get Text content
             case 'text_content':
                $textContent = new TextContent($layout);
                $currentLayout = $textContent->getTextContent();
 				break;
-
+            
 			   //Get Image
 			   case 'image_content':
                $imageContent = new ImageContent($layout);
                $currentLayout = $imageContent->getImageContent();
-				break;
+            break;
+
+         	//Get Works
+			   case 'works_content':
+               $worksContent = new WorksContent($layout);
+               $currentLayout = $worksContent->getWorksContent();
+            break;
                 
         }
          $this->layoutOutput[] = $currentLayout;

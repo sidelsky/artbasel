@@ -5,9 +5,14 @@
  */
 
 use App\Helper\Render;
-$render = new Render;
+use Theme\Model\LayoutVr;
 
-include("header.php");
+$render = new Render;
+$layout = new LayoutVr;
+
+$allLayouts = $layout->getLayout();
+
+include("header.php"); 
 
 $term_id = get_field('collection');
 $args =[
@@ -134,12 +139,6 @@ if($hero_text_content) :?>
 								$availabilityMarker = 'c-sale-marker--available';
 								$availabilityTitle = 'Available';
 							} ?>
-							
-							<?php /*
-							<?php if( $art['hidePurchaseButton'] == 0 ) : ?>
-								<button id="purchaseBtn_<?= $index ?>" data-id="purchaseBtn" class="c-button c-button--light" <?= $art['sold'] == "sold" || $art['sold'] == "hold" ? 'disabled' : ''; ?>>Purchase</button>
-							<?php endif; ?>
-							*/?>
 
 							<div class="c-works__availability c-works__availability__hero">
 								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
@@ -153,12 +152,8 @@ if($hero_text_content) :?>
 	</section>
 <?php endif; ?>
 
+
 <?php
-
-/**
- * Get Vimeo thumbnails
-*/
-
 /**
  * Hero Content Fifty Fifty
  */
@@ -194,61 +189,50 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 	</section>
 <?php endif; ?>
 
+
+
 <?php
 /**
  * Get a list of Works
  */
 ?>
-<section class="u-section" id="top">
-	<div class="u-l-container--center">
-		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
-			<div class="c-works">
-				<div class="c-works__list">
-				<?php
-					/**
-					 * Get Works content for list of works
-					 */
-					foreach($artwork as $index => $artworks):
-					?>
-					<article class="c-works__card"">
-						<figure class="c-works__figure">
-							<a href="<?= $artworks['link']; ?>">
-								<img src="<?= $artworks['image']; ?>" alt="<?= $artworks['title']; ?>" class="c-works__image">
-							</a>
-						</figure> 
-						<a href="<?= $artworks['link']; ?>">
-							<h2 class="c-works__title"><?= $artworks['title']; ?></h2>
-						</a>
-						<div class="c-works__name"><?= $artworks['fullName']; ?></div>
-						<div class="c-works__date"><?= $artworks['date']; ?></div>
-						<div class="c-works__medium"><?= $artworks['mediumText']; ?></div>
-						
-						<?php if($artworks['sold'] === 'available') : ?>
-							<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
-						<?php endif; ?>
 
-						<div class="c-works__availability">
+<?php
+/**
+ * Flexible Content Bulider
+ */
+?>
+<section class="l-content">
+	<?php
+	foreach($allLayouts as $value) {
 
-							<?php if( $artworks['sold'] == 'sold' ) {
-								$availabilityMarker = 'c-sale-marker--sold';
-								$availabilityTitle = 'Sold';
-							} elseif( $artworks['sold'] == 'hold' ) {
-								$availabilityMarker = 'c-sale-marker--hold';
-								$availabilityTitle = 'Hold';
-							} else {
-								$availabilityMarker = 'c-sale-marker--available';
-								$availabilityTitle = 'Available';
-							} ?>
+			$templateName;
+			
+			switch ($value['layoutName']) {
+				
+				// Get Text content
+				case 'text_content':
+					$templateName = 'c-text-content';
+				break;
+				
+				// Get Image content
+				case 'image_content':
+					$templateName = 'c-image-content';
+				break;
 
-							<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-						</div>
-					</article>
-				<?php endforeach; ?>
-				</div>
-			</div>
-		</div>
-	</div>
+				// Get Image content
+				case 'works_content':
+					$templateName = 'c-works-content';
+				break;
+			
+		}
+			$renderContent = $render->view('Components/' . $templateName, $value);
+			echo $renderContent;
+	}
+
+?>
 </section>
+
 
 <?php include("partials/ma-email-sub.php"); ?>
 
