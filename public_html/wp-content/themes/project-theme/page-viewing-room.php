@@ -328,7 +328,6 @@ if($footerParallaxImage) : ?>
 	</section>
 <?php endif; ?>
 
-
 <?php if( $fiftyFifty['fifty_fifty_video'] ) : ?>
 	<script src="https://player.vimeo.com/api/player.js"></script>
 	<script>
