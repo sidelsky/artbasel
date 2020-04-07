@@ -1,1 +1,1 @@
-<article class="l-content__block" style="background-image: url('<?= $data['image_content'] ?>')"></article>
+<article class="l-content__block <?= is_page_template('page-viewing-room.php') ? 'l-content__block--wide-image' : '' ?>" style="background-image: url('<?= $data['image_content'] ?>')"></article>

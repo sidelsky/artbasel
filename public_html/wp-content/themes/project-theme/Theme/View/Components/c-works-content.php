@@ -1,5 +1,4 @@
-<?php //print_r($data['works_content']); ?>
-<section class="u-section" id="top">
+<section class="u-section">
 	<div class="u-l-container--center">
 		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 			<div class="c-works">

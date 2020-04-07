@@ -2528,7 +2528,7 @@ h1 strong {
 
 .c-works__card {
   position: relative;
-  padding: 0 2rem 2rem;
+  padding: 0 2rem;
   font-size: 1.5rem;
   color: #1F1F1F;
 }
@@ -3236,6 +3236,46 @@ table {
     width: 100%;
   }
   .l-content__block .canvas {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .l-content__block--wide-image {
+    position: relative;
+    width: 60%;
+  }
+  .l-content__block--wide-image::before {
+    content: '';
+    display: block;
+    padding-top: 66.66666667%;
+    width: 100%;
+  }
+  .l-content__block--wide-image .canvas {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .l-content__block--wide-text {
+    position: relative;
+    width: 40%;
+  }
+  .l-content__block--wide-text::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+  }
+  .l-content__block--wide-text .canvas {
     bottom: 0;
     left: 0;
     position: absolute;

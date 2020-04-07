@@ -1,123 +1,133 @@
 .l-content {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 
-    &__title-break {
-        @include set-font-size(2.4rem, 2.4rem, 2.6rem, 2.8rem);
-        font-family: font-family(nt-primary, medium);
-        line-height: 1.35;
+  &__title-break {
+    @include set-font-size(2.4rem, 2.4rem, 2.6rem, 2.8rem);
+    font-family: font-family(nt-primary, medium);
+    line-height: 1.35;
+  }
+
+  &__block {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: $dark;
+    background-color: lighten(#212322, 82%);
+    @include aspect-ratio(1, 1.7);
+
+    @include media(">tablet") {
+      @include aspect-ratio(1, 1.5);
+      width: 50%;
     }
 
-    &__block {
-        width: 100%;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        color: $dark;
-        background-color: lighten(#212322, 82%);
-        @include aspect-ratio(1, 1.7);
-
-        @include media('>tablet') {
-            @include aspect-ratio(1, 1.5);
-            width: 50%;
-        }
-
-        @include media('>desktop') {
-            @include aspect-ratio(1, 1);
-            width: 50%;
-        }
-        
-        &--title {
-            @include set-font-size(2.4rem, 2.8rem, 2.6rem, 2.8rem);
-            font-family: font-family(nt-primary, medium);
-            line-height: 1.35;
-        }
-
-        &--date {
-            @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-            line-height: 1.35;
-        }
-
-        &--title,
-        &--date,
-        &--body-text p {
-            margin-bottom: $spacing--small;
-        }
-
-        &--body-text p {
-            @include set-font-size(1.6rem, 1.8rem, 1.8rem, 1.8rem);
-            line-height: 1.5;
-
-            a {
-                text-decoration: underline;
-                color: currentColor;
-            }
-        }
-
-        &--text-content {
-            padding: $spacing--medium;
-
-            @include media('>tablet') {
-                padding: $spacing--x-large;
-            }
-
-            @include media('>desktop') {
-                padding: $spacing--jumbo;
-            }
-
-        }
-
-        &--center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        &--dark-background {
-            color: white;
-            background-color: #212322;
-        }
-
-        &--align-right {
-            
-            @include media('>tablet') {
-                text-align: right;
-            }
-
-            .l-content__block--link {
-                @include media('>tablet') {
-                    text-align: right;
-                }
-            }
-        }
-
-        &--link {
-            text-align: center;
-            padding: 0;
-            a {
-                color: currentColor !important;
-            }
-        }
-
+    @include media(">desktop") {
+      @include aspect-ratio(1, 1);
+      width: 50%;
     }
 
+    &--wide-image {
+      @include media(">desktop") {
+        @include aspect-ratio(1.5, 1);
+        width: 60%;
+      }
+    }
+
+    &--wide-text {
+      @include media(">desktop") {
+        @include aspect-ratio(1.5, 1.5);
+        width: 40%;
+      }
+    }
+
+    &--title {
+      @include set-font-size(2.4rem, 2.8rem, 2.6rem, 2.8rem);
+      font-family: font-family(nt-primary, medium);
+      line-height: 1.35;
+    }
+
+    &--date {
+      @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+      line-height: 1.35;
+    }
+
+    &--title,
+    &--date,
+    &--body-text p {
+      margin-bottom: $spacing--small;
+    }
+
+    &--body-text p {
+      @include set-font-size(1.6rem, 1.8rem, 1.8rem, 1.8rem);
+      line-height: 1.5;
+
+      a {
+        text-decoration: underline;
+        color: currentColor;
+      }
+    }
+
+    &--text-content {
+      padding: $spacing--medium;
+
+      @include media(">tablet") {
+        padding: $spacing--x-large;
+      }
+
+      @include media(">desktop") {
+        padding: $spacing--jumbo;
+      }
+    }
+
+    &--center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--dark-background {
+      color: white;
+      background-color: #212322;
+    }
+
+    &--align-right {
+      @include media(">tablet") {
+        text-align: right;
+      }
+
+      .l-content__block--link {
+        @include media(">tablet") {
+          text-align: right;
+        }
+      }
+    }
+
+    &--link {
+      text-align: center;
+      padding: 0;
+      a {
+        color: currentColor !important;
+      }
+    }
+  }
 }
 
 .canvas {
-    .l-content__block--link {
-        text-align: left;
-    }
+  .l-content__block--link {
+    text-align: left;
+  }
 }
 
 .l-content__block--align-right {
-    .l-content__block--link {
-        text-align: right;
-    }
+  .l-content__block--link {
+    text-align: right;
+  }
 }
 
 .c-works__href-wrap--center {
-    .l-content__block--link {
-        text-align: center !important;
-    }
+  .l-content__block--link {
+    text-align: center !important;
+  }
 }

@@ -15,6 +15,8 @@ class Layout {
       $this->layoutBuilder = get_field('content');
       $this->layoutOutput = [];
       
+      if ( is_array($this->layoutBuilder) && count($this->layoutBuilder) > 0 ) {
+
       foreach($this->layoutBuilder as $layout) {
          $layoutName = $layout['acf_fc_layout'];
          $currentLayout;
@@ -42,6 +44,8 @@ class Layout {
                 
         }
          $this->layoutOutput[] = $currentLayout;
+      }
+
       }
 
    }
