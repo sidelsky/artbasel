@@ -233,6 +233,59 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 ?>
 </section>
 
+<?php if( empty($renderContent) ) : ?>
+	<section class="u-section" id="top">
+		<div class="u-l-container--center">
+			<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+				<div class="c-works">
+					<div class="c-works__list">
+					<?php
+						/**
+						 * Get Works content for list of works
+						 */
+						foreach($artwork as $index => $artworks):
+						?>
+						<article class="c-works__card"">
+							<figure class="c-works__figure">
+								<a href="<?= $artworks['link']; ?>">
+									<img src="<?= $artworks['image']; ?>" alt="<?= $artworks['title']; ?>" class="c-works__image">
+								</a>
+							</figure> 
+							<a href="<?= $artworks['link']; ?>">
+								<h2 class="c-works__title"><?= $artworks['title']; ?></h2>
+							</a>
+							<div class="c-works__name"><?= $artworks['fullName']; ?></div>
+							<div class="c-works__date"><?= $artworks['date']; ?></div>
+							<div class="c-works__medium"><?= $artworks['mediumText']; ?></div>
+							
+							<?php if($artworks['sold'] === 'available') : ?>
+								<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
+							<?php endif; ?>
+
+							<div class="c-works__availability">
+
+								<?php if( $artworks['sold'] == 'sold' ) {
+									$availabilityMarker = 'c-sale-marker--sold';
+									$availabilityTitle = 'Sold';
+								} elseif( $artworks['sold'] == 'hold' ) {
+									$availabilityMarker = 'c-sale-marker--hold';
+									$availabilityTitle = 'Hold';
+								} else {
+									$availabilityMarker = 'c-sale-marker--available';
+									$availabilityTitle = 'Available';
+								} ?>
+
+								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
+							</div>
+						</article>
+					<?php endforeach; ?>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<?php endif; ?>
+
 
 <?php include("partials/ma-email-sub.php"); ?>
 
