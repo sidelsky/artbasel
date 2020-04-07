@@ -92,7 +92,6 @@
                 class="c-button c-button--dark"
               >Purchase</button>
             </span>
-            <!-- <button v-if="work.sold === 'available' " id="purchaseBtn_0" data-id="purchaseBtn" class="c-button c-button--dark">Purchase</button> -->
 
             <button
               id="inquireBtn_0"
