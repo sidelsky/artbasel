@@ -2528,9 +2528,29 @@ h1 strong {
 
 .c-works__card {
   position: relative;
-  padding: 0 2rem;
+  padding: 0 2rem 2rem;
   font-size: 1.5rem;
   color: #1F1F1F;
+  width: calc(99.9999% * 1/2 - (0px - 0px * 1/2));
+}
+
+.c-works__card:nth-child(1n) {
+  float: left;
+  margin-right: 0px;
+  clear: none;
+}
+
+.c-works__card:last-child {
+  margin-right: 0;
+}
+
+.c-works__card:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+
+.c-works__card:nth-child(2n + 1) {
+  clear: both;
 }
 
 @media (min-width: 376px) {
@@ -2553,31 +2573,6 @@ h1 strong {
 
 .c-works__card a {
   color: currentColor;
-}
-
-@media (min-width: 769px) {
-  .c-works__card {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: calc(99.9999% * 6/12);
-        flex-basis: calc(99.9999% * 6/12);
-    max-width: calc(99.9999% * 6/12);
-    width: calc(99.9999% * 6/12);
-  }
-  .c-works__card:nth-child(1n) {
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .c-works__card:last-child {
-    margin-right: 0;
-  }
-  .c-works__card:nth-child(3n) {
-    margin-right: 0;
-    margin-left: auto;
-  }
 }
 
 @media (min-width: 1025px) {
@@ -2615,7 +2610,12 @@ h1 strong {
       -ms-flex-align: end;
           align-items: flex-end;
   position: relative;
-  min-height: 310px;
+}
+
+@media (min-width: 769px) {
+  .c-works__figure {
+    min-height: 310px;
+  }
 }
 
 @media (min-width: 769px) {
