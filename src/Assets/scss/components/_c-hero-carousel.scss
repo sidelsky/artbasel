@@ -9,9 +9,15 @@
 
   &--container {
     &--padding {
-      padding: $spacing--large $spacing--large $spacing--tiny;
+      padding: $spacing--large $spacing--large $spacing--medium;
 
-      @include media(">tablet") {
+      @include media(">desktop") {
+        padding: $spacing--small $spacing--large-x;
+      }
+    }
+    &:nth-last-of-type(1) {
+      padding: 0 $spacing--large $spacing--large;
+      @include media(">desktop") {
         padding: $spacing--small $spacing--large-x;
       }
     }
@@ -140,18 +146,17 @@
 
 .owl-carousel .prev-slide {
   background: url(img/nav-icon.png) no-repeat scroll 0 0;
-  left: -35px;
   opacity: 0.6;
-  @include media(">tablet") {
-    $position: 20px;
+  left: -30px;
+  @include media(">desktop") {
     left: 10px;
   }
 }
 .owl-carousel .next-slide {
   background: url(img/nav-icon.png) no-repeat scroll -24px 0px;
-  right: -35px;
   opacity: 0.6;
-  @include media(">tablet") {
+  right: -30px;
+  @include media(">desktop") {
     right: 10px;
   }
 }

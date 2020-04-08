@@ -19,6 +19,7 @@
 /public_html/hot
 /public_html/wordpress
 
+.htpasswd
 .env
 mix.*.js
 mix.js

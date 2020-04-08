@@ -2,13 +2,13 @@
 use App\Helper\Page;
 use App\Helper\Render;
 use App\Helper\WordpressHelper;
-//use Theme\Model\Hero;
-//use Theme\Model\SubpageHero;
+
 $page = new Page;
 $render = new Render;
-//$hero = new Hero;
-//$subpageHero = new SubpageHero;
 $wordpress = new WordpressHelper;
+
+//phpinfo();
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
