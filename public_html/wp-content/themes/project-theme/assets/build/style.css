@@ -1754,7 +1754,7 @@ span.img-text:hover {
 }
 
 .c-site-headings--underline:after {
-  content: '';
+  content: "";
   display: block;
   width: 80%;
   height: 1px;
@@ -1852,7 +1852,7 @@ span.img-text:hover {
 }
 
 .c-site-headings--h1--hero-carousel {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   line-height: 1.35;
 }
@@ -1865,13 +1865,13 @@ span.img-text:hover {
 
 @media (min-width: 769px) {
   .c-site-headings--h1--hero-carousel {
-    font-size: 3rem;
+    font-size: 2.8rem;
   }
 }
 
 @media (min-width: 1025px) {
   .c-site-headings--h1--hero-carousel {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 }
 

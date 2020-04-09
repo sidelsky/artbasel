@@ -36,11 +36,19 @@ if ( is_robots() ) {
 	 */
 	do_action( 'do_robots' );
 	return;
+} elseif ( is_favicon() ) {
+	/**
+	 * Fired when the template loader determines a favicon.ico request.
+	 *
+	 * @since 5.4.0
+	 */
+	do_action( 'do_favicon' );
+	return;
 } elseif ( is_feed() ) {
 	do_feed();
 	return;
 } elseif ( is_trackback() ) {
-	include( ABSPATH . 'wp-trackback.php' );
+	require ABSPATH . 'wp-trackback.php';
 	return;
 }
 
@@ -94,9 +102,8 @@ if ( wp_using_themes() ) {
 	 * @param string $template The path of the template to include.
 	 */
 	$template = apply_filters( 'template_include', $template );
-	
 	if ( $template ) {
-		include( $template );
+		include $template;
 	} elseif ( current_user_can( 'switch_themes' ) ) {
 		$theme = wp_get_theme();
 		if ( $theme->errors() ) {

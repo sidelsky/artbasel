@@ -14542,3 +14542,13 @@ Stack trace:
 [07-Apr-2020 21:23:39 UTC] PHP   6. wpdb->__construct() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/load.php:425
 [07-Apr-2020 21:23:39 UTC] PHP   7. wpdb->db_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:632
 [07-Apr-2020 21:23:39 UTC] PHP   8. mysqli_real_connect() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/wp-db.php:1633
+[08-Apr-2020 23:59:37 UTC] PHP Fatal error:  Cannot redeclare wp_get_user_request_data() (previously declared in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/user.php:3700) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/deprecated.php on line 1581
+[08-Apr-2020 23:59:37 UTC] PHP Stack trace:
+[08-Apr-2020 23:59:37 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[08-Apr-2020 23:59:37 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[08-Apr-2020 23:59:37 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:92
+[08-Apr-2020 23:59:43 UTC] PHP Fatal error:  Cannot redeclare wp_get_user_request_data() (previously declared in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/user.php:3700) in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/includes/deprecated.php on line 1581
+[08-Apr-2020 23:59:43 UTC] PHP Stack trace:
+[08-Apr-2020 23:59:43 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
+[08-Apr-2020 23:59:43 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
+[08-Apr-2020 23:59:43 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:92

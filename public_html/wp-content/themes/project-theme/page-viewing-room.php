@@ -102,9 +102,9 @@ $hero_text_content = get_field('mini_carousel_text');
 if($hero_text_content) :?>
 	<section class="u-section c-hero-carousel">
 		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
-			<div class="c-hero-carousel--inner-container">
+			<blockquote class="c-hero-carousel--inner-container">
 				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?php echo $hero_text_content ?></h3>
-			</div>
+			</blockquote>
 		</div>
 		<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 			<div class="c-hero-carousel--inner-container">
