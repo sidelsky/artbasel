@@ -32,6 +32,7 @@ $wordpress = new WordpressHelper;
 		<!-- End Google Tag Manager -->
 		
 		<?php wp_head(); ?>
+		<!-- VPS Server -->
 	</head>
 	<?php 
 		if( is_page('works-preview') ) {

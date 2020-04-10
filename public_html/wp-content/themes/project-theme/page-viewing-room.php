@@ -202,36 +202,38 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
  * Flexible Content Bulider
  */
 ?>
-<section class="l-content">
-	<?php
-	foreach($allLayouts as $value) {
+<?php if( !empty($renderContent) ) : ?>
+	<section class="l-content" id="top">
+		<?php
+		foreach($allLayouts as $value) {
 
-			$templateName;
-			
-			switch ($value['layoutName']) {
+				$templateName;
 				
-				// Get Text content
-				case 'text_content':
-					$templateName = 'c-text-content';
-				break;
-				
-				// Get Image content
-				case 'image_content':
-					$templateName = 'c-image-content';
-				break;
+				switch ($value['layoutName']) {
+					
+					// Get Text content
+					case 'text_content':
+						$templateName = 'c-text-content';
+					break;
+					
+					// Get Image content
+					case 'image_content':
+						$templateName = 'c-image-content';
+					break;
 
-				// Get Image content
-				case 'works_content':
-					$templateName = 'c-works-content';
-				break;
-			
+					// Get Image content
+					case 'works_content':
+						$templateName = 'c-works-content';
+					break;
+				
+			}
+				$renderContent = $render->view('Components/' . $templateName, $value);
+				echo $renderContent;
 		}
-			$renderContent = $render->view('Components/' . $templateName, $value);
-			echo $renderContent;
-	}
 
-?>
-</section>
+	?>
+	</section>
+<?php endif; ?>
 
 <?php if( empty($renderContent) ) : ?>
 	<section class="u-section" id="top">
