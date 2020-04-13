@@ -308,8 +308,7 @@ if($footerParallaxImage) : ?>
 /**
  * Footer content
  */
-?>
-<?php
+ 
 	$content = get_post()->post_content;
 	if( !empty($content) ):
 ?>

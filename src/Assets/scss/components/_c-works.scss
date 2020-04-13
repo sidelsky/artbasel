@@ -49,21 +49,23 @@
 
   //Card
   &__card {
+    position: relative;
+    padding: 0 $spacing--small $spacing--small;
     @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
     color: $dark;
-    padding: 0 $spacing--x-small $spacing--small;
-    position: relative;
 
     a {
       color: currentColor;
     }
 
-    lost-column: 1/2 no-flex;
+    //Tablet
+    @include media(">tablet") {
+      lost-column: 6/12 3 0;
+    }
 
     //Desktop
     @include media(">desktop") {
-      padding: 0 $spacing--small $spacing--small;
-      lost-column: 4/12 3 0 no-flex;
+      lost-column: 4/12 3 0;
     }
   }
 
@@ -71,13 +73,10 @@
   &__figure {
     position: relative;
     margin-bottom: $spacing--medium;
-    // display: flex;
-    // align-items: flex-end;
-    // position: relative;
-
-    @include media(">tablet") {
-      min-height: 310px;
-    }
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    min-height: 310px;
   }
 
   //Image
@@ -85,18 +84,16 @@
     //Tablet
     @include media(">tablet") {
       max-height: 310px;
-      //max-width: 100%;
+      max-width: 100%;
       position: absolute;
-      // bottom: 0;
+      bottom: 0;
       left: 50%;
       transform: translate(-50%);
     }
 
     &:hover {
       cursor: pointer;
-      @include media(">desktop") {
-        outline: solid 6px lighten($grey, 30%);
-      }
+      outline: solid 6px lighten($grey, 30%);
     }
   }
 
@@ -305,26 +302,3 @@ a .c-works__title,
     position: relative;
   }
 }
-
-// }
-
-// .page-id-2475 {
-//     color: $text-color;
-//     .c-works {
-//         &__href,
-//         &__price {
-//             color: $text-color;
-//         }
-//     }
-// }
-
-// /** Live **/
-// .page-id-2751 {
-//     color: $text-color;
-//     .c-works {
-//         &__href,
-//         &__price {
-//             color: $text-color;
-//         }
-//     }
-// }
