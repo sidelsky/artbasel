@@ -152,7 +152,6 @@ if($hero_text_content) :?>
 	</section>
 <?php endif; ?>
 
-
 <?php
 /**
  * Hero Content Fifty Fifty
@@ -189,20 +188,12 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 	</section>
 <?php endif; ?>
 
-
-
-<?php
-/**
- * Get a list of Works
- */
-?>
-
 <?php
 /**
  * Flexible Content Bulider
  */
+//if( !empty($renderContent) ) :
 ?>
-<?php if( !empty($renderContent) ) : ?>
 	<section class="l-content" id="top">
 		<?php
 		foreach($allLayouts as $value) {
@@ -233,9 +224,13 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 
 	?>
 	</section>
-<?php endif; ?>
+<?php //endif; ?>
 
-<?php if( empty($renderContent) ) : ?>
+<?php 
+/**
+ * Get a list of Works if no layout builder active
+ */
+if( empty($renderContent) ) : ?>
 	<section class="u-section" id="top">
 		<div class="u-l-container--center">
 			<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
@@ -308,9 +303,8 @@ if($footerParallaxImage) : ?>
 /**
  * Footer content
  */
- 
-	$content = get_post()->post_content;
-	if( !empty($content) ):
+$content = get_post()->post_content;
+if( !empty($content) ):
 ?>
 	<section class="u-section">
 		<div class="u-l-container--center">
