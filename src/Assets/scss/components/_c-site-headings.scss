@@ -55,6 +55,7 @@
       @include set-font-size(3.6rem, 5.4rem, 6rem, 6.8rem);
       font-family: font-family(nt-primary, medium);
       line-height: 1;
+      color: red;
     }
 
     &--hero-carousel {
