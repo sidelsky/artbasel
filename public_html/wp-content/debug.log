@@ -14552,3 +14552,87 @@ Stack trace:
 [08-Apr-2020 23:59:43 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:0
 [08-Apr-2020 23:59:43 UTC] PHP   2. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/index.php:10
 [08-Apr-2020 23:59:43 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-admin/admin.php:92
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106
+[14-Apr-2020 22:03:11 UTC] PHP Notice:  Undefined variable: artworks in /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wp-content/themes/project-theme/page-viewing-room.php on line 143
+[14-Apr-2020 22:03:11 UTC] PHP Stack trace:
+[14-Apr-2020 22:03:11 UTC] PHP   1. {main}() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:0
+[14-Apr-2020 22:03:11 UTC] PHP   2. require() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/index.php:17
+[14-Apr-2020 22:03:11 UTC] PHP   3. require_once() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-blog-header.php:19
+[14-Apr-2020 22:03:11 UTC] PHP   4. include() /Users/errolsidelsky/Dropbox/www/artbasel/public_html/wordpress/wp-includes/template-loader.php:106

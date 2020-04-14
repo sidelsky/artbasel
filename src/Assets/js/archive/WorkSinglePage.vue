@@ -63,7 +63,7 @@
               <span v-html="formattedPrice"></span>
             </div>
 
-            <div class="c-works__availability">
+            <div v-if="work.sold !== null" class="c-works__availability">
               <span v-if="work.sold === 'sold'" class="c-sale-marker c-sale-marker--sold"></span>
               <span v-if="work.sold === 'hold'" class="c-sale-marker c-sale-marker--hold"></span>
               <span v-if="work.sold === 'available'" class="c-sale-marker c-sale-marker--available"></span>
@@ -72,21 +72,14 @@
 
             <span v-bind:hidden="work.hidePurchaseButton ? true : false">
               <button
-                v-if="work.sold === 'sold' "
+                v-if="work.sold === 'sold' || work.sold === 'hold' "
                 id="purchaseBtn_0"
                 data-id="purchaseBtn"
                 class="c-button c-button--dark"
                 disabled
               >Purchase</button>
               <button
-                v-if="work.sold === 'hold' "
-                id="purchaseBtn_0"
-                data-id="purchaseBtn"
-                class="c-button c-button--dark"
-                disabled
-              >Purchase</button>
-              <button
-                v-if="work.sold === 'available' "
+                v-if="work.sold === 'available' || work.sold === '' "
                 id="purchaseBtn_0"
                 data-id="purchaseBtn"
                 class="c-button c-button--dark"
@@ -146,7 +139,9 @@ export default {
   },
   computed: {
     formattedSold() {
-      if (this.work.sold == "available") {
+      if (this.work.sold == "") {
+        return "";
+      } else if (this.work.sold == "available") {
         return "Available";
       } else if (this.work.sold == "hold") {
         return "Hold";

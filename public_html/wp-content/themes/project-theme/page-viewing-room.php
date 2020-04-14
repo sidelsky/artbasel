@@ -140,9 +140,11 @@ if($hero_text_content) :?>
 								$availabilityTitle = 'Available';
 							} ?>
 
+						<?php if( $art['sold'] == !NULL ) : ?>	
 							<div class="c-works__availability c-works__availability__hero">
 								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 							</div>
+						<?php endif; ?>
 							
 						</article>
 					<?php endforeach; ?>
@@ -259,21 +261,22 @@ if( empty($renderContent) ) : ?>
 								<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
 							<?php endif; ?>
 
-							<div class="c-works__availability">
+							<?php if( $artworks['sold'] == 'sold' ) {
+								$availabilityMarker = 'c-sale-marker--sold';
+								$availabilityTitle = 'Sold';
+							} elseif( $artworks['sold'] == 'hold' ) {
+								$availabilityMarker = 'c-sale-marker--hold';
+								$availabilityTitle = 'Hold';
+							} else {
+								$availabilityMarker = 'c-sale-marker--available';
+								$availabilityTitle = 'Available';
+							} ?>
 
-								<?php if( $artworks['sold'] == 'sold' ) {
-									$availabilityMarker = 'c-sale-marker--sold';
-									$availabilityTitle = 'Sold';
-								} elseif( $artworks['sold'] == 'hold' ) {
-									$availabilityMarker = 'c-sale-marker--hold';
-									$availabilityTitle = 'Hold';
-								} else {
-									$availabilityMarker = 'c-sale-marker--available';
-									$availabilityTitle = 'Available';
-								} ?>
-
-								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-							</div>
+							<?php if( $artworks['sold'] == !NULL ) : ?>		
+								<div class="c-works__availability">		
+									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
+								</div>
+							<?php endif; ?>
 						</article>
 					<?php endforeach; ?>
 					</div>

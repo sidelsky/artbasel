@@ -44,21 +44,23 @@
 							<div class="c-works__price"><span><?= $price ?></span></div>
 						<?php endif; ?>
 
-						<div class="c-works__availability">
+						
+						<?php if( $sold == 'sold' ) {
+							$availabilityMarker = 'c-sale-marker--sold';
+							$availabilityTitle = 'Sold';
+						} elseif( $sold == 'hold' ) {
+							$availabilityMarker = 'c-sale-marker--hold';
+							$availabilityTitle = 'Hold';
+						} else {
+							$availabilityMarker = 'c-sale-marker--available';
+							$availabilityTitle = 'Available';
+						} ?>
 
-							<?php if( $sold == 'sold' ) {
-								$availabilityMarker = 'c-sale-marker--sold';
-								$availabilityTitle = 'Sold';
-							} elseif( $sold == 'hold' ) {
-								$availabilityMarker = 'c-sale-marker--hold';
-								$availabilityTitle = 'Hold';
-							} else {
-								$availabilityMarker = 'c-sale-marker--available';
-								$availabilityTitle = 'Available';
-							} ?>
-
-							<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-						</div>
+						<?php if( $sold == !NULL ) : ?>
+							<div class="c-works__availability">
+								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
+							</div>
+						<?php endif; ?>
 					</article>
                <?php endforeach; ?>
 
