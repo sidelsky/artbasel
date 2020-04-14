@@ -18,9 +18,24 @@
 /public_html/wp-content/languages/
 /public_html/hot
 /public_html/wordpress
+/public_html/.htaccess
+/public_html/cacert.pem
+/public_html/googlec395667e50648a87.html
+/public_html/php.ini
 
+.gitignore
 .htpasswd
+.babelrc
+.vscode
+.package-lock.json
+.package.json
+.nvmrc
+.zeplin
 .env
+.env.example
+LICENSE
+webpack.mix.js
+README.md
 mix.*.js
 mix.js
 mix-manifest.json
@@ -38,5 +53,4 @@ Vagrantfile
 yarn-error.log
 composer.lock
 yarn.lock
-/public_html/wp-content/ai1wm-backups
 /DB
