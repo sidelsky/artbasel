@@ -74,7 +74,6 @@ if($hero) : ?>
 		<a href="/" class="c-works__href">Back</a>
 	</span>
 
-	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">
 		<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0,<?= get_field('image_shading_cover') ?>);"></span>
@@ -295,11 +294,7 @@ if( empty($renderContent) ) : ?>
  */
 $footerParallaxImage = get_field('footer_parallax_image');
 if($footerParallaxImage) : ?>
-	<section class="u-section c-paralax-header c-paralax-header--desktop">
-		<div>
-			<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
-		</div>
-	</section>
+	<div class="parallax-window parallax-window__footer" data-natural-height="1400" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
 <?php endif; ?>
 
 <?php 

@@ -215,8 +215,6 @@ $gallery = get_field('footer_gallery', 6);
 $images = [];
 
 if($gallery) : ?>
-
-	<!-- Parallax desktop -->
 	<section class="u-section c-paralax-header c-paralax-header--desktop">
 		<div>
 			<?php foreach ($gallery as $galleryImage) :  ?>
@@ -224,7 +222,6 @@ if($gallery) : ?>
 			<?php endforeach; ?>
 		</div>
 	</section>
-
 <?php endif; ?>
 
 <?php 
