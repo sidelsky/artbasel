@@ -1,4 +1,6 @@
 <?php
+define('WP_DEBUG_DISPLAY', false);
+define('WP_AUTO_UPDATE_CORE', false);// This setting is required to make sure that WordPress updates can be properly managed in WordPress Toolkit. Remove this line if this WordPress website is not managed by WordPress Toolkit anymore.
 /**
  * The base configuration for WordPress
  *
@@ -122,8 +124,8 @@ $table_prefix  = getenv("DB_PREFIX");
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', getenv("WP_DEBUG"));
-define('WP_DEBUG_LOG', getenv("WP_DEBUG_LOG"));
+define('WP_DEBUG', false);
+define('WP_DEBUG_LOG', false);
 
 /**
  * Custom Settings

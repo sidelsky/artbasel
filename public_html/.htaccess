@@ -13,11 +13,3 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-
-#AuthType Basic
-#AuthName "Restricted Area"
-#AuthUserFile /Users/errolsidelsky/Dropbox/www/artbasel/.htpasswd
-#require valid-user
-
-
-
