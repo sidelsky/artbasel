@@ -95,6 +95,14 @@ if($hero) : ?>
 
 <?php 
 /**
+ * Show email field at the Top
+ */
+if( get_field('show_artist_inquiry_email') == "top") {
+	include("partials/ma-email-sub-vr.php"); 
+} ?>
+
+<?php 
+/**
  * Hero Content carousel
  */
 $hero_text_content = get_field('mini_carousel_text'); 
@@ -285,8 +293,13 @@ if( empty($renderContent) ) : ?>
 	</section>
 <?php endif; ?>
 
-
-<?php include("partials/ma-email-sub.php"); ?>
+<?php 
+/**
+ * Show email field at the Bottom
+ */
+if( get_field('show_artist_inquiry_email') == "bottom") {
+	include("partials/ma-email-sub-vr.php"); 
+} ?>
 
 <?php 
 /**
