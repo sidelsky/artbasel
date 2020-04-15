@@ -3,176 +3,156 @@
  * @documentation http://lostgrid.org/docs.html
  */
 
- @lost gutter 0px;
- @lost flexbox flex;
- @lost cycle none;
- 
+@lost gutter 0px;
+@lost flexbox flex;
+@lost cycle none;
 
 /*
  * Centralised container utility
  */
 
 .u-l-container {
+  margin: auto;
+  max-width: $max-width;
+  width: 100%;
+  position: relative;
+
+  &--row {
+    //lost-flex-container: row;
+  }
+
+  &--full-width {
     margin: auto;
-    max-width: $max-width;
     width: 100%;
     position: relative;
+  }
 
-    &--row {
-        //lost-flex-container: row;
-    }
+  &--small {
+    margin: auto;
+    max-width: $max-width-small;
+  }
 
-    &--full-width {
-        margin: auto;
-        width: 100%;
-        position: relative;
-    }
+  &--shallow {
+    margin: auto;
+    max-width: $max-width-shallow;
+  }
 
-    &--small {
-        margin: auto;
-        max-width: $max-width-small;
-
-    }
-
-    &--shallow {
-        margin: auto;
-        max-width: $max-width-shallow;
-    }
-
-    &--narrow {
-        margin: auto;
-        max-width: $max-width-narrow;
-    }
+  &--narrow {
+    margin: auto;
+    max-width: $max-width-narrow;
+  }
 }
 
 .u-l-container--center {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
- .u-section {
-     width: 100%; //lost-column: 12/12;
-     overflow: hidden; 
- }
- 
- .u-column {
-     margin: 0 auto;
-     lost-flex-container: row;
-    
-     //Half width
-     &--half-width {
-        
-         // Tablet upwards
-         @include media('>tablet') { 
-            lost-column: 1/2 2;
-            float: left;
+.u-section {
+  width: 100%; //lost-column: 12/12;
+  overflow: hidden;
+}
 
-            &--left {
-                lost-move: -1/2;
-            }
-            
-            &--right {
-                lost-move: 1/2;
-            }
+.u-column {
+  margin: 0 auto;
+  lost-flex-container: row;
 
-        }
+  //Half width
+  &--half-width {
+    // Tablet upwards
+    @include media(">tablet") {
+      lost-column: 1/2 2;
+      float: left;
+
+      &--left {
+        lost-move: -1/2;
+      }
+
+      &--right {
+        lost-move: 1/2;
+      }
+    }
+  }
+
+  //Two thirds
+  &--two-thirds {
+    // Tablet upwards
+    @include media(">tablet") {
+      lost-column: 2/3;
+
+      &--left {
+        lost-move: -2/3;
+      }
+
+      &--right {
+        lost-move: 2/3;
+      }
+    }
+  }
+
+  &--image {
+    img {
+      margin: auto;
+      transform: translateY(100px);
+    }
+  }
+  &--full-width {
+    max-width: 100%;
+    outline: solid blue 1px;
+  }
+  &--large {
+    max-width: 90%;
+    outline: solid blue 1px;
+  }
+  &--medium {
+    //lost-center: 1280px;
+    max-width: 1280px;
+  }
+  &--small {
+    //lost-center: 1020px;
+    max-width: 1020px;
+    //outline: solid Green 1px;
+    @include media("<desktop-large") {
+      padding-left: $spacing--medium;
+      padding-right: $spacing--medium;
+    }
+  }
+}
+
+%u-tb-padding {
+  padding: $spacing--large-x 0;
+
+  @include media(">tablet") {
+    padding: $spacing--large-xxx 0;
+  }
+
+  @include media(">desktop") {
+    padding: $spacing--jumbo 0;
+  }
+
+  &--medium {
+    padding: $spacing--small 0;
+
+    @include media(">tablet") {
+      padding: $spacing--medium 0;
     }
 
-    //Two thirds
-    &--two-thirds {
-         
-        // Tablet upwards
-        @include media('>tablet') { 
-           lost-column: 2/3;
-
-           &--left {
-               lost-move: -2/3;
-           }
-           
-           &--right {
-               lost-move: 2/3;
-           }
-
-       }
-   }
-
-    &--image {
-        img {
-            margin: auto;
-            transform: translateY(100px);
-        }
+    @include media(">desktop") {
+      padding: $spacing--large 0;
     }
-    &--full-width {
-        max-width: 100%;
-        outline: solid blue 1px;
-    }
-    &--large {
-        max-width: 90%;
-        outline: solid blue 1px;
-    }
-    &--medium {
-        //lost-center: 1280px;
-        max-width: 1280px;
-    }
-    &--small {
-        //lost-center: 1020px;
-        max-width: 1020px;
-        //outline: solid Green 1px;
-        @include media('<desktop-large') {
-            padding-left: $spacing--medium;
-            padding-right: $spacing--medium;
-        }
-    }
- }
+  }
 
- .u-column {
+  &--small {
+    padding: $spacing--tiny 0;
 
- }
- 
- %u-tb-padding {
- 
-     padding: $spacing--large-x 0;
- 
-     @include media('>tablet') {
-         padding: $spacing--large-xxx 0;
-     }
- 
-     @include media('>desktop') {
-         padding: $spacing--jumbo 0;
-     }
- 
- 
-     &--medium {
-         padding: $spacing--small 0;
- 
-         @include media('>tablet') {
-             padding: $spacing--medium 0;
-         }
-     
-         @include media('>desktop') {
-             padding: $spacing--large 0;
-         }
- 
-     } 
- 
- 
-     &--small {
- 
-         padding: $spacing--tiny 0;
- 
-         @include media('>tablet') {
-             padding: $spacing--small 0;
-         }
-     
-         @include media('>desktop') {
-             padding: $spacing--medium 0;
-         }
- 
-     } 
- 
- 
- 
- }
+    @include media(">tablet") {
+      padding: $spacing--small 0;
+    }
+
+    @include media(">desktop") {
+      padding: $spacing--medium 0;
+    }
+  }
+}

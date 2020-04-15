@@ -1,0 +1,58 @@
+.c-recommendations {
+  $grey: darken($white, 30%);
+
+  color: white;
+
+  &__title {
+    @include set-font-size(2.8rem, 2.8rem, 2.8rem, 3rem);
+    font-family: font-family(nt-primary, regular);
+    @include media(">tablet") {
+      padding: 0 $spacing--small;
+    }
+  }
+
+  &__sub-title {
+    margin-bottom: $spacing--large;
+    color: $grey;
+
+    @include media(">tablet") {
+      padding: 0 $spacing--small;
+    }
+  }
+
+  &__content-block {
+    @include media(">tablet") {
+      lost-flex-container: row;
+    }
+  }
+
+  &__column {
+    width: 100%;
+    //tablet
+    @include media(">tablet") {
+      padding: 0 $spacing--small;
+      lost-column: 6/12;
+    }
+
+    iframe {
+      width: 100%;
+    }
+
+    p {
+      margin-bottom: $spacing--small;
+
+      &:nth-last-of-type(1) {
+        margin-bottom: $spacing--small;
+      }
+      color: $grey;
+    }
+    strong {
+      color: white;
+    }
+
+    a {
+      color: currentColor;
+      text-decoration: underline;
+    }
+  }
+}

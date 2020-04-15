@@ -311,6 +311,33 @@ if($footerParallaxImage) : ?>
 <?php endif; ?>
 
 <?php 
+	/**
+	 * Artist recommendations
+	 */
+	$recommendations = get_field('artist_recommendations'); 
+	$recommendationsTitle = $recommendations[artist_recommendations_title];
+	$recommendationsSubtitle = $recommendations[artist_recommendations_subtitle];
+	$recommendationsContent = $recommendations[artist_recommendations_content];
+	$recommendationsSpotify = $recommendations[artist_recommendations_spotify];
+?>
+<?php if( $recommendationsTitle ) : ?>
+	<section class="u-section background-color--dark">
+			<div class="u-l-container u-l-container--center">
+				<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--bottom">
+					<div class="c-recommendations">
+						<h3 class="c-recommendations__title"><?= $recommendationsTitle ?></h3>
+						<div class="c-recommendations__sub-title"><?= $recommendationsSubtitle ?></div>
+						<div class="c-recommendations__content-block">
+							<div class="c-recommendations__column"><?= $recommendationsContent ?></div>
+							<div class="c-recommendations__column"><?= $recommendationsSpotify ?></div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+<?php endif; ?>
+
+<?php 
 /**
  * Footer content
  */

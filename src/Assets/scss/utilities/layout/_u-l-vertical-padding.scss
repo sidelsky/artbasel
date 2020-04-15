@@ -3,45 +3,44 @@
  */
 
 .u-l-vertical-padding {
-    padding-top: $spacing--large;
-    padding-bottom: $spacing--large;
+  padding-top: $spacing--large;
+  padding-bottom: $spacing--large;
+
+  @include breakpoint($medium) {
+    padding-top: $spacing--jumbo;
+    padding-bottom: $spacing--jumbo;
+  }
+
+  //Small
+  &--small {
+    padding-top: $spacing--medium;
+    padding-bottom: $spacing--medium;
 
     @include breakpoint($medium) {
-        padding-top: $spacing--jumbo;
-        padding-bottom: $spacing--jumbo;
+      padding-top: $spacing--large;
+      padding-bottom: $spacing--large;
     }
+  }
 
-    //Small
-    &--small {
-        padding-top: $spacing--medium;
-        padding-bottom: $spacing--medium;
+  //Small
+  &--tiny {
+    padding-top: $spacing--tiny;
+    padding-bottom: $spacing--tiny;
 
-        @include breakpoint($medium) {
-            padding-top: $spacing--large;
-            padding-bottom: $spacing--large;
-        }
+    @include breakpoint($medium) {
+      padding-top: $spacing--small;
+      padding-bottom: $spacing--small;
     }
+  }
 
-        //Small
-        &--tiny {
-            padding-top: $spacing--tiny;
-            padding-bottom: $spacing--tiny;
-    
-            @include breakpoint($medium) {
-                padding-top: $spacing--small;
-                padding-bottom: $spacing--small;
-            }
-        }
+  //Small
+  &--bottom {
+    padding-top: $spacing--medium;
+    padding-bottom: $spacing--medium;
 
-
-        //Small
-        &--bottom {
-            padding-top: $spacing--medium;
-            padding-bottom: $spacing--medium;
-    
-            @include breakpoint($medium) {
-                padding-top: $spacing--large-xxx;
-                padding-bottom: $spacing--large-xxx;
-            }
-        }
+    @include breakpoint($medium) {
+      padding-top: $spacing--large-xxx;
+      padding-bottom: $spacing--large-xxx;
+    }
+  }
 }
