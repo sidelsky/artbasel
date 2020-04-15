@@ -312,8 +312,8 @@ const isTemplatePage = element.classList.contains(
   "page-template-page-viewing-room"
 );
 
-if (isTemplatePage) {
-  window.onresize = function() {
-    location.reload();
-  };
-}
+$(document).ready(function() {
+  jQuery(window)
+    .trigger("resize")
+    .trigger("scroll");
+});
