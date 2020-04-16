@@ -166,6 +166,9 @@ if($hero_text_content) :?>
  * Hero Content Fifty Fifty
  */
 $fiftyFifty = get_field('fifty_fifty');
+
+echo $fiftyFifty['fifty_fifty_kuula'];
+
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) :?>
 	<section class="l-content">
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
