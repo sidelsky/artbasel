@@ -452,5 +452,6 @@ $(window).on("resize", function(e) {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(function() {
     $(".parallax-window").parallax("refresh");
+    console.log("Refresh");
   }, 250);
 });
