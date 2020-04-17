@@ -3,8 +3,6 @@
 namespace App\Acf;
 
 /**
- * @author Rob Waller <rdwaller1984@googlemail.com>
- *
  * A class to translate the WordPress Starter Repo config into Advanced Custom
  * Fields field groups. Also makes ACF unaccessible from WordPress Admin area.
  * The reason for this is that ACF is a config based plugin and the config setup

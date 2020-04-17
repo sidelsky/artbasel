@@ -3,8 +3,6 @@
 namespace App\Exception;
 
 /**
- * @author Rob Waller <rdwaller1984@googlemail.com>
- *
  * Exception class for Advanced Custom Fields. Makes it more obvious what the
  * exception related to
  */

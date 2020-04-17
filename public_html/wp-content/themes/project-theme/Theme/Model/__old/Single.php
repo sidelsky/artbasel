@@ -5,8 +5,6 @@ use App\WordPress\WordPress;
 
 /**
  * Fetch data for a single Wordpress Item
- *
- * @author Chris Boakes <chris@chrisboakes.com>
  */
 class Single
 {

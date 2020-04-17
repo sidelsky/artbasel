@@ -4,7 +4,6 @@ namespace App\Helper;
 use App\WordPress\WordPress;
 
 /**
- * @author Chris Boakes <chris@chrisboakes.com>
  * @version v1.0.1
  *
  * Enqueue Javascript and CSS

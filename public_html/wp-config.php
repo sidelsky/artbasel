@@ -21,13 +21,11 @@ define('WP_AUTO_UPDATE_CORE', false);// This setting is required to make sure th
  */
 
 /**
- * @author Rob Waller <rdwaller1984@gmail.com>
  * Include vendor autoloader
  */
 require_once(__DIR__ . '/../vendor/autoload.php');
 
 /**
- * @author Rob Waller <rdwaller1984@googlemail.com>
  * Initiate the DotEnv functionality for WordPress and define required variables.s
  */
 try {

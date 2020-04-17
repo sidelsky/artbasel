@@ -5,7 +5,6 @@ use App\WordPress\WordPress;
 use App\WordPress\Acf;
 
 /**
- * @author Chris Boakes <chris@chrisboakes.com>
  * @version v1.0.1
  *
  * Any project specific configuration is placed here

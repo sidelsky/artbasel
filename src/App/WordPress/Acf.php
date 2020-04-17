@@ -3,8 +3,6 @@
 namespace App\WordPress;
 
 /**
- * @author Rob Waller <rdwaller1984@googlemail.com>
- *
  * Provides an interface for WordPress Advanced Custom Fields methods
 **/
 trait Acf

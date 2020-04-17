@@ -4,7 +4,6 @@ namespace App\Helper;
 use App\WordPress\WordPress;
 
 /**
- * @author Milad Alizadeh <hello@mili.london>
  * @version v1
  *
  * Render function

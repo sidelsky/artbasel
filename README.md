@@ -53,8 +53,8 @@ Once Yarn has installed all the required dependencies you can build your JavaScr
 yarn run dev
 ```
 
-
 yarn watch
+
 ```
 
 ## Theme
@@ -64,8 +64,4 @@ The WordPress starter project comes with a pre-built base theme stored in the `.
 This theme is turned on by default in the `wp-config.php` file. See the constant `WP_DEFAULT_THEME`.
 
 We have tightly coupled the theme to the project so that JavaScript and SASS files can be built at the root level as this makes site deployments far easier.
-
-## Authors
-
-- Rob Waller [@RobDWaller](https://twitter.com/RobDWaller)
-- Chris Boakes [GitHub](https://github.com/chrisboakes)
+```

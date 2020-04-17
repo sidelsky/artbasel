@@ -9,8 +9,6 @@ use \WP_Query;
 
 /**
  * Fetch and parse Wordpress posts (or custom post types) for preview data of the full post
- *
- * @author Chris Boakes <chris@chrisboakes.com>
  */
 class Previews
 {
