@@ -1,16 +1,15 @@
 .c-header {
-    background-color: $dark;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    //height: 20vh;
-    height: 70px;
+  align-items: center;
+  background-color: $dark;
+  display: flex;
+  height: 70px;
+  justify-content: center;
 
-    //Icon
-    &__icon {
-        fill: $white;
-        flex: 1;
-        width: 185px;
-        height: 15px;
-    }
+  //Icon
+  &__icon {
+    fill: $white;
+    flex: 1;
+    width: 185px;
+    height: 15px;
+  }
 }

@@ -1,72 +1,67 @@
 .c-button {
-    color: $dark;
-    padding: 16px 25px;
+  @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
+  border-radius: 4px;
+  border: solid 1px #d2d2d2;
+  color: $dark;
+  cursor: pointer;
+  display: block;
+  font-family: font-family(nt-primary, medium);
+  margin: 0 0 $spacing--small;
+  max-width: 260px;
+  padding: 16px 25px;
+  text-align: center;
+  user-select: none;
+  width: 100%;
+
+  @include media(">tablet") {
     display: block;
-    border: solid 1px #d2d2d2;
-    @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
-    font-family: font-family(nt-primary, medium);
-    cursor: pointer; 
-    user-select: none;
-    border-radius: 4px;
-    text-align: center;
-    width: 100%;
-    max-width: 260px;
-    margin: 0 0 $spacing--small;
+    margin: 0 auto $spacing--small;
+  }
 
-    @include media('>tablet') {
-        display: block;
-        margin: 0 auto $spacing--small;
+  &--dark {
+    background-color: #222222;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      color: $dark;
+      background-color: #d2d2d2;
     }
+  }
 
- 
-    &--dark {
-        background-color: #222222;
-        color: white;
-        &:hover {
-            cursor: pointer;
-            color: $dark;
-            background-color: #d2d2d2;
-        }
+  &--light {
+    background-color: white;
+    color: #222222;
+    margin-bottom: $spacing--tiny;
+    &:hover {
+      cursor: pointer;
+      background-color: #d2d2d2;
+      border: solid 1px #d2d2d2;
     }
-
-    &--light {
-        color: #222222;
-        background-color: white;
-        margin-bottom: $spacing--tiny;
-        &:hover {
-            cursor: pointer;
-            background-color: #d2d2d2;
-            border: solid 1px #d2d2d2;
-        }
-    }
-    
-
+  }
 }
 
 button:disabled,
-button[disabled]{
+button[disabled] {
+  color: #adadad;
+  cursor: default !important;
+
+  &:hover {
     color: #adadad;
-    cursor: default !important;
-
-    &:hover {
-        color: #adadad;
-        background-color: white;
-    }
-
+    background-color: white;
+  }
 }
 
 .single-works {
-    button:disabled,
-    button[disabled]{
-        $color: #696969;
-        color: $color;
-        border: solid 1px $color;
-        cursor: default !important;
+  button:disabled,
+  button[disabled] {
+    $color: #696969;
+    color: $color;
+    border: solid 1px $color;
+    cursor: default !important;
 
-        &:hover {
-            color: $color;
-            background-color: transparent;
-        }
-
+    &:hover {
+      color: $color;
+      background-color: transparent;
     }
+  }
 }
