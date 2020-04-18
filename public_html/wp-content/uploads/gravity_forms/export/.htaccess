@@ -1,8 +1,0 @@
-
-# BEGIN Gravity Forms
-# The directives (lines) between `BEGIN Gravity Forms` and `END Gravity Forms` are
-# dynamically generated, and should only be modified via WordPress filters.
-# Any changes to the directives between these markers will be overwritten.
-# Disable access to files via Apache web servers.
-deny from all
-# END Gravity Forms
