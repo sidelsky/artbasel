@@ -25,7 +25,7 @@
 /public/wp-content/uploads/*
 /public/wp-content/debug.log
 /public/wp-content/languages/
-public_html/wp-content/uploads/*
+public_html/wp-content/uploads/gravity_forms/*
 !/public/wp-content/uploads/.gitkeep
 /public/hot
 .env
