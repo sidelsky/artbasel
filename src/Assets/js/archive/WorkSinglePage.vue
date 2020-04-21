@@ -70,7 +70,7 @@
               <span class="c-sale-marker__copy" v-html="formattedSold"></span>
             </div>
 
-            <span v-bind:hidden="work.hidePurchaseButton ? true : false">
+            <span v-if="work.hidePurchaseButton">
               <button
                 v-if="work.sold === 'sold' || work.sold === 'hold' "
                 id="purchaseBtn_0"
@@ -87,17 +87,18 @@
             </span>
 
             <button
+              v-if="work.showInquireToLearnMoreButton"
               id="inquireBtn_0"
               data-id="inquireBtn"
               class="c-button c-button--light"
             >Inquire to learn more</button>
 
             <button
-              v-if="work.isEdition === true"
+              v-if="work.isEdition"
               id="editionBtn_0"
               data-id="editionBtn"
               class="c-button c-button--light"
-            >Purchase an Edition</button>
+            >Submit Interest</button>
 
             <span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
               <svg class="u-icon c-works__icon c-works__icon--back">

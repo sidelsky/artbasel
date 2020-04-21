@@ -22,7 +22,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'sold' => get_field('sold'),
       'video' => get_field('video'),
       'ids'  => get_field('code_id'),
-      'isEdition'  => get_field('is_edition'),
+		'isEdition'  => get_field('is_edition'),
+		'showInquireToLearnMoreButton'  => get_field('show_inquire_to_learn_more_button'),
       'hidePurchaseButton' => get_field('hide_purchase_button')
     ];
     $gallery = get_field('image_gallery');
