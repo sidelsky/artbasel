@@ -31,7 +31,6 @@ public_html/wp-content/uploads/gravity_forms/*
 .env
 mix.*.js
 mix.js
-mix-manifest.json
 !.env.example
 /coverage
 .vagrant
