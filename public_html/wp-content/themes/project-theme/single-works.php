@@ -22,6 +22,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'sold' => get_field('sold'),
       'video' => get_field('video'),
       'ids'  => get_field('code_id'),
+      'isEdition'  => get_field('is_edition'),
       'hidePurchaseButton' => get_field('hide_purchase_button')
     ];
     $gallery = get_field('image_gallery');
@@ -60,6 +61,20 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				echo '<span class="close closei">&times;</span>';
 				echo do_shortcode('[gravityform id="7" title="false" description="false" ajax="true" field_values="form_msg=I am interested in learning more about ' . $work["fullName"] .', ' . $work["title"] . '. \nPlease send me further details about this artwork, pricing, and availability.&id_code=' . $work["ids"] . '"]');
 				echo '<small> *By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s afiliated companies.</small>';
+				echo '</div>';
+		echo '</div>';
+  ?>
+  
+  <?php
+	/**
+	 * Inquire modal
+	 */
+		echo '<div id="editionModal_0" class="modal">';
+			echo '<div class="modal-content">';
+				echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
+				echo '<span class="close closei">&times;</span>';
+				echo do_shortcode('[gravityform id="9" title="false" description="false" ajax="true"]');
+				//echo '<small> *By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s afiliated companies.</small>';
 				echo '</div>';
 		echo '</div>';
 	?>

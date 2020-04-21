@@ -51,6 +51,11 @@
     border: 0;
     color: #1f1f1f;
     text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    height: 48px;
   }
 
   textarea {
@@ -119,9 +124,6 @@
   cursor: pointer;
 }
 
-.wechat__modal {
-}
-
 .wechat__content {
   background-color: #ffffff;
   margin: 10% auto; /* 15% from the top and centered */
@@ -143,4 +145,30 @@
 
 .ginput_recaptcha {
   margin-bottom: 20px;
+}
+
+.gfield_html_formatted {
+  margin-bottom: $spacing--small;
+}
+
+.address-details {
+  //padding-top: 5px;
+  .gfield_label {
+    display: block !important;
+    visibility: visible !important;
+    padding: $spacing--small 0 0;
+  }
+
+  [type="text"],
+  select {
+    margin: 10px 0 5px;
+  }
+}
+
+.captcha {
+  padding-top: $spacing--medium;
+}
+
+.gfield_required {
+  color: red;
 }

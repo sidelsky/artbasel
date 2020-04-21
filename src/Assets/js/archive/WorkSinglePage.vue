@@ -92,6 +92,12 @@
               class="c-button c-button--light"
             >Inquire to learn more</button>
 
+            <button
+              id="editionBtn_0"
+              data-id="editionBtn"
+              class="c-button c-button--light"
+            >Purchase an Edition</button>
+
             <span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
               <svg class="u-icon c-works__icon c-works__icon--back">
                 <use
