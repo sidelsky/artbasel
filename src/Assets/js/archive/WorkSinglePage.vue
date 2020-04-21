@@ -93,6 +93,7 @@
             >Inquire to learn more</button>
 
             <button
+              v-if="work.isEdition === true"
               id="editionBtn_0"
               data-id="editionBtn"
               class="c-button c-button--light"
