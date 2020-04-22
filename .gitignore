@@ -28,6 +28,7 @@
 public_html/wp-content/uploads/gravity_forms/*
 !/public/wp-content/uploads/.gitkeep
 /public/hot
+.htpasswd
 .env
 mix.*.js
 mix.js
@@ -45,3 +46,4 @@ Vagrantfile
 yarn-error.log
 composer.lock
 yarn.lock
+public_html/.htaccess
