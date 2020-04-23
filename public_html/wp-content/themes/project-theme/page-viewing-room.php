@@ -165,12 +165,31 @@ if($hero_text_content) :?>
 
 <?php
 /**
- * Hero Content Fifty Fifty
+ * Hero Content Fifty Fifty and Kuula VR
  */
 $fiftyFifty = get_field('fifty_fifty');
 
-echo $fiftyFifty['fifty_fifty_kuula'];
+$kuulaVr = $fiftyFifty['fifty_fifty_kuula'];
+$kuulaImage = $fiftyFifty['kuula_image']['sizes']['large'];
 
+?>
+
+<?php if( $kuulaImage && $kuulaVr ) : ?>
+	<section class="u-section">
+		<div class="c-kuula">
+			<button class="c-kuula__button" id="touchButton" onclick="touchFunction()">
+				<svg class="c-kuula__touch-icon">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-touch" viewBox="0 0 32 32"></use>
+				</svg>
+			</button>
+			<div class="c-kuula__image" style="background-image: url('<?= $kuulaImage ?>')" id="coverVR"></div>
+			<?= $kuulaVr ?>
+		</div>
+</section>
+<?php endif; ?>
+
+<?php 
+/** Image */
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) :?>
 	<section class="l-content">
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
@@ -179,8 +198,8 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
 			<article class="l-content__block l-content__block--dark-background">
 				<div class="canvas l-content__block--center">
-					<button class="c-video-player__button" onclick="playFunction()">
-						<svg class="c-video-player__play-icon" id="playButton">
+					<button class="c-video-player__button" onclick="playFunction()" id="playButton">
+						<svg class="c-video-player__play-icon">
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
 						</svg>
 					</button>
@@ -369,26 +388,41 @@ if( !empty($content) ):
 <?php if( $fiftyFifty['fifty_fifty_video'] ) : ?>
 	<script src="https://player.vimeo.com/api/player.js"></script>
 	<script>
-			var iframe = document.querySelector('iframe');
-			var player = new Vimeo.Player(iframe);
-			var playButton = document.querySelector('button');
-			var cover = document.getElementById('cover');
+		/** Video */
+		var iframe = document.querySelector('iframe');
+		var player = new Vimeo.Player(iframe);
+		var playButton = document.getElementById('playButton');
+		var cover = document.getElementById('cover');
 
-			function playFunction() {
-				player.play();
-			}
+		function playFunction() {
+			player.play();
+		}
 
-			player.on('play', function() {
-				cover.style.display = "none";
-				playButton.style.display = "none";
-			});
+		player.on('play', function() {
+			cover.style.display = "none";
+			playButton.style.display = "none";
+		});
 
-			player.on('pause', function() {
-				cover.style.display = "block";
-				playButton.style.display = "block";
-			});
-
+		player.on('pause', function() {
+			cover.style.display = "block";
+			playButton.style.display = "block";
+		});
 	</script>
 <?php endif; ?>
+
+<?php if( $kuulaImage && $kuulaVr ) : ?>
+	<script>
+		/** VR */
+		var touchButton = document.getElementById('touchButton');
+		var touchCover = document.getElementById('coverVR');
+
+		function touchFunction() {
+			console.log('click');
+			touchButton.style.display = "none";
+			touchCover.style.display = "none";
+		}
+	</script>
+<?php endif; ?>
+
 
 <?php include("footer.php"); ?>
