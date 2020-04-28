@@ -209,10 +209,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 		<?php endif; ?>
 
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
-			<article class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></article>
+			<figure class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></figure>
 		<?php endif; ?>
 		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
-			<article class="l-content__block l-content__block--dark-background">
+			<figure class="l-content__block l-content__block--dark-background">
 				<div class="canvas l-content__block--center">
 					<button class="c-video-player__button" onclick="playFunction()" id="playButton">
 						<svg class="c-video-player__play-icon">
@@ -224,7 +224,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 						<?= $fiftyFifty['fifty_fifty_video'] ?>
 					</div>
 				</div>
-			</article>
+			</figure>
 		<?php endif; ?>
 
 	</section>
