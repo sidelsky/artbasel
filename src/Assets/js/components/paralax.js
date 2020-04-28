@@ -442,16 +442,17 @@
 
   // Parallax Data-API
 
-  $(function() {
+  // $(function() {
+  // });
+
+  $(window).load(function() {
     $('[data-parallax="scroll"]').parallax();
   });
 })(jQuery, window, document);
 
-var resizeTimer;
 $(window).on("resize", function(e) {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(function() {
+  var resizeTimer = setTimeout(function() {
     $(".parallax-window").parallax("refresh");
-    console.log("Push test");
-  }, 250);
+  }, 1000);
 });
