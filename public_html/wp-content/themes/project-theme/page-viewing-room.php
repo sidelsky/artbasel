@@ -163,18 +163,15 @@ if($hero_text_content) :?>
 	</section>
 <?php endif; ?>
 
-<?php
+<?php 
 /**
  * Hero Content Fifty Fifty and Kuula VR
  */
 $fiftyFifty = get_field('fifty_fifty');
-
 $kuulaVr = $fiftyFifty['fifty_fifty_kuula'];
 $kuulaImage = $fiftyFifty['kuula_image']['sizes']['large'];
 
-?>
-
-<?php if( $kuulaImage && $kuulaVr ) : ?>
+if( $kuulaImage && $kuulaVr ) : ?>
 	<section class="u-section">
 		<div class="c-kuula">
 			<button class="c-kuula__button" id="touchButton" onclick="touchFunction()">
@@ -189,9 +186,28 @@ $kuulaImage = $fiftyFifty['kuula_image']['sizes']['large'];
 <?php endif; ?>
 
 <?php 
-/** Image */
-if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) :?>
+/** 
+ * Image /Video content
+ * */
+if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
 	<section class="l-content">
+
+		<?php
+		/**
+		 * Text content
+		 */
+		if( $fiftyFifty['fifty_fifty_title'] && $fiftyFifty['fifty_fifty_content'] ) :
+		?>
+			<article class="l-content__block l-content__block--dark-background">
+				<div class="canvas l-content__block--center l-content__block--text-content">
+					<div>
+						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
+						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
+					</div>
+				</div>
+			</article>
+		<?php endif; ?>
+
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
 			<article class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></article>
 		<?php endif; ?>
@@ -210,14 +226,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				</div>
 			</article>
 		<?php endif; ?>
-		<article class="l-content__block l-content__block--dark-background">
-			<div class="canvas l-content__block--center l-content__block--text-content">
-				<div>
-					<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
-					<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
-				</div>
-			</div>
-		</article>
+
 	</section>
 <?php endif; ?>
 

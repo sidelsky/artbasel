@@ -16,29 +16,46 @@
     background-size: cover;
     color: $dark;
     background-color: lighten(#212322, 82%);
-    @include aspect-ratio(1, 1.7);
+    @include aspect-ratio(1, 1);
 
     @include media(">tablet") {
-      @include aspect-ratio(1, 1.5);
-      width: 50%;
-    }
-
-    @include media(">desktop") {
       @include aspect-ratio(1, 1);
-      width: 50%;
+      lost-column: 6/12 no-flex;
     }
 
-    &--wide-image {
-      @include media(">desktop") {
-        @include aspect-ratio(1.5, 1);
-        width: 60%;
+    &--text-content {
+      &:nth-of-type(2n + 2) {
+        @include media(">tablet") {
+          lost-move: 6/12;
+        }
+      }
+    }
+
+    &--image-content {
+      &:nth-of-type(2n + 2) {
+        @include media(">tablet") {
+          lost-move: -6/12;
+        }
       }
     }
 
     &--wide-text {
-      @include media(">desktop") {
-        @include aspect-ratio(1.5, 1.5);
-        width: 40%;
+      @include media(">tablet") {
+        @include aspect-ratio(1, 1);
+        lost-column: 5/12 no-flex;
+        &:nth-of-type(2n + 2) {
+          lost-move: 7/12;
+        }
+      }
+    }
+
+    &--wide-image {
+      @include media(">tablet") {
+        @include aspect-ratio(1.4, 1);
+        lost-column: 7/12 no-flex;
+        &:nth-of-type(2n + 2) {
+          lost-move: -5/12;
+        }
       }
     }
 
@@ -70,7 +87,7 @@
     }
 
     &--text-content {
-      padding: $spacing--medium;
+      padding: $spacing--large;
 
       @include media(">tablet") {
         padding: $spacing--x-large;
