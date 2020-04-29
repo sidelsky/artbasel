@@ -11,8 +11,15 @@
   }
 
   &__wrapper {
-    margin-bottom: 20px;
+    padding-bottom: 30px;
+    max-width: 640px;
+    margin: 0 auto;
     @include media(">tablet") {
+      max-width: 100%;
+      padding-bottom: 0;
+    }
+
+    @include media(">desktop") {
       display: table;
       width: 100%;
       margin-bottom: 0px;
@@ -20,49 +27,55 @@
   }
 
   &__column {
-    @include media(">tablet") {
-      display: table-cell;
-      width: 40%;
-      vertical-align: middle;
+    .gform_wrapper {
+      input[type="text"] {
+        margin-bottom: 5px;
+      }
     }
 
-    //Form
-    .gform_body,
-    .gform_footer {
-      input[type="text"] {
-        @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
-      }
+    @include media(">desktop") {
+      display: table-cell;
+      width: 50%;
+      vertical-align: middle;
 
-      @include media(">tablet") {
-        input[type="text"] {
-          width: 100%;
-          margin-bottom: 5px;
-        }
+      .gform_wrapper {
+        display: table;
+        width: 100%;
 
-        input[type="submit"] {
-          display: inline-block;
-          width: 100%;
+        form {
+          lost-utility: clearfix;
+
+          .gform_body {
+            width: 66%;
+            float: left;
+            lost-utility: clearfix;
+
+            input[type="text"] {
+              width: 49%;
+              float: left;
+              margin-bottom: 0;
+              margin-right: 0.8%;
+            }
+          }
+
+          .gform_footer {
+            width: 33%;
+            float: left;
+          }
         }
       }
     }
 
     &:nth-of-type(1) {
-      @include set-font-size(1.6rem, 1.6rem, 1.8rem, 2.2rem);
+      @include set-font-size(2.2rem, 2.2rem, 2.2rem, 2.2rem);
       font-family: font-family(nt-primary, medium);
       line-height: 1.25;
       text-align: center;
       padding: $spacing--x-small;
 
-      @include media(">tablet") {
+      @include media(">desktop") {
         text-align: left;
-        width: 60%;
-        //padding: 0 $spacing--small 0 0;
-      }
-    }
-
-    &:nth-of-type(2) {
-      input {
-        margin: 0;
+        width: 50%;
       }
     }
   }
@@ -74,4 +87,16 @@
       display: none;
     }
   }
+}
+
+.gfield {
+  position: relative;
+  .validation_message {
+    position: absolute;
+    top: 50px;
+  }
+}
+
+#field_6_1 .validation_message {
+  display: none;
 }
