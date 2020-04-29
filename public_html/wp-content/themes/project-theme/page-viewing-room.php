@@ -212,7 +212,6 @@ if( $kuulaImage && $kuulaVr ) : ?>
  * */
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
 	<section class="l-content">
-
 		<?php
 		/**
 		 * Text content
@@ -232,6 +231,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
 			<figure class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></figure>
 		<?php endif; ?>
+		
 		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
 			<figure class="l-content__block l-content__block--dark-background">
 				<div class="canvas l-content__block--center">
@@ -240,7 +240,9 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
 						</svg>
 					</button>
+
 					<div class="c-video-player__cover-image" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')" data-id='cover'></div>	
+
 					<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
 						<?= $fiftyFifty['fifty_fifty_video'] ?>
 					</div>

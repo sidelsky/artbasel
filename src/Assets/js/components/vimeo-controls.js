@@ -7,10 +7,10 @@ const playButtonsLength = playButtons.length;
 const coversLength = covers.length;
 
 for (let index = 0; index < iframesLength; index++) {
-  const iframe = iframes[index];
-  const playButton = playButtons[index];
-  const cover = covers[index];
-  const player = new Vimeo.Player(iframe);
+  let iframe = iframes[index];
+  let playButton = playButtons[index];
+  let cover = covers[index];
+  let player = new Vimeo.Player(iframe);
 
   playButton.addEventListener("click", () => {
     cover.style.display = "none";

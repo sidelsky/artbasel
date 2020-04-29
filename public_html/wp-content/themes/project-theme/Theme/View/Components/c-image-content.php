@@ -9,9 +9,12 @@
          </button>
       <?php endif; ?>
 
-      <div class="c-video-player__cover-image" style="background-image: url('<?= $data['image_content'] ?>')" data-id='cover'></div>	
-      
+      <?php if( !$data['video_content']) : ?>
+         <div class="c-video-player__cover-image" style="background-image: url('<?= $data['image_content'] ?>')"></div>	
+      <?php endif; ?>
+
       <?php if( $data['video_content']) : ?>
+         <div class="c-video-player__cover-image" style="background-image: url('<?= $data['image_content'] ?>')" data-id='cover'></div>	
          <div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
             <?= $data['video_content'] ?>
          </div>
