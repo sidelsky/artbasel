@@ -210,11 +210,6 @@ if( $kuulaImage && $kuulaVr ) : ?>
 /** 
  * Image /Video content
  * */
-?>
-<?php 
-/** 
- * Image /Video content
- * */
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
 	<section class="l-content">
 
