@@ -189,46 +189,7 @@ if( $kuulaImage && $kuulaVr ) : ?>
 /** 
  * Image /Video content
  * */
-if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
-	<section class="l-content">
-
-		<?php
-		/**
-		 * Text content
-		 */
-		if( $fiftyFifty['fifty_fifty_title'] && $fiftyFifty['fifty_fifty_content'] ) :
-		?>
-			<article class="l-content__block l-content__block--dark-background">
-				<div class="canvas l-content__block--center l-content__block--text-content">
-					<div>
-						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
-						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
-					</div>
-				</div>
-			</article>
-		<?php endif; ?>
-
-		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
-			<figure class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></figure>
-		<?php endif; ?>
-		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
-			<figure class="l-content__block l-content__block--dark-background">
-				<div class="canvas l-content__block--center">
-					<button class="c-video-player__button" onclick="playFunction()" id="playButton">
-						<svg class="c-video-player__play-icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
-						</svg>
-					</button>
-					<div class="c-video-player__cover-image" id="cover" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></div>	
-					<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
-						<?= $fiftyFifty['fifty_fifty_video'] ?>
-					</div>
-				</div>
-			</figure>
-		<?php endif; ?>
-
-	</section>
-<?php endif; ?>
+?>
 
 <?php
 /**
@@ -238,9 +199,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 ?>
 	<section class="l-content" id="top">
 		<?php
-		foreach($allLayouts as $value) {
+		foreach($allLayouts as $index => $value) {
 
-				$templateName;
+				//$templateName;
+				//print_r($index)
 				
 				switch ($value['layoutName']) {
 					
@@ -260,8 +222,9 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 					break;
 				
 			}
-				$renderContent = $render->view('Components/' . $templateName, $value);
+				$renderContent = $render->view('Components/' . $templateName, $value, $index);
 				echo $renderContent;
+				//var_dump($renderContent);
 		}
 
 	?>
@@ -392,31 +355,6 @@ if( !empty($content) ):
 			</div>
 		</div>
 	</section>
-<?php endif; ?>
-
-<?php if( $fiftyFifty['fifty_fifty_video'] ) : ?>
-	<script src="https://player.vimeo.com/api/player.js"></script>
-	<script>
-		/** Video */
-		var iframe = document.querySelector('iframe');
-		var player = new Vimeo.Player(iframe);
-		var playButton = document.getElementById('playButton');
-		var cover = document.getElementById('cover');
-
-		function playFunction() {
-			player.play();
-		}
-
-		player.on('play', function() {
-			cover.style.display = "none";
-			playButton.style.display = "none";
-		});
-
-		player.on('pause', function() {
-			cover.style.display = "block";
-			playButton.style.display = "block";
-		});
-	</script>
 <?php endif; ?>
 
 <?php if( $kuulaImage && $kuulaVr ) : ?>

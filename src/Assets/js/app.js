@@ -9,3 +9,4 @@ import "./components/owl-home-hero-api";
 import "./components/hero-paralax";
 import "./components/form-modal";
 import "./components/we-chat-modal";
+import "./components/vimeo-controls";

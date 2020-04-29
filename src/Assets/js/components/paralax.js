@@ -440,11 +440,6 @@
     return this;
   };
 
-  // Parallax Data-API
-
-  // $(function() {
-  // });
-
   $(window).load(function() {
     $('[data-parallax="scroll"]').parallax();
   });

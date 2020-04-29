@@ -11,11 +11,13 @@ class ImageContent {
    }
 
    public function getImageContent() {
-       $image_content = $this->layout['image_content']['url'];
+       $imageContent = $this->layout['image_content']['url'];
+       $videoContent = $this->layout['video_content'];
 
 	return [
 		'layoutName' => 'image_content',
-      'image_content' => $image_content
+      'image_content' => $imageContent,
+      'video_content' => $videoContent
 	];
    }
 }
