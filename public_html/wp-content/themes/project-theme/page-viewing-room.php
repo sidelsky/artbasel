@@ -107,58 +107,79 @@ if( get_field('show_artist_inquiry_email') == "top") {
 /**
  * Hero Content carousel
  */
-$hero_text_content = get_field('mini_carousel_text'); 
-if($hero_text_content) :?>
+$miniCarouselText = get_field('mini_carousel_text'); 
+$hideMiniCarousel = get_field('hide_mini_carousel');
+$miniCarouselContent = get_field('mini_carousel_content');
+if($miniCarouselText) :?>
 	<section class="u-section c-hero-carousel">
-		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
-			<blockquote class="c-hero-carousel--inner-container">
-				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?php echo $hero_text_content ?></h3>
-			</blockquote>
+
+	<?php if($hideMiniCarousel) : ?>
+		<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--carousel-text-only">
+			<article class="c-hero-carousel--inner-container">
+				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel" style="margin-bottom: 20px"><?= $miniCarouselText ?></h3>
+				<?php if($miniCarouselContent) : ?>
+					<div><?= $miniCarouselContent ?></div>
+				<?php endif; ?>
+			</article>
 		</div>
-		<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
-			<div class="c-hero-carousel--inner-container">
-			
-			<div class="pre-loader">
-				<div class="lds-dual-ring"></div>
-				<div class="pre-loader__text">Loading carousel...</div>
-			</div>
-
-				<div class="owl-carousel owl-carousel-home owl-theme">
-					<?php
-						/**
-						 * Get Works content for mini carousel
-						 */
-						foreach($artwork as $index => $art):
-						?>
-						<article class="c-works__hero-card">
-							<figure class="c-works__hero-figure">
-								<a href="<?= $art['link']; ?>">
-									<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
-								</a>
-							</figure> 
-							<div class="c-works__hero-credit-line"><?= $art['creditLine']; ?></div>
-							
-							<?php if( $art['sold'] == 'sold' ) {
-								$availabilityMarker = 'c-sale-marker--sold';
-								$availabilityTitle = 'Sold';
-							} elseif( $art['sold'] == 'hold' ) {
-								$availabilityMarker = 'c-sale-marker--hold';
-								$availabilityTitle = 'Hold';
-							} else {
-								$availabilityMarker = 'c-sale-marker--available';
-								$availabilityTitle = 'Available';
-							} ?>
-
-						<?php if( $art['sold'] == !NULL ) : ?>	
-							<div class="c-works__availability c-works__availability__hero">
-								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-							</div>
-						<?php endif; ?>
-							
-						</article>
-					<?php endforeach; ?>
+	<?php endif; ?>
+		
+	<?php if(!$hideMiniCarousel) : ?>
+		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
+			<article class="c-hero-carousel--inner-container">
+				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel" style="margin-bottom: 20px"><?= $miniCarouselText ?></h3>
+				<?php if($miniCarouselContent) : ?>
+					<div><?= $miniCarouselContent ?></div>
+				<?php endif; ?>
+			</article>
+		</div>
+		
+			<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
+				<div class="c-hero-carousel--inner-container">
+				
+				<div class="pre-loader">
+					<div class="lds-dual-ring"></div>
+					<div class="pre-loader__text">Loading carousel...</div>
 				</div>
-			</div>
+
+					<div class="owl-carousel owl-carousel-home owl-theme">
+						<?php
+							/**
+							 * Get Works content for mini carousel
+							 */
+							foreach($artwork as $index => $art):
+							?>
+							<article class="c-works__hero-card">
+								<figure class="c-works__hero-figure">
+									<a href="<?= $art['link']; ?>">
+										<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
+									</a>
+								</figure> 
+								<div class="c-works__hero-credit-line"><?= $art['creditLine']; ?></div>
+								
+								<?php if( $art['sold'] == 'sold' ) {
+									$availabilityMarker = 'c-sale-marker--sold';
+									$availabilityTitle = 'Sold';
+								} elseif( $art['sold'] == 'hold' ) {
+									$availabilityMarker = 'c-sale-marker--hold';
+									$availabilityTitle = 'Hold';
+								} else {
+									$availabilityMarker = 'c-sale-marker--available';
+									$availabilityTitle = 'Available';
+								} ?>
+
+							<?php if( $art['sold'] == !NULL ) : ?>	
+								<div class="c-works__availability c-works__availability__hero">
+									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
+								</div>
+							<?php endif; ?>
+								
+							</article>
+						<?php endforeach; ?>
+					</div>
+				</div>
+			<?php endif; ?>
+
 		</div>
 	</section>
 <?php endif; ?>
@@ -190,6 +211,51 @@ if( $kuulaImage && $kuulaVr ) : ?>
  * Image /Video content
  * */
 ?>
+<?php 
+/** 
+ * Image /Video content
+ * */
+if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
+	<section class="l-content">
+
+		<?php
+		/**
+		 * Text content
+		 */
+		if( $fiftyFifty['fifty_fifty_title'] && $fiftyFifty['fifty_fifty_content'] ) :
+		?>
+			<article class="l-content__block l-content__block--dark-background">
+				<div class="canvas l-content__block--center l-content__block--text-content">
+					<div>
+						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
+						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
+					</div>
+				</div>
+			</article>
+		<?php endif; ?>
+
+		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
+			<figure class="l-content__block" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></figure>
+		<?php endif; ?>
+		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
+			<figure class="l-content__block l-content__block--dark-background">
+				<div class="canvas l-content__block--center">
+					<button class="c-video-player__button" data-id='playBtn'>
+						<svg class="c-video-player__play-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
+						</svg>
+					</button>
+					<div class="c-video-player__cover-image" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')" data-id='cover'></div>	
+					<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
+						<?= $fiftyFifty['fifty_fifty_video'] ?>
+					</div>
+				</div>
+			</figure>
+		<?php endif; ?>
+
+	</section>
+<?php endif; ?>
+
 
 <?php
 /**
