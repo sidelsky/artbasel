@@ -3,27 +3,41 @@
  */
 
 .u-video-aspect-ratio {
-    position: relative;
-    
-    &--half-width {
-        width: 50%;
-    }
+  position: relative;
 
-    &--full-width {
-        width: 100%;
-    }
+  &--half-width {
+    width: 50%;
+  }
 
+  &--full-width {
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  &--portrait {
+    width: 100%;
     &::before {
-        content: '';
-        display: block;
-        padding-top: 56.25%;
+      content: "";
+      display: block;
+      padding-top: 170%;
     }
- 
-    iframe {
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 100%;
+    @include media(">tablet") {
+      &::before {
+        padding-top: 71.45%;
+      }
     }
+  }
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 }

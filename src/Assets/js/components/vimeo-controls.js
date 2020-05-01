@@ -20,8 +20,8 @@ if (playButtonsLength) {
     });
 
     player.on("pause", function() {
-      cover.style.display = "block";
-      playButton.style.display = "block";
+      //cover.style.display = "block";
+      //playButton.style.display = "block";
     });
   }
 }
