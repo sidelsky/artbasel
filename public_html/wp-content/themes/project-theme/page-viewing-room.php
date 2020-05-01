@@ -186,7 +186,7 @@ if($miniCarouselText) :?>
 
 <?php 
 /**
- * Hero Content Fifty Fifty and Kuula VR
+ * Hero ContentKuula VR
  */
 $fiftyFifty = get_field('fifty_fifty');
 $kuulaVr = $fiftyFifty['fifty_fifty_kuula'];
@@ -218,7 +218,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 		 */
 		if( $fiftyFifty['fifty_fifty_title'] && $fiftyFifty['fifty_fifty_content'] ) :
 		?>
-			<article class="l-content__block l-content__block--dark-background">
+			<article class="l-content__block l-content__block--text-content l-content__block--dark-background">
 				<div class="canvas l-content__block--center l-content__block--text-content">
 					<div>
 						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
