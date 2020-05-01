@@ -67,11 +67,14 @@
       }
 
       @include media(">tablet") {
-        padding: $spacing--x-large;
+        padding: $spacing--large;
       }
 
       @include media(">desktop") {
-        padding: $spacing--jumbo;
+        padding: $spacing--large-x;
+      }
+      @include media(">desktop-large") {
+        padding: $spacing--large-xxxxx;
       }
     }
 
