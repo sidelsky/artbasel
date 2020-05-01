@@ -46,8 +46,8 @@
 
   //Small
   &--carousel-text-only {
-    padding-top: $spacing--medium;
-    padding-bottom: $spacing--medium;
+    padding-top: $spacing--large-xx;
+    padding-bottom: $spacing--large;
 
     @include breakpoint($medium) {
       padding-top: $spacing--large-xxx;

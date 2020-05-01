@@ -56,7 +56,15 @@
     }
 
     &--text-content {
-      padding: $spacing--large;
+      @include media("<tablet") {
+        padding: $spacing--medium $spacing--x-small $spacing--small;
+        &:before {
+          padding-top: 0 !important;
+        }
+        .canvas {
+          position: relative;
+        }
+      }
 
       @include media(">tablet") {
         padding: $spacing--x-large;
