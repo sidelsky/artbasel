@@ -81,11 +81,8 @@ if($hero) : ?>
 				<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?= $hero['title'] ?></h1>
 				<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $hero['subtitle'] ?></h2>
 					<?php if( get_field('view_all_works_link') ) : ?>
-					<span class="c-works__href-wrap c-works__href-wrap--center">
+					<span class="c-works__href-wrap c-works__href-wrap--no-arrow c-works__href-wrap--center">
 						<a href="#top" class="c-works__href">View all works</a>
-						<svg class="u-icon c-works__icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
-						</svg>
 					</span>
 					<?php endif; ?>
 			</div>

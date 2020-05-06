@@ -1,55 +1,89 @@
 .c-viewing-rooms-header {
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-    &--one-column {
-        
+  // display: flex;
+  // align-items: flex-start;
+  // flex-wrap: wrap;
+
+  &--one-column {
+  }
+
+  &--two-column {
+    height: auto;
+    position: relative;
+    @include aspect-ratio(1, 1.1);
+
+    @include media(">tablet") {
+      width: 50%;
     }
-    
-    &--two-column {
-        //@include max-width(800px);
-        height: auto;
-        position: relative;
-        @include aspect-ratio(1, 1.1);
-        
-        @include media('>tablet') {
-            width: 50%;
-        }
 
-        &:nth-of-type(1) {
-            margin-right: 0;
-        }
-
-        &:nth-of-type(2) {
-            margin-left: 0;
-        }
-
-
-        .parallax-window__content--two-column {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: $spacing--large;
-
-            @include media('>desktop') {
-                padding: $spacing--jumbo;
-            }
-
-            .c-text-align-centre,
-            .c-site-headings--text-align-center,
-            .c-works__href-wrap--center {
-                text-align: left;
-                padding: 0;
-            }
-
-            .c-works__href-wrap--center {
-                display: inline-block;
-            }
-
-        }
-
+    &:nth-of-type(1) {
+      margin-right: 0;
     }
+
+    &:nth-of-type(2) {
+      margin-left: 0;
+    }
+
+    .parallax-window__content--two-column {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: $spacing--large;
+
+      @include media(">desktop") {
+        padding: $spacing--jumbo;
+      }
+
+      .c-text-align-centre,
+      .c-site-headings--text-align-center,
+      .c-works__href-wrap--center {
+        text-align: left;
+        padding: 0;
+        display: inline-block;
+      }
+    }
+  }
 }
 
+.owl-hero-carousel {
+  .owl-dots {
+    position: absolute;
+    bottom: 10px;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
 
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+
+      span {
+        display: inline-block;
+        position: relative;
+        $dimensions: 13px;
+        width: $dimensions;
+        height: $dimensions;
+        margin: $spacing--tiny;
+        background: transparent;
+        border-radius: 50px;
+        display: block;
+        border: solid 3px $white;
+        -webkit-backface-visibility: visible;
+        transition: opacity 200ms ease;
+      }
+
+      &.active,
+      &:hover {
+        span {
+          $dimensions: 13px;
+          width: $dimensions;
+          height: $dimensions;
+          background: $white;
+          border: solid 5px transparent;
+        }
+      }
+    }
+  }
+}

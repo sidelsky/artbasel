@@ -7,18 +7,18 @@ class ViewingRoom {
 	
     public function __construct()
     {   
-        $post_id_devs = 2794;
-        $post_id_prods = 3058;
+        // $post_id_devs = 2794;
+        // $post_id_prods = 3058;
     
-        $localhost = 'artbasilvip:8888';
+        // $localhost = 'artbasilvip:8888';
     
-        if ($_SERVER['HTTP_HOST'] == $localhost) {
-            $post_ids = $post_id_devs;
-        } else {
-            $post_ids = $post_id_prods;
-        }  
+        // if ($_SERVER['HTTP_HOST'] == $localhost) {
+        //     $post_ids = $post_id_devs;
+        // } else {
+        //     $post_ids = $post_id_prods;
+        // }  
 
-		$this->viewingRoomDetails = get_field('current_viewing_rooms', $post_ids);
+		$this->viewingRoomDetails = get_field('current_viewing_rooms');
 	}
 	
 	private function optimisedViewingRoom($viewingRoomDetails) {
