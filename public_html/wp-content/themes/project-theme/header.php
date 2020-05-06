@@ -38,6 +38,7 @@ $wordpress = new WordpressHelper;
 		<?php wp_head(); ?>
 		<!-- VPS Server -->
 	</head>
+
 	<?php 
 		if( is_page('works-preview') ) {
 			$isHome = 'home';
@@ -69,12 +70,51 @@ $wordpress = new WordpressHelper;
 
 
 	<header class="c-header">
-		<a href="<?= $baseUrl ?>" class="c-header__link">
-			<svg class="c-header__icon">
-				<use xlink:href='#shape-hauserwirth-logo'></use>
-			</svg>
-		</a>
+		<div class="c-header__wrap">
+
+			<a href="<?= $baseUrl ?>" class="c-header__link">
+				<svg class="c-header__icon">
+					<use xlink:href='#shape-hauserwirth-logo'></use>
+				</svg>
+			</a>
+
+			<!-- START: Hamburger -->
+			<a class="c-hamburger js-hamburger">
+				<span class="c-hamburger__bar"></span>
+			</a>
+			<!-- END: Hamburger -->
+
+		</div>
+
+		<div class="l-site-header__nav">
+			<?php
+				$menu_args = [
+					'menu' => 'Primary navigation',
+					'container' => '',
+					'echo' => true,
+					'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
+				];
+				echo '<nav class="c-site-nav">';
+					wp_nav_menu($menu_args); 
+				echo '</nav>';
+			?>
+		</div>
 	</header>
+
+	<!-- Mobile Nav -->
+	<div class="c-mobile-navigation">
+		<?php
+			$menu_args = [
+				'menu' => 'Primary navigation',
+				'container' => '',
+				'echo' => true,
+				'items_wrap' => '<ul class="c-mobile-navigation__menu">%3$s</ul>'
+			];
+			echo '<nav>';
+				wp_nav_menu($menu_args); 
+			echo '</nav>';
+		?>
+	</div>
  
 	
 	<?php

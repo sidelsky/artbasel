@@ -1,81 +1,9 @@
-$height: 62px;
-
-.l-site-header-container {
-    z-index: 3;
-    line-height: 2.5;
-    transition: all ease-in-out 300ms;
-    position: relative;
-
-    @include media('>tablet') {
-        width: 100%;
-        position: fixed;
-        transform: translateZ(0);
-        top: 0;
-        margin-bottom: $height;
-    }
-    
-    @include media('<desktop') {
-        background-color: palette(primary, base);
-    }
-    
-    //White
-    &--white {
-        background-color: palette(primary, base);
-    }
+.body--menu-is-expanded {
+  position: fixed;
 }
 
-.l-site-header {
-    margin: 0;
-    overflow: hidden;
-    padding: $spacing--tiny 0;
-    
-    @include media('>phone') {
-        align-items: center;
-        lost-flex-container: row;
-    }
-
-    @include media('>desktop') {
-        padding: 0;
-    }
-
-    &__title {
-        //margin-bottom: 1rem;
-
-        @include media('>phone') {
-            lost-column: 1/4;
-            margin-bottom: 0;
-        }
-    }
-
-    &__nav {
-        margin-bottom: 1rem;
-
-        display: block;    
-    
-        @include media('<desktop') {
-            display: none;
-        }
-
-        @include media('>phone') {
-            lost-column: 3/4;
-            margin-bottom: 0;
-            text-align: right;
-        }
-    }
-
-    &__social {
-        @include media('>phone') {
-            lost-column: 1/4;
-        }
-    }
-}
-
-
-
-.page-template-default {
-    h1.c-site-headings--h1 {
-        text-align: center;
-        display: inline-block;
-        width: 100%;
-    }
+.l-site-header__nav {
+  @include media("<desktop") {
+    display: none;
+  }
 }

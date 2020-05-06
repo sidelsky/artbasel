@@ -1,15 +1,31 @@
 .c-header {
   align-items: center;
-  background-color: $dark;
-  display: flex;
-  height: 70px;
+  background-color: $white;
   justify-content: center;
+
+  &__wrap {
+    text-align: center;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px palette(greys, xx-light);
+  }
+
+  //Link
+  &__link {
+    display: inline-block;
+    width: 185px;
+    height: 16px;
+    margin-top: 5px;
+  }
 
   //Icon
   &__icon {
-    fill: $white;
+    fill: $dark;
     flex: 1;
     width: 185px;
     height: 15px;
+    margin: 0 auto;
   }
 }

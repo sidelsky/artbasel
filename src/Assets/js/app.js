@@ -10,3 +10,5 @@ import "./components/hero-paralax";
 import "./components/form-modal";
 import "./components/we-chat-modal";
 import "./components/vimeo-controls";
+import Hamburger from "./components/hamburger";
+new Hamburger();
