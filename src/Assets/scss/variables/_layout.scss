@@ -3,14 +3,13 @@
  */
 
 // Lost Grid Configuration
-@lost gutter 3rem;
-@lost flexbox flex;
-@lost rounder 99.9999;
-
-
-// @lost gutter 0px;
+// @lost gutter 3rem;
 // @lost flexbox flex;
-// @lost cycle none;
+// @lost rounder 99.9999;
+
+@lost gutter 0px;
+@lost flexbox flex;
+@lost cycle none;
 
 // Grid
 $max-width: 1200px;
@@ -25,5 +24,3 @@ $horizontal-padding-medium: 20px;
 
 // Containers
 $limit-width: $max-width + ($horizontal-padding-medium * 2);
-
-

@@ -424,7 +424,6 @@ if( !empty($content) ):
 		var touchCover = document.getElementById('coverVR');
 
 		function touchFunction() {
-			console.log('click');
 			touchButton.style.display = "none";
 			touchCover.style.display = "none";
 		}

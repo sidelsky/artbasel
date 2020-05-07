@@ -1,24 +1,10 @@
 $(".owl-hero-carousel").owlCarousel({
-  loop: true,
+  loop: false,
   margin: 0,
   nav: true,
+  items: 1,
   responsiveClass: true,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 5000,
-  autoplayHoverPause: false,
-  responsive: {
-    0: {
-      items: 1,
-      nav: true,
-    },
-    600: {
-      items: 1,
-      nav: false,
-    },
-    1000: {
-      items: 1,
-      nav: true,
-      loop: false,
-    },
-  },
+  autoplayHoverPause: true,
 });

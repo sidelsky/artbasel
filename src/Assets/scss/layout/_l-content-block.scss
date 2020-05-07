@@ -114,21 +114,16 @@
 /**
 * Content blocks home
 */
-.home {
+.page-template-page-multi-artist {
   .l-content__block {
     &--text-content {
       //Tablet
       @include media(">tablet") {
-        //@include aspect-ratio(1, 1.5);
         &:nth-of-type(2n + 2) {
           lost-column: 6/12 no-flex;
           lost-move: 6/12;
         }
       }
-      //Desktop
-      // @include media(">desktop") {
-      //   @include aspect-ratio(1, 1);
-      // }
     }
 
     &--image-content {

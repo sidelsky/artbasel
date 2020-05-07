@@ -3,7 +3,7 @@
 .c-site-nav {
   //font-family: font-family(primary, 600);
   @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
-
+  font-family: font-family(nt-primary, regular);
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -35,7 +35,7 @@
         bottom: 0px;
         display: block;
         width: 0;
-        height: 1px;
+        height: 2px;
         transition: 0.3s width ease;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);

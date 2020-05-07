@@ -3,22 +3,26 @@
  */
 
 .u-l-horizontal-padding {
-    padding-left: $horizontal-padding-small;
-    padding-right: $horizontal-padding-small;
+  padding-left: $horizontal-padding-small;
+  padding-right: $horizontal-padding-small;
 
-    @include breakpoint($medium) {
-        padding-left: $horizontal-padding-medium;
-        padding-right: $horizontal-padding-medium;
+  @include breakpoint($medium) {
+    padding-left: $horizontal-padding-medium;
+    padding-right: $horizontal-padding-medium;
+  }
+
+  &--large {
+    padding-left: $spacing--large;
+    padding-right: $spacing--large;
+
+    @include media(">desktop") {
+      padding-left: $spacing--jumbo;
+      padding-right: $spacing--jumbo;
     }
+  }
 
-    &--large {
-        padding-left: $spacing--large;
-        padding-right: $spacing--large;
-
-        @include media('>desktop') {
-            padding-left: $spacing--jumbo;
-            padding-right: $spacing--jumbo;
-        }
-
-    }
+  &--small {
+    padding-left: $spacing--small;
+    padding-right: $spacing--small;
+  }
 }

@@ -1,0 +1,84 @@
+.online_exhibitions {
+  lost-utility: clearfix;
+
+  .canvas {
+    background-color: rgba($black, 0.35);
+  }
+
+  &__block {
+    margin-bottom: 20px;
+    lost-column: 6/12 2 20px no-flex;
+    @include aspect-ratio(1, 1, 0, 0, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    &--small {
+      @include aspect-ratio(1, 1, 0, 0, 0, 0);
+      margin-bottom: 0;
+    }
+  }
+
+  &__content {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    color: $white;
+    padding: $spacing--small;
+  }
+
+  &__artist,
+  &__title {
+    font-family: font-family(primary, bold);
+    @include set-font-size(2.2rem, 2.4rem, 2.8rem, 4rem);
+    line-height: 1.2;
+  }
+
+  &__href {
+    color: currentColor;
+    text-decoration: none;
+    a {
+      margin-right: $spacing--x-tiny;
+    }
+  }
+
+  &__btn-title-wrap {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  &__btn-title {
+    margin-right: $spacing--small;
+  }
+
+  &__btn-container {
+  }
+
+  &__btn-prev,
+  &__btn-next {
+    border: solid 1px palette(greys, xx-light);
+    width: 65px;
+    height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    &:hover {
+      cursor: pointer;
+      background-color: palette(greys, xx-light);
+    }
+  }
+
+  &__btn-icon {
+    width: 10px;
+  }
+
+  &__btn-prev {
+    margin-right: $spacing--small;
+    .online_exhibitions__btn-icon {
+      transform: rotate(180deg);
+    }
+  }
+}

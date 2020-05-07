@@ -2,7 +2,7 @@
    <?php foreach($data['currentViewing'] as $viewingRoom) { ?>
 
       <div class="c-viewing-rooms-header c-header-background-image" style="background-image: url('<?= $viewingRoom['currentViewingRoomImage'] ?>')">
-        <span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, '<?= get_field('image_shading_cover') ?>"></span>
+        <span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, <?= get_field('image_shading_cover') ?>"></span>
             <div class="canvas parallax-window__content parallax-window__content" data-id="title">
                 <div>
                     <h1 class="c-site-headings c-site-headings--h1--hero c-text-align-centre "><?= $viewingRoom['currentViewingRoomPretitle'] ?></h1>

@@ -7,6 +7,7 @@ import "./components/smoothscroll-api";
 import "./components/owl-carousel";
 import "./components/owl-small-carousel-api";
 import "./components/owl-hero-carousel-api";
+import "./components/owl-exhibitions-carousel-api";
 import "./components/hero-paralax";
 import "./components/form-modal";
 import "./components/we-chat-modal";
