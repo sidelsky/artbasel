@@ -1,0 +1,48 @@
+#order-post-type img {vertical-align: middle}
+#order-post-type #sortable { list-style-type: none; margin: 10px 0 0; padding: 0; width: 100%; }
+#order-post-type ul ul {margin-top: 6px}
+#order-post-type ul {list-style: none; margin-left:20px; list-style: none; }
+#order-post-type .post_type_li .item { border: 1px solid #E6E6E6;font-weight: bold;height: auto;line-height: 35px;overflow: hidden;padding-left: 10px;position: relative; text-shadow: 0 1px 0 #FFFFFF;width: auto;word-wrap: break-word;cursor: move;background: url("../images/gray-grad.png") repeat-x scroll left top #DFDFDF;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;}
+#order-post-type .post_type_li .item .post_type_thumbnail {float: left; display: none; padding: 5px 5px 5px 0}
+#order-post-type .post_type_li .item span { display: block;line-height: 20px;margin-right: 40px;padding: 5px 0; white-space: nowrap;}
+#order-post-type .post_type_li .item span span {display: inline; font-weight: normal; color: #D54E21}
+#order-post-type .post_type_li .item span.edit {position: absolute; right: 10px; top: 6px; padding: 0px; margin: 0px}
+#order-post-type .ui-sortable-placeholder{border-color:#bbb;background-color:#f5f5f5; height:30px; background-image: none; -moz-border-radius: 6px 6px 6px 6px; border: 1px solid #E6E6E6;}
+#order-post-type .ui-sortable-helper{filter:alpha(opacity=75); /* for internet explorer */opacity: 0.75; /* CSS3 standard */-moz-opacity:0.75; /* for older gecko browsers */-khtml-opacity: 0.75; /* for older webkit browsers */}
+#order-post-type .no-nesting .ui-sortable-placeholder {background-color: transparent; border: none}
+
+#dragHelper li, #dragHelper ul {background: transparent !important;}
+#dragHelper ol {list-style: none;}
+
+#order-post-type #nav-menu-header {background: url("../images/gray-grad.png") repeat-x scroll left top #DFDFDF; -moz-border-radius-topleft: 6px; -moz-border-radius-topright: 6px;border-width: 1px 1px 0;border-color: #CCCCCC;border-style: solid;}
+#order-post-type #nav-menu-header .major-publishing-actions {clear: both;padding: 5px 10px;}
+#order-post-type #nav-menu-header .actions {padding: 0px; margin: 0px; position: relative}
+#order-post-type .actions .toggle_thumbnails {margin-right: 30px; float: left}
+#order-post-type #nav-menu-header .img_spacer {width: 18px; height: 18px; float: left}
+#order-post-type #nav-menu-header .save-order {float: left}
+#order-post-type #nav-menu-footer {background: url("../images/gray-grad.png") repeat-x scroll left top #DFDFDF; -moz-border-radius-bottomleft: 6px; -moz-border-radius-bottomright: 6px;border-width: 0 1px 1px 1px;border-color: #CCCCCC;border-style: solid;}
+#order-post-type #nav-menu-footer .major-publishing-actions {clear: both;padding: 5px 10px;} 
+#order-post-type #nav-menu-footer .submit {padding: 0px;}
+#order-post-type .post-type_id {background: url("../images/menu-bits.gif") repeat-x scroll left -379px #EEEEEE;border-color: #E3E3E3;} 
+#order-post-type #post-body {background: none repeat scroll 0 0 #FFFFFF;border-width: 0 1px 0 1px;padding: 10px;border-color: #CCCCCC;border-style: solid;}
+#order-post-type .fl {float: left !important}
+#order-post-type .actions .button-primary {margin-top: 1px}
+#apto_form_order_reset {display: none;}
+#apto_form .taxonomy_terms {margin-left: 10px}
+#apto_form .column-categories span {float: left; padding-top: 3px}
+
+#form_data label{font-size: 12px}
+
+.wp-list-taxonomy th.check-column{width: 2.9em;}
+.wp-list-post-types.widefat tbody th.check-column {padding: 9px 0 15px;width: 42px}
+.wp-list-post-types.widefat tbody td.column-categories {width: auto;}
+
+                                                                                                                                                          
+#icon-settings {background-image:url("../images/admin-icon-settings.gif");background-repeat:no-repeat;}
+h2.subtitle {font-size: 15px; font-style: italic; font-weight: bold}
+.wrap .example { color: #666666; font-size: 11px; font-weight: bold}
+
+.menu_pto {margin-bottom: -2px; display: inline; padding-right: 2px}

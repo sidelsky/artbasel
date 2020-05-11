@@ -10,7 +10,7 @@
 
 
 <?php if( get_field('show_artist_inquiry_email') || is_front_page() ) : ?>
-	<section class="c-ma-email-sub u-l-horizontal-padding u-l-vertical-padding--tiny">
+	<section class="c-ma-email-sub u-l-horizontal-padding u-l-vertical-padding--tiny background-color--light">
 		<div class="c-ma-email-sub__wrapper">
 			<div class="c-ma-email-sub__column">
 					<span><?= $emailSubCopy ?></span>
@@ -19,6 +19,6 @@
 					<?php echo do_shortcode('[gravityform id="' . $id . '" title="false" description="false"]'); ?>
 			</div>
 		</div>
-		<?= $smallPrint ?>
+		<?/*= $smallPrint */?>
 	</section>
 <?php endif; ?>

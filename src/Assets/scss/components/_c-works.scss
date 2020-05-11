@@ -120,7 +120,6 @@
     font-family: font-family(nt-primary, medium);
     @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
     line-height: 1.25;
-    //color: white;
   }
 
   //Name
@@ -128,7 +127,6 @@
     font-family: font-family(nt-primary, medium);
     @include set-font-size(2.1rem, 2.1rem, 2.1rem, 2.1rem);
     line-height: 1.25;
-    //color: white;
   }
 
   &__availability {

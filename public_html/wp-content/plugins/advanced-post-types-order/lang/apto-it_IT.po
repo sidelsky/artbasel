@@ -1,0 +1,235 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-07-20 23:28+0200\n"
+"PO-Revision-Date: 2013-01-31 22:36+0100\n"
+"Last-Translator: Emanuele Bartolomucci <realbarnux@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"Language: it_IT\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: include/functions.php:371
+msgid ""
+"There is a new version of Advanced Post Types Order. Use your purchase link "
+"to update or contact us if you lost it."
+msgstr ""
+"È disponibile una nuova versione di Advanced Post Types Order. Usa il link "
+"ricevuto all'acquisto o contattaci se lo hai perso."
+
+#: include/options.php:42
+msgid "General Settings"
+msgstr "Impostazioni generali"
+
+#: include/options.php:46
+msgid "Allow reorder"
+msgstr "Permetti riordinamento"
+
+#: include/options.php:79
+msgid "General"
+msgstr "Generale"
+
+#: include/options.php:84
+msgid "Minimum Level to use this plugin"
+msgstr "Livello mimino per utilizzare il plugin"
+
+#: include/options.php:87
+msgid "Subscriber"
+msgstr "Sottoscrittore"
+
+#: include/options.php:88
+msgid "Contributor"
+msgstr "Collaboratore"
+
+#: include/options.php:89
+msgid "Author"
+msgstr "Autore"
+
+#: include/options.php:90
+msgid "Editor"
+msgstr "Editore"
+
+#: include/options.php:91
+msgid "Administrator"
+msgstr "Amministratore"
+
+#: include/options.php:98
+msgid "Auto Sort"
+msgstr "Ordinamento automatico"
+
+#: include/options.php:103
+msgid ""
+"<b>OFF</b> - If checked, you will need to manually update the queries to use "
+"the menu_order"
+msgstr ""
+"<b>DISATTIVATO</b> - Se selezionato, sarà necessario aggiornare manualmente "
+"le query per utilizzare il menu_order"
+
+#: include/options.php:105 include/options.php:148 include/options.php:177
+msgid "Show Example"
+msgstr "Mostra esempio"
+
+#: include/options.php:108
+msgid "You must include a 'orderby' parameter with value as 'menu_order'"
+msgstr "Devi includere un parametro 'orderby' con valore 'menu_order'"
+
+#: include/options.php:134
+msgid ""
+"<b>ON</b> - If checked, the plug-in will automatically update the wp-queries "
+"to use the new order (<b>No code update is necessarily</b>)."
+msgstr ""
+"<b>ATTIVATO</b> - Se selezionato, il plugin aggiornerà automaticamente le wp-"
+"query per utilizzare il nuovo ordine (<b>Non è necessario aggiornare il "
+"codice</b>)."
+
+#: include/options.php:146
+msgid ""
+"<b>ON/Custom</b> - If checked, the plug-in will automatically update the wp-"
+"queries to use the new order, but if a query already contain a 'orderby' "
+"parameter then this will be used instead."
+msgstr ""
+"<b>ATTIVATO/Personalizzato</b> - Se selezionato, il plugin aggiornerà "
+"automaticamente le wp-query per utilizzare il nuovo ordine, ma se una query "
+"contiene già un parametro 'orderby' allora questo verrà utilizzato."
+
+#: include/options.php:151
+msgid "The following code will return the posts ordered by title"
+msgstr "Il codice seguente restituisce gli articoli ordinati per titolo"
+
+#: include/options.php:172
+msgid "Ignore Sticky Posts"
+msgstr "Ignora Articoli evidenziati"
+
+#: include/options.php:176
+msgid "Ignore Sticky Posts when Auto Sort is ON."
+msgstr "Ignora Articoli evidenziati quando Ordinamento automatico è ATTIVO."
+
+#: include/options.php:177
+msgid ""
+"You can overwrite this from code using the 'ignore_sticky_posts' within your "
+"query"
+msgstr ""
+"Puoi sovrascrivere questo codice usando 'ignore_sticky_posts' nella tua query"
+
+#: include/options.php:180
+msgid ""
+"The following code will return the Stiky posts first even if the Autosort is "
+"ON"
+msgstr ""
+"Il codice seguente restituisce prima gli Articoli evidenziati, anche se "
+"Ordinamento automatico è ATTIVO"
+
+#: include/options.php:200
+msgid "Admin Sort"
+msgstr "Ordinamento amministrazione"
+
+#: include/options.php:204
+msgid ""
+"To update the admin interface and see the post types per your new sort, this "
+"need to be checked"
+msgstr ""
+"Per aggiornare l'interfaccia di amministrazione e visualizzare i tipi di "
+"articolo per il tuo nuovo ordine, questa opzione deve essere attiva"
+
+#: include/options.php:209
+msgid "Feed Sort"
+msgstr "Ordinamento feed"
+
+#: include/options.php:213
+msgid ""
+"Use defined order when gernerate a feed. Leave unchecked to use the default "
+"date order"
+msgstr ""
+"Utilizzare l'ordine personalizzato quando si genera un feed. Lascia "
+"deselezionato per utilizzare l'ordine predefinito in base alla data"
+
+#: include/options.php:218 include/reorder-class.php:618
+msgid "Toggle Thumbnails"
+msgstr "Mostra/nascondi miniature"
+
+#: include/options.php:222
+msgid "Always show the Thumbnails within the re-order interface"
+msgstr "Mostra sempre le miniature nell'interfaccia di riordinamento"
+
+#: include/options.php:230
+msgid "Save Settings"
+msgstr "Salva impostazioni"
+
+#: include/reorder-class.php:309
+msgid " -  Re-order"
+msgstr " -  Riordina"
+
+#: include/reorder-class.php:315
+msgid ""
+"This plugin can't work without javascript, because it's use drag and drop "
+"and AJAX."
+msgstr ""
+"Questo plugin non funziona se Javascript non è attivato, perché usa il "
+"riordino a trascinamento (drag-and-drop) e AJAX."
+
+#: include/reorder-class.php:457
+msgid "Archive & Taxonomies"
+msgstr "Archivi & Tassonomie"
+
+#: include/reorder-class.php:461 include/reorder-class.php:465
+msgid "Archive"
+msgstr "Archivio"
+
+#: include/reorder-class.php:461 include/reorder-class.php:477
+#: include/reorder-class.php:482
+msgid "Total"
+msgstr "Totale"
+
+#: include/reorder-class.php:461
+msgid "Archive Posts"
+msgstr "Articoli archiviati"
+
+#: include/reorder-class.php:477 include/reorder-class.php:482
+msgid "Taxonomy Title"
+msgstr "Titolo tassonomia"
+
+#: include/reorder-class.php:477 include/reorder-class.php:482
+msgid "Posts"
+msgstr "Articoli"
+
+#: include/reorder-class.php:562
+msgid "Show all dates"
+msgstr "Mostra tutte le date"
+
+#: include/reorder-class.php:563
+msgid "Today"
+msgstr "Oggi"
+
+#: include/reorder-class.php:564
+msgid "Yesterday"
+msgstr "Ieri"
+
+#: include/reorder-class.php:565
+msgid "Last Week"
+msgstr "Ultima settimana"
+
+#: include/reorder-class.php:629 include/reorder-class.php:676
+msgid "Update"
+msgstr "Aggiorna"
+
+#: include/reorder-class.php:694
+msgid "Reset Order"
+msgstr "Reimposta ordine"
+
+#: include/reorder-class.php:701
+msgid "Are you sure you want to reset the order??"
+msgstr "Sei sicuro di voler reimpostare l'ordine?"
+
+#: include/reorder-class.php:745 include/reorder-class.php:762
+msgid "Items Order Updates"
+msgstr "Aggiorna ordine oggetti"
+
+#: include/reorder-class.php:753
+msgid "You need to Drag and Drop an object. Nothing changed."
+msgstr "Devi riordinare un oggetto trascinandolo. Nessun cambio effettuato."

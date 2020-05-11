@@ -96,5 +96,10 @@ $palettes: (
 }
 
 .background-color--dark {
-  background-color: #212322;
+  background-color: $dark;
+}
+
+.background-color--light {
+  background-color: #f8f8f8;
+  color: $text-color;
 }
