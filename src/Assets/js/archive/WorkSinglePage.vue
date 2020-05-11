@@ -100,6 +100,13 @@
               class="c-button c-button--light"
             >Submit Interest</button>
 
+            <button
+              v-if="work.showHomegrownInquiriesButton"
+              id="homegrownInquiriesBtn_0"
+              data-id="homegrownInquiriesBtn"
+              class="c-button c-button--light"
+            >Inquire to learn more</button>
+
             <span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
               <svg class="u-icon c-works__icon c-works__icon--back">
                 <use

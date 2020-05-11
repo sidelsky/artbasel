@@ -33,27 +33,20 @@ abstract class Meta extends Column {
 	}
 
 	/**
-	 * @see   Column::get_raw_value()
-	 * @since 2.0.3
-	 *
 	 * @param $id
 	 *
 	 * @return bool|mixed
+	 * @see   Column::get_raw_value()
+	 * @since 2.0.3
 	 */
 	public function get_raw_value( $id ) {
-		$value = $this->get_meta_value( $id, $this->get_meta_key(), true );
-
-		if ( ! $value ) {
-			return false;
-		}
-
-		return $value;
+		return $this->get_meta_value( $id, $this->get_meta_key(), true );
 	}
 
 	/**
 	 * Retrieve metadata object type (e.g., comment, post, or user)
-	 * @since 3.0
 	 * @return bool
+	 * @since 3.0
 	 */
 	public function get_meta_type() {
 		return $this->get_list_screen()->get_meta_type();

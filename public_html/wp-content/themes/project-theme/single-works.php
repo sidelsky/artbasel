@@ -24,7 +24,8 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
       'ids'  => get_field('code_id'),
 		'isEdition'  => get_field('is_edition'),
 		'showInquireToLearnMoreButton'  => get_field('show_inquire_to_learn_more_button'),
-      'hidePurchaseButton' => get_field('hide_purchase_button')
+		'hidePurchaseButton' => get_field('hide_purchase_button'),
+		'showHomegrownInquiriesButton' => get_field('show_homegrown_inquiries_button')
     ];
     $gallery = get_field('image_gallery');
     $images = [];
@@ -65,10 +66,24 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				echo '</div>';
 		echo '</div>';
   ?>
+
+  	<?php
+	/**
+	 * Homegrown modal
+	 */
+		echo '<div id="homegrownInquiriesModal_0" class="modal">';
+			echo '<div class="modal-content">';
+				echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
+				echo '<span class="close closei">&times;</span>';
+				echo do_shortcode('[gravityform id="11" title="false" description="false" ajax="true" field_values="form_msg=I am interested in learning more about ' . $work["fullName"] .', ' . $work["title"] . '. \nPlease send me further details about available artworks and pricing.&id_code=' . $work["ids"] . '"]');
+				echo '<small> *By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s afiliated companies.</small>';
+				echo '</div>';
+		echo '</div>';
+  ?>
   
   <?php
 	/**
-	 * Inquire modal
+	 * Editions modal
 	 */
 		echo '<div id="editionModal_0" class="modal">';
 			echo '<div class="modal-content">';

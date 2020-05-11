@@ -1,20 +1,24 @@
-const NEXT = document.getElementById("next-slide");
-const PREV = document.getElementById("prev-slide");
+// const CAROUSEL = document.querySelectorAll("[data-id='exhibitions-carousel']");
 
-$(".owl-exhibitions-carousel").owlCarousel({
-  loop: false,
-  margin: 20,
-  dots: false,
-  items: 3,
-  //nav: true,
-  //dotsContainer: '#myDots',
-  //navContainer: "#MyNavs",
-});
+// if (CAROUSEL) {
+//   const NEXT = document.getElementById("next-slide");
+//   const PREV = document.getElementById("prev-slide");
 
-NEXT.addEventListener("click", () => {
-  $(".owl-exhibitions-carousel").trigger("next.owl.carousel");
-});
+//   $(".owl-exhibitions-carousel").owlCarousel({
+//     loop: false,
+//     margin: 20,
+//     dots: false,
+//     items: 3,
+//     //nav: true,
+//     //dotsContainer: '#myDots',
+//     //navContainer: "#MyNavs",
+//   });
 
-PREV.addEventListener("click", () => {
-  $(".owl-exhibitions-carousel").trigger("prev.owl.carousel");
-});
+//   NEXT.addEventListener("click", () => {
+//     $(".owl-exhibitions-carousel").trigger("next.owl.carousel");
+//   });
+
+//   PREV.addEventListener("click", () => {
+//     $(".owl-exhibitions-carousel").trigger("prev.owl.carousel");
+//   });
+// }

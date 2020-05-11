@@ -60,6 +60,30 @@ for (let index = 0; index < editionButtonsLength; index++) {
   );
 }
 
+/** homegrownInquiriesBtn */
+const homegrownButtons = [
+  ...document.querySelectorAll("[data-id='homegrownInquiriesBtn']"),
+];
+const homegrownButtonsLength = homegrownButtons.length;
+
+for (let index = 0; index < homegrownButtonsLength; index++) {
+  const homegrownButton = homegrownButtons[index];
+  const homegrownModal = document.getElementById(
+    `homegrownInquiriesModal_${index}`
+  );
+  //debugger
+  homegrownButton.addEventListener("click", () => {
+    homegrownModal.style.display = "block";
+  });
+
+  Array.apply(null, homegrownModal.querySelectorAll(".close")).forEach(
+    (closeButton) =>
+      closeButton.addEventListener("click", () => {
+        homegrownModal.style.display = "none";
+      })
+  );
+}
+
 // /** List purchase button */
 // const ListPurchaseButtons = [...document.querySelectorAll("[data-id='ListPurchaseBtn']")]
 // const ListPurchaseButtonsLength = ListPurchaseButtons.length;

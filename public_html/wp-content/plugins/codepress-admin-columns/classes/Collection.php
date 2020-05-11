@@ -15,7 +15,7 @@ class Collection
 	 */
 	protected $items;
 
-	public function __construct( array $items = array() ) {
+	public function __construct( array $items = [] ) {
 		$this->items = $items;
 	}
 
@@ -51,6 +51,10 @@ class Collection
 
 	public function rewind() {
 		reset( $this->items );
+	}
+
+	public function first() {
+		return reset( $this->items );
 	}
 
 	public function current() {

@@ -82,7 +82,7 @@ include("login.php");
 			?>
 			</div>
 			<div class="online_exhibitions">
-				<div class="owl-carousel owl-exhibitions-carousel">
+				<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
 					<?php		
 						foreach($rows as $index => $row) {
 							if($index > 1) {

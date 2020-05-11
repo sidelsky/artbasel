@@ -16,11 +16,13 @@ class Shortcodes extends Column {
 	}
 
 	public function get_value( $post_id ) {
-		if ( ! ( $shortcodes = $this->get_raw_value( $post_id ) ) ) {
-			return false;
+		$shortcodes = $this->get_raw_value( $post_id );
+
+		if ( ! $shortcodes ) {
+			return $this->get_empty_char();
 		}
 
-		$display = array();
+		$display = [];
 		foreach ( $shortcodes as $sc => $count ) {
 			$string = '[' . $sc . ']';
 
@@ -43,7 +45,7 @@ class Shortcodes extends Column {
 
 		$content = get_post_field( 'post_content', $post_id );
 
-		$shortcodes = array();
+		$shortcodes = [];
 
 		$_shortcodes = array_keys( $shortcode_tags );
 		asort( $_shortcodes );
