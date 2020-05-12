@@ -225,11 +225,24 @@ table {
 }
 
 /**
+* Arapey Regular
+*/
+@font-face {
+  font-family: "arapey-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/arapey/arapey-regular.woff2") format("woff2");
+}
+
+/**
 * Typefaces
 * @useage: font-family(primary, regular);
 */
 /**
 * NewTransport
+*/
+/**
+* Arapey
 */
 /*
  * Hamburger menu setup

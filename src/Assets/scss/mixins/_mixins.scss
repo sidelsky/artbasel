@@ -65,6 +65,21 @@
   }
 }
 
+@mixin web-font-ara(
+  $font-name: "FONT NAME",
+  $file-path: "/PATHTOFONT/",
+  $file-name: "FONTNAME"
+) {
+  $full-path: $file-path + $file-name;
+  @font-face {
+    font-family: "#{$font-name}";
+    font-style: normal;
+    font-weight: normal;
+    // Modern Browsers
+    src: url("#{$full-path}.woff2") format("woff2");
+  }
+}
+
 @mixin vertical-align($position: absolute, $top: 50%, $left: 50%, $scale: 1) {
   position: $position;
   top: $top;

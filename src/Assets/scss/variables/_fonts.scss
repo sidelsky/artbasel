@@ -3,86 +3,100 @@
  */
 
 // Typefaces
-$arial: 'Arial', sans-serif;
+$arial: "Arial", sans-serif;
 
 /**
 * Fonts
 */
-$font-name: 'hind';
-$font-name-nt: 'newtransport';
+$font-name: "hind";
+$font-name-nt: "newtransport";
+$font-name-ara: "arapey";
 
-$file-path: 'fonts/';
-$file-path-nt: 'fonts/newtransport/';
+$file-path: "fonts/";
 
-$font-weight--light: 'light';
-$font-weight--regular: 'regular';
-$font-weight--medium: 'medium';
-$font-weight--semibold: 'semibold';
-$font-weight--bold: 'bold';
+// Newtransport
+$file-path-nt: "fonts/newtransport/";
+
+//Arapey
+$file-path-ara: "fonts/arapey/";
+
+$font-weight--light: "light";
+$font-weight--regular: "regular";
+$font-weight--medium: "medium";
+$font-weight--semibold: "semibold";
+$font-weight--bold: "bold";
 
 /**
 * Hind Light
 */
 @include web-font(
-    '#{$font-name}-#{$font-weight--light}', 
-    '#{$file-path}', 
-    '#{$font-name}-#{$font-weight--light}'
-    );
+  "#{$font-name}-#{$font-weight--light}",
+  "#{$file-path}",
+  "#{$font-name}-#{$font-weight--light}"
+);
 
 /**
 * Hind Regular
 */
 @include web-font(
-    '#{$font-name}-#{$font-weight--regular}',
-    '#{$file-path}',
-    '#{$font-name}-#{$font-weight--regular}'
+  "#{$font-name}-#{$font-weight--regular}",
+  "#{$file-path}",
+  "#{$font-name}-#{$font-weight--regular}"
 );
 
 /**
 * Hind Medium
 */
 @include web-font(
-    '#{$font-name}-#{$font-weight--medium}',
-    '#{$file-path}',
-    '#{$font-name}-#{$font-weight--medium}'
+  "#{$font-name}-#{$font-weight--medium}",
+  "#{$file-path}",
+  "#{$font-name}-#{$font-weight--medium}"
 );
 
 /**
 * Hind Semibold
 */
 @include web-font(
-    '#{$font-name}-#{$font-weight--semibold}',
-    '#{$file-path}',
-    '#{$font-name}-#{$font-weight--semibold}'
+  "#{$font-name}-#{$font-weight--semibold}",
+  "#{$file-path}",
+  "#{$font-name}-#{$font-weight--semibold}"
 );
 
 /**
 * Hind Medium
 */
 @include web-font(
-    '#{$font-name}-#{$font-weight--bold}',
-    '#{$file-path}',
-    '#{$font-name}-#{$font-weight--bold}'
+  "#{$font-name}-#{$font-weight--bold}",
+  "#{$file-path}",
+  "#{$font-name}-#{$font-weight--bold}"
 );
 
 /**
 * NewTransport Regular
 */
 @include web-font-nt(
-    '#{$font-name-nt}-#{$font-weight--regular}',
-    '#{$file-path-nt}',
-    '#{$font-name-nt}-#{$font-weight--regular}'
+  "#{$font-name-nt}-#{$font-weight--regular}",
+  "#{$file-path-nt}",
+  "#{$font-name-nt}-#{$font-weight--regular}"
 );
 
 /**
 * NewTransport Medium
 */
 @include web-font-nt(
-    '#{$font-name-nt}-#{$font-weight--medium}',
-    '#{$file-path-nt}',
-    '#{$font-name-nt}-#{$font-weight--medium}'
+  "#{$font-name-nt}-#{$font-weight--medium}",
+  "#{$file-path-nt}",
+  "#{$font-name-nt}-#{$font-weight--medium}"
 );
 
+/**
+* Arapey Regular
+*/
+@include web-font-ara(
+  "#{$font-name-ara}-#{$font-weight--regular}",
+  "#{$file-path-ara}",
+  "#{$font-name-ara}-#{$font-weight--regular}"
+);
 
 /**
 * Typefaces
@@ -90,31 +104,42 @@ $font-weight--bold: 'bold';
 */
 $system-fonts: Helvetica, Arial, sans-serif;
 
-$font-primary--light: '#{$font-name}-#{$font-weight--light}', $system-fonts;
-$font-primary--regular: '#{$font-name}-#{$font-weight--regular}', $system-fonts;
-$font-primary--medium: '#{$font-name}-#{$font-weight--medium}', $system-fonts;
-$font-primary--semibold: '#{$font-name}-#{$font-weight--semibold}', $system-fonts;
-$font-primary--bold: '#{$font-name}-#{$font-weight--bold}', $system-fonts;
+$font-primary--light: "#{$font-name}-#{$font-weight--light}", $system-fonts;
+$font-primary--regular: "#{$font-name}-#{$font-weight--regular}", $system-fonts;
+$font-primary--medium: "#{$font-name}-#{$font-weight--medium}", $system-fonts;
+$font-primary--semibold: "#{$font-name}-#{$font-weight--semibold}",
+  $system-fonts;
+$font-primary--bold: "#{$font-name}-#{$font-weight--bold}", $system-fonts;
 
 /**
 * NewTransport
 */
-$font-primary-nt--regular: '#{$font-name-nt}-#{$font-weight--regular}', $system-fonts;
-$font-primary-nt--medium: '#{$font-name-nt}-#{$font-weight--medium}', $system-fonts;
+$font-primary-nt--regular: "#{$font-name-nt}-#{$font-weight--regular}",
+  $system-fonts;
+$font-primary-nt--medium: "#{$font-name-nt}-#{$font-weight--medium}",
+  $system-fonts;
+
+/**
+* Arapey
+*/
+$font-primary-ara--regular: "#{$font-name-ara}-#{$font-weight--regular}",
+  $system-fonts;
 
 $font-families: (
-   primary: (
-        light: $font-primary--light,
-        regular: $font-primary--regular,
-        medium: $font-primary--medium,
-        semibold: $font-primary--semibold,
-        bold: $font-primary--bold
-   ),
-   nt-primary: (
+  primary: (
+    light: $font-primary--light,
+    regular: $font-primary--regular,
+    medium: $font-primary--medium,
+    semibold: $font-primary--semibold,
+    bold: $font-primary--bold,
+  ),
+  nt-primary: (
     regular: $font-primary-nt--regular,
-    medium: $font-primary-nt--medium
-)
-
+    medium: $font-primary-nt--medium,
+  ),
+  ara-primary: (
+    regular: $font-primary-ara--regular,
+  ),
 );
 
 // Font sizes
@@ -134,5 +159,3 @@ $primary-font-color: $text-color;
 $primary-font-weight: $weight-regular;
 $primary-font-size: $text-regular;
 $primary-link-color: $text-color;
-
-
