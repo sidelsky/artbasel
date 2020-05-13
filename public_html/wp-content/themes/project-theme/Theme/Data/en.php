@@ -10,6 +10,12 @@
 				 'details' => '&copy; ' . date('Y') . ' ' . get_bloginfo('title') . ''
 			],
 
+			//Title break - Carousel Prev Next
+			'titleBreak' => [
+				 'title' => 'Explore'
+			],
+
+
 			//Footer Info
 			'emailSubCopy'    => [
 				'details' => 'Be the first to receive updates on Online Exhibition presentations',

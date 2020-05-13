@@ -10,7 +10,7 @@ $arial: "Arial", sans-serif;
 */
 $font-name: "hind";
 $font-name-nt: "newtransport";
-$font-name-ara: "arapey";
+$font-name-gara: "garamond";
 
 $file-path: "fonts/";
 
@@ -18,7 +18,7 @@ $file-path: "fonts/";
 $file-path-nt: "fonts/newtransport/";
 
 //Arapey
-$file-path-ara: "fonts/arapey/";
+$file-path-gara: "fonts/garamond/";
 
 $font-weight--light: "light";
 $font-weight--regular: "regular";
@@ -90,12 +90,30 @@ $font-weight--bold: "bold";
 );
 
 /**
-* Arapey Regular
+* Garamond Regular
 */
-@include web-font-ara(
-  "#{$font-name-ara}-#{$font-weight--regular}",
-  "#{$file-path-ara}",
-  "#{$font-name-ara}-#{$font-weight--regular}"
+@include web-font-gara(
+  "#{$font-name-gara}-#{$font-weight--regular}",
+  "#{$file-path-gara}",
+  "#{$font-name-gara}-#{$font-weight--regular}"
+);
+
+/**
+* Garamond Regular
+*/
+@include web-font-gara(
+  "#{$font-name-gara}-#{$font-weight--medium}",
+  "#{$file-path-gara}",
+  "#{$font-name-gara}-#{$font-weight--medium}"
+);
+
+/**
+* Garamond Regular
+*/
+@include web-font-gara(
+  "#{$font-name-gara}-#{$font-weight--semibold}",
+  "#{$file-path-gara}",
+  "#{$font-name-gara}-#{$font-weight--semibold}"
 );
 
 /**
@@ -122,7 +140,11 @@ $font-primary-nt--medium: "#{$font-name-nt}-#{$font-weight--medium}",
 /**
 * Arapey
 */
-$font-primary-ara--regular: "#{$font-name-ara}-#{$font-weight--regular}",
+$font-primary-gara--regular: "#{$font-name-gara}-#{$font-weight--regular}",
+  $system-fonts;
+$font-primary-gara--medium: "#{$font-name-gara}-#{$font-weight--medium}",
+  $system-fonts;
+$font-primary-gara--semibold: "#{$font-name-gara}-#{$font-weight--semibold}",
   $system-fonts;
 
 $font-families: (
@@ -137,8 +159,10 @@ $font-families: (
     regular: $font-primary-nt--regular,
     medium: $font-primary-nt--medium,
   ),
-  ara-primary: (
-    regular: $font-primary-ara--regular,
+  garamond: (
+    regular: $font-primary-gara--regular,
+    medium: $font-primary-gara--medium,
+    semibold: $font-primary-gara--semibold,
   ),
 );
 

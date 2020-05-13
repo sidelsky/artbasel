@@ -225,13 +225,33 @@ table {
 }
 
 /**
-* Arapey Regular
+* Garamond Regular
 */
 @font-face {
-  font-family: "arapey-regular";
+  font-family: "garamond-regular";
   font-style: normal;
   font-weight: normal;
-  src: url("fonts/arapey/arapey-regular.woff2") format("woff2");
+  src: url("fonts/garamond/garamond-regular.woff2") format("woff2");
+}
+
+/**
+* Garamond Regular
+*/
+@font-face {
+  font-family: "garamond-medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/garamond/garamond-medium.woff2") format("woff2");
+}
+
+/**
+* Garamond Regular
+*/
+@font-face {
+  font-family: "garamond-semibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/garamond/garamond-semibold.woff2") format("woff2");
 }
 
 /**
@@ -1999,22 +2019,22 @@ body.body--menu-is-expanded .c-mobile-navigation {
   left: 0px;
 }
 
-.c-online_exhibitions:before {
+.c-online-exhibitions:before {
   content: '';
   display: table;
 }
 
-.c-online_exhibitions:after {
+.c-online-exhibitions:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.c-online_exhibitions .canvas {
+.c-online-exhibitions .canvas {
   background-color: rgba(0, 0, 0, 0.35);
 }
 
-.c-online_exhibitions__block {
+.c-online-exhibitions__block {
   margin-bottom: 30px;
   position: relative;
   background-repeat: no-repeat;
@@ -2022,14 +2042,14 @@ body.body--menu-is-expanded .c-mobile-navigation {
   background-position: center center;
 }
 
-.c-online_exhibitions__block::before {
+.c-online-exhibitions__block::before {
   content: "";
   display: block;
   padding-top: 100%;
   width: 100%;
 }
 
-.c-online_exhibitions__block .canvas {
+.c-online-exhibitions__block .canvas {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2038,39 +2058,39 @@ body.body--menu-is-expanded .c-mobile-navigation {
 }
 
 @media (min-width: 769px) {
-  .c-online_exhibitions__block {
+  .c-online-exhibitions__block {
     width: calc(99.9% * 6/12 - (30px - 30px * 6/12));
   }
-  .c-online_exhibitions__block:nth-child(1n) {
+  .c-online-exhibitions__block:nth-child(1n) {
     float: left;
     margin-right: 30px;
     clear: none;
   }
-  .c-online_exhibitions__block:last-child {
+  .c-online-exhibitions__block:last-child {
     margin-right: 0;
   }
-  .c-online_exhibitions__block:nth-child(2n) {
+  .c-online-exhibitions__block:nth-child(2n) {
     margin-right: 0;
     float: right;
   }
-  .c-online_exhibitions__block:nth-child(2n + 1) {
+  .c-online-exhibitions__block:nth-child(2n + 1) {
     clear: both;
   }
 }
 
-.c-online_exhibitions__block--small {
+.c-online-exhibitions__block--small {
   position: relative;
   margin-bottom: 0;
 }
 
-.c-online_exhibitions__block--small::before {
+.c-online-exhibitions__block--small::before {
   content: "";
   display: block;
   padding-top: 100%;
   width: 100%;
 }
 
-.c-online_exhibitions__block--small .canvas {
+.c-online-exhibitions__block--small .canvas {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2078,7 +2098,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
   top: 0;
 }
 
-.c-online_exhibitions__block--navigation {
+.c-online-exhibitions__block--navigation {
   margin-bottom: 30px;
   position: relative;
   background-repeat: no-repeat;
@@ -2086,14 +2106,14 @@ body.body--menu-is-expanded .c-mobile-navigation {
   background-position: center center;
 }
 
-.c-online_exhibitions__block--navigation::before {
+.c-online-exhibitions__block--navigation::before {
   content: "";
   display: block;
   padding-top: 100%;
   width: 100%;
 }
 
-.c-online_exhibitions__block--navigation .canvas {
+.c-online-exhibitions__block--navigation .canvas {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -2102,27 +2122,27 @@ body.body--menu-is-expanded .c-mobile-navigation {
 }
 
 @media (min-width: 769px) {
-  .c-online_exhibitions__block--navigation {
+  .c-online-exhibitions__block--navigation {
     width: calc(99.9% * 4/12 - (30px - 30px * 4/12));
   }
-  .c-online_exhibitions__block--navigation:nth-child(1n) {
+  .c-online-exhibitions__block--navigation:nth-child(1n) {
     float: left;
     margin-right: 30px;
     clear: none;
   }
-  .c-online_exhibitions__block--navigation:last-child {
+  .c-online-exhibitions__block--navigation:last-child {
     margin-right: 0;
   }
-  .c-online_exhibitions__block--navigation:nth-child(3n) {
+  .c-online-exhibitions__block--navigation:nth-child(3n) {
     margin-right: 0;
     float: right;
   }
-  .c-online_exhibitions__block--navigation:nth-child(3n + 1) {
+  .c-online-exhibitions__block--navigation:nth-child(3n + 1) {
     clear: both;
   }
 }
 
-.c-online_exhibitions__content {
+.c-online-exhibitions__content {
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -2130,83 +2150,110 @@ body.body--menu-is-expanded .c-mobile-navigation {
   padding: 2rem;
 }
 
-.c-online_exhibitions__artist {
+.c-online-exhibitions__artist {
   font-family: "newtransport-regular", Helvetica, Arial, sans-serif;
   font-size: 2rem;
   line-height: 1.1;
 }
 
 @media (min-width: 376px) {
-  .c-online_exhibitions__artist {
+  .c-online-exhibitions__artist {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 769px) {
-  .c-online_exhibitions__artist {
+  .c-online-exhibitions__artist {
     font-size: 2.4rem;
   }
 }
 
 @media (min-width: 1025px) {
-  .c-online_exhibitions__artist {
+  .c-online-exhibitions__artist {
     font-size: 3rem;
   }
 }
 
-.c-online_exhibitions__title {
+.c-online-exhibitions__title {
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
   line-height: 1.1;
 }
 
 @media (min-width: 376px) {
-  .c-online_exhibitions__title {
+  .c-online-exhibitions__title {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 769px) {
-  .c-online_exhibitions__title {
+  .c-online-exhibitions__title {
     font-size: 3.6rem;
   }
 }
 
 @media (min-width: 1025px) {
-  .c-online_exhibitions__title {
+  .c-online-exhibitions__title {
     font-size: 4rem;
   }
 }
 
-.c-online_exhibitions__href {
+.c-online-exhibitions--alt-font .c-online-exhibitions__artist,
+.c-online-exhibitions--alt-font .c-online-exhibitions__title {
+  font-family: "garamond-medium", Helvetica, Arial, sans-serif;
+}
+
+.c-online-exhibitions--alt-font .c-online-exhibitions__title {
+  font-size: 5.2rem;
+}
+
+@media (min-width: 376px) {
+  .c-online-exhibitions--alt-font .c-online-exhibitions__title {
+    font-size: 5.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-online-exhibitions--alt-font .c-online-exhibitions__title {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-online-exhibitions--alt-font .c-online-exhibitions__title {
+    font-size: 5.2rem;
+  }
+}
+
+.c-online-exhibitions__href {
   color: currentColor;
   text-decoration: none;
   font-size: 2rem;
 }
 
 @media (min-width: 376px) {
-  .c-online_exhibitions__href {
+  .c-online-exhibitions__href {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 769px) {
-  .c-online_exhibitions__href {
+  .c-online-exhibitions__href {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 1025px) {
-  .c-online_exhibitions__href {
+  .c-online-exhibitions__href {
     font-size: 2rem;
   }
 }
 
-.c-online_exhibitions__href a {
+.c-online-exhibitions__href a {
   margin-right: 0.5rem;
 }
 
-.c-online_exhibitions__btn-title-wrap {
+.c-online-exhibitions__btn-title-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2218,11 +2265,11 @@ body.body--menu-is-expanded .c-mobile-navigation {
           align-items: center;
 }
 
-.c-online_exhibitions__btn-title {
+.c-online-exhibitions__btn-title {
   margin-right: 2rem;
 }
 
-.c-online_exhibitions__btn-prev, .c-online_exhibitions__btn-next {
+.c-online-exhibitions__btn-prev, .c-online-exhibitions__btn-next {
   border: solid 1px #ebebeb;
   width: 65px;
   height: 45px;
@@ -2239,26 +2286,30 @@ body.body--menu-is-expanded .c-mobile-navigation {
   float: left;
 }
 
-.c-online_exhibitions__btn-prev:hover, .c-online_exhibitions__btn-next:hover {
+.c-online-exhibitions__btn-prev:hover, .c-online-exhibitions__btn-next:hover {
   cursor: pointer;
   background-color: #ebebeb;
 }
 
-.c-online_exhibitions__btn-icon {
+.c-online-exhibitions__btn-icon {
   width: 10px;
 }
 
-.c-online_exhibitions__btn-prev {
+.c-online-exhibitions__btn-prev {
   margin-right: 1.5rem;
 }
 
-.c-online_exhibitions__btn-prev .c-online_exhibitions__btn-icon {
+.c-online-exhibitions__btn-prev .c-online-exhibitions__btn-icon {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.c-online_exhibitions--border-bottom {
+.c-online-exhibitions--border-bottom {
   border-bottom: solid 1px #8a8a8a;
+}
+
+.c-online-exhibitions .owl-stage {
+  padding-left: 0px !important;
 }
 
 .c-pagination {
@@ -2560,6 +2611,8 @@ body.body--menu-is-expanded .c-mobile-navigation {
   font-size: 3.6rem;
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   line-height: 1;
+  padding-top: 2rem;
+  display: block;
 }
 
 @media (min-width: 376px) {
@@ -2612,6 +2665,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-family: "newtransport-regular", Helvetica, Arial, sans-serif;
+  color: currentColor;
 }
 
 @media (min-width: 376px) {
@@ -2638,6 +2692,29 @@ body.body--menu-is-expanded .c-mobile-navigation {
   color: currentColor;
   line-height: 1.3;
   font-size: 15px !important;
+}
+
+.c-site-headings--h1--alt-font {
+  font-family: "garamond-regular", Helvetica, Arial, sans-serif;
+  font-size: 5.8rem;
+}
+
+@media (min-width: 376px) {
+  .c-site-headings--h1--alt-font {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-site-headings--h1--alt-font {
+    font-size: 8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-site-headings--h1--alt-font {
+    font-size: 9rem;
+  }
 }
 
 .c-site-headings--h2 {
@@ -2925,6 +3002,7 @@ h1 strong {
 .c-site-nav .menu-item a:hover {
   text-decoration: none;
   color: #000;
+  font-weight: 800;
 }
 
 .c-site-nav .menu-item a:hover:after {
@@ -2934,6 +3012,7 @@ h1 strong {
 .c-site-nav .menu-item.current_page_item a {
   text-decoration: none;
   color: #000;
+  font-weight: 800;
 }
 
 .c-site-nav .menu-item.current_page_item a:after {
@@ -4113,6 +4192,29 @@ table {
 @media (min-width: 1025px) {
   .l-content__title-break {
     font-size: 2.8rem;
+  }
+}
+
+.l-content__title-break--alt-font {
+  font-family: "garamond-medium", Helvetica, Arial, sans-serif;
+  font-size: 2.8rem;
+}
+
+@media (min-width: 376px) {
+  .l-content__title-break--alt-font {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .l-content__title-break--alt-font {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .l-content__title-break--alt-font {
+    font-size: 3.2rem;
   }
 }
 

@@ -1,4 +1,4 @@
-.c-online_exhibitions {
+.c-online-exhibitions {
   $spacing: 30px;
   lost-utility: clearfix;
 
@@ -56,6 +56,16 @@
     line-height: 1.1;
   }
 
+  &--alt-font {
+    .c-online-exhibitions__artist,
+    .c-online-exhibitions__title {
+      font-family: font-family(garamond, medium);
+    }
+    .c-online-exhibitions__title {
+      @include set-font-size(5.2rem, 5.2rem, 4rem, 5.2rem);
+    }
+  }
+
   &__href {
     color: currentColor;
     text-decoration: none;
@@ -74,9 +84,6 @@
 
   &__btn-title {
     margin-right: $spacing--small;
-  }
-
-  &__btn-container {
   }
 
   &__btn-prev,
@@ -101,12 +108,16 @@
 
   &__btn-prev {
     margin-right: $spacing--x-small;
-    .c-online_exhibitions__btn-icon {
+    .c-online-exhibitions__btn-icon {
       transform: rotate(180deg);
     }
   }
 
   &--border-bottom {
     border-bottom: solid 1px palette(greys, base);
+  }
+
+  .owl-stage {
+    padding-left: 0px !important;
   }
 }

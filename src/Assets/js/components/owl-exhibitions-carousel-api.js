@@ -9,6 +9,7 @@ if (CAROUSELLENGTH) {
     loop: false,
     margin: 30,
     dots: false,
+    stagePadding: 40,
     //nav: true,
     //dotsContainer: '#myDots',
     //navContainer: "#MyNavs",

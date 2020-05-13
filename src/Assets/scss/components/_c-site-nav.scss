@@ -45,6 +45,7 @@
       &:hover {
         text-decoration: none;
         color: palette(bw, black);
+        font-weight: 800;
 
         &:after {
           width: 100%;
@@ -55,6 +56,7 @@
     &.current_page_item a {
       text-decoration: none;
       color: palette(bw, black);
+      font-weight: 800;
 
       &:after {
         width: 100%;

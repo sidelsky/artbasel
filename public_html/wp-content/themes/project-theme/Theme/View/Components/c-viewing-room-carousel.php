@@ -5,8 +5,13 @@
         <span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, <?= get_field('image_shading_cover') ?>"></span>
             <div class="canvas parallax-window__content parallax-window__content" data-id="title">
                 <div>
-                    <h1 class="c-site-headings c-site-headings--h1--hero c-text-align-centre "><?= $viewingRoom['currentViewingRoomPretitle'] ?></h1>
-                    <h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $viewingRoom['currentViewingRoomTitle'] ?></h2>
+                    <h1 class="c-site-headings c-site-headings--h1--hero c-text-align-centre">
+                        <?= $viewingRoom['currentViewingRoomPretitle'] ?>
+                        <?php if( $viewingRoom['currentViewingRoomPretitle'] ) {
+                            echo '<br>';
+                        }?>
+                        <span class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center  <?= $args['altFontClass'] ? 'c-site-headings--h1--alt-font' : '' ?>"><?= $viewingRoom['currentViewingRoomTitle'] ?></span>
+                    </h1>
 
                     <span class="c-works__href-wrap c-works__href-wrap--center">
 
