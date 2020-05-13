@@ -16,10 +16,11 @@ class Render
      * Loads a view
      * @param  string $view
      * @param  object $data
+     * @param  object $args
      * @example $this->loadView('grid', $data);
      * @return string Compiled view
      */
-    public function view($view, $data = null)
+    public function view($view, $data = null, $args = null)
     {
         ob_start();
         include $this->getTemplateDirectory() . "/Theme/View/" . $view . ".php";
