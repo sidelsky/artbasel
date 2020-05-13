@@ -45,13 +45,13 @@
   }
 
   &__artist {
-    font-family: font-family(primary, normal);
+    font-family: font-family(nt-primary, regular);
     @include set-font-size(2rem, 2rem, 2.4rem, 3rem);
     line-height: 1.1;
   }
 
   &__title {
-    font-family: font-family(primary, bold);
+    font-family: font-family(nt-primary, medium);
     @include set-font-size(2.4rem, 3rem, 3.6rem, 4rem);
     line-height: 1.1;
   }
@@ -59,6 +59,8 @@
   &__href {
     color: currentColor;
     text-decoration: none;
+    @include set-font-size(2rem, 2rem, 2rem, 2rem);
+
     a {
       margin-right: $spacing--x-tiny;
     }
@@ -98,8 +100,8 @@
   }
 
   &__btn-prev {
-    margin-right: $spacing--small;
-    .online_exhibitions__btn-icon {
+    margin-right: $spacing--x-small;
+    .c-online_exhibitions__btn-icon {
       transform: rotate(180deg);
     }
   }
