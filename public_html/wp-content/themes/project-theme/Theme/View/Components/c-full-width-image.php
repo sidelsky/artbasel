@@ -1,0 +1,1 @@
+<figure class="l-content__block l-content__block--full-width-image" style="background-image: url('<?= $data['full_width_image'] ?>')"></figure>

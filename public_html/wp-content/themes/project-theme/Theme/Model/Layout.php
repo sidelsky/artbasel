@@ -40,6 +40,12 @@ class Layout {
 			   case 'image_content':
                $imageContent = new ImageContent($layout);
                $currentLayout = $imageContent->getImageContent();
+            break;
+            
+            //Get Image
+			   case 'full_width_image':
+               $fullWidthImage = new FullWidthImage($layout);
+               $currentLayout = $fullWidthImage->getFullWidthImage();
 				break;
                 
         }

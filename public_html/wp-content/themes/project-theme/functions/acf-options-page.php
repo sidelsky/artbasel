@@ -13,11 +13,11 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'      => false
     ]);
 
-    // acf_add_options_sub_page([
-    //     'page_title'     => 'Header Settings',
-    //     'menu_title'    => 'Header',
-    //     'parent_slug'    => 'theme-general-settings',
-    // ]);
+    acf_add_options_sub_page([
+        'page_title'     => 'Footer navigation',
+        'menu_title'     => 'Footer navigation',
+        'parent_slug'    => 'theme-general-settings',
+    ]);
 
     // acf_add_options_sub_page([
     //     'page_title'     => 'Footer Settings',

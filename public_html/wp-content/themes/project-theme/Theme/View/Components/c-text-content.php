@@ -1,21 +1,21 @@
-<article class="l-content__block l-content__block--text-content <?= is_page_template('page-viewing-room.php') ? 'l-content__block--wide-text' : '' ?> <?= $data['darkBackground'] ? 'l-content__block--dark-background' : ''; ?> <?= $data['justifyTextRight'] ? 'l-content__block--align-right' : ''; ?>">
-	<div class="canvas l-content__block--center l-content__block--text-content">
+<article class="l-content__block l-content__block__text-content <?= is_page_template('page-viewing-room.php' || 'page-private-sales-sub.php') ? 'l-content__block--wide-text' : '' ?> <?= $data['darkBackground'] ? 'l-content__block--dark-background' : ''; ?> <?= $data['justifyTextRight'] ? 'l-content__block--align-right' : ''; ?>">
+	<div class="canvas l-content__block--center l-content__block__text-content">
 
 		<div>
 			<?php if($data['textContentTitle']) : ?>
-				<h2 class="l-content__block--title">
+				<h2 class="l-content__block__title <?= $args['altFontClass'] ? 'l-content__block__title--alt-font' : ''?>">
 					<?= $data['textContentTitle']; ?>
 				</h2>
 			<?php endif; ?>
 			
 			<?php if($data['textContentDate']) : ?>
-				<div class="l-content__block--date">
+				<div class="l-content__block__date">
 					<?= $data['textContentDate']; ?>
 				</div>
 			<?php endif; ?>
 			
 			<?php if($data['textContentCopy']) : ?>
-				<div class="l-content__block--body-text">
+				<div class="l-content__block__body-text">
 					<?= $data['textContentCopy']; ?>
 				</div>
 			<?php endif; ?>

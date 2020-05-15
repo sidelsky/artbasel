@@ -12,8 +12,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
 
     @include media(">tablet") {
+      margin-bottom: 0;
       lost-column: 6/12 2 $spacing no-flex;
     }
 

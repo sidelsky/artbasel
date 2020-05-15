@@ -54,4 +54,10 @@
       padding-bottom: $spacing--large-xxxxx;
     }
   }
+
+  &--top-only {
+    @include breakpoint($medium) {
+      padding-top: 30px;
+    }
+  }
 }

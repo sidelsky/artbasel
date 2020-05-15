@@ -1,3 +1,5 @@
+$spacing: 30px;
+
 .l-content {
   display: flex;
   align-items: flex-start;
@@ -33,26 +35,32 @@
       lost-column: 6/12 no-flex;
     }
 
-    &--title {
+    &__title {
       @include set-font-size(2.4rem, 2.8rem, 2.6rem, 2.8rem);
       font-family: font-family(nt-primary, medium);
       line-height: 1.35;
+
+      &--alt-font {
+        @include set-font-size(4rem, 4rem, 3rem, 4rem);
+        font-family: font-family(garamond, medium);
+      }
     }
 
-    &--date {
+    &__date {
       @include set-font-size(1.4rem, 1.4rem, 1.4rem, 1.4rem);
       line-height: 1.35;
     }
 
-    &--title,
-    &--date,
-    &--body-text p {
+    &__title,
+    &__date,
+    &__body-text p {
       margin-bottom: $spacing--small;
     }
 
-    &--body-text p {
+    &__body-text p {
       @include set-font-size(1.6rem, 1.8rem, 1.8rem, 1.8rem);
       line-height: 1.5;
+      color: palette(greys, base);
 
       a {
         text-decoration: underline;
@@ -60,7 +68,7 @@
       }
     }
 
-    &--text-content {
+    &__text-content {
       @include media("<tablet") {
         padding: $spacing--medium $spacing--x-small $spacing--small;
         &:before {
@@ -113,6 +121,13 @@
         color: currentColor !important;
       }
     }
+
+    //Full width image
+    &--full-width-image {
+      width: 100%;
+      @include aspect-ratio(6, 3);
+      margin-bottom: $spacing;
+    }
   }
 }
 
@@ -148,10 +163,12 @@
 }
 
 /**
-* Content blocks home
+* Content blocks home - wider text & image
 */
-.page-template-page-viewing-room {
+.page-template-page-viewing-room,
+.page-template-page-private-sales-sub {
   .l-content__block {
+    background-color: $white;
     &--wide-text {
       @include media(">tablet") {
         @include aspect-ratio(1, 1.3);
@@ -166,6 +183,7 @@
     }
 
     &--wide-image {
+      margin-bottom: $spacing;
       @include media(">tablet") {
         @include aspect-ratio(1.12, 1);
         lost-column: 7/12 no-flex;

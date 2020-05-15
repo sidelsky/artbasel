@@ -15,8 +15,6 @@ class ExhibitionCard {
 		$optimisedExhibitionCard = [];
 
 		foreach($exhibitionCardDetails as $exhibitionCardDetail) {
-
-         //var_dump($exhibitionCardDetails);
             
             $optimisedExhibitionCard[] = [
                 'currentExhibitionCardImage' => $exhibitionCardDetail['online_exhibitions_image']['url'],

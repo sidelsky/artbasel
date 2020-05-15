@@ -19,6 +19,7 @@ include("header.php");
 ?>
 
 <?php
+
 /**
  * Carousel
  */
@@ -60,63 +61,62 @@ include("header.php");
 ?>
 </section>
 	
-<section class="u-l-horizontal-padding--small">
-	<div class="c-online_exhibitions">
-		<?php
-			/**
-			 * Exhibitions
-			 */
-			function lessThan($index, $value) {
-				return $index < $value;
-			}
-			$template = 'c-exhibition-card';
-			$data = $exhibitionCard->getData();
-			$args = [
-				'operator' => lessThan,
-				'index' => 2,
-				'smallClass' => null
-			];
-			echo $render->view('Components/' . $template, $data, $args);
-		?>
-	</div>
-
-	<div class="c-online_exhibitions">
-		<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
-			<?php
-			/**
-			 * Exhibitions
-			 */
-			function greaterThan($index, $value) {
-				return $index > $value;
-			}
-			$template = 'c-exhibition-card';
-			$data = $exhibitionCard->getData();
-			$args = [
-				'operator' => greaterThan,
-				'index' => 2,
-				'smallClass' => '--small'
-			];
-			echo $render->view('Components/' . $template, $data, $args);
-			?> 
-		</div>
-	</div>
-</section>
-
 <?php
-/**
- * Title break with Carousel control
- */
-    $template = 'c-title-break';
-    $data = $viewingRoom->getData();
-    $args = [
-		'altFontClass' => false,
-		'title' => $themeData['titleBreak']['title'],
-		'showControls' => true
-		];
-    echo $render->view('Components/' . $template, $data, $args);
+	/**
+	 * Exhibitions card
+	 */
+	function lessThan($index, $value) {
+		return $index < $value;
+	}
+	$template = 'c-exhibition-card';
+	$data = $exhibitionCard->getData();
+	$args = [
+		'operator' => lessThan,
+		'index' => 2,
+		'isCarousel' => false,
+		'smallClass' => false
+	];
+	echo $render->view('Components/' . $template, $data, $args);
 ?>
 
-<?php endif; ?>
+
+<?php
+	/**
+	 * Explore title break with Carousel control
+	 */
+	$template = 'c-title-break';
+	$data = $viewingRoom->getData();
+	$args = [
+		'altFontClass' => true,
+		'title' => $themeData['titleBreak']['explore']['title'],
+		'showControls' => $themeData['titleBreak']['explore']['controls']
+	];
+	echo $render->view('Components/' . $template, $data, $args);
+	?>
+
+	<?php
+	/**
+	 * Exhibitions card
+	 */
+	function greaterThan($index, $value) {
+		return $index > $value;
+	}
+	$template = 'c-exhibition-card';
+	$data = $exhibitionCard->getData();
+	$args = [
+		'operator' => greaterThan,
+		'index' => 2,
+		'isCarousel' => true,
+		'smallClass' => true
+	];
+	echo $render->view('Components/' . $template, $data, $args);
+	?> 
+
+<?php 
+/**
+ * End if is front()
+ */
+endif; ?>
 
 <?php 
 /**
@@ -128,7 +128,7 @@ include("partials/ma-email-sub.php"); ?>
 /**
  * Page content
  */
-include("partials/page-content.php"); ?>	
+include("partials/page-content.php"); ?>
 
 <?php
 /**

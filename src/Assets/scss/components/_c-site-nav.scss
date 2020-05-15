@@ -65,6 +65,16 @@
   }
 }
 
+.current-page-ancestor a {
+  text-decoration: none;
+  color: palette(bw, black);
+  font-weight: 800;
+
+  &:after {
+    width: 100% !important;
+  }
+}
+
 //   .menu-item {
 //     display: inline-block;
 //     margin-left: $spacing--small;

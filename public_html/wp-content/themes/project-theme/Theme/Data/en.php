@@ -12,10 +12,16 @@
 
 			//Title break - Carousel Prev Next
 			'titleBreak' => [
-				 'title' => 'Explore'
+				 'explore' => [
+					 'title' => 'Explore',
+					 'controls' => true
+				 ],
+				 'privateSales' => [
+					 'title' => 'About Private Sales',
+					 'controls' => false
+				 ]
 			],
-
-
+			
 			//Footer Info
 			'emailSubCopy'    => [
 				'details' => 'Be the first to receive updates on Online Exhibition presentations',
