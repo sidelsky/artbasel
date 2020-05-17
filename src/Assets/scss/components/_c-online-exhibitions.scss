@@ -100,9 +100,30 @@
     justify-content: center;
     align-items: center;
     float: left;
+    background-color: $white;
+    $color: fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:after {
+      content: "";
+      background-size: 12px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-image: url("data:image/svg+xml,%3Csvg%20height%3D%22158%22%20viewBox%3D%220%200%2083%20158%22%20width%3D%2283%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m118.122957%2038.8771144c-1.169391-1.1694859-3.063633-1.1694859-4.233023%200l-72.8882582%2072.8957186-72.8916094-72.8957186c-1.1693906-1.1694859-3.0636328-1.1694859-4.2330234%200-1.1693907%201.1694859-1.1693907%203.0638824%200%204.2333683l75.0079687%2075.0125553c.5612344.56128%201.3214297.876962%202.1166641.876962s1.555125-.315682%202.1163594-.876962l75.0049218-75.0125553c1.169391-1.1694859%201.169391-3.0638824%200-4.2333683z%22%20transform%3D%22matrix%280%20-1%201%200%20-36.91275%20119.99975%29%22%2F%3E%3C%2Fsvg%3E");
+      transition: all 0.3s ease-in-out;
+    }
     &:hover {
       cursor: pointer;
       background-color: palette(greys, xx-light);
+      &:after {
+        transform: scale(0.9);
+      }
     }
   }
 
@@ -112,9 +133,7 @@
 
   &__btn-prev {
     margin-right: $spacing--x-small;
-    .c-online-exhibitions__btn-icon {
-      transform: rotate(180deg);
-    }
+    transform: rotate(180deg);
   }
 
   &--border-bottom {

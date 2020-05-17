@@ -10,9 +10,6 @@ if (CAROUSELLENGTH) {
     margin: 30,
     dots: false,
     stagePadding: 40,
-    //nav: true,
-    //dotsContainer: '#myDots',
-    //navContainer: "#MyNavs",
     responsive: {
       0: {
         items: 1,

@@ -12,5 +12,7 @@ import "./components/hero-paralax";
 import "./components/form-modal";
 import "./components/we-chat-modal";
 import "./components/vimeo-controls";
+import "./components/owl-image-content-carousel-api";
+import "./components/carousel-fullscreen";
 import Hamburger from "./components/hamburger";
 new Hamburger();

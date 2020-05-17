@@ -1,40 +1,35 @@
 .c-video-player {
+  &__button {
+    padding: 0;
+    border: none;
+    margin: 0;
+    background-color: transparent;
+    appearance: none;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-   &__button {
-      padding: 0;
-      border: none;
-      margin: 0;
-      background-color: transparent;
-      appearance: none;
-      position: absolute;
-      z-index: 2;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
-      &:hover {
-         cursor: pointer;
-      }
-   }
+  &__play-icon {
+    height: 45px;
+    width: 60px;
+  }
 
-   &__play-icon {
-         height: 45px;
-         width: 60px;
-   }
-
-   &__cover-image {
-         background-repeat: no-repeat;
-         background-position: center center;
-         background-size: cover;
-         position: absolute;
-         top: 0;
-         right: 0;
-         bottom: 0;
-         left: 0;
-         z-index: 1;
-         // display: flex;
-         // justify-content: center;
-         // align-items: center;
-   }
-
+  &__cover-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
