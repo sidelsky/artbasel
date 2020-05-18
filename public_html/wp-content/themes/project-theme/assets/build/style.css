@@ -284,6 +284,74 @@ table {
 /**
 * Fonts
 */
+.c-blockquote blockquote {
+  background-color: #f8f8f8;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  padding: 2rem;
+}
+
+@media (min-width: 376px) {
+  .c-blockquote blockquote {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-blockquote blockquote {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-blockquote blockquote {
+    font-size: 2.6rem;
+  }
+}
+
+@media (min-width: 376px) {
+  .c-blockquote blockquote {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 376px) {
+  .c-blockquote blockquote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    vertical-align: middle;
+  }
+}
+
+.c-blockquote blockquote img {
+  width: 100%;
+  display: block;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 376px) {
+  .c-blockquote blockquote img {
+    width: 200px;
+    margin-bottom: 0;
+  }
+}
+
+.c-blockquote blockquote span {
+  padding: 3rem;
+}
+
+.c-blockquote blockquote cite {
+  font-family: "garamond-semibold", Helvetica, Arial, sans-serif;
+}
+
 .c-button {
   font-size: 1.4rem;
   border-radius: 4px;
@@ -2276,8 +2344,8 @@ body.body--menu-is-expanded .c-mobile-navigation {
 
 .c-online-exhibitions__btn-prev, .c-online-exhibitions__btn-next {
   border: solid 1px #e9e9e9;
-  width: 65px;
-  height: 45px;
+  width: 55px;
+  height: 40px;
   border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2294,6 +2362,13 @@ body.body--menu-is-expanded .c-mobile-navigation {
   overflow: hidden;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 376px) {
+  .c-online-exhibitions__btn-prev, .c-online-exhibitions__btn-next {
+    width: 65px;
+    height: 45px;
+  }
 }
 
 .c-online-exhibitions__btn-prev:after, .c-online-exhibitions__btn-next:after {
@@ -4635,6 +4710,7 @@ table {
 }
 
 .carouselViewButton {
+  display: none;
   position: absolute;
   top: 2rem;
   width: 30px;
@@ -4663,6 +4739,12 @@ table {
 
 .carouselViewButton:hover:after {
   background-size: 30px;
+}
+
+@media (min-width: 769px) {
+  .carouselViewButton {
+    display: block;
+  }
 }
 
 .fullscreenBtn:after {
@@ -4809,7 +4891,14 @@ table {
 
 .page-template-page-viewing-room .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav,
 .page-template-page-private-sales-sub .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav {
-  right: 2rem;
+  right: 1rem;
+}
+
+@media (min-width: 376px) {
+  .page-template-page-viewing-room .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav,
+  .page-template-page-private-sales-sub .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav {
+    right: 2rem;
+  }
 }
 
 @media (min-width: 769px) {
@@ -4858,6 +4947,13 @@ table {
     position: relative;
     left: calc(99.9% * -5/12 - (0px - 0px * -5/12) + 0px);
   }
+  .page-template-page-viewing-room .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav,
+  .page-template-page-private-sales-sub .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav {
+    right: 1rem;
+  }
+}
+
+@media (min-width: 769px) and (min-width: 376px) {
   .page-template-page-viewing-room .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav,
   .page-template-page-private-sales-sub .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav {
     right: 2rem;
@@ -5219,6 +5315,13 @@ table {
   position: relative;
 }
 
+.u-l-container--large {
+  margin: auto;
+  max-width: 1600px;
+  width: 100%;
+  position: relative;
+}
+
 .u-l-container--small {
   margin: auto;
   max-width: 520px;
@@ -5383,13 +5486,27 @@ table {
 }
 
 .u-l-horizontal-padding--medium {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 769px) {
+  .u-l-horizontal-padding--medium {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
 
 .u-l-horizontal-padding--small {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 769px) {
+  .u-l-horizontal-padding--small {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 .u-l-horizontal-padding--top-small {

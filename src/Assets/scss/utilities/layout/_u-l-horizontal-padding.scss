@@ -22,13 +22,21 @@
   }
 
   &--medium {
-    padding-left: $spacing--x-large;
-    padding-right: $spacing--x-large;
+    padding-left: $spacing--small;
+    padding-right: $spacing--small;
+    @include media(">tablet") {
+      padding-left: $spacing--x-large;
+      padding-right: $spacing--x-large;
+    }
   }
 
   &--small {
-    padding-left: $spacing--medium;
-    padding-right: $spacing--medium;
+    padding-left: $spacing--small;
+    padding-right: $spacing--small;
+    @include media(">tablet") {
+      padding-left: $spacing--medium;
+      padding-right: $spacing--medium;
+    }
   }
 }
 

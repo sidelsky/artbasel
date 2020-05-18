@@ -46,6 +46,12 @@ class Layout {
 			   case 'full_width_image':
                $fullWidthImage = new FullWidthImage($layout);
                $currentLayout = $fullWidthImage->getFullWidthImage();
+            break;
+            
+            //Get Blockquote
+			   case 'blockquote':
+               $blockquote = new Blockquote($layout);
+               $currentLayout = $blockquote->getBlockquote();
 				break;
                 
         }

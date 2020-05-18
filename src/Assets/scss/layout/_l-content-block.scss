@@ -170,6 +170,7 @@ $spacing: 30px;
 }
 
 .carouselViewButton {
+  display: none;
   $dimensions: 30px;
   position: absolute;
   top: $spacing--small;
@@ -194,6 +195,9 @@ $spacing: 30px;
     &:after {
       background-size: 30px;
     }
+  }
+  @include media(">tablet") {
+    display: block;
   }
 }
 
@@ -261,7 +265,10 @@ $spacing: 30px;
           right: $spacing--small;
         }
         .owl-nav {
-          right: $spacing--small;
+          right: $spacing--tiny;
+          @include media(">phone") {
+            right: $spacing--small;
+          }
         }
       }
 
@@ -273,7 +280,10 @@ $spacing: 30px;
         &:nth-of-type(2n + 2) {
           lost-move: -5/12;
           .owl-nav {
-            right: $spacing--small;
+            right: $spacing--tiny;
+            @include media(">phone") {
+              right: $spacing--small;
+            }
           }
         }
       }

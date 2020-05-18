@@ -62,6 +62,11 @@ include("header.php");
 					$templateName = 'c-full-width-image';
 					break;
 
+				//Get Image content
+				case 'blockquote':
+					$templateName = 'c-blockquote';
+					break;
+
 	}
 
 			echo $render->view('Components/' . $templateName, $value, $args);

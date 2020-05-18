@@ -1,0 +1,34 @@
+.c-blockquote {
+  blockquote {
+    background-color: palette(greys, xxx-light);
+    @include set-font-size(2.2rem, 2.2rem, 2.2rem, 2.6rem);
+    line-height: 1.3;
+    padding: $spacing--small;
+    @include media(">phone") {
+      padding: $spacing--large;
+    }
+
+    @include media(">phone") {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+    }
+    img {
+      width: 100%;
+      display: block;
+      float: left;
+      margin-bottom: $spacing--small;
+      @include media(">phone") {
+        width: 200px;
+        margin-bottom: 0;
+      }
+    }
+    span {
+      padding: $spacing--medium;
+    }
+    cite {
+      font-family: font-family(garamond, semibold);
+    }
+  }
+}

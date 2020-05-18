@@ -93,8 +93,8 @@
   &__btn-prev,
   &__btn-next {
     border: solid 1px palette(greys, xx-light);
-    width: 65px;
-    height: 45px;
+    width: 55px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -105,6 +105,10 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
+    @include media(">phone") {
+      width: 65px;
+      height: 45px;
+    }
     &:after {
       content: "";
       background-size: 12px;

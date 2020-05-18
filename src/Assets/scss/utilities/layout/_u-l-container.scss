@@ -17,11 +17,15 @@
   width: 100%;
   position: relative;
 
-  &--row {
-  }
-
   &--full-width {
     margin: auto;
+    width: 100%;
+    position: relative;
+  }
+
+  &--large {
+    margin: auto;
+    max-width: $max-width-large;
     width: 100%;
     position: relative;
   }
