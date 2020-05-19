@@ -27,13 +27,18 @@
 					<?= $data['textContentLinkDescription']; ?>
 				<?php endif; ?>
 
-					<?php if( $data['textContentLink'] && $data['textContentLinkDescription'] ) : ?>
-						<a href="<?= $data['textContentLink']?>" class="c-works__href"><?= $data['textContentLinkDescription']; ?></a>
-						<svg class="u-icon c-works__icon">
-							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow<?= $data['darkBackground'] ? '-white' : ''; ?>" viewBox="0 0 32 32"></use>
-						</svg>
-					<?php endif; ?>
+				<?php if( $data['textContentLink'] && $data['textContentLinkDescription'] ) : ?>
+					<a href="<?= $data['textContentLink']?>" class="c-works__href"><?= $data['textContentLinkDescription']; ?></a>
+					<svg class="u-icon c-works__icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow<?= $data['darkBackground'] ? '-white' : ''; ?>" viewBox="0 0 32 32"></use>
+					</svg>
+				<?php endif; ?>
+				
 				</span>
+			<?php endif; ?>
+
+			<?php if( $data['showEnquireButton'] ) : ?>
+				<button class="cta-button">Inquire</button>
 			<?php endif; ?>
 			
 		</div>

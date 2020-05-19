@@ -8,11 +8,11 @@
       if( $data['carousel'] ) { ?>
             <button class="fullscreenBtn carouselViewButton" data-id="fullScreenBtn"></button>
             <button class="closefullscreenBtn carouselViewButton" data-id="closefullscreenBtn"></button>
-         <div class="owl-carousel owl-image-content-carousel" data-id="image-content-carousel">
-            <?php foreach( $data['carousel'] as $image) { ?> 
-               <div class="l-content__block__carousel" style="background-image: url('<?= $image['sizes']['large'] ?>')"></div>
-            <?php } ?>
-         </div>         
+            <div class="owl-carousel owl-image-content-carousel" >
+               <?php foreach( $data['carousel'] as $image) { ?> 
+                  <div data-id='carousel-content' class="zis-active zl-content__block__carousel l-content__block__carousel--background" style="background-image: url('<?= $image['sizes']['large'] ?>')" ></div>
+               <?php } ?>
+            </div>         
       <?php } ?>
       
       <?php 
