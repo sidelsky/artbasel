@@ -15,7 +15,6 @@ carousel.owlCarousel({
 });
 
 function hasBeenInitialized() {
-  console.log("Carousel Initialized");
   const fullScreenButtons = [
     ...document.querySelectorAll("[data-id='fullScreenBtn']"),
   ];
@@ -30,7 +29,6 @@ function hasBeenInitialized() {
   ];
 
   const carouselContentsLength = carouselContents.length;
-  console.log(carouselContentsLength);
 
   for (let index = 0; index < fullScreenButtonsLength; index++) {
     const fullScreenButton = fullScreenButtons[index];

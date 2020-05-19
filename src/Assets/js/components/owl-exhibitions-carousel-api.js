@@ -6,19 +6,24 @@ if (CAROUSELLENGTH) {
   const PREV = document.getElementById("prev-slide");
 
   $(".owl-exhibitions-carousel").owlCarousel({
-    loop: false,
+    loop: true,
     margin: 30,
     dots: false,
     stagePadding: 40,
     responsive: {
       0: {
         items: 1,
+        stagePadding: 20,
+        margin: 20,
       },
       600: {
         items: 2,
+        stagePadding: 20,
+        margin: 20,
       },
       1000: {
         items: 3,
+        margin: 30,
       },
     },
   });

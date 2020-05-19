@@ -12,11 +12,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
     &:nth-last-of-type(1) {
       margin-bottom: 0;
     }
 
-    @include media(">tablet") {
+    @include media(">phone") {
       margin-bottom: 0;
       lost-column: 6/12 2 $spacing no-flex;
     }
@@ -49,15 +50,17 @@
   }
 
   &__artist {
-    font-family: font-family(nt-primary, regular);
-    @include set-font-size(2rem, 2rem, 2.4rem, 3rem);
+    font-family: font-family(nt-primary, medium);
+    @include set-font-size(3.2rem, 3.2rem, 3.2rem, 3.2rem);
     line-height: 1.1;
+    margin-bottom: $spacing--tiny;
   }
 
   &__title {
     font-family: font-family(nt-primary, medium);
-    @include set-font-size(2.4rem, 3rem, 3.6rem, 4rem);
+    @include set-font-size(3.2rem, 3.2rem, 3.2rem, 3.2rem);
     line-height: 1.1;
+    margin-bottom: $spacing--tiny;
   }
 
   &--alt-font {
@@ -65,15 +68,15 @@
     .c-online-exhibitions__title {
       font-family: font-family(garamond, medium);
     }
-    .c-online-exhibitions__title {
-      @include set-font-size(5.2rem, 5.2rem, 4rem, 5.2rem);
-    }
+    // .c-online-exhibitions__title {
+    //   @include set-font-size(5.2rem, 5.2rem, 4rem, 5.2rem);
+    // }
   }
 
   &__href {
     color: currentColor;
     text-decoration: none;
-    @include set-font-size(2rem, 2rem, 2rem, 2rem);
+    @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
 
     a {
       margin-right: $spacing--x-tiny;
@@ -90,11 +93,25 @@
     margin-right: $spacing--small;
   }
 
+  &__btn-container {
+    position: absolute;
+    right: 60px;
+    padding-top: 5px;
+    @include media(">phone") {
+      right: 110px;
+    }
+    @include media(">tablet") {
+    }
+    @include media(">desktop") {
+      right: 110px;
+    }
+  }
+
   &__btn-prev,
   &__btn-next {
     border: solid 1px palette(greys, xx-light);
-    width: 65px;
-    height: 45px;
+    width: 55px;
+    height: 35px;
     border-radius: 5px;
     display: flex;
     justify-content: center;

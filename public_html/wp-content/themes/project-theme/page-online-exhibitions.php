@@ -87,7 +87,7 @@ include("header.php");
 	$template = 'c-title-break';
 	$data = $viewingRoom->getData();
 	$args = [
-		'altFontClass' => true,
+		'altFontClass' => false,
 		'title' => $themeData['titleBreak']['explore']['title'],
 		'showControls' => $themeData['titleBreak']['explore']['controls']
 	];
