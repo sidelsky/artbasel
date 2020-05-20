@@ -1,4 +1,4 @@
-<article class="l-content__block l-content__block__text-content <?= is_page_template('page-viewing-room.php' || 'page-private-sales-sub.php') ? 'l-content__block--wide-text' : '' ?> <?= $data['darkBackground'] ? 'l-content__block--dark-background' : ''; ?> <?= $data['justifyTextRight'] ? 'l-content__block--align-right' : ''; ?>">
+<article class="l-content__block l-content__block__text-content <?= is_page_template('page-viewing-room.php' || 'page-private-sales-sub.php') ? 'l-content__block--wide-text' : '' ?> <?= $data['darkBackground'] ? 'l-content__block--dark-background' : ''; ?>">
 	<div class="canvas l-content__block--center l-content__block__text-content">
 
 		<div>
@@ -38,7 +38,8 @@
 			<?php endif; ?>
 
 			<?php if( $data['showEnquireButton'] ) : ?>
-				<button class="cta-button">Inquire</button>
+				<?php $message = 'I am interested in learning more about ' . $data['idCode'] . '. Please send me further details about this artwork, pricing, and availability.' ?>
+				<a class="cta-button" href="/inquire?form_msg=<?= $message ?>&id_code=<?= $data['idCode'] ?>">Inquire</a>
 			<?php endif; ?>
 			
 		</div>

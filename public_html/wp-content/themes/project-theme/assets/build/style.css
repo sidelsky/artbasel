@@ -781,7 +781,7 @@ button[disabled]:hover {
   /* Enable scroll if needed */
   background-color: black;
   /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   /* Black w/ opacity */
 }
 
