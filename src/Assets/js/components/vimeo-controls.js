@@ -1,10 +1,14 @@
-const iframes = [...document.querySelectorAll("iframe")];
+const iframes = [
+  ...document.querySelectorAll("[data-id='vimeo-content'] iframe"),
+];
 const playButtons = [...document.querySelectorAll("[data-id='playBtn']")];
-const covers = document.querySelectorAll("[data-id='cover']");
+const covers = [...document.querySelectorAll("[data-id='cover']")];
 
 const iframesLength = iframes.length;
 const playButtonsLength = playButtons.length;
 const coversLength = covers.length;
+
+console.log(iframesLength);
 
 if (playButtonsLength) {
   for (let index = 0; index < iframesLength; index++) {

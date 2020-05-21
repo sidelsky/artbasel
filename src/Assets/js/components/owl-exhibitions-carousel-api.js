@@ -1,9 +1,9 @@
-const CAROUSEL = document.querySelectorAll("[data-id='exhibitions-carousel']");
-const CAROUSELLENGTH = CAROUSEL.length;
+const carousel = document.querySelectorAll("[data-id='exhibitions-carousel']");
+const carouselLength = carousel.length;
 
-if (CAROUSELLENGTH) {
-  const NEXT = document.getElementById("next-slide");
-  const PREV = document.getElementById("prev-slide");
+if (carouselLength) {
+  const next = document.getElementById("next-slide");
+  const prev = document.getElementById("prev-slide");
 
   $(".owl-exhibitions-carousel").owlCarousel({
     loop: true,
@@ -28,11 +28,11 @@ if (CAROUSELLENGTH) {
     },
   });
 
-  NEXT.addEventListener("click", () => {
+  next.addEventListener("click", () => {
     $(".owl-exhibitions-carousel").trigger("next.owl.carousel");
   });
 
-  PREV.addEventListener("click", () => {
+  prev.addEventListener("click", () => {
     $(".owl-exhibitions-carousel").trigger("prev.owl.carousel");
   });
 }

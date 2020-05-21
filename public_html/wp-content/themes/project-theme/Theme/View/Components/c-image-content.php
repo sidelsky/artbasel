@@ -34,7 +34,7 @@
             </svg>
          </button>
          <figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $data['image_content']['alt'] ); ?>" style="background-image: url('<?= $data['image_content']['url'] ?>')" data-id='cover'></figure>	
-         <div class="u-video-aspect-ratio <?= $data['portrait_video'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
+         <div data-id="vimeo-content" class="u-video-aspect-ratio <?= $data['portrait_video'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
             <?= $data['video_content'] ?>
          </div>
       <?php endif; ?>
