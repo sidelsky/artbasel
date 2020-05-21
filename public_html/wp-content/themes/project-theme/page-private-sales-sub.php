@@ -57,15 +57,21 @@ include("header.php");
 					$templateName = 'c-image-content';
 					break;
 
-				//Get Image content
+				//Get Full width Image content
 				case 'full_width_image':
 					$templateName = 'c-full-width-image';
 					break;
 
-				//Get Image content
+				//Get Blockquote content
 				case 'blockquote':
 					$templateName = 'c-blockquote';
 					break;
+
+				//Wider text content
+				case 'wider_text-content':
+					$templateName = 'c-wider-text-content';
+					break;
+
 
 	}
 

@@ -1,7 +1,7 @@
 <div class="c-viewing-rooms-header owl-carousel owl-hero-carousel">
    <?php foreach($data['currentViewing'] as $viewingRoom) { ?>
 
-      <div class="c-viewing-rooms-header c-header-background-image" style="background-image: url('<?= $viewingRoom['currentViewingRoomImage'] ?>')">
+      <div class="c-viewing-rooms-header c-header-background-image" role="img" aria-label="<?= esc_attr( $viewingRoom['currentViewingRoomImage']['alt'] ); ?>" style="background-image: url('<?= $viewingRoom['currentViewingRoomImage']['url'] ?>')">
         <span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, <?= get_field('image_shading_cover') ?>"></span>
             <div class="canvas parallax-window__content parallax-window__content" data-id="title">
                 <div>

@@ -39,7 +39,7 @@
 
 			<?php if( $data['showEnquireButton'] ) : ?>
 				<?php $message = 'I am interested in learning more about ' . $data['idCode'] . '. Please send me further details about this artwork, pricing, and availability.' ?>
-				<a class="cta-button" href="/inquire?form_msg=<?= $message ?>&id_code=<?= $data['idCode'] ?>">Inquire</a>
+				<a class="cta-button" data-id="inquire-button" href="/inquire?form_msg=<?= $message ?>&id_code=<?= $data['idCode'] ?>">Inquire</a>
 			<?php endif; ?>
 			
 		</div>

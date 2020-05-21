@@ -11,7 +11,7 @@ class FullWidthImage {
    }
 
    public function getFullWidthImage() {
-       $fullWidthImage = $this->layout['full_width_image']['url'];
+       $fullWidthImage = $this->layout['full_width_image'];
 
 	return [
 		'layoutName' => 'full_width_image',

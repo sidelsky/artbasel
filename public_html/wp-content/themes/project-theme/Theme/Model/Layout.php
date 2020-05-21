@@ -42,7 +42,7 @@ class Layout {
                $currentLayout = $imageContent->getImageContent();
             break;
             
-            //Get Image
+            //Get Full width image
 			   case 'full_width_image':
                $fullWidthImage = new FullWidthImage($layout);
                $currentLayout = $fullWidthImage->getFullWidthImage();

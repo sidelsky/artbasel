@@ -44,8 +44,6 @@ if ($_SERVER['HTTP_HOST'] == $localhost) {
                         };
 
                         $output .= '</span>';
-
-
                     }
                         
                 $output .= '</div>';

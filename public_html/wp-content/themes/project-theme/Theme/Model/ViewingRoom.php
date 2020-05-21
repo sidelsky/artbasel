@@ -17,7 +17,7 @@ class ViewingRoom {
 		foreach($viewingRoomDetails as $viewingRoomDetail) {
             
 			$optimisedViewingRoom[] = [
-					'currentViewingRoomImage' => $viewingRoomDetail['current_viewing_room_image']['url'],
+					'currentViewingRoomImage' => $viewingRoomDetail['current_viewing_room_image'],
 					'currentViewingRoomPretitle' => $viewingRoomDetail['current_viewing_room_pretitle'],
 					'currentViewingRoomTitle' => $viewingRoomDetail['current_viewing_room_title'],
 					'currentViewingRoomLinkDescription' => $viewingRoomDetail['current_viewing_room_link_description'],

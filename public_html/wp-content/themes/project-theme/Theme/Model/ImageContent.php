@@ -11,7 +11,7 @@ class ImageContent {
    }
 
    public function getImageContent() {
-       $imageContent = $this->layout['image_content']['url'];
+       $imageContent = $this->layout['image_content'];
        $videoContent = $this->layout['video_content'];
        $portraitVideo = $this->layout['portrait_video'];
        $carousel = $this->layout['carousel'];
