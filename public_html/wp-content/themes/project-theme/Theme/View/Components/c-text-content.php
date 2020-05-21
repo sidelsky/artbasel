@@ -38,10 +38,9 @@
 		<?php endif; ?>
 
 		<?php if( $data['showEnquireButton'] ) : ?>
-			<?php $message = 'I am interested in learning more about ' . $data['idCode'] . '. Please send me further details about this artwork, pricing, and availability.' ?>
-			<!-- <a class="cta-button" data-id="inquire-button" href="/inquire?form_msg=<?= $message ?>&id_code=<?= $data['idCode'] ?>">Inquire</a> -->
-			<button class="cta-button" data-id="inquire-button">Inquire</button>
+			<?php $message =  'I am interested in learning more about ' . $data['idCode'] . '. Please send me further details about this artwork, pricing, and availability.' ?>
+			<button class="cta-button" data-id="inquire-button" value="<?= $message ?>" >Inquire</button>
 		<?php endif; ?>
-		
+
 	</div>
 </article>

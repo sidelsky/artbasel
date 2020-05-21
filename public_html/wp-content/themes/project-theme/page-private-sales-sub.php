@@ -82,6 +82,11 @@ include("header.php");
 </section>
 
 
+<?php 
+/**
+ * Inquire form
+ */
+include("partials/inquire-form.php"); ?>
 	
 <?php
 /**

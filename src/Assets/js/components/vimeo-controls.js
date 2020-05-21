@@ -8,8 +8,6 @@ const iframesLength = iframes.length;
 const playButtonsLength = playButtons.length;
 const coversLength = covers.length;
 
-console.log(iframesLength);
-
 if (playButtonsLength) {
   for (let index = 0; index < iframesLength; index++) {
     let iframe = iframes[index];
