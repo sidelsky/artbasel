@@ -774,22 +774,19 @@ button[disabled]:hover {
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.95);
-  /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-color: #d8d8d8;
-  margin: 10% auto;
-  /* 15% from the top and centered */
   padding: 20px;
   position: relative;
   max-width: 768px;
@@ -982,12 +979,14 @@ button[disabled]:hover {
 
 .wechat__content {
   background-color: #ffffff;
-  margin: 10% auto;
-  /* 15% from the top and centered */
   padding: 20px;
-  position: relative;
   width: 300px;
   height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .wechat__title {
