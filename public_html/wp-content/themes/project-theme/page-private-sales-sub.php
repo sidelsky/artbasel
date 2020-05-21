@@ -5,10 +5,12 @@
 use App\Helper\Render;
 use Theme\Model\Layout;
 use Theme\Model\ViewingRoom;
+use Theme\Model\InquireForm;
 
 $render = new Render;
 $layout = new Layout;
 $viewingRoom = new ViewingRoom;
+$inquireForm = new InquireForm;
 
 $allLayouts = $layout->getLayout();
 
@@ -17,7 +19,7 @@ include("header.php");
 
 <?php
 /**
- * Carousel
+ * Hero carousel
  */
     $template = 'c-viewing-room-carousel';
     $data = $viewingRoom->getData();
@@ -31,8 +33,6 @@ include("header.php");
 <?php
 
 	foreach($allLayouts as $value) {
-
-			$templateName = NULL;
 			
 			switch ($value['layoutName']) {
 				
@@ -71,9 +71,7 @@ include("header.php");
 				case 'wider_text-content':
 					$templateName = 'c-wider-text-content';
 					break;
-
-
-	}
+				}
 
 			echo $render->view('Components/' . $templateName, $value, $args);
 	}
@@ -81,12 +79,21 @@ include("header.php");
 ?>
 </section>
 
-
-<?php 
+<?php
 /**
  * Inquire form
  */
-include("partials/inquire-form.php"); ?>
+    $template = 'c-inquire-form';
+	 $data = $inquireForm->getInquireForm();
+	 //args can overwrite $data
+    $args = [ 
+		'id' => 7,
+		'title' => false,
+		'description' => false,
+		'ajax' => true
+		];
+    echo $render->view('Components/' . $template, $data, $args);
+?>
 	
 <?php
 /**
