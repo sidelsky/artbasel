@@ -4,25 +4,25 @@
  * Default application styling for semantic elements
  */
 html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    height: 100%;
-    min-height: 100%;
-    overflow-y: scroll;
-    -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  height: 100%;
+  min-height: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
-    color: $primary-font-color;
-    font-family: font-family(nt-primary, regular);
-    font-size: $primary-font-size;
-    -moz-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-weight: $primary-font-weight;
-    height: 100%;
-    line-height: 1.5;
-    text-rendering: optimizeLegibility;
+  color: $primary-font-color;
+  font-family: font-family(nt-primary, regular);
+  font-size: $primary-font-size;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-weight: $primary-font-weight;
+  height: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 .fade-enter-active,
@@ -35,57 +35,69 @@ body {
   opacity: 0;
 }
 
-
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * {
-    ::selection {
-        background: $primary-font-color;
-        color: $white;
-        text-shadow: none;
-    }
+  ::selection {
+    background: $primary-font-color;
+    color: $white;
+    text-shadow: none;
+  }
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 em {
-    font-style: italic;
+  font-style: italic;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 figure,
 blockquote {
-    margin: 0;
+  margin: 0;
 }
 
 blockquote {
-    .quote {
-        quotes: '“' '”' '‘' '’';
+  .quote {
+    quotes: "“" "”" "‘" "’";
 
-        &::before {
-            content: open-quote;
-        }
-
-        &::after {
-            content: close-quote;
-        }
+    &::before {
+      content: open-quote;
     }
+
+    &::after {
+      content: close-quote;
+    }
+  }
 }
 
 table {
-    padding: 0;
+  padding: 0;
+}
+
+*:focus {
+  //outline: salmon;
+  padding: 5px;
+  outline: 2px solid #4285f4;
+  text-decoration: none;
+
+  //   outline: 3px solid transparent;
+  //   color: #0b0c0c;
+  //   background-color: #ffdd00;
+  //   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
+  //   text-decoration: none;
 }

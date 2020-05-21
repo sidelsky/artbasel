@@ -4290,7 +4290,7 @@ blockquote {
 }
 
 blockquote .quote {
-  quotes: '\201C' '\201D' '\2018' '\2019';
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
 blockquote .quote::before {
@@ -4303,6 +4303,12 @@ blockquote .quote::after {
 
 table {
   padding: 0;
+}
+
+*:focus {
+  padding: 5px;
+  outline: 2px solid #4285f4;
+  text-decoration: none;
 }
 
 .l-content {
