@@ -1736,6 +1736,7 @@ span.img-text:hover {
 
 .c-ma-email-sub {
   color: currentColor;
+  background: #f8f8f8;
 }
 
 .c-ma-email-sub--small {
@@ -1869,6 +1870,7 @@ span.img-text:hover {
 .c-ma-email-sub input[type="submit"] {
   background-color: #1f1f1f;
   color: #fff;
+  line-height: 2.4;
 }
 
 .c-ma-email-sub form .validation_error {
@@ -2148,7 +2150,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
 .c-online-exhibitions__block::before {
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 62.5%;
   width: 100%;
 }
 
@@ -2194,7 +2196,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
 .c-online-exhibitions__block--small::before {
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 87.5%;
   width: 100%;
 }
 
@@ -2217,7 +2219,7 @@ body.body--menu-is-expanded .c-mobile-navigation {
 .c-online-exhibitions__block--navigation::before {
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 87.5%;
   width: 100%;
 }
 
@@ -4305,12 +4307,6 @@ table {
   padding: 0;
 }
 
-*:focus {
-  padding: 5px;
-  outline: 2px solid #4285f4;
-  text-decoration: none;
-}
-
 .l-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5586,6 +5582,18 @@ table {
   }
 }
 
+.u-l-vertical-padding--x-small {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .u-l-vertical-padding--x-small {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+
 .u-l-vertical-padding--small {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -5636,7 +5644,13 @@ table {
 
 @media screen and (min-width: 768px) {
   .u-l-vertical-padding--top-only {
-    padding-top: 30px;
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-l-vertical-padding--bottom-only {
+    padding-bottom: 3rem;
   }
 }
 

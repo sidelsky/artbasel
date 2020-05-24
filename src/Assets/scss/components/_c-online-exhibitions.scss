@@ -8,7 +8,7 @@
 
   &__block {
     margin-bottom: $spacing;
-    @include aspect-ratio(1, 1, 0, 0, 0, 0);
+    @include aspect-ratio(4, 2.5, 0, 0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -23,7 +23,7 @@
     }
 
     &--small {
-      @include aspect-ratio(1, 1, 0, 0, 0, 0);
+      @include aspect-ratio(4, 3.5, 0, 0, 0, 0);
       margin-bottom: 0;
     }
   }
@@ -31,7 +31,7 @@
   //Navigation
   &__block--navigation {
     margin-bottom: $spacing;
-    @include aspect-ratio(1, 1, 0, 0, 0, 0);
+    @include aspect-ratio(4, 3.5, 0, 0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -68,9 +68,6 @@
     .c-online-exhibitions__title {
       font-family: font-family(garamond, medium);
     }
-    // .c-online-exhibitions__title {
-    //   @include set-font-size(5.2rem, 5.2rem, 4rem, 5.2rem);
-    // }
   }
 
   &__href {

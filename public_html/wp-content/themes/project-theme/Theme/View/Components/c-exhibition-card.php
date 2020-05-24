@@ -1,4 +1,4 @@
-<section class="u-l-horizontal-padding--small">
+<section class="u-l-horizontal-padding--small <?= $args['paddingBottom'] ? 'u-l-vertical-padding--bottom-only' : '' ?>">
 	<div class="c-online-exhibitions">
       <?php if( $args['isCarousel'] ) : ?>
          <div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">

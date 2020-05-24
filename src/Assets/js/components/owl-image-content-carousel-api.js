@@ -7,6 +7,7 @@ carousel.owlCarousel({
   dots: false,
   items: 1,
   nav: true,
+  lazyLoad: true,
   onInitialize: hasBeenInitialized,
   navText: [
     "<div id='prev-slide' class='c-online-exhibitions__btn-prev'></div>",

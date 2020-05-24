@@ -5,8 +5,10 @@ if (carouselLength) {
   const next = document.getElementById("next-slide");
   const prev = document.getElementById("prev-slide");
 
-  $(".owl-exhibitions-carousel").owlCarousel({
-    loop: true,
+  const $carousel = $(".owl-exhibitions-carousel");
+
+  $carousel.owlCarousel({
+    loop: false,
     margin: 30,
     dots: false,
     stagePadding: 40,

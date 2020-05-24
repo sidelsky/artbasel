@@ -1,6 +1,6 @@
 .c-ma-email-sub {
-  //background: $dark;
   color: currentColor;
+  background: #f8f8f8;
 
   &--small {
     @include set-font-size(1.1rem, 1.1rem, 1.1rem, 1.1rem);
@@ -83,6 +83,7 @@
   input[type="submit"] {
     background-color: $dark;
     color: $white;
+    line-height: 2.4;
   }
 }
 

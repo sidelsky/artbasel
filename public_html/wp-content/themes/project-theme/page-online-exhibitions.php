@@ -74,7 +74,8 @@ include("header.php");
 		'operator' => lessThan,
 		'index' => 2,
 		'isCarousel' => false,
-		'smallClass' => false
+		'smallClass' => false,
+		'paddingBottom' => false
 	];
 	echo $render->view('Components/' . $template, $data, $args);
 ?>
@@ -107,16 +108,16 @@ include("header.php");
 		'operator' => greaterThan,
 		'index' => 2,
 		'isCarousel' => true,
-		'smallClass' => true
+		'smallClass' => true,
+		'paddingBottom' => true
 	];
 	echo $render->view('Components/' . $template, $data, $args);
 	?> 
 
-<?php 
-/**
- * End if is front()
- */
-endif; ?>
+<?php
+//End if is front()
+	endif;
+?>
 
 <?php 
 /**

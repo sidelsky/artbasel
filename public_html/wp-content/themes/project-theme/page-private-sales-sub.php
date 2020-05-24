@@ -94,12 +94,21 @@ include("header.php");
 		];
     echo $render->view('Components/' . $template, $data, $args);
 ?>
-	
+
+<?php 
+/**
+ * Email submission
+ */
+include("partials/ma-email-sub.php"); ?>
+
+ 
 <?php
 /**
  * Footer navigation
  */
 include("partials/footer-navigation.php"); ?>
+
+
 	 
 <?php
 /**

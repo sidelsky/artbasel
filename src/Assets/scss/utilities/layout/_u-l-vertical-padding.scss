@@ -12,6 +12,17 @@
   }
 
   //Small
+  &--x-small {
+    padding-top: $spacing--x-medium;
+    padding-bottom: $spacing--x-medium;
+
+    @include breakpoint($medium) {
+      padding-top: $spacing--x-large;
+      padding-bottom: $spacing--x-large;
+    }
+  }
+
+  //Small
   &--small {
     padding-top: $spacing--medium;
     padding-bottom: $spacing--medium;
@@ -57,7 +68,13 @@
 
   &--top-only {
     @include breakpoint($medium) {
-      padding-top: 30px;
+      padding-top: $spacing--medium;
+    }
+  }
+
+  &--bottom-only {
+    @include breakpoint($medium) {
+      padding-bottom: $spacing--medium;
     }
   }
 }
