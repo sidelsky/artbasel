@@ -1,114 +1,104 @@
 .c-cookiepop {
-   
-   //Desktop
-   @include media('>desktop') {
-      display: flex;
+  //Desktop
+  @include media(">desktop") {
+    display: flex;
   }
 
   p {
-   @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
+    @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
   }
-
 }
 
-
 .Cookie--base {
-
 }
 
 .Cookie--hauser-theme {
-   background-color: #222222;
-   color: white;
-   padding: 20px;
+  background-color: #222222;
+  color: white;
+  padding: 20px;
 
-   button {
-       display: block;
-       width: 100%;
-       text-align: center;
-       background: transparent;
-       border: solid 1.5px rgba(255, 255, 255, .25);
-       border-radius: 3px;
-       font-size: 14px;
-       line-height: 1.43;
-       letter-spacing: 0.3px;
-       color: #ffffff;
-       padding: 10px;
-       
-       &:hover {
-          cursor: pointer;
-         }
-         
-         a {
-            color: white;
-         }
-      }
-   }
-   
-   .hw-button-wrapper {
-      width: 100%;
-      line-height: 1.43;
-      margin: 10px 0;
-      
-      //Desktop
-      @include media('>desktop') {
-         margin: 0 0 0 10px;
-         width: 200px;
-     }
+  button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    border: solid 1.5px rgba(255, 255, 255, 0.25);
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    padding: 10px;
 
+    &:hover {
+      cursor: pointer;
+    }
+
+    a {
+      color: white;
+    }
+  }
 }
 
+.hw-button-wrapper {
+  width: 100%;
+  line-height: 1.43;
+  margin: 10px 0;
 
+  //Desktop
+  @include media(">desktop") {
+    margin: 0 0 0 10px;
+    width: 200px;
+  }
+}
 
 .cookie-notice-container {
-   display: table;
+  display: table;
 }
 
-
 .cn-buttons-container {
+  a {
+    text-align: center;
+    border: solid 1.5px rgba(255, 255, 255, 0.25) !important;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    -webkit-appearance: button;
+    padding: 10px;
+    width: 100%;
+    line-height: 1.43;
+    margin: 5px 0 !important;
+    background-color: #212322;
+    display: inline-block;
 
-   a {
-      text-align: center;
-      border: solid 1.5px rgba(255, 255, 255, .25);
-      border-radius: 3px;
-      font-size: 14px;
-      line-height: 1.43;
-      letter-spacing: 0.3px;
-      color: #ffffff;
-      //-webkit-appearance: button;
-      padding: 10px;
-      width: 100%;
-      line-height: 1.43;
-      margin: 5px 0 !important;
-      background-color: #212322;
-      display: inline-block;
+    //Desktop
+    @include media(">desktop") {
+      width: 200px;
+      margin: 0 10px !important;
+    }
 
-      //Desktop
-      @include media('>desktop') {
-         width: 200px;
-         margin: 0 10px !important;
-      }
-      
-      &:hover {
-         cursor: pointer;
-        }
-        
-        a {
-           color: white;
-        }
-     }
+    &:hover {
+      cursor: pointer;
+    }
 
-     //Desktop
-     @include media('>desktop') {
-      display: table-cell;
-      width: 440px;
-     }
+    a {
+      color: white;
+    }
+  }
 
+  //Desktop
+  @include media(">desktop") {
+    display: table-cell;
+    width: 440px;
+  }
 }
 
 .cn-text-container {
-   display: table-cell;
-   text-align: left;
-   font-size: 15px;
-   padding-top: -10px !important;
-   margin-top: 10px !important;
+  display: table-cell;
+  text-align: left;
+  font-size: 15px;
+  padding-top: -10px !important;
+  margin-top: 10px !important;
 }

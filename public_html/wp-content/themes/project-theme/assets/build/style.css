@@ -620,12 +620,13 @@ button[disabled]:hover {
 
 .cn-buttons-container a {
   text-align: center;
-  border: solid 1.5px rgba(255, 255, 255, 0.25);
+  border: solid 1.5px rgba(255, 255, 255, 0.25) !important;
   border-radius: 3px;
   font-size: 14px;
   line-height: 1.43;
   letter-spacing: 0.3px;
   color: #ffffff;
+  -webkit-appearance: button;
   padding: 10px;
   width: 100%;
   line-height: 1.43;
