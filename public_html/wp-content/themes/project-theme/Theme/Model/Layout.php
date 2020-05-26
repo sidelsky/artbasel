@@ -52,6 +52,12 @@ class Layout {
 			   case 'blockquote':
                $blockquote = new Blockquote($layout);
                $currentLayout = $blockquote->getBlockquote();
+            break;
+            
+            //Scroll to navigation
+			   case 'scroll_to_navigation':
+               $scrollToNavigationIds = new ScrollToNavigationIds($layout);
+               $currentLayout = $scrollToNavigationIds->getScrollToNavigationIds();
 				break;
                 
         }

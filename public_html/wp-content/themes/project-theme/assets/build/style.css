@@ -2311,6 +2311,10 @@ body.body--menu-is-expanded .c-mobile-navigation {
   }
 }
 
+.c-online-exhibitions--alt-font {
+  font-family: "garamond-medium", Helvetica, Arial, sans-serif;
+}
+
 .c-online-exhibitions--alt-font .c-online-exhibitions__artist,
 .c-online-exhibitions--alt-font .c-online-exhibitions__title {
   font-family: "garamond-medium", Helvetica, Arial, sans-serif;
@@ -2440,6 +2444,10 @@ body.body--menu-is-expanded .c-mobile-navigation {
   margin-right: 1.5rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.c-online-exhibitions--border-top {
+  border-bottom: solid 1px #888888;
 }
 
 .c-online-exhibitions--border-bottom {
@@ -2852,6 +2860,31 @@ body.body--menu-is-expanded .c-mobile-navigation {
 @media (min-width: 1025px) {
   .c-site-headings--h1--alt-font {
     font-size: 5rem;
+  }
+}
+
+.c-site-headings--h1--private-sales {
+  color: #fff;
+  font-size: 3.2rem;
+  font-family: "garamond-regular", Helvetica, Arial, sans-serif;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 376px) {
+  .c-site-headings--h1--private-sales {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-site-headings--h1--private-sales {
+    font-size: 3.2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-site-headings--h1--private-sales {
+    font-size: 3.2rem;
   }
 }
 
@@ -5565,7 +5598,19 @@ table {
 }
 
 .u-l-horizontal-padding--top-small {
-  padding-top: 30px;
+  padding-top: 4rem;
+}
+
+.u-l-horizontal-padding--bottom-small {
+  padding-bottom: 4rem;
+}
+
+.u-l-horizontal-margin--top-small {
+  margin-top: 4rem;
+}
+
+.u-l-horizontal-margin--bottom-small {
+  margin-bottom: 4rem;
 }
 
 /*

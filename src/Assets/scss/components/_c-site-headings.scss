@@ -89,6 +89,13 @@
       font-family: font-family(garamond, regular);
       @include set-font-size(5rem, 5rem, 5rem, 5rem);
     }
+
+    &--private-sales {
+      color: $white;
+      @include set-font-size(3.2rem, 3.2rem, 3.2rem, 3.2rem);
+      font-family: font-family(garamond, regular);
+      margin-bottom: $spacing--medium;
+    }
   }
 
   //Medium title

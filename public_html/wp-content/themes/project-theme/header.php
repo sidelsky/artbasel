@@ -66,39 +66,44 @@ $wordpress = new WordpressHelper;
 		} else {
 			$baseUrl = $homeUrl;
 		}
+ 
 	?>
-
-
 	<header class="c-header">
-		<div class="c-header__wrap">
 
+		<div class="c-header__wrap">
 			<a href="<?= $baseUrl ?>" class="c-header__link">
 				<svg class="c-header__icon">
 					<use xlink:href='#shape-hauserwirth-logo'></use>
 				</svg>
 			</a>
 
-			<!-- START: Hamburger -->
-			<a class="c-hamburger js-hamburger">
-				<span class="c-hamburger__bar"></span>
-			</a>
-			<!-- END: Hamburger -->
+			<?php if( !is_post_type_archive('private-room') ) : ?>
+				<!-- START: Hamburger -->
+				<a class="c-hamburger js-hamburger">
+					<span class="c-hamburger__bar"></span>
+				</a>
+				<!-- END: Hamburger -->
+			<?php endif; ?>
 
 		</div>
 
-		<div class="l-site-header__nav">
-			<?php
-				$menu_args = [
-					'menu' => 'Primary navigation',
-					'container' => '',
-					'echo' => true,
-					'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
-				];
-				echo '<nav class="c-site-nav">';
-					wp_nav_menu($menu_args); 
-				echo '</nav>';
-			?>
-		</div>
+		<?php if( !is_post_type_archive('private-room') && !is_singular('private-room') ) : ?>
+			<div class="l-site-header__nav">
+				<?php
+					$menu_args = [
+						'menu' => 'Primary navigation',
+						'container' => '',
+						'echo' => true,
+						'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
+					];
+					echo '<nav class="c-site-nav">';
+						wp_nav_menu($menu_args); 
+					echo '</nav>';
+				?>
+			</div>
+		<?php endif; ?>
+	 
+
 	</header>
 
 	<!-- Mobile Nav -->

@@ -41,5 +41,17 @@
 }
 
 .u-l-horizontal-padding--top-small {
-  padding-top: 30px;
+  padding-top: $spacing--large;
+}
+
+.u-l-horizontal-padding--bottom-small {
+  padding-bottom: $spacing--large;
+}
+
+.u-l-horizontal-margin--top-small {
+  margin-top: $spacing--large;
+}
+
+.u-l-horizontal-margin--bottom-small {
+  margin-bottom: $spacing--large;
 }

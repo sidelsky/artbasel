@@ -15,6 +15,24 @@ $allLayouts = $layout->getLayout();
 include("header.php"); 
 ?>
 
+<?php  if( have_rows('content') ) : ?>
+	<div class="l-site-header__nav">
+		<nav class="c-site-nav">
+			<ul class="c-site-nav__menu">
+				<?php  while ( have_rows('content') ) : the_row(); ?>
+					<?php 
+						if( get_row_layout() == 'scroll_to_navigation' ):
+							$text = get_sub_field('scroll_to_navigation_item');
+					?>
+							<li class="menu-item"><a href="#<?= $text ?>"><?= $text ?></a></li>
+
+					<?php endif; ?>
+				<?php endwhile; ?>
+			</ul>
+		</nav>			
+	</div>
+<?php endif; ?>
+
 <?php
 /**
  * Hero carousel
@@ -65,9 +83,9 @@ include("header.php");
 					$templateName = 'c-blockquote';
 					break;
 
-				//Wider text content
-				case 'wider_text-content':
-					$templateName = 'c-wider-text-content';
+				//Scroll to navigation
+				case 'scroll_to_navigation':
+					$templateName = 'c-scroll-to-navigation-ids';
 					break;
 				}
 

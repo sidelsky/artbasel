@@ -64,6 +64,7 @@
   }
 
   &--alt-font {
+    font-family: font-family(garamond, medium);
     .c-online-exhibitions__artist,
     .c-online-exhibitions__title {
       font-family: font-family(garamond, medium);
@@ -153,6 +154,10 @@
   &__btn-prev {
     margin-right: $spacing--x-small;
     transform: rotate(180deg);
+  }
+
+  &--border-top {
+    border-bottom: solid 1px palette(greys, base);
   }
 
   &--border-bottom {
