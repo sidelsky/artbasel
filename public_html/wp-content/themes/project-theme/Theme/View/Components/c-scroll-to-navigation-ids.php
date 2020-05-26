@@ -1,7 +1,3 @@
 <?php if( $data['scroll_to_navigation_item'] ) : ?>
-
-   <div style="margin-bottom: 300px; display: block; width: 100%" id="<?= $data['scroll_to_navigation_item'] ?>">
-      <p><?= $data['scroll_to_navigation_item'] ?></p>
-   </div>
-   
+   <div style="display: block; width: 100%; height: 0px" id="<?= $data['scroll_to_navigation_item'] ?>"></div>
 <?php endif; ?>

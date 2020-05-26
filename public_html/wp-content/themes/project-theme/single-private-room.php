@@ -13,25 +13,11 @@ $inquireForm = new InquireForm;
 $allLayouts = $layout->getLayout();
 
 include("header.php"); 
+
+include("partials/scroll-to-navigation.php");
 ?>
 
-<?php  if( have_rows('content') ) : ?>
-	<div class="l-site-header__nav">
-		<nav class="c-site-nav">
-			<ul class="c-site-nav__menu">
-				<?php  while ( have_rows('content') ) : the_row(); ?>
-					<?php 
-						if( get_row_layout() == 'scroll_to_navigation' ):
-							$text = get_sub_field('scroll_to_navigation_item');
-					?>
-							<li class="menu-item"><a href="#<?= $text ?>"><?= $text ?></a></li>
 
-					<?php endif; ?>
-				<?php endwhile; ?>
-			</ul>
-		</nav>			
-	</div>
-<?php endif; ?>
 
 <?php
 /**
