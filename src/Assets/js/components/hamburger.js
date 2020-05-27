@@ -7,8 +7,10 @@ export default class Hamburger {
   constructor() {
     this.body = document.querySelector("body");
     this.menuTrigger = document.querySelector(".js-hamburger");
-    this.menuTrigger.addEventListener("click", () => this.handleClick());
-    this.menuIsExpanded = false;
+    if (this.menuTrigger) {
+      this.menuTrigger.addEventListener("click", () => this.handleClick());
+      this.menuIsExpanded = false;
+    }
   }
 
   handleClick(e) {

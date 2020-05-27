@@ -1171,6 +1171,18 @@ button[disabled]:hover {
   margin: 0 auto;
 }
 
+.body--menu-is-expanded {
+  margin-top: 70px;
+}
+
+.body--menu-is-expanded .c-header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
 @media (min-width: 769px) {
   .c-hero-carousel {
     display: -webkit-box;
