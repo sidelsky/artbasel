@@ -88,6 +88,12 @@ $spacing: 30px;
       }
       @include media(">desktop-large") {
         padding: $spacing--large-xxxxx;
+        //outline: solid 1px red;
+      }
+
+      &--wide {
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
 
@@ -202,10 +208,11 @@ $spacing: 30px;
 }
 
 /**
-* Content blocks home - wider text & image
+* Content blocks home - Wider text & image
 */
 .page-template-page-viewing-room,
-.page-template-page-private-sales-sub {
+.page-template-page-private-sales-sub,
+.single-private-room {
   .l-content__block {
     background-color: $white;
 
@@ -230,6 +237,7 @@ $spacing: 30px;
     &--wide-image {
       position: relative;
       @include aspect-ratio(1, 1);
+
       .owl-nav {
         position: absolute;
         z-index: 2;

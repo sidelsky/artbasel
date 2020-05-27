@@ -102,7 +102,12 @@ $wordpress = new WordpressHelper;
 				?>
 			</div>
 		<?php endif; ?>
-	 
+		
+		<?php 
+			if ( is_singular('private-room') ) {
+				include("partials/scroll-to-navigation.php"); 
+			}
+		?>
 
 	</header>
 

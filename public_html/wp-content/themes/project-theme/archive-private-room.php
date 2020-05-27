@@ -4,7 +4,7 @@
  */
 include("header.php");
 require('classes/Users.php');
-global $post;
+
 //$users = new Users();
 $currentUser = wp_get_current_user();
 $currentUserId = $currentUser->ID;

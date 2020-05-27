@@ -2,6 +2,9 @@
   align-items: center;
   background-color: $white;
   justify-content: center;
+  // position: sticky;
+  // top: 0;
+  // z-index: 100;
 
   &__wrap {
     text-align: center;

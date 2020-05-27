@@ -53,6 +53,13 @@ class Layout {
                $blockquote = new Blockquote($layout);
                $currentLayout = $blockquote->getBlockquote();
             break;
+
+            //Wider text content
+			   case 'wider_text_content':
+               $widerTextContent = new WiderTextContent($layout);
+               $currentLayout = $widerTextContent->getWiderTextContent();
+            break;
+
             
             //Scroll to navigation
 			   case 'scroll_to_navigation':

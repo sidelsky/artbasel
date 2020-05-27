@@ -1,7 +1,6 @@
 // scss-lint:disable NestingDepth
 
 .c-site-nav {
-  //font-family: font-family(primary, 600);
   @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
   font-family: font-family(nt-primary, regular);
   display: block;
