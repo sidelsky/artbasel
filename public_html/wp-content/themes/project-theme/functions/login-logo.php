@@ -11,7 +11,7 @@ function my_login_logo() { ?>
 
          body.login-action-login,
          body.login-action-lostpassword {
-            background-color: #000;
+            background-color: #202020;
             min-width: 0;
             color: #000;
             font-size: 13px;
@@ -87,7 +87,7 @@ function my_login_logo() { ?>
 
          #loginform #wp-submit {
             background: #000;
-            border-color: #007cba;
+            border-color: #ccc;
             color: #fff;
             text-decoration: none;
             text-shadow: none;
