@@ -108,6 +108,29 @@ function my_login_logo() { ?>
             color: #fff;
          }
 
+         .wp-core-ui .button, 
+         .wp-core-ui 
+         .button-secondary {
+            color: #000 !important;
+            border: 0 !important;
+            background: #fff !important;
+            vertical-align: top;
+         }
+
+         .login .button.wp-hide-pw {
+            padding: 0px !important;
+            border: 0 !important;
+            height: 10px;
+            border: 1px solid transparent !important;
+            transform: scale(.9); 
+         }
+
+
+         .button-primary:focus {
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px #ccc !important;
+         }
+
+
     </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'my_login_logo' );

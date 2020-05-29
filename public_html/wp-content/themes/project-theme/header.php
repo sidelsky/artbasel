@@ -68,7 +68,7 @@ $wordpress = new WordpressHelper;
 		}
  
 	?>
-	<header class="c-header">
+	<header class="c-header" id="header">
 
 		<div class="c-header__wrap">
 			<a href="<?= $baseUrl ?>" class="c-header__link">
@@ -88,7 +88,14 @@ $wordpress = new WordpressHelper;
 		</div>
 
 		<?php if( !is_post_type_archive('private-room') && !is_singular('private-room') ) : ?>
-			<div class="l-site-header__nav">
+			
+			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--left">
+				<svg class="c-header__icon">
+					<use xlink:href='#shape-hauserwirth-logo'></use>
+				</svg>
+			</a>
+
+			<div class="l-site-header__nav" data-id="site-header-nav" id="header">
 				<?php
 					$menu_args = [
 						'menu' => 'Primary navigation',

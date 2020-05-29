@@ -3,7 +3,31 @@
 }
 
 .l-site-header__nav {
+  background-color: $white;
   @include media("<desktop") {
     display: none;
+  }
+}
+
+.is-scrolled {
+  @include media(">tablet") {
+    .c-header {
+      transform: translate3d(0, -70px, 0);
+      transition: ease 0.4s;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+
+      &__link--left {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .c-header__wrap {
+    }
+
+    .l-site-header__nav {
+      .menu-item {
+        margin: 0 1.5rem;
+      }
+    }
   }
 }

@@ -23,6 +23,10 @@ body {
   height: 100%;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+  margin-top: 70px;
+  @include media(">desktop") {
+    margin-top: 118px;
+  }
 }
 
 .fade-enter-active,

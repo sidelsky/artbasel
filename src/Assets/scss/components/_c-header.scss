@@ -1,10 +1,14 @@
 .c-header {
   align-items: center;
-  background-color: $white;
   justify-content: center;
-  // position: sticky;
-  // top: 0;
-  // z-index: 100;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  transform: translate3d(0, 0, 0);
+  transition: ease 0.4s;
+  background-color: $white;
+  overflow: hidden;
 
   &__wrap {
     text-align: center;
@@ -13,6 +17,7 @@
     justify-content: center;
     align-items: center;
     border-bottom: solid 1px palette(greys, xx-light);
+    position: relative;
   }
 
   //Link
@@ -21,6 +26,14 @@
     width: 185px;
     height: 16px;
     margin-top: 5px;
+
+    &--left {
+      position: absolute;
+      left: $spacing--medium;
+      top: 80px;
+      transform: translate3d(0, 35px, 0);
+      transition: ease 0.4s;
+    }
   }
 
   //Icon
