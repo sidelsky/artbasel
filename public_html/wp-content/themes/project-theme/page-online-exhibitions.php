@@ -62,23 +62,6 @@ include("header.php");
 </section>
 	
 <?php
-	/**
-	 * Exhibitions card
-	 */
-	// function lessThan($index, $value) {
-	// 	return $index < $value;
-	// }
-	// $template = 'c-exhibition-card';
-	// $data = $exhibitionCard->getData();
-	// $args = [
-	// 	'operator' => lessThan,
-	// 	'index' => 2,
-	// 	'isCarousel' => false,
-	// 	'smallClass' => false,
-	// 	'paddingBottom' => false
-	// ];
-	// echo $render->view('Components/' . $template, $data, $args);
-
 	$args = array(
 		'post_type' => 'online-exhibitions',
 		'posts_per_page' => 2,

@@ -68,8 +68,8 @@
                 'singular_name' => 'Private room',
                 'has_archive' => true,
                 'rewrite' => [
-						  'slug' => 'private-sales/private-rooms',
-						  'with_front' => true
+                //'slug' => 'private-sales/private-rooms',
+                'with_front' => false
 						],
                 'menu_icon' =>  'dashicons-hidden',
                 'menu_position' => 8,

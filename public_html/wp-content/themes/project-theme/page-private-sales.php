@@ -25,9 +25,117 @@ include("header.php");
     $data = $viewingRoom->getData();
     $args = [
 		'altFontClass' => true
-		];
+	];
     echo $render->view('Components/' . $template, $data, $args);
 ?>
+
+	<?php
+	/**
+	 * Explore title break with Carousel control
+	 */
+		$template = 'c-title-break';
+		$data = $viewingRoom->getData();
+		$args = [
+			'altFontClass' => true,
+			'title' => $themeData['titleBreak']['newWorks']['title'],
+			'showControls' => $themeData['titleBreak']['newWorks']['controls']
+			];
+		echo $render->view('Components/' . $template, $data, $args);
+	?>
+
+
+<?php
+	$args = array(
+		'post_type' => 'private-sales',
+		'posts_per_page' => 2,
+		'orderby' => 'post_date',
+		'order' => 'DEC'
+	);
+	$loop = new WP_Query( $args );
+
+	// Args are passed here --->
+	$onlineExhibitionsCardData = [
+		'isCarousel' => false
+	]
+
+	?>
+	<section class="u-l-horizontal-padding--small">
+		<div class="c-online-exhibitions">
+			<?php 
+				while ( $loop->have_posts() ) : $loop->the_post();
+
+				$rows = get_field('current_viewing_rooms');
+				$thumbnail = $rows[0]['current_viewing_room_image']['sizes']['medium'];
+            $alt = $rows[0]['current_viewing_room_image']['alt'];
+				$fieldTitle = $rows[0]['current_viewing_room_title'];
+				$fieldSubTitle = $rows[0]['current_viewing_room_title'];
+            $postTitle = get_the_title();
+            $url = get_the_permalink();
+
+				
+				// $thumbnail = $group['image']['sizes']['medium'];
+				// $alt = $group['alt'];
+				// $fieldTitle = $group['title'];
+				// $fieldSubTitle = $group['subtitle'];
+				// $postTitle = get_the_title();
+				// <--- Args received here
+				include("partials/online-exhibitions-card.php");
+				?>
+
+			<?php	endwhile; ?>
+		</div>
+	</section>
+
+
+	<?php
+	/**
+	 * Explore title break with Carousel control
+	 */
+		$template = 'c-title-break';
+		$data = $viewingRoom->getData();
+		$args = [
+			'altFontClass' => true,
+			'title' => $themeData['titleBreak']['explore']['title'],
+			'showControls' => $themeData['titleBreak']['explore']['controls']
+			];
+		echo $render->view('Components/' . $template, $data, $args);
+	?>
+
+<?php
+	$args = array(
+		'post_type' => 'private-sales',
+		'posts_per_page' => 999,
+		'offset' => 2, 
+		'orderby' => 'post_date',
+		'order' => 'DEC'
+	);
+	$loop = new WP_Query( $args );
+
+	// Args are passed here --->
+	$onlineExhibitionsCardData = [
+		'isCarousel' => true
+	]
+
+	?>
+	<section class="u-l-horizontal-padding--small">
+		<div class="c-online-exhibitions">
+			<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
+				<?php 	
+						while ( $loop->have_posts() ) : $loop->the_post();
+						$rows = get_field('current_viewing_rooms');
+						$thumbnail = $rows[0]['current_viewing_room_image']['sizes']['medium'];
+						$alt = $rows[0]['current_viewing_room_image']['alt'];
+						$fieldTitle = $rows[0]['current_viewing_room_title'];
+						$fieldSubTitle = $rows[0]['current_viewing_room_title'];
+						$postTitle = get_the_title();
+						$url = get_the_permalink();
+						// <--- Args received here
+						include("partials/online-exhibitions-card.php");
+					?>
+				<?php	endwhile; ?>
+			</div>
+		</div>
+	</section>
 
 <section class="l-content">
 <?php
@@ -63,73 +171,6 @@ include("header.php");
 ?>
 </section>
 	
-<?php
-	/**
-	 * Exhibition blocks
-	 */
-	function lessThan($index, $value) {
-		return $index < $value;
-	}
-	$template = 'c-exhibition-card';
-	$data = $exhibitionCard->getData();
-	$args = [
-		'operator' => lessThan,
-		'index' => 2,
-		'altFontClass' => true,
-		'isCarousel' => false,
-		'smallClass' => false
-	];
-	echo $render->view('Components/' . $template, $data, $args);
-?>
- 
-
-	<?php
-	/**
-	 * Explore title break with Carousel control
-	 */
-		$template = 'c-title-break';
-		$data = $viewingRoom->getData();
-		$args = [
-			'altFontClass' => true,
-			'title' => $themeData['titleBreak']['explore']['title'],
-			'showControls' => $themeData['titleBreak']['explore']['controls']
-			];
-		echo $render->view('Components/' . $template, $data, $args);
-	?>
-
- 
-	<?php
-	/**
-	 * Exhibition blocks
-	 */
-	function greaterThan($index, $value) {
-		return $index > $value;
-	}
-	$template = 'c-exhibition-card';
-	$data = $exhibitionCard->getData();
-	$args = [
-		'operator' => greaterThan,
-		'index' => 2,
-		'altFontClass' => true,
-		'isCarousel' => true,
-		'smallClass' => true
-	];
-	echo $render->view('Components/' . $template, $data, $args);
-	?> 
- 
-<?php
-/**
- * Private sales title break with Carousel control
- */
-    $template = 'c-title-break';
-    $data = $viewingRoom->getData();
-    $args = [
-		'altFontClass' => true,
-		'title' => $themeData['titleBreak']['privateSales']['title'],
-		'showControls' => $themeData['titleBreak']['privateSales']['controls']
-		];
-    echo $render->view('Components/' . $template, $data, $args);
-?>
 
 <?php
 /**

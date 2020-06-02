@@ -12,6 +12,10 @@
 
 			//Title break - Carousel Prev Next
 			'titleBreak' => [
+				'newWorks' => [
+					 'title' => 'New works',
+					 'controls' => false
+				 ],
 				 'explore' => [
 					 'title' => 'Explore',
 					 'controls' => true
