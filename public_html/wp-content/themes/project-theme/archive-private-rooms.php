@@ -27,10 +27,10 @@ if( $currentUserId ) {
       <?php
             //$showContent = $users->getUsers();
             $args = array(
-               'post_type' => 'private-room',
+               'post_type' => 'private-rooms',
                'posts_per_page' => -1,
-               'orderby' => 'post_date',
-               'order' => 'DEC'
+               'orderby'=> 'post_date',
+               'order' => 'DESC'
             );
             $loop = new WP_Query( $args );
             while ( $loop->have_posts() ) : $loop->the_post();
@@ -70,7 +70,14 @@ if( $currentUserId ) {
       </div>
    </section>
 <?php else : ?>
-   Sorry you cannot see this content
+   <script>
+      // setTimeout(function(){ 
+      // }, 2000);
+      window.location.replace("/wordpress/wp-admin");
+   </script>
+   <?php /* redirect('http://example.com/', true); */?>
+   <?php include("partials/non-page-content.php"); ?>
+ 
 <?php endif; ?>
 
 <?php

@@ -26,6 +26,9 @@ body {
   margin-top: 70px;
   @include media(">desktop") {
     margin-top: 118px;
+    &.archive.post-type-archive-private-rooms {
+      margin-top: 70px;
+    }
   }
 }
 

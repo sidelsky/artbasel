@@ -10,35 +10,69 @@
  
         // Works
         create_post_type([
-			    'name' => 'Works',
-               'singular_name' => 'Works',
-               'has_archive' => FALSE,
-               'rewrite' => array(
-                    'slug' => 'works',
-                    'with_front' => TRUE
-					),
-					'menu_icon' =>  'dashicons-format-image',
-					'menu_position' => 5,
-					'supports' => [
-						'title',
-						'editor',
-						'thumbnail',
-						'excerpt',
-						'revisions'
+            'name' => 'Works',
+            'singular_name' => 'Works',
+            'has_archive' => FALSE,
+            'rewrite' => [
+					'slug' => 'works',
+					 'with_front' => TRUE
 					],
-		  ]);
+                'menu_icon' =>  'dashicons-format-image',
+                'menu_position' => 5,
+                'supports' => [
+                    'title',
+                    'editor',
+                    'thumbnail',
+                    'excerpt',
+						  'revisions'
+						],
+					]);
 
-                // Works
+			// Online exhibitions
         	create_post_type([
-                'name' => 'Private room',
+				'name' => 'Online exhibitions',
+				'singular_name' => 'Online exhibition',
+				'has_archive' => false,
+				'rewrite' => [
+					//'slug' => 'private-sales/private-room',
+					'with_front' => false
+				],
+				'menu_icon' =>  'dashicons-format-gallery',
+				'menu_position' => 6,
+				'supports' => [
+					'title',
+					'revisions'
+				],
+			]);
+
+		   // Private sales
+        	create_post_type([
+                'name' => 'Private sales',
+                'singular_name' => 'Private sale',
+                'has_archive' => false,
+                'rewrite' => [
+						  //'slug' => 'private-sales/private-rooms',
+						  'with_front' => false
+						],
+                'menu_icon' =>  'dashicons-welcome-view-site',
+                'menu_position' => 7,
+                'supports' => [
+                    'title',
+                    'revisions'
+						],
+					]);
+
+         // Private rooms
+        	create_post_type([
+                'name' => 'Private rooms',
                 'singular_name' => 'Private room',
                 'has_archive' => true,
-                'rewrite' => array(
-                    'slug' => 'private-sales/private-room',
-                    'with_front' => true
-                ),
-                'menu_icon' =>  'dashicons-admin-network',
-                'menu_position' => 6,
+                'rewrite' => [
+						  'slug' => 'private-sales/private-rooms',
+						  'with_front' => true
+						],
+                'menu_icon' =>  'dashicons-hidden',
+                'menu_position' => 8,
                 'supports' => [
                     'title',
                     'revisions'

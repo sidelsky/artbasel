@@ -65,20 +65,52 @@ include("header.php");
 	/**
 	 * Exhibitions card
 	 */
-	function lessThan($index, $value) {
-		return $index < $value;
-	}
-	$template = 'c-exhibition-card';
-	$data = $exhibitionCard->getData();
-	$args = [
-		'operator' => lessThan,
-		'index' => 2,
-		'isCarousel' => false,
-		'smallClass' => false,
-		'paddingBottom' => false
-	];
-	echo $render->view('Components/' . $template, $data, $args);
-?>
+	// function lessThan($index, $value) {
+	// 	return $index < $value;
+	// }
+	// $template = 'c-exhibition-card';
+	// $data = $exhibitionCard->getData();
+	// $args = [
+	// 	'operator' => lessThan,
+	// 	'index' => 2,
+	// 	'isCarousel' => false,
+	// 	'smallClass' => false,
+	// 	'paddingBottom' => false
+	// ];
+	// echo $render->view('Components/' . $template, $data, $args);
+
+	$args = array(
+		'post_type' => 'online-exhibitions',
+		'posts_per_page' => 2,
+		'orderby' => 'post_date',
+		'order' => 'DEC'
+	);
+	$loop = new WP_Query( $args );
+
+	// Args are passed here --->
+	$onlineExhibitionsCardData = [
+		'isCarousel' => false
+	]
+
+	?>
+	<section class="u-l-horizontal-padding--small">
+		<div class="c-online-exhibitions">
+			<?php 
+				while ( $loop->have_posts() ) : $loop->the_post();
+				$group = get_field('hero');
+				$thumbnail = $group['image']['sizes']['medium'];
+				$alt = $group['alt'];
+				$fieldTitle = $group['title'];
+				$fieldSubTitle = $group['subtitle'];
+				$postTitle = get_the_title();
+				$url = get_the_permalink();
+				// <--- Args received here
+				include("partials/online-exhibitions-card.php");
+				?>
+
+			<?php	endwhile; ?>
+		</div>
+	</section>
 
 
 <?php
@@ -95,24 +127,42 @@ include("header.php");
 	echo $render->view('Components/' . $template, $data, $args);
 	?>
 
+
 	<?php
-	/**
-	 * Exhibitions card
-	 */
-	function greaterThan($index, $value) {
-		return $index > $value;
-	}
-	$template = 'c-exhibition-card';
-	$data = $exhibitionCard->getData();
-	$args = [
-		'operator' => greaterThan,
-		'index' => 2,
-		'isCarousel' => true,
-		'smallClass' => true,
-		'paddingBottom' => true
-	];
-	echo $render->view('Components/' . $template, $data, $args);
-	?> 
+	$args = array(
+		'post_type' => 'online-exhibitions',
+		'posts_per_page' => 999,
+		'offset' => 2, 
+		'orderby' => 'post_date',
+		'order' => 'DEC'
+	);
+	$loop = new WP_Query( $args );
+
+	// Args are passed here --->
+	$onlineExhibitionsCardData = [
+		'isCarousel' => true
+	]
+
+	?>
+	<section class="u-l-horizontal-padding--small">
+		<div class="c-online-exhibitions">
+			<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
+				<?php 	
+						while ( $loop->have_posts() ) : $loop->the_post();
+							$group = get_field('hero');
+							$thumbnail = $group['image']['sizes']['medium'];
+							$alt = $group['alt'];
+							$fieldTitle = $group['title'];
+							$fieldSubTitle = $group['subtitle'];
+							$postTitle = get_the_title();
+							$url = get_the_permalink();
+							// <--- Args received here
+							include("partials/online-exhibitions-card.php");
+						?>
+				<?php	endwhile; ?>
+			</div>
+		</div>
+	</section>
 
 <?php
 //End if is front()

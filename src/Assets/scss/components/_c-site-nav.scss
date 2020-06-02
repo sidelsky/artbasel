@@ -1,5 +1,3 @@
-// scss-lint:disable NestingDepth
-
 .c-site-nav {
   @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
   font-family: font-family(nt-primary, regular);
@@ -10,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 1px palette(greys, xx-light);
 
   .menu-item {
     display: inline-block;
@@ -45,7 +44,6 @@
         text-decoration: none;
         color: palette(bw, black);
         opacity: 1;
-        //font-weight: 800;
 
         &:after {
           width: 100%;
@@ -57,7 +55,6 @@
       text-decoration: none;
       color: palette(bw, black);
       opacity: 1;
-      //font-weight: 800;
 
       &:after {
         width: 100%;
@@ -70,7 +67,6 @@
   text-decoration: none;
   color: palette(bw, black);
   opacity: 1;
-  //font-weight: 800;
 
   &:after {
     width: 100% !important;
