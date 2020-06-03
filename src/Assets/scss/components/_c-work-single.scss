@@ -115,12 +115,16 @@
   }
 }
 
-.owl-carousel .owl-item img {
-  margin: 0 auto;
-  max-height: 800px !important;
-  width: auto !important;
-  &:hover {
-    cursor: pointer;
+.works-single {
+  .owl-carousel .owl-item {
+    img {
+      margin: 0 auto;
+      max-height: 800px !important;
+      width: auto !important;
+      &:hover {
+        cursor: pointer;
+      }
+    }
   }
 }
 

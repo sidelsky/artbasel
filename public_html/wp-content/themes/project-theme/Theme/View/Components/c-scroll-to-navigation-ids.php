@@ -1,3 +1,7 @@
 <?php if( $data['scroll_to_navigation_item'] ) : ?>
-   <div style="display: block; width: 100%; height: 0px" id="<?= $data['scroll_to_navigation_item'] ?>"></div>
+   <section class="u-section" id="<?= $data['scroll_to_navigation_item'] ?>">
+      <div class="u-l-container--full-width">
+         <div class="l-content__title-break"></div>    
+      </div>
+   </section>
 <?php endif; ?>

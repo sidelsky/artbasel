@@ -95,6 +95,77 @@ table {
   border-spacing: 0;
 }
 
+/**
+ * EasyZoom core styles
+ */
+.easyzoom {
+  position: relative;
+  /* 'Shrink-wrap' the element */
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+.easyzoom img {
+  vertical-align: bottom;
+}
+
+.easyzoom.is-loading img {
+  cursor: progress;
+}
+
+.easyzoom.is-ready img {
+  cursor: crosshair;
+}
+
+.easyzoom.is-error img {
+  cursor: not-allowed;
+}
+
+.easyzoom-notice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 150;
+  width: 10em;
+  margin: -1em 0 0 -5em;
+  line-height: 2em;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px #888;
+          box-shadow: 0 0 10px #888;
+}
+
+.easyzoom-flyout {
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+  background: #fff;
+}
+
+/**
+ * EasyZoom layout variations
+ */
+.easyzoom--overlay .easyzoom-flyout {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.easyzoom--adjacent .easyzoom-flyout {
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.easyzoom-flyout {
+  position: absolute;
+  z-index: 999999999;
+}
+
 /*
  * Helpful mixins
  */
@@ -2508,9 +2579,15 @@ body.body--menu-is-expanded .c-mobile-navigation {
 }
 
 .c-online-exhibitions__btn-prev {
-  margin-right: 1.5rem;
+  margin-right: 10px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media (min-width: 376px) {
+  .c-online-exhibitions__btn-prev {
+    margin-right: 1.5rem;
+  }
 }
 
 .c-online-exhibitions--border-top {
@@ -3623,13 +3700,13 @@ h1 strong {
   width: 100%;
 }
 
-.owl-carousel .owl-item img {
+.works-single .owl-carousel .owl-item img {
   margin: 0 auto;
   max-height: 800px !important;
   width: auto !important;
 }
 
-.owl-carousel .owl-item img:hover {
+.works-single .owl-carousel .owl-item img:hover {
   cursor: pointer;
 }
 
@@ -4919,7 +4996,7 @@ table {
 @media (min-width: 769px) {
   .l-content__block--wide-text {
     position: relative;
-    width: calc(99.9% * 5/12 - (0px - 0px * 5/12));
+    width: calc(99.9% * 4/12 - (0px - 0px * 4/12));
   }
   .l-content__block--wide-text:nth-child(1n) {
     float: left;
@@ -4939,7 +5016,7 @@ table {
   .l-content__block--wide-text::before {
     content: "";
     display: block;
-    padding-top: 130%;
+    padding-top: 126%;
     width: 100%;
   }
   .l-content__block--wide-text .canvas {
@@ -4951,30 +5028,12 @@ table {
   }
   .l-content__block--wide-text:nth-of-type(2n + 2) {
     position: relative;
-    left: calc(99.9% * 7/12 - (0px - 0px * 7/12) + 0px);
-  }
-}
-
-@media (min-width: 1025px) {
-  .l-content__block--wide-text {
-    position: relative;
-  }
-  .l-content__block--wide-text::before {
-    content: "";
-    display: block;
-    padding-top: 100%;
-    width: 100%;
-  }
-  .l-content__block--wide-text .canvas {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
+    left: calc(99.9% * 8/12 - (0px - 0px * 8/12) + 0px);
   }
 }
 
 .l-content__block--wide-image {
+  background-color: red;
   position: relative;
   position: relative;
 }
@@ -4982,7 +5041,7 @@ table {
 .l-content__block--wide-image::before {
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 58.82352941%;
   width: 100%;
 }
 
@@ -5026,8 +5085,7 @@ table {
 
 @media (min-width: 769px) {
   .l-content__block--wide-image {
-    position: relative;
-    width: calc(99.9% * 7/12 - (0px - 0px * 7/12));
+    width: calc(99.9% * 8/12 - (0px - 0px * 8/12));
     margin-bottom: 30px;
   }
   .l-content__block--wide-image:nth-child(1n) {
@@ -5045,22 +5103,9 @@ table {
   .l-content__block--wide-image:nth-child(12n + 1) {
     clear: both;
   }
-  .l-content__block--wide-image::before {
-    content: "";
-    display: block;
-    padding-top: 89.28571429%;
-    width: 100%;
-  }
-  .l-content__block--wide-image .canvas {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
   .l-content__block--wide-image:nth-of-type(2n + 2) {
     position: relative;
-    left: calc(99.9% * -5/12 - (0px - 0px * -5/12) + 0px);
+    left: calc(99.9% * -4/12 - (0px - 0px * -4/12) + 0px);
   }
   .l-content__block--wide-image:nth-of-type(2n + 2) .owl-nav {
     right: 1rem;
@@ -5073,25 +5118,6 @@ table {
   }
 }
 
-@media (min-width: 1025px) {
-  .l-content__block--wide-image {
-    position: relative;
-  }
-  .l-content__block--wide-image::before {
-    content: "";
-    display: block;
-    padding-top: 71.42857143%;
-    width: 100%;
-  }
-  .l-content__block--wide-image .canvas {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-}
-
 .carousel-is-active {
   position: relative;
 }
@@ -5099,7 +5125,7 @@ table {
 .carousel-is-active::before {
   content: "";
   display: block;
-  padding-top: 100%;
+  padding-top: 58.82352941%;
   width: 100%;
 }
 
@@ -5111,44 +5137,6 @@ table {
   top: 0;
 }
 
-@media (min-width: 769px) {
-  .carousel-is-active {
-    position: relative;
-  }
-  .carousel-is-active::before {
-    content: "";
-    display: block;
-    padding-top: 89.28571429%;
-    width: 100%;
-  }
-  .carousel-is-active .canvas {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-}
-
-@media (min-width: 1025px) {
-  .carousel-is-active {
-    position: relative;
-  }
-  .carousel-is-active::before {
-    content: "";
-    display: block;
-    padding-top: 71.42857143%;
-    width: 100%;
-  }
-  .carousel-is-active .canvas {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-  }
-}
-
 .active-height {
   height: 100vh;
 }
@@ -5156,7 +5144,7 @@ table {
 .l-content__block__carousel--background {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .canvas .l-content__block--link {
@@ -5171,6 +5159,24 @@ table {
   text-align: center !important;
 }
 
+.owl-carousel .owl-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.owl-carousel .owl-item img {
+  height: 500px !important;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: initial;
+}
+
+/** 
+Owl modal
+*/
 .modal-active {
   position: fixed !important;
   z-index: 100 !important;

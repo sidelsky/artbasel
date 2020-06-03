@@ -58,6 +58,7 @@
                 'menu_position' => 7,
                 'supports' => [
                     'title',
+                    'thumbnail',
                     'revisions'
 						],
 					]);
