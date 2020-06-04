@@ -48,8 +48,8 @@ include("header.php");
 	$args = array(
 		'post_type' => 'private-sales',
 		'posts_per_page' => 2,
-		'orderby' => 'post_date',
-		'order' => 'DEC'
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
 	);
 	$loop = new WP_Query( $args );
 
@@ -106,8 +106,8 @@ include("header.php");
 		'post_type' => 'private-sales',
 		'posts_per_page' => 999,
 		'offset' => 2, 
-		'orderby' => 'post_date',
-		'order' => 'DEC'
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
 	);
 	$loop = new WP_Query( $args );
 
