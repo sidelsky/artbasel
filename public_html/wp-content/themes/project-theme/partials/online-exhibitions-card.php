@@ -17,14 +17,10 @@
    $isCarousel = $args['isCarousel'];
 
 ?>
-<article class="<?= $isCarousel ? 'c-online-exhibitions__block--small' : 'c-online-exhibitions__block' ?>" style="background-image: url('<?= $thumbnail ?>')">
+<article class="<?= $isCarousel ? 'c-online-exhibitions__block--small' : 'c-online-exhibitions__block' ?>" style="background-image: url('<?= $FeaturedThumbnail[0] ? $FeaturedThumbnail[0] : $thumbnail ?>')">
    <div class="canvas">
       <div class="c-online-exhibitions__content c-online-exhibitions--alt-font">
          <h3 class="c-online-exhibitions__artist">
-            <?= $fieldSubTitle ?>
-            <?php if( $fieldSubTitle ) : ?>
-               <br>
-            <?php endif; ?>
             <?php if( $fieldSubTitle ) : ?>
                <span class="c-online-exhibitions__title"><?= $fieldSubTitle ?></span>
             <?php endif; ?>

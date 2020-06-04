@@ -6,15 +6,13 @@
        * If there is a Carousel
          */
       if( $data['carousel'] ) { ?>
-            <button class="fullscreenBtn carouselViewButton target" data-id="fullScreenBtn"></button>
-            <button class="closefullscreenBtn carouselViewButton target" data-id="closefullscreenBtn"></button>
+            <button class="fullscreenBtn carouselViewButton target" data-id="fullScreenBtn" title="Fullscreen"></button>
+            <button class="closefullscreenBtn carouselViewButton target" data-id="closefullscreenBtn" title="Exit fullscreen"></button>
             <div class="owl-carousel owl-image-content-carousel" >
                <?php foreach( $data['carousel'] as $image) { ?> 
-                  <!-- <div data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="l-content__block__carousel--background" style="background-image: url('<?= $image['sizes']['large'] ?>')" ></div> -->
                   <figure data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="zoom-image" style="background-image: url('<?= $image['sizes']['large'] ?>')">
                      <figure style="background-image: url(<?= $image['sizes']['large'] ?>)"></figure>
                   </figure>
-
                <?php } ?>
             </div>         
       <?php } ?>

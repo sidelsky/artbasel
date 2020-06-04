@@ -25,6 +25,9 @@
     &--small {
       @include aspect-ratio(4, 3.5, 0, 0, 0, 0);
       margin-bottom: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
     }
   }
 

@@ -65,8 +65,8 @@ include("header.php");
 	$args = array(
 		'post_type' => 'online-exhibitions',
 		'posts_per_page' => 2,
-		'orderby' => 'post_date',
-		'order' => 'DEC'
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
 	);
 	$loop = new WP_Query( $args );
 
@@ -82,13 +82,14 @@ include("header.php");
 				while ( $loop->have_posts() ) : $loop->the_post();
 				$group = get_field('hero');
 				$thumbnail = $group['image']['sizes']['medium'];
+				$FeaturedThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'medium');
 				$alt = $group['alt'];
-				$fieldTitle = $group['title'];
 				$fieldSubTitle = $group['subtitle'];
 				$postTitle = get_the_title();
 				$url = get_the_permalink();
 				// <--- Args received here
 				include("partials/online-exhibitions-card.php");
+				wp_reset_postdata();
 				?>
 
 			<?php	endwhile; ?>
@@ -115,9 +116,9 @@ include("header.php");
 	$args = array(
 		'post_type' => 'online-exhibitions',
 		'posts_per_page' => 999,
-		'offset' => 2, 
-		'orderby' => 'post_date',
-		'order' => 'DEC'
+		'offset' => 2,
+		'orderby' => 'menu_order',
+		'order' => 'ASC'
 	);
 	$loop = new WP_Query( $args );
 
@@ -134,13 +135,14 @@ include("header.php");
 						while ( $loop->have_posts() ) : $loop->the_post();
 							$group = get_field('hero');
 							$thumbnail = $group['image']['sizes']['medium'];
+							$FeaturedThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'medium');
 							$alt = $group['alt'];
-							$fieldTitle = $group['title'];
 							$fieldSubTitle = $group['subtitle'];
 							$postTitle = get_the_title();
 							$url = get_the_permalink();
 							// <--- Args received here
 							include("partials/online-exhibitions-card.php");
+							wp_reset_postdata();
 						?>
 				<?php	endwhile; ?>
 			</div>

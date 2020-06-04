@@ -24,7 +24,7 @@
                     'editor',
                     'thumbnail',
                     'excerpt',
-						  'revisions'
+					'revisions'
 						],
 					]);
 
@@ -40,7 +40,9 @@
 				'menu_icon' =>  'dashicons-format-gallery',
 				'menu_position' => 6,
 				'supports' => [
-					'title',
+                    'title',
+                    'thumbnail',
+                    'editor',
 					'revisions'
 				],
 			]);
@@ -76,6 +78,7 @@
                 'menu_position' => 8,
                 'supports' => [
                     'title',
+                    'thumbnail',
                     'revisions'
 						],
 					]);

@@ -1054,7 +1054,7 @@ button[disabled]:hover {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  top: 27px;
+  top: 26px;
   right: 2rem;
   text-indent: -9999px;
   -webkit-transition: background 0.3s;
@@ -2260,6 +2260,9 @@ body.body--menu-is-expanded .c-mobile-navigation {
 .c-online-exhibitions__block--small {
   position: relative;
   margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .c-online-exhibitions__block--small::before {
