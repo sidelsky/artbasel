@@ -10,16 +10,11 @@
             <button class="closefullscreenBtn carouselViewButton target" data-id="closefullscreenBtn"></button>
             <div class="owl-carousel owl-image-content-carousel" >
                <?php foreach( $data['carousel'] as $image) { ?> 
+                  <!-- <div data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="l-content__block__carousel--background" style="background-image: url('<?= $image['sizes']['large'] ?>')" ></div> -->
+                  <figure data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="zoom-image" style="background-image: url('<?= $image['sizes']['large'] ?>')">
+                     <figure style="background-image: url(<?= $image['sizes']['large'] ?>)"></figure>
+                  </figure>
 
-                  <!-- <div class="easyzoom easyzoom--overlay">
-                     <a href="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/topics/global-review/2019/ey-staff-at-event.jpg">
-                        <img src="https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" class="normal" >
-                     </a>
-                  </div> -->
-
-                  <div data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="l-content__block__carousel--background" style="background-image: url('<?= $image['sizes']['large'] ?>')" ></div>
-                  <!-- <img src="https://images.pexels.com/photos/161154/stained-glass-spiral-circle-pattern-161154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="<?= esc_attr( $image['alt'] ); ?>"> -->
-                  <!-- <img src="<?= $image['sizes']['large'] ?>" alt="<?= esc_attr( $image['alt'] ); ?>"> -->
                <?php } ?>
             </div>         
       <?php } ?>

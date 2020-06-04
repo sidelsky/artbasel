@@ -1,6 +1,5 @@
 import "./svg-sprite";
 import "./archive";
-//import "./components/easyzoom";
 import "./components/jquery";
 import "./components/login-form";
 import "./components/paralax";
