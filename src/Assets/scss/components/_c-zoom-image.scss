@@ -1,0 +1,24 @@
+/* zoom image */
+.zoom-image {
+  position: relative;
+  margin: 0;
+  background-size: cover;
+  width: 100%;
+}
+
+.zoom-image > figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+}
+
+.zoom-image > figure:hover {
+  opacity: 1;
+  cursor: crosshair;
+}

@@ -95,77 +95,6 @@ table {
   border-spacing: 0;
 }
 
-/**
- * EasyZoom core styles
- */
-.easyzoom {
-  position: relative;
-  /* 'Shrink-wrap' the element */
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
-
-.easyzoom img {
-  vertical-align: bottom;
-}
-
-.easyzoom.is-loading img {
-  cursor: progress;
-}
-
-.easyzoom.is-ready img {
-  cursor: crosshair;
-}
-
-.easyzoom.is-error img {
-  cursor: not-allowed;
-}
-
-.easyzoom-notice {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 150;
-  width: 10em;
-  margin: -1em 0 0 -5em;
-  line-height: 2em;
-  text-align: center;
-  background: #fff;
-  -webkit-box-shadow: 0 0 10px #888;
-          box-shadow: 0 0 10px #888;
-}
-
-.easyzoom-flyout {
-  position: absolute;
-  z-index: 100;
-  overflow: hidden;
-  background: #fff;
-}
-
-/**
- * EasyZoom layout variations
- */
-.easyzoom--overlay .easyzoom-flyout {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.easyzoom--adjacent .easyzoom-flyout {
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100%;
-  margin-left: 20px;
-}
-
-.easyzoom-flyout {
-  position: absolute;
-  z-index: 999999999;
-}
-
 /*
  * Helpful mixins
  */
@@ -906,6 +835,7 @@ button[disabled]:hover {
   margin-bottom: 1rem;
   border-radius: 3px;
   height: 48px;
+  font-family: "newtransport-regular", Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 376px) {
@@ -4257,6 +4187,32 @@ a .c-works__title,
   }
 }
 
+/* zoom image */
+.zoom-image {
+  position: relative;
+  margin: 0;
+  background-size: cover;
+  width: 100%;
+}
+
+.zoom-image > figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-out;
+  transition: opacity 200ms ease-out;
+}
+
+.zoom-image > figure:hover {
+  opacity: 1;
+  cursor: crosshair;
+}
+
 /*
  * Reset default form styling for browser consistency
  */
@@ -5223,32 +5179,6 @@ Owl modal
 
 .closefullscreenBtn:after {
   background-image: url("data:image/svg+xml,%3Csvg%20height%3D%22445%22%20viewBox%3D%220%200%20445%20445%22%20width%3D%22445%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m445%20181.476562h-183.00625v-181.476562h36.462188v144.944844h146.544062zm-298.539375-181.420937v144.944844h-146.460625v36.476093h183.00625v-181.420937h-36.531719zm-146.405%20297.009687h146.474531v147.934688h36.476094v-184.522031h-182.950625zm298.469844%20147.823438v-147.948594h146.474531v-36.462187h-182.992344v184.396875h36.531719z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E");
-}
-
-/* zoom image */
-.zoom-image {
-  position: relative;
-  margin: 0;
-  background-size: cover;
-  width: 100%;
-}
-
-.zoom-image > figure {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  background-repeat: no-repeat;
-  opacity: 0;
-  -webkit-transition: opacity 200ms ease-out;
-  transition: opacity 200ms ease-out;
-}
-
-.zoom-image > figure:hover {
-  opacity: 1;
-  cursor: crosshair;
 }
 
 @media screen and (min-width: 768px) {
