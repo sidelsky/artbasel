@@ -1,7 +1,6 @@
 <div class="l-content__block l-content__block--image-content l-content__block--wide-image">
    <div class="canvas l-content__block--center">
 
-
       <?php 
       /**
        * If iFrame
@@ -9,8 +8,6 @@
       if( $data['iframe'] ) { ?>
           <?= $data['iframe'] ?>
       <?php } ?>
-
-
 
       <?php 
       /**

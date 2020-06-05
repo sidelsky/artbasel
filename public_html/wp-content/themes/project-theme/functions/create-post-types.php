@@ -47,41 +47,62 @@
 				],
 			]);
 
+			// Art fairs
+        	create_post_type([
+				'name' => 'Art fairs',
+				'singular_name' => 'Art fairs',
+				'has_archive' => false,
+				'rewrite' => [
+					//'slug' => 'private-sales/private-room',
+					'with_front' => false
+				],
+				'menu_icon' =>  'dashicons-images-alt2',
+				'menu_position' => 7,
+				'supports' => [
+                    'title',
+                    'thumbnail',
+                    'editor',
+					'revisions'
+				],
+			]);
+
 		   // Private sales
         	create_post_type([
-                'name' => 'Private sales',
-                'singular_name' => 'Private sale',
-                'has_archive' => false,
-                'rewrite' => [
-						  //'slug' => 'private-sales/private-rooms',
-						  'with_front' => false
-						],
-                'menu_icon' =>  'dashicons-welcome-view-site',
-                'menu_position' => 7,
-                'supports' => [
-                    'title',
-                    'thumbnail',
-                    'revisions'
-						],
-					]);
+				'name' => 'Private sales',
+				'singular_name' => 'Private sale',
+				'has_archive' => false,
+				'rewrite' => [
+					//'slug' => 'private-sales/private-rooms',
+					'with_front' => false
+				],
+				'menu_icon' =>  'dashicons-welcome-view-site',
+				'menu_position' => 8,
+				'supports' => [
+					'title',
+					'thumbnail',
+					'revisions'
+				],
+			]);
 
-         // Private rooms
+            // Private rooms
         	create_post_type([
-                'name' => 'Private rooms',
-                'singular_name' => 'Private room',
-                'has_archive' => true,
-                'rewrite' => [
-                //'slug' => 'private-sales/private-rooms',
-                'with_front' => false
-						],
-                'menu_icon' =>  'dashicons-hidden',
-                'menu_position' => 8,
-                'supports' => [
-                    'title',
-                    'thumbnail',
-                    'revisions'
-						],
-					]);
+				'name' => 'Private rooms',
+				'singular_name' => 'Private room',
+				'has_archive' => true,
+				'rewrite' => [
+				//'slug' => 'private-sales/private-rooms',
+				'with_front' => false
+				],
+				'menu_icon' =>  'dashicons-hidden',
+				'menu_position' => 8	,
+				'supports' => [
+					'title',
+					'thumbnail',
+					'revisions'
+				],
+			]);
+
+
 
 
 				}

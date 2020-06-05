@@ -3297,13 +3297,13 @@ h1 strong {
   width: 100%;
 }
 
-.c-site-nav .menu-item.current_page_item a {
+.c-site-nav .menu-item.current-menu-item a {
   text-decoration: none;
   color: #000;
   opacity: 1;
 }
 
-.c-site-nav .menu-item.current_page_item a:after {
+.c-site-nav .menu-item.current-menu-item a:after {
   width: 100%;
 }
 
