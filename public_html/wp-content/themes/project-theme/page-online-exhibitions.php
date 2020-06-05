@@ -84,9 +84,9 @@ include("header.php");
 				$thumbnail = $group['image']['sizes']['medium'];
 				$FeaturedThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'medium');
 				$alt = $group['alt'];
-				$fieldSubTitle = $group['subtitle'];
-				$postTitle = get_the_title();
+				$title = $group['subtitle'];
 				$url = get_the_permalink();
+				//$postTitle = get_the_title();
 				// <--- Args received here
 				include("partials/online-exhibitions-card.php");
 				wp_reset_postdata();
@@ -137,9 +137,9 @@ include("header.php");
 							$thumbnail = $group['image']['sizes']['medium'];
 							$FeaturedThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->ID ), 'medium');
 							$alt = $group['alt'];
-							$fieldSubTitle = $group['subtitle'];
-							$postTitle = get_the_title();
+							$title = $group['subtitle'];
 							$url = get_the_permalink();
+							//$postTitle = get_the_title();
 							// <--- Args received here
 							include("partials/online-exhibitions-card.php");
 							wp_reset_postdata();

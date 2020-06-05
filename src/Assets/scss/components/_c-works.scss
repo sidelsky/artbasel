@@ -141,7 +141,6 @@
   //Href Wrap
   &__href-wrap {
     font-family: font-family(nt-primary, regular);
-    //text-align: center;
     padding: 12px 0;
 
     &--spacer {
@@ -150,8 +149,6 @@
     }
 
     &:hover {
-      //text-decoration: underline;
-
       .c-works__icon {
         transform: translate3d(3px, 0, 0);
       }

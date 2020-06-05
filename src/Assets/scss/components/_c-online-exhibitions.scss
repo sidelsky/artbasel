@@ -2,8 +2,27 @@
   $spacing: 30px;
   lost-utility: clearfix;
 
+  &__card {
+    outline: solid 0px white;
+    transition: all 0.3s ease-in-out;
+    &:focus,
+    &:hover {
+      outline: solid 15px lighten($grey, 30%);
+      .c-online-exhibitions__href {
+        .c-works__icon {
+          transform: translate3d(3px, 0, 0);
+        }
+      }
+    }
+  }
+
   .canvas {
     background-color: rgba($black, 0.35);
+  }
+
+  &__href {
+    display: block;
+    font-family: font-family(nt-primary, regular);
   }
 
   &__block {
@@ -17,7 +36,7 @@
       margin-bottom: 0;
     }
 
-    @include media(">phone") {
+    @include media(">tablet") {
       margin-bottom: 0;
       lost-column: 6/12 2 $spacing no-flex;
     }
@@ -172,4 +191,31 @@
   .owl-stage {
     padding-left: 0px !important;
   }
+}
+
+/**
+* Hover Animation
+*/
+.c-online-exhibitions__href-wrap,
+.owl-item {
+  transition: all ease 0.2s;
+}
+
+/* fade ALL out on parent hover */
+// .c-online-exhibitions:hover > .c-online-exhibitions__href-wrap,
+// .owl-stage:hover > div {
+//   opacity: 0.7;
+//   z-index: 0;
+// }
+
+// /* fade ONE in on hover */
+// .c-online-exhibitions > .c-online-exhibitions__href-wrap:hover,
+// .owl-stage .owl-item:hover {
+//   opacity: 1;
+//   z-index: 1;
+//   transform: scale3d(1.05, 1.05, 1.05);
+// }
+
+.owl-stage-outer {
+  overflow: visible !important;
 }

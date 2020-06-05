@@ -15,13 +15,15 @@ class ImageContent {
        $videoContent = $this->layout['video_content'];
        $portraitVideo = $this->layout['portrait_video'];
        $carousel = $this->layout['carousel'];
+       $iframe = $this->layout['iframe'];
 
 	return [
 		'layoutName' => 'image_content',
       'image_content' => $imageContent,
       'video_content' => $videoContent,
       'portrait_video' => $portraitVideo,
-      'carousel' => $carousel
+      'carousel' => $carousel,
+      'iframe' => $iframe
 	];
    }
 }
