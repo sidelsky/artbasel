@@ -19,7 +19,7 @@
             <div class="owl-carousel owl-image-content-carousel" >
                <?php foreach( $data['carousel'] as $image) { ?> 
                   <figure data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="zoom-image" style="background-image: url('<?= $image['sizes']['large'] ?>')">
-                     <figure style="background-image: url(<?= $image['sizes']['large'] ?>)"></figure>
+                     <figure class="zoom-image__innaer" style="background-image: url(<?= $image['sizes']['large'] ?>)"></figure>
                   </figure>
                <?php } ?>
             </div>         

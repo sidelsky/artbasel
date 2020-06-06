@@ -2,8 +2,11 @@
 .zoom-image {
   position: relative;
   margin: 0;
-  background-size: cover;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
   width: 100%;
+  background-color: $light-grey;
 }
 
 .zoom-image > figure {

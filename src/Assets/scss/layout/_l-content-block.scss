@@ -261,10 +261,10 @@ $spacing: 30px;
 
     &:nth-of-type(2n + 1) {
       .carouselViewButton {
-        left: $spacing--small;
+        right: $spacing--small;
       }
       .owl-nav {
-        left: $spacing--small;
+        right: $spacing--small;
       }
     }
 

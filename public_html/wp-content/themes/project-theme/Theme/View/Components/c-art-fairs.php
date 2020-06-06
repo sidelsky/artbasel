@@ -4,11 +4,11 @@
 
       <?php foreach( $postContent as $content ) :
          $rows = get_field('current_viewing_rooms', $content->ID);
-			//$thumbnail = $rows[0]['current_viewing_room_image']['sizes']['medium'];
-         $title = get_the_title($content->ID);
-         $url = get_the_permalink($content->ID);
-         $thumbnail = get_the_post_thumbnail_url($content->ID);
+         //print_r($rows);
+         $thumbnail = $rows[0]['current_viewing_room_image']['sizes']['medium'];
          $FeaturedThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $content->ID ), 'medium');
+         $title = $rows[0]['current_viewing_room_title'];
+         $url = get_the_permalink($content->ID);
       ?>
          <a href="<?= $url ?>" class="c-online-exhibitions__block--navigation c-online-exhibitions__block c-online-exhibitions__card" style="background-image: url('<?= $FeaturedThumbnail[0] ? $FeaturedThumbnail[0] : $thumbnail ?>'); display: block">
             <div class="canvas">
