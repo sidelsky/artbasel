@@ -34,14 +34,17 @@ include("header.php");
 <?php
 
 	foreach($allLayouts as $value) {
-
-			$templateName = NULL;
 			
 			switch ($value['layoutName']) {
 				
 				//Get Title break
 				case 'title_break':
 					$templateName = 'c-title-break';
+					$args = [
+						'altFontClass' => false,
+						'showControls' => true,
+						'padding' => true
+					];
 					break;
 
 				//Get Text content
@@ -55,7 +58,7 @@ include("header.php");
 					break;
 	}
 
-			echo $render->view('Components/' . $templateName, $value);
+			echo $render->view('Components/' . $templateName, $value, $args);
 	}
 
 ?>

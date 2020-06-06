@@ -71,13 +71,6 @@ include("header.php");
 				$fieldSubTitle = $rows[0]['current_viewing_room_title'];
             $postTitle = get_the_title();
             $url = get_the_permalink();
-
-				
-				// $thumbnail = $group['image']['sizes']['medium'];
-				// $alt = $group['alt'];
-				// $fieldTitle = $group['title'];
-				// $fieldSubTitle = $group['subtitle'];
-				// $postTitle = get_the_title();
 				// <--- Args received here
 				include("partials/online-exhibitions-card.php");
 				?>

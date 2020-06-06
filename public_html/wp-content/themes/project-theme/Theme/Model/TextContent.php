@@ -21,15 +21,15 @@ class TextContent {
        $idCode = $this ->layout['id_code'];
 
 	return [
-		'layoutName' => 'text_content',
-        'darkBackground' => $darkBackground,
-        'textContentTitle' => $textContentTitle,
-        'textContentCopy' => $textContentCopy,
-        'textContentDate' => $textContentDate,
-        'textContentLink' => $textContentLink,
-        'textContentLinkDescription' => $textContentLinkDescription,
-        'showEnquireButton' => $showEnquireButton,
-        'idCode' => $idCode
+      'layoutName' => 'text_content',
+      'darkBackground' => $darkBackground,
+      'textContentTitle' => $textContentTitle,
+      'textContentCopy' => $textContentCopy,
+      'textContentDate' => $textContentDate,
+      'textContentLink' => $textContentLink,
+      'textContentLinkDescription' => $textContentLinkDescription,
+      'showEnquireButton' => $showEnquireButton,
+      'idCode' => $idCode
 	];
    }
 }

@@ -17,6 +17,11 @@
   width: 100%;
   position: relative;
 
+  &--padding {
+    padding-left: $spacing--medium;
+    padding-right: $spacing--medium;
+  }
+
   &--full-width {
     margin: auto;
     width: 100%;

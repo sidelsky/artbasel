@@ -2251,10 +2251,6 @@ body.body--menu-is-expanded .c-mobile-navigation {
   top: 0;
 }
 
-.c-online-exhibitions__block:nth-last-of-type(1) {
-  margin-bottom: 0;
-}
-
 @media (min-width: 769px) {
   .c-online-exhibitions__block {
     margin-bottom: 0;
@@ -5483,6 +5479,11 @@ Owl modal
   max-width: 1200px;
   width: 100%;
   position: relative;
+}
+
+.u-l-container--padding {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .u-l-container--full-width {

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Art fairs
+ * Template Name: Online Exhibitions
  */
 
 use App\Helper\Render;
@@ -28,35 +28,47 @@ include("header.php");
     echo $render->view('Components/' . $template, $data);
 ?>
 
-<section class="l-content">
-<?php
+<section class="l-content ">
+	<div class="u-l-container u-l-container--padding">
+	<?php
 
-	foreach($allLayouts as $value) {
+		foreach($allLayouts as $value) {
 
-			$templateName = NULL;
-			
-			switch ($value['layoutName']) {
+				$templateName = NULL;
 				
-				//Get Title break
-				case 'title_break':
-					$templateName = 'c-title-break';
-					break;
+				switch ($value['layoutName']) {
+					
+					//Get Title break
+					case 'title_break':
+						$templateName = 'c-title-break';
+						$args = [
+							'altFontClass' => false,
+							'showControls' => false,
+							'padding' => false
+						];
+						break;
 
-				//Get Text content
-				case 'text_content':
-					$templateName = 'c-text-content';
-					break;
+					//Get Text content
+					case 'text_content':
+						$templateName = 'c-text-content';
+						break;
 
-				//Get Image content
-				case 'image_content':
-					$templateName = 'c-image-content';
-					break;
-	}
+					//Get Image content
+					case 'image_content':
+						$templateName = 'c-image-content';
+						break;
+						
+					//Get Art Fairs
+					case 'art_fairs':
+						$templateName = 'c-art-fairs';
+						break;
+		}
 
-			echo $render->view('Components/' . $templateName, $value);
-	}
+				echo $render->view('Components/' . $templateName, $value, $args);
+		}
 
-?>
+	?>
+	</div>
 </section>
 	
 <?php

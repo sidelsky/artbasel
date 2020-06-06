@@ -3,9 +3,15 @@ namespace Theme\Model;
 
 use App\WordPress\WordPress;
 use \WP_Query;
+
 use Theme\Model\TitleBreak;
 use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
+use Theme\Model\FullWidthImage;
+use Theme\Model\WiderTextContent;
+use Theme\Model\ScrollToNavigationIds;
+use Theme\Model\ArtFairs;
+use Theme\Model\Blockquote;
 
 class Layout {
 
@@ -59,12 +65,17 @@ class Layout {
                $widerTextContent = new WiderTextContent($layout);
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
-
             
             //Scroll to navigation
 			   case 'scroll_to_navigation':
                $scrollToNavigationIds = new ScrollToNavigationIds($layout);
                $currentLayout = $scrollToNavigationIds->getScrollToNavigationIds();
+            break;
+            
+            //ARt fairs
+			   case 'art_fairs':
+               $artFairs = new ArtFairs($layout);
+               $currentLayout = $artFairs->getArtFairs();
 				break;
                 
         }

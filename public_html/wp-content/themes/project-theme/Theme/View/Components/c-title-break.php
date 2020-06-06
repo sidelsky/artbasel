@@ -1,6 +1,6 @@
 <?php if( $data['titleBreakTitle'] ) : ?>
 	<section class="u-section">
-		<div class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small">
+		<div class="<?= $args['padding'] ? 'u-l-horizontal-padding--medium' : ''?> u-l-container--full-width u-l-vertical-padding--small">
 			<div class="l-content__title-break <?= $args['altFontClass'] ? 'l-content__title-break--alt-font' : '' ?>">
 				<?= $data['titleBreakTitle']; ?>
 			</div>    
