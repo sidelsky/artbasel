@@ -17,9 +17,24 @@
   width: 100%;
   position: relative;
 
+  &--padding-full-width {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media(">tablet") {
+      padding-left: $spacing--medium;
+      padding-right: $spacing--medium;
+    }
+  }
+
   &--padding {
-    padding-left: $spacing--medium;
-    padding-right: $spacing--medium;
+    padding-left: $spacing--small;
+    padding-right: $spacing--small;
+
+    @include media(">tablet") {
+      padding-left: $spacing--medium;
+      padding-right: $spacing--medium;
+    }
   }
 
   &--full-width {

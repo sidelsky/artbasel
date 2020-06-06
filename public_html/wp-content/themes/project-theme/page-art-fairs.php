@@ -28,8 +28,7 @@ include("header.php");
     echo $render->view('Components/' . $template, $data);
 ?>
 
-<section class="l-content ">
-	<div class="u-l-container u-l-container--padding">
+
 	<?php
 
 		foreach($allLayouts as $value) {
@@ -44,7 +43,8 @@ include("header.php");
 						$args = [
 							'altFontClass' => false,
 							'showControls' => false,
-							'padding' => false
+							'padding' => true,
+							'fullWidth' => false
 						];
 						break;
 
@@ -57,6 +57,14 @@ include("header.php");
 					case 'image_content':
 						$templateName = 'c-image-content';
 						break;
+
+					//Get Full width Image content
+					case 'full_width_image':
+						$templateName = 'c-full-width-image';
+						$args = [
+							'fullWidth' => false
+						];
+						break;
 						
 					//Get Art Fairs
 					case 'art_fairs':
@@ -68,14 +76,6 @@ include("header.php");
 		}
 
 	?>
-	</div>
-</section>
-	
-<?php
-/**
- * Footer navigation
- */
-include("partials/footer-navigation.php"); ?>
 	 
 <?php
 /**

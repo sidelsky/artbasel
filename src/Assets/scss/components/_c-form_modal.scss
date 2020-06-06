@@ -113,12 +113,16 @@
 /* The Close Button */
 .close {
   position: absolute;
-  right: 7px;
-  top: -7px;
+  right: 20px;
+  top: 30px;
   color: #000;
   font-size: 40px;
   font-weight: normal;
   display: block;
+  @include media(">tablet") {
+    right: 7px;
+    top: -7px;
+  }
 }
 
 .close:hover,

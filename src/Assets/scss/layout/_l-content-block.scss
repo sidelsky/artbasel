@@ -70,7 +70,7 @@ $spacing: 30px;
 
     &__text-content {
       @include media("<tablet") {
-        padding: $spacing--medium $spacing--x-small $spacing--small;
+        padding: $spacing--small $spacing--x-small $spacing--tiny;
         &:before {
           padding-top: 0 !important;
         }
@@ -142,12 +142,41 @@ $spacing: 30px;
     }
 
     //Full width image
-    &--full-width-image {
+    &__full-width-image {
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       @include aspect-ratio(1, 1);
+      margin-bottom: $spacing;
       @include media(">tablet") {
-        margin-bottom: $spacing;
         @include aspect-ratio(6, 3);
+      }
+    }
+
+    &__full-width-image-shading {
+      background-color: rgba($black, 0.25);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    &__full-width-image-container {
+      position: absolute;
+      color: $white;
+      text-align: center;
+      z-index: 1;
+    }
+
+    &__full-width-image-title {
+      @include set-font-size(3.4rem, 3.4rem, 3.4rem, 3.4rem);
+      font-family: font-family(nt-primary, medium);
+
+      &--margin-bottom {
+        margin-bottom: $spacing--small;
       }
     }
   }
@@ -254,9 +283,24 @@ $spacing: 30px;
     .owl-nav {
       position: absolute;
       z-index: 2;
-      width: 145px;
+      width: 110px;
       display: table;
       bottom: $spacing--tiny;
+      @include media(">phone") {
+        width: 145px;
+      }
+      .owl-next,
+      .owl-prev {
+        width: 45px;
+        height: 35px;
+        @include media(">phone") {
+          width: 65px;
+          height: 45px;
+        }
+      }
+      .owl-next {
+        margin-left: $spacing--tiny;
+      }
     }
 
     &:nth-of-type(2n + 1) {
@@ -280,10 +324,10 @@ $spacing: 30px;
       }
     }
 
+    margin-bottom: $spacing;
     @include media(">tablet") {
       //@include aspect-ratio(1.12, 1);
       lost-column: 8/12 no-flex;
-      margin-bottom: $spacing;
 
       &:nth-of-type(2n + 2) {
         lost-move: -4/12;
@@ -364,11 +408,11 @@ Owl modal
   }
 
   .owl-nav {
-    position: absolute;
-    z-index: 2;
-    width: 145px;
-    display: table;
-    bottom: $spacing--tiny;
+    // position: absolute;
+    // z-index: 2;
+    // width: 145px;
+    // display: table;
+    // bottom: $spacing--tiny;
   }
 }
 
