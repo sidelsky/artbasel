@@ -4,49 +4,51 @@
 /*
  * Reset default form styling for browser consistency
  */
-[type='color'],
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='email'],
-[type='month'],
-[type='number'],
-[type='password'],
-[type='search'],
-[type='tel'],
-[type='text'],
-[type='time'],
-[type='url'],
-[type='week'],
+[type="color"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
 textarea,
 select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border: 1px solid grey;
-    border-radius: 0;
-    box-shadow: none;
-    max-width: 100%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid grey;
+  border-radius: 0;
+  box-shadow: none;
+  max-width: 100%;
+  color: $black;
 
-    &:focus {
-        box-shadow: none;
-        outline: 0;
-    }
+  &:focus {
+    border: 1px solid $black;
+    box-shadow: none;
+    outline: 0;
+  }
 }
 
-[type='button'],
-[type='reset'],
-[type='submit'],
+[type="button"],
+[type="reset"],
+[type="submit"],
 button {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    border: 0;
-    border-radius: 0;
-    box-shadow: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0;
 }
 
 textarea {
-    resize: none;
-    width: 100%;
+  resize: none;
+  width: 100%;
 }
 
 input:disabled,
@@ -54,75 +56,74 @@ input[readonly],
 select:disabled,
 textarea:disabled,
 textarea[readonly] {
-    cursor: default;
+  cursor: default;
 }
 
-[type='checkbox'],
-[type='file'],
-[type='radio'] {
-    margin: 0 0 1rem;
+[type="checkbox"],
+[type="file"],
+[type="radio"] {
+  margin: 0 0 1rem;
 }
 
-[type='checkbox'],
-[type='radio'] {
-    display: inline-block;
-    margin-right: 5px;
-    vertical-align: baseline;
+[type="checkbox"],
+[type="radio"] {
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: baseline;
 }
 
-[type='checkbox'] + label,
-[type='radio'] + label {
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
+[type="checkbox"] + label,
+[type="radio"] + label {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
 
-[type='file'] {
-    width: 100%;
+[type="file"] {
+  width: 100%;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 legend {
-    margin-bottom: 0;
-    max-width: 100%;
+  margin-bottom: 0;
+  max-width: 100%;
 }
 
 select {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    // Original SVG Arrow markup
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24"></polygon></svg>');
-    background-position: calc(100% - 10px) center;
-    background-repeat: no-repeat;
-    background-size: 10px 8px;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    padding-right: 30px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  // Original SVG Arrow markup
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="32" height="24" viewBox="0 0 32 24"><polygon points="0,0 32,0 16,24"></polygon></svg>');
+  background-position: calc(100% - 10px) center;
+  background-repeat: no-repeat;
+  background-size: 10px 8px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  padding-right: 30px;
 
-    &::-ms-expand {
-        display: none;
-    }
+  &::-ms-expand {
+    display: none;
+  }
 }
 
-
 .gfield_captcha_container {
-    img {
-        margin-bottom: 10px;
-    }
+  img {
+    margin-bottom: 10px;
+  }
 
-    [type = 'text'] {
-        background-color: #fff;
-        border: solid 1px rgba(255, 255, 255, 0.6);
-        font-size: 1.8rem;
-        width: 100%;
-        padding-left: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 3px;
-        height: 48px;
-    }
+  [type="text"] {
+    background-color: #fff;
+    border: solid 1px rgba(255, 255, 255, 0.6);
+    font-size: 1.8rem;
+    width: 100%;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    height: 48px;
+  }
 }

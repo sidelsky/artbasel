@@ -148,8 +148,8 @@ $spacing: 30px;
       justify-content: center;
       align-items: center;
       @include aspect-ratio(1, 1);
-      margin-bottom: $spacing;
       @include media(">tablet") {
+        margin-bottom: $spacing;
         @include aspect-ratio(6, 3);
       }
     }

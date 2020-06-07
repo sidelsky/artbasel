@@ -6,7 +6,7 @@
 		$onlineExhibitionsCardData = [
 			'isCarousel' => false,
 			'isFooterNavigation' => true,
-			'altFont' => true
+			'altFont' => false
 		];
 		foreach($rows as $index => $row) {
 			$thumbnail = $row['footer_navigation_image']['url'];
