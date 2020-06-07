@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * Template Name: Art Basel template
+ */
+
+
 use App\Helper\Render;
 use Theme\Model\Layout;
 use Theme\Model\ViewingRoom;
@@ -107,13 +113,6 @@ include("header.php");
 /**
  * Footer navigation
  */
-
-// Args are passed here --->
-$onlineExhibitionsCardData = [
-	'isCarousel' => false,
-	'isFooterNavigation' => true,
-	'altFont' => false
-];
 include("partials/footer-navigation.php"); ?>
 	 
 <?php

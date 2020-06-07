@@ -9,7 +9,7 @@
     &:hover {
       //outline: solid 15px lighten($grey, 30%);
       .c-online-exhibitions__artist {
-        transform: translate3d(3px, 0, 0);
+        transform: translate3d(0, 3px, 0);
       }
 
       .canvas {
@@ -17,7 +17,7 @@
       }
 
       .c-online-exhibitions__href {
-        transform: translate3d(6px, 0, 0);
+        transform: translate3d(0, 3px, 0);
         .c-works__icon {
           transform: translate3d(6px, 0, 0);
         }
@@ -90,6 +90,13 @@
     line-height: 1.1;
     margin-bottom: $spacing--tiny;
     transition: all 0.3s ease-in-out;
+  }
+
+  &__artwork_title {
+    font-family: font-family(nt-primary, medium);
+    @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
+    line-height: 1.1;
+    margin-bottom: $spacing--tiny;
   }
 
   &__title {

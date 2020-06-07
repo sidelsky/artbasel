@@ -2240,8 +2240,8 @@ body.body--menu-is-expanded .c-mobile-navigation {
 }
 
 .c-online-exhibitions__card:focus .c-online-exhibitions__artist, .c-online-exhibitions__card:hover .c-online-exhibitions__artist {
-  -webkit-transform: translate3d(3px, 0, 0);
-          transform: translate3d(3px, 0, 0);
+  -webkit-transform: translate3d(0, 3px, 0);
+          transform: translate3d(0, 3px, 0);
 }
 
 .c-online-exhibitions__card:focus .canvas, .c-online-exhibitions__card:hover .canvas {
@@ -2249,8 +2249,8 @@ body.body--menu-is-expanded .c-mobile-navigation {
 }
 
 .c-online-exhibitions__card:focus .c-online-exhibitions__href, .c-online-exhibitions__card:hover .c-online-exhibitions__href {
-  -webkit-transform: translate3d(6px, 0, 0);
-          transform: translate3d(6px, 0, 0);
+  -webkit-transform: translate3d(0, 3px, 0);
+          transform: translate3d(0, 3px, 0);
 }
 
 .c-online-exhibitions__card:focus .c-online-exhibitions__href .c-works__icon, .c-online-exhibitions__card:hover .c-online-exhibitions__href .c-works__icon {
@@ -2417,6 +2417,31 @@ body.body--menu-is-expanded .c-mobile-navigation {
 @media (min-width: 1025px) {
   .c-online-exhibitions__artist {
     font-size: 3.2rem;
+  }
+}
+
+.c-online-exhibitions__artwork_title {
+  font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 376px) {
+  .c-online-exhibitions__artwork_title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-online-exhibitions__artwork_title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-online-exhibitions__artwork_title {
+    font-size: 1.6rem;
   }
 }
 
