@@ -13,36 +13,35 @@
 
   &__inner {
     margin: auto;
-    //max-width: 1200px;
     padding: 0 $spacing--tiny;
 
     @include media(">desktop") {
-      lost-flex-container: row;
+      lost-utility: clearfix;
     }
   }
 
   &__column {
+    display: inline;
     &:nth-of-type(1) {
       text-align: center;
-      width: 100%;
+
       //Desktop
       @include media(">desktop") {
         text-align: left;
-        lost-column: 9/12;
+        float: left;
       }
     }
 
     &:nth-of-type(2) {
       //Desktop
+      text-align: center;
+      width: 100%;
       @include media(">desktop") {
-        display: flex;
+        float: right;
         align-items: center;
+        width: 270px;
       }
     }
-  }
-
-  &__container {
-    text-align: left;
   }
 
   a {

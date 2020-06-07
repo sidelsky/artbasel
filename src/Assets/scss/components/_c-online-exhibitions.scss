@@ -9,7 +9,7 @@
     &:hover {
       //outline: solid 15px lighten($grey, 30%);
       .c-online-exhibitions__artist {
-        transform: translate3d(0, 3px, 0);
+        transform: translate3d(0, -3px, 0);
       }
 
       .canvas {
@@ -17,7 +17,7 @@
       }
 
       .c-online-exhibitions__href {
-        transform: translate3d(0, 3px, 0);
+        transform: translate3d(0, -6px, 0);
         .c-works__icon {
           transform: translate3d(6px, 0, 0);
         }
