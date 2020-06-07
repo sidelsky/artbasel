@@ -21,7 +21,7 @@ include("header.php");
     $template = 'c-viewing-room-carousel';
     $data = $viewingRoom->getData();
     $args = [
-		'altFontClass' => true
+		'altFontClass' => false
 		];
     echo $render->view('Components/' . $template, $data, $args);
 ?>
@@ -37,7 +37,7 @@ include("header.php");
 				case 'title_break':
 					$templateName = 'c-title-break';
 					$args = [
-						'altFontClass' => true
+						'altFontClass' => false
          		];
 					break;
 
@@ -45,7 +45,7 @@ include("header.php");
 				case 'text_content':
                $templateName = 'c-text-content';
                $args = [
-						'altFontClass' => true
+						'altFontClass' => false
          		];
 					break;
 
@@ -61,12 +61,23 @@ include("header.php");
 
 				//Get Blockquote content
 				case 'blockquote':
+					$args = [
+						'altFontClass' => false
+         		];
 					$templateName = 'c-blockquote';
 					break;
 
 				//Wider text content
 				case 'wider_text_content':
 					$templateName = 'c-wider-text-content';
+					$args = [
+						'altFontClass' => false
+         		];
+					break;
+
+				//Scroll to navigation
+				case 'scroll_to_navigation':
+					$templateName = 'c-scroll-to-navigation-ids';
 					break;
 				}
 

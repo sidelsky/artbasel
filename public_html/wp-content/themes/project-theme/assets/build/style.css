@@ -284,29 +284,56 @@ table {
 /**
 * Fonts
 */
-.c-blockquote blockquote {
-  background-color: #f8f8f8;
+.c-blockquote {
+  font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
   font-size: 2rem;
-  line-height: 1.3;
-  padding: 2rem;
 }
 
 @media (min-width: 376px) {
-  .c-blockquote blockquote {
+  .c-blockquote {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 769px) {
-  .c-blockquote blockquote {
+  .c-blockquote {
     font-size: 2rem;
   }
 }
 
 @media (min-width: 1025px) {
-  .c-blockquote blockquote {
+  .c-blockquote {
     font-size: 2rem;
   }
+}
+
+.c-blockquote--alt-font {
+  font-family: "garamond-medium", Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+}
+
+@media (min-width: 376px) {
+  .c-blockquote--alt-font {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-blockquote--alt-font {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .c-blockquote--alt-font {
+    font-size: 2.5rem;
+  }
+}
+
+.c-blockquote blockquote {
+  background-color: #f8f8f8;
+  line-height: 1.3;
+  padding: 2rem;
 }
 
 @media (min-width: 376px) {
@@ -346,10 +373,6 @@ table {
 
 .c-blockquote blockquote span {
   padding: 3rem;
-}
-
-.c-blockquote blockquote cite {
-  font-family: "garamond-medium", Helvetica, Arial, sans-serif;
 }
 
 .c-button {
