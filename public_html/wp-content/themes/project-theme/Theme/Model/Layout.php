@@ -12,6 +12,8 @@ use Theme\Model\WiderTextContent;
 use Theme\Model\ScrollToNavigationIds;
 use Theme\Model\ArtFairs;
 use Theme\Model\Blockquote;
+use Theme\Model\VideoCentered;
+use Theme\Model\TwoImages;
 
 class Layout {
 
@@ -72,10 +74,22 @@ class Layout {
                $currentLayout = $scrollToNavigationIds->getScrollToNavigationIds();
             break;
             
-            //ARt fairs
+            //Art fairs
 			   case 'art_fairs':
                $artFairs = new ArtFairs($layout);
                $currentLayout = $artFairs->getArtFairs();
+            break;
+            
+            //Video centered
+			   case 'video_centered':
+               $videoCentered = new VideoCentered($layout);
+               $currentLayout = $videoCentered->getVideoCentered();
+            break;
+            
+            //Two images
+			   case 'two_images_module':
+               $twoImages = new TwoImages($layout);
+               $currentLayout = $twoImages->getTwoImages();
 				break;
                 
         }

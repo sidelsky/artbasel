@@ -63,6 +63,9 @@ include("header.php");
 				//Get Full width Image content
 				case 'full_width_image':
 					$templateName = 'c-full-width-image';
+					 $args = [
+						'fullWidth' => true
+         		];
 					break;
 
 				//Get Blockquote content
@@ -85,6 +88,18 @@ include("header.php");
 				case 'scroll_to_navigation':
 					$templateName = 'c-scroll-to-navigation-ids';
 					break;
+
+				//Video centered
+				case 'video_centered':
+					$templateName = 'c-video-centered';
+					break;
+
+				//Video centered
+				case 'two_images_module':
+					$templateName = 'c-two-images';
+					break;
+
+
 				}
 
 			echo $render->view('Components/' . $templateName, $value, $args);
@@ -113,6 +128,11 @@ include("header.php");
 /**
  * Footer navigation
  */
+$onlineExhibitionsCardData = [
+	'isCarousel' => false,
+	'isFooterNavigation' => false,
+	'altFont' => false
+];
 include("partials/footer-navigation.php"); ?>
 	 
 <?php

@@ -57,6 +57,9 @@ include("header.php");
 				//Get Full width Image content
 				case 'full_width_image':
 					$templateName = 'c-full-width-image';
+					$args = [
+						'fullWidth' => true
+         		];
 					break;
 
 				//Get Blockquote content

@@ -127,7 +127,9 @@ include("header.php");
 
 	// Args are passed here --->
 	$onlineExhibitionsCardData = [
-		'isCarousel' => true
+		'isCarousel' => true,
+		'isFooterNavigation' => false,
+		'altFont' => false
 	]
 
 	?>
@@ -173,6 +175,11 @@ include("partials/page-content.php"); ?>
 /**
  * Footer navigation
  */
+$onlineExhibitionsCardData = [
+	'isCarousel' => false,
+	'isFooterNavigation' => true,
+	'altFont' => false
+];
 include("partials/footer-navigation.php"); ?>
 	 
 <?php

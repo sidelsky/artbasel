@@ -31,5 +31,24 @@
     bottom: 0;
     left: 0;
     z-index: 1;
+
+    &--portrait-centered {
+      @include media(">tablet") {
+        width: 480px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &--centered {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &--portrait {
+    //@include aspect-ratio(4, 2.5);
+    max-width: 450px;
+    height: 796px;
+    outline: solid 1px red;
   }
 }

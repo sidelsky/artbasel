@@ -200,3 +200,17 @@ a img.aligncenter {
   z-index: 100000;
   /* Above WP toolbar. */
 }
+
+.caption {
+  color: #8a8a8a;
+  font-size: 14px;
+  margin-top: $spacing--small;
+  display: inline-block;
+  position: absolute;
+  left: $spacing--small;
+  bottom: -75px;
+
+  @include media(">tablet") {
+    bottom: -30px;
+  }
+}

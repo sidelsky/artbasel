@@ -33,6 +33,44 @@
     }
   }
 
+  // &--portrait-centered {
+  //   margin: 0 auto;
+  //   &::before {
+  //     padding-top: 170%;
+  //   }
+  //   @include media(">tablet") {
+  //     &::before {
+  //       content: "";
+  //       display: block;
+  //       padding-top: 71.25%;
+  //       width: 410px;
+  //     }
+  //   }
+  // }
+
+  iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.u-video-aspect-ratio--portrait-centered {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+
+  &--absolute {
+    position: absolute;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 177%;
+  }
   iframe {
     height: 100%;
     left: 0;

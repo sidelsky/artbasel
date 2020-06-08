@@ -107,8 +107,6 @@ include("header.php");
 /**
  * Footer navigation
  */
-
-// Args are passed here --->
 $onlineExhibitionsCardData = [
 	'isCarousel' => false,
 	'isFooterNavigation' => true,

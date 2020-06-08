@@ -6,7 +6,6 @@
 
             <?php foreach( $postContent as $content ) :
                $rows = get_field('current_viewing_rooms', $content->ID);
-               //print_r($rows);
                $thumbnail = $rows[0]['current_viewing_room_image']['sizes']['medium'];
                $FeaturedThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $content->ID ), 'medium');
                $title = $rows[0]['current_viewing_room_title'];
