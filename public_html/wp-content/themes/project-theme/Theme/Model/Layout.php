@@ -7,13 +7,13 @@ use \WP_Query;
 use Theme\Model\TitleBreak;
 use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
-use Theme\Model\FullWidthImage;
 use Theme\Model\WiderTextContent;
 use Theme\Model\ScrollToNavigationIds;
 use Theme\Model\ArtFairs;
 use Theme\Model\Blockquote;
 use Theme\Model\VideoCentered;
 use Theme\Model\TwoImages;
+use Theme\Model\FullWidthImages;
 
 class Layout {
 
@@ -52,7 +52,7 @@ class Layout {
             
             //Get Full width image
 			   case 'full_width_image':
-               $fullWidthImage = new FullWidthImage($layout);
+               $fullWidthImage = new FullWidthImages($layout);
                $currentLayout = $fullWidthImage->getFullWidthImage();
             break;
             

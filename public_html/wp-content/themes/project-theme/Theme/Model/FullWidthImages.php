@@ -3,7 +3,7 @@
 namespace Theme\Model;
 use App\WordPress\WordPress;
 
-class FullWidthImage {
+class FullWidthImages {
 
    public function __construct($layout)
    {
