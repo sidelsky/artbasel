@@ -4,7 +4,6 @@
  * Template Name: Art Basel template
  */
 
-
 use App\Helper\Render;
 use Theme\Model\Layout;
 use Theme\Model\ViewingRoom;

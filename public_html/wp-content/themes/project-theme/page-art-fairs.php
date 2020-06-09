@@ -41,8 +41,6 @@ include("header.php");
 	<?php
 
 		foreach($allLayouts as $value) {
-
-				$templateName = NULL;
 				
 				switch ($value['layoutName']) {
 					
@@ -55,16 +53,6 @@ include("header.php");
 							'padding' => true,
 							'fullWidth' => false
 						];
-						break;
-
-					//Get Text content
-					case 'text_content':
-						$templateName = 'c-text-content';
-						break;
-
-					//Get Image content
-					case 'image_content':
-						$templateName = 'c-image-content';
 						break;
 
 					//Get Full width Image content

@@ -11,15 +11,16 @@ class FullWidthImage {
    }
 
    public function getFullWidthImage() {
-       $fullWidthImage = $this->layout['full_width_image'];
-       $fullWidthImageTitle = $this->layout['full_width_image_title'];
-       $fullWidthImageLink = $this->layout['full_width_image_link']['url'];
+       $full_width_image = $this->layout['full_width_image'];
+       $full_width_image_title = $this->layout['full_width_image_title'];
+       $full_width_image_link = $this->layout['full_width_image_link'];
 
 	return [
 		'layoutName' => 'full_width_image',
-      'full_width_image' => $fullWidthImage,
-      'full_width_image_title' => $fullWidthImageTitle,
-      'full_width_image_link' => $fullWidthImageLink
-	];
+      'full_width_image' => $full_width_image,
+      'full_width_image_title' => $full_width_image_title,
+      'full_width_image_link' => $full_width_image_link
+   ];
+   
    }
 }
