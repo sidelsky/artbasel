@@ -66,7 +66,7 @@ if($hero) : ?>
 		<svg class="u-icon c-works__icon c-works__icon--back">
 			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
 		</svg>
-		<a href="/" class="c-works__href">Back</a>
+		<a href="javascript:history.go(-1)" class="c-works__href">Back</a>
 	</span>
 
 	<section class="u-section c-paralax-header c-paralax-header--desktop">

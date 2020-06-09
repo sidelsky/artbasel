@@ -18,6 +18,15 @@ $allLayouts = $layout->getLayout();
 include("header.php"); 
 ?>
 
+
+<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
+	<svg class="u-icon c-works__icon c-works__icon--back">
+		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+	</svg>
+	<a href="javascript:history.go(-1);" class="c-works__href">Back</a>
+</span>
+
+
 <?php
 
 /**

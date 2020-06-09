@@ -161,6 +161,7 @@
     &--back {
       position: absolute;
       z-index: 10;
+      left: $spacing--small;
 
       &:hover {
         .c-works__icon {

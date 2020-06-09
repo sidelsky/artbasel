@@ -150,9 +150,9 @@
 
   &__btn-prev,
   &__btn-next {
-    border: solid 1px palette(greys, xx-light);
     width: 45px;
     height: 35px;
+    border: solid 1px palette(greys, xx-light);
     border-radius: 5px;
     display: flex;
     justify-content: center;

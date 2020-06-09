@@ -420,12 +420,15 @@ Owl modal
 
 .fullscreenBtn,
 .closefullscreenBtn {
-  width: 40px;
-  height: 40px;
+  $dimensions: 30px;
+  width: $dimensions;
+  height: $dimensions;
   z-index: 2;
   background-repeat: no-repeat;
   background-size: contain;
-  mix-blend-mode: exclusion;
+  border: solid 1px palette(greys, xx-light);
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 .fullscreenBtn {
