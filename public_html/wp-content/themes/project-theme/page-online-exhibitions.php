@@ -43,7 +43,8 @@ include("header.php");
 					$args = [
 						'altFontClass' => false,
 						'showControls' => true,
-						'padding' => true
+						'padding' => true,
+						'fullWidth' => true
 					];
 					break;
 
@@ -154,10 +155,7 @@ include("header.php");
 		</div>
 	</section>
 
-<?php
-//End if is front()
-	endif;
-?>
+<?php endif; ?>
 
 <?php 
 /**

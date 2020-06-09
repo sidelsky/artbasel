@@ -23,6 +23,6 @@
 					<?php echo do_shortcode('[gravityform id="' . $id . '" title="false" description="false"]'); ?>
 			</div>
 		</div>
-		<?/*= $smallPrint */?>
+		<?php /* $smallPrint */ ?>
 	</section>
 <?php endif; ?>

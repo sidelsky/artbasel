@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Online Exhibitions
+ * Template Name: Art fairs
  */
 
 use App\Helper\Render;
