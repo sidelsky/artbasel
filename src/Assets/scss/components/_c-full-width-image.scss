@@ -1,0 +1,43 @@
+/**
+* Full width image
+*/
+
+$spacing: 30px;
+
+.c-full-width-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include aspect-ratio(1, 1);
+  @include media(">tablet") {
+    margin-bottom: $spacing;
+    @include aspect-ratio(6, 3);
+  }
+}
+
+.c-full-width-image-shading {
+  background-color: rgba($black, 0.25);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.c-full-width-image-container {
+  position: absolute;
+  color: $white;
+  text-align: center;
+  z-index: 1;
+}
+
+.c-full-width-image-title {
+  @include set-font-size(3.4rem, 3.4rem, 3.4rem, 3.4rem);
+  font-family: font-family(nt-primary, medium);
+
+  &--margin-bottom {
+    margin-bottom: $spacing--small;
+  }
+}

@@ -21,18 +21,10 @@ $spacing: 30px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    color: $dark;
     background-color: lighten(#212322, 82%);
-    @include aspect-ratio(1, 1.7);
-    //Tablet
-    @include media(">tablet") {
-      @include aspect-ratio(1, 1.5);
-      lost-column: 6/12 no-flex;
-    }
-    //Desktop
-    @include media(">desktop") {
-      @include aspect-ratio(1, 1);
-      lost-column: 6/12 no-flex;
+
+    p {
+      color: palette(greys, base);
     }
 
     &__title {
@@ -58,9 +50,8 @@ $spacing: 30px;
     }
 
     &__body-text p {
-      @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
-      line-height: 1.5;
-      color: palette(greys, base);
+      @include set-font-size(1.7rem, 1.7rem, 1.3rem, 1.6rem);
+      line-height: 1.6;
 
       a {
         text-decoration: underline;
@@ -141,8 +132,11 @@ $spacing: 30px;
     }
 
     &--dark-background {
-      color: white;
       background-color: #212322;
+
+      p {
+        color: white;
+      }
     }
 
     &--align-right {
@@ -164,45 +158,6 @@ $spacing: 30px;
         color: currentColor !important;
       }
     }
-
-    //Full width image
-    &__full-width-image {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      @include aspect-ratio(1, 1);
-      @include media(">tablet") {
-        margin-bottom: $spacing;
-        @include aspect-ratio(6, 3);
-      }
-    }
-
-    &__full-width-image-shading {
-      background-color: rgba($black, 0.25);
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 0;
-    }
-
-    &__full-width-image-container {
-      position: absolute;
-      color: $white;
-      text-align: center;
-      z-index: 1;
-    }
-
-    &__full-width-image-title {
-      @include set-font-size(3.4rem, 3.4rem, 3.4rem, 3.4rem);
-      font-family: font-family(nt-primary, medium);
-
-      &--margin-bottom {
-        margin-bottom: $spacing--small;
-      }
-    }
   }
 }
 
@@ -215,7 +170,7 @@ $spacing: 30px;
       //Tablet
       @include media(">tablet") {
         &:nth-of-type(2n + 2) {
-          lost-column: 6/12 no-flex;
+          lost-column: 6/12;
           lost-move: 6/12;
         }
       }
@@ -224,7 +179,7 @@ $spacing: 30px;
     &--image-content {
       //Tablet
       @include media(">tablet") {
-        @include aspect-ratio(1, 1.418);
+        @include aspect-ratio(1, 1.8);
         &:nth-of-type(2n + 2) {
           lost-move: -6/12;
         }
@@ -273,6 +228,7 @@ $spacing: 30px;
 * Content blocks home - Wider text & image
 */
 .l-content__block {
+  padding: 0 !important;
   background-color: $white;
 
   &--dark-background {
@@ -282,8 +238,9 @@ $spacing: 30px;
 
   &--wide-text {
     @include media(">tablet") {
-      @include aspect-ratio(1, 1.165);
-      lost-column: 4/12 no-flex;
+      flex-wrap: wrap;
+      @include aspect-ratio(1, 1.11);
+      lost-column: 4/12;
       &:nth-of-type(2n + 2) {
         lost-move: 8/12;
       }
@@ -292,30 +249,9 @@ $spacing: 30px;
 
   &--wide-image {
     position: relative;
+    margin-bottom: $spacing;
+    flex-wrap: wrap;
     @include aspect-ratio(1.8, 1);
-
-    .owl-nav {
-      position: absolute;
-      z-index: 2;
-      width: 110px;
-      display: table;
-      bottom: $spacing--tiny;
-      @include media(">phone") {
-        width: 145px;
-      }
-      .owl-next,
-      .owl-prev {
-        width: 45px;
-        height: 35px;
-        @include media(">phone") {
-          width: 65px;
-          height: 45px;
-        }
-      }
-      .owl-next {
-        margin-left: $spacing--tiny;
-      }
-    }
 
     &:nth-of-type(2n + 1) {
       .carouselViewButton {
@@ -338,9 +274,8 @@ $spacing: 30px;
       }
     }
 
-    margin-bottom: $spacing;
     @include media(">tablet") {
-      lost-column: 8/12 no-flex;
+      lost-column: 8/12;
 
       &:nth-of-type(2n + 2) {
         lost-move: -4/12;
@@ -350,6 +285,29 @@ $spacing: 30px;
             right: $spacing--small;
           }
         }
+      }
+    }
+    // Owl Navigation
+    .owl-nav {
+      position: absolute;
+      z-index: 2;
+      width: 110px;
+      display: table;
+      bottom: $spacing--tiny;
+      @include media(">phone") {
+        width: 145px;
+      }
+      .owl-next,
+      .owl-prev {
+        width: 45px;
+        height: 35px;
+        @include media(">phone") {
+          width: 65px;
+          height: 45px;
+        }
+      }
+      .owl-next {
+        margin-left: $spacing--tiny;
       }
     }
   }

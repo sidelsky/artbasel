@@ -1,13 +1,13 @@
 <?php if( $data['full_width_image'] ) { ?>
    <section class="u-section">
       <div class="<?= $args['fullWidth'] ? 'u-l-container--full-width' : 'u-l-container u-l-container--padding-full-width'?>">
-         <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block l-content__block__full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>'); <?= $data['full_width_image']['caption'] ? 'margin-bottom: 70px' : '' ?>">
+         <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>'); <?= $data['full_width_image']['caption'] ? 'margin-bottom: 70px' : '' ?>">
          
          <?php if( $data['full_width_image_title'] || $data['full_width_image_link'] ) { ?>
-            <div class="l-content__block__full-width-image-container">
+            <div class="c-full-width-image-container">
                   
                   <?php if( $data['full_width_image_title'] ) { ?>
-                     <h2 class="l-content__block__full-width-image-title <?= $data['full_width_image_link'] ? 'l-content__block__full-width-image-title--margin-bottom' : '' ?>"><?= $data['full_width_image_title'] ?></h2>
+                     <h2 class="c-full-width-image-title <?= $data['full_width_image_link'] ? 'c-full-width-image-title--margin-bottom' : '' ?>"><?= $data['full_width_image_title'] ?></h2>
                   <?php } ?>
                   
                   <?php if( $data['full_width_image_link'] ) { ?>
@@ -19,7 +19,7 @@
                   <?php } ?>
 
             </div>
-            <div class="l-content__block__full-width-image-shading"></div>
+            <div class="c-full-width-image-shading"></div>
          <?php } ?>
 
       <?php
