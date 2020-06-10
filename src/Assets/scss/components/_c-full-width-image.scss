@@ -12,7 +12,7 @@ $spacing: 30px;
   @include aspect-ratio(1, 1);
   @include media(">tablet") {
     margin-bottom: $spacing;
-    @include aspect-ratio(6, 3);
+    @include aspect-ratio(6, 2.5);
   }
 }
 
