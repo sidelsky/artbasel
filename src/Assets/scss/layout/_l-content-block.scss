@@ -84,6 +84,9 @@ $spacing: 30px;
     }
 
     &__text-content {
+      > p {
+        color: $text-color--grey;
+      }
       @include media("<tablet") {
         padding: $spacing--small $spacing--small $spacing--tiny;
         &:before {
