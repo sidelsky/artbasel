@@ -266,7 +266,7 @@ msgstr "No comments found in Bin."
 msgid "File is empty. Please upload something more substantial. This error could also be caused by uploads being disabled in your %1$s file or by %2$s being defined as smaller than %3$s in %1$s."
 msgstr "File is empty. Please upload something more substantial. This error could also be caused by uploads being disabled in your %1$s file or by %2$s being defined as smaller than %3$s in %1$s."
 
-#: wp-admin/includes/class-wp-site-health.php:2296
+#: wp-admin/includes/class-wp-site-health.php:2302
 msgid "A test is unavailable"
 msgstr "A test is unavailable"
 
@@ -2782,7 +2782,7 @@ msgid "Privacy Policy Page"
 msgstr "Privacy Policy Page"
 
 #. translators: %s: Page title.
-#: wp-admin/includes/misc.php:1385
+#: wp-admin/includes/misc.php:1408
 msgid "%s (Draft)"
 msgstr "%s (Draft)"
 
@@ -6024,7 +6024,7 @@ msgstr ""
 
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
-#: wp-admin/includes/misc.php:1306
+#: wp-admin/includes/misc.php:1329
 msgid ""
 "Howdy ###USERNAME###,\n"
 "\n"
@@ -7579,7 +7579,7 @@ msgid "You cannot move this item to the Trash. %s is currently editing."
 msgstr "You cannot move this item to the Bin. %s is currently editing."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/misc.php:1075
+#: wp-admin/includes/misc.php:1098
 msgid "%s has taken over and is currently editing."
 msgstr "%s has taken over and is currently editing."
 
@@ -7633,7 +7633,7 @@ msgid "The Documentation menu below the editor lists the PHP functions recognize
 msgstr "The Documentation menu below the editor lists the PHP functions recognised in the plugin file. Clicking Look Up takes you to a web page about that particular function."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/misc.php:1025
+#: wp-admin/includes/misc.php:1048
 #: wp-admin/includes/class-wp-posts-list-table.php:1003
 msgid "%s is currently editing"
 msgstr "%s is currently editing"
@@ -8377,7 +8377,7 @@ msgstr[1] "Paused <span class=\"count\">(%s)</span>"
 
 #. translators: New admin email address notification email subject. %s: Site
 #. title.
-#: wp-admin/includes/misc.php:1359
+#: wp-admin/includes/misc.php:1382
 msgid "[%s] New Admin Email Address"
 msgstr "[%s] New Admin Email Address"
 
@@ -10903,7 +10903,7 @@ msgstr "Available Widgets"
 msgid "Error in displaying the widget settings form."
 msgstr "Error in displaying the widget settings form."
 
-#: wp-admin/includes/misc.php:1195 wp-admin/includes/post.php:1941
+#: wp-admin/includes/misc.php:1218 wp-admin/includes/post.php:1941
 #: wp-admin/widgets.php:378
 msgid "Error while saving."
 msgstr "Error while saving."
@@ -11046,7 +11046,7 @@ msgstr "First Name"
 msgid "Enable keyboard shortcuts for comment moderation."
 msgstr "Enable keyboard shortcuts for comment moderation."
 
-#: wp-admin/includes/misc.php:924 wp-admin/user-edit.php:295
+#: wp-admin/includes/misc.php:947 wp-admin/user-edit.php:295
 msgid "Admin Color Scheme"
 msgstr "Admin Colour Scheme"
 
@@ -13869,12 +13869,12 @@ msgid "Someone"
 msgstr "Someone"
 
 #. translators: %s: Date and time.
-#: wp-admin/includes/misc.php:1203
+#: wp-admin/includes/misc.php:1226
 msgid "Draft saved at %s."
 msgstr "Draft saved at %s."
 
 #. translators: Draft saved date format, see https://www.php.net/date
-#: wp-admin/includes/misc.php:1199
+#: wp-admin/includes/misc.php:1222
 msgid "g:i:s a"
 msgstr "g:i:s a"
 
