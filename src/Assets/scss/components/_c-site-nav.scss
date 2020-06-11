@@ -1,6 +1,6 @@
 .c-site-nav {
   @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
-  font-family: font-family(nt-primary, regular);
+  font-family: font-family(nt-primary, medium);
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -12,7 +12,7 @@
 
   .menu-item {
     display: inline-block;
-    margin: 0 $spacing--small;
+    //margin: 0 $spacing--small;
     transform: translate3d(0, 0, 0);
     transition: ease 0.4s;
 
@@ -24,6 +24,7 @@
       transition: 0.3s all ease;
       height: 34px;
       margin-top: 14px;
+      padding: 0 $spacing--medium;
 
       &:after {
         content: "";
@@ -34,7 +35,7 @@
         display: block;
         width: 0;
         height: 2px;
-        transition: 0.3s width ease;
+        //transition: 0.3s width ease;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         background-color: palette(bw, black);

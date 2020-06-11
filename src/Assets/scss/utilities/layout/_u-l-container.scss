@@ -37,6 +37,11 @@
     }
   }
 
+  &--blockquote {
+    max-width: 100%;
+    margin: 0 80px;
+  }
+
   &--full-width {
     margin: auto;
     width: 100%;
@@ -121,6 +126,7 @@
       transform: translateY(100px);
     }
   }
+
   &--full-width {
     max-width: 100%;
     outline: solid blue 1px;

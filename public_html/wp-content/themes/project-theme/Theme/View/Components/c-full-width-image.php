@@ -1,7 +1,8 @@
 <?php if( $data['full_width_image'] ) { ?>
-   <section class="u-section">
+   <section class="u-section ">
       <div class="<?= $args['fullWidth'] ? 'u-l-container--full-width' : 'u-l-container u-l-container--padding-full-width'?>">
-         <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>'); <?= $data['full_width_image']['caption'] ? 'margin-bottom: 70px' : '' ?>">
+         <!-- <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>'); "> -->
+          <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>');">
          
          <?php if( $data['full_width_image_title'] || $data['full_width_image_link'] ) { ?>
             <div class="c-full-width-image-container">
@@ -22,15 +23,16 @@
             <div class="c-full-width-image-shading"></div>
          <?php } ?>
 
-      <?php
+      </figure>
+
+   <?php
       /**
        * If caption
        */
       if($data['full_width_image']['caption']) {?>
-         <span class="caption"><?= esc_attr( $data['full_width_image']['caption'] ); ?></span>
+         <figcaption class="caption"><?= esc_attr( $data['full_width_image']['caption'] ); ?></figcaption>
       <?php } ?>
 
-      </figure>
       
    </div>
    </section>

@@ -34,6 +34,17 @@
   }
 
   //Small
+  &--medium {
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    @include breakpoint($medium) {
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+  }
+
+  //Small
   &--tiny {
     padding-top: $spacing--tiny;
     padding-bottom: $spacing--tiny;
@@ -66,11 +77,11 @@
     }
   }
 
-  &--top-only {
-    @include breakpoint($medium) {
-      padding-top: $spacing--medium;
-    }
-  }
+  // &--top-only {
+  //   @include breakpoint($medium) {
+  //     padding-top: $spacing--medium;
+  //   }
+  // }
 
   &--bottom-only {
     @include breakpoint($medium) {

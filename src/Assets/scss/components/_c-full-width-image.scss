@@ -11,7 +11,7 @@ $spacing: 30px;
   align-items: center;
   @include aspect-ratio(1, 1);
   @include media(">tablet") {
-    margin-bottom: $spacing;
+    //margin-bottom: $spacing;
     @include aspect-ratio(6, 2.5);
   }
 }

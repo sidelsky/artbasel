@@ -1,7 +1,6 @@
 <section class="u-section ">
-		<div class="u-l-vertical-padding--small">
+		<div>
 			
-            
             <?php
 
                $count = 0;

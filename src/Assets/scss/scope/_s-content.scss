@@ -204,11 +204,13 @@ a img.aligncenter {
 .caption {
   color: #8a8a8a;
   font-size: 14px;
-  margin-top: $spacing--small;
+  padding-top: $spacing--tiny;
+  margin-left: $spacing--small;
   display: inline-block;
-  position: absolute;
-  left: $spacing--small;
-  bottom: -75px;
+  //margin-top: $spacing--small;
+  //position: absolute;
+  //left: $spacing--small;
+  //bottom: -75px;
 
   @include media(">tablet") {
     bottom: -30px;
