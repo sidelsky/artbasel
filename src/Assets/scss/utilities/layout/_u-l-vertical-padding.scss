@@ -33,14 +33,15 @@
     }
   }
 
-  //Small
-  &--medium {
-    padding-top: 85px;
-    padding-bottom: 85px;
+  //Medium40
+  &--medium40 {
+    $dimensions: 40px;
+    margin-top: $dimensions;
+    margin-bottom: $dimensions;
 
     @include breakpoint($medium) {
-      padding-top: 85px;
-      padding-bottom: 85px;
+      margin-top: $dimensions;
+      margin-bottom: $dimensions;
     }
   }
 
@@ -77,11 +78,11 @@
     }
   }
 
-  // &--top-only {
-  //   @include breakpoint($medium) {
-  //     padding-top: $spacing--medium;
-  //   }
-  // }
+  &--top-only {
+    @include breakpoint($medium) {
+      padding-top: $spacing--medium;
+    }
+  }
 
   &--bottom-only {
     @include breakpoint($medium) {

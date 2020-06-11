@@ -86,6 +86,7 @@ $spacing: 30px;
     &__text-content {
       > p {
         color: $text-color--grey;
+
         &:only-of-type,
         &:last-of-type {
           margin-bottom: 0;
@@ -101,21 +102,21 @@ $spacing: 30px;
         }
       }
 
-      //padding: $spacing--large;
+      @include media(">tablet") {
+        padding: $spacing--large;
+      }
 
-      // @include media(">tablet") {
-      // }
+      @include media(">desktop") {
+        padding: $spacing--large-x;
+      }
+      @include media(">desktop-large") {
+        padding: $spacing--large-xxxxx;
+      }
 
-      // @include media(">desktop") {
-      //   padding: $spacing--large-x;
-      // }
-      // @include media(">desktop-large") {
-      //   padding: $spacing--large-xxxxx;
-      // }
-
-      // &--wide {
-      //   outline: solid 1px red;
-      // }
+      &--wide {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
     }
 
     &--image-content {
@@ -396,7 +397,7 @@ Owl modal
   transition: all 0.3s ease-in-out;
 }
 
-$color: 000;
+$color: fff;
 
 .fullscreenBtn {
   &:after {

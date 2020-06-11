@@ -1,5 +1,5 @@
 <section class="u-section ">
-		<div>
+		<div class="u-l-vertical-padding--medium40">
 			
             <?php
 
