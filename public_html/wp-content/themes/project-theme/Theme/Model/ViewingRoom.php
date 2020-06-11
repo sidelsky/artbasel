@@ -21,7 +21,7 @@ class ViewingRoom {
 					'currentViewingRoomPretitle' => $viewingRoomDetail['current_viewing_room_pretitle'],
 					'currentViewingRoomTitle' => $viewingRoomDetail['current_viewing_room_title'],
 					'currentViewingRoomLinkDescription' => $viewingRoomDetail['current_viewing_room_link_description'],
-					'currentViewingRoomLink' => $viewingRoomDetail['current_viewing_room_link']
+					'currentViewingRoomLink' => $viewingRoomDetail['current_viewing_room_link']['url']
 			];
 
         }
