@@ -135,9 +135,6 @@ $spacing: 30px;
         display: block;
         width: 100%;
         height: 460px;
-        @include media(">desktop") {
-          height: 840px;
-        }
       }
     }
 
@@ -419,11 +416,11 @@ $color: fff;
   padding: 0;
 }
 
-.l-content__block__min-width-text {
-  @include media(">desktop") {
-    min-width: 380px;
-  }
-}
+// .l-content__block__min-width-text {
+//   @include media(">desktop") {
+//     min-width: 380px;
+//   }
+// }
 
 .page-template-page-art-basel {
   .l-content__block__body-text {
