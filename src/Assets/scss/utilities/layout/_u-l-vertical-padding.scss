@@ -35,13 +35,12 @@
 
   //Medium40
   &--medium40 {
-    $dimensions: 45px;
-    margin-top: $dimensions;
-    margin-bottom: $dimensions;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     @include breakpoint($medium) {
-      margin-top: $dimensions;
-      margin-bottom: $dimensions;
+      margin-top: 45px;
+      margin-bottom: 45px;
     }
   }
 
