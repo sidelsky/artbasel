@@ -65,7 +65,10 @@
   }
 }
 
-.current-page-ancestor a {
+.current-page-ancestor a,
+.single-online-exhibitions .menu-item:first-of-type a,
+.single-art-fairs .menu-item:last-of-type a,
+.active a {
   text-decoration: none;
   color: palette(bw, black);
   opacity: 1;

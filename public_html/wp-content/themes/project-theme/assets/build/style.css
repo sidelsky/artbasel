@@ -3449,14 +3449,20 @@ h1 strong {
   width: 100%;
 }
 
-.current-page-ancestor a {
+.current-page-ancestor a,
+.single-online-exhibitions .menu-item:first-of-type a,
+.single-art-fairs .menu-item:last-of-type a,
+.active a {
   text-decoration: none;
   color: #000;
   opacity: 1;
   font-family: "newtransport-medium", Helvetica, Arial, sans-serif;
 }
 
-.current-page-ancestor a:after {
+.current-page-ancestor a:after,
+.single-online-exhibitions .menu-item:first-of-type a:after,
+.single-art-fairs .menu-item:last-of-type a:after,
+.active a:after {
   width: 100% !important;
 }
 
