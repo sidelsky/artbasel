@@ -17,10 +17,10 @@
 
                     <?php if($viewingRoom['currentViewingRoomLinkDescription']) { ?>
 
-                        <span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">
+                        <span class="c-works__href-wrap c-works__href-wrap--center">
         
                         <?php if( $viewingRoom['currentViewingRoomLinkDescription'] && !$viewingRoom['currentViewingRoomLink'] ) {
-                            echo $viewingRoom['currentViewingRoomLinkDescription'];
+                            echo '<span class="l-content__block--link">' . $viewingRoom['currentViewingRoomLinkDescription'] . '</span>';
                         } ?>
         
                         <?php if( $viewingRoom['currentViewingRoomLink'] && $viewingRoom['currentViewingRoomLinkDescription'] ) { ?>
