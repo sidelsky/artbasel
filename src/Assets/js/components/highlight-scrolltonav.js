@@ -1,7 +1,5 @@
 const btns = document.querySelectorAll("[data-id='scroll-menu-item']");
 
-console.log(btns);
-
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
     var current = document.getElementsByClassName("active");
