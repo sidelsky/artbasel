@@ -90,7 +90,7 @@ include("header.php");
 	]
 
 	?>
-	<section class="u-l-horizontal-padding--small">
+	<section>
 		<div class="c-online-exhibitions">
 			<?php 
 				while ( $loop->have_posts() ) : $loop->the_post();

@@ -15,7 +15,7 @@
 							$text = get_sub_field('scroll_to_navigation_item');
 					?>
 							<li class="menu-item" data-id="scroll-menu-item">
-								<a href="#<?= $text ?>"><?= $text ?></a>
+								<a href="#<?= str_replace(' ', '', $text); ?>"><?= $text ?></a>
 							</li>
 
 					<?php endif; ?>

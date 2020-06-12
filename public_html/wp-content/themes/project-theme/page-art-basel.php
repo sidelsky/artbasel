@@ -130,7 +130,7 @@ include("header.php");
 $onlineExhibitionsCardData = [
 	'isCarousel' => false,
 	'isFooterNavigation' => false,
-	'altFont' => false
+	'altFont' => false,
 ];
 include("partials/footer-navigation.php"); ?>
 	 

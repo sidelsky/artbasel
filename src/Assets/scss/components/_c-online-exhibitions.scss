@@ -9,15 +9,15 @@
     &:hover {
       //outline: solid 15px lighten($grey, 30%);
       .c-online-exhibitions__artist {
-        transform: translate3d(0, -3px, 0);
+        //transform: translate3d(0, -3px, 0);
       }
 
       .canvas {
-        background-color: rgba($black, 0.15);
+        background-color: rgba($black, 0.2);
       }
 
       .c-online-exhibitions__href {
-        transform: translate3d(0, -6px, 0);
+        //transform: translate3d(0, -6px, 0);
         .c-works__icon {
           transform: translate3d(6px, 0, 0);
         }
@@ -26,7 +26,7 @@
   }
 
   .canvas {
-    background-color: rgba($black, 0.35);
+    background-color: rgba($black, 0.3);
     transition: all 0.3s ease-in-out;
   }
 
@@ -42,11 +42,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
-    &:nth-last-of-type(1) {
-      //margin-bottom: 0;
-      //outline: solid 1px red;
-    }
 
     @include media(">tablet") {
       margin-bottom: 0;
@@ -222,17 +217,8 @@
   transition: all ease 0.2s;
 }
 
-/* fade ALL out on parent hover */
-// .c-online-exhibitions:hover > .c-online-exhibitions__href-wrap,
-// .owl-stage:hover > div {
-//   opacity: 0.7;
-//   z-index: 0;
-// }
-
-// /* fade ONE in on hover */
-// .c-online-exhibitions > .c-online-exhibitions__href-wrap:hover,
-// .owl-stage .owl-item:hover {
-//   opacity: 1;
-//   z-index: 1;
-//   transform: scale3d(1.05, 1.05, 1.05);
-// }
+.c-online-exhibitions--padding-bottom {
+  @include media(">tablet") {
+    padding-bottom: $spacing;
+  }
+}

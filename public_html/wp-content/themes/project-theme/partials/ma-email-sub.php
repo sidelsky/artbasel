@@ -17,7 +17,7 @@
 	<section class="c-ma-email-sub u-l-horizontal-padding u-l-vertical-padding--x-small">
 		<div class="c-ma-email-sub__wrapper">
 			<div class="c-ma-email-sub__column">
-					<span><?= $emailSubCopy ?></span>
+					<span class="l-content__title-break"><?= $emailSubCopy ?></span>
 			</div>
 			<div class="c-ma-email-sub__column">
 					<?php echo do_shortcode('[gravityform id="' . $id . '" title="false" description="false"]'); ?>

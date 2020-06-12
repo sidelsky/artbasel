@@ -87,7 +87,7 @@ $wordpress = new WordpressHelper;
 
 		</div>
 
-		<?php if( !is_post_type_archive('private-rooms') && !is_singular('private-rooms') ) : ?>
+		<?php if( !is_post_type_archive('private-rooms') && !is_singular('private-rooms') && !is_page('art-basel') ) : ?>
 			
 			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--left">
 				<svg class="c-header__icon">
@@ -111,7 +111,7 @@ $wordpress = new WordpressHelper;
 		<?php endif; ?>
 		
 		<?php 
-			if ( is_singular('private-rooms') ) {
+			if ( is_singular('private-rooms') || is_page('art-basel') ) {
 				include("partials/scroll-to-navigation.php"); 
 			}
 		?>

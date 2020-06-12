@@ -23,8 +23,8 @@
 	
 ?>
 
-<section class="u-l-horizontal-padding--small u-l-horizontal-padding--top-small background-color--dark">
-	<div class="c-online-exhibitions c-online-exhibitions--border-bottom">
+<section class="<?= $isFooterNavigation ? 'u-l-horizontal-padding--small' : 'c-online-exhibitions--padding-bottom' ?> u-l-horizontal-padding--top-small background-color--dark c-online-exhibitions--border-bottom">
+	<div class="c-online-exhibitions">
 		<?php
 		
 		$pageRows = get_field('footer_navigation');
@@ -37,7 +37,6 @@
 		}
 		
 		foreach($rows as $index => $row) {
-			print_r($row[1]);
 			$artwork_title = $row['footer_navigation_artwork_title'];
 			$title = $row['footer_navigation_title'];
 			$thumbnail = $row['footer_navigation_image']['url'];

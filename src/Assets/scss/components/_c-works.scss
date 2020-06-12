@@ -154,7 +154,7 @@
       }
 
       a {
-        text-decoration: underline;
+        //text-decoration: underline;
       }
     }
 
@@ -178,6 +178,7 @@
       .c-works__href {
         color: white;
         font-family: font-family(nt-primary, medium);
+        text-decoration: none;
 
         &--no-arrow {
           line-height: 1.43;
@@ -187,6 +188,7 @@
           border: 1px solid #fff;
           background-color: transparent;
           transition: all 0.15s ease-out;
+          text-decoration: none;
 
           &:hover {
             text-decoration: none;
