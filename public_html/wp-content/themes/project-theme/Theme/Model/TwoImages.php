@@ -19,7 +19,7 @@ class TwoImages {
    
       foreach($imageItems as $image) {
          $images[] = [
-            'image' => $image['image']['url'],
+            'image' => $image['image'],
          ];
       }
 

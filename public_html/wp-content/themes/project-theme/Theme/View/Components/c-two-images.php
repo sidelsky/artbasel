@@ -3,6 +3,8 @@
 			
             <?php
 
+            print_r($image['image']);
+
                $count = 0;
                $output = '';
                $images = $data['items'];
@@ -14,9 +16,12 @@
                foreach($images as $image) { 
                $count++;
                
-               $output .= '<figure class="c-two-images__figure c-two-images__figure[number_of_items] ' . $isTall . '" style="background-image:url('. $image['image'] .')">';
+               $output .= '<figure class="c-two-images__figure c-two-images__figure[number_of_items] ' . $isTall . '">';
+                  $output .= '<div class="c-two-images__figure-inner" style="background-image:url('. $image['image']['url'] .')">';
+                  $output .= '</div>';
+                  $output .= '<figcaption class="caption">' . esc_attr( $image['image']['caption'] ) . '</figcaption>';
                $output .= '</figure>';
-               
+
                }
 
                // Checks to see if devisable by the number of items
