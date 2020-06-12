@@ -12,7 +12,7 @@
  */
 
 .u-l-container {
-  margin: auto;
+  margin: 0 auto;
   max-width: $max-width;
   width: 100%;
   position: relative;
@@ -43,32 +43,37 @@
   }
 
   &--full-width {
-    margin: auto;
+    margin: 0 auto;
     width: 100%;
     position: relative;
   }
 
   &--large {
-    margin: auto;
+    margin: 0 auto;
     max-width: $max-width-large;
     width: 100%;
     position: relative;
   }
 
   &--small {
-    margin: auto;
+    margin: 0 auto;
     max-width: $max-width-small;
   }
 
   &--shallow {
-    margin: auto;
+    margin: 0 auto;
     max-width: $max-width-shallow;
   }
 
   &--narrow {
-    margin: auto;
+    margin: 0 auto;
     max-width: $max-width-narrow;
   }
+}
+
+.u-l-container--no-margin {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .u-l-container--center {
@@ -182,10 +187,4 @@
       padding: $spacing--medium 0;
     }
   }
-}
-
-/**
-* Single art fairs
-*/
-.single-art-fairs {
 }

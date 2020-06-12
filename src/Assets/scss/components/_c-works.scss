@@ -161,6 +161,7 @@
     &--back {
       position: absolute;
       z-index: 10;
+      padding-top: $spacing--x-medium;
       left: $spacing--small;
 
       &:hover {
@@ -232,11 +233,6 @@
     padding-top: 50px;
     margin-top: -40px;
     text-align: center;
-
-    //HR
-    &__hr {
-      //border-top: solid 1px palette(greys, x-light);
-    }
   }
 }
 
