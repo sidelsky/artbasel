@@ -160,7 +160,7 @@
 
     &--back {
       position: absolute;
-      z-index: 10;
+      z-index: 2;
       padding-top: $spacing--x-medium;
       left: $spacing--small;
 
@@ -199,7 +199,7 @@
         }
       }
       .c-works__icon {
-        top: 1px;
+        top: 0px;
         margin-left: 0;
         transition: all ease-in-out 200ms;
       }
@@ -208,7 +208,7 @@
 
   //Icon
   &__icon {
-    top: -1px;
+    top: 0px;
     margin-left: 2px;
     transition: all ease-in-out 200ms;
 
@@ -310,5 +310,11 @@ a .c-works__title,
     line-height: 1.25;
     color: currentColor;
     position: relative;
+  }
+}
+
+.parallax-window__content {
+  .c-works__href-wrap {
+    padding: 5px 0;
   }
 }

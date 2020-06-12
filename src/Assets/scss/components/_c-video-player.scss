@@ -46,7 +46,7 @@
   }
 
   &--portrait {
-    //@include aspect-ratio(4, 2.5);
+    @include aspect-ratio(4, 2.5);
     max-width: 450px;
     height: 796px;
     outline: solid 1px red;

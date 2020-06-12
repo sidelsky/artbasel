@@ -177,7 +177,7 @@
     }
     &:hover {
       cursor: pointer;
-      background-color: palette(greys, xx-light);
+      background-color: $white;
       &:after {
         transform: scale(0.9);
       }
@@ -220,5 +220,15 @@
 .c-online-exhibitions--padding-bottom {
   @include media(">tablet") {
     padding-bottom: $spacing;
+  }
+}
+
+.fullscreenBtn,
+.closefullscreenBtn,
+.owl-prev,
+.owl-next {
+  &:focus {
+    outline: none;
+    outline: -webkit-focus-ring-color auto 0px;
   }
 }

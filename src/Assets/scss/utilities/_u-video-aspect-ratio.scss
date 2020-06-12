@@ -21,14 +21,17 @@
 
   &--portrait {
     width: 100%;
+
     &::before {
       content: "";
       display: block;
       padding-top: 170%;
     }
+
     @include media(">tablet") {
       &::before {
-        padding-top: 71.45%;
+        //padding-top: 71.45%;
+        padding-top: 55.45%;
       }
     }
   }

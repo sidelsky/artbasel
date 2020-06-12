@@ -61,14 +61,14 @@
 
       span {
         -webkit-backface-visibility: visible;
-        $dimensions: 13px;
-        background: transparent;
+        $dimensions: 7px;
+        background: $black;
         border-radius: 50px;
-        border: solid 3px $white;
+        border: solid 1px $white;
         display: block;
         display: inline-block;
         height: $dimensions;
-        margin: $spacing--tiny;
+        margin: 5px;
         position: relative;
         transition: opacity 200ms ease;
         width: $dimensions;
@@ -77,11 +77,11 @@
       &.active,
       &:hover {
         span {
-          $dimensions: 13px;
+          $dimensions: 7px;
           width: $dimensions;
           height: $dimensions;
           background: $white;
-          border: solid 5px transparent;
+          border: solid 1px $black;
         }
       }
     }
