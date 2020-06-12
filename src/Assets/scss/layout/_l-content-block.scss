@@ -85,7 +85,7 @@ $spacing: 30px;
     }
 
     &__text-content {
-      > p {
+      p {
         color: $text-color--grey;
 
         &:only-of-type,
@@ -121,7 +121,8 @@ $spacing: 30px;
     }
 
     &--image-content {
-      overflow: hidden;
+      //overflow: hidden;
+      overflow: visible;
     }
 
     &--center {

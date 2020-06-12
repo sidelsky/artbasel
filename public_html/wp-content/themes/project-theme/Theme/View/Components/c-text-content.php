@@ -28,9 +28,9 @@
 			<?php endif; ?>
 
 			<?php if( $data['textContentLink'] && $data['textContentLinkDescription'] ) : ?>
-				<a href="<?= $data['textContentLink']?>" class="c-works__href"><?= $data['textContentLinkDescription']; ?></a>
+				<a href="<?= $data['textContentLink']['url']?>" class="c-works__href"><?= $data['textContentLinkDescription']; ?></a>
 				<svg class="u-icon c-works__icon">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow<?= $data['darkBackground'] ? '-white' : ''; ?>" viewBox="0 0 32 32"></use>
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#<?= $data['darkBackground'] ? 'shape-link-arrow-white' : 'shape-link-arrow-black'; ?>" viewBox="0 0 32 32"></use>
 				</svg>
 			<?php endif; ?>
 			

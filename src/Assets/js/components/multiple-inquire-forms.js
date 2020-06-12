@@ -2,8 +2,10 @@ const inquireBtns = [
   ...document.querySelectorAll("[data-id='inquire-button']"),
 ];
 const formModal = document.getElementById("inquireModal");
-const inquireFormTextArea = document.getElementById("input_7_5");
-const hiddenField = document.getElementById("input_7_7");
+//const inquireFormTextArea = document.getElementById("input_7_5");
+//const hiddenField = document.getElementById("input_7_7");
+const inquireFormTextArea = document.getElementById("input_12_5");
+const hiddenField = document.getElementById("input_12_7");
 const closeBtn = document.getElementById("closeBtn");
 const inquireBtnsLength = inquireBtns.length;
 

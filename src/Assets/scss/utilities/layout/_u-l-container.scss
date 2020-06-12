@@ -65,6 +65,11 @@
     max-width: $max-width-shallow;
   }
 
+  &--1150 {
+    margin: 0 auto;
+    max-width: $max-width-1150;
+  }
+
   &--narrow {
     margin: 0 auto;
     max-width: $max-width-narrow;
@@ -85,7 +90,7 @@
 
 .u-section {
   width: 100%; //lost-column: 12/12;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .u-column {

@@ -204,15 +204,18 @@ a img.aligncenter {
 .caption {
   color: #8a8a8a;
   font-size: 14px;
-  padding-top: $spacing--tiny;
-  margin-left: $spacing--small;
+  padding: $spacing--x-tiny $spacing--small;
   display: inline-block;
-  //margin-top: $spacing--small;
-  //position: absolute;
-  //left: $spacing--small;
-  //bottom: -75px;
+
+  &--no-margin-top {
+    margin-top: -30px;
+  }
 
   @include media(">tablet") {
-    bottom: -30px;
   }
+}
+
+.wpex-link {
+  margin: $spacing--small 0;
+  display: inline-block;
 }

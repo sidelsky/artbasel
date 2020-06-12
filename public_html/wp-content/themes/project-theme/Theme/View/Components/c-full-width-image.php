@@ -25,14 +25,13 @@
 
       </figure>
 
-   <?php
+      <?php
       /**
        * If caption
        */
       if($data['full_width_image']['caption']) {?>
          <figcaption class="caption"><?= esc_attr( $data['full_width_image']['caption'] ); ?></figcaption>
       <?php } ?>
-
       
    </div>
    </section>

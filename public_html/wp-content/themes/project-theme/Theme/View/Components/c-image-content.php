@@ -47,6 +47,14 @@
             <?= $data['video_content'] ?>
          </div>
       <?php endif; ?>
-
    </div>
+   
 </div>
+
+            <?php
+            /**
+             * If caption
+            */
+            if($data['image_content']['caption']) { ?>
+               <figcaption class="caption caption--no-margin-top"><?= esc_attr( $data['image_content']['caption'] ); ?></figcaption>
+            <?php } ?>
