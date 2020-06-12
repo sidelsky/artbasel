@@ -68,6 +68,18 @@
   &--1150 {
     margin: 0 auto;
     max-width: $max-width-1150;
+
+    @include media(">phone") {
+      padding-left: 4rem !important;
+    }
+
+    @include media(">tablet") {
+      padding-left: 4rem !important;
+    }
+
+    @include media(">desktop") {
+      padding-left: 9rem !important;
+    }
   }
 
   &--narrow {
