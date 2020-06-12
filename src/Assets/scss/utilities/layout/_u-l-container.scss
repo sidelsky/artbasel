@@ -39,7 +39,10 @@
 
   &--blockquote {
     max-width: 100%;
-    margin: 0 80px;
+    margin: 0 $spacing--small;
+    @include media(">tablet") {
+      margin: 0 80px;
+    }
   }
 
   &--full-width {

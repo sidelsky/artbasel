@@ -420,5 +420,7 @@ $color: fff;
 }
 
 .l-content__block__min-width-text {
-  min-width: 380px;
+  @include media(">desktop") {
+    min-width: 380px;
+  }
 }
