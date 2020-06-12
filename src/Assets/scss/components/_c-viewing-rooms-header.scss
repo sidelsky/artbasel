@@ -60,18 +60,18 @@
       *display: inline;
 
       span {
-        display: inline-block;
-        position: relative;
+        -webkit-backface-visibility: visible;
         $dimensions: 13px;
-        width: $dimensions;
-        height: $dimensions;
-        margin: $spacing--tiny;
         background: transparent;
         border-radius: 50px;
-        display: block;
         border: solid 3px $white;
-        -webkit-backface-visibility: visible;
+        display: block;
+        display: inline-block;
+        height: $dimensions;
+        margin: $spacing--tiny;
+        position: relative;
         transition: opacity 200ms ease;
+        width: $dimensions;
       }
 
       &.active,
