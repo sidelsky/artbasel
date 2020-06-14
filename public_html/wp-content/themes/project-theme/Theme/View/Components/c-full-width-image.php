@@ -1,5 +1,5 @@
 <?php if( $data['full_width_image'] ) { ?>
-   <section class="u-section <?= !is_page('art-fairs') ? 'u-l-vertical-padding--medium40' : '' ?>" <?= is_page('art-fairs') ? 'style="margin:0 0 0 30px"' : '' ?>>
+   <section class="u-section <?= !is_page('art-fairs') ? 'u-l-vertical-padding--medium40' : '' ?>">
       <div class="<?= $args['fullWidth'] ? 'u-l-container--full-width' : 'u-l-container u-l-container--padding-full-width'?>">
          <!-- <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>'); "> -->
           <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>');">
