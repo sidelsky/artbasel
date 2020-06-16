@@ -131,15 +131,16 @@
 
   &__btn-container {
     position: absolute;
-    right: 60px;
+    right: 40px;
     padding-top: 5px;
     @include media(">phone") {
-      right: 110px;
+      right: 40px;
     }
     @include media(">tablet") {
+      right: 80px;
     }
     @include media(">desktop") {
-      right: 110px;
+      right: 80px;
     }
   }
 

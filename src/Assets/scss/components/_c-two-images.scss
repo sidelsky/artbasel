@@ -6,7 +6,8 @@
   &__figure {
     &--two-column {
       width: 100%;
-      margin-bottom: $spacing--small;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
       @include media(">tablet") {
         lost-column: 1/2 2 40px no-flex;
         margin-bottom: 0;
@@ -14,11 +15,20 @@
       .c-two-images__figure-inner {
         @include aspect-ratio(1.5, 1);
       }
+
+      &:nth-last-of-type(1) {
+        @include media("<tablet") {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
     }
 
     &--three-column {
       width: 100%;
-      margin-bottom: $spacing--small;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+
       &:last-of-type {
         margin-bottom: 0;
       }
@@ -29,6 +39,19 @@
       }
       .c-two-images__figure-inner {
         @include aspect-ratio(1, 1);
+      }
+
+      &:nth-last-of-type(2) {
+        @include media("<tablet") {
+          margin-top: 0;
+        }
+      }
+
+      &:nth-last-of-type(1) {
+        @include media("<tablet") {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
       }
     }
 

@@ -144,7 +144,7 @@ include("header.php");
 	]
 
 	?>
-	<section class="u-l-horizontal-padding--small">
+	<section class="u-l-horizontal-padding--small" style="padding-right: 0">
 		<div class="c-online-exhibitions">
 			<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
 				<?php 	
