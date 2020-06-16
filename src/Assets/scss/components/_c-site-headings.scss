@@ -52,7 +52,7 @@
     }
 
     &--sub {
-      @include set-font-size(3.4rem, 5rem, 5rem, 5rem);
+      @include set-font-size(3.4rem, 3.4rem, 5rem, 5rem);
       font-family: font-family(nt-primary, medium);
       line-height: 1;
       padding-top: $spacing--small;
