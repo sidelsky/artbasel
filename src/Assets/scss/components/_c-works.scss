@@ -319,6 +319,10 @@ a .c-works__title,
 
 .parallax-window__content {
   .c-works__href-wrap {
-    padding: 5px 0;
+    padding: 0;
+
+    @include media(">tablet") {
+      padding: 0;
+    }
   }
 }
