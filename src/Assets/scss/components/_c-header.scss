@@ -12,12 +12,15 @@
 
   &__wrap {
     text-align: center;
-    height: 70px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: solid 1px palette(greys, xx-light);
     position: relative;
+    @include media(">tablet") {
+      height: 70px;
+    }
   }
 
   //Link
@@ -25,7 +28,10 @@
     display: inline-block;
     width: 185px;
     height: 16px;
-    margin-top: 5px;
+
+    @include media(">tablet") {
+      margin-top: 5px;
+    }
 
     &--left {
       position: absolute;
@@ -48,7 +54,10 @@
 
 //menu open
 .body--menu-is-expanded {
-  margin-top: 70px;
+  margin-top: 45px;
+  @include media(">tablet") {
+    margin-top: 70px;
+  }
   .c-header {
     position: fixed;
     top: 0;

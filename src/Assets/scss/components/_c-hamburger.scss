@@ -16,13 +16,14 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
-  top: 26px;
-  right: $spacing--small;
+  top: 11px;
+  left: $spacing--tiny;
   text-indent: -9999px;
   transition: background $hamburger-transistion-duration;
   width: $hamburger-width;
   z-index: 100;
   display: none;
+  transform: scale(0.6);
 
   @include media("<desktop") {
     display: block;

@@ -23,8 +23,8 @@ body {
   height: 100%;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
-  margin-top: 70px;
-  @include media(">desktop") {
+  margin-top: 45px;
+  @include media(">tablet") {
     margin-top: 118px;
     &.archive.post-type-archive-private-rooms {
       margin-top: 70px;

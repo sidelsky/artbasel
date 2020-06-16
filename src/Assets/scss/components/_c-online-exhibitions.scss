@@ -83,7 +83,7 @@
     font-family: font-family(nt-primary, medium);
     @include set-font-size(3.2rem, 3.2rem, 3.2rem, 3.2rem);
     line-height: 1.1;
-    margin-bottom: $spacing--tiny;
+    margin-bottom: 0.9rem;
     transition: all 0.3s ease-in-out;
   }
 

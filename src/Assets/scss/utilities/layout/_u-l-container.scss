@@ -73,7 +73,7 @@
     max-width: $max-width-1150;
 
     @include media(">phone") {
-      padding-left: 4rem !important;
+      //padding-left: 4rem !important;
     }
 
     @include media(">tablet") {

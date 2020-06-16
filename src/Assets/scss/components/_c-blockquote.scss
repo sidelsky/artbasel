@@ -1,5 +1,5 @@
 .c-blockquote {
-  font-family: font-family(nt-primary, medium);
+  font-family: font-family(nt-primary, regular);
   @include set-font-size(2rem, 2rem, 2rem, 2rem);
 
   &--alt-font {
@@ -9,7 +9,7 @@
 
   blockquote {
     background-color: palette(greys, xxx-light);
-    line-height: 1.3;
+    line-height: 1.5;
     padding: $spacing--small;
     @include media(">phone") {
       padding: $spacing--large;
