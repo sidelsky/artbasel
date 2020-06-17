@@ -1,7 +1,6 @@
 <?php if( $data['full_width_image'] ) { ?>
    <section class="u-section <?= !is_page('art-fairs') ? 'u-l-vertical-padding--medium40' : '' ?>" <?= is_page('art-fairs') ? 'style="margin-bottom:30px"' : '' ?>>
       <div class="<?= $args['fullWidth'] ? 'u-l-container--full-width' : 'u-l-container u-l-container--padding-full-width'?>">
-         <!-- <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>'); "> -->
           <figure role="img" aria-label="<?= esc_attr( $data['full_width_image']['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $data['full_width_image']['url'] ?>');">
          
          <?php if( $data['full_width_image_title'] || $data['full_width_image_link'] ) { ?>
@@ -14,7 +13,7 @@
                   <?php if( $data['full_width_image_link'] ) { ?>
                      <div class="c-works__href-wrap c-works__href-wrap--center">
                         <span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">
-                           <a href="<?= $data['full_width_image_link'] ?>" class="c-works__href c-works__href--no-arrow">Explore now</a> 
+                           <a href="<?= $data['full_width_image_link'] ?>" class="c-works__href c-works__href--no-arrow"><?= $data['full_width_image_link_title'] ? $data['full_width_image_link_title'] : 'Explore now' ?></a> 
                         </span>
                      </div>
                   <?php } ?>
