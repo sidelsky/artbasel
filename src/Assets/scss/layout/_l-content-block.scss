@@ -237,6 +237,11 @@ $spacing: 30px;
 .l-content__block {
   padding: 0 !important;
   background-color: $white;
+  margin-bottom: 20px;
+
+  @include media(">tablet") {
+    margin-bottom: 20px;
+  }
 
   &--dark-background {
     color: white;
@@ -256,7 +261,7 @@ $spacing: 30px;
 
   &--wide-image {
     position: relative;
-    margin-bottom: $spacing;
+    //margin-bottom: $spacing;
     flex-wrap: wrap;
     overflow: hidden;
     @include aspect-ratio(1.8, 1);
@@ -284,6 +289,7 @@ $spacing: 30px;
 
     @include media(">tablet") {
       lost-column: 8/12;
+      margin-bottom: 40px;
 
       &:nth-of-type(2n + 2) {
         lost-move: -4/12;

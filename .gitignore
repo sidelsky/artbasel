@@ -8,36 +8,20 @@
 # $ git add .
 # $ git commit -m ".gitignore setup and cleaned up"
 
-/public/wordpress/*
-!/public/wordpress/.gitkeep
 /vendor/*
-!/vendor/.gitkeep
-/public/wp-content/plugins/*
-!/public/wp-content/plugins/.gitkeep
-/public/wp-content/mu-plugins/*
-/public/wp-content/themes/assets/*
-/public/wp-content/themes/twentysixteen/
-/public/wp-content/themes/wp_starter_theme/
-!/public/wp-content/themes/.gitkeep
-!/public/wp-content/mu-plugins/init.php
-!/public/wp-content/mu-plugins/acf_translator.php
-!/public/wp-content/mu-plugins/git_version.php
-/public/wp-content/uploads/*
-/public/wp-content/debug.log
-/public/wp-content/languages/
+public_html/wp-content/uploads/*
+public_html/wp-content/debug.log
+public_html/wp-content/languages/
 public_html/wp-content/uploads/gravity_forms/*
-!/public/wp-content/uploads/.gitkeep
-/public/hot
+public_html/hot
 .htpasswd
 .env
 mix.*.js
 mix.js
-!.env.example
 /coverage
 .vagrant
 /bower_components
 /node_modules
-/public/wp-content/themes/*/assets/build
 .DS_Store
 __MACOSX/
 *.sql
@@ -47,3 +31,13 @@ yarn-error.log
 composer.lock
 yarn.lock
 public_html/.htaccess
+
+!vendor/.gitkeep
+!public_html/wordpress/.gitkeep
+!public_html/wp-content/plugins/.gitkeep
+!public_html/wp-content/themes/.gitkeep
+!public_html/wp-content/mu-plugins/init.php
+!public_html/wp-content/mu-plugins/acf_translator.php
+!public_html/wp-content/mu-plugins/git_version.php
+!public_html/wp-content/uploads/.gitkeep
+!.env.example
