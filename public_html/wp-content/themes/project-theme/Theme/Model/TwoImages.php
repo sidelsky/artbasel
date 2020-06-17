@@ -20,6 +20,7 @@ class TwoImages {
       foreach($imageItems as $image) {
          $images[] = [
             'image' => $image['image'],
+            'video' => $image['two_three_video'],
          ];
       }
 

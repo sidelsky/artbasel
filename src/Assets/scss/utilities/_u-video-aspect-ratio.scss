@@ -30,26 +30,20 @@
 
     @include media(">tablet") {
       &::before {
-        //padding-top: 71.45%;
         padding-top: 55.45%;
       }
     }
   }
 
-  // &--portrait-centered {
-  //   margin: 0 auto;
-  //   &::before {
-  //     padding-top: 170%;
-  //   }
-  //   @include media(">tablet") {
-  //     &::before {
-  //       content: "";
-  //       display: block;
-  //       padding-top: 71.25%;
-  //       width: 410px;
-  //     }
-  //   }
-  // }
+  &--two-videos {
+    width: 100%;
+
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 125%;
+    }
+  }
 
   iframe {
     height: 100%;

@@ -4,6 +4,8 @@
   flex-wrap: wrap;
 
   &__figure {
+    position: relative;
+
     &--two-column {
       width: 100%;
       margin-top: 4rem;
@@ -44,6 +46,34 @@
       &:nth-last-of-type(2) {
         @include media("<tablet") {
           margin-top: 0;
+        }
+      }
+
+      &:nth-last-of-type(1) {
+        @include media("<tablet") {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &--video {
+      width: 100%;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      @include media(">tablet") {
+        lost-column: 1/2 2 40px no-flex;
+        margin-bottom: 0;
+      }
+      .c-two-images__figure-inner {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+
+        &::before {
+          content: "";
+          display: block;
+          padding-top: 125%;
         }
       }
 
