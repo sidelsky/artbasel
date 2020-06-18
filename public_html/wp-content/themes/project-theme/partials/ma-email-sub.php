@@ -3,7 +3,7 @@
 	$emailSubCopy = $themeData['emailSubCopy']['details'];
 	//$smallPrint = '<p class="c-ma-email-sub--small">' . $themeData['emailSubCopy']['smallPrint'] . '</p>';
 } elseif( is_page('Online Exhibitions') ) {
-	$id = 6;
+	$id = 4;
 	$emailSubCopy = 'Be the first to receive updates';
 	$smallPrint = null;
 } else {
