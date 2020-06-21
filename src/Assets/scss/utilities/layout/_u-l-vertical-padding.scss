@@ -89,3 +89,23 @@
     }
   }
 }
+
+//Margin 80
+.u-l-vertical-padding--margin-40 {
+  margin: $margin-20 auto;
+  @include media(">tablet") {
+    margin: $margin-40 auto;
+  }
+  &--top {
+    margin-top: $margin-20;
+    @include media(">tablet") {
+      margin-top: $margin-40 auto;
+    }
+  }
+  &--bottom {
+    margin-bottom: $margin-20;
+    @include media(">tablet") {
+      margin-bottom: $margin-40;
+    }
+  }
+}

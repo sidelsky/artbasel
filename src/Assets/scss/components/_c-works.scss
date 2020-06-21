@@ -182,16 +182,21 @@
         text-decoration: none;
 
         &--no-arrow {
+          border: 1px solid #fff;
+          padding: $spacing--tiny $spacing--x-small;
           line-height: 1.43;
           text-align: center;
-          padding: $spacing--x-small $spacing--medium;
           border-radius: 3px;
-          border: 1px solid #fff;
           background-color: transparent;
           transition: all 0.15s ease-out;
           text-decoration: none;
-          margin-top: 10px;
+          margin-top: 5px;
           display: inline-block;
+
+          @include media(">tablet") {
+            margin-top: 10px;
+            padding: $spacing--x-small $spacing--medium;
+          }
 
           &:hover {
             text-decoration: none;

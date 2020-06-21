@@ -108,7 +108,7 @@ if($miniCarouselText) :?>
 	<?php if($hideMiniCarousel) : ?>
 		<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--carousel-text-only">
 			<article class="c-hero-carousel--inner-container">
-				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel" style="margin-bottom: 20px"><?= $miniCarouselText ?></h3>
+				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?= $miniCarouselText ?></h3>
 				<?php if($miniCarouselContent) : ?>
 					<div><?= $miniCarouselContent ?></div>
 				<?php endif; ?>
@@ -119,7 +119,7 @@ if($miniCarouselText) :?>
 	<?php if(!$hideMiniCarousel) : ?>
 		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 			<article class="c-hero-carousel--inner-container">
-				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel" style="margin-bottom: 20px"><?= $miniCarouselText ?></h3>
+				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?= $miniCarouselText ?></h3>
 				<?php if($miniCarouselContent) : ?>
 					<div><?= $miniCarouselContent ?></div>
 				<?php endif; ?>

@@ -31,7 +31,7 @@ include("header.php");
     echo $render->view('Components/' . $template, $data, $args);
 ?>
 
-<section class="l-content u-l-vertical-padding--top-only">
+<section class="l-content">
 <?php
 
 	foreach($allLayouts as $value) {

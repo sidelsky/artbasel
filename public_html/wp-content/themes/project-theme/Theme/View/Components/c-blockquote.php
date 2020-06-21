@@ -1,6 +1,6 @@
 <?php if( $data['blockquote'] ) : ?>
 
-	<section class="u-section u-l-vertical-padding--medium40 c-blockquote <?= $args['altFontClass'] ? 'c-blockquote--alt-font' : ''?>">
+	<section class="u-section c-blockquote u-l-vertical-padding--margin-40 <?= $args['altFontClass'] ? 'c-blockquote--alt-font' : ''?>">
 		<div class="u-l-container--blockquote">
 			<blockquote>
 				<?php if( $data['blockquote_thumbnail']['url'] ) {?> 

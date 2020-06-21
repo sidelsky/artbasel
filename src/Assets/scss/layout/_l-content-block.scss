@@ -237,10 +237,10 @@ $spacing: 30px;
 .l-content__block {
   padding: 0 !important;
   background-color: $white;
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
 
   @include media(">tablet") {
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
   }
 
   &--dark-background {
@@ -253,15 +253,18 @@ $spacing: 30px;
       flex-wrap: wrap;
       @include aspect-ratio(1, 1.11);
       lost-column: 4/12;
+      margin-bottom: 40px;
+      &:nth-of-type(1n + 1) {
+        lost-move: -8/12;
+      }
       &:nth-of-type(2n + 2) {
-        lost-move: 8/12;
+        lost-move: 0/12;
       }
     }
   }
 
   &--wide-image {
     position: relative;
-    //margin-bottom: $spacing;
     flex-wrap: wrap;
     overflow: hidden;
     @include aspect-ratio(1.8, 1);
@@ -290,9 +293,11 @@ $spacing: 30px;
     @include media(">tablet") {
       lost-column: 8/12;
       margin-bottom: 40px;
-
+      &:nth-of-type(1n + 1) {
+        lost-move: 4/12;
+      }
       &:nth-of-type(2n + 2) {
-        lost-move: -4/12;
+        lost-move: 0/12;
         .owl-nav {
           right: $spacing--tiny;
           @include media(">phone") {

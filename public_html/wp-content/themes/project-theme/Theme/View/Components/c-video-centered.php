@@ -1,5 +1,5 @@
-<section class="u-section">
-	<div class="u-l-container<?= $data['video_centered_full_width'] ? '--full-width' : '' ?> u-l-vertical-padding--medium40">
+<section class="u-section u-l-vertical-padding--margin-40">
+	<div class="u-l-container<?= $data['video_centered_full_width'] ? '--full-width' : '' ?> ">
 
       <div class="c-video-player--centered">
 
