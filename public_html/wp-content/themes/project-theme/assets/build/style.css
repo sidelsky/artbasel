@@ -4118,13 +4118,13 @@ h1 strong {
   width: 100%;
 }
 
-.works-single .owl-carousel .owl-item img {
+.single-works .owl-carousel .owl-item img {
   margin: 0 auto;
   max-height: 800px !important;
   width: auto !important;
 }
 
-.works-single .owl-carousel .owl-item img:hover {
+.single-works .owl-carousel .owl-item img:hover {
   cursor: pointer;
 }
 

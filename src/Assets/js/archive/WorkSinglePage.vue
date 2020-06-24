@@ -18,17 +18,23 @@
         <div class="c-work-single__column">
           <figure class="c-work-single__figure">
             <carousel
+              :autoplay="true"
+              :loop="true"
               :nav="false"
+              :navigation="true"
+              :autoplayHoverPause="true"
               :dots="true"
               :responsive="{0:{items:1},600:{items:1},768:{items:1}}"
             >
-              <template slot="prev" class="bob">
+              <template slot="prev" class="bob" data-id="prev">
                 <span class="prev"></span>
               </template>
+
               <div v-for="item in gallery" :key="item">
                 <img :src="item" class="c-work-single__image" v-on:click="handleItemClick(item)" />
               </div>
-              <template slot="next" class="bob">
+
+              <template slot="next" class="bob" style="display: block;">
                 <span class="next"></span>
               </template>
             </carousel>
@@ -196,3 +202,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.c-work-single__figure div span {
+  display: block !important;
+}
+</style>
