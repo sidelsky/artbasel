@@ -204,21 +204,7 @@ if( $kuulaImage && $kuulaVr ) : ?>
  * */
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
 	<section class="l-content">
-		<?php
-		/**
-		 * Text content
-		 */
-		if( $fiftyFifty['fifty_fifty_title'] && $fiftyFifty['fifty_fifty_content'] ) :
-		?>
-			<article class="l-content__block l-content__block__text-content l-content__block--wide-text l-content__block--dark-background">
-				<div class="canvas l-content__block--center l-content__block__text-content">
-					<div>
-						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
-						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
-					</div>
-				</div>
-			</article>
-		<?php endif; ?>
+
 
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
 			<figure class="l-content__block l-content__block--wide-image" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></figure>
@@ -240,6 +226,22 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 					</div>
 				</div>
 			</figure>
+		<?php endif; ?>
+
+		<?php
+		/**
+		 * Text content
+		 */
+		if( $fiftyFifty['fifty_fifty_title'] && $fiftyFifty['fifty_fifty_content'] ) :
+		?>
+			<article class="l-content__block l-content__block__text-content l-content__block--wide-text l-content__block--dark-background">
+				<div class="canvas l-content__block--center l-content__block__text-content">
+					<div>
+						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
+						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
+					</div>
+				</div>
+			</article>
 		<?php endif; ?>
 
 	</section>
