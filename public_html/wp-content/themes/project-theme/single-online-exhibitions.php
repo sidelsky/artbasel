@@ -110,7 +110,7 @@ if($miniCarouselText) :?>
 			<article class="c-hero-carousel--inner-container">
 				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?= $miniCarouselText ?></h3>
 				<?php if($miniCarouselContent) : ?>
-					<div><?= $miniCarouselContent ?></div>
+					<div style="margin-top: 20px"><?= $miniCarouselContent ?></div>
 				<?php endif; ?>
 			</article>
 		</div>
@@ -121,7 +121,7 @@ if($miniCarouselText) :?>
 			<article class="c-hero-carousel--inner-container">
 				<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel"><?= $miniCarouselText ?></h3>
 				<?php if($miniCarouselContent) : ?>
-					<div><?= $miniCarouselContent ?></div>
+					<div style="margin-top: 20px"><?= $miniCarouselContent ?></div>
 				<?php endif; ?>
 			</article>
 		</div>
