@@ -78,8 +78,8 @@
   }
 
   &--top-only {
+    padding-top: $spacing--medium;
     @include breakpoint($medium) {
-      padding-top: $spacing--medium;
     }
   }
 
