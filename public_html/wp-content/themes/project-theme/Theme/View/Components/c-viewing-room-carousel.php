@@ -1,4 +1,4 @@
-<section class="c-viewing-rooms-header owl-carousel owl-hero-carousel u-l-vertical-padding--margin-40--bottom">
+<section class="c-viewing-rooms-header owl-carousel owl-hero-carousel">
    <?php foreach($data['currentViewing'] as $viewingRoom) { ?>
 
       <div class="c-viewing-rooms-header c-header-background-image" role="img" aria-label="<?= esc_attr( $viewingRoom['currentViewingRoomImage']['alt'] ); ?>" style="background-image: url('<?= $viewingRoom['currentViewingRoomImage']['url'] ?>')">
