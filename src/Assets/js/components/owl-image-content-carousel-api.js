@@ -77,6 +77,6 @@ function hasBeenInitialized() {
 
   // Afer hasBeenInitialized run Image zoom
   $(".zoom-image").zoomImage({
-    touch: true,
+    touch: false,
   });
 }

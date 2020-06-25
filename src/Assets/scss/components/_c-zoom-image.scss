@@ -22,6 +22,8 @@
 }
 
 .zoom-image > figure:hover {
-  opacity: 1;
-  cursor: crosshair;
+  @include media(">desktop") {
+    opacity: 1;
+    cursor: crosshair;
+  }
 }
