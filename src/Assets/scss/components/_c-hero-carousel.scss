@@ -6,6 +6,10 @@
   }
 
   &--container {
+    a {
+      color: currentColor;
+      text-decoration: underline;
+    }
     &--padding {
       padding: $spacing--large $spacing--large $spacing--medium;
 

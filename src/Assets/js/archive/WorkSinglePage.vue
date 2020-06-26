@@ -97,7 +97,7 @@
               id="inquireBtn_0"
               data-id="inquireBtn"
               class="c-button c-button--light"
-            >Inquire to learn more</button>
+            >Inquire to purchase</button>
 
             <button
               v-if="work.isEdition"
