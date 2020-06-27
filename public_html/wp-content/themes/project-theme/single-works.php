@@ -61,7 +61,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 			echo '<div class="modal-content">';
 				echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
 				echo '<span class="close closei">&times;</span>';
-				echo do_shortcode('[gravityform id="7" title="false" description="false" ajax="true" field_values="form_msg=I am interested in purchasing, ' . $work["title"] . '. \nPlease send me further details about this artwork, pricing, and availability.&id_code=' . $work["ids"] . '"]');
+				echo do_shortcode('[gravityform id="7" title="false" description="false" ajax="true" field_values="form_msg=I am interested in purchasing, ' . $work["fullName"] .', ' . $work["title"] . '. \nPlease send me further details about this artwork, pricing, and availability.&id_code=' . $work["ids"] . '"]');
 				echo '<small> *By submiting your email address, you consent to receive our Newsleter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s afiliated companies.</small>';
 				echo '</div>';
 		echo '</div>';
