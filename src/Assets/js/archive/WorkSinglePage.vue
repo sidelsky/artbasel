@@ -18,7 +18,7 @@
         <div class="c-work-single__column">
           <figure class="c-work-single__figure">
             <carousel
-              :autoplay="true"
+              :autoplay="false"
               :loop="true"
               :nav="false"
               :navigation="true"

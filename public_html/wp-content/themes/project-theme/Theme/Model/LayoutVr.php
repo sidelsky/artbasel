@@ -6,6 +6,7 @@ use \WP_Query;
 use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
 use Theme\Model\WorksContent;
+use Theme\Model\WiderTextContent;
 
 class LayoutVr {
 
@@ -40,6 +41,12 @@ class LayoutVr {
 			   case 'works_content':
                $worksContent = new WorksContent($layout);
                $currentLayout = $worksContent->getWorksContent();
+            break;
+
+            //Wider text comp
+			   case 'wider_text_content':
+               $widerTextContent = new WiderTextContent($layout);
+               $currentLayout = $widerTextContent->getWiderTextContent();
             break;
                 
         }

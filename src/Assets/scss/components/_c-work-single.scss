@@ -125,9 +125,13 @@
 
 .single-works {
   .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-      margin: 0 auto;
-      max-height: 800px !important;
+      display: block;
+      max-height: 70vh;
+      width: auto;
       &:hover {
         cursor: pointer;
       }

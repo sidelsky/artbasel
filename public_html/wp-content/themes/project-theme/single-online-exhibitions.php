@@ -277,11 +277,20 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 					case 'works_content':
 						$templateName = 'c-works-content';
 					break;
+
+
+					//Wider text content
+					case 'wider_text_content':
+						$templateName = 'c-wider-text-content';
+						$args = [
+							'altFontClass' => false,
+							'alignLeft' => true
+         			];
+						break;
 				
 			}
 				$renderContent = $render->view('Components/' . $templateName, $value, $index);
 				echo $renderContent;
-				//var_dump($renderContent);
 		}
 
 	?>
