@@ -55,6 +55,29 @@ endwhile;
 wp_reset_postdata();
 ?>
 
+<?php /**
+ * Modal Notice
+ */?>
+<?php 
+$modal_notice = get_field('modal_notice');
+$modal_notice_content = get_field('modal_notice_content');
+if( get_field('modal_notice') ) { ?>
+
+	<div id="modalNotice" class="modal" data-id="mltp-inquire-modal" style="display: block">
+		<div class="modal-content">
+			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
+			<div>
+				<?= $modal_notice_content ?>
+				<div style="text-align: center;">
+					<button class="cta-button" onclick="location.href='/online-exhibitions'">Back to Exhibitions</button>
+					<button class="cta-button" id="modalNoticeClose">Proceed</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<?php } ?>
+
 <?php
 /**
  * Hero paralax image
@@ -435,6 +458,5 @@ if( !empty($content) ):
 		}
 	</script>
 <?php endif; ?>
-
 
 <?php include("footer.php"); ?>

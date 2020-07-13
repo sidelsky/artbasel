@@ -12,19 +12,27 @@ var close = document.getElementById("close");
 // When the user clicks on the button, open the modal
 btn.onclick = function(event) {
   modal.style.display = "block";
-  console.log('click');
-  
+  console.log("click");
+
   event.preventDefault();
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 close.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
+
+//Modal Notice
+var modalNotice = document.getElementById("modalNotice");
+var modalNoticeClose = document.getElementById("modalNoticeClose");
+
+modalNoticeClose.onclick = function() {
+  modalNotice.style.display = "none";
+};
