@@ -63,6 +63,12 @@ $modal_notice = get_field('modal_notice');
 $modal_notice_content = get_field('modal_notice_content');
 if( get_field('modal_notice') ) { ?>
 
+<script>
+	function closeModal() {
+		document.getElementById("modalNotice").style.display = "none";
+	}
+</script>
+
 	<div id="modalNotice" class="modal" data-id="mltp-inquire-modal" style="display: block">
 		<div class="modal-content">
 			<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>
@@ -70,7 +76,7 @@ if( get_field('modal_notice') ) { ?>
 				<?= $modal_notice_content ?>
 				<div style="text-align: center;">
 					<button class="cta-button" onclick="location.href='/online-exhibitions'">Back to Exhibitions</button>
-					<button class="cta-button" id="modalNoticeClose">Proceed</button>
+					<button class="cta-button" id="modalNoticeClose" onclick="closeModal()">Proceed</button>
 				</div>
 			</div>
 		</div>

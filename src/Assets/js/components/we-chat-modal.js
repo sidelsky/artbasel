@@ -28,11 +28,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 };
-
-//Modal Notice
-var modalNotice = document.getElementById("modalNotice");
-var modalNoticeClose = document.getElementById("modalNoticeClose");
-
-modalNoticeClose.onclick = function() {
-  modalNotice.style.display = "none";
-};
