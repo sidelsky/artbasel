@@ -6,5 +6,5 @@ $(".owl-hero-carousel").owlCarousel({
   responsiveClass: true,
   autoplay: true,
   autoplayTimeout: 5000,
-  autoplayHoverPause: false,
+  autoplayHoverPause: true,
 });

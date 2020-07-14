@@ -195,7 +195,7 @@
 
           @include media(">tablet") {
             margin-top: 10px;
-            padding: $spacing--x-small $spacing--medium;
+            padding: 8px $spacing--medium;
           }
 
           &:hover {
