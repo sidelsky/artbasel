@@ -80,6 +80,8 @@ button[disabled] {
   text-align: center;
   user-select: none;
   &:hover {
-    background-color: palette(greys, xx-light);
+    border: solid 1px $dark;
+    color: white;
+    background-color: $dark;
   }
 }
