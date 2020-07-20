@@ -24,7 +24,6 @@
 	
 ?>
 
-
 <a href="<?= $url ?>" class="<?= $isFooterNavigation ? 'c-online-exhibitions__block--navigation' : 'c-online-exhibitions__href-wrap' ?> <?= $isCarousel ? 'c-online-exhibitions__block--small' : 'c-online-exhibitions__block' ?> c-online-exhibitions__card" style="background-image: url('<?= $FeaturedThumbnail[0] ? $FeaturedThumbnail[0] : $thumbnail ?>'); display: block" role="img" aria-label="<?= strip_tags($title) ?>">
    <div class="canvas">
       <div class="c-online-exhibitions__content <?= $altFont ? 'c-online-exhibitions--alt-font' : ''?>">

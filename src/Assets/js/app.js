@@ -1,5 +1,6 @@
 import "./svg-sprite";
 import "./archive";
+import "rellax";
 import "./components/jquery";
 import "./components/image-zoom";
 import "./components/login-form";
@@ -18,5 +19,6 @@ import "./components/multiple-inquire-forms";
 import "./components/scroll-to-navigation";
 import "./components/highlight-scrolltonav";
 import "./components/noframework.waypoints";
+import "./components/rellax";
 import Hamburger from "./components/hamburger";
 new Hamburger();

@@ -9,85 +9,75 @@
  */
 
 // Dependencies
-const mix = require('laravel-mix');
-const SvgStore = require('webpack-svgstore-plugin');
+const mix = require("laravel-mix");
+const SvgStore = require("webpack-svgstore-plugin");
 
 // Assets Path
-const Vhost = 'http://artbasilvip/';
+const Vhost = "http://artbasilvip/";
 
-const jsSrcPath = 'src/Assets/js/app.js';
-const scssSrcPath = 'src/Assets/scss/style.scss';
-const themePath = 'public_html/wp-content/themes/project-theme';
+const jsSrcPath = "src/Assets/js/app.js";
+const scssSrcPath = "src/Assets/scss/style.scss";
+const themePath = "public_html/wp-content/themes/project-theme";
 const destPath = `${themePath}/assets/build`;
 
-mix.setPublicPath('public_html');
+mix.setPublicPath("public_html");
 
 // Styles
-mix.sass(scssSrcPath, destPath)
-    .options({
-        postCss: [
-            require('lost')(),
-            require('postcss-encode-background-svgs')()
-        ],
-        processCssUrls: false
-    });
+mix.sass(scssSrcPath, destPath).options({
+  postCss: [require("lost")(), require("postcss-encode-background-svgs")()],
+  processCssUrls: false,
+});
 
 // Js
 mix.js(jsSrcPath, destPath);
 
-
 // BrowserSync
 mix.browserSync({
-    watch: true,
-    files: [
-        destPath + "/**/*"
-    ],
-    proxy: {
-        target: Vhost,
-    }
+  watch: true,
+  files: [destPath + "/**/*"],
+  proxy: {
+    target: Vhost,
+  },
 });
-    
 
 // SVG Sprite
 mix.webpackConfig({
-    plugins: [
-        new SvgStore({
-        svgoOptions: {
-            plugins: [
-                {
-                    removeTitle: true
-                }
-            ]
-        },
-        prefix: 'shape-'
+  plugins: [
+    new SvgStore({
+      svgoOptions: {
+        plugins: [
+          {
+            removeTitle: true,
+          },
+        ],
+      },
+      prefix: "shape-",
     }),
-
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.scss/,
+        loader: "import-glob-loader",
+      },
+      {
+        test: /(\.vue|\.js)$/,
+        loader: "babel-loader",
+        exclude: /node_modules/,
+      },
     ],
-    module: {
-        rules: [
-            {
-                test: /\.scss/,
-                loader: 'import-glob-loader'
-            },
-            {
-                test: /(\.vue|\.js)$/,
-                loader: 'babel-loader',
-                exclude: /node_modules/
-            }
-        ]
-    }
-    
+  },
 });
 
 // Versioning and Sourcemaps
 if (mix.config.production) {
-    // Enable cache busting in production
-    mix.version();
-    //mix.minify(destPath + '/app.js');
-    // Code Splitting Example - More info on this in the README.md file
-    // mix.extract(['vue']);
+  // Enable cache busting in production
+  mix.version();
+  //mix.minify(destPath + '/app.js');
+  // Code Splitting Example - More info on this in the README.md file
+  // mix.extract(['vue']);
 } else {
-    // Enable sourcemap for development
-    mix.disableNotifications();
-    mix.sourceMaps();
+  // Enable sourcemap for development
+  mix.disableNotifications();
+  mix.sourceMaps();
 }
