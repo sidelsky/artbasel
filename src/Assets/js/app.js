@@ -17,5 +17,6 @@ import "./components/owl-image-content-carousel-api";
 import "./components/multiple-inquire-forms";
 import "./components/scroll-to-navigation";
 import "./components/highlight-scrolltonav";
+import "./components/noframework.waypoints";
 import Hamburger from "./components/hamburger";
 new Hamburger();
