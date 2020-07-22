@@ -427,6 +427,7 @@ $color: fff;
 
 .l-content__block__body-text {
   padding: 0;
+  lost-utility: clearfix;
 }
 
 .page-template-page-art-basel {
@@ -434,5 +435,14 @@ $color: fff;
     p {
       color: black;
     }
+  }
+}
+
+/**
+* Content columns
+*/
+.content-column {
+  p {
+    padding-top: 0;
   }
 }

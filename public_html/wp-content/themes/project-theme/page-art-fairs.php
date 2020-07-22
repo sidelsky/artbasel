@@ -62,6 +62,15 @@ include("header.php");
 							'fullWidth' => false
 						];
 						break;
+					
+					//Wider text content
+					case 'wider_text_content':
+						$templateName = 'c-wider-text-content';
+						$args = [
+							'altFontClass' => false,
+							'alignLeft' => false
+         			];
+						break;
 						
 					//Get Art Fairs
 					case 'art_fairs':

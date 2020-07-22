@@ -5642,8 +5642,26 @@ Owl modal
   padding: 0;
 }
 
+.l-content__block__body-text:before {
+  content: '';
+  display: table;
+}
+
+.l-content__block__body-text:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .page-template-page-art-basel .l-content__block__body-text p {
   color: black;
+}
+
+/**
+* Content columns
+*/
+.content-column p {
+  padding-top: 0;
 }
 
 @media screen and (min-width: 768px) {

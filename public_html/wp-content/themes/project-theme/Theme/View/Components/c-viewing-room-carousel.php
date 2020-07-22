@@ -1,8 +1,15 @@
+<?php
+    if( is_page('june-art-fair') ) {
+        $boxShadow = 'box-shadow: inset 0px 0px 60px 30px rgba(146,192,132,1);';
+    }
+?>
+
 <section class="c-viewing-rooms-header owl-carousel owl-hero-carousel">
+
    <?php foreach($data['currentViewing'] as $viewingRoom) { ?>
 
       <div class="c-viewing-rooms-header c-header-background-image" role="img" aria-label="<?= esc_attr( $viewingRoom['currentViewingRoomImage']['alt'] ); ?>" style="background-image: url('<?= $viewingRoom['currentViewingRoomImage']['url'] ?>')">
-        <span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, <?= get_field('image_shading_cover') ?>"></span>
+        <span class="c-header-background-image__shading" style="background-color: rgba(0,0,0, <?= get_field('image_shading_cover') ?>); <?= $boxShadow ?>"></span>
             <div class="canvas parallax-window__content parallax-window__content" data-id="title">
                 <div>
                     <h1 class="c-site-headings c-site-headings--h1--hero c-text-align-centre">
