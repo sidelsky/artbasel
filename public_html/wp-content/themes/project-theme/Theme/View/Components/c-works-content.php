@@ -27,7 +27,7 @@
                   $creditLine = get_field('credit_line', $content->ID);
                   $hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
                ?>
-            <article class="c-works__card rellax" data-rellax-zindex="0">
+            <article class="c-works__card">
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">

@@ -1,5 +1,5 @@
 <article class="l-content__block l-content__block__text-content l-content__block--wide-text <?= $data['darkBackground'] ? 'l-content__block--dark-background' : ''; ?>">
-	<div class="canvas l-content__block--center l-content__block__text-content rellax" data-rellax-zindex="0">
+	<div class="canvas l-content__block--center l-content__block__text-content">
 
 	<div class="l-content__block__min-width-text">
 		<?php if($data['textContentTitle']) : ?>
