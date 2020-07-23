@@ -1,6 +1,11 @@
 <?php
    $id = 6;
-   $emailSubCopy = get_field('artist_inquiry_email_description_text');
+   if( is_page('june-art-fair') ) {
+      $emailSubCopy = 'Be the first to receive updates';
+   } else {
+      $emailSubCopy = get_field('artist_inquiry_email_description_text');
+   }
+   
    $smallPrint = null;
 ?>
 <section class="c-ma-email-sub u-l-horizontal-padding u-l-vertical-padding--tiny">

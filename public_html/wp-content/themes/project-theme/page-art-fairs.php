@@ -37,6 +37,12 @@ include("header.php");
     echo $render->view('Components/' . $template, $data);
 ?>
 
+<?php 
+/**
+ * Email submission
+ */
+include("partials/ma-email-sub-vr.php"); ?>
+
 
 	<?php
 
