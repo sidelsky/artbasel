@@ -1,6 +1,6 @@
 <?php
     if( is_page('june-art-fair') ) {
-        $boxShadow = 'box-shadow: inset 0px 0px 60px 30px rgba(146,192,132,1);';
+        $boxShadow = 'box-shadow: inset 0px 0px 40px 20px rgba(146,192,132,1);';
     }
 ?>
 
