@@ -24,6 +24,7 @@
               :navigation="true"
               :autoplayHoverPause="true"
               :dots="true"
+              :margin="30"
               :responsive="{0:{items:1},600:{items:1},768:{items:1}}"
             >
               <template slot="prev" class="bob" data-id="prev">
