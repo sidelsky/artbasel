@@ -138,12 +138,12 @@ const formatter = new Intl.NumberFormat("en-US", {
   currency: "USD",
   currencyDisplay: "code",
   useGrouping: true,
-  minimumFractionDigits: 2
+  minimumFractionDigits: 2,
 });
 
 export default {
   components: {
-    carousel
+    carousel,
     //CookieLaw
   },
   data() {
@@ -151,12 +151,12 @@ export default {
       currentSlide: 0,
       totalSlideNumber: 0,
       currentImage: "",
-      showLightbox: false
+      showLightbox: false,
     };
   },
   props: {
     gallery: Array,
-    work: Object
+    work: Object,
   },
   computed: {
     formattedSold() {
@@ -178,7 +178,7 @@ export default {
           return "";
         }
       }
-    }
+    },
   },
   methods: {
     handleItemClick(item) {
@@ -198,8 +198,8 @@ export default {
       } else if (this.loop) {
         this.currentSlide = 0;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
