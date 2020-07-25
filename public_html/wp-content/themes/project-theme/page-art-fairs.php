@@ -41,7 +41,10 @@ include("header.php");
 /**
  * Email submission
  */
-include("partials/ma-email-sub-vr.php"); ?>
+if( is_page('june-art-fair') ) {
+	include("partials/ma-email-sub-vr.php"); 
+}
+?>
 
 
 	<?php
