@@ -18,14 +18,23 @@
         <div class="c-work-single__column">
           <figure class="c-work-single__figure">
             <carousel
-              :autoplay="false"
+              :autoplay="true"
               :loop="true"
               :nav="false"
               :navigation="true"
               :autoplayHoverPause="true"
               :dots="true"
-              :margin="30"
-              :responsive="{0:{items:1},600:{items:1},768:{items:1}}"
+              :responsive="{
+                0:{
+                  items:1
+                  },
+                600:{
+                  items:1
+                  },
+                768:{
+                  items:1
+                  }
+                }"
             >
               <template slot="prev" class="bob" data-id="prev">
                 <span class="prev"></span>

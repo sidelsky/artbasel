@@ -125,13 +125,17 @@
 
 .single-works {
   .owl-carousel .owl-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include media(">tablet") {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
     img {
       display: block;
-      max-height: 70vh;
-      width: auto;
+      @include media(">desktop") {
+        max-height: 70vh;
+        width: auto;
+      }
       &:hover {
         cursor: pointer;
       }
