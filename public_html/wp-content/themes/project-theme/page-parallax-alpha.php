@@ -23,13 +23,15 @@ include("header.php");
 /**
  * Hero carousel
  */
-    $template = 'c-viewing-room-carousel';
-    $data = $viewingRoom->getData();
-    $args = [
-		'altFontClass' => false
-		];
-    echo $render->view('Components/' . $template, $data, $args);
+   //  $template = 'c-viewing-room-carousel';
+   //  $data = $viewingRoom->getData();
+   //  $args = [
+	// 	'altFontClass' => false
+	// 	];
+   //  echo $render->view('Components/' . $template, $data, $args);
 ?>
+
+ 
 
 <section class="l-content">
 <?php

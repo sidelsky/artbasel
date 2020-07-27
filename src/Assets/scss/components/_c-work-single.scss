@@ -124,6 +124,12 @@
 }
 
 .single-works {
+  .owl-stage {
+    outline: solid 1px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .owl-carousel .owl-item {
     @include media(">tablet") {
       display: flex;
@@ -131,7 +137,6 @@
       align-items: center;
     }
     img {
-      display: block;
       @include media(">tablet") {
         max-height: 70vh;
         width: auto;
