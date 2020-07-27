@@ -12,7 +12,6 @@
 
   .menu-item {
     display: inline-block;
-    //margin: 0 $spacing--small;
     transform: translate3d(0, 0, 0);
     transition: ease 0.4s;
 
@@ -35,7 +34,6 @@
         display: block;
         width: 0;
         height: 2px;
-        //transition: 0.3s width ease;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         background-color: palette(bw, black);
@@ -76,5 +74,18 @@
 
   &:after {
     width: 100% !important;
+  }
+}
+
+/**
+* Parallax alpha 
+*/
+body {
+  &.page-template-page-parallax-alpha {
+    .menu-item {
+      a {
+        //color: white;
+      }
+    }
   }
 }

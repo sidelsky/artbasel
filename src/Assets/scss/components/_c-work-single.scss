@@ -131,7 +131,9 @@
     img {
       display: block;
       max-height: 70vh;
-      //width: auto;
+      @include media(">tablet") {
+        width: auto;
+      }
       &:hover {
         cursor: pointer;
       }

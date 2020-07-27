@@ -20,10 +20,24 @@
         transform: translate3d(0, 0, 0);
       }
     }
+  }
+}
+
+/**
+* Parallax alpha 
+*/
+body {
+  &.page-template-page-parallax-alpha {
     .l-site-header__nav {
-      .menu-item {
-        //margin: 0 1.5rem;
-      }
+      background-color: transparent;
+    }
+  }
+}
+
+body.is-scrolled {
+  &.page-template-page-parallax-alpha {
+    .l-site-header__nav {
+      background-color: white;
     }
   }
 }
