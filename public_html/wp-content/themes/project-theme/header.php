@@ -68,14 +68,22 @@ $wordpress = new WordpressHelper;
 		} else {
 			$baseUrl = $homeUrl;
 		}
- 
+
+		/**
+		 * Check for Parallax alpha template
+		 */
+		if( is_page_template( 'page-parallax-alpha.php' ) ) {
+			$logo = '#shape-hauserwirth-logo';
+		} else {
+			$logo = '#shape-hauserwirth-logo';
+		}
 	?>
 	<header class="c-header" id="header">
 
 		<div class="c-header__wrap">
 			<a href="<?= $baseUrl ?>" class="c-header__link">
 				<svg class="c-header__icon">
-					<use xlink:href='#shape-hauserwirth-logo'></use>
+					<use xlink:href='<?= $logo ?>'></use>
 				</svg>
 			</a>
 
@@ -93,7 +101,7 @@ $wordpress = new WordpressHelper;
 			
 			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--left">
 				<svg class="c-header__icon">
-					<use xlink:href='#shape-hauserwirth-logo'></use>
+					<use xlink:href='<?= $logo ?>'></use>
 				</svg>
 			</a>
 

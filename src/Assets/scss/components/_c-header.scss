@@ -66,3 +66,14 @@
     z-index: 100;
   }
 }
+
+/**
+* Parallax alpha 
+*/
+body {
+  &.page-template-page-parallax-alpha {
+    .c-header {
+      background-color: transparent;
+    }
+  }
+}
