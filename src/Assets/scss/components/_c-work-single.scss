@@ -132,8 +132,8 @@
     }
     img {
       display: block;
-      max-height: 70vh;
       @include media(">tablet") {
+        max-height: 70vh;
         width: auto;
       }
       &:hover {
