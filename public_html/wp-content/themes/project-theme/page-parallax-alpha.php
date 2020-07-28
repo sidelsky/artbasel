@@ -21,17 +21,43 @@ include("header.php");
 
 <?php
 /**
- * Hero carousel
+ * Parallax
  */
-   //  $template = 'c-viewing-room-carousel';
-   //  $data = $viewingRoom->getData();
-   //  $args = [
-	// 	'altFontClass' => false
-	// 	];
-   //  echo $render->view('Components/' . $template, $data, $args);
+
+	$parallax_hero_image = get_field('parallax_hero_image');
+	$parallax_hero_title = get_field('parallax_hero_title');
+	$parallax_introduction = get_field('parallax_introduction');
+	
 ?>
 
- 
+	<section class="c-parallax-hero">
+		<div data-rellax data-rellax-container>
+			<img class="" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
+		</div>
+		<div class="header-content-wrap">
+			<div>
+				<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $parallax_hero_title ?></h1>
+			</div>
+		</div>
+	</section>
+
+
+<!-- <section class="c-parallax-hero">
+	<div class="c-parallax-hero__container">
+
+		<div>
+			<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $parallax_hero_title ?></h1>
+		</div>
+
+		<div class="c-parallax-hero__content-wrap">
+			<div>
+				<img class="" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
+			</div>
+		</div>
+
+	</div>
+</section>
+  -->
 
 <section class="l-content">
 <?php

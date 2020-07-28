@@ -1,0 +1,22 @@
+.c-parallax-hero {
+  min-height: 916px;
+  position: relative;
+
+  &__container {
+  }
+
+  &__content-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+  }
+
+  &__title {
+  }
+}
