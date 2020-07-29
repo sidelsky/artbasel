@@ -53,19 +53,24 @@
     padding: 0 $spacing--small $spacing--small;
     @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
     color: $dark;
-
-    a {
-      color: currentColor;
-    }
+    justify-content: space-between;
 
     //Tablet
     @include media(">tablet") {
-      lost-column: 6/12 3 0;
+      lost-column: 4/12 3 0;
     }
 
     //Desktop
     @include media(">desktop") {
       lost-column: 4/12 3 0;
+    }
+
+    a {
+      color: currentColor;
+    }
+
+    &:only-child {
+      margin: 0 auto;
     }
   }
 
