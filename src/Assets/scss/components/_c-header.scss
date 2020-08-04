@@ -18,7 +18,9 @@
     align-items: center;
     border-bottom: solid 1px palette(greys, xx-light);
     position: relative;
+    background-color: white;
     @include media(">tablet") {
+      background-color: transparent;
       height: 70px;
     }
   }
@@ -71,9 +73,13 @@
 * Parallax alpha 
 */
 body {
-  &.page-template-page-parallax-alpha {
+  &.online-exhibitions-template-parallax-template {
     .c-header {
       background-color: transparent;
+
+      &__wrap {
+        //border: none;
+      }
     }
   }
 }

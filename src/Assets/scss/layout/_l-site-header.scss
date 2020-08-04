@@ -4,6 +4,7 @@
 
 .l-site-header__nav {
   background-color: $white;
+  transition: all ease 1s;
   @include media("<desktop") {
     display: none;
   }
@@ -13,7 +14,7 @@
   @include media(">tablet") {
     .c-header {
       transform: translate3d(0, -70px, 0);
-      transition: ease 0.4s;
+      transition: all ease 0.4s;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 
       &__link--left {
@@ -27,7 +28,7 @@
 * Parallax alpha 
 */
 body {
-  &.page-template-page-parallax-alpha {
+  &.online-exhibitions-template-parallax-template {
     .l-site-header__nav {
       background-color: transparent;
     }
@@ -35,7 +36,7 @@ body {
 }
 
 body.is-scrolled {
-  &.page-template-page-parallax-alpha {
+  &.online-exhibitions-template-parallax-template {
     .l-site-header__nav {
       background-color: white;
     }

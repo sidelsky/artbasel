@@ -1,7 +1,8 @@
 import "./svg-sprite";
 import "./archive";
-import "rellax";
 import "./components/jquery";
+import "rellax";
+import "magnify";
 import "./components/image-zoom";
 import "./components/login-form";
 import "./components/paralax";
@@ -20,5 +21,6 @@ import "./components/scroll-to-navigation";
 import "./components/highlight-scrolltonav";
 import "./components/noframework.waypoints";
 import "./components/rellax";
+import "./components/magnifing-glass-carousel";
 import Hamburger from "./components/hamburger";
 new Hamburger();

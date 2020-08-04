@@ -81,7 +81,10 @@
 * Parallax alpha 
 */
 body {
-  &.page-template-page-parallax-alpha {
+  &.online-exhibitions-template-parallax-template {
+    .c-site-nav {
+      border: none;
+    }
     .menu-item {
       a {
         //color: white;
