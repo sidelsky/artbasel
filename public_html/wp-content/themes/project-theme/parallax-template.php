@@ -95,7 +95,7 @@ $speed = 1;
 					?>
 
 					<section class="u-section u-l-vertical-padding--margin-40">
-						<div class="u-l-container">
+						<div class="u-l-container z--full-width ">
 
 							<div class="c-video-player--centered rellax" id="video" data-rellax-speed="5" data-rellax-percentage="0.20" data-id="video">
 
@@ -135,44 +135,63 @@ $speed = 1;
 		// Loop through rows.
 		while ( have_rows('parallax_layout_builder') ) : the_row();
 
-		?>
-		<?php
-
-			// Case: Magnify carousel
-			if( get_row_layout() == 'magnify_carousel' ) { 
-				$rows = get_sub_field('magnify_carousel_item');
-
+		 // Case: Paragraph layout.
+        if( get_row_layout() == 'magnify_carousel' ):
+            $rows = get_sub_field('magnify_carousel_item');
+				// Do something...
+				
 				echo '<section class="u-section u-l-vertical-padding--margin-40">';
 					echo '<div class="u-l-container ala">';
 
-						echo '<div id="prev-slide" class="c-online-exhibitions__btn-prev"></div>';
-						echo '<div id="next-slide" class="c-online-exhibitions__btn-next"></div>';
+					echo '<div id="prev-slide" class="c-online-exhibitions__btn-prev"></div>';
+					echo '<div id="next-slide" class="c-online-exhibitions__btn-next"></div>';
+					
+						if( $rows ) {
 
-					if( $rows ) {
-						echo '<div class="owl-carousel owl-carousel-magnify owl-theme">';
-							foreach( $rows as $row ) {
+							echo '<div class="owl-carousel owl-carousel-magnify owl-theme">';
+								foreach( $rows as $row ) {
 
-							$image = $row['magnify_carousel_image']['sizes']['large'];
-							$image_magnify = $row['magnify_carousel_image']['sizes']['2048x2048'];
-							$caption = $row['magnify_carousel_image']['caption'];
+									$image = $row['magnify_carousel_image']['sizes']['large'];
+									$image_magnify = $row['magnify_carousel_image']['sizes']['2048x2048'];
+									$caption = $row['magnify_carousel_image']['caption'];
 
-							echo '<figure class="c-magnifying-zoom">';
-								echo '<img src="' . $image . '" class="zoom c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
-								echo '<figcaption class="caption">' . $caption . '</figcaption>';
-							echo '</figure>';
-							}
-						echo '</div>';
-					}
+									echo '<figure class="c-magnifying-zoom">';
+									echo '<img src="' . $image . '" class="zoom c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
+									echo '<figcaption class="caption">' . $caption . '</figcaption>';
+									echo '</figure>';
+
+								}
+							echo '</div>';
+
+							$message =  'I am interested in learning more about this piece. Please send me further details about this artwork, pricing, and availability.';
+							$idCode = '1234';
+							echo '<button class="cta-button" data-id="zinquire-button" data-message-value="' . $message . '" data-id-code="' . $idCode . '">Inquire</button>';
+
+						}
 
 					echo '</div>';
 				echo '</section>';
 
-				?>
-			
-			<?php } ?>
+        // Case: Download layout.
+        elseif( get_row_layout() == 'blockquote' ): 
+            $blockquote = get_sub_field('blockquote');
+				// Do something...
 
+				echo '<section class="u-section u-l-vertical-padding--margin-40">';
+					echo '<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--carousel-text-only">';
+						echo '<article class="c-hero-carousel--inner-container">';
+							echo '<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel">' . $blockquote . '</h3>';
+						echo '</article>';
+					echo '</div>';
+				echo '</section>';
 
-		<?php	
+			// Case: Download layout.
+      //   elseif( get_row_layout() == 'download' ): 
+      //       $file = get_sub_field('file');
+            // Do something...
+
+        endif;
+
 		// End loop.
 		endwhile;
 
@@ -180,7 +199,11 @@ $speed = 1;
 	?>
 
 
- 
+ <?php 
+
+
+
+ ?>
 
 
 <?php
