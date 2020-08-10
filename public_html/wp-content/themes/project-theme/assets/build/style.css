@@ -2148,24 +2148,13 @@ span.img-text:hover {
   padding-left: 0;
 }
 
-.ala {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .ala .c-online-exhibitions__btn-prev,
 .ala .c-online-exhibitions__btn-next {
   position: absolute;
   z-index: 100;
   width: 45px;
   height: 45px;
+  top: 50%;
   border: none;
 }
 

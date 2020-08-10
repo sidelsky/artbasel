@@ -78,9 +78,10 @@
 }
 
 .ala {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // align-items: flex-start;
 
   .c-online-exhibitions__btn-prev,
   .c-online-exhibitions__btn-next {
@@ -88,6 +89,7 @@
     z-index: 100;
     width: 45px;
     height: 45px;
+    top: 50%;
     border: none;
   }
 

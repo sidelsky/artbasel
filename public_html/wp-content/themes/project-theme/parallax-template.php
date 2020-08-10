@@ -121,14 +121,15 @@ $speed = 1;
 
 		<!-- END -->
 		</div>
-		<img class="c-parallax-hero__hero-image rellax" data-rellax-speed="-15" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
+		<img class="c-parallax-hero__hero-image rellax" data-rellax-speed="-10" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
 	</section>
 
+	<section class="l-content">
 	<?php
 	/*
 	* Magnifing glass carousel
 	*/ 
-
+	
 	// Check value exists.
 	if( have_rows('parallax_layout_builder') ):
 
@@ -172,9 +173,9 @@ $speed = 1;
 					echo '</div>';
 				echo '</section>';
 
-        // Case: Download layout.
-        elseif( get_row_layout() == 'blockquote' ): 
-            $blockquote = get_sub_field('blockquote');
+			// Case: Download layout.
+			elseif( get_row_layout() == 'blockquote' ): 
+				$blockquote = get_sub_field('blockquote');
 				// Do something...
 
 				echo '<section class="u-section u-l-vertical-padding--margin-40">';
@@ -185,10 +186,57 @@ $speed = 1;
 					echo '</div>';
 				echo '</section>';
 
-			// Case: Download layout.
-      //   elseif( get_row_layout() == 'download' ): 
-      //       $file = get_sub_field('file');
-            // Do something...
+
+			// Case: Text content.
+			elseif( get_row_layout() == 'image_content' ): 
+				$image_content = get_sub_field('image_content');
+				//Do something...
+
+				//echo '<div class="l-content" style="outline: solid 1px red">';
+
+					echo '<div class="l-content__block l-content__block--image-content l-content__block--wide-image">';
+						echo '<div class="canvas l-content__block--center">';
+							echo '<figure role="img" aria-label="' . esc_attr( $image_content['alt'] ) . '" class="c-video-player__cover-image" style="background-image: url(' . $image_content['url'] . ')"></figure>';
+						echo '</div>';
+					echo '</div>';
+
+				// Case: Text content.
+				elseif( get_row_layout() == 'text_content' ): 
+					$text_content_title = get_sub_field('text_content_title');
+					$text_content_copy = get_sub_field('text_content_copy');
+					$text_content_link = get_sub_field('text_content_link')['url'];
+					// Do something...
+
+					echo '<article class="l-content__block l-content__block__text-content l-content__block--wide-text">';
+						echo '<div class="canvas l-content__block--center l-content__block__text-content">';
+							echo '<div class="l-content__block__min-width-text">';
+								echo '<h2 class="l-content__block__title">' . $text_content_title . '</h2>';
+
+								echo '<div class="l-content__block__body-text">'. $text_content_copy .'</div>';
+
+								echo '<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">';
+               				echo '<a href="' . $text_content_link . '" class="c-works__href">Explore now</a>';
+
+										if( $text_content_link ) {
+										echo ' <svg class="u-icon c-works__icon">';
+											echo '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-black" viewBox="0 0 32 32"></use>';
+										echo '</svg>';
+										}
+
+								echo '</span>';
+
+							echo '</div>';
+						echo '</div>';
+					echo '</article>';
+
+				//echo '</div>';
+
+		// Case: Text content.
+		// elseif( get_row_layout() == 'text_content' ): 
+			//$file = get_sub_field('file');
+				// Do something...
+				
+				
 
         endif;
 
@@ -198,13 +246,7 @@ $speed = 1;
 	endif;
 	?>
 
-
- <?php 
-
-
-
- ?>
-
+</div>
 
 <?php
 /**
