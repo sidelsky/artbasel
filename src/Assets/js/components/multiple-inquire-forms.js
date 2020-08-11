@@ -24,5 +24,12 @@ if (inquireBtnsLength) {
     closeBtn.addEventListener("click", () => {
       formModal.style.display = "none";
     });
+
+    //detect Escape key press
+    document.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        formModal.style.display = "none";
+      }
+    });
   }
 }

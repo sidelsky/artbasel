@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Parallax template
+ * Template Name: Parallax Template
  * Template Post Type: online-exhibitions
  */
 
