@@ -74,9 +74,27 @@ function hasBeenInitialized() {
       carousel.trigger("refresh.owl.carousel");
     });
   }
-
   // Afer hasBeenInitialized run Image zoom
   $(".zoom-image").zoomImage({
     touch: false,
   });
 }
+
+// var imageZoom = $(".zoom-image");
+
+// var zoomInner = $(".zoom-image__innaer");
+
+// imageZoom.on("click", () => {
+//   callImageZoom();
+// });
+
+// zoomInner.on("click", () => {
+//   //callImageZoom();
+//   console.log("click");
+// });
+
+// function callImageZoom() {
+//   imageZoom.zoomImage({
+//     touch: false,
+//   });
+// }

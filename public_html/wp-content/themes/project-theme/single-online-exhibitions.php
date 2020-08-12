@@ -429,6 +429,8 @@ if($footerParallaxImage) : ?>
 	</section>
 <?php endif; ?>
 
+
+
 <?php 
 /**
  * Footer content

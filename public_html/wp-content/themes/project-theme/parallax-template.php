@@ -26,12 +26,62 @@ $parallax_hero_image = get_field('parallax_hero_image');
 $parallax_hero_title = get_field('parallax_hero_title');
 $parallax_introduction = get_field('parallax_introduction');
 
+$top_spacing_phone = get_field('top_spacing_phone');
+$top_spacing_tablet = get_field('top_spacing_tablet');
+$top_spacing_desktop = get_field('top_spacing_desktop');
+$top_spacing_desktop_large = get_field('top_spacing_desktop_large');
+
+$parallax_hero_image_shading = get_field('parallax_hero_image_shading');
+
 $speed = 1;
+
+// echo $top_spacing_phone;
+// echo $top_spacing_tablet;
+// echo $top_spacing_desktop;
+// echo $top_spacing_desktop_large;
 
 ?>
 
-	<section class="c-parallax-hero rellax-wrapper">
-		<div class="c-parallax-hero__content-wrap">
+<style>
+
+		/* Phone */ 
+	.spacing-top {
+			top: <?= $top_spacing_phone ?>px;
+			color: green;
+		}
+
+@media (min-width:375px) { 
+	/* Phone */ 
+	.spacing-top {
+			top: <?= $top_spacing_tablet ?>px;
+			color: red;
+		}
+}
+ 
+@media (min-width:678px) { 
+	/* Tablet */ 
+	.spacing-top {
+			top: <?= $top_spacing_desktop ?>px;
+			color: yellow;
+		}
+}
+ 
+@media (min-width:1024px) { 
+	/* Desktop */ 
+	.spacing-top {
+			top: <?= $top_spacing_desktop_large ?>px;
+			color: pink;
+		}
+}
+/* @media (min-width:1280px) { 
+	/* Desktop large */ 
+
+} */
+
+</style>
+
+	<section class="c-parallax-hero rellax-wrapper" style="background-color: rgba(0,0,0,<?= $parallax_hero_image_shading ?>)">
+		<div class="c-parallax-hero__content-wrap spacing-top">
 			
 			<?php
 			/**
@@ -40,7 +90,14 @@ $speed = 1;
 			?>
 			<div class="u-section u-l-vertical-padding--margin-40">
 				<div class="u-l-container--shallow">
-					<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center rellax" data-rellax-speed="2" data-rellax-percentage="0.5"><?= $parallax_hero_title ?></h1>
+					<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center rellax" 
+					data-rellax-xs-speed="-2"
+					data-rellax-mobile-speed="2"
+					data-rellax-tablet-speed="2"
+					data-rellax-desktop-speed="2"
+					data-rellax-percentage="0.5">
+						 <?= $parallax_hero_title ?>
+					</h1>
 				</div>
 			</div>
 
@@ -51,7 +108,12 @@ $speed = 1;
 			?>
 			<div class="u-section u-l-vertical-padding--margin-40">
 				<div class="u-l-container--shallow">
-					<p class="c-parallax-hero__h2 rellax" data-rellax-speed="4" data-rellax-percentage="0.5"><?= $parallax_introduction ?></p>
+					<p class="c-parallax-hero__h2 rellax" 
+					data-rellax-xs-speed="-2"
+					data-rellax-mobile-speed="2"
+					data-rellax-tablet-speed="2"
+					data-rellax-desktop-speed="2"
+					data-rellax-percentage="0.5"><?= $parallax_introduction ?></p>
 				</div>
 			</div>
 
@@ -62,13 +124,18 @@ $speed = 1;
 			if( have_rows('parallax_thumbnails')): ?>
 				<div class="u-section u-l-vertical-padding--margin-40">
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
-						<ul class="c-parallax-hero__thumbnails">
+						<ul class="c-parallax-hero__thumbnails rellax" 					
+						data-rellax-xs-speed="-2"
+						data-rellax-mobile-speed="2"
+						data-rellax-tablet-speed="2"
+						data-rellax-desktop-speed="2"
+						data-rellax-percentage=".5">
 							<?php 
 							while( have_rows('parallax_thumbnails')): the_row(); 
 							$thumbnail = get_sub_field('parallax_thumbnail');
 							$speed++;
 							?>
-							<li class="c-parallax-hero__thumbnail rellax" data-rellax-speed="<?= $speed ?>" data-rellax-percentage=".5" >
+							<li class="c-parallax-hero__thumbnail" >
 								<figure>
 									<span>
 										<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
@@ -97,7 +164,14 @@ $speed = 1;
 					<section class="u-section u-l-vertical-padding--margin-40">
 						<div class="u-l-container z--full-width ">
 
-							<div class="c-video-player--centered rellax" id="video" data-rellax-speed="5" data-rellax-percentage="0.20" data-id="video">
+							<div class="c-video-player--centered rellax" id="video" 
+							data-rellax-speed="5"
+							data-rellax-xs-speed="-2"
+							data-rellax-mobile-speed="2"
+							data-rellax-tablet-speed="2"
+							data-rellax-desktop-speed="2"
+							data-rellax-percentage="0.20" 
+							data-id="video">
 
 								<button class="c-video-player__button" data-id='playBtn'>
 									<svg class="c-video-player__play-icon">
@@ -121,7 +195,19 @@ $speed = 1;
 
 		<!-- END -->
 		</div>
-		<img class="c-parallax-hero__hero-image rellax" data-rellax-speed="-10" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
+
+		<figure>
+			<!-- <img 
+			src="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg" 
+			class="portfolio__image" 
+			srcset="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg 2560w,
+							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-1024x624.jpg 1024w,
+							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-768x468.jpg 768w,
+							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-300x183.jpg 300w" 
+			sizes="100vw"
+			alt="Heathrow Airport"> -->
+			<img class="c-parallax-hero__hero-image rellax" data-rellax-speed="-10" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
+		</figure>
 	</section>
 
 	<section class="l-content">
@@ -246,7 +332,45 @@ $speed = 1;
 	endif;
 	?>
 
-</div>
+</section>
+
+
+
+<?php 
+/**
+ * Footer paralax image
+ */
+$footerParallaxImage = get_field('parallax_footer_image');
+if($footerParallaxImage) : ?>
+	<div class="parallax-window parallax-window__footer" data-natural-height="1400" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
+<?php endif; ?>
+
+<?php 
+	/**
+	 * Artist recommendations
+	 */
+	$recommendations = get_field('artist_recommendations'); 
+	$recommendationsTitle = $recommendations[artist_recommendations_title];
+	$recommendationsSubtitle = $recommendations[artist_recommendations_subtitle];
+	$recommendationsContent = $recommendations[artist_recommendations_content];
+	$recommendationsSpotify = $recommendations[artist_recommendations_spotify];
+?>
+<?php if( $recommendationsTitle ) : ?>
+	<section class="u-section background-color--dark">
+			<div class="u-l-container u-l-container--center">
+				<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--bottom">
+					<div class="c-recommendations">
+						<h3 class="c-recommendations__title"><?= $recommendationsTitle ?></h3>
+						<div class="c-recommendations__sub-title"><?= $recommendationsSubtitle ?></div>
+						<div class="c-recommendations__content-block">
+							<div class="c-recommendations__column"><?= $recommendationsContent ?></div>
+							<div class="c-recommendations__column"><?= $recommendationsSpotify ?></div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+<?php endif; ?>
 
 <?php
 /**

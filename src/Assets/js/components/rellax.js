@@ -1,7 +1,7 @@
 let Rellax = require("rellax");
 
 var rellax = new Rellax(".rellax", {
-  speed: -5,
+  speed: 2,
   center: false,
   wrapper: null,
   round: true,
@@ -14,8 +14,13 @@ var rellax = new Rellax(".rellax", {
     //console.log(position);
     //videoParalax();
   },
-  breakpoints: [576, 768, 1024],
+  breakpoints: [375, 678, 1024, 1280],
 });
+
+// 'phone': 375px,
+//   'tablet': 768px,
+//     'desktop': 1024px,
+//       'desktop-large': 1280px
 
 // var rellaxFixed = new Rellax(".rellax-fixed", {
 //   speed: -2,
@@ -48,28 +53,28 @@ var rellax = new Rellax(".rellax", {
 //   },
 // });
 
-var waypoint = new Waypoint({
-  element: document.getElementById("video"),
-  handler: function() {},
-});
+// var waypoint = new Waypoint({
+//   element: document.getElementById("video"),
+//   handler: function() {},
+// });
 
-function videoParalax() {
-  let w = window;
-  let intViewportHeight = window.innerHeight;
-  let distance = 1;
-  let top = w.scrollY / 1500;
+// function videoParalax() {
+//   let w = window;
+//   let intViewportHeight = window.innerHeight;
+//   let distance = 1;
+//   let top = w.scrollY / 1500;
 
-  console.log(intViewportHeight / 2);
+//   console.log(intViewportHeight / 2);
 
-  //'transform': 'scale(' + (1.5 - $(window).scrollTop() / 250) + ')'
+//   //'transform': 'scale(' + (1.5 - $(window).scrollTop() / 250) + ')'
 
-  const videoElems = [...document.querySelectorAll("[data-id='video']")];
-  const videoElemsLength = videoElems.length;
+//   const videoElems = [...document.querySelectorAll("[data-id='video']")];
+//   const videoElemsLength = videoElems.length;
 
-  for (let index = 0; index < videoElemsLength; index++) {
-    const videoElem = videoElems[index];
-    //videoElem.style.transform = `translate3d(0, ${top / distance}px, 0)`;
-    //videoElem.style.width = `${top / distance}px`;
-    videoElem.style.transform = `scale(${top / distance})`;
-  }
-}
+//   for (let index = 0; index < videoElemsLength; index++) {
+//     const videoElem = videoElems[index];
+//     //videoElem.style.transform = `translate3d(0, ${top / distance}px, 0)`;
+//     //videoElem.style.width = `${top / distance}px`;
+//     videoElem.style.transform = `scale(${top / distance})`;
+//   }
+// }
