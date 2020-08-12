@@ -47,14 +47,12 @@ $speed = 1;
 		/* Phone */ 
 	.spacing-top {
 			top: <?= $top_spacing_phone ?>px;
-			color: green;
 		}
 
 @media (min-width:375px) { 
 	/* Phone */ 
 	.spacing-top {
 			top: <?= $top_spacing_tablet ?>px;
-			color: red;
 		}
 }
  
@@ -62,7 +60,6 @@ $speed = 1;
 	/* Tablet */ 
 	.spacing-top {
 			top: <?= $top_spacing_desktop ?>px;
-			color: yellow;
 		}
 }
  
@@ -70,7 +67,6 @@ $speed = 1;
 	/* Desktop */ 
 	.spacing-top {
 			top: <?= $top_spacing_desktop_large ?>px;
-			color: pink;
 		}
 }
 /* @media (min-width:1280px) { 
@@ -89,33 +85,14 @@ $speed = 1;
 			 */
 			?>
 			<div class="u-section u-l-vertical-padding--margin-40">
-				<div class="u-l-container--shallow">
-					<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center rellax" 
-					data-rellax-xs-speed="-2"
-					data-rellax-mobile-speed="2"
-					data-rellax-tablet-speed="2"
-					data-rellax-desktop-speed="2"
-					data-rellax-percentage="0.5">
+				<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+					<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center">
 						 <?= $parallax_hero_title ?>
 					</h1>
 				</div>
 			</div>
 
-			<?php
-			/**
-			 * Subtitle
-			 */
-			?>
-			<div class="u-section u-l-vertical-padding--margin-40">
-				<div class="u-l-container--shallow">
-					<p class="c-parallax-hero__h2 rellax" 
-					data-rellax-xs-speed="-2"
-					data-rellax-mobile-speed="2"
-					data-rellax-tablet-speed="2"
-					data-rellax-desktop-speed="2"
-					data-rellax-percentage="0.5"><?= $parallax_introduction ?></p>
-				</div>
-			</div>
+
 
 			<?php 
 			/**
@@ -124,12 +101,10 @@ $speed = 1;
 			if( have_rows('parallax_thumbnails')): ?>
 				<div class="u-section u-l-vertical-padding--margin-40">
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
-						<ul class="c-parallax-hero__thumbnails rellax" 					
-						data-rellax-xs-speed="-2"
-						data-rellax-mobile-speed="2"
-						data-rellax-tablet-speed="2"
-						data-rellax-desktop-speed="2"
-						data-rellax-percentage=".5">
+
+					<p class="c-parallax-hero__h2"><?= $parallax_introduction ?></p>
+
+						<ul class="c-parallax-hero__thumbnails">
 							<?php 
 							while( have_rows('parallax_thumbnails')): the_row(); 
 							$thumbnail = get_sub_field('parallax_thumbnail');
@@ -148,8 +123,34 @@ $speed = 1;
 					</div>
 				</div>
 			<?php endif; ?>
+		<!-- END -->
+		</div>
 
-			<?php 
+		<figure>
+			<!-- <img 
+			src="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg" 
+			class="portfolio__image" 
+			srcset="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg 2560w,
+							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-1024x624.jpg 1024w,
+							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-768x468.jpg 768w,
+							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-300x183.jpg 300w" 
+			sizes="100vw"
+			alt="Heathrow Airport"> -->
+
+			<div class="parallax-window parallax-window__hero" data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
+
+			<!-- <img class="c-parallax-hero__hero-image rellax"
+			data-rellax-speed="-5"
+			data-rellax-mobile-speed="2"
+			data-rellax-tablet-speed="2"
+			data-rellax-desktop-speed="-10"
+						src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" /> -->
+		</figure>
+	</section>
+
+
+
+	<?php 
 			/**
 			 * Video
 			 */
@@ -162,9 +163,9 @@ $speed = 1;
 					?>
 
 					<section class="u-section u-l-vertical-padding--margin-40">
-						<div class="u-l-container z--full-width ">
+						<div class="u-l-container --full-width ">
 
-							<div class="c-video-player--centered rellax" id="video" 
+							<div class="c-video-player--centered zrellax" id="video" 
 							data-rellax-speed="5"
 							data-rellax-xs-speed="-2"
 							data-rellax-mobile-speed="2"
@@ -193,22 +194,25 @@ $speed = 1;
 				<?php endwhile; ?>
 			<?php endif; ?>
 
-		<!-- END -->
-		</div>
 
-		<figure>
-			<!-- <img 
-			src="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg" 
-			class="portfolio__image" 
-			srcset="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg 2560w,
-							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-1024x624.jpg 1024w,
-							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-768x468.jpg 768w,
-							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-300x183.jpg 300w" 
-			sizes="100vw"
-			alt="Heathrow Airport"> -->
-			<img class="c-parallax-hero__hero-image rellax" data-rellax-speed="-10" src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" />
-		</figure>
-	</section>
+	<?php 
+	/**  
+	 * Second hero image
+	*/
+	$parallax_second_hero_image = get_field('parallax_second_hero_image');
+
+	if( $parallax_second_hero_image ) { ?>
+
+		<section class="u-section u-l-vertical-padding--margin-40">
+			<div class="u-l-container--full-width ">
+				<figure>
+				<div class="parallax-window parallax-window__second-hero" data-parallax="scroll" data-image-src="<?php echo esc_url($parallax_second_hero_image['url']); ?>"></div>
+			</figure>
+			</div>
+		</section>
+
+	<?php } ?>
+
 
 	<section class="l-content">
 	<?php
@@ -291,6 +295,7 @@ $speed = 1;
 					$text_content_title = get_sub_field('text_content_title');
 					$text_content_copy = get_sub_field('text_content_copy');
 					$text_content_link = get_sub_field('text_content_link')['url'];
+					$text_content_link_title = get_sub_field('text_content_link_title');
 					// Do something...
 
 					echo '<article class="l-content__block l-content__block__text-content l-content__block--wide-text">';
@@ -300,16 +305,16 @@ $speed = 1;
 
 								echo '<div class="l-content__block__body-text">'. $text_content_copy .'</div>';
 
+								if( $text_content_link_title || $text_content_link ) {
 								echo '<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">';
-               				echo '<a href="' . $text_content_link . '" class="c-works__href">Explore now</a>';
+               				echo '<a href="' . $text_content_link . '" class="c-works__href">' . $text_content_link_title . '</a>';
 
-										if( $text_content_link ) {
 										echo ' <svg class="u-icon c-works__icon">';
 											echo '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-black" viewBox="0 0 32 32"></use>';
 										echo '</svg>';
-										}
-
-								echo '</span>';
+										
+									echo '</span>';
+									}
 
 							echo '</div>';
 						echo '</div>';
@@ -342,7 +347,7 @@ $speed = 1;
  */
 $footerParallaxImage = get_field('parallax_footer_image');
 if($footerParallaxImage) : ?>
-	<div class="parallax-window parallax-window__footer" data-natural-height="1400" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
+	<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
 <?php endif; ?>
 
 <?php 

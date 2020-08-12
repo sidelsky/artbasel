@@ -363,7 +363,7 @@ if( get_field('show_artist_inquiry_email') == "bottom") {
  */
 $footerParallaxImage = get_field('footer_parallax_image');
 if($footerParallaxImage) : ?>
-	<div class="parallax-window parallax-window__footer" data-natural-height="1400" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
+	<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
 <?php endif; ?>
 
 <?php 
