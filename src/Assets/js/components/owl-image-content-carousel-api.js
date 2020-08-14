@@ -76,16 +76,17 @@ function hasBeenInitialized() {
   }
   // Afer hasBeenInitialized run Image zoom
 
-  $(".zoom-image").zoomImage({
-    touch: false,
-  });
+  // $(".zoom-image").zoomImage({
+  //   touch: false,
+  // });
 }
 
-//jquery-zoom;
-//let jqzoom = require("jquery-zoom");
+let jqZoomItem = $(".jq-zoom");
 
-// console.log($(".jq-zoom"));
+jqZoomItem.on("click", function() {
+  $(this).toggleClass("active");
+});
 
-// $(".jq-zoom").zoom({
-//   on: "click",
-// });
+jqZoomItem.zoom({
+  on: "click",
+});

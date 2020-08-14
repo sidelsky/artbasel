@@ -20,8 +20,8 @@
             <button class="closefullscreenBtn carouselViewButton target" data-id="closefullscreenBtn" title="Exit fullscreen"></button>
             <div class="owl-carousel owl-image-content-carousel" >
                <?php foreach( $data['carousel'] as $image) { ?> 
-                  <figure data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" class="zoom-image" style="background-image: url('<?= $image['sizes']['large'] ?>')">
-                     <figure style="background-image: url(<?= $image['sizes']['large'] ?>)"></figure>
+                  <figure class="jq-zoom zoom-image" data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" style="background-image: url('<?= $image['sizes']['large'] ?>')">
+                     <img style="display:none;" src='<?= $image['sizes']['large'] ?>' alt='<?= esc_attr( $image['alt'] ); ?>'/>
                   </figure>
                <?php } ?>
             </div>         
