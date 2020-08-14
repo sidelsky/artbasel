@@ -86,7 +86,7 @@
   .c-online-exhibitions__btn-prev,
   .c-online-exhibitions__btn-next {
     position: absolute;
-    z-index: 100;
+    z-index: 1;
     width: 45px;
     height: 45px;
     top: 50%;
@@ -119,7 +119,7 @@
     position: absolute;
     bottom: -40px;
     right: 10px;
-    z-index: 100;
+    z-index: 1;
 
     @include media(">tablet") {
       right: 0;

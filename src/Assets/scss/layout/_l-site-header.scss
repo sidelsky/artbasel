@@ -23,3 +23,22 @@
     }
   }
 }
+
+/**
+* Parallax alpha 
+*/
+body {
+  &.online-exhibitions-template-parallax-template {
+    .l-site-header__nav {
+      background-color: transparent;
+    }
+  }
+}
+
+body.is-scrolled {
+  &.online-exhibitions-template-parallax-template {
+    .l-site-header__nav {
+      background-color: white;
+    }
+  }
+}
