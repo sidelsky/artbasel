@@ -259,8 +259,8 @@ $speed = 1;
 				$blockquote = get_sub_field('blockquote');
 				// Do something...
 
-				echo '<section class="u-section u-l-vertical-padding--margin-40">';
-					echo '<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--carousel-text-only">';
+				echo '<section class="u-section u-l-vertical-padding--margin-40 c-parallax-hero__blockquote">';
+					echo '<div class="u-l-container u-l-horizontal-padding">';
 						echo '<article class="c-hero-carousel--inner-container">';
 							echo '<h3 class="c-site-headings--h1 c-site-headings--h1--hero-carousel">' . $blockquote . '</h3>';
 						echo '</article>';

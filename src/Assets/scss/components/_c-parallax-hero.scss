@@ -55,6 +55,10 @@
       margin: 0 auto;
     }
   }
+
+  &__blockquote {
+    padding-bottom: $spacing--large;
+  }
 }
 
 .parallax-window__hero {
