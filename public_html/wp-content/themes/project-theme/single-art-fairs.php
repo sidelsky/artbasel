@@ -110,6 +110,17 @@ include("header.php");
 		];
     echo $render->view('Components/' . $template, $data, $args);
 ?>
+
+	<!-- <span class='zoom jq-zoom'>
+		<img src='http://placekitten.com/1026/590' width='555' height='320' alt='Daisy on the Ohoopee'/>
+		<p>Click to activate</p>
+	</span>
+
+	<span class='zoom jq-zoom'>
+		<img src='http://placekitten.com/1026/590' width='555' height='320' alt='Daisy on the Ohoopee'/>
+		<p>Click to activate</p>
+	</span> -->
+ 
  
 <?php
 /**
@@ -121,6 +132,9 @@ $onlineExhibitionsCardData = [
 	'altFont' => false
 ];
 include("partials/footer-navigation.php"); ?>
+
+
+
 	 
 <?php
 /**

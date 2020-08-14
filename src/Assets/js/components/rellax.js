@@ -14,7 +14,7 @@ var rellax = new Rellax(".rellax", {
     //console.log(position);
     //videoParalax();
   },
-  breakpoints: [375, 678, 1024, 1280],
+  breakpoints: [375, 678, 1024],
 });
 
 // 'phone': 375px,

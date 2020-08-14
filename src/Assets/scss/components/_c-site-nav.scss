@@ -76,19 +76,3 @@
     width: 100% !important;
   }
 }
-
-/**
-* Parallax alpha 
-*/
-body {
-  &.online-exhibitions-template-parallax-template {
-    .c-site-nav {
-      border: none;
-    }
-    .menu-item {
-      a {
-        //color: white;
-      }
-    }
-  }
-}

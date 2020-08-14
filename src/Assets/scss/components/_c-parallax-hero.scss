@@ -16,6 +16,11 @@
     color: white;
   }
 
+  &__h1 {
+    margin-bottom: 15rem;
+    text-align: center;
+  }
+
   &__h2 {
     @include set-font-size(1.8rem, 2.4rem, 3rem, 3.2rem);
     font-family: font-family(nt-primary, medium);

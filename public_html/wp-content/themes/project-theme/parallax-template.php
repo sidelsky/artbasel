@@ -79,28 +79,19 @@ $speed = 1;
 	<section class="c-parallax-hero rellax-wrapper" style="background-color: rgba(0,0,0,<?= $parallax_hero_image_shading ?>)">
 		<div class="c-parallax-hero__content-wrap spacing-top">
 			
-			<?php
-			/**
-			 * Title
-			 */
-			?>
-			<div class="u-section u-l-vertical-padding--margin-40">
-				<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
-					<h1 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center">
-						 <?= $parallax_hero_title ?>
-					</h1>
-				</div>
-			</div>
-
-
-
 			<?php 
 			/**
-			 * Thumbnails
+			 * Title, copy & Thumbnails
 			 */
 			if( have_rows('parallax_thumbnails')): ?>
 				<div class="u-section u-l-vertical-padding--margin-40">
 					<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+						<h1 class="c-site-headings c-site-headings--h1--sub c-parallax-hero__h1">
+							<?= $parallax_hero_title ?>
+						</h1>
+					</div>
 
 					<p class="c-parallax-hero__h2"><?= $parallax_introduction ?></p>
 

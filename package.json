@@ -4,6 +4,7 @@
     "description": "The package json that defines the build tools for the WordPress Starter repo",
     "dependencies": {
         "jquery": "^3.4.1",
+        "jquery-zoom": "^1.7.21",
         "lodash": "^4.17.11",
         "magnify": "^2.3.3",
         "rellax": "^1.12.1",

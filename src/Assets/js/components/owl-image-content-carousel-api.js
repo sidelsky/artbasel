@@ -75,26 +75,17 @@ function hasBeenInitialized() {
     });
   }
   // Afer hasBeenInitialized run Image zoom
+
   $(".zoom-image").zoomImage({
     touch: false,
   });
 }
 
-// var imageZoom = $(".zoom-image");
+//jquery-zoom;
+//let jqzoom = require("jquery-zoom");
 
-// var zoomInner = $(".zoom-image__innaer");
+// console.log($(".jq-zoom"));
 
-// imageZoom.on("click", () => {
-//   callImageZoom();
+// $(".jq-zoom").zoom({
+//   on: "click",
 // });
-
-// zoomInner.on("click", () => {
-//   //callImageZoom();
-//   console.log("click");
-// });
-
-// function callImageZoom() {
-//   imageZoom.zoomImage({
-//     touch: false,
-//   });
-// }
