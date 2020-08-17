@@ -2,6 +2,8 @@ const carousel = $(".owl-image-content-carousel");
 const carousels = [...carousel];
 const carouselsLength = carousels.length;
 
+const jqZoomItem = $(".jq-zoom");
+
 carousel.owlCarousel({
   loop: true,
   dots: false,
@@ -61,6 +63,7 @@ function hasBeenInitialized() {
       fullScreenButton.parentNode.classList.add("modal-active");
       fullScreenButton.style.display = "none";
       closeFullScreenButton.style.display = "block";
+      jqZoomItem.removeClass("active");
       removeContent();
       carousel.trigger("refresh.owl.carousel");
     });
@@ -73,15 +76,19 @@ function hasBeenInitialized() {
       addContent();
       carousel.trigger("refresh.owl.carousel");
     });
+
+    //detect Escape key press
+    document.addEventListener("keydown", function(event) {
+      if (event.keyCode === 27) {
+        fullScreenButton.parentNode.classList.remove("modal-active");
+        fullScreenButton.style.display = "block";
+        closeFullScreenButton.style.display = "none";
+        addContent();
+        carousel.trigger("refresh.owl.carousel");
+      }
+    });
   }
-  // Afer hasBeenInitialized run Image zoom
-
-  // $(".zoom-image").zoomImage({
-  //   touch: false,
-  // });
 }
-
-let jqZoomItem = $(".jq-zoom");
 
 jqZoomItem.on("click", function() {
   $(this).toggleClass("active");
