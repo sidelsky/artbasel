@@ -87,23 +87,23 @@ body {
     }
     .menu-item a,
     .menu-item-object-page a {
-      color: white;
+      color: black;
 
       &:hover {
-        color: white;
+        color: black;
 
         &:after {
-          background-color: white;
+          background-color: black;
         }
       }
     }
   }
 
   &.single-online-exhibitions .menu-item:first-of-type a {
-    color: white;
+    color: black;
 
     &:after {
-      background-color: white;
+      background-color: black;
     }
   }
 }
