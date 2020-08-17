@@ -1,33 +1,35 @@
-$(function() {
-  const next = document.getElementById("next-slide");
-  const prev = document.getElementById("prev-slide");
+const owlCarMag = $(".owl-carousel-magnify");
 
+if (owlCarMag) {
   // Initiate carousel
-  $(".owl-carousel-magnify").owlCarousel({
+
+  owlCarMag.owlCarousel({
     items: 1,
     loop: true,
     margin: 30,
-    //stagePadding: 40,
     dots: false,
     nav: false,
-    //  navText: [
-    //    "<div class='nav-btn prev-slide'></div>",
-    //    "<div class='nav-btn next-slide'></div>",
-    //  ],
-
     onTranslated: function() {
       // Update Magnify when slide changes
       $zoom.destroy().magnify();
     },
   });
+
   // Initiate zoom
   var $zoom = $(".zoom").magnify();
 
-  next.addEventListener("click", () => {
-    $(".owl-carousel-magnify").trigger("next.owl.carousel");
-  });
+  const next = document.getElementById("next-slide");
+  const prev = document.getElementById("prev-slide");
 
-  prev.addEventListener("click", () => {
-    $(".owl-carousel-magnify").trigger("prev.owl.carousel");
-  });
-});
+  if (next) {
+    next.addEventListener("click", () => {
+      owlCarMag.trigger("next.owl.carousel");
+    });
+  }
+
+  if (prev) {
+    prev.addEventListener("click", () => {
+      owlCarMag.trigger("prev.owl.carousel");
+    });
+  }
+}
