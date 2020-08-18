@@ -58,33 +58,37 @@ function hasBeenInitialized() {
 
     addContent();
 
-    //Full screen click
-    fullScreenButton.addEventListener("click", () => {
+    let goFullScreen = () => {
       fullScreenButton.parentNode.classList.add("modal-active");
       fullScreenButton.style.display = "none";
       closeFullScreenButton.style.display = "block";
       jqZoomItem.removeClass("active");
       removeContent();
       carousel.trigger("refresh.owl.carousel");
-    });
+    };
 
-    //Close full screen click
-    closeFullScreenButton.addEventListener("click", () => {
+    let closeFullScreen = () => {
       fullScreenButton.parentNode.classList.remove("modal-active");
       fullScreenButton.style.display = "block";
       closeFullScreenButton.style.display = "none";
       addContent();
       carousel.trigger("refresh.owl.carousel");
+    };
+
+    //Full screen click
+    fullScreenButton.addEventListener("click", () => {
+      goFullScreen();
+    });
+
+    //Close full screen click
+    closeFullScreenButton.addEventListener("click", () => {
+      closeFullScreen();
     });
 
     //detect Escape key press
     document.addEventListener("keydown", function(event) {
       if (event.keyCode === 27) {
-        fullScreenButton.parentNode.classList.remove("modal-active");
-        fullScreenButton.style.display = "block";
-        closeFullScreenButton.style.display = "none";
-        addContent();
-        carousel.trigger("refresh.owl.carousel");
+        closeFullScreen();
       }
     });
   }
