@@ -25,13 +25,15 @@ include("header.php");
 $parallax_hero_image = get_field('parallax_hero_image');
 $parallax_hero_title = get_field('parallax_hero_title');
 $parallax_introduction = get_field('parallax_introduction');
-
 $top_spacing_phone = get_field('top_spacing_phone');
 $top_spacing_tablet = get_field('top_spacing_tablet');
 $top_spacing_desktop = get_field('top_spacing_desktop');
 $top_spacing_desktop_large = get_field('top_spacing_desktop_large');
-
 $parallax_hero_image_shading = get_field('parallax_hero_image_shading');
+$parallax_hero_image_height = get_field('parallax_hero_image_height');
+$parallax_second_hero_image_height = get_field('parallax_second_hero_image_height');
+
+$parallaxVideo = get_field('parallax_video');
 
 $speed = 1;
 
@@ -95,22 +97,25 @@ $speed = 1;
 
 					<p class="c-parallax-hero__h2"><?= $parallax_introduction ?></p>
 
-						<ul class="c-parallax-hero__thumbnails">
-							<?php 
-							while( have_rows('parallax_thumbnails')): the_row(); 
-							$thumbnail = get_sub_field('parallax_thumbnail');
-							$speed++;
-							?>
-							<li class="c-parallax-hero__thumbnail" >
-								<figure>
-									<span>
-										<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
-									</span>
-									<figcaption><?= $thumbnail['caption'] ?></figcaption>
-								</figure>
-							</li>
-							<?php endwhile; ?>
-						</ul>
+						<?php if( $parallaxVideo['parallax_video_vimeo'] ) { ?>
+							<ul class="c-parallax-hero__thumbnails">
+								<?php 
+								while( have_rows('parallax_thumbnails')): the_row(); 
+								$thumbnail = get_sub_field('parallax_thumbnail');
+								$speed++;
+								?>
+								<li class="c-parallax-hero__thumbnail" >
+									<figure>
+										<span>
+											<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
+										</span>
+										<figcaption><?= $thumbnail['caption'] ?></figcaption>
+									</figure>
+								</li>
+								<?php endwhile; ?>
+							</ul>
+						<?php } ?>
+
 					</div>
 				</div>
 			<?php endif; ?>
@@ -118,72 +123,69 @@ $speed = 1;
 		</div>
 
 		<figure>
-			<!-- <img 
-			src="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg" 
-			class="portfolio__image" 
-			srcset="http://www.squie.com/wp-content/uploads/2016/12/heathrow_l.jpg 2560w,
-							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-1024x624.jpg 1024w,
-							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-768x468.jpg 768w,
-							http://www.squie.com/wp-content/uploads/2016/12/heathrow_s-300x183.jpg 300w" 
-			sizes="100vw"
-			alt="Heathrow Airport"> -->
-
-			<div class="parallax-window parallax-window__hero" data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
-
-			<!-- <img class="c-parallax-hero__hero-image rellax"
-			data-rellax-speed="-5"
-			data-rellax-mobile-speed="2"
-			data-rellax-tablet-speed="2"
-			data-rellax-desktop-speed="-10"
-						src="<?php echo esc_url($parallax_hero_image['url']); ?>" alt="<?php echo esc_attr($parallax_hero_image['alt']); ?>" /> -->
+			<div class="parallax-window parallax-window__hero" <?= $parallax_hero_image_height ? 'style="height:' . $parallax_hero_image_height . 'px' . '"' : '' ?> data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
 		</figure>
+		
 	</section>
 
-
-
-	<?php 
-			/**
-			 * Video
-			 */
-			if( have_rows('parallax_video') ): ?>
-				<?php while( have_rows('parallax_video') ): the_row(); 
-
-					// Get sub field values.
-					$parallax_video_vimeo = get_sub_field('parallax_video_vimeo');
-					$parallax_video_image_cover = get_sub_field('parallax_video_image_cover');
-					?>
-
-					<section class="u-section u-l-vertical-padding--margin-40">
-						<div class="u-l-container --full-width ">
-
-							<div class="c-video-player--centered zrellax" id="video" 
-							data-rellax-speed="5"
-							data-rellax-xs-speed="-2"
-							data-rellax-mobile-speed="2"
-							data-rellax-tablet-speed="2"
-							data-rellax-desktop-speed="2"
-							data-rellax-percentage="0.20" 
-							data-id="video">
-
-								<button class="c-video-player__button" data-id='playBtn'>
-									<svg class="c-video-player__play-icon">
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
-									</svg>
-								</button>
-
-								<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $parallax_video_image_cover['alt'] ); ?>" style="background-image: url('<?= $parallax_video_image_cover['url'] ?>')" data-id='cover'></figure>	
-								
-								<div data-id="vimeo-content" class="u-video-aspect-ratio">
-									<?= $parallax_video_vimeo ?>
-								</div>
-
-							</div>
-
-						</div>
-					</section>
-
+ 
+<?php if( !$parallaxVideo['parallax_video_vimeo'] ) { ?>
+	<section class="u-section u-l-vertical-padding--margin-40" style="padding: 30px 0 20px">
+		<div class="u-l-container --full-width ">
+			<ul class="c-parallax-hero__thumbnails">
+				<?php 
+				while( have_rows('parallax_thumbnails')): the_row(); 
+				$thumbnail = get_sub_field('parallax_thumbnail');
+				$speed++;
+				?>
+				<li class="c-parallax-hero__thumbnail" >
+					<figure>
+						<span>
+							<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
+						</span>
+						<figcaption><?= $thumbnail['caption'] ?></figcaption>
+					</figure>
+				</li>
 				<?php endwhile; ?>
-			<?php endif; ?>
+			</ul>
+		</div>
+	</section>
+<?php } ?>
+
+
+<?php
+/**
+ * Video
+ */
+
+if( $parallaxVideo ): ?>
+
+	<?php if( $parallaxVideo['parallax_video_vimeo'] ) { ?>
+
+		<section class="u-section u-l-vertical-padding--margin-40">
+			<div class="u-l-container --full-width ">
+
+				<div class="c-video-player--centered " id="video" data-id="video">
+
+					<button class="c-video-player__button" data-id='playBtn'>
+						<svg class="c-video-player__play-icon">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
+						</svg>
+					</button>
+
+					<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $parallaxVideo['parallax_video_image_cover']['alt'] ); ?>" style="background-image: url('<?= $parallaxVideo['parallax_video_image_cover']['url'] ?>')" data-id='cover'></figure>	
+					
+					<div data-id="vimeo-content" class="u-video-aspect-ratio">
+						<?= $parallaxVideo['parallax_video_vimeo'] ?>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+	<?php } ?>
+
+<?php endif; ?>
 
 
 	<?php 
@@ -197,7 +199,7 @@ $speed = 1;
 		<section class="u-section u-l-vertical-padding--margin-40">
 			<div class="u-l-container--full-width ">
 				<figure>
-				<div class="parallax-window parallax-window__second-hero" data-parallax="scroll" data-image-src="<?php echo esc_url($parallax_second_hero_image['url']); ?>"></div>
+				<div class="parallax-window parallax-window__second-hero" <?= $parallax_second_hero_image_height ? 'style="height:' . $parallax_second_hero_image_height . 'px' . '"' : '' ?> data-parallax="scroll" data-image-src="<?php echo esc_url($parallax_second_hero_image['url']); ?>"></div>
 			</figure>
 			</div>
 		</section>
