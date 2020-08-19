@@ -78,52 +78,32 @@
 }
 
 /**
-* Parallax alpha 
+* Parallax-template
 */
-body {
-  &.online-exhibitions-template-parallax-template {
-    .c-site-nav {
-      border: none;
-    }
-    .menu-item a,
-    .menu-item-object-page a {
-      color: black;
-
-      &:hover {
-        color: black;
-
-        &:after {
-          background-color: black;
-        }
-      }
-    }
+.online-exhibitions-template-parallax-template {
+  .c-site-nav {
+    border: none;
   }
 
-  &.single-online-exhibitions .menu-item:first-of-type a {
-    color: black;
+  .menu-item:first-of-type a,
+  //.menu-item:last-of-type a,
+  .menu-item a {
+    color: white;
+  }
 
-    &:after {
-      background-color: black;
-    }
+  .menu-item:first-of-type a:after {
+    background-color: white;
   }
 }
 
 body.is-scrolled {
-  &.online-exhibitions-template-parallax-template {
-    .menu-item a,
-    .menu-item-object-page a {
-      color: black;
-      &:after {
-        background-color: black;
-      }
+  .menu-item:first-of-type a,
+  //.menu-item:last-of-type a,
+  .menu-item a {
+    color: black;
+  }
 
-      &:hover {
-        color: black;
-
-        &:after {
-          background-color: black;
-        }
-      }
-    }
+  .menu-item:first-of-type a:after {
+    background-color: black;
   }
 }
