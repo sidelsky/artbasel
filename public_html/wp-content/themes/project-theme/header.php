@@ -81,11 +81,21 @@ $wordpress = new WordpressHelper;
 	<header class="c-header" id="header">
 
 		<div class="c-header__wrap">
-			<a href="<?= $baseUrl ?>" class="c-header__link">
+
+			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--white">
 				<svg class="c-header__icon">
 					<use xlink:href='<?= $logo ?>'></use>
 				</svg>
 			</a>
+
+			<!-- Show only on parallax-template.php when page is scrolled -->
+			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--black">
+				<svg class="c-header__icon">
+					<use xlink:href="#shape-hauserwirth-logo"></use>
+				</svg>
+			</a>
+
+
 
 			<?php if( !is_post_type_archive('private-room') ) : ?>
 				<!-- START: Hamburger -->

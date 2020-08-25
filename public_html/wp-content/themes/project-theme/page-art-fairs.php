@@ -37,14 +37,6 @@ include("header.php");
     echo $render->view('Components/' . $template, $data);
 ?>
 
-<?php 
-/**
- * Email submission
- */
-if( is_page('june-art-fair') ) {
-	include("partials/ma-email-sub-vr.php"); 
-}
-?>
 
 
 	<?php
@@ -91,6 +83,16 @@ if( is_page('june-art-fair') ) {
 		}
 
 	?>
+
+<?php 
+/**
+ * Email submission
+ */
+if( is_page('june-art-fair') ) {
+	include("partials/ma-email-sub-vr.php"); 
+}
+?>
+
 	 
 <?php
 /**

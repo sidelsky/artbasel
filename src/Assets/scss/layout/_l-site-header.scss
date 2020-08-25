@@ -42,3 +42,35 @@ body.is-scrolled {
     }
   }
 }
+
+/**
+* Parallax alpha 
+*/
+body {
+  &.online-exhibitions-template-parallax-template {
+    .l-site-header__nav {
+      background-color: transparent;
+    }
+    &.is-scrolled {
+      .c-header__link--black {
+        display: block;
+      }
+      .c-header__link--white {
+        display: none;
+      }
+    }
+
+    &.body--menu-is-expanded {
+      .c-header__link--black {
+        display: block !important;
+      }
+      .c-header__link--white {
+        display: none;
+      }
+    }
+  }
+}
+
+/**
+* Swop black and white logos if template is online-exhibitions-template-parallax-template and page is scrolled
+*/
