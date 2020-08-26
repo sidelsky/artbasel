@@ -108,9 +108,7 @@ $speed = 1;
 								?>
 								<li class="c-parallax-hero__thumbnail" >
 									<figure>
-										<span>
-											<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
-										</span>
+										<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
 										<figcaption><?= $thumbnail['caption'] ?></figcaption>
 									</figure>
 								</li>
@@ -142,9 +140,7 @@ $speed = 1;
 					?>
 					<li class="c-parallax-hero__thumbnail" >
 						<figure>
-							<span>
-								<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
-							</span>
+							<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
 							<figcaption><?= $thumbnail['caption'] ?></figcaption>
 						</figure>
 					</li>

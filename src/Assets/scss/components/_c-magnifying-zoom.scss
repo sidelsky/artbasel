@@ -69,14 +69,6 @@
   text-transform: none;
 }
 
-.c-magnifying-zoom {
-  margin: 0;
-
-  .caption {
-    padding-left: 0;
-  }
-}
-
 .ala {
   // display: flex;
   // justify-content: center;
@@ -112,9 +104,9 @@
       left: -65px;
     }
 
-    &:after {
-      //background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC41MDUiIGhlaWdodD0iMzQuMTgxIiB2aWV3Qm94PSIwIDAgMTguNTA1IDM0LjE4MSI+CiAgPHBhdGggaWQ9IlBhdGhfMTMiIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTMzNjQuNjc4LDE0OTMuNjNsMTYuMzgzLDE2LjM4NC0xNi4zODMsMTYuMzgzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzM2My45NzEgLTE0OTIuOTIzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
-    }
+    // &:after {
+    //   //background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC41MDUiIGhlaWdodD0iMzQuMTgxIiB2aWV3Qm94PSIwIDAgMTguNTA1IDM0LjE4MSI+CiAgPHBhdGggaWQ9IlBhdGhfMTMiIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTMzNjQuNjc4LDE0OTMuNjNsMTYuMzgzLDE2LjM4NC0xNi4zODMsMTYuMzgzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzM2My45NzEgLTE0OTIuOTIzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
+    // }
   }
 
   .c-online-exhibitions__btn-next {
@@ -123,16 +115,16 @@
       right: -65px;
     }
 
-    &:after {
-      //background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC41MDUiIGhlaWdodD0iMzQuMTgxIiB2aWV3Qm94PSIwIDAgMTguNTA1IDM0LjE4MSI+CiAgPHBhdGggaWQ9IlBhdGhfMTMiIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTMzNjQuNjc4LDE0OTMuNjNsMTYuMzgzLDE2LjM4NC0xNi4zODMsMTYuMzgzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzM2My45NzEgLTE0OTIuOTIzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
-    }
+    // &:after {
+    //   //background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC41MDUiIGhlaWdodD0iMzQuMTgxIiB2aWV3Qm94PSIwIDAgMTguNTA1IDM0LjE4MSI+CiAgPHBhdGggaWQ9IlBhdGhfMTMiIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTMzNjQuNjc4LDE0OTMuNjNsMTYuMzgzLDE2LjM4NC0xNi4zODMsMTYuMzgzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzM2My45NzEgLTE0OTIuOTIzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
+    // }
   }
 
   .cta-button {
     position: absolute;
     bottom: -40px;
     right: 10px;
-    z-index: 1;
+    z-index: 0;
 
     @include media(">tablet") {
       right: 0;

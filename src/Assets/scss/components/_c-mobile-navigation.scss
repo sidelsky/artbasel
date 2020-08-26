@@ -38,11 +38,11 @@ body.body--menu-is-expanded {
   }
 }
 
-body.is-scrolled {
-  .c-header__wrap {
-    background-color: white;
-  }
-}
+// body.is-scrolled {
+//   .c-header__wrap {
+//     //background-color: white;
+//   }
+// }
 
 body.online-exhibitions-template-parallax-template {
   .c-mobile-navigation {
@@ -68,6 +68,9 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded {
 }
 
 body.online-exhibitions-template-parallax-template.is-scrolled {
+  .c-header__wrap {
+    background-color: white;
+  }
   .c-hamburger__bar {
     background: black;
     &:before,

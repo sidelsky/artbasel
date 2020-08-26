@@ -470,6 +470,7 @@ button[disabled]:hover {
   font-size: 1.6rem;
   background-color: #f8f8f8;
   border-radius: 4px;
+  border: solid 1px #f8f8f8;
   color: #1f1f1f;
   cursor: pointer;
   display: inline-block;
@@ -2142,14 +2143,6 @@ span.img-text:hover {
   text-transform: none;
 }
 
-.c-magnifying-zoom {
-  margin: 0;
-}
-
-.c-magnifying-zoom .caption {
-  padding-left: 0;
-}
-
 .ala .c-online-exhibitions__btn-prev,
 .ala .c-online-exhibitions__btn-next {
   z-index: 2;
@@ -2208,7 +2201,7 @@ span.img-text:hover {
   position: absolute;
   bottom: -40px;
   right: 10px;
-  z-index: 1;
+  z-index: 0;
 }
 
 @media (min-width: 769px) {
@@ -2456,10 +2449,6 @@ body.body--menu-is-expanded .c-mobile-navigation {
   left: 0px;
 }
 
-body.is-scrolled .c-header__wrap {
-  background-color: white;
-}
-
 body.online-exhibitions-template-parallax-template .c-mobile-navigation {
   z-index: 1;
 }
@@ -2478,6 +2467,10 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-ham
 
 body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hamburger__bar:before, body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hamburger__bar:after {
   background: black;
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-header__wrap {
+  background-color: white;
 }
 
 body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar {
@@ -3114,6 +3107,11 @@ body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar
 
 .c-parallax-hero__thumbnail {
   position: relative;
+  margin-bottom: 2rem;
+}
+
+.c-parallax-hero__thumbnail img {
+  margin-bottom: 0.5rem;
 }
 
 @media (min-width: 769px) {
@@ -3182,6 +3180,14 @@ body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar
 .parallax-window__second-hero {
   height: 1000px;
   overflow: hidden;
+}
+
+.c-magnifying-zoom {
+  margin: 0;
+}
+
+.c-magnifying-zoom .caption {
+  padding-left: 5px;
 }
 
 .c-recommendations {

@@ -41,6 +41,11 @@
 
   &__thumbnail {
     position: relative;
+    margin-bottom: $spacing--small;
+
+    img {
+      margin-bottom: $spacing--x-tiny;
+    }
 
     @include media(">tablet") {
       lost-column: 4/12 3 30px;
@@ -69,4 +74,12 @@
 .parallax-window__second-hero {
   height: 1000px;
   overflow: hidden;
+}
+
+.c-magnifying-zoom {
+  margin: 0;
+
+  .caption {
+    padding-left: 5px;
+  }
 }
