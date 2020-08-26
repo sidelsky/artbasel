@@ -25,6 +25,9 @@ body {
   text-rendering: optimizeLegibility;
   margin-top: 45px;
   @include media(">tablet") {
+    margin-top: 70px;
+  }
+  @include media(">desktop") {
     margin-top: 118px;
     &.archive.post-type-archive-private-rooms {
       margin-top: 70px;
@@ -32,6 +35,10 @@ body {
     &.online-exhibitions-template-parallax-template {
       margin-top: 0;
     }
+  }
+
+  .c-header__link--black {
+    display: none;
   }
 }
 
@@ -109,4 +116,8 @@ table {
   //   background-color: #ffdd00;
   //   box-shadow: 0 -2px #ffdd00, 0 4px #0b0c0c;
   //   text-decoration: none;
+}
+
+body.online-exhibitions-template-parallax-template {
+  margin-top: 0px;
 }

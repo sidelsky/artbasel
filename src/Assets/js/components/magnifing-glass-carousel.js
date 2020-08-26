@@ -16,7 +16,10 @@ if (owlCarMag) {
   });
 
   // Initiate zoom
-  var $zoom = $(".zoom").magnify();
+  var $zoom = $(".zoom").magnify({
+    speed: 200,
+    zoom: 1,
+  });
 
   const next = document.getElementById("next-slide");
   const prev = document.getElementById("prev-slide");

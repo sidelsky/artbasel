@@ -66,6 +66,25 @@
 				],
 			]);
 
+
+			// On view
+        	create_post_type([
+				'name' => 'On view',
+				'singular_name' => 'On view',
+				'has_archive' => false,
+				'rewrite' => [
+				//'slug' => 'private-sales/private-rooms',
+				'with_front' => false
+				],
+				'menu_icon' =>  'dashicons-admin-site-alt2',
+				'menu_position' => 8	,
+				'supports' => [
+					'title',
+					'thumbnail',
+					'revisions'
+				],
+			]);
+
 		   // Private sales
         	create_post_type([
 				'name' => 'Private sales',
@@ -76,7 +95,7 @@
 					'with_front' => false
 				],
 				'menu_icon' =>  'dashicons-welcome-view-site',
-				'menu_position' => 8,
+				'menu_position' => 9,
 				'supports' => [
 					'title',
 					'thumbnail',
@@ -84,7 +103,7 @@
 				],
 			]);
 
-            // Private rooms
+         // Private rooms
         	create_post_type([
 				'name' => 'Private rooms',
 				'singular_name' => 'Private room',
@@ -94,7 +113,7 @@
 				'with_front' => false
 				],
 				'menu_icon' =>  'dashicons-hidden',
-				'menu_position' => 8	,
+				'menu_position' => 10,
 				'supports' => [
 					'title',
 					'thumbnail',
@@ -105,8 +124,7 @@
 
 
 
+
 				}
  
     add_action('init', 'createPostTypes');
- 
- 

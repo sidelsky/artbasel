@@ -2,7 +2,7 @@
   background-color: palette(bw, white);
   height: 100%;
   overflow-x: hidden;
-  top: 45px;
+  //top: 45px;
   position: fixed;
   left: -300px;
   width: 300px;
@@ -21,7 +21,7 @@
   //Menu
   &__menu {
     a {
-      color: palette(bw, black);
+      color: palette(bw, black) !important;
       @include set-font-size(2rem, 2rem, 2rem, 2rem);
       margin-bottom: $spacing--small;
       padding-bottom: $spacing--small;
@@ -35,5 +35,47 @@ body.body--menu-is-expanded {
   .c-mobile-navigation {
     transform: translateX(0);
     left: 0px;
+  }
+}
+
+// body.is-scrolled {
+//   .c-header__wrap {
+//     //background-color: white;
+//   }
+// }
+
+body.online-exhibitions-template-parallax-template {
+  .c-mobile-navigation {
+    z-index: 1;
+  }
+  .c-hamburger__bar {
+    background: white;
+    &:before,
+    &:after {
+      background: white;
+    }
+  }
+}
+
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded {
+  .c-hamburger__bar {
+    background: none;
+    &:before,
+    &:after {
+      background: black;
+    }
+  }
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled {
+  .c-header__wrap {
+    background-color: white;
+  }
+  .c-hamburger__bar {
+    background: black;
+    &:before,
+    &:after {
+      background: black;
+    }
   }
 }

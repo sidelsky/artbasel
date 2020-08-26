@@ -74,7 +74,9 @@ $speed = 1;
 /* @media (min-width:1280px) { 
 	/* Desktop large */ 
 
-} */
+	/* https://vimeo.com/448617702 */
+
+}
 
 </style>
 
@@ -106,9 +108,7 @@ $speed = 1;
 								?>
 								<li class="c-parallax-hero__thumbnail" >
 									<figure>
-										<span>
-											<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
-										</span>
+										<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
 										<figcaption><?= $thumbnail['caption'] ?></figcaption>
 									</figure>
 								</li>
@@ -129,28 +129,26 @@ $speed = 1;
 	</section>
 
  
-<?php if( !$parallaxVideo['parallax_video_vimeo'] ) { ?>
-	<section class="u-section u-l-vertical-padding--margin-40" style="padding: 30px 0 20px">
-		<div class="u-l-container --full-width ">
-			<ul class="c-parallax-hero__thumbnails">
-				<?php 
-				while( have_rows('parallax_thumbnails')): the_row(); 
-				$thumbnail = get_sub_field('parallax_thumbnail');
-				$speed++;
-				?>
-				<li class="c-parallax-hero__thumbnail" >
-					<figure>
-						<span>
+	<?php if( !$parallaxVideo['parallax_video_vimeo'] ) { ?>
+		<section class="u-section u-l-vertical-padding--margin-40" style="padding: 20px 20px 15px">
+			<div class="u-l-container --full-width ">
+				<ul class="c-parallax-hero__thumbnails">
+					<?php 
+					while( have_rows('parallax_thumbnails')): the_row(); 
+					$thumbnail = get_sub_field('parallax_thumbnail');
+					$speed++;
+					?>
+					<li class="c-parallax-hero__thumbnail" >
+						<figure>
 							<img src="<?= $thumbnail['url'] ?>" alt="<?= $thumbnail['url'] ?>">
-						</span>
-						<figcaption><?= $thumbnail['caption'] ?></figcaption>
-					</figure>
-				</li>
-				<?php endwhile; ?>
-			</ul>
-		</div>
-	</section>
-<?php } ?>
+							<figcaption><?= $thumbnail['caption'] ?></figcaption>
+						</figure>
+					</li>
+					<?php endwhile; ?>
+				</ul>
+			</div>
+		</section>
+	<?php } ?>
 
 
 <?php

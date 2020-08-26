@@ -470,6 +470,10 @@ button[disabled]:hover {
   font-size: 1.6rem;
   background-color: #f8f8f8;
   border-radius: 4px;
+<<<<<<< HEAD
+=======
+  border: solid 1px #f8f8f8;
+>>>>>>> working-parallax-template
   color: #1f1f1f;
   cursor: pointer;
   display: inline-block;
@@ -1171,7 +1175,10 @@ button[disabled]:hover {
   overflow: hidden;
   padding: 0;
   position: absolute;
+<<<<<<< HEAD
   top: 11px;
+=======
+>>>>>>> working-parallax-template
   left: 1rem;
   text-indent: -9999px;
   -webkit-transition: background 0.3s;
@@ -2111,8 +2118,13 @@ span.img-text:hover {
 .magnify > .magnify-lens {
   /* Magnifying lens */
   position: absolute;
+<<<<<<< HEAD
   width: 300px;
   height: 300px;
+=======
+  width: 350px;
+  height: 350px;
+>>>>>>> working-parallax-template
   border-radius: 100%;
   /* Multiple box shadows to achieve the glass lens effect */
   -webkit-box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.85), 0 0 7px 7px rgba(0, 0, 0, 0.25), inset 0 0 40px 2px rgba(0, 0, 0, 0.25);
@@ -2143,6 +2155,7 @@ span.img-text:hover {
   text-transform: none;
 }
 
+<<<<<<< HEAD
 .c-magnifying-zoom {
   margin: 0;
 }
@@ -2159,20 +2172,68 @@ span.img-text:hover {
   height: 45px;
   top: 50%;
   border: none;
+=======
+.ala .c-online-exhibitions__btn-prev,
+.ala .c-online-exhibitions__btn-next {
+  z-index: 2;
+  width: 45px;
+  height: 35px;
+  border: solid 1px #e9e9e9;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  float: left;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  bottom: 45px;
+}
+
+@media (min-width: 769px) {
+  .ala .c-online-exhibitions__btn-prev,
+  .ala .c-online-exhibitions__btn-next {
+    width: 55px;
+    height: 40px;
+    top: 50%;
+  }
+}
+
+.ala .c-online-exhibitions__btn-prev {
+  right: 50px;
+>>>>>>> working-parallax-template
 }
 
 @media (min-width: 769px) {
   .ala .c-online-exhibitions__btn-prev {
+<<<<<<< HEAD
     left: -50px;
   }
 }
 
 .ala .c-online-exhibitions__btn-prev:after {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC41MDUiIGhlaWdodD0iMzQuMTgxIiB2aWV3Qm94PSIwIDAgMTguNTA1IDM0LjE4MSI+CiAgPHBhdGggaWQ9IlBhdGhfMTMiIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTMzNjQuNjc4LDE0OTMuNjNsMTYuMzgzLDE2LjM4NC0xNi4zODMsMTYuMzgzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzM2My45NzEgLTE0OTIuOTIzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
+=======
+    left: -65px;
+  }
+}
+
+.ala .c-online-exhibitions__btn-next {
+  right: 10px;
+>>>>>>> working-parallax-template
 }
 
 @media (min-width: 769px) {
   .ala .c-online-exhibitions__btn-next {
+<<<<<<< HEAD
     right: -50px;
   }
 }
@@ -2181,11 +2242,21 @@ span.img-text:hover {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOC41MDUiIGhlaWdodD0iMzQuMTgxIiB2aWV3Qm94PSIwIDAgMTguNTA1IDM0LjE4MSI+CiAgPHBhdGggaWQ9IlBhdGhfMTMiIGRhdGEtbmFtZT0iUGF0aCAxMyIgZD0iTTMzNjQuNjc4LDE0OTMuNjNsMTYuMzgzLDE2LjM4NC0xNi4zODMsMTYuMzgzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzM2My45NzEgLTE0OTIuOTIzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+Cg==");
 }
 
+=======
+    right: -65px;
+  }
+}
+
+>>>>>>> working-parallax-template
 .ala .cta-button {
   position: absolute;
   bottom: -40px;
   right: 10px;
+<<<<<<< HEAD
   z-index: 1;
+=======
+  z-index: 0;
+>>>>>>> working-parallax-template
 }
 
 @media (min-width: 769px) {
@@ -2373,7 +2444,10 @@ span.img-text:hover {
   background-color: #fff;
   height: 100%;
   overflow-x: hidden;
+<<<<<<< HEAD
   top: 45px;
+=======
+>>>>>>> working-parallax-template
   position: fixed;
   left: -300px;
   width: 300px;
@@ -2402,7 +2476,11 @@ span.img-text:hover {
 }
 
 .c-mobile-navigation__menu a {
+<<<<<<< HEAD
   color: #000;
+=======
+  color: #000 !important;
+>>>>>>> working-parallax-template
   font-size: 2rem;
   margin-bottom: 2rem;
   padding-bottom: 2rem;
@@ -2434,6 +2512,41 @@ body.body--menu-is-expanded .c-mobile-navigation {
   left: 0px;
 }
 
+<<<<<<< HEAD
+=======
+body.online-exhibitions-template-parallax-template .c-mobile-navigation {
+  z-index: 1;
+}
+
+body.online-exhibitions-template-parallax-template .c-hamburger__bar {
+  background: white;
+}
+
+body.online-exhibitions-template-parallax-template .c-hamburger__bar:before, body.online-exhibitions-template-parallax-template .c-hamburger__bar:after {
+  background: white;
+}
+
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hamburger__bar {
+  background: none;
+}
+
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hamburger__bar:before, body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hamburger__bar:after {
+  background: black;
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-header__wrap {
+  background-color: white;
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar {
+  background: black;
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar:before, body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar:after {
+  background: black;
+}
+
+>>>>>>> working-parallax-template
 .c-non-pages {
   text-align: center;
 }
@@ -3060,6 +3173,14 @@ body.body--menu-is-expanded .c-mobile-navigation {
 
 .c-parallax-hero__thumbnail {
   position: relative;
+<<<<<<< HEAD
+=======
+  margin-bottom: 2rem;
+}
+
+.c-parallax-hero__thumbnail img {
+  margin-bottom: 0.5rem;
+>>>>>>> working-parallax-template
 }
 
 @media (min-width: 769px) {
@@ -3130,6 +3251,17 @@ body.body--menu-is-expanded .c-mobile-navigation {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+.c-magnifying-zoom {
+  margin: 0;
+}
+
+.c-magnifying-zoom .caption {
+  padding-left: 5px;
+}
+
+>>>>>>> working-parallax-template
 .c-recommendations {
   color: white;
 }
@@ -5237,6 +5369,15 @@ body {
 
 @media (min-width: 769px) {
   body {
+<<<<<<< HEAD
+=======
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+>>>>>>> working-parallax-template
     margin-top: 118px;
   }
   body.archive.post-type-archive-private-rooms {
@@ -5247,6 +5388,13 @@ body {
   }
 }
 
+<<<<<<< HEAD
+=======
+body .c-header__link--black {
+  display: none;
+}
+
+>>>>>>> working-parallax-template
 .fade-enter-active,
 .fade-leave-active {
   -webkit-transition: opacity 1s;
@@ -5315,6 +5463,13 @@ table {
   padding: 0;
 }
 
+<<<<<<< HEAD
+=======
+body.online-exhibitions-template-parallax-template {
+  margin-top: 0px;
+}
+
+>>>>>>> working-parallax-template
 .l-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6060,6 +6215,35 @@ body.is-scrolled.online-exhibitions-template-parallax-template .l-site-header__n
   background-color: white;
 }
 
+<<<<<<< HEAD
+=======
+/**
+* Parallax alpha 
+*/
+body.online-exhibitions-template-parallax-template .l-site-header__nav {
+  background-color: transparent;
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-header__link--black {
+  display: block;
+}
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-header__link--white {
+  display: none;
+}
+
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-header__link--black {
+  display: block !important;
+}
+
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-header__link--white {
+  display: none;
+}
+
+/**
+* Swop black and white logos if template is online-exhibitions-template-parallax-template and page is scrolled
+*/
+>>>>>>> working-parallax-template
 /*
  * Background colour utility
  */
