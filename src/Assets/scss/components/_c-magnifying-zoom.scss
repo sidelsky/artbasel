@@ -35,7 +35,7 @@
 
 .magnify > .magnify-lens {
   /* Magnifying lens */
-  $dimensions: 350px;
+  $dimensions: 250px;
   position: absolute;
   width: $dimensions;
   height: $dimensions;
@@ -46,6 +46,13 @@
   cursor: none;
   display: none;
   z-index: 99;
+
+  @include media(">phone") {
+    $dimensions: 350px;
+    width: $dimensions;
+    height: $dimensions;
+    border-radius: 100%;
+  }
 }
 
 .magnify > .magnify-lens.loading {

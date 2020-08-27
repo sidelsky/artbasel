@@ -9,6 +9,7 @@ if (owlCarMag) {
     margin: 30,
     dots: false,
     nav: false,
+    touchDrag: false,
     onTranslated: function() {
       // Update Magnify when slide changes
       $zoom.destroy().magnify();

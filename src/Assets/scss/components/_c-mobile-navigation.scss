@@ -70,7 +70,12 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded {
 body.online-exhibitions-template-parallax-template.is-scrolled {
   .c-header__wrap {
     background-color: white;
+
+    @include media(">tablet") {
+      background-color: transparent;
+    }
   }
+
   .c-hamburger__bar {
     background: black;
     &:before,

@@ -30,7 +30,11 @@ $top_spacing_tablet = get_field('top_spacing_tablet');
 $top_spacing_desktop = get_field('top_spacing_desktop');
 $top_spacing_desktop_large = get_field('top_spacing_desktop_large');
 $parallax_hero_image_shading = get_field('parallax_hero_image_shading');
-$parallax_hero_image_height = get_field('parallax_hero_image_height');
+
+$parallax_hero_image_height_phone = get_field('parallax_hero_image_height');
+$parallax_hero_image_height_tablet = get_field('parallax_hero_image_height_tablet');
+$parallax_hero_image_height_desktop = get_field('parallax_hero_image_height_desktop');
+
 $parallax_second_hero_image_height = get_field('parallax_second_hero_image_height');
 
 $parallaxVideo = get_field('parallax_video');
@@ -48,33 +52,36 @@ $speed = 1;
 
 		/* Phone */ 
 	.spacing-top {
-			top: <?= $top_spacing_phone ?>px;
+		top: <?= $top_spacing_phone ?>px;
 		}
+	
+	.hero-height {
+		height: <?= $parallax_hero_image_height_phone ?>px
+	}
 
 @media (min-width:375px) { 
-	/* Phone */ 
+	/* Tablet */ 
 	.spacing-top {
 			top: <?= $top_spacing_tablet ?>px;
 		}
+
+	.hero-height {
+		height: <?= $parallax_hero_image_height_tablet ?>px
+	}
 }
  
 @media (min-width:678px) { 
-	/* Tablet */ 
+	/* Desktop */ 
 	.spacing-top {
 			top: <?= $top_spacing_desktop ?>px;
 		}
+
+	.hero-height {
+		height: <?= $parallax_hero_image_height_desktop ?>px
+	}
 }
  
-@media (min-width:1024px) { 
-	/* Desktop */ 
-	.spacing-top {
-			top: <?= $top_spacing_desktop_large ?>px;
-		}
-}
-/* @media (min-width:1280px) { 
-	/* Desktop large */ 
 
-	/* https://vimeo.com/448617702 */
 
 }
 
@@ -123,7 +130,7 @@ $speed = 1;
 		</div>
 
 		<figure>
-			<div class="parallax-window parallax-window__hero" <?= $parallax_hero_image_height ? 'style="height:' . $parallax_hero_image_height . 'px' . '"' : '' ?> data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
+			<div class="parallax-window parallax-window__hero hero-height" data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
 		</figure>
 		
 	</section>

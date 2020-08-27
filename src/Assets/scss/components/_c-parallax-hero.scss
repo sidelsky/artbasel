@@ -7,7 +7,6 @@
     z-index: 1;
     top: 0;
     bottom: 0;
-    //padding-top: 450px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -17,7 +16,10 @@
   }
 
   &__h1 {
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
+    @include media(">tablet") {
+      margin-bottom: 15rem;
+    }
     text-align: center;
   }
 
@@ -45,6 +47,11 @@
 
     img {
       margin-bottom: $spacing--x-tiny;
+    }
+
+    @include media(">phone") {
+      lost-column: 4/12 3 30px;
+      justify-content: space-between;
     }
 
     @include media(">tablet") {

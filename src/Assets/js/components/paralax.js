@@ -445,9 +445,13 @@
   });
 })(jQuery, window, document);
 
-$(window).on("resize", function(e) {
-  clearTimeout(resizeTimer);
-  var resizeTimer = setTimeout(function() {
-    $(".parallax-window").parallax("refresh");
-  }, 1000);
+// $(window).on("resize", function(e) {
+//   clearTimeout(resizeTimer);
+//   var resizeTimer = setTimeout(function() {
+//     $(".parallax-window").parallax("refresh");
+//   }, 1000);
+// });
+
+$(".parallax-window").parallax({
+  speed: 0.4,
 });
