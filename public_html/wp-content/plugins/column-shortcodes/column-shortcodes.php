@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: 	Column Shortcodes
-Version: 		1.0
+Version: 		1.0.1
 Description: 	Adds shortcodes to easily create columns in your posts or pages
 Author: 		Codepress
 Author URI: 	https://www.admincolumns.com/
@@ -11,7 +11,7 @@ Text Domain: 	column-shortcodes
 Domain Path: 	/languages
 License:		GPLv2
 
-Copyright 2011-2020  Codepress  info@codepress.nl
+Copyright 2011-2017  Codepress  info@codepress.nl
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License version 2 as published by
@@ -303,9 +303,9 @@ class Codepress_Column_Shortcodes {
 	 */
 	public function add_shortcode_button( $page = null, $target = null ) {
 		?>
-        <a href="#TB_inline?width=753&amp;height=573&amp;inlineId=cpsh-wrap" class="thickbox button" title="<?php _e( 'Select shortcode', 'column-shortcodes' ); ?>" data-page="<?php echo $page; ?>" data-target="<?php echo $target; ?>">
-            <img src="<?php echo $this->get_url() . "/assets/images/shortcode.png"; ?>" alt=""/>
-        </a>
+		<a href="#TB_inline?width=753&amp;height=573&amp;inlineId=cpsh-wrap" class="thickbox button" title="<?php _e( 'Select shortcode', 'column-shortcodes' ); ?>" data-page="<?php echo $page; ?>" data-target="<?php echo $target; ?>">
+			<img src="<?php echo $this->get_url() . "/assets/images/shortcode.png"; ?>" alt=""/>
+		</a>
 		<?php
 	}
 
@@ -318,9 +318,9 @@ class Codepress_Column_Shortcodes {
 			$close_tag = str_replace( '\n', '', $button['options']['close_tag'] );
 
 			?>
-            <a href='javascript:;' rel='<?php echo esc_attr( $open_tag . $close_tag ); ?>' data-tag='<?php echo esc_attr( $open_tag . $close_tag ); ?>' class='cp-<?php echo esc_attr( $button['class'] ); ?> columns insert-shortcode'>
+			<a href='javascript:;' rel='<?php echo esc_attr( $open_tag . $close_tag ); ?>' data-tag='<?php echo esc_attr( $open_tag . $close_tag ); ?>' class='cp-<?php echo esc_attr( $button['class'] ); ?> columns insert-shortcode'>
 				<?php echo esc_html( $button['options']['display_name'] ); ?>
-            </a>
+			</a>
 			<?php
 		}
 	}
@@ -332,125 +332,125 @@ class Codepress_Column_Shortcodes {
 	 */
 	public function popup() {
 		?>
-        <div id="cpsh-wrap" style="display:none">
-            <div id="cpsh">
-                <div id="cpsh-generator-shell">
+		<div id="cpsh-wrap" style="display:none">
+			<div id="cpsh">
+				<div id="cpsh-generator-shell">
 
-                    <div id="cpsh-generator-header">
+					<div id="cpsh-generator-header">
 
-                        <div class="cpsh-shortcodes">
-                            <h2 class="cpsh-title"><?php _e( "Column shortcodes", 'column-shortcodes' ); ?></h2>
+						<div class="cpsh-shortcodes">
+							<h2 class="cpsh-title"><?php _e( "Column shortcodes", 'column-shortcodes' ); ?></h2>
 							<?php $this->display_shortcode_buttons(); ?>
-                        </div>
+						</div>
 
 						<?php if ( ! apply_filters( 'cpsh_hide_padding_settings', false ) ) : ?>
 
-                            <div class="cpsh-settings">
-                                <h2 class="cpsh-title"><?php _e( "Column padding ( optional )", 'column-shortcodes' ); ?></h2>
-                                <p class="description">
+							<div class="cpsh-settings">
+								<h2 class="cpsh-title"><?php _e( "Column padding ( optional )", 'column-shortcodes' ); ?></h2>
+								<p class="description">
 									<?php _e( "Use the input fields below to customize the padding of your column shortcode.", 'column-shortcodes' ); ?>
 									<?php _e( "Enter padding first, then select your column shortcode.", 'column-shortcodes' ); ?>
-                                </p>
+								</p>
 
-                                <div id="preview-padding">
-                                    <div class="column-container">
-                                        <div class="column-inner">
-                                        </div>
-                                        <div class="padding-fields">
-                                            <input id="padding-top" placeholder="0" value=""/>
-                                            <input id="padding-right" placeholder="0" value=""/>
-                                            <input id="padding-bottom" placeholder="0" value=""/>
-                                            <input id="padding-left" placeholder="0" value=""/>
-                                        </div>
-                                    </div>
+								<div id="preview-padding">
+									<div class="column-container">
+										<div class="column-inner">
+										</div>
+										<div class="padding-fields">
+											<input id="padding-top" placeholder="0" value=""/>
+											<input id="padding-right" placeholder="0" value=""/>
+											<input id="padding-bottom" placeholder="0" value=""/>
+											<input id="padding-left" placeholder="0" value=""/>
+										</div>
+									</div>
 
-                                    <a class="padding-reset" href="javascript:;"><?php _e( "reset", 'column-shortcodes' ); ?></a>
-                                </div>
-                            </div><!--.cpsh-settings-->
+									<a class="padding-reset" href="javascript:;"><?php _e( "reset", 'column-shortcodes' ); ?></a>
+								</div>
+							</div><!--.cpsh-settings-->
 
 						<?php endif; ?>
 
-                    </div><!--cpsh-generator-header-->
+					</div><!--cpsh-generator-header-->
 
-                    <div id="cpsh-generator-sidebar">
-                        <div class="sidebox" id="cpsh-sidebox-feedback">
-                            <div id="feedback-choice">
-                                <h3><?php _e( 'Are you happy with Columns Shortcodes?', 'column-shortcodes' ); ?></h3>
+					<div id="cpsh-generator-sidebar">
+						<div class="sidebox" id="cpsh-sidebox-feedback">
+							<div id="feedback-choice">
+								<h3><?php _e( 'Are you happy with Columns Shortcodes?', 'column-shortcodes' ); ?></h3>
 
-                                <div class="inside">
-                                    <a href="#" class="yes"><?php _e( 'Yes' ); ?></a>
-                                    <a href="#" class="no"><?php _e( 'No' ); ?></a>
-                                </div>
-                            </div>
-                            <div id="feedback-support">
-                                <div class="inside">
-                                    <p>
+								<div class="inside">
+									<a href="#" class="yes"><?php _e( 'Yes' ); ?></a>
+									<a href="#" class="no"><?php _e( 'No' ); ?></a>
+								</div>
+							</div>
+							<div id="feedback-support">
+								<div class="inside">
+									<p>
 										<?php _e( "What's wrong? Need help? Let us know: please open a support topic on WordPress.org!", 'column-shortcodes' ); ?>
-                                    </p>
-                                    <ul class="share">
-                                        <li>
-                                            <a href="https://wordpress.org/support/plugin/column-shortcodes#new-post" target="_blank">
-                                                <div class="dashicons dashicons-wordpress"></div> <?php _e( 'Support Forums', 'column-shortcodes' ); ?>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                            <div id="feedback-rate">
-                                <div class="inside">
-                                    <p>
+									</p>
+									<ul class="share">
+										<li>
+											<a href="https://wordpress.org/support/plugin/column-shortcodes#new-post" target="_blank">
+												<div class="dashicons dashicons-wordpress"></div> <?php _e( 'Support Forums', 'column-shortcodes' ); ?>
+											</a>
+										</li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div id="feedback-rate">
+								<div class="inside">
+									<p>
 										<?php _e( "Woohoo! We're glad to hear that!", 'column-shortcodes' ); ?>
-                                    </p>
-                                    <p>
+									</p>
+									<p>
 										<?php _e( 'We would really love it if you could show your appreciation by giving us a rating on WordPress.org or tweet about Column Shortcodes!', 'column-shortcodes' ); ?>
-                                    </p>
-                                    <ul class="share">
-                                        <li>
-                                            <a href="http://wordpress.org/support/view/plugin-reviews/column-shortcodes#new-post" target="_blank">
-                                                <div class="dashicons dashicons-star-empty"></div> <?php _e( 'Rate', 'column-shortcodes' ); ?>
-                                            </a>
-                                        </li>
+									</p>
+									<ul class="share">
+										<li>
+											<a href="http://wordpress.org/support/view/plugin-reviews/column-shortcodes#new-post" target="_blank">
+												<div class="dashicons dashicons-star-empty"></div> <?php _e( 'Rate', 'column-shortcodes' ); ?>
+											</a>
+										</li>
 
-                                        <li>
-                                            <a href="<?php echo esc_url( add_query_arg( array( 'hashtags' => 'columnshortcodes', 'text' => urlencode( __( "I'm using Column Shortcodes for WordPress!", 'column-shortcodes' ) ), 'url' => urlencode( 'https://wordpress.org/plugins/column-shortcodes' ) ), 'https://twitter.com/intent/tweet' ) ); ?>" target="_blank">
-                                                <div class="dashicons dashicons-twitter"></div> <?php _e( 'Tweet', 'column-shortcodes' ); ?>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
-                        </div><!--cpsh-sidebox-feedback-->
+										<li>
+											<a href="<?php echo esc_url( add_query_arg( array( 'hashtags' => 'columnshortcodes', 'text' => urlencode( __( "I'm using Column Shortcodes for WordPress!", 'column-shortcodes' ) ), 'url' => urlencode( 'https://wordpress.org/plugins/column-shortcodes' ) ), 'https://twitter.com/intent/tweet' ) ); ?>" target="_blank">
+												<div class="dashicons dashicons-twitter"></div> <?php _e( 'Tweet', 'column-shortcodes' ); ?>
+											</a>
+										</li>
+									</ul>
+									<div class="clear"></div>
+								</div>
+							</div>
+						</div><!--cpsh-sidebox-feedback-->
 
 						<?php if ( $this->show_banner() ) : ?>
 
-                            <div class="cs-acsidebox">
-                                <div class="cs-acsidebox__wrapper">
-                                    <p class="cs-acsidebox__intro">
+							<div class="cs-acsidebox">
+								<div class="cs-acsidebox__wrapper">
+									<p class="cs-acsidebox__intro">
 										<?php printf( __( 'Be sure to check out other plugins by Codepress, such as %s. It adds custom columns to your posts, users, comments and media overview in your admin. Get more insight in your content now!', 'column-shortcodes' ), '<a target="_blank" href="https://wordpress.org/plugins/codepress-admin-columns/" class="cs-acsidebox__link">Admin Columns</a>' ); ?>
-                                    </p>
-                                    <a href="<?php echo esc_url( add_query_arg( array( 's' => 'Admin Columns', 'tab' => 'search', 'type' => 'term' ), admin_url( 'plugin-install.php' ) ) ); ?>#install_admin_columns" target="_blank" class="cs-acsidebox__button">
-                                        <img src="<?php echo $this->get_url() . "/assets/images/ac_vignet_grey.svg"; ?>" alt="" class="cs-acsidebox__button__logo"/>
+									</p>
+									<a href="<?php echo esc_url( add_query_arg( array( 's' => 'Admin Columns', 'tab' => 'search', 'type' => 'term' ), admin_url( 'plugin-install.php' ) ) ); ?>#install_admin_columns" target="_blank" class="cs-acsidebox__button">
+										<img src="<?php echo $this->get_url() . "/assets/images/ac_vignet_grey.svg"; ?>" alt="" class="cs-acsidebox__button__logo"/>
 										<?php _e( 'Download for Free', 'column-shortcodes' ); ?>
-                                    </a>
-                                    <div class="cs-acsidebox__stars">
+									</a>
+									<div class="cs-acsidebox__stars">
 										<?php for ( $i = 1; $i <= 5; $i++ ) : ?>
-                                            <span class="dashicons dashicons-star-filled"></span>
+											<span class="dashicons dashicons-star-filled"></span>
 										<?php endfor; ?>
-                                        <span class="cs-acsidebox__stars__count">(<?php echo $this->get_num_ratings(); ?>)</span>
-                                    </div>
-                                    <p class="cs-acsidebox__footer">
+										<span class="cs-acsidebox__stars__count">(<?php echo $this->get_num_ratings(); ?>)</span>
+									</div>
+									<p class="cs-acsidebox__footer">
 										<?php printf( __( "%s Active Installs", 'column-shortcodes' ), '<em>' . $this->get_active_installs() . '+</em>' ); ?>
-                                    </p>
-                                </div>
-                            </div><!--cpsh-sidebox-admin-columns-->
+									</p>
+								</div>
+							</div><!--cpsh-sidebox-admin-columns-->
 						<?php endif; ?>
-                    </div><!--cpsh-generator-sidebar-->
+					</div><!--cpsh-generator-sidebar-->
 
-                </div><!--cpsh-generator-shell-->
-            </div>
-        </div>
+				</div><!--cpsh-generator-shell-->
+			</div>
+		</div>
 
 		<?php
 	}
@@ -618,9 +618,9 @@ class Codepress_Column_Shortcodes {
 		}
 
 		?>
-        <script type='text/javascript'>
+		<script type='text/javascript'>
 			<?php echo implode( $script_buttons ); ?>
-        </script>
+		</script>
 		<?php
 	}
 

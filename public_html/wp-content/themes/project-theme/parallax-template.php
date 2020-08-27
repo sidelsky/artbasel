@@ -240,8 +240,10 @@ if( $parallaxVideo ): ?>
 							echo '<div class="owl-carousel owl-carousel-magnify owl-theme">';
 								foreach( $rows as $row ) {
 
+									//print_r( $image = $row['magnify_carousel_image'] );
+
 									$image = $row['magnify_carousel_image']['sizes']['large'];
-									$image_magnify = $row['magnify_carousel_image']['sizes']['2048x2048'];
+									$image_magnify = $row['magnify_carousel_image']['sizes']['large'];
 									$caption = $row['magnify_carousel_image']['caption'];
 
 									echo '<figure class="c-magnifying-zoom">';
@@ -293,6 +295,7 @@ if( $parallaxVideo ): ?>
 					$text_content_title = get_sub_field('text_content_title');
 					$text_content_copy = get_sub_field('text_content_copy');
 					$text_content_link = get_sub_field('text_content_link')['url'];
+					$text_content_target = get_sub_field('text_content_link')['target'];
 					$text_content_link_title = get_sub_field('text_content_link_title');
 					// Do something...
 
@@ -305,7 +308,7 @@ if( $parallaxVideo ): ?>
 
 								if( $text_content_link_title || $text_content_link ) {
 								echo '<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">';
-               				echo '<a href="' . $text_content_link . '" class="c-works__href">' . $text_content_link_title . '</a>';
+               				echo '<a href="' . $text_content_link . '" target="' . $text_content_target . '" class="c-works__href">' . $text_content_link_title . '</a>';
 
 										echo ' <svg class="u-icon c-works__icon">';
 											echo '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-black" viewBox="0 0 32 32"></use>';

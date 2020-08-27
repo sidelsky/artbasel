@@ -3,8 +3,8 @@ Contributors: codepress, tschutter, davidmosterd, dungengronovius
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZDZRSYLQ4Z76J
 Tags: columns, column, shortcodes, shortcode, divider, layout, posts, editor, wp-admin, admin, codepress, wordpress
 Requires at least: 4.8
-Tested up to: 5.4
-Stable tag: 1.0
+Tested up to: 5.5
+Stable tag: 1.0.1
 
 Adds shortcodes to easily create columns in your posts or pages.
 
@@ -258,6 +258,9 @@ You will find a .po file in the languages folder which you can use. You can send
 4. Example post with the use of column shortcodes
 
 == Changelog ==
+
+= 1.0.1 =
+* [Fixed] Hotfix for WordPress 5.5
 
 = 1.0 =
 * [Fixed] Compatible with WordPress 4.8 and up
