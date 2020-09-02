@@ -321,15 +321,6 @@ if( $parallaxVideo ): ?>
 						echo '</div>';
 					echo '</article>';
 
-				//echo '</div>';
-
-		// Case: Text content.
-		// elseif( get_row_layout() == 'text_content' ): 
-			//$file = get_sub_field('file');
-				// Do something...
-				
-				
-
         endif;
 
 		// End loop.
