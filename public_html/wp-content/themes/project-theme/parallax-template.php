@@ -223,6 +223,8 @@ if( $parallaxVideo ): ?>
 
 		// Loop through rows.
 		while ( have_rows('parallax_layout_builder') ) : the_row();
+		$show_inquire_button = get_sub_field('show_inquire_button');
+		$show_magnifying_glass = get_sub_field('show_magnifying_glass');
 
 		 // Case: Paragraph layout.
         if( get_row_layout() == 'magnify_carousel' ):
@@ -240,23 +242,27 @@ if( $parallaxVideo ): ?>
 							echo '<div class="owl-carousel owl-carousel-magnify owl-theme">';
 								foreach( $rows as $row ) {
 
-									//print_r( $image = $row['magnify_carousel_image'] );
-
 									$image = $row['magnify_carousel_image']['sizes']['large'];
 									$image_magnify = $row['magnify_carousel_image']['sizes']['large'];
 									$caption = $row['magnify_carousel_image']['caption'];
 
+									if ( $show_magnifying_glass ) {
+										$zoom = 'zoom';
+									}
+
 									echo '<figure class="c-magnifying-zoom">';
-									echo '<img src="' . $image . '" class="zoom c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
+									echo '<img src="' . $image . '" class="' . $zoom . ' c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
 									echo '<figcaption class="caption">' . $caption . '</figcaption>';
 									echo '</figure>';
 
 								}
 							echo '</div>';
-
-							$message =  'I am interested in learning more about this piece. Please send me further details about this artwork, pricing, and availability.';
-							$idCode = '1234';
-							echo '<button class="cta-button" data-id="zinquire-button" data-message-value="' . $message . '" data-id-code="' . $idCode . '">Inquire</button>';
+							
+							if( $show_inquire_button ) {
+								$message =  'I am interested in learning more about this piece. Please send me further details about this artwork, pricing, and availability.';
+								$idCode = get_the_title();
+								echo '<button class="cta-button" data-id="inquire-button" data-message-value="' . $message . '" data-id-code="' . $idCode . '">Inquire</button>';
+							}
 
 						}
 
@@ -281,8 +287,6 @@ if( $parallaxVideo ): ?>
 			elseif( get_row_layout() == 'image_content' ): 
 				$image_content = get_sub_field('image_content');
 				//Do something...
-
-				//echo '<div class="l-content" style="outline: solid 1px red">';
 
 					echo '<div class="l-content__block l-content__block--image-content l-content__block--wide-image">';
 						echo '<div class="canvas l-content__block--center">';
@@ -330,6 +334,19 @@ if( $parallaxVideo ): ?>
 	?>
 
 </section>
+
+<?php
+		/**
+		 * Inquire form
+		 */
+			$template = 'c-inquire-form';
+			$data = $inquireForm->getInquireForm();
+			//args can overwrite $data
+			$args = [ 
+				'id' => 12
+				];
+			echo $render->view('Components/' . $template, $data, $args);
+		?>
 
 
 
