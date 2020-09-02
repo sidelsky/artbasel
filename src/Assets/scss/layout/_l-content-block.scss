@@ -30,10 +30,9 @@ $spacing: 30px;
     &__title {
       font-family: font-family(nt-primary, medium);
       margin-bottom: 0;
-      //@include set-font-size(2.4rem, 2.4rem, 2.6rem, 2.8rem);
-      //line-height: 1.35;
       font-size: 2.4rem;
       line-height: 1.25;
+      margin-bottom: $spacing--small;
       @include media(">phone") {
         font-size: 2.4rem;
       }
@@ -65,7 +64,8 @@ $spacing: 30px;
     &__body-text p {
       font-size: 1.3rem;
       line-height: 1.5;
-      padding: $spacing--small 0;
+      margin-bottom: $spacing--small;
+      //padding: $spacing--small 0;
       @include media(">phone") {
       }
       @include media(">tablet") {
@@ -89,7 +89,7 @@ $spacing: 30px;
       }
 
       &:only-child {
-        padding-top: $spacing--small;
+        //padding-top: $spacing--small;
         padding-bottom: 0;
       }
     }
@@ -97,6 +97,7 @@ $spacing: 30px;
     &__text-content {
       p {
         color: $text-color--grey;
+        margin-bottom: $spacing--small;
 
         &:only-of-type,
         &:last-of-type {
