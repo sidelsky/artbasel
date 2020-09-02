@@ -251,8 +251,8 @@ if( $parallaxVideo ): ?>
 									}
 
 									echo '<figure class="c-magnifying-zoom">';
-									echo '<img src="' . $image . '" class="' . $zoom . ' c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
-									echo '<figcaption class="caption">' . $caption . '</figcaption>';
+										echo '<img src="' . $image . '" class="' . $zoom . ' c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
+										echo '<figcaption class="caption">' . $caption . '</figcaption>';
 									echo '</figure>';
 
 								}
