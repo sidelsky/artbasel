@@ -243,17 +243,31 @@ if( $parallaxVideo ): ?>
 								foreach( $rows as $row ) {
 
 									$image = $row['magnify_carousel_image']['sizes']['large'];
+									$alt = $row['magnify_carousel_image']['alt'];
 									$image_magnify = $row['magnify_carousel_image']['sizes']['large'];
 									$caption = $row['magnify_carousel_image']['caption'];
+									$video = $row['magnify_carousel_video'];
 
+									// Check if magnifying glass is active
 									if ( $show_magnifying_glass ) {
 										$zoom = 'zoom';
 									}
 
-									echo '<figure class="c-magnifying-zoom">';
-										echo '<img src="' . $image . '" class="' . $zoom . ' c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
-										echo '<figcaption class="caption">' . $caption . '</figcaption>';
-									echo '</figure>';
+
+									if ( $video ) {
+										
+										echo '<div class="c-video-player--centered " id="video" data-id="video">';
+											echo '<button class="c-video-player__button" data-id="playBtn"><svg class="c-video-player__play-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use></svg></button>';
+											echo '<figure class="c-video-player__cover-image" role="img" aria-label="' . esc_attr( $alt ) . '" style="background-image: url('. $image .')" data-id="cover"></figure>';
+											echo '<div data-id="vimeo-content" class="u-video-aspect-ratio">' . $video . '</div>';
+										echo '</div>';
+														
+									} else {
+										echo '<figure class="c-magnifying-zoom">';
+											echo '<img src="' . $image . '" class="' . $zoom . ' c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
+											echo '<figcaption class="caption">' . $caption . '</figcaption>';
+										echo '</figure>';
+									}
 
 								}
 							echo '</div>';

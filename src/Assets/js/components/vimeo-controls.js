@@ -4,6 +4,9 @@ const iframes = [
 const playButtons = [...document.querySelectorAll("[data-id='playBtn']")];
 const covers = [...document.querySelectorAll("[data-id='cover']")];
 
+const prevSlide = document.getElementById("prev-slide");
+const nextSlide = document.getElementById("next-slide");
+
 const iframesLength = iframes.length;
 const playButtonsLength = playButtons.length;
 const coversLength = covers.length;
@@ -25,5 +28,19 @@ if (playButtonsLength) {
       cover.style.display = "block";
       playButton.style.display = "block";
     });
+
+    if (prevSlide && nextSlide) {
+      prevSlide.addEventListener("click", () => {
+        cover.style.display = "block";
+        playButton.style.display = "block";
+        player.pause();
+      });
+
+      nextSlide.addEventListener("click", () => {
+        cover.style.display = "block";
+        playButton.style.display = "block";
+        player.pause();
+      });
+    }
   }
 }
