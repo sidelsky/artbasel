@@ -343,7 +343,10 @@ if( $parallaxVideo ): ?>
 			$data = $inquireForm->getInquireForm();
 			//args can overwrite $data
 			$args = [ 
-				'id' => 7
+				'id' => 7,
+				'title' => false,
+				'description' => false,
+				'ajax' => true
 				];
 			echo $render->view('Components/' . $template, $data, $args);
 		?>
