@@ -4,8 +4,15 @@ const inquireBtns = [
 const formModal = document.getElementById("inquireModal");
 //const inquireFormTextArea = document.getElementById("input_7_5");
 //const hiddenField = document.getElementById("input_7_7");
-const inquireFormTextArea = document.getElementById("input_12_5");
-const hiddenField = document.getElementById("input_12_7");
+
+//const inquireFormTextArea = document.getElementById("input_12_5");
+const inquireFormTextArea = document.getElementsByTagName("textarea")[0];
+
+//const hiddenField = document.getElementById("input_12_7");
+const hiddenField = document.getElementsByTagName("input")[3];
+
+hiddenField.style.color = "red";
+
 const closeBtn = document.getElementById("closeBtn");
 const inquireBtnsLength = inquireBtns.length;
 
