@@ -96,3 +96,18 @@ body.online-exhibitions-template-parallax-template {
     max-width: 1000px;
   }
 }
+
+.owl-carousel-magnify {
+  .c-paralax-carousel-cover {
+    overflow: visible;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    &__image {
+      object-fit: cover;
+    }
+  }
+}
