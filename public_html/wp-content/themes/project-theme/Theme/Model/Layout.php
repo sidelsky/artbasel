@@ -90,6 +90,12 @@ class Layout {
 			   case 'two_images_module':
                $twoImages = new TwoImages($layout);
                $currentLayout = $twoImages->getTwoImages();
+            break;
+            
+            //Kuula
+			   case 'kuula':
+               $kuula = new Kuula($layout);
+               $currentLayout = $kuula->getKuula();
 				break;
                 
         }

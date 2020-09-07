@@ -42,8 +42,11 @@ include("header.php");
 				case 'title_break':
 					$templateName = 'c-title-break';
 					$args = [
-						'altFontClass' => false
-         		];
+						'altFontClass' => false,
+						'showControls' => false,
+						'padding' => true,
+						'fullWidth' => false
+					];
 					break;
 
 				//Get Text content
@@ -93,11 +96,20 @@ include("header.php");
 					$templateName = 'c-video-centered';
 					break;
 
-				//Video centered
+				//Get Art Fairs
+				case 'art_fairs':
+					$templateName = 'c-art-fairs';
+					break;
+
+				//Two images and video
 				case 'two_images_module':
 					$templateName = 'c-two-images';
 					break;
-
+				
+				//Get Kuula
+				case 'kuula':
+					$templateName = 'c-kuula';
+					break;
 
 				}
 

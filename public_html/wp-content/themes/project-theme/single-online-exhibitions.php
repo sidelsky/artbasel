@@ -217,12 +217,12 @@ $kuulaImage = $fiftyFifty['kuula_image']['sizes']['large'];
 if( $kuulaImage && $kuulaVr ) : ?>
 	<section class="u-section" style="margin-bottom: 30px"> 
 		<div class="c-kuula ">
-			<button class="c-kuula__button" id="touchButton" onclick="touchFunction()">
+			<button class="c-kuula__button" id="touchButton" data-id="touch-button" >
 				<svg class="c-kuula__touch-icon">
 					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-touch" viewBox="0 0 32 32"></use>
 				</svg>
 			</button>
-			<div class="c-kuula__image" style="background-image: url('<?= $kuulaImage ?>')" id="coverVR"></div>
+			<div class="c-kuula__image" style="background-image: url('<?= $kuulaImage ?>')" id="coverVR" data-id="touch-cover"></div>
 			<?= $kuulaVr ?>
 		</div>
 </section>
@@ -455,7 +455,7 @@ if( !empty($content) ):
 	</section>
 <?php endif; ?>
 
-<?php if( $kuulaImage && $kuulaVr ) : ?>
+<!-- <?php if( $kuulaImage && $kuulaVr ) : ?>
 	<script>
 		/** VR */
 		var touchButton = document.getElementById('touchButton');
@@ -466,6 +466,6 @@ if( !empty($content) ):
 			touchCover.style.display = "none";
 		}
 	</script>
-<?php endif; ?>
+<?php endif; ?> -->
 
 <?php include("footer.php"); ?>

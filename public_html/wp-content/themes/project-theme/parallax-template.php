@@ -247,20 +247,18 @@ if( $parallaxVideo ): ?>
 									$image_magnify = $row['magnify_carousel_image']['sizes']['large'];
 									$caption = $row['magnify_carousel_image']['caption'];
 
-									//$iFrame = $row['magnify_carousel_video'];
-
 									// Get iframe HTML
 									$vimeo_iframe = $row['magnify_carousel_video'];
 
-									// use preg_match to find iframe src
+									// Use preg_match to find iframe src
 									preg_match('/src="(.+?)"/', $vimeo_iframe, $matches);
 									$src = $matches[1];
 
-									// add extra params to iframe src
+									// Add extra params to iframe src
 									$params = array(
 										'controls'  => 0,
 										'hd'        => 1,
-										'autohide'  => 0,
+										'autohide'  => 1,
 										'loop' 		=> 1,
 										'title'		=> 0,
 										'url' 		=> 1
@@ -270,7 +268,7 @@ if( $parallaxVideo ): ?>
 
 									$vimeo_iframe = str_replace($src, $new_src, $vimeo_iframe);
 
-									// add extra attributes to iframe html
+									// Add extra attributes to iframe html
 									$attributes = 'frameborder="0"';
 
 									$vimeo_iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $vimeo_iframe);
@@ -281,14 +279,13 @@ if( $parallaxVideo ): ?>
 										$zoom = 'zoom';
 									}
 
-
 									if ( $vimeo_iframe ) {
 
 										echo '<div class="c-video-player--centered " id="video" data-id="video">';
 										echo '<button class="c-video-player__button" data-id="playBtn"><svg class="c-video-player__play-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use></svg></button>';
 											echo '<figure class="c-paralax-carousel-cover" data-id="cover">';
-												echo '<img class="c-paralax-carousel-cover__image" src="' . $image . '" alt="' . $alt . '">';
-												echo '</figure>';
+													echo '<img class="c-paralax-carousel-cover__image" src="' . $image . '" alt="' . $alt . '">';
+											echo '</figure>';
 												echo '<div data-id="vimeo-content" class="u-video-aspect-ratio">' . $vimeo_iframe  . '</div>';
 												echo '<figcaption class="caption">' . $caption . '</figcaption>';
 										echo '</div>';

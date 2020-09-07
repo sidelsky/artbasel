@@ -1,4 +1,4 @@
-<section class="l-content ">
+<section class="u-section ">
 	<div class="u-l-container u-l-container--padding">
       <div class="c-online-exhibitions">
 
