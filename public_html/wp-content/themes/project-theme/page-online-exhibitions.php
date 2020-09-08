@@ -100,7 +100,7 @@ include("header.php");
 				$alt = $group['alt'];
 				$title = $group['subtitle'];
 				$url = get_the_permalink();
-				//$postTitle = get_the_title();
+				$postTitle = get_the_title();
 				// <--- Args received here
 				include("partials/online-exhibitions-card.php");
 				wp_reset_postdata();
@@ -155,7 +155,7 @@ include("header.php");
 							$alt = $group['alt'];
 							$title = $group['subtitle'];
 							$url = get_the_permalink();
-							//$postTitle = get_the_title();
+							$postTitle = get_the_title();
 							// <--- Args received here
 							include("partials/online-exhibitions-card.php");
 							wp_reset_postdata();

@@ -31,7 +31,7 @@
             <?php if($artwork_title) { ?>
                <span class="c-online-exhibitions__artwork_title"><?= $artwork_title ?></span><br>
             <?php } ?>
-            <span class="c-online-exhibitions__title"><?= $title ?></span>
+            <span class="c-online-exhibitions__title"><?= $title ? $title : $postTitle ?></span>
          </h3>
             <span class="c-online-exhibitions__href">
                Explore now 
