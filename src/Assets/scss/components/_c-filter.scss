@@ -1,0 +1,124 @@
+/**
+* Course filter
+*/
+
+$dimentions: 42px;
+
+.c-filter {
+  background-color: grey;
+  padding: $spacing--x-medium;
+  position: relative;
+
+  // Title
+  &__title {
+    @include set-font-size(1.4rem, 1.4rem, 1.4rem);
+    background-color: $white;
+    border: solid 1px red;
+    color: grey;
+    position: relative;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+
+    span {
+      bottom: 0;
+      display: block;
+      left: 0;
+      padding: 1.2rem $spacing--tiny;
+      position: relative;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    &::after {
+      $color: fff;
+      $size: 9;
+      background-color: currentColor;
+      //background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22#{$size}%22%20height%3D%22#{$size}%22%20viewBox%3D%220%200%208%208%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M2.9103%205.604V1.2496c0-.382.31-.693.693-.693.383%200%20.694.311.694.693V5.589L5.8886%203.998c.136-.136.312-.203.49-.203s.355.067.491.203c.271.271.271.71%200%20.982l-2.776%202.775c-.1507.15-.3533.2168-.55.2-.1628-.0103-.3227-.0776-.4474-.202L.3212%204.978c-.271-.271-.271-.71%200-.982.136-.135.313-.203.491-.203.177%200%20.354.068.49.203l1.608%201.6082z%22%20fill%3D%22%23#{$color}%22%20fill-rule%3D%22evenodd%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+      background-position: center center;
+      background-repeat: no-repeat;
+      bottom: 0;
+      content: "";
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: $dimentions;
+      z-index: 0;
+    }
+
+    // Hover
+    &:hover {
+      color: $black;
+      cursor: pointer;
+
+      &::after {
+        background-color: currentColor;
+      }
+    }
+  }
+
+  // Slelect
+  &__select-menu {
+    background-color: $white;
+    border-bottom: solid 1px red;
+    border-left: solid 1px red;
+    border-right: solid 1px red;
+    display: none;
+    left: -1px;
+    position: absolute;
+    top: $dimentions;
+    width: calc(100% - #{$dimentions} + 2px);
+  }
+
+  // Item
+  &__item {
+    @include set-font-size(1.4rem, 1.4rem, 1.4rem);
+    //border-top: solid 1px red;
+    padding: $spacing--tiny 0;
+    padding: $spacing--tiny;
+
+    &:nth-child(even) {
+      background-color: lighten(grey, 15%);
+    }
+  }
+}
+
+/**
+* Active state
+*/
+.c-filter__container {
+  margin-bottom: $spacing--x-small;
+
+  @include breakpoint($medium) {
+    margin-bottom: 0;
+  }
+
+  &.is-open {
+    // Title
+    .c-filter__title {
+      background-color: lighten(grey, 15%);
+      color: $black;
+
+      &::after {
+        background-color: red;
+        transform: rotate(180deg);
+      }
+    }
+
+    // Dropdown items
+    .c-filter__select-menu {
+      display: block;
+      z-index: 2;
+    }
+
+    // Items
+    .c-filter__item {
+      color: $black;
+
+      &:hover {
+        background-color: lighten(red, 40%);
+      }
+    }
+  }
+}

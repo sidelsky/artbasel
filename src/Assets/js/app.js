@@ -21,6 +21,7 @@ import "./components/multiple-inquire-forms";
 import "./components/scroll-to-navigation";
 import "./components/highlight-scrolltonav";
 import "./components/kuula";
+import "./components/filter-select";
 //import "./components/noframework.waypoints";
 //import "./components/rellax";
 import "./components/magnifing-glass-carousel";

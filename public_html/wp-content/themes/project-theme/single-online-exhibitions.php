@@ -2,13 +2,71 @@
 
 use App\Helper\Render;
 use Theme\Model\LayoutVr;
+use Theme\Model\ViewingRoom;
 
 $render = new Render;
 $layout = new LayoutVr;
+$viewingRoom = new ViewingRoom;
 
 $allLayouts = $layout->getLayout();
 
 include("header.php"); 
+
+/**
+ * Title break with filters
+ */
+$template = 'c-title-break';
+$data = $viewingRoom->getData();
+$args = [
+	'altFontClass' => false,
+	'title' => 'Artworks',
+	'showControls' => false
+];
+echo $render->view('Components/' . $template, $data, $args);
+
+/**
+* Couse filters
+*/
+echo '<div class="c-filter">';
+	echo '<div class="l-lost-grid">';
+			// Artist name filter
+			 echo '<div class="l-lost-column--six-twelfths c-filter__container filters" data-filter-select >';
+            echo '<div class="c-filter__title"><span>Artist</span>';
+					 echo '<ul tabindex="0" class="button-group c-filter__select-menu" data-filter-group="bob">';
+						 
+						foreach($allLayouts as $value) {
+
+							$contents = $value['works_content'];
+
+							foreach($contents as $content) {
+								echo '<li data-filter=".' . $content->post_title . '" class="c-filter__item item">' . $content->post_title . '</li>';
+							}
+						}
+                echo '</ul>';
+            echo '</div>';
+		  echo '</div>';
+
+			// Medium filter
+			 echo '<div class="l-lost-column--six-twelfths c-filter__container filters" data-filter-select >';
+            echo '<div class="c-filter__title"><span>Medium</span>';
+					 echo '<ul tabindex="0" class="button-group c-filter__select-menu" data-filter-group="bob">';
+						
+					 	$field = get_field_object('field_5f59ebf6d4758');		
+						$values = $field['choices'];
+
+						foreach( $values as $value ):
+							$valueToLower = strtolower( $value );
+							$key = str_replace(" ", "-", $valueToLower);
+							echo '<li data-filter=".' . $key . '" class="c-filter__item item">' . $value . '</li>';
+						endforeach;
+
+                echo '</ul>';
+            echo '</div>';
+		  echo '</div>';
+		  
+	echo '</div>';
+echo '</div>';
+
 
 $term_id = get_field('collection');
 $args =[
@@ -276,6 +334,8 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 
 	</section>
 <?php endif; ?>
+
+
 
 
 <?php

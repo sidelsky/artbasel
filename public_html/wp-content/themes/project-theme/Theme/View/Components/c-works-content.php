@@ -4,9 +4,14 @@
 			<div class="c-works">
 				<div class="c-works__list">
 
-            <?php $postContent = $data['works_content']; ?>
+				<?php
+					$postContent = $data['works_content']; 
+					
+					// Shuffle content random
+					shuffle($postContent);
 
-            <?php foreach( $postContent  as $content ) :
+					foreach( $postContent as $content ) :
+
                   $key = get_the_id($content->ID);
                   $title = get_the_title($content->ID);
                   $link = get_the_permalink($content->ID);
@@ -17,7 +22,7 @@
                   $date = get_field('date', $content->ID);
                   $description = get_field('description', $content->ID);
                   $medium = get_field('medium', $content->ID);
-                  $mediumText = get_field('medium_free_text', $content->ID);
+                  //$mediumText = get_field('medium_free_text', $content->ID);
                   $decade = get_field('decade', $content->ID);
                   $dimensions = get_field('dimensions', $content->ID);
                   $price = get_field('price', $content->ID);
@@ -27,7 +32,7 @@
                   $creditLine = get_field('credit_line', $content->ID);
                   $hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
                ?>
-            <article class="c-works__card">
+            	<article class="c-works__card">
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">
@@ -35,10 +40,18 @@
 						</figure> 
 						<a href="<?= $link; ?>">
 							<h2 class="c-works__title"><?= $title; ?></h2>
+							<?= $surname ?> / 
+							<?= $medium ?>
 						</a>
-						<div class="c-works__name"><?= $fullName ?></div>
-						<div class="c-works__date"><?= $date ?></div>
-						<div class="c-works__medium"><?= $mediumText ?></div>
+						<?php if( $fullName ) { ?>
+							<div class="c-works__name"><?= $fullName ?></div>
+						<?php } ?>
+						<?php if( $fullName ) { ?>
+							<div class="c-works__date"><?= $date ?></div>
+						<?php } ?>
+						<?php if( $fullName ) { ?>
+							<div class="c-works__medium"><?= $mediumText ?></div>
+						<?php } ?>
 						
 						<?php if($sold === 'available') : ?>
 							<div class="c-works__price"><span><?= $price ?></span></div>

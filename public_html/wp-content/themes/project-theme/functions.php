@@ -29,28 +29,21 @@ add_theme_support( 'post-thumbnails' );
     }
 
     //Custom taxonomies
- 
     //Set all of the taxonomies
     function customTaxonomies() {
- 
         $ad_type = create_custom_taxonomy(
- 
-            $args = array(
+            $args = [
                 'name' => 'Collection',
                 'singular_name' => 'Collection',
                 'slug' => 'collection'
-            )
- 
+            ]
         );
- 
         $custom_posts = array(
             'post_name' => 'works'
         );
- 
         register_taxonomy($args['slug'], $custom_posts['post_name'], $ad_type['args']);
- 
- 
     }
+    
     add_action('init', 'customTaxonomies');
 
     //Taxonomies
