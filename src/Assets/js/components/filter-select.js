@@ -1,41 +1,22 @@
-/**
- * Table data
- */
+/** Filters - select style */
+const selects = [...document.querySelectorAll("[data-id='filter-select']")];
+const selectsLength = selects.length;
 
-//var cssClasses = require("./config").cssClasses;
+const groups = [...document.querySelectorAll("[data-id='group']")];
 
-// var FilterSelect = function FilterSelect($elem) {
-//   this.$elem = $elem;
-//   //this.$open = cssClasses.isOpen;
-//   this.$title = $(".c-filter__title span", this.$elem);
-//   this.$menu = $(".c-filter__select-menu", this.$elem);
-//   this.$item = $(".c-filter__item", this.$elem);
+for (let index = 0; index < selectsLength; index++) {
+  const select = selects[index];
+  const group = groups[index];
 
-//   this._attachHandlers();
-// };
+  select.addEventListener("click", () => {
+    if (group.style.display === "block") {
+      group.style.display = "none";
+    } else {
+      group.style.display = "block";
+    }
+  });
 
-// /*  Attach handler event
-//  -----------------------------------*/
-// FilterSelect.prototype._attachHandlers = function($elem) {
-//   var _this = this;
-
-//   _this.$title.on("click", function() {
-//     _this.$elem.toggleClass("is-open");
-//   });
-
-//   _this.$item.on("click", function() {
-//     var $itemContent = $(this).text();
-//     _this.$title.text($itemContent);
-//     _this.$elem.toggleClass("is-open");
-//   });
-
-//   _this.$menu.on("mouseleave", function() {
-//     if (_this.$elem.hasClass("is-open")) {
-//       _this.$elem.toggleClass("is-open");
-//     }
-//   });
-// };
-
-// /*  Returns a constructor
-//  -----------------------------------*/
-// module.exports = FilterSelect;
+  group.addEventListener("mouseleave", () => {
+    group.style.display = "none";
+  });
+}
