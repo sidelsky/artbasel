@@ -41,11 +41,6 @@ $parallaxVideo = get_field('parallax_video');
 
 $speed = 1;
 
-// echo $top_spacing_phone;
-// echo $top_spacing_tablet;
-// echo $top_spacing_desktop;
-// echo $top_spacing_desktop_large;
-
 ?>
 
 <style>
@@ -226,11 +221,12 @@ if( $parallaxVideo ): ?>
 		$show_inquire_button = get_sub_field('show_inquire_button');
 		$show_magnifying_glass = get_sub_field('show_magnifying_glass');
 
-		 // Case: Paragraph layout.
+		 /**
+		  * Magnify carousel
+		  */
         if( get_row_layout() == 'magnify_carousel' ):
             $rows = get_sub_field('magnify_carousel_item');
-				// Do something...
-				
+
 				echo '<section class="u-section u-l-vertical-padding--margin-40">';
 					echo '<div class="u-l-container ala">';
 
@@ -273,7 +269,6 @@ if( $parallaxVideo ): ?>
 
 									$vimeo_iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $vimeo_iframe);
 									
-
 									// Check if magnifying glass is active
 									if ( $show_magnifying_glass ) {
 										$zoom = 'zoom';
@@ -311,10 +306,11 @@ if( $parallaxVideo ): ?>
 					echo '</div>';
 				echo '</section>';
 
-			// Case: Download layout.
+			/**
+			 * Case: Blockquote. 
+			 */
 			elseif( get_row_layout() == 'blockquote' ): 
 				$blockquote = get_sub_field('blockquote');
-				// Do something...
 
 				echo '<section class="u-section u-l-vertical-padding--margin-40 c-parallax-hero__blockquote">';
 					echo '<div class="u-l-container u-l-horizontal-padding">';
@@ -325,25 +321,74 @@ if( $parallaxVideo ): ?>
 				echo '</section>';
 
 
-			// Case: Text content.
+			/**
+			 * Case: Image content.
+			 */
 			elseif( get_row_layout() == 'image_content' ): 
-				$image_content = get_sub_field('image_content');
-				//Do something...
+				$carousel = get_sub_field('carousel');
+				$imageContent = get_sub_field('image_content');
+				$videoContent = get_sub_field('video_content');
+				$portraitVideo = get_sub_field('portrait_video');
+				$iframe = get_sub_field('iframe');
 
-					echo '<div class="l-content__block l-content__block--image-content l-content__block--wide-image">';
-						echo '<div class="canvas l-content__block--center">';
-							echo '<figure role="img" aria-label="' . esc_attr( $image_content['alt'] ) . '" class="c-video-player__cover-image" style="background-image: url(' . $image_content['url'] . ')"></figure>';
-						echo '</div>';
+				echo '<div class="l-content__block l-content__block--image-content l-content__block--wide-image">';
+					echo '<div class="canvas l-content__block--center">';
+
+					/**
+					 * If there is a Carousel
+						*/
+					if( $carousel ) { ?>
+						<button class="fullscreenBtn carouselViewButton target" data-id="fullScreenBtn" title="Fullscreen"></button>
+						<button class="closefullscreenBtn carouselViewButton target" data-id="closefullscreenBtn" title="Exit fullscreen"></button>
+						<div class="owl-carousel owl-image-content-carousel" >
+							<?php foreach( $carousel as $image) { ?> 
+								<figure class="jq-zoom zoom-image" data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" style="background-image: url('<?= $image['sizes']['large'] ?>')">
+									<img style="display:none;" src='<?= $image['sizes']['large'] ?>' alt='<?= esc_attr( $image['alt'] ); ?>'/>
+								</figure>
+							<?php } ?>
+						</div>         
+					<?php } ?>
+
+					<?php
+				   /**
+					 * If no video content OR Carousel show a static image
+					 */
+					if( $imageContent['url'] && !$videoContent && !$carousel ) {
+						echo '<figure role="img" aria-label="' . esc_attr( $imageContent['alt'] ) . '" class="c-video-player__cover-image" style="background-image: url(' . $imageContent['url'] . ')"></figure>';
+					}
+					?>
+
+					<?php 
+					/**
+					 * If video content show cover image, play button and video
+					 */
+					if( $videoContent ) : ?>
+						<button class="c-video-player__button" data-id='playBtn'>
+							<svg class="c-video-player__play-icon">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
+							</svg>
+						</button>
+						<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $imageContent['alt'] ); ?>" style="background-image: url('<?= $imageContent['url'] ?>')" data-id='cover'></figure>	
+						<div data-id="vimeo-content" class="u-video-aspect-ratio <?= $videoContent ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
+							<?= $videoContent ?>
+						</div>
+					<?php endif; ?>
+
+					<?php
 					echo '</div>';
+				echo '</div>';
+				?>
 
-				// Case: Text content.
+				<?php
+				/**
+				 * Case: Text content
+				 */
 				elseif( get_row_layout() == 'text_content' ): 
 					$text_content_title = get_sub_field('text_content_title');
 					$text_content_copy = get_sub_field('text_content_copy');
 					$text_content_link = get_sub_field('text_content_link')['url'];
 					$text_content_target = get_sub_field('text_content_link')['target'];
 					$text_content_link_title = get_sub_field('text_content_link_title');
-					// Do something...
 
 					echo '<article class="l-content__block l-content__block__text-content l-content__block--wide-text">';
 						echo '<div class="canvas l-content__block--center l-content__block__text-content">';
@@ -354,7 +399,7 @@ if( $parallaxVideo ): ?>
 
 								if( $text_content_link_title || $text_content_link ) {
 								echo '<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">';
-               				echo '<a href="' . $text_content_link . '" target="' . $text_content_target . '" class="c-works__href">' . $text_content_link_title . '</a>';
+									echo '<a href="' . $text_content_link . '" target="' . $text_content_target . '" class="c-works__href">' . $text_content_link_title . '</a>';
 
 										echo ' <svg class="u-icon c-works__icon">';
 											echo '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-black" viewBox="0 0 32 32"></use>';
@@ -367,33 +412,31 @@ if( $parallaxVideo ): ?>
 						echo '</div>';
 					echo '</article>';
 
-        endif;
+			endif;
 
-		// End loop.
-		endwhile;
+			// End loop.
+			endwhile;
 
-	endif;
-	?>
+		endif;
+		?>
 
 </section>
 
 <?php
-		/**
-		 * Inquire form
-		 */
-			$template = 'c-inquire-form';
-			$data = $inquireForm->getInquireForm();
-			//args can overwrite $data
-			$args = [ 
-				'id' => 7,
-				'title' => false,
-				'description' => false,
-				'ajax' => true
-				];
-			echo $render->view('Components/' . $template, $data, $args);
-		?>
-
-
+/**
+ * Inquire form
+ */
+	$template = 'c-inquire-form';
+	$data = $inquireForm->getInquireForm();
+	//args can overwrite $data
+	$args = [ 
+		'id' => 7,
+		'title' => false,
+		'description' => false,
+		'ajax' => true
+		];
+	echo $render->view('Components/' . $template, $data, $args);
+?>
 
 <?php 
 /**

@@ -4,7 +4,7 @@
       <?php 
       /**
        * If iFrame
-         */
+      */
       if( $data['iframe'] ) { ?>
          <div data-id="vimeo-content" class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
           <?= $data['iframe'] ?>
