@@ -401,6 +401,53 @@ if( $parallaxVideo ): ?>
 					echo '</section>';
 					?>
 
+
+				<?php
+				/**
+				 * Case: Wider text content. 
+				 */
+				elseif( get_row_layout() == 'full_width_image' ):
+					$fullWidthImage = get_sub_field('full_width_image');
+					$fullWidthImageTitle = get_sub_field('full_width_image_title');
+					$fullWidthImageLinkTitle = get_sub_field('full_width_image_link_title');
+					$fullWidthImageLink = get_sub_field('full_width_image_link')['url'];
+					?>
+				<section class="u-section u-l-vertical-padding--medium40">
+					<div class="u-l-container--full-width">
+						<figure role="img" aria-label="<?= esc_attr( $fullWidthImage['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $fullWidthImage['url'] ?>');">
+						
+						<?php if( $fullWidthImageTitle || $fullWidthImageLink ) { ?>
+							<div class="c-full-width-image-container">
+									
+									<?php if( $fullWidthImageTitle ) { ?>
+										<h2 class="c-full-width-image-title <?= $fullWidthImageLink ? 'c-full-width-image-title--margin-bottom' : '' ?>"><?= $fullWidthImageTitle ?></h2>
+									<?php } ?>
+									
+									<?php if( $fullWidthImageLink ) { ?>
+										<div class="c-works__href-wrap c-works__href-wrap--center">
+											<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">
+												<a href="<?= $fullWidthImageLink ?>" class="c-works__href c-works__href--no-arrow"><?= $fullWidthImageLinkTitle  ? $fullWidthImageLinkTitle  : 'Explore now' ?></a> 
+											</span>
+										</div>
+									<?php } ?>
+
+							</div>
+							<div class="c-full-width-image-shading"></div>
+						<?php } ?>
+
+					</figure>
+
+					<?php
+					/**
+					 * If caption
+					 */
+					if($fullWidthImage['caption']) {?>
+						<figcaption class="caption"><?= esc_attr( $fullWidthImage['caption'] ); ?></figcaption>
+					<?php } ?>
+					
+				</div>
+				</section>
+
 				<?php
 				/**
 				 * Case: Text content
