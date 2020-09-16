@@ -1,5 +1,4 @@
 <?php if( $data['widerTextContent'] ) : ?>
-
 	<section class="u-section u-l-vertical-padding--margin-40">
 		<div class="u-l-container<?= $args['alignLeft'] ? '--1150' : '--shallow'?> u-l-horizontal-padding--medium l-content__block__text-content--wide <?= $args['alignLeft'] ? 'u-l-container--no-margin' : ''?>">  
             <div class="l-content__block__text-content l-content__block__body-text">
@@ -10,6 +9,4 @@
             </div>
 		</div>
    </section>
-
 <?php endif; ?>
-

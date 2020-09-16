@@ -94,6 +94,14 @@
 body.online-exhibitions-template-parallax-template {
   .ala {
     max-width: 1000px;
+
+    @include media(">desktop") {
+      max-width: 1024px;
+    }
+
+    @include media(">desktop-large") {
+      max-width: 1350px;
+    }
   }
 }
 
@@ -108,6 +116,7 @@ body.online-exhibitions-template-parallax-template {
     right: 0;
     &__image {
       object-fit: cover;
+      height: auto !important;
     }
   }
 }

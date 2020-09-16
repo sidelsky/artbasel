@@ -306,6 +306,7 @@ if( $parallaxVideo ): ?>
 					echo '</div>';
 				echo '</section>';
 
+
 			/**
 			 * Case: Blockquote. 
 			 */
@@ -378,6 +379,27 @@ if( $parallaxVideo ): ?>
 					echo '</div>';
 				echo '</div>';
 				?>
+
+
+				<?php
+				/**
+				 * Case: Wider text content. 
+				 */
+				elseif( get_row_layout() == 'wider_text_content' ):
+					$widerTextTitle = get_sub_field('wider_text_title');
+					$widerTextContent = get_sub_field('wider_text_content');
+
+					echo '<section class="u-section u-l-vertical-padding--margin-40">';
+						echo '<div class="u-l-container--shallow u-l-horizontal-padding--medium l-content__block__text-content--wide">';
+								echo '<div class="l-content__block__text-content l-content__block__body-text">';
+									if( $widerTextTitle) { 
+										echo '<h2 class="l-content__block__title">' . $widerTextTitle .'</h2>';
+									} 
+									echo $widerTextContent;
+								echo '</div>';
+						echo '</div>';
+					echo '</section>';
+					?>
 
 				<?php
 				/**
