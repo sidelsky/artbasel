@@ -1,6 +1,6 @@
 let Rellax = require("rellax");
 
-var rellax = new Rellax(".rellax", {
+var Rellax = new Rellax(".rellax", {
   speed: 2,
   center: false,
   wrapper: null,

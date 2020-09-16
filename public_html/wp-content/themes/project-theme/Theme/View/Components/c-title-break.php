@@ -37,19 +37,26 @@ if( $data['titleBreakTitle'] ) : ?>
 		 * Show filters
 		 **/
 		if( $args['filters'] ) : ?>
-			<div class="c-online-exhibitions__btn-container c-filter__wrap">
-				<!-- Artist name filter -->
-				<div class="c-filter__container filters" data-id="filter-select" >
-					<div class="c-filter__title"><span>Artist</span>
-						<ul tabindex="0" class="button-group c-filter__select-menu" data-id="group">
+			<div class="c-online-exhibitions__btn-container c-filter__wrap filters"">
+				
+			<!-- Artist name filter -->
+				<div class="c-filter__container" data-filter-select >
+					<div class="c-filter__title"><span class="c-filter__title__span">Artist</span>
+						<ul tabindex="0" class="button-group c-filter__select-menu" data-filter-group="artist">
 							<?php
+							echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
 								foreach($allLayouts as $value) {
-									$contents = $value['works_content'];
+									$contents = $value['works_content'];	
+
 									foreach($contents as $content) {
-										$valueToLower = strtolower( $content->post_title );
+										
+										$surname = get_field('surname', $content->ID);
+										$fullName = get_field('full_name', $content->ID);
+										
+										$valueToLower = strtolower( $surname );
 										$key = str_replace(" ", "-", $valueToLower);
 										$keyStrp = str_replace(",", "", $key);
-										echo '<li data-filter=".' . $keyStrp . '" class="c-filter__item">' . $content->post_title . '</li>';
+										echo '<li data-filter=".' . $keyStrp . '" class="c-filter__item item">' . $fullName . '</li>';
 									}
 								} 
 							?>
@@ -58,29 +65,40 @@ if( $data['titleBreakTitle'] ) : ?>
 				</div>
 
 				<!-- Medium filter -->
-				<div class="c-filter__container filters" data-id="filter-select" >
-					<div class="c-filter__title"><span>Medium</span>
-						<ul tabindex="0" class="button-group c-filter__select-menu" data-id="group">
+				<div class="c-filter__container" data-filter-select >
+					<div class="c-filter__title"><span class="c-filter__title__span">Medium</span>
+						<ul tabindex="0" class="button-group c-filter__select-menu" data-filter-group="medium">
 							<?php
 								$field = get_field_object('field_5f59ebf6d4758');		
 								$values = $field['choices'];
-								foreach( $values as $value ):
+
+								ksort($values);
+
+								foreach( $values as $key => $value ):
 									$valueToLower = strtolower( $value );
 									$key = str_replace(" ", "-", $valueToLower);
-									echo '<li data-filter=".' . $key . '" class="c-filter__item">' . $value . '</li>';
+									echo '<li data-filter=".' . $key . '" class="c-filter__item item">' . $value . '</li>';
 								endforeach;
 							?>
 						</ul>
 					</div>
 				</div>
 
-
 				<!-- Sort filter -->
-				<div class="c-filter__container filters" data-filter-select >
-					<div class="c-filter__title c-filter__title--sort">
-						<span>Sort A - Z</span>
+				<div class="c-filter__container" data-filter-select >
+					<div id="sorts" class="c-filter__title c-filter__title--sort" data-filter-group="a-z">
+						<span class="sort c-filter__title__span c-filter__sort--a-z" data-sort-value="name" data-sort-direction="asc">Sort A - Z</span>
+    					<span class="sort c-filter__title__span c-filter__sort--z-a" data-sort-value="name" data-sort-direction="desc">Sort Z - A</span>
 					</div>
 				</div>
+
+				<!-- Sort filter -->
+				<div class="c-filter__container">
+					<div class="c-filter__title">
+						<span class="button--reset c-filter__container--clear c-filter__reset">Clear filters</span>
+					</div>
+				</div>
+
 
 			</div>
 		<?php endif; ?> 	

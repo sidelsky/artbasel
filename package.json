@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "The package json that defines the build tools for the WordPress Starter repo",
     "dependencies": {
+        "isotope-layout": "^3.0.6",
         "jquery": "^3.4.1",
         "jquery-zoom": "^1.7.21",
         "lodash": "^4.17.11",

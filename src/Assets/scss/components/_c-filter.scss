@@ -21,7 +21,7 @@ $dimentions: 42px;
     transition: all 0.2s ease;
     text-transform: capitalize;
 
-    span {
+    &__span {
       transition: all 0.2s ease-in-out;
       bottom: 0;
       display: block;
@@ -48,7 +48,7 @@ $dimentions: 42px;
       width: $dimentions;
       z-index: 0;
       opacity: 0.7;
-      transition: all 0.2s ease-in-out;
+      //transition: all 0.2s ease-in-out;
     }
 
     // Hover
@@ -116,7 +116,7 @@ $dimentions: 42px;
 
   &__container {
     margin-bottom: $spacing--x-small;
-    lost-column: 4/12 flex 10px;
+    lost-column: 3/12 flex 10px;
 
     @include breakpoint($medium) {
       margin-bottom: 0;
@@ -144,9 +144,51 @@ $dimentions: 42px;
         color: $black;
 
         &:hover {
-          background-color: red;
+          background-color: palette(greys, xx-light);
         }
       }
+    }
+
+    &--clear {
+      //display: none;
+    }
+  }
+}
+
+.c-filter__reset {
+  text-decoration: underline;
+  color: $black;
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: font-family(nt-primary, regular);
+  @include set-font-size(1.3rem, 1.3rem, 1.3rem, 1.3rem);
+  cursor: pointer;
+  outline: inherit;
+  line-height: 3.6;
+  text-align: center;
+}
+
+.c-filter__sort {
+  &--a-z {
+  }
+  &--z-a {
+    display: none;
+  }
+}
+
+.is-open {
+  .c-filter__title--sort {
+    &:after {
+      background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ3NCIgdmlld0JveD0iMCAwIDQ4NiA0NzQiIHdpZHRoPSI0ODYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTk0LjMgNDYwLjljMCA2LjggNS41IDEyLjMgMTIuMyAxMi4zczEyLjMtNS41IDEyLjMtMTIuM3YtNDE4LjhsNzMuNiA3My42YzIuNCAyLjQgNS41IDMuNiA4LjcgMy42czYuMy0xLjIgOC43LTMuNmM0LjgtNC44IDQuOC0xMi41IDAtMTcuM2wtOTQuNS05NC41Yy00LjYtNC42LTEyLjctNC42LTE3LjMgMGwtOTQuNSA5NC41Yy00LjggNC44LTQuOCAxMi41IDAgMTcuM3MxMi41IDQuOCAxNy4zIDBsNzMuNi03My42djQxOC44eiIvPjxwYXRoIGQ9Im00ODEuOSAzNTcuN2MtNC44LTQuOC0xMi41LTQuOC0xNy4zIDBsLTczLjYgNzMuNnYtNDE4LjhjMC02LjgtNS41LTEyLjMtMTIuMy0xMi4zcy0xMi4zIDUuNS0xMi4zIDEyLjN2NDE4LjhsLTczLjUtNzMuNmMtNC44LTQuOC0xMi41LTQuOC0xNy4zIDBzLTQuOCAxMi41IDAgMTcuM2w5NC41IDk0LjVjMi40IDIuNCA1LjUgMy42IDguNyAzLjZzNi4zLTEuMiA4LjctMy42bDk0LjUtOTQuNWM0LjYtNC43IDQuNi0xMi41LS4xLTE3LjN6Ii8+PC9nPjwvc3ZnPg==");
+    }
+  }
+  .c-filter__sort {
+    &--a-z {
+      display: none;
+    }
+    &--z-a {
+      display: block;
     }
   }
 }

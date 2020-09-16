@@ -2,7 +2,7 @@
 	<div class="u-l-container--center">
 		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 			<div class="c-works">
-				<div class="c-works__list">
+				<div class="c-works__list" data-isotope >
 
 				<?php
 					$postContent = $data['works_content']; 
@@ -30,9 +30,13 @@
                   $sold = get_field('sold', $content->ID);
                   $ids = get_field('code_id', $content->ID);
                   $creditLine = get_field('credit_line', $content->ID);
-                  $hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
-               ?>
-            	<article class="c-works__card">
+						$hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
+
+						$surnameToLower = strtolower( $surname );
+
+					?>
+            	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surname ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
+					<!-- <span class="name"><?= $surnameToLower ?></span> -->
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">
@@ -40,11 +44,9 @@
 						</figure> 
 						<a href="<?= $link; ?>">
 							<h2 class="c-works__title"><?= $title; ?></h2>
-							<?= $surname ?> / 
-							<?= $medium ?>
 						</a>
 						<?php if( $fullName ) { ?>
-							<div class="c-works__name"><?= $fullName ?></div>
+							<!-- <div class="c-works__name"><?= $fullName ?></div> -->
 						<?php } ?>
 						<?php if( $fullName ) { ?>
 							<div class="c-works__date"><?= $date ?></div>

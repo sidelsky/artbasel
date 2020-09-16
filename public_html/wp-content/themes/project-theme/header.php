@@ -32,7 +32,7 @@ $wordpress = new WordpressHelper;
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-T2P7DZ2');</script>
 		<!-- End Google Tag Manager -->
-
+		
 		<script src="https://player.vimeo.com/api/player.js"></script>
 		
 		<?php wp_head(); ?>

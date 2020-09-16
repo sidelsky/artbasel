@@ -21,9 +21,21 @@ import "./components/multiple-inquire-forms";
 import "./components/scroll-to-navigation";
 import "./components/highlight-scrolltonav";
 import "./components/kuula";
-import "./components/filter-select";
+import "./components/isotope-filter";
+
 //import "./components/noframework.waypoints";
 //import "./components/rellax";
 import "./components/magnifing-glass-carousel";
 import Hamburger from "./components/hamburger";
 new Hamburger();
+
+/*------------------------------------*\
+	Filter select
+\*------------------------------------*/
+var $filterSelect = $("[data-filter-select]");
+if ($filterSelect.length) {
+  var FilterSelect = require("./components/filter-select");
+  $filterSelect.each(function(i, elem) {
+    new FilterSelect($(elem));
+  });
+}
