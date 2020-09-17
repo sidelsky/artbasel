@@ -3,6 +3,7 @@ namespace Theme\Model;
 
 use App\WordPress\WordPress;
 use \WP_Query;
+use Theme\Model\TitleBreak;
 use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
 use Theme\Model\WorksContent;
@@ -24,6 +25,12 @@ class LayoutVr {
          
          //Add another module here
          switch ($layoutName) {
+
+            //Get Text content
+            case 'title_break':
+               $titleBreak = new TitleBreak($layout);
+               $currentLayout = $titleBreak->getTitleBreak();
+				break;
 
             //Get Text content
             case 'text_content':

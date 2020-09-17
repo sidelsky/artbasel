@@ -20,6 +20,9 @@ var $grid = new Isotope("[data-isotope]", {
 // store filter for each group
 var filters = {};
 
+var $resetBtn = $(".c-filter__container--clear");
+//$resetBtn.hide();
+
 /**
  * Filter
  */
@@ -40,7 +43,7 @@ $(".filters").on("click", ".item", function(event) {
     filter: filterValue,
   });
 
-  $(".c-filter__container--clear").show();
+  $resetBtn.show();
 });
 
 /**

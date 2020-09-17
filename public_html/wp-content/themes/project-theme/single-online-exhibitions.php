@@ -291,6 +291,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 		/**
 		 * Title break with filters
 		 */
+		/*
 		$template = 'c-title-break';
 		$data = $viewingRoom->getData();
 		$args = [
@@ -300,11 +301,24 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 			'showControls' => false,
 			'backgroundColor' => 'f8f8f8'
 		];
-		//echo $render->view('Components/' . $template, $data, $args);
+		echo $render->view('Components/' . $template, $data, $args);
+		*/
 
 		foreach($allLayouts as $index => $value) {
 
 				switch ($value['layoutName']) {
+
+					//Get Title break
+				case 'title_break':
+						$templateName = 'c-title-break';
+						$args = [
+							'altFontClass' => false,
+							'showControls' => false,
+							//'title' => 'Artworks',
+							// 'filters' => true,
+							// 'backgroundColor' => 'f8f8f8'
+						];
+					break;
 					
 					// Get Text content
 					case 'text_content':

@@ -109,14 +109,15 @@ $dimentions: 42px;
 
   &__wrap {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    width: 600px;
+    justify-content: flex-end;
+    padding: 0 !important;
   }
 
   &__container {
     margin-bottom: $spacing--x-small;
-    lost-column: 3/12 flex 10px;
+    //lost-column: 3/12 flex 10px;
+    min-width: 160px;
+    margin-right: 10px;
 
     @include breakpoint($medium) {
       margin-bottom: 0;
@@ -125,7 +126,6 @@ $dimentions: 42px;
     &.is-open {
       // Title
       .c-filter__title {
-        //background-color: palette(greys, x-light);
         color: $black;
 
         &::after {
@@ -159,6 +159,7 @@ $dimentions: 42px;
   text-decoration: underline;
   color: $black;
   background: none;
+  display: none;
   border: none;
   padding: 0;
   font-family: font-family(nt-primary, regular);
@@ -192,3 +193,9 @@ $dimentions: 42px;
     }
   }
 }
+
+// .stickyTb {
+//   position: sticky !important;
+//   top: 48px !important;
+//   z-index: 100;
+// }

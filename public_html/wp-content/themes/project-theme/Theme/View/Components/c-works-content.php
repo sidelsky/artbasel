@@ -36,7 +36,7 @@
 
 					?>
             	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surname ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
-					<!-- <span class="name"><?= $surnameToLower ?></span> -->
+					<span class="name"><?= $surnameToLower ?></span>
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">
