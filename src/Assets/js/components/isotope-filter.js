@@ -1,10 +1,24 @@
-// external js: isotope.pkgd.js
-
-//var Isotope = require("isotope-layout");
-
 var Isotope = require("isotope-layout");
 
-var $grid = new Isotope("[data-isotope]", {
+// const grids = [...document.querySelectorAll("[data-isotope]")];
+// const gridsLength = grids.length;
+// console.log(gridsLength);
+
+// document.addEventListener('click', function(event) {
+//     if (event.target.id == 'my-id') {
+//       callback();
+//     }
+// });
+// function callback(){
+//    ...handler code here
+// }
+
+// for (let index = 0; index < gridsLength; index++) {
+//   const grid = grids[index];
+//   console.log(grid);
+// }
+
+var grid = new Isotope("[data-isotope]", {
   itemSelector: ".filter-item",
   layoutMode: "fitRows",
   getSortData: {
@@ -12,10 +26,26 @@ var $grid = new Isotope("[data-isotope]", {
   },
 });
 
-// init Isotope
-// var $grid = $(".gridz").isotope({
-//   itemSelector: ".color-shape",
-// });
+function isMobile() {
+  return (
+    navigator.userAgent.match(/Android/i) ||
+    navigator.userAgent.match(/webOS/i) ||
+    navigator.userAgent.match(/iPhone/i) ||
+    navigator.userAgent.match(/iPod/i) ||
+    navigator.userAgent.match(/iPad/i) ||
+    navigator.userAgent.match(/BlackBerry/)
+  );
+}
+
+// Function to check if filters have some results
+function checkResults() {
+  var visibleItemsCount = grid.filteredItems.length;
+  if (visibleItemsCount > 0) {
+    $(".c-filters__no-results").hide();
+  } else {
+    $(".c-filters__no-results").show();
+  }
+}
 
 // store filter for each group
 var filters = {};
@@ -39,11 +69,15 @@ $(".filters").on("click", ".item", function(event) {
   var filterValue = concatValues(filters);
 
   // set filter for Isotope
-  $grid.arrange({
+  grid.arrange({
     filter: filterValue,
   });
 
-  $resetBtn.show();
+  checkResults();
+
+  // if (!isMobile() && $(window).width() > 768) {
+  //   //$resetBtn.show();
+  // }
 });
 
 /**
@@ -60,11 +94,14 @@ $("#sorts").on("click", "span", function() {
   sortDirection = sortDirection == "asc";
 
   /* pass it to isotope */
-  $grid.arrange({
+  grid.arrange({
     sortBy: sortValue,
     sortAscending: sortDirection,
   });
-  $(".c-filter__container--clear").show();
+  //$resetBtn.show();
+  if (!isMobile() && $(window).width() > 768) {
+    $resetBtn.show();
+  }
 });
 
 /**
@@ -73,10 +110,11 @@ $("#sorts").on("click", "span", function() {
 $(".button--reset").on("click", function() {
   // reset filters
   filters = {};
-  $grid.arrange({
+  grid.arrange({
     filter: "*",
   });
   $(".c-filter__container--clear").hide();
+  $(".c-filters__no-results").hide();
 });
 
 // flatten object by concatting values

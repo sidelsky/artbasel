@@ -283,26 +283,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 /**
  * Flexible Content Bulider
  */
-//if( !empty($renderContent) ) :
 ?>
+
 	<section class="l-content" id="top">
 		<?php
-
-		/**
-		 * Title break with filters
-		 */
-		/*
-		$template = 'c-title-break';
-		$data = $viewingRoom->getData();
-		$args = [
-			'altFontClass' => false,
-			'title' => 'Artworks',
-			'filters' => true,
-			'showControls' => false,
-			'backgroundColor' => 'f8f8f8'
-		];
-		echo $render->view('Components/' . $template, $data, $args);
-		*/
 
 		foreach($allLayouts as $index => $value) {
 
@@ -310,14 +294,11 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 
 					//Get Title break
 				case 'title_break':
-						$templateName = 'c-title-break';
-						$args = [
-							'altFontClass' => false,
-							'showControls' => false,
-							//'title' => 'Artworks',
-							// 'filters' => true,
-							// 'backgroundColor' => 'f8f8f8'
-						];
+					$args = [
+						'altFontClass' => false,
+						'showControls' => false,
+					];
+					$templateName = 'c-title-break';
 					break;
 					
 					// Get Text content

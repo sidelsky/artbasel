@@ -187,6 +187,13 @@ if( $parallaxVideo ): ?>
 
 <?php endif; ?>
 
+	<?php 
+	/**
+	 * Show email field at the Top
+	 */
+	if( get_field('show_artist_inquiry_email') == "top") {
+		include("partials/ma-email-sub-vr.php"); 
+	} ?>
 
 	<?php 
 	/**  
@@ -205,6 +212,8 @@ if( $parallaxVideo ): ?>
 		</section>
 
 	<?php } ?>
+
+	
 
 
 	<section class="l-content">
@@ -506,6 +515,14 @@ if( $parallaxVideo ): ?>
 		];
 	echo $render->view('Components/' . $template, $data, $args);
 ?>
+
+<?php 
+/**
+ * Show email field at the Bottom
+ */
+if( get_field('show_artist_inquiry_email') == "bottom") {
+	include("partials/ma-email-sub-vr.php"); 
+} ?>
 
 <?php 
 /**

@@ -759,6 +759,7 @@ button[disabled]:hover {
   right: 0;
   top: 0;
   width: 42px;
+  height: 42px;
   z-index: 0;
   opacity: 0.7;
 }
@@ -787,12 +788,30 @@ button[disabled]:hover {
   border-left: solid 1px #d5d4d4;
   border-right: solid 1px #d5d4d4;
   display: none;
-  left: -1px;
-  position: absolute;
-  z-index: 3;
   top: 42px;
-  width: 101%;
   color: #4c4c4c;
+  outline: none;
+  width: 100%;
+}
+
+.c-filter__select-menu li {
+  position: relative;
+}
+
+.c-filter__select-menu li:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .c-filter__select-menu {
+    width: 101%;
+    z-index: 3;
+    left: -1px;
+    position: absolute;
+  }
+  .c-filter__select-menu > li:not(:first-child) {
+    display: block;
+  }
 }
 
 .c-filter__item {
@@ -804,6 +823,7 @@ button[disabled]:hover {
   text-align: left;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  background-color: #f8f8f8;
 }
 
 @media (min-width: 376px) {
@@ -824,8 +844,16 @@ button[disabled]:hover {
   }
 }
 
-.c-filter__item:nth-child(odd) {
-  background-color: #f8f8f8;
+@media (min-width: 769px) {
+  .c-filter__item {
+    background-color: white;
+  }
+}
+
+@media (min-width: 769px) {
+  .c-filter__item:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
 }
 
 .c-filter__item:hover {
@@ -841,17 +869,50 @@ button[disabled]:hover {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 0 !important;
+  right: 2rem !important;
+}
+
+@media (min-width: 376px) {
+  .c-filter__wrap {
+    right: 3.5rem !important;
+  }
 }
 
 .c-filter__container {
-  margin-bottom: 1.5rem;
-  min-width: 160px;
-  margin-right: 10px;
+  margin-left: 10px;
+  display: block;
+  min-width: 100px;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 769px) {
+  .c-filter__container {
+    min-width: 160px;
+  }
+}
+
+@media (min-width: 769px) {
   .c-filter__container {
     margin-bottom: 0;
+  }
+}
+
+.c-filter__container--mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .c-filter__container--mobile {
+    display: block;
+  }
+}
+
+.c-filter__container--desktop {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .c-filter__container--desktop {
+    display: none;
   }
 }
 
@@ -867,6 +928,9 @@ button[disabled]:hover {
 .c-filter__container.is-open .c-filter__select-menu {
   display: block;
   z-index: 2;
+  max-height: 242px;
+  background-color: #fff;
+  overflow: scroll;
 }
 
 .c-filter__container.is-open .c-filter__item {
@@ -875,6 +939,10 @@ button[disabled]:hover {
 
 .c-filter__container.is-open .c-filter__item:hover {
   background-color: #e9e9e9;
+}
+
+.c-filter__container--mobile {
+  margin-left: 0px;
 }
 
 .c-filter__reset {
@@ -890,6 +958,7 @@ button[disabled]:hover {
   outline: inherit;
   line-height: 3.6;
   text-align: center;
+  margin-left: 10px;
 }
 
 @media (min-width: 376px) {
@@ -914,6 +983,10 @@ button[disabled]:hover {
   display: none;
 }
 
+.is-active .button-group {
+  display: block;
+}
+
 .is-open .c-filter__title--sort:after {
   background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjQ3NCIgdmlld0JveD0iMCAwIDQ4NiA0NzQiIHdpZHRoPSI0ODYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTk0LjMgNDYwLjljMCA2LjggNS41IDEyLjMgMTIuMyAxMi4zczEyLjMtNS41IDEyLjMtMTIuM3YtNDE4LjhsNzMuNiA3My42YzIuNCAyLjQgNS41IDMuNiA4LjcgMy42czYuMy0xLjIgOC43LTMuNmM0LjgtNC44IDQuOC0xMi41IDAtMTcuM2wtOTQuNS05NC41Yy00LjYtNC42LTEyLjctNC42LTE3LjMgMGwtOTQuNSA5NC41Yy00LjggNC44LTQuOCAxMi41IDAgMTcuM3MxMi41IDQuOCAxNy4zIDBsNzMuNi03My42djQxOC44eiIvPjxwYXRoIGQ9Im00ODEuOSAzNTcuN2MtNC44LTQuOC0xMi41LTQuOC0xNy4zIDBsLTczLjYgNzMuNnYtNDE4LjhjMC02LjgtNS41LTEyLjMtMTIuMy0xMi4zcy0xMi4zIDUuNS0xMi4zIDEyLjN2NDE4LjhsLTczLjUtNzMuNmMtNC44LTQuOC0xMi41LTQuOC0xNy4zIDBzLTQuOCAxMi41IDAgMTcuM2w5NC41IDk0LjVjMi40IDIuNCA1LjUgMy42IDguNyAzLjZzNi4zLTEuMiA4LjctMy42bDk0LjUtOTQuNWM0LjYtNC43IDQuNi0xMi41LS4xLTE3LjN6Ii8+PC9nPjwvc3ZnPg==");
 }
@@ -924,6 +997,33 @@ button[disabled]:hover {
 
 .is-open .c-filter__sort--z-a {
   display: block;
+}
+
+.c-filters__no-results {
+  display: none;
+}
+
+.stickyTb {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 45px !important;
+  z-index: 2;
+  background-color: #f8f8f8;
+}
+
+@media (min-width: 769px) {
+  .stickyTb {
+    margin-top: -40px !important;
+    top: 48px !important;
+  }
+}
+
+.mobile-filters {
+  display: none;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 130px;
+  z-index: 2;
 }
 
 .c-footer-content {

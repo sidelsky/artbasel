@@ -1,14 +1,133 @@
+<?php
+$showWorksFilters = $data['show_works_filters']; 
+$worksFilterTitle = $data['works_filter_title']; 
+?>
 <section class="u-section">
+	<?php 
+		if( $showWorksFilters ) : ?>
+			<section class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
+				<h3 class="l-content__title-break c-online-exhibitions__btn-title"><?= $worksFilterTitle ?></h3>
+				
+				<div class="c-online-exhibitions__btn-container c-filter__wrap filters">
+
+						<!-- Filter button — mobile only -->
+						<div class="c-filter__container c-filter__container--mobile show-filters-btn" data-filter-select >
+							<div class="c-filter__title"><span class="c-filter__title__span">Filter</span></div>
+						</div>
+
+						<!-- Artist name filter -->
+						<div class="c-filter__container c-filter__container--desktop" data-filter-select >
+							<div class="c-filter__title"><span class="c-filter__title__span">Artist</span>
+								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
+									<?php
+									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
+									$postContent = $data['works_content']; 
+									ksort($postContent);
+									foreach( $postContent as $key => $content ):
+										$surname = get_field('surname', $content->ID);
+										$fullName = get_field('full_name', $content->ID);
+										$valueToLower = strtolower( $surname );
+										$key = str_replace(" ", "-", $valueToLower);
+										$keyStrp = str_replace(",", "", $key);
+										echo '<li data-filter=".' . $keyStrp . '" class="c-filter__item item">' . $fullName . '</li>';
+									endforeach;
+									?>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Medium filter -->
+						<div class="c-filter__container c-filter__container--desktop" data-filter-select >
+							<div class="c-filter__title"><span class="c-filter__title__span">Medium</span>
+								<ul tabindex="2" class="button-group c-filter__select-menu" data-filter-group="medium">
+									<?php
+										$field = get_field_object('field_5f59ebf6d4758');		
+										$values = $field['choices'];
+										ksort($values);
+										foreach( $values as $key => $value ):
+											$valueToLower = strtolower( $value );
+											$key = str_replace(" ", "-", $valueToLower);
+											echo '<li data-filter=".' . $key . '" class="c-filter__item item">' . $value . '</li>';
+										endforeach;
+									?>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Sort filter -->
+						<div class="c-filter__container c-filter__container" data-filter-select >
+							<div id="sorts" tab-index="3" class="c-filter__title c-filter__title--sort" data-filter-group="a-z">
+								<span class="sort c-filter__title__span c-filter__sort--a-z" data-sort-value="name" data-sort-direction="asc">Sort A - Z</span>
+								<span class="sort c-filter__title__span c-filter__sort--z-a" data-sort-value="name" data-sort-direction="desc">Sort Z - A</span>
+							</div>
+						</div>
+
+						<!-- Clear filter -->
+						<span class="button--reset c-filter__container--clear c-filter__reset">Clear filters</span>
+					</div>
+			</section>
+
+			<div class="mobile-filters filters">
+				<!-- Artist name filter -->
+						<div class="c-filter__container c-filter__container--mobile" >
+							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Artist</span>
+								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
+									<?php
+									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
+									$postContent = $data['works_content']; 
+									ksort($postContent);
+									foreach( $postContent as $key => $content ):
+										$surname = get_field('surname', $content->ID);
+										$fullName = get_field('full_name', $content->ID);
+										$valueToLower = strtolower( $surname );
+										$key = str_replace(" ", "-", $valueToLower);
+										$keyStrp = str_replace(",", "", $key);
+										echo '<li data-filter=".' . $keyStrp . '" class="c-filter__item item">' . $fullName . '</li>';
+									endforeach;
+									?>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Medium filter -->
+						<div class="c-filter__container c-filter__container--mobile" >
+							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Medium</span>
+								<ul tabindex="2" class="button-group c-filter__select-menu" data-filter-group="medium">
+									<?php
+										$field = get_field_object('field_5f59ebf6d4758');		
+										$values = $field['choices'];
+										ksort($values);
+										foreach( $values as $key => $value ):
+											$valueToLower = strtolower( $value );
+											$key = str_replace(" ", "-", $valueToLower);
+											echo '<li data-filter=".' . $key . '" class="c-filter__item item">' . $value . '</li>';
+										endforeach;
+									?>
+								</ul>
+							</div>
+						</div>
+			</div>
+			
+	<?php endif; ?>
+
 	<div class="u-l-container--center">
 		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 			<div class="c-works">
+				
+				<div class="c-filters__no-results">
+					<h2 class="l-content__block__title ">Sorry, no results found. <span class="button--reset" style="text-decoration:underline; cursor:pointer">Clear filters</span></h2>
+				</div>
+
 				<div class="c-works__list" data-isotope >
 
 				<?php
+
 					$postContent = $data['works_content']; 
 					
-					// Shuffle content random
-					shuffle($postContent);
+					// If Show filters if on c-title-break then shuffle Works content
+					if( $showWorksFilters ) {
+						shuffle($postContent);
+					}
 
 					foreach( $postContent as $content ) :
 
@@ -36,7 +155,6 @@
 
 					?>
             	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surname ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
-					<span class="name"><?= $surnameToLower ?></span>
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">

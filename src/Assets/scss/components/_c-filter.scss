@@ -46,9 +46,9 @@ $dimentions: 42px;
       right: 0;
       top: 0;
       width: $dimentions;
+      height: $dimentions;
       z-index: 0;
       opacity: 0.7;
-      //transition: all 0.2s ease-in-out;
     }
 
     // Hover
@@ -79,12 +79,29 @@ $dimentions: 42px;
     border-left: solid 1px palette(greys, x-light);
     border-right: solid 1px palette(greys, x-light);
     display: none;
-    left: -1px;
-    position: absolute;
-    z-index: 3;
     top: $dimentions;
-    width: 101%;
     color: $light;
+    outline: none;
+    width: 100%;
+
+    li {
+      position: relative;
+      @include media("<tablet") {
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    @include media(">tablet") {
+      > li:not(:first-child) {
+        display: block;
+      }
+      width: 101%;
+      z-index: 3;
+      left: -1px;
+      position: absolute;
+    }
   }
 
   // Item
@@ -96,9 +113,16 @@ $dimentions: 42px;
     padding: $spacing--tiny;
     text-align: left;
     transition: all 0.2s ease-in-out;
+    background-color: palette(greys, xxx-light);
+    @include media(">tablet") {
+      background-color: white;
+    }
 
+    //background-color: red;
     &:nth-child(odd) {
-      background-color: palette(greys, xxx-light);
+      @include media(">tablet") {
+        background-color: palette(greys, xxx-light);
+      }
     }
 
     &:hover {
@@ -111,16 +135,37 @@ $dimentions: 42px;
     display: flex;
     justify-content: flex-end;
     padding: 0 !important;
+    right: 2rem !important;
+    @include media(">phone") {
+      right: 3.5rem !important;
+    }
   }
 
   &__container {
-    margin-bottom: $spacing--x-small;
-    //lost-column: 3/12 flex 10px;
-    min-width: 160px;
-    margin-right: 10px;
+    //margin-bottom: $spacing--x-small;
+    margin-left: 10px;
+    display: block;
+    min-width: 100px;
+    @include media(">tablet") {
+      min-width: 160px;
+    }
 
-    @include breakpoint($medium) {
+    @include media(">tablet") {
       margin-bottom: 0;
+    }
+
+    &--mobile {
+      display: none;
+      @include media("<tablet") {
+        display: block;
+      }
+    }
+
+    &--desktop {
+      display: block;
+      @include media("<tablet") {
+        display: none;
+      }
     }
 
     &.is-open {
@@ -137,6 +182,9 @@ $dimentions: 42px;
       .c-filter__select-menu {
         display: block;
         z-index: 2;
+        max-height: 242px;
+        background-color: $white;
+        overflow: scroll;
       }
 
       // Items
@@ -149,8 +197,12 @@ $dimentions: 42px;
       }
     }
 
-    &--clear {
-      //display: none;
+    &--mobile {
+      margin-left: 0px;
+      .c-filter__title__span--mobile {
+        // font-family: font-family(nt-primary, semibold);
+        // font-weight: 800;
+      }
     }
   }
 }
@@ -168,6 +220,7 @@ $dimentions: 42px;
   outline: inherit;
   line-height: 3.6;
   text-align: center;
+  margin-left: 10px;
 }
 
 .c-filter__sort {
@@ -175,6 +228,12 @@ $dimentions: 42px;
   }
   &--z-a {
     display: none;
+  }
+}
+
+.is-active {
+  .button-group {
+    display: block;
   }
 }
 
@@ -194,8 +253,26 @@ $dimentions: 42px;
   }
 }
 
-// .stickyTb {
-//   position: sticky !important;
-//   top: 48px !important;
-//   z-index: 100;
-// }
+// No results msg
+.c-filters__no-results {
+  display: none;
+}
+
+.stickyTb {
+  position: sticky !important;
+  top: 45px !important;
+  z-index: 2;
+  background-color: #f8f8f8;
+
+  @include media(">tablet") {
+    margin-top: -40px !important;
+    top: 48px !important;
+  }
+}
+
+.mobile-filters {
+  display: none;
+  position: sticky;
+  top: 130px;
+  z-index: 2;
+}

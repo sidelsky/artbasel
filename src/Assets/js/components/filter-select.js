@@ -10,6 +10,7 @@ var FilterSelect = function FilterSelect($elem) {
   this.$title = $(".c-filter__title span", this.$elem);
   this.$menu = $(".c-filter__select-menu", this.$elem);
   this.$item = $(".c-filter__item", this.$elem);
+  this.$showFiltersBtn = $(".show-filters-btn", this.elem);
 
   this._attachHandlers();
 };
@@ -40,37 +41,15 @@ FilterSelect.prototype._attachHandlers = function($elem) {
 //  -----------------------------------*/
 module.exports = FilterSelect;
 
-/** Filters - select style */
-// const selects = [...document.querySelectorAll("[data-id='filter-select']")];
-// const selectsLength = selects.length;
+var $showFilters = $(".show-filters-btn");
+var $mobileFilter = $(".mobile-filters");
 
-// const groups = [...document.querySelectorAll("[data-id='group']")];
+$showFilters.on("click", function(i) {
+  $mobileFilter.toggle();
+});
 
-// const listItems = [...document.querySelectorAll("[data-id='items']")];
-// const listItemsLength = listItems.length;
-
-// const titles = [...document.querySelectorAll("[data-id='title']")];
-
-// for (let index = 0; index < listItemsLength; index++) {
-//   const listItem = listItems[index];
-//   console.log(listItem);
-// }
-
-// for (let index = 0; index < selectsLength; index++) {
-//   const select = selects[index];
-//   const group = groups[index];
-//   const title = titles[index];
-//   console.log(title);
-
-//   select.addEventListener("click", () => {
-//     if (group.style.display === "block") {
-//       group.style.display = "none";
-//     } else {
-//       group.style.display = "block";
-//     }
-//   });
-
-//   group.addEventListener("mouseleave", () => {
-//     group.style.display = "none";
-//   });
-// }
+$(".c-filter__container--mobile").each(function() {
+  $(this).on("click", function() {
+    $(this).toggleClass("is-active");
+  });
+});
