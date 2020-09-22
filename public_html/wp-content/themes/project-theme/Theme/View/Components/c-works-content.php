@@ -41,13 +41,10 @@ $worksFilterTitle = $data['works_filter_title'];
 							<div class="c-filter__title"><span class="c-filter__title__span">Medium</span>
 								<ul tabindex="2" class="button-group c-filter__select-menu" data-filter-group="medium">
 									<?php
-										$field = get_field_object('field_5f59ebf6d4758');		
-										$values = $field['choices'];
-										ksort($values);
-										foreach( $values as $key => $value ):
-											$valueToLower = strtolower( $value );
-											$key = str_replace(" ", "-", $valueToLower);
-											echo '<li data-filter=".' . $key . '" class="c-filter__item item">' . $value . '</li>';
+										$field = get_field_object('field_5f59ebf6d4758');
+										$choices = $field['choices'];
+										foreach( $choices as $choice => $label ):
+											echo '<li data-filter=".' . $choice . '" class="c-filter__item item">' . $label . '</li>';
 										endforeach;
 									?>
 								</ul>
@@ -94,13 +91,10 @@ $worksFilterTitle = $data['works_filter_title'];
 							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Medium</span>
 								<ul tabindex="2" class="button-group c-filter__select-menu" data-filter-group="medium">
 									<?php
-										$field = get_field_object('field_5f59ebf6d4758');		
-										$values = $field['choices'];
-										ksort($values);
-										foreach( $values as $key => $value ):
-											$valueToLower = strtolower( $value );
-											$key = str_replace(" ", "-", $valueToLower);
-											echo '<li data-filter=".' . $key . '" class="c-filter__item item">' . $value . '</li>';
+										$field = get_field_object('field_5f59ebf6d4758');
+										$choices = $field['choices'];
+										foreach( $choices as $choice => $label ):
+											echo '<li data-filter=".' . $choice . '" class="c-filter__item item">' . $label . '</li>';
 										endforeach;
 									?>
 								</ul>

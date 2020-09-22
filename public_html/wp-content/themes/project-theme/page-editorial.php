@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: Art Basel template
+ * Template Name: Editorial template
  */
 
 use App\Helper\Render;
