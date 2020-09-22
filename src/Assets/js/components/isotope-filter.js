@@ -1,22 +1,6 @@
 var Isotope = require("isotope-layout");
-
-// const grids = [...document.querySelectorAll("[data-isotope]")];
-// const gridsLength = grids.length;
-// console.log(gridsLength);
-
-// document.addEventListener('click', function(event) {
-//     if (event.target.id == 'my-id') {
-//       callback();
-//     }
-// });
-// function callback(){
-//    ...handler code here
-// }
-
-// for (let index = 0; index < gridsLength; index++) {
-//   const grid = grids[index];
-//   console.log(grid);
-// }
+var $resetBtn = $(".c-filter__container--clear");
+var $numberOfItems = $(".filter-item").length;
 
 var grid = new Isotope("[data-isotope]", {
   itemSelector: ".filter-item",
@@ -25,6 +9,8 @@ var grid = new Isotope("[data-isotope]", {
     name: ".name",
   },
 });
+
+console.log();
 
 function isMobile() {
   return (
@@ -39,19 +25,18 @@ function isMobile() {
 
 // Function to check if filters have some results
 function checkResults() {
-  var visibleItemsCount = grid.filteredItems.length;
-  if (visibleItemsCount > 0) {
+  //If no number of results found show message
+  if (grid.filteredItems.length > 0) {
     $(".c-filters__no-results").hide();
   } else {
     $(".c-filters__no-results").show();
   }
 }
 
+checkResults();
+
 // store filter for each group
 var filters = {};
-
-var $resetBtn = $(".c-filter__container--clear");
-//$resetBtn.hide();
 
 /**
  * Filter
@@ -75,9 +60,12 @@ $(".filters").on("click", ".item", function(event) {
 
   checkResults();
 
-  // if (!isMobile() && $(window).width() > 768) {
-  //   //$resetBtn.show();
-  // }
+  // if number of results matches show
+  if (grid.filteredItems.length !== $numberOfItems) {
+    if (!isMobile() && $(window).width() > 768) {
+      $resetBtn.show();
+    }
+  }
 });
 
 /**
@@ -99,9 +87,9 @@ $("#sorts").on("click", "span", function() {
     sortAscending: sortDirection,
   });
   //$resetBtn.show();
-  if (!isMobile() && $(window).width() > 768) {
-    $resetBtn.show();
-  }
+  // if (!isMobile() && $(window).width() > 768) {
+  //   $resetBtn.show();
+  // }
 });
 
 /**

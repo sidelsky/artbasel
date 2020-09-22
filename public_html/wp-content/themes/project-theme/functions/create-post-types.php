@@ -85,23 +85,23 @@
 				],
 			]);
 
-			// On view
-        	// create_post_type([
-			// 	'name' => 'On view',
-			// 	'singular_name' => 'On view',
-			// 	'has_archive' => false,
-			// 	'rewrite' => [
-			// 	//'slug' => 'private-sales/private-rooms',
-			// 	'with_front' => false
-			// 	],
-			// 	'menu_icon' =>  'dashicons-admin-site-alt2',
-			// 	'menu_position' => 5,
-			// 	'supports' => [
-			// 		'title',
-			// 		'thumbnail',
-			// 		'revisions'
-			// 	],
-			// ]);
+			//On view
+        	create_post_type([
+				'name' => 'On view',
+				'singular_name' => 'On view',
+				'has_archive' => false,
+				'rewrite' => [
+				//'slug' => 'private-sales/private-rooms',
+				'with_front' => false
+				],
+				'menu_icon' =>  'dashicons-admin-site-alt2',
+				'menu_position' => 5,
+				'supports' => [
+					'title',
+					'thumbnail',
+					'revisions'
+				],
+			]);
 
 
 		   // Private sales
@@ -139,9 +139,6 @@
 			// 		'revisions'
 			// 	],
 			// ]);
-
-
-
 
 
 				}

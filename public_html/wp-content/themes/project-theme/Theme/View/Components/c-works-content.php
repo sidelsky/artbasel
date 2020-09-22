@@ -152,14 +152,15 @@ $worksFilterTitle = $data['works_filter_title'];
 						$hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
 
 						$surnameToLower = strtolower( $surname );
-
+					
 					?>
-            	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surname ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
+            	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surnameToLower ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">
 							</a>
 						</figure> 
+						<span class="name" style="display:none"><?= $surname ?></span>
 						<a href="<?= $link; ?>">
 							<h2 class="c-works__title"><?= $title; ?></h2>
 						</a>
