@@ -20,17 +20,27 @@ $worksFilterTitle = $data['works_filter_title'];
 							<div class="c-filter__title"><span class="c-filter__title__span">Artist</span>
 								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
 									<?php
+
 									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
-									$postContent = $data['works_content']; 
-									ksort($postContent);
-									foreach( $postContent as $key => $content ):
-										$surname = get_field('surname', $content->ID);
-										$fullName = get_field('full_name', $content->ID);
-										$valueToLower = strtolower( $surname );
-										$key = str_replace(" ", "-", $valueToLower);
-										$keyStrp = str_replace(",", "", $key);
-										echo '<li data-filter=".' . $keyStrp . '" class="c-filter__item item">' . $fullName . '</li>';
+									$postContent = $data['works_content'];
+
+									$surnames = [];
+
+									foreach( $postContent as $content ):
+										$theSurnames = get_field('surname', $content->ID);
+										$surnames[] = $theSurnames;
+
+										$theFullNames = get_field('full_name', $content->ID);
+										$fullNames[] = $theFullNames;
+
 									endforeach;
+
+									sort($surnames);
+									foreach($surnames as $index => $value) {
+										$key = str_replace(" ", "-", $surnames[$index]);
+										$surnameToLower = strtolower( $key );
+										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$index] . '</li>';
+									}
 									?>
 								</ul>
 							</div>
@@ -72,7 +82,6 @@ $worksFilterTitle = $data['works_filter_title'];
 									<?php
 									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
 									$postContent = $data['works_content']; 
-									ksort($postContent);
 									foreach( $postContent as $key => $content ):
 										$surname = get_field('surname', $content->ID);
 										$fullName = get_field('full_name', $content->ID);
@@ -154,17 +163,22 @@ $worksFilterTitle = $data['works_filter_title'];
 								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">
 							</a>
 						</figure> 
+
 						<span class="name" style="display:none"><?= $surname ?></span>
+
 						<a href="<?= $link; ?>">
 							<h2 class="c-works__title"><?= $title; ?></h2>
 						</a>
+						
 						<?php if( $fullName ) { ?>
-							<!-- <div class="c-works__name"><?= $fullName ?></div> -->
+							<div class="c-works__name"><?= $fullName ?></div>
 						<?php } ?>
-						<?php if( $fullName ) { ?>
+
+						<?php if( $date ) { ?>
 							<div class="c-works__date"><?= $date ?></div>
 						<?php } ?>
-						<?php if( $fullName ) { ?>
+
+						<?php if( $mediumText ) { ?>
 							<div class="c-works__medium"><?= $mediumText ?></div>
 						<?php } ?>
 						
@@ -172,7 +186,6 @@ $worksFilterTitle = $data['works_filter_title'];
 							<div class="c-works__price"><span><?= $price ?></span></div>
 						<?php endif; ?>
 
-						
 						<?php if( $sold == 'sold' ) {
 							$availabilityMarker = 'c-sale-marker--sold';
 							$availabilityTitle = 'Sold';
