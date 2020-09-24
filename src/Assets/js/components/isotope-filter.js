@@ -67,6 +67,8 @@ if ($numberOfItems) {
         $resetBtn.show();
       }
     }
+
+    scrollToTheTop();
   });
 
   /**
@@ -91,12 +93,15 @@ if ($numberOfItems) {
     // if (!isMobile() && $(window).width() > 768) {
     //   $resetBtn.show();
     // }
+
+    scrollToTheTop();
   });
 
   /**
    * Reset filters
    */
   $(".button--reset").on("click", function() {
+    scrollToTheTop();
     // reset filters
     filters = {};
     grid.arrange({
@@ -105,6 +110,15 @@ if ($numberOfItems) {
     $(".c-filter__container--clear").hide();
     $(".c-filter__no-results").hide();
   });
+
+  function scrollToTheTop() {
+    $("html, body").animate(
+      {
+        scrollTop: $("#section-top").offset().top - 85,
+      },
+      600
+    );
+  }
 
   // flatten object by concatting values
   function concatValues(obj) {

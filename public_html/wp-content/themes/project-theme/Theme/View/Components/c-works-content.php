@@ -11,7 +11,7 @@ foreach( $postContent as $content ):
 endforeach;
 
 ?>
-<section class="u-section">
+<section class="u-section" id="section-top">
 	<?php 
 		if( $showWorksFilters ) : ?>
 			<section class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
