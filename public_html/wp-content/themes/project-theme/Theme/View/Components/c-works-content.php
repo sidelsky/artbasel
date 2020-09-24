@@ -1,6 +1,15 @@
 <?php
 $showWorksFilters = $data['show_works_filters']; 
 $worksFilterTitle = $data['works_filter_title']; 
+
+$postContent = $data['works_content'];
+foreach( $postContent as $content ):
+	$theSurnames = get_field('surname', $content->ID);
+	$surnames[] = $theSurnames;
+	$theFullNames = get_field('full_name', $content->ID);
+	$fullNames[] = $theFullNames;
+endforeach;
+
 ?>
 <section class="u-section">
 	<?php 
@@ -20,21 +29,7 @@ $worksFilterTitle = $data['works_filter_title'];
 							<div class="c-filter__title"><span class="c-filter__title__span">Artist</span>
 								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
 									<?php
-
 									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
-									$postContent = $data['works_content'];
-
-									$surnames = [];
-
-									foreach( $postContent as $content ):
-										$theSurnames = get_field('surname', $content->ID);
-										$surnames[] = $theSurnames;
-
-										$theFullNames = get_field('full_name', $content->ID);
-										$fullNames[] = $theFullNames;
-
-									endforeach;
-
 									sort($surnames);
 									foreach($surnames as $index => $value) {
 										$key = str_replace(" ", "-", $surnames[$index]);
@@ -81,15 +76,12 @@ $worksFilterTitle = $data['works_filter_title'];
 								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
 									<?php
 									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
-									$postContent = $data['works_content']; 
-									foreach( $postContent as $key => $content ):
-										$surname = get_field('surname', $content->ID);
-										$fullName = get_field('full_name', $content->ID);
-										$valueToLower = strtolower( $surname );
-										$key = str_replace(" ", "-", $valueToLower);
-										$keyStrp = str_replace(",", "", $key);
-										echo '<li data-filter=".' . $keyStrp . '" class="c-filter__item item">' . $fullName . '</li>';
-									endforeach;
+									sort($surnames);
+									foreach($surnames as $index => $value) {
+										$key = str_replace(" ", "-", $surnames[$index]);
+										$surnameToLower = strtolower( $key );
+										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$index] . '</li>';
+									}
 									?>
 								</ul>
 							</div>
@@ -117,8 +109,8 @@ $worksFilterTitle = $data['works_filter_title'];
 		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 			<div class="c-works">
 				
-				<div class="c-filters__no-results">
-					<h2 class="l-content__block__title ">Sorry, no results found. <span class="button--reset" style="text-decoration:underline; cursor:pointer">Clear filters</span></h2>
+				<div class="c-filter__no-results">
+					Sorry, no results found. <span class="button--reset">Clear filters</span>
 				</div>
 
 				<div class="c-works__list" data-isotope >
@@ -140,7 +132,8 @@ $worksFilterTitle = $data['works_filter_title'];
                   $subPostTitle = get_field('sub_post_title', $content->ID);
                   $surname = get_field('surname', $content->ID);
                   $fullName = get_field('full_name', $content->ID);
-                  $image = get_the_post_thumbnail_url($content->ID);
+						$image = get_the_post_thumbnail_url($content->ID, 'thumbnail');
+						//$image = the_post_thumbnail('thumbnail', $content->ID);
                   $date = get_field('date', $content->ID);
                   $description = get_field('description', $content->ID);
                   $medium = get_field('medium', $content->ID);
@@ -153,7 +146,6 @@ $worksFilterTitle = $data['works_filter_title'];
                   $ids = get_field('code_id', $content->ID);
                   $creditLine = get_field('credit_line', $content->ID);
 						$hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
-
 						$surnameToLower = strtolower( $surname );
 					
 					?>
@@ -170,7 +162,7 @@ $worksFilterTitle = $data['works_filter_title'];
 							<h2 class="c-works__title"><?= $title; ?></h2>
 						</a>
 						
-						<?php if( $fullName ) { ?>
+						<?php if( $fullName && $showWorksFilters ) { ?>
 							<div class="c-works__name"><?= $fullName ?></div>
 						<?php } ?>
 

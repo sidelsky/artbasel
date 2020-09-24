@@ -54,6 +54,7 @@
     @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
     color: $dark;
     justify-content: space-between;
+    lost-column: 6/12 2 0;
 
     //Tablet
     @include media(">tablet") {
@@ -78,14 +79,15 @@
   &__figure {
     align-items: flex-end;
     display: flex;
-    margin-bottom: $spacing--medium;
-    min-height: 310px;
     position: relative;
-    position: relative;
+    @include media(">tablet") {
+      min-height: 310px;
+    }
   }
 
   //Image
   &__image {
+    margin-bottom: $spacing--small;
     //Tablet
     @include media(">tablet") {
       max-height: 310px;
@@ -130,7 +132,7 @@
 
   //Name
   &__name {
-    font-family: font-family(nt-primary, regular);
+    font-family: font-family(nt-primary, medium);
     @include set-font-size(1.5rem, 1.5rem, 1.5rem, 1.5rem);
     line-height: 1.5;
   }

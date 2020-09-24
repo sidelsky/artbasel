@@ -9,6 +9,20 @@ $dimentions: 42px;
   padding: $spacing--x-medium;
   position: relative;
 
+  &__no-results {
+    text-align: center;
+    font-family: font-family(nt-primary, regular);
+    color: palette(greys, base);
+    @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
+    span {
+      color: black;
+      text-decoration: underline;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   // Title
   &__title {
     font-family: font-family(nt-primary, regular);
@@ -199,10 +213,6 @@ $dimentions: 42px;
 
     &--mobile {
       margin-left: 0px;
-      .c-filter__title__span--mobile {
-        // font-family: font-family(nt-primary, semibold);
-        // font-weight: 800;
-      }
     }
   }
 }

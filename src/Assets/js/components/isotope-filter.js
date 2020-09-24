@@ -28,9 +28,9 @@ if ($numberOfItems) {
   function checkResults() {
     //If no number of results found show message
     if (grid.filteredItems.length > 0) {
-      $(".c-filters__no-results").hide();
+      $(".c-filter__no-results").hide();
     } else {
-      $(".c-filters__no-results").show();
+      $(".c-filter__no-results").show();
     }
   }
 
@@ -103,7 +103,7 @@ if ($numberOfItems) {
       filter: "*",
     });
     $(".c-filter__container--clear").hide();
-    $(".c-filters__no-results").hide();
+    $(".c-filter__no-results").hide();
   });
 
   // flatten object by concatting values
