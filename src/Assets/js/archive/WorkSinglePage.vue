@@ -4,7 +4,12 @@
       <!-- to go here -->
       <div class="c-lightbox" v-if="showLightbox" @click="showLightbox = false">
         <button @click="showLightbox = false" class="c-lightbox__close">
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 31.112 31.112">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 31.112 31.112"
+          >
             <polygon
               points="31.112,1.414 29.698,0 15.556,14.142 1.414,0 0,1.414 14.142,15.556 0,29.698 1.414,31.112 15.556,16.97
             	29.698,31.112 31.112,29.698 16.97,15.556 "
@@ -27,26 +32,30 @@
               :stagePadding="40"
               :margin="60"
               :responsive="{
-                0:{
-                  items:1
-                  },
-                600:{
-                  items:1
-                  },
-                768:{
-                  items:1
-                  }
-                }"
+                0: {
+                  items: 1,
+                },
+                600: {
+                  items: 1,
+                },
+                768: {
+                  items: 1,
+                },
+              }"
             >
               <template slot="prev" class="bob" data-id="prev">
                 <span class="prev"></span>
               </template>
 
               <div v-for="item in gallery" :key="item">
-                <img :src="item" class="c-work-single__image" v-on:click="handleItemClick(item)" />
+                <img
+                  :src="item"
+                  class="c-work-single__image"
+                  v-on:click="handleItemClick(item)"
+                />
               </div>
 
-              <template slot="next" class="bob" style="display: block;">
+              <template slot="next" class="bob" style="display: block">
                 <span class="next"></span>
               </template>
             </carousel>
@@ -82,26 +91,39 @@
             </div>
 
             <div v-if="work.sold !== null" class="c-works__availability">
-              <span v-if="work.sold === 'sold'" class="c-sale-marker c-sale-marker--sold"></span>
-              <span v-if="work.sold === 'hold'" class="c-sale-marker c-sale-marker--hold"></span>
-              <span v-if="work.sold === 'available'" class="c-sale-marker c-sale-marker--available"></span>
+              <span
+                v-if="work.sold === 'sold'"
+                class="c-sale-marker c-sale-marker--sold"
+              ></span>
+              <span
+                v-if="work.sold === 'hold'"
+                class="c-sale-marker c-sale-marker--hold"
+              ></span>
+              <span
+                v-if="work.sold === 'available'"
+                class="c-sale-marker c-sale-marker--available"
+              ></span>
               <span class="c-sale-marker__copy" v-html="formattedSold"></span>
             </div>
 
             <span v-if="work.hidePurchaseButton">
               <button
-                v-if="work.sold === 'sold' || work.sold === 'hold' "
+                v-if="work.sold === 'sold' || work.sold === 'hold'"
                 id="purchaseBtn_0"
                 data-id="purchaseBtn"
                 class="c-button c-button--dark"
                 disabled
-              >Purchase</button>
+              >
+                Purchase
+              </button>
               <button
-                v-if="work.sold === 'available' || work.sold === '' "
+                v-if="work.sold === 'available' || work.sold === ''"
                 id="purchaseBtn_0"
                 data-id="purchaseBtn"
                 class="c-button c-button--dark"
-              >Purchase</button>
+              >
+                Purchase
+              </button>
             </span>
 
             <button
@@ -109,23 +131,31 @@
               id="inquireBtn_0"
               data-id="inquireBtn"
               class="c-button c-button--light"
-            >Inquire to purchase</button>
+            >
+              Inquire to purchase
+            </button>
 
             <button
               v-if="work.isEdition"
               id="editionBtn_0"
               data-id="editionBtn"
               class="c-button c-button--light"
-            >Submit Interest</button>
+            >
+              Submit Interest
+            </button>
 
             <button
               v-if="work.showHomegrownInquiriesButton"
               id="homegrownInquiriesBtn_0"
               data-id="homegrownInquiriesBtn"
               class="c-button c-button--light"
-            >Inquire to learn more</button>
+            >
+              Inquire to learn more
+            </button>
 
-            <span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
+            <span
+              class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center"
+            >
               <svg class="u-icon c-works__icon c-works__icon--back">
                 <use
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -133,7 +163,10 @@
                   viewBox="0 0 32 32"
                 />
               </svg>
-              <a href="javascript:history.go(-1);" class="c-works__href">Back</a>
+
+              <a href="javascript:history.go(-1);" class="c-works__href"
+                >Back</a
+              >
             </span>
           </div>
         </div>
@@ -193,6 +226,16 @@ export default {
     },
   },
   methods: {
+    previousHistory() {
+      if (document.referrer == "") {
+        console.log(window.history);
+        return "yes";
+      } else {
+        console.log(window.history);
+        return "no";
+      }
+      //window.history.back();
+    },
     handleItemClick(item) {
       this.currentImage = item;
       this.showLightbox = true;

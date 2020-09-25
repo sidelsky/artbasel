@@ -4,11 +4,14 @@ $worksFilterTitle = $data['works_filter_title'];
 
 $postContent = $data['works_content'];
 foreach( $postContent as $content ):
-	$theSurnames = get_field('surname', $content->ID);
-	$surnames[] = $theSurnames;
+	$theSurname = get_field('surname', $content->ID);
+	$surnames[] = $theSurname;
 	$theFullNames = get_field('full_name', $content->ID);
-	$fullNames[] = $theFullNames;
+	$fullNames[$theSurname] = $theFullNames;
 endforeach;
+
+$surnames = array_unique($surnames);
+//$fullNames = array_unique($fullNames);
 
 ?>
 <section class="u-section" id="section-top">
@@ -32,15 +35,14 @@ endforeach;
 									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
 									sort($surnames);
 									foreach($surnames as $index => $value) {
-										$key = str_replace(" ", "-", $surnames[$index]);
+										$key = str_replace(" ", "-", $value);
 										$surnameToLower = strtolower( $key );
-										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$index] . '</li>';
+										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$value] . '</li>';
 									}
 									?>
 								</ul>
 							</div>
 						</div>
-
 						<!-- Medium filter -->
 						<div class="c-filter__container c-filter__container--desktop" data-filter-select >
 							<div class="c-filter__title"><span class="c-filter__title__span">Medium</span>
@@ -75,12 +77,11 @@ endforeach;
 							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Artist</span>
 								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
 									<?php
-									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
 									sort($surnames);
 									foreach($surnames as $index => $value) {
-										$key = str_replace(" ", "-", $surnames[$index]);
+										$key = str_replace(" ", "-", $value);
 										$surnameToLower = strtolower( $key );
-										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$index] . '</li>';
+										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$value] . '</li>';
 									}
 									?>
 								</ul>
@@ -194,6 +195,7 @@ endforeach;
 								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 							</div>
 						<?php endif; ?>
+
 					</article>
                <?php endforeach; ?>
 

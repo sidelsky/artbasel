@@ -69,6 +69,7 @@ if ($numberOfItems) {
     }
 
     scrollToTheTop();
+    $(".parallax-window").parallax("refresh");
   });
 
   /**
@@ -89,12 +90,9 @@ if ($numberOfItems) {
       sortBy: sortValue,
       sortAscending: sortDirection,
     });
-    //$resetBtn.show();
-    // if (!isMobile() && $(window).width() > 768) {
-    //   $resetBtn.show();
-    // }
 
     scrollToTheTop();
+    $(".parallax-window").parallax("refresh");
   });
 
   /**
@@ -109,6 +107,7 @@ if ($numberOfItems) {
     });
     $(".c-filter__container--clear").hide();
     $(".c-filter__no-results").hide();
+    $(".parallax-window").parallax("refresh");
   });
 
   function scrollToTheTop() {
