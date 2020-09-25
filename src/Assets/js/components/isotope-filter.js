@@ -121,7 +121,7 @@ if ($numberOfItems) {
       $(window)
         .trigger("resize")
         .trigger("scroll");
-    }, 1000);
+    }, 200);
   }
 
   // flatten object by concatting values
