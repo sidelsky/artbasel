@@ -77,6 +77,7 @@ $surnames = array_unique($surnames);
 							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Artist</span>
 								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
 									<?php
+									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
 									sort($surnames);
 									foreach($surnames as $index => $value) {
 										$key = str_replace(" ", "-", $value);

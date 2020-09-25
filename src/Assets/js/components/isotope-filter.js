@@ -68,7 +68,7 @@ if ($numberOfItems) {
       }
     }
 
-    scrollToTheTop();
+    scrollToTheTop(85);
     $(".parallax-window").parallax("refresh");
   });
 
@@ -91,7 +91,7 @@ if ($numberOfItems) {
       sortAscending: sortDirection,
     });
 
-    scrollToTheTop();
+    scrollToTheTop(85);
     $(".parallax-window").parallax("refresh");
   });
 
@@ -99,7 +99,7 @@ if ($numberOfItems) {
    * Reset filters
    */
   $(".button--reset").on("click", function() {
-    scrollToTheTop();
+    scrollToTheTop(85);
     // reset filters
     filters = {};
     grid.arrange({
@@ -110,10 +110,10 @@ if ($numberOfItems) {
     $(".parallax-window").parallax("refresh");
   });
 
-  function scrollToTheTop() {
+  function scrollToTheTop($val) {
     $("html, body").animate(
       {
-        scrollTop: $("#section-top").offset().top - 85,
+        scrollTop: $("#section-top").offset().top - $val,
       },
       600
     );
