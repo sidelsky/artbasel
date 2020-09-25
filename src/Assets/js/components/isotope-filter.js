@@ -69,7 +69,6 @@ if ($numberOfItems) {
     }
 
     scrollToTheTop(85);
-    $(".parallax-window").parallax("refresh");
   });
 
   /**
@@ -92,7 +91,6 @@ if ($numberOfItems) {
     });
 
     scrollToTheTop(85);
-    $(".parallax-window").parallax("refresh");
   });
 
   /**
@@ -107,7 +105,6 @@ if ($numberOfItems) {
     });
     $(".c-filter__container--clear").hide();
     $(".c-filter__no-results").hide();
-    $(".parallax-window").parallax("refresh");
   });
 
   function scrollToTheTop($val) {
@@ -115,8 +112,16 @@ if ($numberOfItems) {
       {
         scrollTop: $("#section-top").offset().top - $val,
       },
-      600
+      700
     );
+    $(".parallax-window").parallax("refresh");
+    console.log("called");
+
+    setTimeout(function() {
+      $(window)
+        .trigger("resize")
+        .trigger("scroll");
+    }, 1000);
   }
 
   // flatten object by concatting values
