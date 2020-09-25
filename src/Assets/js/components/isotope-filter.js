@@ -114,7 +114,6 @@ if ($numberOfItems) {
       },
       700
     );
-    console.log("called");
 
     setTimeout(function() {
       $(".parallax-window").parallax("refresh");
