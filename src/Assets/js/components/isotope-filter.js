@@ -114,10 +114,10 @@ if ($numberOfItems) {
       },
       700
     );
-    $(".parallax-window").parallax("refresh");
     console.log("called");
 
     setTimeout(function() {
+      $(".parallax-window").parallax("refresh");
       $(window)
         .trigger("resize")
         .trigger("scroll");
