@@ -187,6 +187,7 @@ $surnames = array_unique($surnames);
 								<div class="c-works__price"><span><?= $price ?></span></div>
 							<?php endif; ?>
 
+							<?php /* 
 							<?php if( $sold == 'sold' ) {
 								$availabilityMarker = 'c-sale-marker--sold';
 								$availabilityTitle = 'Sold';
@@ -203,6 +204,7 @@ $surnames = array_unique($surnames);
 									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 								</div>
 							<?php endif; ?>
+						*/?>
 
 						<?php else :?>
 
@@ -223,7 +225,8 @@ $surnames = array_unique($surnames);
 							<?php if($sold === 'available') : ?>
 								<div class="c-works__price"><span><?= $price ?></span></div>
 							<?php endif; ?>
-
+						
+						<?php /* 
 							<?php if( $sold == 'sold' ) {
 								$availabilityMarker = 'c-sale-marker--sold';
 								$availabilityTitle = 'Sold';
@@ -240,6 +243,7 @@ $surnames = array_unique($surnames);
 									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 								</div>
 							<?php endif; ?>
+						*/?>
 
 						<?php endif; ?>
 
