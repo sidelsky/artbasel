@@ -67,42 +67,45 @@ $surnames = array_unique($surnames);
 						</div>
 
 						<!-- Clear filter -->
-						<span class="button--reset c-filter__container--clear c-filter__reset">Clear filters</span>
+						<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--desktop">Clear filters</span>
 					</div>
 			</section>
 
 			<div class="mobile-filters filters">
 				<!-- Artist name filter -->
-						<div class="c-filter__container c-filter__container--mobile" >
-							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Artist</span>
-								<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
-									<?php
-									echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
-									sort($surnames);
-									foreach($surnames as $index => $value) {
-										$key = str_replace(" ", "-", $value);
-										$surnameToLower = strtolower( $key );
-										echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$value] . '</li>';
-									}
-									?>
-								</ul>
-							</div>
-						</div>
+				<div class="c-filter__container c-filter__container--mobile" >
+					<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Artist</span>
+						<ul tabindex="1" class="button-group c-filter__select-menu" data-filter-group="artist">
+							<?php
+							echo '<li data-items data-filter class="c-filter__item item">All Artists</li>';
+							sort($surnames);
+							foreach($surnames as $index => $value) {
+								$key = str_replace(" ", "-", $value);
+								$surnameToLower = strtolower( $key );
+								echo '<li data-filter=".' . $surnameToLower . '" class="c-filter__item item">' . $fullNames[$value] . '</li>';
+							}
+							?>
+						</ul>
+					</div>
+				</div>
 
-						<!-- Medium filter -->
-						<div class="c-filter__container c-filter__container--mobile" >
-							<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Medium</span>
-								<ul tabindex="2" class="button-group c-filter__select-menu" data-filter-group="medium">
-									<?php
-										$field = get_field_object('field_5f59ebf6d4758');
-										$choices = $field['choices'];
-										foreach( $choices as $choice => $label ):
-											echo '<li data-filter=".' . $choice . '" class="c-filter__item item">' . $label . '</li>';
-										endforeach;
-									?>
-								</ul>
-							</div>
-						</div>
+				<!-- Medium filter -->
+				<div class="c-filter__container c-filter__container--mobile" >
+					<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Medium</span>
+						<ul tabindex="2" class="button-group c-filter__select-menu" data-filter-group="medium">
+							<?php
+								$field = get_field_object('field_5f59ebf6d4758');
+								$choices = $field['choices'];
+								foreach( $choices as $choice => $label ):
+									echo '<li data-filter=".' . $choice . '" class="c-filter__item item">' . $label . '</li>';
+								endforeach;
+							?>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Clear filter -->
+				<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--mobile">Clear filters</span>
 			</div>
 			
 	<?php endif; ?>
@@ -134,7 +137,7 @@ $surnames = array_unique($surnames);
                   $subPostTitle = get_field('sub_post_title', $content->ID);
                   $surname = get_field('surname', $content->ID);
                   $fullName = get_field('full_name', $content->ID);
-						$image = get_the_post_thumbnail_url($content->ID, 'thumbnail');
+						$image = get_the_post_thumbnail_url($content->ID, 'medium');
 						//$image = the_post_thumbnail('thumbnail', $content->ID);
                   $date = get_field('date', $content->ID);
                   $description = get_field('description', $content->ID);
@@ -154,47 +157,90 @@ $surnames = array_unique($surnames);
             	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surnameToLower ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
-								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image">
+								<img loading="lazy" src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image" >
 							</a>
-						</figure> 
+						</figure>
 
-						<span class="name" style="display:none"><?= $surname ?></span>
+						<?php 
+						//If filters are active
+						if( $showWorksFilters ) : ?>
+							
+							<span class="name" style="display:none"><?= $surname ?></span>
 
-						<a href="<?= $link; ?>">
-							<h2 class="c-works__title"><?= $title; ?></h2>
-						</a>
-						
-						<?php if( $fullName && $showWorksFilters ) { ?>
-							<div class="c-works__name"><?= $fullName ?></div>
-						<?php } ?>
+							<?php if( $fullName ) { ?>
+								<a href="<?= $link; ?>"><h2 class="c-works__title"><?= $fullName ?></h2></a>
+							<?php } ?>
 
-						<?php if( $date ) { ?>
-							<div class="c-works__date"><?= $date ?></div>
-						<?php } ?>
+							<?php if( $title ) { ?>
+								<a href="<?= $link; ?>"><h2 class="c-works__name"><?= $title; ?></h2></a>
+							<?php } ?>
 
-						<?php if( $mediumText ) { ?>
-							<div class="c-works__medium"><?= $mediumText ?></div>
-						<?php } ?>
-						
-						<?php if($sold === 'available') : ?>
-							<div class="c-works__price"><span><?= $price ?></span></div>
-						<?php endif; ?>
+							<?php if( $date ) { ?>
+								<div class="c-works__date"><?= $date ?></div>
+							<?php } ?>
 
-						<?php if( $sold == 'sold' ) {
-							$availabilityMarker = 'c-sale-marker--sold';
-							$availabilityTitle = 'Sold';
-						} elseif( $sold == 'hold' ) {
-							$availabilityMarker = 'c-sale-marker--hold';
-							$availabilityTitle = 'Hold';
-						} else {
-							$availabilityMarker = 'c-sale-marker--available';
-							$availabilityTitle = 'Available';
-						} ?>
+							<?php if( $mediumText ) { ?>
+								<div class="c-works__medium"><?= $mediumText ?></div>
+							<?php } ?>
+							
+							<?php if($sold === 'available') : ?>
+								<div class="c-works__price"><span><?= $price ?></span></div>
+							<?php endif; ?>
 
-						<?php if( $sold == !NULL ) : ?>
-							<div class="c-works__availability">
-								<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-							</div>
+							<?php if( $sold == 'sold' ) {
+								$availabilityMarker = 'c-sale-marker--sold';
+								$availabilityTitle = 'Sold';
+							} elseif( $sold == 'hold' ) {
+								$availabilityMarker = 'c-sale-marker--hold';
+								$availabilityTitle = 'Hold';
+							} else {
+								$availabilityMarker = 'c-sale-marker--available';
+								$availabilityTitle = 'Available';
+							} ?>
+
+							<?php if( $sold == !NULL ) : ?>
+								<div class="c-works__availability">
+									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
+								</div>
+							<?php endif; ?>
+
+						<?php else :?>
+
+							<a href="<?= $link; ?>"><h2 class="c-works__title"><?= $title; ?></h2></a>
+							
+							<?php if( $fullName) { ?>
+								<div class="c-works__name"><?= $fullName ?></div>
+							<?php } ?>
+
+							<?php if( $date ) { ?>
+								<div class="c-works__date"><?= $date ?></div>
+							<?php } ?>
+
+							<?php if( $mediumText ) { ?>
+								<div class="c-works__medium"><?= $mediumText ?></div>
+							<?php } ?>
+							
+							<?php if($sold === 'available') : ?>
+								<div class="c-works__price"><span><?= $price ?></span></div>
+							<?php endif; ?>
+
+							<?php if( $sold == 'sold' ) {
+								$availabilityMarker = 'c-sale-marker--sold';
+								$availabilityTitle = 'Sold';
+							} elseif( $sold == 'hold' ) {
+								$availabilityMarker = 'c-sale-marker--hold';
+								$availabilityTitle = 'Hold';
+							} else {
+								$availabilityMarker = 'c-sale-marker--available';
+								$availabilityTitle = 'Available';
+							} ?>
+
+							<?php if( $sold == !NULL ) : ?>
+								<div class="c-works__availability">
+									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
+								</div>
+							<?php endif; ?>
+
 						<?php endif; ?>
 
 					</article>

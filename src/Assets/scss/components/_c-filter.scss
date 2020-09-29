@@ -231,6 +231,12 @@ $dimentions: 42px;
   line-height: 3.6;
   text-align: center;
   margin-left: 10px;
+  &--primary {
+    outline: solid 1px red;
+    @include media("<tablet") {
+      display: none;
+    }
+  }
 }
 
 .c-filter__sort {

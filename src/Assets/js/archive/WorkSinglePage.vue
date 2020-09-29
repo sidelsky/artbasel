@@ -154,6 +154,7 @@
             </button>
 
             <span
+              v-html="previousHistory()"
               class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center"
             >
               <svg class="u-icon c-works__icon c-works__icon--back">
@@ -163,10 +164,6 @@
                   viewBox="0 0 32 32"
                 />
               </svg>
-
-              <a href="javascript:history.go(-1);" class="c-works__href"
-                >Back</a
-              >
             </span>
           </div>
         </div>
@@ -227,14 +224,11 @@ export default {
   },
   methods: {
     previousHistory() {
-      if (document.referrer == "") {
-        console.log(window.history);
-        return "yes";
+      if (!document.referrer) {
+        return '<svg class="u-icon c-works__icon c-works__icon--back"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32" /></svg><a href="/" class="c-works__href">Back</a>';
       } else {
-        console.log(window.history);
-        return "no";
+        return '<svg class="u-icon c-works__icon c-works__icon--back"> <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32" /></svg><a href="javascript:history.go(-1);" class="c-works__href">Back</a>';
       }
-      //window.history.back();
     },
     handleItemClick(item) {
       this.currentImage = item;

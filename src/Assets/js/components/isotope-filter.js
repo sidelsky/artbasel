@@ -1,5 +1,7 @@
 var Isotope = require("isotope-layout");
-var $resetBtn = $(".c-filter__container--clear");
+
+var $resetBtnMobile = $(".c-filter__reset--mobile");
+var $resetBtnDesktop = $(".c-filter__reset--desktop");
 
 var $Items = $(".filter-item");
 var $numberOfItems = $Items.length;
@@ -63,8 +65,10 @@ if ($numberOfItems) {
 
     // if number of results matches show
     if (grid.filteredItems.length !== $numberOfItems) {
+      $resetBtnMobile.show();
       if (!isMobile() && $(window).width() > 768) {
-        $resetBtn.show();
+        $resetBtnMobile.hide();
+        $resetBtnDesktop.show();
       }
     }
 
@@ -103,7 +107,8 @@ if ($numberOfItems) {
     grid.arrange({
       filter: "*",
     });
-    $(".c-filter__container--clear").hide();
+    $resetBtnDesktop.hide();
+    $resetBtnMobile.hide();
     $(".c-filter__no-results").hide();
   });
 
