@@ -102,7 +102,6 @@ $(document).ready(function() {
      * Reset filters
      */
     $(".button--reset").on("click", function() {
-      scrollToTheTop(85);
       // reset filters
       filters = {};
       grid.arrange({
@@ -111,6 +110,7 @@ $(document).ready(function() {
       $resetBtnDesktop.hide();
       $resetBtnMobile.hide();
       $(".c-filter__no-results").hide();
+      scrollToTheTop(85);
     });
 
     function scrollToTheTop($val) {

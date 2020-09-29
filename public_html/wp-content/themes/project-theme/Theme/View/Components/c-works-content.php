@@ -157,7 +157,7 @@ $surnames = array_unique($surnames);
             	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surnameToLower ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
 						<figure class="c-works__figure">
 							<a href="<?= $link ?>">
-								<img loading="lazy" src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image" >
+								<img src="<?= $image ?>" alt="<?= $title ?>" class="c-works__image" >
 							</a>
 						</figure>
 
