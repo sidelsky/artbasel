@@ -14,10 +14,12 @@ $surnames = array_unique($surnames);
 //$fullNames = array_unique($fullNames);
 
 ?>
+
 <section class="u-section" id="section-top">
 	<?php 
 		if( $showWorksFilters ) : ?>
-			<section class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
+		<div style="width: 100%">
+			<div class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
 				<h3 class="l-content__title-break c-online-exhibitions__btn-title"><?= $worksFilterTitle ?></h3>
 				
 				<div class="c-online-exhibitions__btn-container c-filter__wrap filters">
@@ -69,7 +71,7 @@ $surnames = array_unique($surnames);
 						<!-- Clear filter -->
 						<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--desktop">Clear filters</span>
 					</div>
-			</section>
+			</div>
 
 			<div class="mobile-filters filters">
 				<!-- Artist name filter -->
@@ -107,6 +109,8 @@ $surnames = array_unique($surnames);
 				<!-- Clear filter -->
 				<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--mobile">Clear filters</span>
 			</div>
+		</div>
+
 			
 	<?php endif; ?>
 
@@ -187,25 +191,6 @@ $surnames = array_unique($surnames);
 								<div class="c-works__price"><span><?= $price ?></span></div>
 							<?php endif; ?>
 
-							<?php /* 
-							<?php if( $sold == 'sold' ) {
-								$availabilityMarker = 'c-sale-marker--sold';
-								$availabilityTitle = 'Sold';
-							} elseif( $sold == 'hold' ) {
-								$availabilityMarker = 'c-sale-marker--hold';
-								$availabilityTitle = 'Hold';
-							} else {
-								$availabilityMarker = 'c-sale-marker--available';
-								$availabilityTitle = 'Available';
-							} ?>
-
-							<?php if( $sold == !NULL ) : ?>
-								<div class="c-works__availability">
-									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-								</div>
-							<?php endif; ?>
-						*/?>
-
 						<?php else :?>
 
 							<a href="<?= $link; ?>"><h2 class="c-works__title"><?= $title; ?></h2></a>
@@ -225,25 +210,6 @@ $surnames = array_unique($surnames);
 							<?php if($sold === 'available') : ?>
 								<div class="c-works__price"><span><?= $price ?></span></div>
 							<?php endif; ?>
-						
-						<?php /* 
-							<?php if( $sold == 'sold' ) {
-								$availabilityMarker = 'c-sale-marker--sold';
-								$availabilityTitle = 'Sold';
-							} elseif( $sold == 'hold' ) {
-								$availabilityMarker = 'c-sale-marker--hold';
-								$availabilityTitle = 'Hold';
-							} else {
-								$availabilityMarker = 'c-sale-marker--available';
-								$availabilityTitle = 'Available';
-							} ?>
-
-							<?php if( $sold == !NULL ) : ?>
-								<div class="c-works__availability">
-									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
-								</div>
-							<?php endif; ?>
-						*/?>
 
 						<?php endif; ?>
 
