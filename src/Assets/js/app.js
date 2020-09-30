@@ -1,6 +1,7 @@
 import "./svg-sprite";
 import "./archive";
 import "./components/jquery";
+import "./components/isotope-filter";
 //import "rellax";
 import "magnify";
 import "jquery-zoom";
@@ -21,7 +22,6 @@ import "./components/multiple-inquire-forms";
 import "./components/scroll-to-navigation";
 import "./components/highlight-scrolltonav";
 import "./components/kuula";
-import "./components/isotope-filter";
 
 //import "./components/noframework.waypoints";
 //import "./components/rellax";
