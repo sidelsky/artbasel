@@ -14,6 +14,7 @@ $dimentions: 42px;
     font-family: font-family(nt-primary, regular);
     color: palette(greys, base);
     @include set-font-size(1.6rem, 1.6rem, 1.6rem, 1.6rem);
+    display: none;
     span {
       color: black;
       text-decoration: underline;
