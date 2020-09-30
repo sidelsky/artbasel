@@ -18,8 +18,7 @@ $surnames = array_unique($surnames);
 <section class="u-section" id="section-top">
 	<?php 
 		if( $showWorksFilters ) : ?>
-		<div style="width: 100%">
-			<div class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
+			<section class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
 				<h3 class="l-content__title-break c-online-exhibitions__btn-title"><?= $worksFilterTitle ?></h3>
 				
 				<div class="c-online-exhibitions__btn-container c-filter__wrap filters">
@@ -71,7 +70,7 @@ $surnames = array_unique($surnames);
 						<!-- Clear filter -->
 						<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--desktop">Clear filters</span>
 					</div>
-			</div>
+			</section>
 
 			<div class="mobile-filters filters">
 				<!-- Artist name filter -->
@@ -90,7 +89,6 @@ $surnames = array_unique($surnames);
 						</ul>
 					</div>
 				</div>
-
 				<!-- Medium filter -->
 				<div class="c-filter__container c-filter__container--mobile" >
 					<div class="c-filter__title"><span class="c-filter__title__span c-filter__title__span--mobile" >Medium</span>
@@ -105,12 +103,9 @@ $surnames = array_unique($surnames);
 						</ul>
 					</div>
 				</div>
-
 				<!-- Clear filter -->
 				<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--mobile">Clear filters</span>
 			</div>
-		</div>
-
 			
 	<?php endif; ?>
 

@@ -276,12 +276,12 @@ $dimentions: 42px;
 }
 
 .stickyTb {
-  position: sticky !important;
-  top: 45px !important;
-  z-index: 2;
+  //top: 45px !important;
   background-color: #f8f8f8;
 
   @include media(">tablet") {
+    z-index: 2;
+    position: sticky !important;
     margin-top: -40px !important;
     top: 48px !important;
   }
@@ -289,7 +289,7 @@ $dimentions: 42px;
 
 .mobile-filters {
   display: none;
-  position: sticky;
-  top: 130px;
-  z-index: 1;
+  //position: sticky;
+  //top: 130px;
+  //z-index: 1;
 }
