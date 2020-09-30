@@ -1,6 +1,8 @@
 var Isotope = require("isotope-layout");
 
-(function($) {
+$(window).load(function() {
+  console.log("window loaded");
+
   var $resetBtnMobile = $(".c-filter__reset--mobile");
   var $resetBtnDesktop = $(".c-filter__reset--desktop");
 
@@ -10,7 +12,8 @@ var Isotope = require("isotope-layout");
   if ($numberOfItems) {
     var grid = new Isotope("[data-isotope]", {
       itemSelector: ".filter-item",
-      layoutMode: "fitRows",
+      //layoutMode: "fitRows",
+      layoutMode: "masonry",
       getSortData: {
         name: ".name",
       },
@@ -138,4 +141,4 @@ var Isotope = require("isotope-layout");
       return value;
     }
   }
-})(jQuery);
+});
