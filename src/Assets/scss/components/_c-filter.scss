@@ -252,6 +252,11 @@ $dimentions: 42px;
   .button-group {
     display: block;
   }
+
+  .c-filter__select-menu {
+    max-height: 100vh;
+    overflow: scroll;
+  }
 }
 
 .is-open {
