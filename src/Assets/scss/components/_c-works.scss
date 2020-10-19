@@ -80,6 +80,7 @@
     align-items: flex-end;
     display: flex;
     position: relative;
+    min-height: 200px;
     @include media(">tablet") {
       min-height: 310px;
     }
