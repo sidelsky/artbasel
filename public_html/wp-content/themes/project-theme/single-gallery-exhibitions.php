@@ -216,14 +216,16 @@ $fiftyFifty = get_field('fifty_fifty');
 $kuulaVr = $fiftyFifty['fifty_fifty_kuula'];
 $kuulaImage = $fiftyFifty['kuula_image']['sizes']['large'];
 
-if( $kuulaImage && $kuulaVr ) : ?>
-	<section class="u-section" style="margin-bottom: 30px"> 
+if( $kuulaImage ) : ?>
+	<section class="u-section"> 
 		<div class="c-kuula ">
-			<button class="c-kuula__button" id="touchButton" data-id="touch-button" >
-				<svg class="c-kuula__touch-icon">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-touch" viewBox="0 0 32 32"></use>
-				</svg>
-			</button>
+			<?php if( $kuulaVr) : ?>
+				<button class="c-kuula__button" id="touchButton" data-id="touch-button" >
+					<svg class="c-kuula__touch-icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-touch" viewBox="0 0 32 32"></use>
+					</svg>
+				</button>
+			<?php endif; ?>
 			<div class="c-kuula__image" style="background-image: url('<?= $kuulaImage ?>')" id="coverVR" data-id="touch-cover"></div>
 			<?= $kuulaVr ?>
 		</div>

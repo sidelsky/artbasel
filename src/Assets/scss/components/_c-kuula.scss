@@ -1,5 +1,11 @@
 .c-kuula {
   position: relative;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 460px;
+  @include media(">desktop") {
+    height: 840px;
+  }
 
   &__button {
     $dimensions: 75px;
