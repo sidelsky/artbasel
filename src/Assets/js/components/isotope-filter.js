@@ -1,7 +1,6 @@
 var Isotope = require("isotope-layout");
 
 $(window).load(function() {
-  console.log("window loaded");
 
   var $resetBtnMobile = $(".c-filter__reset--mobile");
   var $resetBtnDesktop = $(".c-filter__reset--desktop");
@@ -126,6 +125,7 @@ $(window).load(function() {
 
       setTimeout(function() {
         $(".parallax-window").parallax("refresh");
+        console.log('done');
         $(window)
           .trigger("resize")
           .trigger("scroll");
@@ -141,4 +141,7 @@ $(window).load(function() {
       return value;
     }
   }
+
+
+  
 });

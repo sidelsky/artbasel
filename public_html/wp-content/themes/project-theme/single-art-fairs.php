@@ -11,7 +11,7 @@ $inquireForm = new InquireForm;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
 ?>
 
 <span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
@@ -37,9 +37,9 @@ include("header.php");
 <?php
 
 	foreach($allLayouts as $value) {
-			
+
 			switch ($value['layoutName']) {
-				
+
 				//Get Title break
 				case 'title_break':
 					$templateName = 'c-title-break';
@@ -87,6 +87,12 @@ include("header.php");
 				case 'scroll_to_navigation':
 					$templateName = 'c-scroll-to-navigation-ids';
 					break;
+
+					//Get Kuula
+					case 'kuula':
+						$templateName = 'c-kuula';
+						break;
+						
 				}
 
 			echo $render->view('Components/' . $templateName, $value, $args);
@@ -102,7 +108,7 @@ include("header.php");
     $template = 'c-inquire-form';
 	 $data = $inquireForm->getInquireForm();
 	 //args can overwrite $data
-    $args = [ 
+    $args = [
 		'id' => 12,
 		'title' => false,
 		'description' => false,
@@ -121,7 +127,7 @@ $onlineExhibitionsCardData = [
 	'altFont' => false
 ];
 include("partials/footer-navigation.php"); ?>
-	 
+
 <?php
 /**
  * Footer

@@ -26,17 +26,17 @@
       padding: 0 $spacing--medium;
 
       &:after {
-        content: "";
-        position: absolute;
-        right: 0;
-        left: 50%;
-        bottom: 0px;
-        display: block;
-        width: 0;
-        height: 2px;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        background-color: palette(bw, black);
+        // content: "";
+        // position: absolute;
+        // right: 0;
+        // left: 50%;
+        // bottom: 0px;
+        // display: block;
+        // width: 0;
+        // height: 1px;
+        // -webkit-transform: translateX(-50%);
+        // transform: translateX(-50%);
+        // background-color: palette(bw, black);
       }
 
       &:hover {
@@ -57,25 +57,63 @@
       font-family: font-family(nt-primary, medium);
 
       &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 50%;
+        bottom: 0px;
+        display: block;
         width: 100%;
+        height: 1px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background-color: palette(bw, black);
       }
     }
   }
 }
 
-.current-page-ancestor a,
-.single-online-exhibitions .menu-item:first-of-type a,
-.single-art-fairs .menu-item:last-of-type a,
-.active a {
-  text-decoration: none;
-  color: palette(bw, black);
-  opacity: 1;
+.menu-item.current_page_item a,
+.menu-item.current_page_ancestor a {
   font-family: font-family(nt-primary, medium);
+  color: palette(bw, black);
+  opacity: 0.8;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s all ease;
+  height: 34px;
+  margin-top: 14px;
+  padding: 0 $spacing--medium;
 
   &:after {
-    width: 100% !important;
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: palette(bw, black);
   }
 }
+
+// .menu-item-post-type_type a,
+// .current-page-ancestor a,
+// .single-online-exhibitions .menu-item:first-of-type a,
+// .single-art-fairs .menu-item:last-of-type a,
+// .active a {
+//   text-decoration: none;
+//   color: palette(bw, black);
+//   opacity: 1;
+//   font-family: font-family(nt-primary, medium);
+
+//   &:after {
+//     width: 100% !important;
+//   }
+// }
 
 /**
 * Parallax-template

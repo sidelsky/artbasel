@@ -32,6 +32,7 @@
         	create_post_type([
 				'name' => 'Online exhibitions',
 				'singular_name' => 'Online exhibition',
+				'hierarchical' => true,
 				'has_archive' => false,
 				'rewrite' => [
 					//'slug' => 'private-sales/private-room',
@@ -51,6 +52,7 @@
         	create_post_type([
 				'name' => 'Art fairs',
 				'singular_name' => 'Art fairs',
+				'hierarchical' => true,
 				'has_archive' => false,
 				'rewrite' => [
 					//'slug' => 'private-sales/private-room',
@@ -70,6 +72,7 @@
         	create_post_type([
 				'name' => 'Gallery exhibitions',
 				'singular_name' => 'Gallery exhibitions',
+				'hierarchical' => true,
 				'has_archive' => false,
 				'rewrite' => [
 					//'slug' => 'private-sales/private-room',
@@ -89,6 +92,7 @@
         	create_post_type([
 				'name' => 'On view',
 				'singular_name' => 'On view',
+				'hierarchical' => true,
 				'has_archive' => false,
 				'rewrite' => [
 				//'slug' => 'private-sales/private-rooms',
