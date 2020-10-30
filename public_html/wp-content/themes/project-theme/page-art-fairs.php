@@ -15,7 +15,7 @@ $exhibitionCard = new ExhibitionCard;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
 ?>
 
 
@@ -42,9 +42,9 @@ include("header.php");
 	<?php
 
 		foreach($allLayouts as $value) {
-				
+
 				switch ($value['layoutName']) {
-					
+
 					//Get Title break
 					case 'title_break':
 						$templateName = 'c-title-break';
@@ -63,7 +63,7 @@ include("header.php");
 							'fullWidth' => false
 						];
 						break;
-					
+
 					//Wider text content
 					case 'wider_text_content':
 						$templateName = 'c-wider-text-content';
@@ -72,7 +72,7 @@ include("header.php");
 							'alignLeft' => false
          			];
 						break;
-						
+
 					//Get Art Fairs
 					case 'art_fairs':
 						$templateName = 'c-art-fairs';
@@ -84,16 +84,16 @@ include("header.php");
 
 	?>
 
-<?php 
+<?php
 /**
  * Email submission
  */
 if( is_page('june-art-fair') ) {
-	include("partials/ma-email-sub-vr.php"); 
+	include("partials/ma-email-sub-vr.php");
 }
 ?>
 
-	 
+
 <?php
 /**
  * Footer
