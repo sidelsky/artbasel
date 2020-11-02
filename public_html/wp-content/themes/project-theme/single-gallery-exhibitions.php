@@ -89,34 +89,116 @@ if( get_field('modal_notice') ) { ?>
 
 <?php
 /**
- * Hero paralax image
+ * Hero  image
  */
-$hero = get_field('hero');
-if($hero) : ?>
+$parallax_hero = get_field( 'parallax_hero' );
+if( $parallax_hero ) : ?>
+	<?php 
+	/**
+	 * Parallax hero
+	 */
+	$parallax_hero_image = get_field('parallax_hero_image');
+	$parallax_hero_title = get_field('parallax_hero_title');
+	$parallax_introduction = get_field('parallax_introduction');
+	$top_spacing_phone = get_field('top_spacing_phone');
+	$top_spacing_tablet = get_field('top_spacing_tablet');
+	$top_spacing_desktop = get_field('top_spacing_desktop');
+	$top_spacing_desktop_large = get_field('top_spacing_desktop_large');
+	$parallax_hero_image_shading = get_field('parallax_hero_image_shading');
 
-	<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
-		<svg class="u-icon c-works__icon c-works__icon--back">
-			<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
-		</svg>
-		<a href="javascript:history.go(-1)" class="c-works__href">Back</a>
-	</span>
+	$parallax_hero_image_height_phone = get_field('parallax_hero_image_height');
+	$parallax_hero_image_height_tablet = get_field('parallax_hero_image_height_tablet');
+	$parallax_hero_image_height_desktop = get_field('parallax_hero_image_height_desktop');
+	?>
 
-	<section class="u-section c-paralax-header c-paralax-header--desktop">
-		<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">
-		<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0,<?= get_field('image_shading_cover') ?>);"></span>
-			<div class="parallax-window__content" data-id="title">
-				<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?= $hero['title'] ?></h1>
-				<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $hero['subtitle'] ?></h2>
-					<?php if( get_field('view_all_works_link') ) : ?>
-					<span class="c-works__href-wrap c-works__href-wrap--no-arrow c-works__href-wrap--center">
-						<a href="#top" class="c-works__href">View all works</a>
-					</span>
-					<?php endif; ?>
-			</div>
+	<style>
+
+	/* Phone */ 
+	.spacing-top {
+		top: <?= $top_spacing_phone ?>px;
+	}
+
+	.hero-height {
+		height: <?= $parallax_hero_image_height_phone ?>px
+	}
+
+@media (min-width:375px) { 
+	/* Tablet */ 
+	.spacing-top {
+			top: <?= $top_spacing_tablet ?>px;
+		}
+
+	.hero-height {
+		height: <?= $parallax_hero_image_height_tablet ?>px
+	}
+}
+ 
+@media (min-width:678px) { 
+	/* Desktop */ 
+	.spacing-top {
+			top: <?= $top_spacing_desktop ?>px;
+		}
+
+	.hero-height {
+		height: <?= $parallax_hero_image_height_desktop ?>px
+	}
+}
+
+</style>
+
+<section class="c-parallax-hero rellax-wrapper" style="background-color: rgba(0,0,0,<?= $parallax_hero_image_shading ?>)">
+		<div class="c-parallax-hero__content-wrap spacing-top">
+			
+				<div class="u-section u-l-vertical-padding--margin-40">
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+
+					<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
+						<h1 class="c-site-headings c-site-headings--h1--sub c-parallax-hero__h1">
+							<?= $parallax_hero_title ?>
+						</h1>
+					</div>
+
+					<p class="c-parallax-hero__h2"><?= $parallax_introduction ?></p>
+
+					</div>
+				</div>
+
 		</div>
+
+		<figure>
+			<div class="parallax-window parallax-window__hero hero-height" data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
+		</figure>
+		
 	</section>
-<?php else : ?>
-	<?php _e( 'Oops, please add a Hero image here.' ); ?>
+
+<?php else : 
+	$hero = get_field('hero');
+	if($hero) : 
+	?>
+
+		<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
+			<svg class="u-icon c-works__icon c-works__icon--back">
+				<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-white" viewBox="0 0 32 32"></use>
+			</svg>
+			<a href="javascript:history.go(-1)" class="c-works__href">Back</a>
+		</span>
+
+		<section class="u-section c-paralax-header c-paralax-header--desktop">
+			<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">
+			<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0,<?= get_field('image_shading_cover') ?>);"></span>
+				<div class="parallax-window__content" data-id="title">
+					<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?= $hero['title'] ?></h1>
+					<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $hero['subtitle'] ?></h2>
+						<?php if( get_field('view_all_works_link') ) : ?>
+						<span class="c-works__href-wrap c-works__href-wrap--no-arrow c-works__href-wrap--center">
+							<a href="#top" class="c-works__href">View all works</a>
+						</span>
+						<?php endif; ?>
+				</div>
+			</div>
+		</section>
+	<?php endif; ?>
+	
 <?php endif; ?>
 
 <?php 

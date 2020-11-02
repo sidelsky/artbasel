@@ -75,10 +75,7 @@ $speed = 1;
 		height: <?= $parallax_hero_image_height_desktop ?>px
 	}
 }
- 
 
-
-}
 
 </style>
 
