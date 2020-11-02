@@ -1,4 +1,4 @@
-<?php if( $kuulaImage ) : ?>
+<?php if( $data['kuula_image'] ) : ?>
    <section class="u-section"> 
       <div class="c-kuula ">
          <?php if( $data['kuula_vr'] ) : ?>
