@@ -103,7 +103,8 @@
 				'supports' => [
 					'title',
 					'thumbnail',
-					'revisions'
+					'revisions',
+					'editor',
 				],
 			]);
 
