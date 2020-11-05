@@ -55,6 +55,13 @@ class LayoutVr {
                $widerTextContent = new WiderTextContent($layout);
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
+
+            //Kuula
+			   case 'kuula':
+               $kuula = new Kuula($layout);
+               $currentLayout = $kuula->getKuula();
+            break;
+            
                 
         }
          $this->layoutOutput[] = $currentLayout;
