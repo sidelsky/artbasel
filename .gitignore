@@ -32,6 +32,7 @@ yarn-error.log
 composer.lock
 yarn.lock
 public_html/.htaccess
+webpack.mix.js
 
 !vendor/.gitkeep
 !public_html/wordpress/.gitkeep

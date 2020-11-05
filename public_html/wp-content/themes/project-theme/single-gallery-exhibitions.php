@@ -408,6 +408,11 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 							'alignLeft' => true
          			];
 						break;
+
+					//Get Kuula
+				case 'kuula':
+					$templateName = 'c-kuula';
+				break;
 				
 			}
 				$renderContent = $render->view('Components/' . $templateName, $value, $index);
