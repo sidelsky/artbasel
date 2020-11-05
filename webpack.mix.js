@@ -13,7 +13,7 @@ const mix = require("laravel-mix");
 const SvgStore = require("webpack-svgstore-plugin");
 
 // Assets Path
-const Vhost = "http://localhost:8888";
+const Vhost = "http://artbasilvip/";
 
 const jsSrcPath = "src/Assets/js/app.js";
 const scssSrcPath = "src/Assets/scss/style.scss";
