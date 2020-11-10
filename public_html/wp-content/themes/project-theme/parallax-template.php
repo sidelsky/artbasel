@@ -75,14 +75,12 @@ $speed = 1;
 		height: <?= $parallax_hero_image_height_desktop ?>px
 	}
 }
- 
 
-
-}
 
 </style>
 
-	<section class="c-parallax-hero rellax-wrapper" style="background-color: rgba(0,0,0,<?= $parallax_hero_image_shading ?>)">
+	<section class="c-parallax-hero rellax-wrapper">
+	<span class="c-parallax-hero--bg-wrap" style="background-color: rgba(0,0,0,<?= $parallax_hero_image_shading ?>)"></span>
 		<div class="c-parallax-hero__content-wrap spacing-top">
 			
 			<?php 
