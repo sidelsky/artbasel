@@ -6791,7 +6791,7 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
 .u-video-aspect-ratio::before {
   content: "";
   display: block;
-  padding-top: 56.25%;
+  /* padding-top: 56.25%; */
 }
 
 .u-video-aspect-ratio--portrait {
