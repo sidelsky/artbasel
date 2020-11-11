@@ -2026,10 +2026,7 @@ span.img-text:hover {
 @media (max-width: 767px) {
   .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
     position: relative;
-    min-height: 400px !important;
-    border-top: 10px solid #fff;
-    border-bottom: 15px solid #fff;
-    margin: 20px 0;
+    min-height: 340px !important;
   }
   .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
     padding-top: 0 !important;

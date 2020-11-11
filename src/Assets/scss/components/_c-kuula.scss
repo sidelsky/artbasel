@@ -65,10 +65,7 @@
              @include media("<tablet") {
               &::before { padding-top: 0 !important}
               @include aspect-ratio(1, 1);
-              min-height: 400px !important;
-              border-top: 10px solid  $white;
-              border-bottom: 15px solid $white;
-              margin: 20px 0;
+              min-height: 340px !important;
              }
             }
      }
