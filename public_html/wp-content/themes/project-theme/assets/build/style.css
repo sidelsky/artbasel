@@ -2023,7 +2023,7 @@ span.img-text:hover {
 @media (max-width: 767px) {
   .page-template-page-editorial-php .l-content__block--wide-image {
     overflow: visible !important;
-    margin: 182px 0;
+    margin: 40px 0;
   }
 }
 
