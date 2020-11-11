@@ -2016,6 +2016,39 @@ span.img-text:hover {
   }
 }
 
+/* plinth viewer */
+@media (max-width: 767px) {
+  .l-content__block--wide-image {
+    overflow: visible !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
+    position: relative;
+    min-height: 400px !important;
+    border-top: 10px solid #fff;
+    border-bottom: 15px solid #fff;
+    margin: 20px 0;
+  }
+  .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
+    padding-top: 0 !important;
+  }
+  .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+  }
+  .l-content__block--wide-image .u-video-aspect-ratio model-viewer .canvas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+}
+
 .c-lightbox {
   position: fixed;
   width: 100%;
@@ -5969,6 +6002,7 @@ body.online-exhibitions-template-parallax-template {
 @media (min-width: 376px) {
   .l-content__block__title {
     font-size: 2.4rem;
+    padding-top: 20px;
   }
 }
 

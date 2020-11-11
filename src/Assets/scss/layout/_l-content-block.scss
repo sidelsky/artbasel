@@ -35,6 +35,7 @@ $spacing: 30px;
       margin-bottom: $spacing--small;
       @include media(">phone") {
         font-size: 2.4rem;
+        padding-top: 20px;
       }
       @include media(">tablet") {
         font-size: 2.4rem;
