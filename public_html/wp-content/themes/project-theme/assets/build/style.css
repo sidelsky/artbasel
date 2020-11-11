@@ -2016,28 +2016,32 @@ span.img-text:hover {
   }
 }
 
-/* plinth viewer */
+.page-template-page-editorial-php {
+  /* plinth viewer */
+}
+
 @media (max-width: 767px) {
-  .l-content__block--wide-image {
+  .page-template-page-editorial-php .l-content__block--wide-image {
     overflow: visible !important;
+    margin: 182px 0;
   }
 }
 
 @media (max-width: 767px) {
-  .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
     position: relative;
     min-height: 340px !important;
   }
-  .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
     padding-top: 0 !important;
   }
-  .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
     content: "";
     display: block;
     padding-top: 100%;
     width: 100%;
   }
-  .l-content__block--wide-image .u-video-aspect-ratio model-viewer .canvas {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer .canvas {
     position: absolute;
     bottom: 0;
     left: 0;

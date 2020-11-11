@@ -54,11 +54,13 @@
   }
 }
 
+.page-template-page-editorial-php {
 /* plinth viewer */
 .l-content__block {
     &--wide-image {
       @include media("<tablet") {
         overflow: visible !important;
+        margin: 182px 0;
     }
     .u-video-aspect-ratio {
            model-viewer {
@@ -68,6 +70,7 @@
               min-height: 340px !important;
              }
             }
-     }
-  }
+          }
+        }
+      }
 }
