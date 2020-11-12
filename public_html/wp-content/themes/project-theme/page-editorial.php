@@ -20,9 +20,6 @@ include("header.php");
 ?>
 
 
-<!-- Vimeo hero -->
-<?php get_template_part( 'Theme/View/Components/c-vimeo-hero' ); ?>
-
 
 
 <?php

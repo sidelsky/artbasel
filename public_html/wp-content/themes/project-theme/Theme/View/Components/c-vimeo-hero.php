@@ -1,8 +1,11 @@
 <section class="c-vimeo-hero embed-container">
-  <?php
 
+  <?php if( have_rows('vimeo_hero_panel') ): ?>
+    <?php while( have_rows('vimeo_hero_panel') ): the_row();
+
+ 
   // Load value.
-  $iframe = get_field('vimeo_hero');
+  $iframe = get_field('vimeo_url');
 
   // Use preg_match to find iframe src.
   preg_match('/src="(.+?)"/', $iframe, $matches);
@@ -26,7 +29,21 @@
 
   // Display customized HTML.
   echo $iframe;
+  // Get sub field values.
+  $image = get_sub_field('image');
+  $link = get_sub_field('link');
+
   ?>
+  <div id="hero">
+      <img src="<?php echo esc_url( $image['url'] ); ?>" alt="<?php echo esc_attr( $image['alt'] ); ?>" />
+      <div class="content">
+          <?php the_sub_field('caption'); ?>
+          <a href="<?php echo esc_url( $link['url'] ); ?>"><?php echo esc_attr( $link['title'] ); ?></a>
+      </div>
+  </div>
+<?php endwhile; ?>
+<?php endif; ?>
+
 
   <style>
       .embed-container {
@@ -47,4 +64,11 @@
           height: 100%;
       }
   </style>
+
+
+<h1>vimeo_hero_title<h1>
+<p>vimeo_hero_desc</p>
+<p><a href="vimeo_hero_link">vimeo_hero_link_title</a></p>
+
+
 </section>
