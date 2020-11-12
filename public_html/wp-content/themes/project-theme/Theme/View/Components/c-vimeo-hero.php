@@ -8,11 +8,14 @@
   preg_match('/src="(.+?)"/', $iframe, $matches);
   $src = $matches[1];
 
-  // Add extra parameters to src and replcae HTML.
+  // Add extra parameters to src and replicate HTML.
   $params = array(
-      'controls'  => 0,
-      'hd'        => 1,
-      'autohide'  => 0
+    'controls'    => 0,
+    'hd'        => 1,
+    'fs'        => 1,
+    'rel'        => 0,
+    'modestbranding' => 1,
+    'autoplay' => 1
   );
   $new_src = add_query_arg($params, $src);
   $iframe = str_replace($src, $new_src, $iframe);
