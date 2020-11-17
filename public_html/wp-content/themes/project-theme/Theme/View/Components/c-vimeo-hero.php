@@ -105,26 +105,6 @@ width: 200px;
   background: white;
   color: black;
 }
-
-@media screen and (max-width: 540px) {
-  .embed-container {
-        padding-bottom: inherit;
-        overflow: inherit;
-        margin-bottom: 230px;
-  }
-  #hero {
-    background: #222;
-    left: inherit;
-    transform: inherit;
-    padding: 50px 20px;
-    top: 87%;
-    width: 100%;
-  }
-  #hero h1 {
-      font-size: 245%;
-  }
-}
-
     .hide {display:none;}
     iframe { border: 0; }
       .embed-container {
@@ -145,6 +125,24 @@ width: 200px;
           width: 100%;
           height: 100%;
       }
+
+      @media screen and (max-width: 540px) {
+        .embed-container {
+              margin-bottom: 230px;
+        }
+        #hero {
+          background: #222;
+          left: inherit;
+          transform: inherit;
+          padding: 50px 20px;
+          top: 87%;
+          width: 100%;
+        }
+        #hero h1 {
+            font-size: 245%;
+        }
+      }
+      
   </style>
 
 
