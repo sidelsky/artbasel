@@ -129,6 +129,7 @@ width: 200px;
       @media screen and (max-width: 540px) {
         .embed-container {
               margin-bottom: 230px;
+              overflow: inherit;
         }
         #hero {
           background: #222;
@@ -142,7 +143,7 @@ width: 200px;
             font-size: 245%;
         }
       }
-      
+
   </style>
 
 
