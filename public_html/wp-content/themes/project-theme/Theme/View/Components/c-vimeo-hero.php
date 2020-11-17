@@ -109,14 +109,16 @@ width: 200px;
 @media screen and (max-width: 540px) {
   .embed-container {
         padding-bottom: inherit;
+        overflow: inherit;
+        margin-bottom: 230px;
   }
   #hero {
     background: #222;
-    position: inherit;
-    top: inherit;
     left: inherit;
     transform: inherit;
     padding: 50px 20px;
+    top: 87%;
+    width: 100%;
   }
   #hero h1 {
       font-size: 245%;
