@@ -19,13 +19,15 @@ $allLayouts = $layout->getLayout();
 include("header.php");
 ?>
 
+<?php if ( get_field('has_vimeo_hero') == true ) { ?>
 
+<!-- Show vimeo hero -->
+<?php get_template_part( 'Theme/View/Components/c-vimeo-hero' ); ?>
 
+<?php } else { ?>
 
+<!-- Show Hero carousel -->
 <?php
-/**
- * Hero carousel
- */
     $template = 'c-viewing-room-carousel';
     $data = $viewingRoom->getData();
     $args = [
@@ -33,6 +35,8 @@ include("header.php");
 		];
     echo $render->view('Components/' . $template, $data, $args);
 ?>
+
+<?php } ?>
 
 <section class="l-content">
 <?php
