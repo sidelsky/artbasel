@@ -128,7 +128,7 @@ width: 200px;
 
       @media screen and (max-width: 540px) {
         .embed-container {
-              margin-bottom: 230px;
+              margin-bottom: 300px;
               overflow: inherit;
         }
         #hero {
