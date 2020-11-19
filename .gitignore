@@ -43,3 +43,5 @@ webpack.mix.js
 !public_html/wp-content/mu-plugins/git_version.php
 !public_html/wp-content/uploads/.gitkeep
 !.env.example
+public_html/mix-manifest.json
+public_html/wp-content/themes/project-theme/assets/build/app.js

@@ -6856,10 +6856,10 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
 }
 
 .u-video-aspect-ratio iframe {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
+  /* height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0; */
   width: 100%;
 }
 
