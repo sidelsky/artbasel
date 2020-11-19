@@ -20,19 +20,19 @@
                         <span class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center  <?= $args['altFontClass'] ? 'c-site-headings--h1--alt-font' : '' ?>"><?= $viewingRoom['currentViewingRoomTitle'] ?></span>
                     </h1>
 
-                    
+
                         <?php if($viewingRoom['currentViewingRoomLinkDescription']) { ?>
                             <span class="c-works__href-wrap c-works__href-wrap--center">
                                 <?php if( $viewingRoom['currentViewingRoomLinkDescription'] && !$viewingRoom['currentViewingRoomLink'] ) {
                                     echo '<span class="l-content__block--link">' . $viewingRoom['currentViewingRoomLinkDescription'] . '</span>';
                                 } ?>
                                 <?php if( $viewingRoom['currentViewingRoomLink'] && $viewingRoom['currentViewingRoomLinkDescription'] ) { ?>
-                                    <a href="<?= $viewingRoom['currentViewingRoomLink'] ?>" class="c-works__href c-works__href--no-arrow"><?= $viewingRoom['currentViewingRoomLinkDescription'] ?></a> 
+                                    <a href="<?= $viewingRoom['currentViewingRoomLink'] ?>" class="c-works__href c-works__href--no-arrow"><?= $viewingRoom['currentViewingRoomLinkDescription'] ?></a>
                                 <?php } ?>
                             </span>
                         <?php } ?>
-                  
-                        
+
+
                 </div>
             </div>
         </div>

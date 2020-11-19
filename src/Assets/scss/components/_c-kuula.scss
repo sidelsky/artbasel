@@ -53,3 +53,24 @@
     }
   }
 }
+
+.page-template-page-editorial-php {
+/* plinth viewer */
+.l-content__block {
+    &--wide-image {
+      @include media("<tablet") {
+        overflow: visible !important;
+        margin: 40px 0;
+    }
+    .u-video-aspect-ratio {
+           model-viewer {
+             @include media("<tablet") {
+              &::before { padding-top: 0 !important}
+              @include aspect-ratio(1, 1);
+              min-height: 340px !important;
+             }
+            }
+          }
+        }
+      }
+}

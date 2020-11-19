@@ -18,12 +18,12 @@ $wordpress = new WordpressHelper;
 		<meta name="theme-color" content="#333">
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
+
 		<link data-n-head="true" rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon/favicon-16x16.png"/>
 		<link data-n-head="true" rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon/favicon-32x32.png"/>
 		<link data-n-head="true" rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/assets/build/img/favicon/favicon-96x96.png"/>
-		
-		<!-- Kuula script -->	
+
+		<!-- Kuula script -->
 		<script src="https://static.kuula.io/api.js"></script>
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -32,16 +32,16 @@ $wordpress = new WordpressHelper;
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-T2P7DZ2');</script>
 		<!-- End Google Tag Manager -->
-		
+
 		<script src="https://player.vimeo.com/api/player.js"></script>
-		
+
 		<?php wp_head(); ?>
 		<!-- VPS Server -->
 	</head>
 
 
 
-	<?php 
+	<?php
 		if( is_page('works-preview') ) {
 			$isHome = 'home';
 		} else {
@@ -108,7 +108,7 @@ $wordpress = new WordpressHelper;
 		</div>
 
 		<?php if( !is_post_type_archive('private-rooms') && !is_singular('private-rooms')) : ?>
-			
+
 			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--left">
 				<svg class="c-header__icon">
 					<use xlink:href='#shape-hauserwirth-logo'></use>
@@ -124,15 +124,15 @@ $wordpress = new WordpressHelper;
 						'items_wrap' => '<ul class="c-site-nav__menu">%3$s</ul>'
 					];
 					echo '<nav class="c-site-nav">';
-						wp_nav_menu($menu_args); 
+						wp_nav_menu($menu_args);
 					echo '</nav>';
 				?>
 			</div>
 		<?php endif; ?>
-		
-		<?php 
+
+		<?php
 			if ( is_singular('private-rooms') ) {
-				include("partials/scroll-to-navigation.php"); 
+				include("partials/scroll-to-navigation.php");
 			}
 		?>
 
@@ -148,12 +148,12 @@ $wordpress = new WordpressHelper;
 				'items_wrap' => '<ul class="c-mobile-navigation__menu">%3$s</ul>'
 			];
 			echo '<nav>';
-				wp_nav_menu($menu_args); 
+				wp_nav_menu($menu_args);
 			echo '</nav>';
 		?>
 	</div>
- 
-	
+
+
 	<?php
 	$front_page_id = '6';
 	$currentPost_id = get_the_ID();
@@ -162,7 +162,7 @@ $wordpress = new WordpressHelper;
 	if( is_front_page() || is_page('Works preview') ) { ?>
 	<!-- NULL -->
 	<?php } else { ?>
-		
+
 		<?php if( is_singular('works') || !is_page_template('Viewing room template') ) : ?>
 
 			<?php else : ?>
@@ -179,7 +179,7 @@ $wordpress = new WordpressHelper;
 				</div>
 			</section>
 		<?php endif; ?>
-	
+
 	<?php } ?>
-				
+
 <main role="main" class="main">

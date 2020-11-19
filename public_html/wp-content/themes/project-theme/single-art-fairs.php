@@ -92,7 +92,7 @@ include("header.php");
 					case 'kuula':
 						$templateName = 'c-kuula';
 						break;
-						
+
 				}
 
 			echo $render->view('Components/' . $templateName, $value, $args);

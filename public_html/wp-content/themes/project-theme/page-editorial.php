@@ -16,13 +16,18 @@ $inquireForm = new InquireForm;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
 ?>
 
+<?php if ( get_field('has_vimeo_hero') == true ) { ?>
+
+<!-- Show vimeo hero -->
+<?php get_template_part( 'Theme/View/Components/c-vimeo-hero' ); ?>
+
+<?php } else { ?>
+
+<!-- Show Hero carousel -->
 <?php
-/**
- * Hero carousel
- */
     $template = 'c-viewing-room-carousel';
     $data = $viewingRoom->getData();
     $args = [
@@ -31,13 +36,15 @@ include("header.php");
     echo $render->view('Components/' . $template, $data, $args);
 ?>
 
+<?php } ?>
+
 <section class="l-content">
 <?php
 
 	foreach($allLayouts as $value) {
-			
+
 			switch ($value['layoutName']) {
-				
+
 				//Get Title break
 				case 'title_break':
 					$templateName = 'c-title-break';
@@ -105,7 +112,7 @@ include("header.php");
 				case 'two_images_module':
 					$templateName = 'c-two-images';
 					break;
-				
+
 				//Get Kuula
 				case 'kuula':
 					$templateName = 'c-kuula';
@@ -126,7 +133,7 @@ include("header.php");
     $template = 'c-inquire-form';
 	 $data = $inquireForm->getInquireForm();
 	 //args can overwrite $data
-    $args = [ 
+    $args = [
 		'id' => 12,
 		'title' => false,
 		'description' => false,
@@ -134,7 +141,7 @@ include("header.php");
 		];
     echo $render->view('Components/' . $template, $data, $args);
 ?>
- 
+
 <?php
 /**
  * Footer navigation
@@ -145,7 +152,7 @@ $onlineExhibitionsCardData = [
 	'altFont' => false,
 ];
 include("partials/footer-navigation.php"); ?>
-	 
+
 <?php
 /**
  * Footer
