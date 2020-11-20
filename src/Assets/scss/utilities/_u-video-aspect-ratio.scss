@@ -25,12 +25,12 @@
     &::before {
       content: "";
       display: block;
-      padding-top: 170%;
+      /* padding-top: 170%; */
     }
 
     @include media(">tablet") {
       &::before {
-        padding-top: 55.45%;
+        /* padding-top: 55.45%; */
       }
     }
   }

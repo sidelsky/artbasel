@@ -6840,12 +6840,12 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
 .u-video-aspect-ratio--portrait::before {
   content: "";
   display: block;
-  padding-top: 170%;
+  /* padding-top: 170%; */
 }
 
 @media (min-width: 769px) {
   .u-video-aspect-ratio--portrait::before {
-    padding-top: 55.45%;
+    /* padding-top: 55.45%; */
   }
 }
 
