@@ -54,6 +54,22 @@
   }
 }
 
+/* online exhibitions iframe */
+.owl-item {
+  .c-paralax-carousel-cover {
+    position: inherit;
+  }
+  .u-video-aspect-ratio {
+    iframe {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
 .u-video-aspect-ratio--portrait-centered {
   position: relative;
   max-width: 500px;

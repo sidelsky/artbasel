@@ -146,6 +146,13 @@ $spacing: 30px;
         height: 460px;
       }
     }
+.online-exhibitions-template-default {
+  .l-content {
+    .u-video-aspect-ratio {
+      iframe { height: 544px;  }
+    }
+  }
+}
 
     &--dark-background {
       background-color: #212322;
@@ -357,7 +364,7 @@ $spacing: 30px;
   max-width: initial;
 }
 
-/** 
+/**
 Owl modal
 */
 .modal-active {

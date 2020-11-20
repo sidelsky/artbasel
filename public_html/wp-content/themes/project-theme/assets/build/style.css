@@ -6177,6 +6177,10 @@ body.online-exhibitions-template-parallax-template {
   height: 460px;
 }
 
+.l-content__block .online-exhibitions-template-default .l-content .u-video-aspect-ratio iframe {
+  height: 544px;
+}
+
 .l-content__block--dark-background {
   background-color: #212322;
 }
@@ -6494,7 +6498,7 @@ body.online-exhibitions-template-parallax-template {
   max-width: initial;
 }
 
-/** 
+/**
 Owl modal
 */
 .modal-active {
@@ -6860,6 +6864,19 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
     left: 0;
     position: absolute;
     top: 0; */
+  width: 100%;
+}
+
+/* online exhibitions iframe */
+.owl-item .c-paralax-carousel-cover {
+  position: inherit;
+}
+
+.owl-item .u-video-aspect-ratio iframe {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
   width: 100%;
 }
 
