@@ -63,7 +63,7 @@
     iframe {
       position: absolute;
       top: 0;
-      height: 100%;
+      height: 622px;
       left: 0;
       width: 100%;
     }
@@ -90,5 +90,13 @@
     position: absolute;
     top: 0;
     width: 100%;
+  }
+}
+
+.online-exhibitions-template-default {
+    .c-video-player--centered {
+      .u-video-aspect-ratio {
+            position: inherit;
+      }
   }
 }

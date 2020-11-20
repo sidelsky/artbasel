@@ -6177,8 +6177,8 @@ body.online-exhibitions-template-parallax-template {
   height: 460px;
 }
 
-.l-content__block .online-exhibitions-template-default .l-content .u-video-aspect-ratio iframe {
-  height: 544px;
+.l-content__block .online-exhibitions-template-default .l-content__block--center .u-video-aspect-ratio iframe {
+  height: 652px;
 }
 
 .l-content__block--dark-background {
@@ -6875,7 +6875,7 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
 .owl-item .u-video-aspect-ratio iframe {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 622px;
   left: 0;
   width: 100%;
 }
@@ -6902,6 +6902,10 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.online-exhibitions-template-default .c-video-player--centered .u-video-aspect-ratio {
+  position: inherit;
 }
 
 /*
