@@ -146,10 +146,10 @@ $spacing: 30px;
         height: 460px;
       }
     }
-.online-exhibitions-template-default {
   .l-content__block--center {
     .u-video-aspect-ratio {
-      iframe { height: 652px;  }
+      iframe {
+        height: 652px;
     }
   }
 }
