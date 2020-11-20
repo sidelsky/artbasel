@@ -6904,6 +6904,10 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
   width: 100%;
 }
 
+.online-exhibitions-template-default .c-video-player--centered {
+  margin: 0 auto -25px 0;
+}
+
 .online-exhibitions-template-default .c-video-player--centered .u-video-aspect-ratio {
   position: inherit;
 }
