@@ -94,10 +94,12 @@
 }
 
 .online-exhibitions-template-default {
-    .c-video-player--centered {
+    .c-video-player {
+      &--centered {
           margin: 0 auto -25px 0;
       .u-video-aspect-ratio {
             position: inherit;
       }
+    }
   }
 }
