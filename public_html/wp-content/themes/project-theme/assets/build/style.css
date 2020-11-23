@@ -2034,6 +2034,7 @@ span.img-text:hover {
   .art-fairs-template-default .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
     position: relative;
     min-height: 340px !important;
+    margin-bottom: 30px;
   }
   .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before,
   .art-fairs-template-default .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
