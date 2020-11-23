@@ -2016,32 +2016,38 @@ span.img-text:hover {
   }
 }
 
-.page-template-page-editorial-php {
+.page-template-page-editorial-php,
+.art-fairs-template-default {
   /* plinth viewer */
 }
 
 @media (max-width: 767px) {
-  .page-template-page-editorial-php .l-content__block--wide-image {
+  .page-template-page-editorial-php .l-content__block--wide-image,
+  .art-fairs-template-default .l-content__block--wide-image {
     overflow: visible !important;
     margin: 40px 0;
   }
 }
 
 @media (max-width: 767px) {
-  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer,
+  .art-fairs-template-default .l-content__block--wide-image .u-video-aspect-ratio model-viewer {
     position: relative;
     min-height: 340px !important;
   }
-  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before,
+  .art-fairs-template-default .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
     padding-top: 0 !important;
   }
-  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before,
+  .art-fairs-template-default .l-content__block--wide-image .u-video-aspect-ratio model-viewer::before {
     content: "";
     display: block;
     padding-top: 100%;
     width: 100%;
   }
-  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer .canvas {
+  .page-template-page-editorial-php .l-content__block--wide-image .u-video-aspect-ratio model-viewer .canvas,
+  .art-fairs-template-default .l-content__block--wide-image .u-video-aspect-ratio model-viewer .canvas {
     position: absolute;
     bottom: 0;
     left: 0;
