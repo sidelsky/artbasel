@@ -45,3 +45,4 @@ webpack.mix.js
 !.env.example
 public_html/mix-manifest.json
 public_html/wp-content/themes/project-theme/assets/build/app.js
+public_html/wp-content/themes/project-theme/assets/build/app.js
