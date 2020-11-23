@@ -69,6 +69,7 @@
               &::before { padding-top: 0 !important}
               @include aspect-ratio(1, 1);
               min-height: 340px !important;
+              margin-bottom: 30px;
              }
             }
           }
