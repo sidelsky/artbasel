@@ -59,11 +59,16 @@
 /* plinth ar viewer */
 .l-content__block {
       .ar-title {
-        font-size: 90%;
+        font-size: 85%;
         img {
           display: inline;
         }
       }
+    .qr {
+      @include media("<tablet") {
+        display: none;
+      }
+    }
     &--wide-image {
       @include media("<tablet") {
         overflow: visible !important;
