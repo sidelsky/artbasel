@@ -2023,12 +2023,19 @@ span.img-text:hover {
 
 .page-template-page-editorial-php .l-content__block .ar-title,
 .art-fairs-template-default .l-content__block .ar-title {
-  font-size: 90%;
+  font-size: 85%;
 }
 
 .page-template-page-editorial-php .l-content__block .ar-title img,
 .art-fairs-template-default .l-content__block .ar-title img {
   display: inline;
+}
+
+@media (max-width: 767px) {
+  .page-template-page-editorial-php .l-content__block .qr,
+  .art-fairs-template-default .l-content__block .qr {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
