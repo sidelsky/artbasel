@@ -62,11 +62,17 @@
         font-size: 85%;
         img {
           display: inline;
+          margin-bottom: -3px;
         }
       }
-    .qr {
+    .desktop {
       @include media("<tablet") {
         display: none;
+      }
+    }
+    .mobile {
+        @include media(">tablet") {
+          display: none;
       }
     }
     &--wide-image {
