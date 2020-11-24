@@ -59,8 +59,10 @@
 /* plinth ar viewer */
 .l-content__block {
       .ar-title {
-        display: inline;
-        font-size: 90%; 
+        font-size: 90%;
+        img {
+          display: inline;
+        }
       }
     &--wide-image {
       @include media("<tablet") {
