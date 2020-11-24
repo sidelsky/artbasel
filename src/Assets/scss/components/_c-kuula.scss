@@ -56,8 +56,12 @@
 
 .page-template-page-editorial-php,
 .art-fairs-template-default {
-/* plinth viewer */
+/* plinth ar viewer */
 .l-content__block {
+      .ar-title {
+        display: inline;
+        font-size: 90%; 
+      }
     &--wide-image {
       @include media("<tablet") {
         overflow: visible !important;

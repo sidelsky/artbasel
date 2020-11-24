@@ -2018,7 +2018,13 @@ span.img-text:hover {
 
 .page-template-page-editorial-php,
 .art-fairs-template-default {
-  /* plinth viewer */
+  /* plinth ar viewer */
+}
+
+.page-template-page-editorial-php .l-content__block .ar-title,
+.art-fairs-template-default .l-content__block .ar-title {
+  display: inline;
+  font-size: 90%;
 }
 
 @media (max-width: 767px) {
