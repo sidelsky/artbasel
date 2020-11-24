@@ -2029,11 +2029,19 @@ span.img-text:hover {
 .page-template-page-editorial-php .l-content__block .ar-title img,
 .art-fairs-template-default .l-content__block .ar-title img {
   display: inline;
+  margin-bottom: -3px;
 }
 
 @media (max-width: 767px) {
-  .page-template-page-editorial-php .l-content__block .qr,
-  .art-fairs-template-default .l-content__block .qr {
+  .page-template-page-editorial-php .l-content__block .desktop,
+  .art-fairs-template-default .l-content__block .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .page-template-page-editorial-php .l-content__block .mobile,
+  .art-fairs-template-default .l-content__block .mobile {
     display: none;
   }
 }
