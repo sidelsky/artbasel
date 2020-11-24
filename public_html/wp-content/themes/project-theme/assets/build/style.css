@@ -2023,8 +2023,12 @@ span.img-text:hover {
 
 .page-template-page-editorial-php .l-content__block .ar-title,
 .art-fairs-template-default .l-content__block .ar-title {
-  display: inline;
   font-size: 90%;
+}
+
+.page-template-page-editorial-php .l-content__block .ar-title img,
+.art-fairs-template-default .l-content__block .ar-title img {
+  display: inline;
 }
 
 @media (max-width: 767px) {
