@@ -7079,6 +7079,12 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
   width: 100%;
 }
 
+@media (max-width: 767px) {
+  .u-section {
+    height: 45px;
+  }
+}
+
 .u-column {
   margin: 0 auto;
   display: -webkit-box;
