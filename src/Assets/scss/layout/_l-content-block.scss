@@ -11,7 +11,7 @@ $spacing: 30px;
     line-height: normal;
 
     @include media("<tablet") {
-      height: 60px;
+      height: 80px;
     }
 
     &--alt-font {
