@@ -18,8 +18,8 @@
                       'rel'        => 0,
               'modestbranding' => 1,
       				'autoplay' => 1,
-              'muted' => 1
-
+              'muted' => 1,
+              'loop'=1
     );
     $new_src = add_query_arg($params, $src);
     $iframe = str_replace($src, $new_src, $iframe);
