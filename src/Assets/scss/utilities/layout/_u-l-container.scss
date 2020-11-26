@@ -105,9 +105,9 @@
 
 .u-section {
   width: 100%;
-  @include media("<tablet") {
+  /* @include media("<tablet") {
     height: 45px;
-  }
+  } */
 }
 
 .u-column {
