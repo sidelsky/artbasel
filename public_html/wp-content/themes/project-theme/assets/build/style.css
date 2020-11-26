@@ -5989,6 +5989,12 @@ body.online-exhibitions-template-parallax-template {
   }
 }
 
+@media (max-width: 767px) {
+  .l-content__title-break {
+    height: 60px;
+  }
+}
+
 .l-content__title-break--alt-font {
   font-family: "garamond-medium", Helvetica, Arial, sans-serif;
   font-size: 2.8rem;
@@ -7077,12 +7083,9 @@ body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-hea
 
 .u-section {
   width: 100%;
-}
-
-@media (max-width: 767px) {
-  .u-section {
+  /* @include media("<tablet") {
     height: 45px;
-  }
+  } */
 }
 
 .u-column {
