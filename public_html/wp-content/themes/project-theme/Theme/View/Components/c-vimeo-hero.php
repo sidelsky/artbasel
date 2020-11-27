@@ -45,7 +45,7 @@
           <p><?php the_sub_field('vimeo_hero_pre_title'); ?></p>
           <h1><?php the_sub_field('vimeo_hero_title'); ?></h1>
           <p><?php the_sub_field('vimeo_hero_desc'); ?></p>
-          <a href="<?php echo esc_url( $link ); ?>"><?php echo esc_html( $link_title ); ?></a>
+          <a href="<?php echo esc_url( $link['url'] ); ?>" class="vimeo-anchor-link"><?php echo esc_html( $link_title ); ?></a>
       </div>
 <?php endwhile; ?>
 <?php endif; ?>
