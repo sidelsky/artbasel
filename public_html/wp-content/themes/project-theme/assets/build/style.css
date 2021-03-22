@@ -104,7 +104,7 @@ table {
     4:3       |       75%
     3:2       |       66.66%
     8:5       |       62.5%
- 
+
 @include aspect-ratio(3,2); */
 /*
  * Breakpoint values
@@ -278,7 +278,7 @@ table {
 * we use a very simple custom Sassfunction to access
 * colours in our palette by name and optional tone/shade:
 */
-/** 
+/**
 * Colour palette
 */
 /**
@@ -1721,7 +1721,7 @@ button[disabled]:hover {
 }
 
 /**
-* Parallax alpha 
+* Parallax alpha
 */
 body.online-exhibitions-template-parallax-template .c-header {
   background-color: transparent;
@@ -6706,7 +6706,7 @@ Owl modal
 }
 
 /**
-* Parallax alpha 
+* Parallax alpha
 */
 body.online-exhibitions-template-parallax-template .l-site-header__nav {
   background-color: transparent;
@@ -7731,6 +7731,6 @@ body.is-scrolled > .header {
 }
 
 
-.single-works .u-section .video ~ .c-work-single__figure {
+.single-works .u-section .video ~  .single-works .u-section .c-work-single__figure {
     display: none;
 }
