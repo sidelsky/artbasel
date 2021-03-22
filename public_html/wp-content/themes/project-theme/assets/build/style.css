@@ -7728,9 +7728,4 @@ a img.aligncenter {
 
 body.is-scrolled > .header {
   background-color: #3b5998;
-}
-
-
-.video ~ .c-work-single__figure {
-    display: none;
-}
+} 
