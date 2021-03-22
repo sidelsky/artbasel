@@ -48,7 +48,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
 				echo '<span class="close closep">&times;</span>';
 				echo do_shortcode('[gravityform id="5" title="false" description="false" ajax="true" field_values="form_msg=I would like to buy ' . $work["fullName"] .', ' . $work["title"] . '. \nPlease contact me to finalize the purchase details.&id_code=' . $work["ids"] . '"]');
-				echo '<small> *By submiting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s affiliated companies.</small>';
+				echo '<small> *By submitting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsleter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and it\'s affiliated companies.</small>';
 				echo '</div>';
 		echo '</div>';
 	?>
@@ -62,7 +62,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
 				echo '<span class="close closei">&times;</span>';
 				echo do_shortcode('[gravityform id="7" title="false" description="false" ajax="true" field_values="form_msg=I am interested in purchasing ' . $work["fullName"] .' ' . $work["title"] . '. \nPlease send me further details about this artwork, pricing, and availability.&id_code=' . $work["ids"] . '"]');
-				echo '<small> *By submiting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsletter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and its affiliated companies.</small>';
+				echo '<small> *By submitting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsletter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and its affiliated companies.</small>';
 				echo '</div>';
 		echo '</div>';
   ?>
@@ -76,7 +76,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 				echo '<svg class="c-header__icon"><use xlink:href="#shape-hauserwirth-logo"></use></svg>';
 				echo '<span class="close closei">&times;</span>';
 				echo do_shortcode('[gravityform id="11" title="false" description="false" ajax="true" field_values="form_msg=I am interested in learning more about ' . $work["fullName"] .', ' . $work["title"] . '. \nPlease send me further details about available artworks and pricing.&id_code=' . $work["ids"] . '"]');
-				echo '<small> *By submiting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsletter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and its affiliated companies.</small>';
+				echo '<small> *By submitting your email address, you consent to receive our Newsletter. Your consent is revocable at any time by clicking the unsubscribe link in our Newsletter. The Newsletter is sent in accordance with our Privacy Policy and to advertise products and services of Hauser &amp; Wirth Ltd. and its affiliated companies.</small>';
 				echo '</div>';
 		echo '</div>';
   ?>
