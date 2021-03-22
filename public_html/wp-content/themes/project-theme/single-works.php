@@ -103,3 +103,10 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 
 
 <?php include("footer.php"); ?>
+
+
+<script>
+if($('.video').length){
+   $('.c-work-single__figure').hide();
+}
+</script>
