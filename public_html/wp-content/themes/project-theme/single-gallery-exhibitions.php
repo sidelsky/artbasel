@@ -160,7 +160,13 @@ if( $parallax_hero ) : ?>
 					</div>
 
 					<p class="c-parallax-hero__h2"><?= $parallax_introduction ?></p>
-
+					<?php if( get_field('view_all_works_link_para') ) : ?>
+					<span class="c-works__href-wrap c-works__href-wrap--no-arrow c-works__href-wrap--center">
+						<a href="<?php the_field('view_all_works_text_link_para'); ?>" class="c-works__href">
+							<?php the_field('view_all_works_text_para'); ?>
+						</a>
+					</span>
+					<?php endif; ?>
 					</div>
 				</div>
 
@@ -190,13 +196,13 @@ if( $parallax_hero ) : ?>
 				<div class="parallax-window__content" data-id="title">
 					<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?= $hero['title'] ?></h1>
 					<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $hero['subtitle'] ?></h2>
-						<?php if( get_field('view_all_works_link') ) : ?>
-						<span class="c-works__href-wrap c-works__href-wrap--no-arrow c-works__href-wrap--center">
-							<a href="<?php the_field('view_all_works_text_link'); ?>" class="c-works__href">
-								<?php the_field('view_all_works_text'); ?>
-							</a>
-						</span>
-						<?php endif; ?>
+					<?php if( get_field('view_all_works_link') ) : ?>
+					<span class="c-works__href-wrap c-works__href-wrap--no-arrow c-works__href-wrap--center">
+						<a href="<?php the_field('view_all_works_text_link'); ?>" class="c-works__href">
+							<?php the_field('view_all_works_text'); ?>
+						</a>
+					</span>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
