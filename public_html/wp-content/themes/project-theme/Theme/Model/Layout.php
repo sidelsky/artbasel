@@ -99,12 +99,6 @@ class Layout {
 				break;
 
 
-        //text iframe
-     case 'text_iframe_content':
-           $text_iframe_content = new Text_iframe_content($layout);
-           $currentLayout = $text_iframe_content->getText_iframe_content();
-    break;
-
         }
          $this->layoutOutput[] = $currentLayout;
       }
