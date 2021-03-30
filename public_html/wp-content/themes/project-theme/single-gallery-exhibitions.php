@@ -421,8 +421,14 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 					//Get Kuula
 				case 'kuula':
 					$templateName = 'c-kuula';
-				break;
+				break; 
 
+				        //text iframe
+				     case 'text_iframe_content':
+				           $text_iframe_content = new Text_iframe_content($layout);
+				           $currentLayout = $text_iframe_content->getText_iframe_content();
+				    break;
+ 
 			}
 				$renderContent = $render->view('Components/' . $templateName, $value, $index);
 				echo $renderContent;
