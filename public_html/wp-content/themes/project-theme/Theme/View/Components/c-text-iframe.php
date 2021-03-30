@@ -1,4 +1,3 @@
-	<?php if( get_row_layout() == 'text_iframe_content' ): ?> 
   <section class="l-content">
       <article class="l-content__block l-content__block__text-content l-content__block--wide-text">
         <div class="canvas l-content__block--center l-content__block__text-content">
@@ -14,4 +13,3 @@
         </div>
       </div>
   </section><!-- end of row -->
-<?php endif; ?>
