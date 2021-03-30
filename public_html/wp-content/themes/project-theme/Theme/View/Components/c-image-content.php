@@ -13,6 +13,14 @@
 
       <?php
       /**
+       * If there is a text iframe element
+         */
+      if( $data['iframe_html'] ) { ?>
+                <?= $data['iframe_html'] ?> 
+       <?php } ?>
+
+      <?php
+      /**
        * If there is a Carousel
          */
       if( $data['carousel'] ) { ?>
