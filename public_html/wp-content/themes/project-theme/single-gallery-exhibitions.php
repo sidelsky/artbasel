@@ -425,8 +425,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 
 				        //text iframe
 				     case 'text_iframe_content':
-				           $text_iframe_content = new Text_iframe_content($layout);
-				           $currentLayout = $text_iframe_content->getText_iframe_content();
+							 $templateName = 'c-text-iframe';
 				    break;
  
 			}
