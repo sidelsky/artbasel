@@ -18,11 +18,11 @@ class LayoutVr {
       $this->layoutOutput = [];
 
       if ( is_array($this->layoutBuilder) && count($this->layoutBuilder) > 0 ) {
-            
+
       foreach($this->layoutBuilder as $layout) {
          $layoutName = $layout['acf_fc_layout'];
          $currentLayout;
-         
+
          //Add another module here
          switch ($layoutName) {
 
@@ -37,7 +37,7 @@ class LayoutVr {
                $textContent = new TextContent($layout);
                $currentLayout = $textContent->getTextContent();
 				break;
-            
+
 			   //Get Image
 			   case 'image_content':
                $imageContent = new ImageContent($layout);
@@ -61,8 +61,14 @@ class LayoutVr {
                $kuula = new Kuula($layout);
                $currentLayout = $kuula->getKuula();
             break;
-            
-                
+
+            //text iframe
+   				  //   case 'text_iframe_content':
+   				    //       $text_iframe_content = new Text_iframe_content($layout);
+   				   //        $currentLayout = $text_iframe_content->getText_iframe_content();
+   				  //  break;
+
+
         }
          $this->layoutOutput[] = $currentLayout;
       }
@@ -70,7 +76,7 @@ class LayoutVr {
    }
 
    }
-   
+
    public function getLayout() {
       return $this->layoutOutput;
    }

@@ -15,7 +15,7 @@ $exhibitionCard = new ExhibitionCard;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
 ?>
 
 <?php if( !is_front_page() ) : ?>
@@ -44,9 +44,9 @@ include("header.php");
 <?php
 
 	foreach($allLayouts as $value) {
-			
+
 			switch ($value['layoutName']) {
-				
+
 				//Get Title break
 				case 'title_break':
 					$templateName = 'c-title-break';
@@ -72,9 +72,9 @@ include("header.php");
 			echo $render->view('Components/' . $templateName, $value, $args);
 	}
 
-?>
+?> 
 </section>
-	
+
 <?php
 	$args = array(
 		'post_type' => 'gallery-exhibitions',
@@ -92,7 +92,7 @@ include("header.php");
 	?>
 	<section>
 		<div class="c-online-exhibitions">
-			<?php 
+			<?php
 				while ( $loop->have_posts() ) : $loop->the_post();
 				$group = get_field('hero');
 				$thumbnail = $group['image']['sizes']['medium'];
@@ -147,7 +147,7 @@ include("header.php");
 	<section class="u-l-horizontal-padding--small" style="padding-right: 0">
 		<div class="c-online-exhibitions">
 			<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
-				<?php 	
+				<?php
 						while ( $loop->have_posts() ) : $loop->the_post();
 							$group = get_field('hero');
 							$thumbnail = $group['image']['sizes']['medium'];
@@ -167,7 +167,7 @@ include("header.php");
 
 <?php endif; ?>
 
-<?php 
+<?php
 /**
  * Email submission
  */
@@ -189,7 +189,7 @@ $onlineExhibitionsCardData = [
 	'altFont' => false
 ];
 include("partials/footer-navigation.php"); ?>
-	 
+
 <?php
 /**
  * Footer

@@ -22,13 +22,13 @@ class Layout {
 
       $this->layoutBuilder = get_field('content');
       $this->layoutOutput = [];
-      
+
       if ( is_array($this->layoutBuilder) && count($this->layoutBuilder) > 0 ) {
 
       foreach($this->layoutBuilder as $layout) {
          $layoutName = $layout['acf_fc_layout'];
          $currentLayout;
-         
+
          //Add another module here
          switch ($layoutName) {
 
@@ -37,7 +37,7 @@ class Layout {
                $titleBreak = new TitleBreak($layout);
                $currentLayout = $titleBreak->getTitleBreak();
 				break;
-			   
+
 			   //Get Text content
             case 'text_content':
                $textContent = new TextContent($layout);
@@ -49,13 +49,13 @@ class Layout {
                $imageContent = new ImageContent($layout);
                $currentLayout = $imageContent->getImageContent();
             break;
-            
+
             //Get Full width image
 			   case 'full_width_image':
                $fullWidthImage = new FullWidthImages($layout);
                $currentLayout = $fullWidthImage->getFullWidthImage();
             break;
-            
+
             //Get Blockquote
 			   case 'blockquote':
                $blockquote = new Blockquote($layout);
@@ -67,37 +67,38 @@ class Layout {
                $widerTextContent = new WiderTextContent($layout);
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
-            
+
             //Scroll to navigation
 			   case 'scroll_to_navigation':
                $scrollToNavigationIds = new ScrollToNavigationIds($layout);
                $currentLayout = $scrollToNavigationIds->getScrollToNavigationIds();
             break;
-            
+
             //Art fairs
 			   case 'art_fairs':
                $artFairs = new ArtFairs($layout);
                $currentLayout = $artFairs->getArtFairs();
             break;
-            
+
             //Video centered
 			   case 'video_centered':
                $videoCentered = new VideoCentered($layout);
                $currentLayout = $videoCentered->getVideoCentered();
             break;
-            
+
             //Two images
 			   case 'two_images_module':
                $twoImages = new TwoImages($layout);
                $currentLayout = $twoImages->getTwoImages();
             break;
-            
+
             //Kuula
 			   case 'kuula':
                $kuula = new Kuula($layout);
                $currentLayout = $kuula->getKuula();
 				break;
-                
+
+
         }
          $this->layoutOutput[] = $currentLayout;
       }
@@ -105,7 +106,7 @@ class Layout {
       }
 
    }
-   
+
    public function getLayout() {
       return $this->layoutOutput;
    }
