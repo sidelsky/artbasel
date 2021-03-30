@@ -15,7 +15,7 @@ $exhibitionCard = new ExhibitionCard;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
 ?>
 
 <?php if( !is_front_page() ) : ?>
@@ -44,9 +44,9 @@ include("header.php");
 <?php
 
 	foreach($allLayouts as $value) {
-			
+
 			switch ($value['layoutName']) {
-				
+
 				//Get Title break
 				case 'title_break':
 					$templateName = 'c-title-break';
@@ -73,8 +73,37 @@ include("header.php");
 	}
 
 ?>
+
+
+
+						<?php if( have_rows('content_builder') ):; ?>
+								<?php while( have_rows('content_builder') ): the_row(); ?>
+
+													<?php if( get_row_layout() == 'text_iframe_content' ): ?>
+														<!-- TEXT BLOCK  -->
+														<section class="l-content">
+																<article class="l-content__block l-content__block__text-content l-content__block--wide-text">
+																	<div class="canvas l-content__block--center l-content__block__text-content">
+																		<h2><?php the_sub_field('text_content_title'); ?></h2>
+																		<p><?php the_sub_field('text_content_copy'); ?></p>
+																	</div>
+																</article>
+																<div class="l-content__block l-content__block--image-content l-content__block--wide-image">
+																	<div class="canvas l-content__block--center">
+																		<div class="c-video-player__cover-image">
+																			<?php the_sub_field('iframe_html'); ?>
+																	</div>
+																	</div>
+																</div>
+														</section><!-- end of row -->
+
+											<?php endif; ?>
+									<?php endwhile; ?>
+							<?php endif; ?>
+
+
 </section>
-	
+
 <?php
 	$args = array(
 		'post_type' => 'gallery-exhibitions',
@@ -92,7 +121,7 @@ include("header.php");
 	?>
 	<section>
 		<div class="c-online-exhibitions">
-			<?php 
+			<?php
 				while ( $loop->have_posts() ) : $loop->the_post();
 				$group = get_field('hero');
 				$thumbnail = $group['image']['sizes']['medium'];
@@ -147,7 +176,7 @@ include("header.php");
 	<section class="u-l-horizontal-padding--small" style="padding-right: 0">
 		<div class="c-online-exhibitions">
 			<div class="owl-carousel owl-exhibitions-carousel" data-id="exhibitions-carousel">
-				<?php 	
+				<?php
 						while ( $loop->have_posts() ) : $loop->the_post();
 							$group = get_field('hero');
 							$thumbnail = $group['image']['sizes']['medium'];
@@ -167,7 +196,7 @@ include("header.php");
 
 <?php endif; ?>
 
-<?php 
+<?php
 /**
  * Email submission
  */
@@ -189,7 +218,7 @@ $onlineExhibitionsCardData = [
 	'altFont' => false
 ];
 include("partials/footer-navigation.php"); ?>
-	 
+
 <?php
 /**
  * Footer
