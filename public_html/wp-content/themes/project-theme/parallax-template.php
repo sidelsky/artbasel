@@ -17,7 +17,7 @@ $inquireForm = new InquireForm;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
 
 /**
  * Parallax
@@ -45,17 +45,17 @@ $speed = 1;
 
 <style>
 
-		/* Phone */ 
+		/* Phone */
 	.spacing-top {
 		top: <?= $top_spacing_phone ?>px;
 		}
-	
+
 	.hero-height {
 		height: <?= $parallax_hero_image_height_phone ?>px
 	}
 
-@media (min-width:375px) { 
-	/* Tablet */ 
+@media (min-width:375px) {
+	/* Tablet */
 	.spacing-top {
 			top: <?= $top_spacing_tablet ?>px;
 		}
@@ -64,9 +64,9 @@ $speed = 1;
 		height: <?= $parallax_hero_image_height_tablet ?>px
 	}
 }
- 
-@media (min-width:678px) { 
-	/* Desktop */ 
+
+@media (min-width:678px) {
+	/* Desktop */
 	.spacing-top {
 			top: <?= $top_spacing_desktop ?>px;
 		}
@@ -82,8 +82,8 @@ $speed = 1;
 	<section class="c-parallax-hero rellax-wrapper">
 	<span class="c-parallax-hero--bg-wrap" style="background-color: rgba(0,0,0,<?= $parallax_hero_image_shading ?>)"></span>
 		<div class="c-parallax-hero__content-wrap spacing-top">
-			
-			<?php 
+
+			<?php
 			/**
 			 * Title, copy & Thumbnails
 			 */
@@ -101,8 +101,8 @@ $speed = 1;
 
 						<?php if( $parallaxVideo['parallax_video_vimeo'] ) { ?>
 							<ul class="c-parallax-hero__thumbnails">
-								<?php 
-								while( have_rows('parallax_thumbnails')): the_row(); 
+								<?php
+								while( have_rows('parallax_thumbnails')): the_row();
 								$thumbnail = get_sub_field('parallax_thumbnail');
 								$speed++;
 								?>
@@ -125,16 +125,16 @@ $speed = 1;
 		<figure>
 			<div class="parallax-window parallax-window__hero hero-height" data-parallax="scroll" natural-height="2048" data-image-src="<?php echo esc_url($parallax_hero_image['url']); ?>"></div>
 		</figure>
-		
+
 	</section>
 
- 
+
 	<?php if( !$parallaxVideo['parallax_video_vimeo'] ) { ?>
 		<section class="u-section u-l-vertical-padding--margin-40" style="padding: 20px 20px 15px">
 			<div class="u-l-container --full-width ">
 				<ul class="c-parallax-hero__thumbnails">
-					<?php 
-					while( have_rows('parallax_thumbnails')): the_row(); 
+					<?php
+					while( have_rows('parallax_thumbnails')): the_row();
 					$thumbnail = get_sub_field('parallax_thumbnail');
 					$speed++;
 					?>
@@ -171,8 +171,8 @@ if( $parallaxVideo ): ?>
 						</svg>
 					</button>
 
-					<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $parallaxVideo['parallax_video_image_cover']['alt'] ); ?>" style="background-image: url('<?= $parallaxVideo['parallax_video_image_cover']['url'] ?>')" data-id='cover'></figure>	
-					
+					<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $parallaxVideo['parallax_video_image_cover']['alt'] ); ?>" style="background-image: url('<?= $parallaxVideo['parallax_video_image_cover']['url'] ?>')" data-id='cover'></figure>
+
 					<div data-id="vimeo-content" class="u-video-aspect-ratio">
 						<?= $parallaxVideo['parallax_video_vimeo'] ?>
 					</div>
@@ -185,16 +185,16 @@ if( $parallaxVideo ): ?>
 
 <?php endif; ?>
 
-	<?php 
+	<?php
 	/**
 	 * Show email field at the Top
 	 */
 	if( get_field('show_artist_inquiry_email') == "top") {
-		include("partials/ma-email-sub-vr.php"); 
+		include("partials/ma-email-sub-vr.php");
 	} ?>
 
-	<?php 
-	/**  
+	<?php
+	/**
 	 * Second hero image
 	*/
 	$parallax_second_hero_image = get_field('parallax_second_hero_image');
@@ -211,15 +211,15 @@ if( $parallaxVideo ): ?>
 
 	<?php } ?>
 
-	
+
 
 
 	<section class="l-content">
 	<?php
 	/*
 	* Magnifing glass carousel
-	*/ 
-	
+	*/
+
 	// Check value exists.
 	if( have_rows('parallax_layout_builder') ):
 
@@ -239,7 +239,7 @@ if( $parallaxVideo ): ?>
 
 					echo '<div id="prev-slide" class="c-online-exhibitions__btn-prev"></div>';
 					echo '<div id="next-slide" class="c-online-exhibitions__btn-next"></div>';
-					
+
 						if( $rows ) {
 
 							echo '<div class="owl-carousel owl-carousel-magnify owl-theme">';
@@ -275,7 +275,7 @@ if( $parallaxVideo ): ?>
 									$attributes = 'frameborder="0"';
 
 									$vimeo_iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $vimeo_iframe);
-									
+
 									// Check if magnifying glass is active
 									if ( $show_magnifying_glass ) {
 										$zoom = 'zoom';
@@ -291,7 +291,7 @@ if( $parallaxVideo ): ?>
 												echo '<div data-id="vimeo-content" class="u-video-aspect-ratio">' . $vimeo_iframe  . '</div>';
 												echo '<figcaption class="caption">' . $caption . '</figcaption>';
 										echo '</div>';
-														
+
 									} else {
 										echo '<figure class="c-magnifying-zoom">';
 											echo '<img src="' . $image . '" class="' . $zoom . ' c-magnifying-zoom__image" data-magnify-src="' . $image_magnify . '">';
@@ -301,7 +301,7 @@ if( $parallaxVideo ): ?>
 
 								}
 							echo '</div>';
-							
+
 							if( $show_inquire_button ) {
 								$message =  'I am interested in learning more about this piece. Please send me further details about this artwork, pricing, and availability.';
 								$idCode = get_the_title();
@@ -315,9 +315,9 @@ if( $parallaxVideo ): ?>
 
 
 			/**
-			 * Case: Blockquote. 
+			 * Case: Blockquote.
 			 */
-			elseif( get_row_layout() == 'blockquote' ): 
+			elseif( get_row_layout() == 'blockquote' ):
 				$blockquote = get_sub_field('blockquote');
 
 				echo '<section class="u-section u-l-vertical-padding--margin-40 c-parallax-hero__blockquote">';
@@ -332,12 +332,13 @@ if( $parallaxVideo ): ?>
 			/**
 			 * Case: Image content.
 			 */
-			elseif( get_row_layout() == 'image_content' ): 
+			elseif( get_row_layout() == 'image_content' ):
 				$carousel = get_sub_field('carousel');
 				$imageContent = get_sub_field('image_content');
 				$videoContent = get_sub_field('video_content');
 				$portraitVideo = get_sub_field('portrait_video');
 				$iframe = get_sub_field('iframe');
+				$iframe_html = get_sub_field('iframe_html');
 
 				echo '<div class="l-content__block l-content__block--image-content l-content__block--wide-image">';
 					echo '<div class="canvas l-content__block--center">';
@@ -349,12 +350,12 @@ if( $parallaxVideo ): ?>
 						<button class="fullscreenBtn carouselViewButton target" data-id="fullScreenBtn" title="Fullscreen"></button>
 						<button class="closefullscreenBtn carouselViewButton target" data-id="closefullscreenBtn" title="Exit fullscreen"></button>
 						<div class="owl-carousel owl-image-content-carousel" >
-							<?php foreach( $carousel as $image) { ?> 
+							<?php foreach( $carousel as $image) { ?>
 								<figure class="jq-zoom zoom-image" data-id='carousel-content' role="img" aria-label="<?= esc_attr( $image['alt'] ); ?>" style="background-image: url('<?= $image['sizes']['large'] ?>')">
 									<img style="display:none;" src='<?= $image['sizes']['large'] ?>' alt='<?= esc_attr( $image['alt'] ); ?>'/>
 								</figure>
 							<?php } ?>
-						</div>         
+						</div>
 					<?php } ?>
 
 					<?php
@@ -366,7 +367,7 @@ if( $parallaxVideo ): ?>
 					}
 					?>
 
-					<?php 
+					<?php
 					/**
 					 * If video content show cover image, play button and video
 					 */
@@ -376,7 +377,7 @@ if( $parallaxVideo ): ?>
 								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
 							</svg>
 						</button>
-						<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $imageContent['alt'] ); ?>" style="background-image: url('<?= $imageContent['url'] ?>')" data-id='cover'></figure>	
+						<figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $imageContent['alt'] ); ?>" style="background-image: url('<?= $imageContent['url'] ?>')" data-id='cover'></figure>
 						<div data-id="vimeo-content" class="u-video-aspect-ratio <?= $videoContent ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
 							<?= $videoContent ?>
 						</div>
@@ -390,7 +391,7 @@ if( $parallaxVideo ): ?>
 
 				<?php
 				/**
-				 * Case: Wider text content. 
+				 * Case: Wider text content.
 				 */
 				elseif( get_row_layout() == 'wider_text_content' ):
 					$widerTextTitle = get_sub_field('wider_text_title');
@@ -399,9 +400,9 @@ if( $parallaxVideo ): ?>
 					echo '<section class="u-section u-l-vertical-padding--margin-40">';
 						echo '<div class="u-l-container--shallow u-l-horizontal-padding--medium l-content__block__text-content--wide">';
 								echo '<div class="l-content__block__text-content l-content__block__body-text">';
-									if( $widerTextTitle) { 
+									if( $widerTextTitle) {
 										echo '<h2 class="l-content__block__title">' . $widerTextTitle .'</h2>';
-									} 
+									}
 									echo $widerTextContent;
 								echo '</div>';
 						echo '</div>';
@@ -411,7 +412,7 @@ if( $parallaxVideo ): ?>
 
 				<?php
 				/**
-				 * Case: Wider text content. 
+				 * Case: Wider text content.
 				 */
 				elseif( get_row_layout() == 'full_width_image' ):
 					$fullWidthImage = get_sub_field('full_width_image');
@@ -422,18 +423,18 @@ if( $parallaxVideo ): ?>
 				<section class="u-section u-l-vertical-padding--medium40">
 					<div class="u-l-container--full-width">
 						<figure role="img" aria-label="<?= esc_attr( $fullWidthImage['alt'] ); ?>" class="l-content__block c-full-width-image" style="background-image: url('<?= $fullWidthImage['url'] ?>');">
-						
+
 						<?php if( $fullWidthImageTitle || $fullWidthImageLink ) { ?>
 							<div class="c-full-width-image-container">
-									
+
 									<?php if( $fullWidthImageTitle ) { ?>
 										<h2 class="c-full-width-image-title <?= $fullWidthImageLink ? 'c-full-width-image-title--margin-bottom' : '' ?>"><?= $fullWidthImageTitle ?></h2>
 									<?php } ?>
-									
+
 									<?php if( $fullWidthImageLink ) { ?>
 										<div class="c-works__href-wrap c-works__href-wrap--center">
 											<span class="c-works__href-wrap c-works__href-wrap--center l-content__block--link">
-												<a href="<?= $fullWidthImageLink ?>" class="c-works__href c-works__href--no-arrow"><?= $fullWidthImageLinkTitle  ? $fullWidthImageLinkTitle  : 'Explore now' ?></a> 
+												<a href="<?= $fullWidthImageLink ?>" class="c-works__href c-works__href--no-arrow"><?= $fullWidthImageLinkTitle  ? $fullWidthImageLinkTitle  : 'Explore now' ?></a>
 											</span>
 										</div>
 									<?php } ?>
@@ -451,7 +452,7 @@ if( $parallaxVideo ): ?>
 					if($fullWidthImage['caption']) {?>
 						<figcaption class="caption"><?= esc_attr( $fullWidthImage['caption'] ); ?></figcaption>
 					<?php } ?>
-					
+
 				</div>
 				</section>
 
@@ -459,7 +460,7 @@ if( $parallaxVideo ): ?>
 				/**
 				 * Case: Text content
 				 */
-				elseif( get_row_layout() == 'text_content' ): 
+				elseif( get_row_layout() == 'text_content' ):
 					$text_content_title = get_sub_field('text_content_title');
 					$text_content_copy = get_sub_field('text_content_copy');
 					$text_content_link = get_sub_field('text_content_link')['url'];
@@ -480,7 +481,7 @@ if( $parallaxVideo ): ?>
 										echo ' <svg class="u-icon c-works__icon">';
 											echo '<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-link-arrow-black" viewBox="0 0 32 32"></use>';
 										echo '</svg>';
-										
+
 									echo '</span>';
 									}
 
@@ -505,7 +506,7 @@ if( $parallaxVideo ): ?>
 	$template = 'c-inquire-form';
 	$data = $inquireForm->getInquireForm();
 	//args can overwrite $data
-	$args = [ 
+	$args = [
 		'id' => 7,
 		'title' => false,
 		'description' => false,
@@ -514,15 +515,15 @@ if( $parallaxVideo ): ?>
 	echo $render->view('Components/' . $template, $data, $args);
 ?>
 
-<?php 
+<?php
 /**
  * Show email field at the Bottom
  */
 if( get_field('show_artist_inquiry_email') == "bottom") {
-	include("partials/ma-email-sub-vr.php"); 
+	include("partials/ma-email-sub-vr.php");
 } ?>
 
-<?php 
+<?php
 /**
  * Footer paralax image
  */
@@ -531,11 +532,11 @@ if($footerParallaxImage) : ?>
 	<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
 <?php endif; ?>
 
-<?php 
+<?php
 	/**
 	 * Artist recommendations
 	 */
-	$recommendations = get_field('artist_recommendations'); 
+	$recommendations = get_field('artist_recommendations');
 	$recommendationsTitle = $recommendations[artist_recommendations_title];
 	$recommendationsSubtitle = $recommendations[artist_recommendations_subtitle];
 	$recommendationsContent = $recommendations[artist_recommendations_content];
@@ -563,6 +564,3 @@ if($footerParallaxImage) : ?>
  * Footer
  */
 include("footer.php"); ?>
-
-
-
