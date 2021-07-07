@@ -28,8 +28,6 @@ include("header.php");
 <?php endif; ?>
 
 
-
-
 <?php
 
 /**
@@ -74,7 +72,7 @@ include("header.php");
 			echo $render->view('Components/' . $templateName, $value, $args);
 	}
 
-?>
+?> 
 </section>
 
 <?php
