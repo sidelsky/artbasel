@@ -27,14 +27,7 @@ include("header.php");
 	</span>
 <?php endif; ?>
 
-<?php if ( get_field('has_vimeo_hero') == true ) { ?>
 
-<!-- Show vimeo hero -->
-<?php get_template_part( 'Theme/View/Components/c-vimeo-hero' ); ?>
-
-<?php } else { ?>
-
-	
 <?php
 
 /**
@@ -79,7 +72,7 @@ include("header.php");
 			echo $render->view('Components/' . $templateName, $value, $args);
 	}
 
-?>
+?> 
 </section>
 
 <?php
