@@ -46,58 +46,6 @@ add_theme_support( 'post-thumbnails' );
 
     add_action('init', 'customTaxonomies');
 
-    //artbasel taxonomies
-function custom_post_type() {
-
-// Set UI labels for Custom Post Type
-    $labels = array(
-        'name'                => _x( 'Art Basel', 'Post Type General Name', 'twentytwenty' ),
-        'singular_name'       => _x( 'Art Basel', 'Post Type Singular Name', 'twentytwenty' ),
-        'menu_name'           => __( 'Art Basel', 'twentytwenty' ),
-        'all_items'           => __( 'All Art Works', 'twentytwenty' ),
-        'view_item'           => __( 'View Art Work', 'twentytwenty' ),
-        'add_new_item'        => __( 'Add New Art Work', 'twentytwenty' ),
-        'add_new'             => __( 'Add New Art Work', 'twentytwenty' ),
-        'edit_item'           => __( 'Edit Art Work', 'twentytwenty' ),
-        'update_item'         => __( 'Update Art Work', 'twentytwenty' ),
-        'search_items'        => __( 'Search Art Work', 'twentytwenty' ),
-        'not_found'           => __( 'Not Found', 'twentytwenty' ),
-        'not_found_in_trash'  => __( 'Not found in Trash', 'twentytwenty' ),
-    );
-
-// Set other options for Custom Post Type
-
-    $args = array(
-        'label'               => __( 'artbasel', 'twentytwenty' ),
-        'labels'              => $labels,
-        // Features this CPT supports in Post Editor
-        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
-        // You can associate this CPT with a taxonomy or custom taxonomy.
-        'taxonomies'          => array( 'Art Works' ),
-        /* A hierarchical CPT is like Pages and can have
-        * Parent and child items. A non-hierarchical CPT
-        * is like Posts.
-        */
-        'taxonomies'          => array('topics', 'category' ),
-        'hierarchical'        => false,
-        'public'              => true,
-        'show_ui'             => true,
-        'show_in_menu'        => true,
-        'show_in_nav_menus'   => true,
-        'show_in_admin_bar'   => true,
-        'menu_position'       => 5,
-        'can_export'          => true,
-        'has_archive'         => true,
-        'exclude_from_search' => false,
-        'publicly_queryable'  => true,
-        'capability_type'     => 'post',
-        'show_in_rest' => true,
-    );
-
-    // Registering your Custom Post Type
-    register_post_type( 'artbasel', $args );
-
-}
 
 /* Hook into the 'init' action so that the function
 * Containing our post type registration is not
@@ -231,3 +179,56 @@ function view_acf_field_for_single_product(){
    the_field('hero-single-content');
   }
 }
+
+// Change WC searchform placeholder text
+
+add_filter( 'get_product_search_form' , 'woo_custom_product_searchform' );
+function woo_custom_product_searchform( $form ) {
+
+ $form = '<form role="search" method="get" id="searchform" action="' . esc_url( home_url( '/' ) ) . '">
+ <div>
+ <label class="screen-reader-text" for="s">' . __( 'Search', 'woocommerce' ) . '</label>
+ <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="' . __( 'Search', 'woocommerce' ) . '" />
+ <input type="submit" id="searchsubmit" value="'. esc_attr__( 'Search', 'woocommerce' ) .'" />
+ <input type="hidden" name="post_type" value="product" />
+ </div>
+ </form>';
+
+ return $form;
+
+}
+
+
+
+
+
+/**
+ * shop image wrapper for zoom, and atribute for artist name
+ **/
+if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+    // remove product thumbnail and title from the shop loop
+    remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+
+    // add the product thumbnail and title back in with custom structure
+    add_action( 'woocommerce_before_shop_loop_item_title', 'sls_woocommerce_template_loop_product_thumbnail', 10 );
+
+    function sls_woocommerce_template_loop_product_thumbnail() {
+       echo '<div class="thumbnail" title="'.get_the_title().'" href="'. get_the_permalink() . '">'.woocommerce_get_product_thumbnail().'</div>';
+       echo '<div class="artist">Artist Attribute</div>';
+    }
+
+}
+
+
+
+function add_cat_title_shop_loop(){
+
+	$terms = get_the_terms( get_the_ID(), 'pa' );
+	if ( $terms && ! is_wp_error( $terms ) ) {
+			if ( ! empty( $terms ) ) { ?>
+				<p class="category-title-loop-product"><?php echo $terms[0]->name; ?></p>
+		<?php }
+	}
+
+}
+add_action( 'woocommerce_before_shop_loop_item_title', 'add_cat_title_shop_loop', 10 );

@@ -36,13 +36,15 @@ if ( post_password_required() ) {
 <div id="hero-single">
 	<div id="hero-single-wrap">
 		<div class="hero-audio">
-			<?php the_field('hero-audio'); ?>audio player ID here
+			<?php the_field('hero-audio'); ?>
+
+		<img src="/wp-content/themes/project-theme/assets/build/img/ab/audio.png" />
 		</div>
 
 	<div class="hero-artwork">
 		<?php the_field('hero-single'); ?>
+				<img src="/wp-content/themes/project-theme/assets/build/img/ab/uhv.png" />
 	</div>
-
 	<div class="hero-summary">
 		<?php
 		/**
@@ -60,7 +62,7 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 
-	share icons here
+<!--	share icons here -->
 
 		</div><!-- end of hero summary -->
 	</div><!-- end of hero wrap -->
@@ -100,7 +102,7 @@ if ( post_password_required() ) {
 
 	</div>
 
-	<div id="about">
+	<div id="artwork">
 		<?php if( get_field('about_heading') ) : ?>
 			<h2><?php the_field('about_heading'); ?></h2>
 	 <?php endif; ?>
@@ -117,9 +119,9 @@ if ( post_password_required() ) {
 					$image = get_sub_field('left-image');
 					?>
 
-					<div id="author" class="left-author">
+					<div id="artist" class="left-author">
 						<div class="author-wrap">
-								<div class="author-img">
+								<div class="author-img wow zoomIn" data-wow-duration="1.2s" style="visibility: visible;  animation-name: zoomIn;">
 										<img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 									</div>
 									<div class="author-content">
@@ -139,7 +141,7 @@ if ( post_password_required() ) {
 									<h2><?php the_sub_field('right_heading'); ?></h2>
 									<p><?php the_sub_field('right_copy'); ?></p>
 								</div>
-								<div class="author-img">
+								<div class="author-img wow zoomIn" data-wow-duration="1.2s" style="visibility: visible;  animation-name: zoomIn;">
 									<img src="<?php echo esc_url($image); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
 								</div>
 							</div>
@@ -167,7 +169,7 @@ if ( post_password_required() ) {
     <?php endwhile; ?>
 <?php endif; ?>
 
-
+<!-- scroll event for hero summary fixed sidebar -->
 
 	<?php
 	/**
@@ -182,3 +184,67 @@ if ( post_password_required() ) {
 </div>
 
 <?php  ( 'woocommerce_after_single_product' ); ?>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('#menu-center a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#menu-center ul li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
+// artwork audio
+$(window).scroll(function() {
+    if ($(this).scrollTop() < (4300)) {
+        $(".hero-audio").fadeIn('fast');
+    } else{
+        $(".hero-audio").fadeOut('fast');
+			    };
+});
+
+// artwork summary
+$(window).scroll(function() {
+    if ($(this).scrollTop() < (4500)) {
+				$(".hero-summary").fadeIn('fast');
+    } else{
+        $(".hero-summary").fadeOut('fast');
+			    };
+});
+
+
+</script>

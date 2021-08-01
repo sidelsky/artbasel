@@ -53,10 +53,9 @@ $wordpress = new WordpressHelper;
 	</noscript>
    End Google Tag Manager (noscript) -->
 
-	<header class="c-header" id="header">
+	<header id="header" class="c-header wow fadeInDown" data-wow-duration=".5s" style="visibility: visible; animation-name: fadeInDown;">
 
 		<div class="c-header__wrap">
-
 
  				<!-- START: Hamburger -->
 				<a class="c-hamburger js-hamburger">

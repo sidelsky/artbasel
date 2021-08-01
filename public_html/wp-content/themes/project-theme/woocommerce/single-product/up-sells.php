@@ -30,7 +30,6 @@ if ( $upsells ) : ?>
 			?>
 			<h2>Explore other artworks</h2>
 		<?php endif; ?>
-
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php foreach ( $upsells as $upsell ) : ?>

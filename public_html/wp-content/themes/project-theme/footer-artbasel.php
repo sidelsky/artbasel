@@ -85,7 +85,8 @@ $(this).removeClass('showme');
 
 
 <!-- page animations -->
-<script src='/wp-content/themes/project-theme/assets/build/animate.css'></script>
+<link rel="stylesheet" href="/wp-content/themes/project-theme/assets/build/animate.css" media="screen" />
+
 <script type="text/javascript" src="/wp-content/themes/project-theme/assets/build/wow.min.js"></script>
 <script type="text/javascript">// <![CDATA[
  new WOW().init();
