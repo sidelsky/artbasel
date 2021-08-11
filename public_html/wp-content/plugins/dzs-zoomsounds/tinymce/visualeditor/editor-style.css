@@ -1,0 +1,30 @@
+
+
+div.ve_zoomsounds_player {
+border: 1px dashed #111;
+    text-align: center;
+    padding: 90px 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+
+    background-image: url(images/ve_zoomsounds_player_pattern.png);
+}
+
+div.ve_zoomsounds_player .previewdivimage{
+    position: absolute;top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+

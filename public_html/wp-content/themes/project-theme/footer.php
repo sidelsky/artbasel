@@ -22,6 +22,6 @@ $wordpress = new WordpressHelper;
 </div>
 
 <?php wp_footer(); ?>
-		
+
 	</body>
 </html>

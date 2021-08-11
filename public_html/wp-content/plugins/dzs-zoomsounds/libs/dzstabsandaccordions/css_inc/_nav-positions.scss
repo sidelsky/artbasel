@@ -1,0 +1,31 @@
+
+.dzs-tabs.tabs-left, .dzs-tabs.tabs-right {
+  .tabs-menu {
+    float: left;
+
+    .tab-menu-con {
+      display: block;
+    }
+  }
+
+  .tabs-content {
+    overflow: hidden;
+    width: auto;
+  }
+}
+
+.dzs-tabs.tabs-right {
+  .tabs-menu {
+    float: right;
+
+
+  }
+}
+
+
+.tabs-menu-align-center {
+  .tabs-menu {
+
+    text-align: center;
+  }
+}

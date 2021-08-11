@@ -1,0 +1,65 @@
+
+
+
+.dzs-tabs:not(.is-toggle) {
+  > .tabs-content {
+
+    > .tab-content {
+      &:not(.active) {
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+.dzs-tabs.is-toggle {
+  > .tabs-menu {
+    width: 100%;
+
+    flex-direction: column;
+
+    > .tab-menu-con {
+      display: block;
+      width: 100%;
+
+      .tab-menu {
+        .the-label {
+          position: relative;
+        }
+      }
+
+      &.active {
+
+        > .tab-menu-content-con {
+          > .tab-menu-content {
+            > .tab-content.active {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+      $transition-property: height;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+
+      .tab-menu-content-con {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+        .tab-menu-content {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    display: none;
+  }
+}
+

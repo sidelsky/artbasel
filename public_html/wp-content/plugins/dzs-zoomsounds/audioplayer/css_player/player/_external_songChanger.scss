@@ -1,0 +1,22 @@
+
+.audioplayer-song-changer {
+  .meta-artist {
+    display: none;
+  }
+
+  .custom-play-btn{
+    display: block;
+  }
+  .custom-pause-btn{
+    display: none;
+  }
+  &.is-playing{
+
+    .custom-pause-btn{
+      display: block;
+    }
+    .custom-play-btn{
+      display: none;
+    }
+  }
+}

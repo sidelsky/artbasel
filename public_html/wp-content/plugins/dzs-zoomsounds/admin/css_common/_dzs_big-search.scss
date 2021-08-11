@@ -1,0 +1,26 @@
+.dzs-big-search--con{
+  position: relative;
+  width: auto;
+  display: inline-block;
+
+  .dzs--settings-search--search-icon{
+    position: absolute;
+    top:50%;
+    right: 7px;
+    transform: translate(0,-50%);
+    opacity: 0.5;
+    width: 20px;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    border:0;
+    display: inline-block;
+background-color: transparent;
+
+  }
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+}

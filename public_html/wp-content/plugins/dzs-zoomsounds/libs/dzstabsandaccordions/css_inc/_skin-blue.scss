@@ -1,0 +1,139 @@
+
+$color_highlight: #05abe0;
+.dzs-tabs.skin-blue {
+
+  $transition-property: background, color;
+  $transition-duration: 0.3s;
+  $transition-timing: ease-out;
+
+
+  > .tabs-menu {
+    font-weight: bold;
+
+    .tab-menu-con {
+      .tab-menu {
+        padding: 10px 15px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: #eee;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+        > svg {
+          width: 15px;
+          margin-right: 15px;
+
+          circle {
+            fill: $color_highlight;
+          }
+
+          .rect-2 {
+
+            $transition-property: opacity;
+            $transition-duration: 0.3s;
+            $transition-timing: ease-out;
+            @include apply_transition($transition-property, $transition-duration, $transition-timing);
+          }
+        }
+
+        > .the-label, > svg {
+
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+
+      .tab-menu-content-con {
+
+
+        border: 1px solid rgba(0, 0, 0, 0);
+
+
+        $transition-property: border;
+        $transition-duration: 0.3s;
+        $transition-timing: ease-out;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      }
+    }
+
+    .tab-menu-con:last-child {
+      .tab-menu {
+        border-right: 0px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+
+
+    .tab-menu-con.active {
+      .tab-menu {
+        background-color: $color_highlight;
+        color: #fafafa;
+      }
+
+      .tab-menu-content-con {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+
+
+      }
+    }
+
+
+    .tab-menu-con.active {
+
+      .tab-menu {
+
+        > svg {
+          .rect-2 {
+            opacity: 0;
+          }
+
+          circle {
+            fill: #fff;
+          }
+
+          rect {
+            fill: $color_highlight;
+          }
+        }
+      }
+
+    }
+  }
+
+  .tabs-content {
+    padding-top: 20px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+
+    .tab-content {
+      top: 20px;
+    }
+
+    .tab-content.active {
+      top: 20px;
+    }
+  }
+}
+
+.dzs-tabs.is-toggle.skin-blue {
+  .tabs-menu {
+    .tab-menu-con {
+      .tab-menu {
+        width: 100%;
+        text-align: left;
+        padding-left: 45px;
+        position: relative;
+        border-right: 0px solid rgba(0, 0, 0, 0.1);
+
+      }
+
+    }
+
+  }
+}
+
+/* ---- skin-blue END */

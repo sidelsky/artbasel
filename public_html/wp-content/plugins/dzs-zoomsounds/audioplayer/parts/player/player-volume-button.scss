@@ -1,0 +1,77 @@
+$colorIcon: #dadada;
+$sliderBarHeight: 120px;
+.volume-container {
+  cursor: pointer;
+
+  $sizeVolumeBtn: 26px;
+  width: $sizeVolumeBtn;
+
+  .volume-button {
+    height: $sizeVolumeBtn;
+    display: flex;
+    align-items: center;
+    .volume {
+      transform: scale(0.7);
+    }
+
+    svg{
+      width: $sizeVolumeBtn;
+      height: $sizeVolumeBtn;
+
+      path{
+        fill: $colorIcon;
+      }
+    }
+  }
+
+  position: relative;
+
+  $colorBrand: #E86384;
+  $colorBg: #eeeeee;
+  $sizeVolumeBar: 9px;
+  .volume-slider {
+    position: absolute;
+    top: 0px; left: 7px;
+    height: 0;
+    width: $sizeVolumeBar;
+    transition: .25s;
+    margin-top: 30px;
+    .volume-bg {
+
+
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      background-color: $colorBg;
+      box-shadow: 0 0 20px #000a;
+      border-radius: 5px;
+    }
+    .volume-percentage {
+      position: absolute;
+      bottom:0;
+      width: 100%;
+      height: 75%;
+      background-color: $colorBrand;
+      border-radius: 5px;
+    }
+  }
+  &:hover {
+    z-index: 5;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top:90%;
+      left:-10px;
+      width: $sizeVolumeBtn+20px;
+      height: $sliderBarHeight;
+
+    }
+    .volume-slider {
+      bottom: 100%;
+      height: $sliderBarHeight;
+    }
+  }
+}

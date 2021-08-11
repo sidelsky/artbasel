@@ -1,0 +1,33 @@
+.arrowsCon{
+
+  .single--arrow{
+    &+.single--arrow{
+      margin-left: 1px;
+    }
+  }
+
+  &.arrow-skin-bare{
+    position: absolute;
+    top: -40px;
+    right: 0;
+    font-size: 11px;
+
+    .arrow-con{
+
+      $size: 30px;
+      width: $size;
+      height: $size;
+      background-color: rgba(53, 53, 53, 0.16);
+
+
+    }
+    color: #ffffff;
+    &.theme-dark{
+
+      .arrow-con{
+
+        color: #444444;
+      }
+    }
+  }
+}

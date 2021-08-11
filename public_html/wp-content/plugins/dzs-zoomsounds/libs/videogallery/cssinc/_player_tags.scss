@@ -1,0 +1,47 @@
+
+$transition-property: visibility, opacity;
+$transition-duration: 0.3s;
+$transition-timing: ease-out;
+
+
+
+.vplayer .dzstag-tobe {
+  display: none;
+}
+
+.vplayer .dzstag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+}
+
+.vplayer .dzstag.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.vplayer .dzstag .tag-box {
+  border: 1px dashed #555;
+  width: 50px;
+  height: 50px;
+}
+
+.vplayer .dzstag .tag-box a {
+  width: 100%;
+  height: 100%;
+  content: ",";
+  display: block;
+}
+
+.vplayer .dzstag .tag-content {
+  position: absolute;
+  right: 0;
+  background: #555;
+  color: #eee;
+  display: inline-block;
+  padding: 1px 5px;
+}

@@ -1,0 +1,33 @@
+
+
+
+button.dzs-button{
+  border:0;
+  background-color: transparent;
+}
+.dzs-button{
+  position: relative;
+  padding: 15px;
+
+  cursor: pointer;
+
+  line-height: 1;
+
+  white-space: nowrap;
+
+  font-size: 13px;
+
+  background-color: transparent;
+
+
+
+  &.padding-small{
+    padding: 10px;
+    font-weight: bold;
+    font-size:11px;
+  }
+}
+
+a.dzs-button {
+  display: inline-block;
+}

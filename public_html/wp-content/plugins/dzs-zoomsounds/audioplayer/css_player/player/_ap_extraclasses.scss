@@ -1,0 +1,98 @@
+.audioplayer{
+
+
+
+  &.center-it {
+
+  }
+
+  &.disable-scrubbar {
+    .scrubbar {
+      display: none;
+    }
+  }
+
+  &.disable-meta-artist-con {
+    .meta-artist-con:not(.a) {
+      display: none;
+    }
+  }
+
+  &.disable-the-thumb-con {
+    .the-thumb-con {
+      display: none!important;
+    }
+  }
+
+  &.disable-extrahtml {
+    .extra-html {
+      display: none;
+    }
+  }
+
+  &.disable-all-but-play-btn {
+
+    display: inline-block !important;
+    width: auto !important;
+
+    .the-thumb-con {
+      display: none !important;
+    }
+
+    .comments-holder {
+
+      display: none !important;
+    }
+
+
+    .audioplayer-inner {
+
+
+      display: inline-block !important;
+      width: auto !important;
+      height: auto !important;
+
+      .ap-controls {
+
+        display: inline-block !important;
+        width: auto !important;
+
+      }
+
+      .con-controls {
+
+        margin-top: 0 !important;
+
+        display: inline-block !important;
+        width: auto !important;
+
+        .con-playpause {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .scrubbar, .the-thumb-con, .extra-html {
+      display: none;
+    }
+
+    .ap-controls {
+      padding-left: 0 !important;
+    }
+
+    .controls-volume, .meta-artist-con, .ap-controls-right {
+      display: none !important;
+    }
+
+  }
+
+}
+
+.dzsap-just-play-button {
+  .scrubbar, .meta-artist-con:not(.a):not(.a), .ap-controls-right:not(.a):not(.a):not(.a), .controls-volume:not(.a) {
+    display: none;
+  }
+}
+.zoomsounds-btn-step-backward{
+  order: -1;
+}

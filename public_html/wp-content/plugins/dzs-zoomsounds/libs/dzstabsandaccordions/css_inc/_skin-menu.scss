@@ -1,0 +1,177 @@
+
+.dzs-tabs.skin-menu {
+
+
+  .tabs-menu {
+    position: relative;
+    background-color: #EEEEEE;
+
+    padding: 20px;
+    text-align: center;
+
+    .plus-sign {
+      display: none;
+    }
+
+    .tab-menu-con {
+      border: 0px solid #DDDDDD;
+      border-left: 0px solid rgba(0, 0, 0, 0);
+      background-color: transparent;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      .tab-menu {
+        padding: 1px 6px;
+
+        color: #222;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: "Lato", arial, serif;
+
+
+        a {
+          color: inherit;
+        }
+
+
+        background-color: rgba(231, 76, 60, 0);
+
+        $transition-property: color, background;
+        $transition-duration: 0.25s;
+        $transition-timing: ease-in;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      }
+
+      position: relative;
+    }
+
+    .tab-menu-con:before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 7px solid $color_highlight;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -7px;
+      opacity: 0;
+
+      $transition-property: opacity;
+      $transition-duration: 0.25s;
+      $transition-timing: ease-in;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+
+    .tab-menu-con:first-child {
+      .tab-menu {
+
+      }
+
+      border-left: 0px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-menu-con.active, .tab-menu-con:hover {
+      border-bottom: 0px solid $color_highlight;
+      border-left: 0px solid $color_highlight;
+      border-top: 0px solid $color_highlight;
+      border-right: 0px solid $color_highlight;
+
+      .tab-menu {
+        background-color: $color_highlight;
+        color: #FFFFFF;
+
+      }
+    }
+
+    .tab-menu-con.active:before, .tab-menu-con:hover:before {
+      opacity: 1;
+    }
+  }
+
+  .tabs-content {
+    margin-top: -1px;
+
+    .tab-content {
+      padding: 39px 0 0;
+      border: 0px solid #DDDDDD;
+      background-color: transparent;
+    }
+  }
+}
+
+.dzs-tabs.skin-menu.is-toggle {
+
+  .tabs-menu {
+    .tab-menu-con {
+      border: 1px solid rgba(0, 0, 0, 0);
+
+      .tab-menu {
+        width: 100%;
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 39px;
+        position: relative;
+        border: 1px solid #DDDDDD;
+        background-color: #FFFFFF;
+        margin-bottom: 1px;
+
+
+        $transition-property: all;
+        $transition-duration: 0.5s;
+        $transition-timing: ease-out;
+
+        > .plus-sign {
+
+          display: inline-block;
+          position: absolute;
+          top: 16px;
+          left: 15px;
+
+
+          circle, rect {
+            transform-origin: 50% 50%;
+            @include apply_transition($transition-property, $transition-duration, $transition-timing);
+          }
+        }
+
+      }
+
+
+      .tab-menu-content {
+
+        padding: 20px;
+      }
+    }
+
+    .tab-menu-con.active {
+      .tab-menu {
+        background-color: $color_highlight;
+        border: 1px solid rgba(0, 0, 0, 0);
+      }
+
+      .plus-sign {
+        circle {
+          fill: #f5f5f5;
+        }
+
+        rect {
+          fill: $color_highlight;
+        }
+
+        .rect1 {
+          transform: scaleY(0);
+        }
+      }
+
+      > .tab-menu-content-con {
+        border: 1px solid #DDDDDD;
+        margin-bottom: 1px;
+
+      }
+
+    }
+  }
+}

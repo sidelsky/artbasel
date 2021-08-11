@@ -1,0 +1,172 @@
+
+$color_highlight: #a59c8e;
+
+
+.dzs-tabs.skin-melbourne {
+
+  $transition-property: background-color, color, padding;
+  $transition-duration: 0.3s;
+  $transition-timing: ease-out;
+
+  .tabs-menu {
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    .tab-menu-con {
+      border: 1px solid #7b7b7b;
+      color: #7b7b7b;
+      margin-right: 12px;
+
+      .tab-menu {
+        padding: 10px 15px;
+        width: 100%;
+        background-color: transparent;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      }
+    }
+
+    .tab-menu-con:last-child {
+      .tab-menu {
+        border-right: 0px solid rgba(0, 0, 0, 0.2);
+      }
+    }
+
+
+    .tab-menu-con.active {
+      border: 1px solid $color_highlight;
+      color: $color_highlight;
+
+      .tab-menu {
+      }
+
+      .tab-menu-content-con {
+        padding: 30px 0;
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+
+        .tab-menu-content {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+
+  &.tabswidth-fullwidth {
+    .tabs-menu {
+      .tab-menu-con {
+        margin-right: 0;
+
+        + .tab-menu-con {
+          border-left: 0;
+        }
+      }
+    }
+  }
+
+
+  $offset: 10px;
+
+  .tabs-content {
+    color: #cbcbcb;
+    border: 1px solid $color_highlight;
+
+    .tab-content {
+      padding: 25px 15px;
+    }
+
+    .tab-content.active {
+    }
+  }
+
+  .color-highlight {
+    color: $color_highlight;
+  }
+}
+
+.dzs-tabs.skin-melbourne.tabs-left {
+
+  $offset: 10px;
+
+  .tabs-menu {
+
+    margin-right: 10px;
+
+    .tab-menu-con {
+
+      margin-right: 0px;
+      margin-bottom: 12px;
+    }
+  }
+
+  .tabs-content {
+    border: 1px solid $color_highlight;
+
+    .tab-content {
+    }
+  }
+
+  .tab-content.active {
+  }
+
+  .tab-menu-con {
+    .tab-menu {
+      text-align: left;
+    }
+  }
+
+}
+
+.dzs-tabs.is-toggle.skin-melbourne {
+  .tabs-menu {
+    .tab-menu-con {
+      margin-right: 0px;
+      margin-bottom: 12px;
+      width: 100%;
+
+      .tab-menu {
+        width: 100%;
+        text-align: left;
+        position: relative;
+        border-right: 0px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .tab-menu:before, .tab-menu:after {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        content: "+";
+        top: 9px;
+        right: 8px;
+        background-repeat: none;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      .tab-menu:after {
+        opacity: 0;
+        visibility: hidden;
+        content: "-";
+      }
+    }
+
+    .tab-menu-con.active {
+      color: #cbcbcb;
+
+      .tab-menu {
+        color: $color_highlight;
+      }
+
+      .tab-menu:before {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .tab-menu:after {
+        opacity: 1;
+        visibility: visible;
+      }
+
+    }
+  }
+}

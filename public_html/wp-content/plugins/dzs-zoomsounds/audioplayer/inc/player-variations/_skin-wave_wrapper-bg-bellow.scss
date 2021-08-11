@@ -1,0 +1,126 @@
+
+.audioplayer.skinvariation-zoomsounds-wrapper-bg-bellow-center-play.zoomsounds-wrapper-bg-bellow {
+
+  .audioplayer-inner {
+    .con-playpause, .next-btn, .prev-btn {
+      position: absolute;
+
+
+      left: 50%;
+      top: -100px;
+
+    }
+
+    .con-playpause {
+
+      margin-left: -30px;
+
+      width: 60px;
+      height: 60px;
+    }
+
+    .next-btn {
+      margin-left: 39px;
+      top: -83px;
+    }
+
+    .prev-btn {
+      margin-left: -66px;
+      top: -83px;
+    }
+  }
+
+  .ap-controls .ap-controls-left .meta-artist-con:not(.ceva) {
+    text-align: right;
+    top: 30%;
+
+    max-height: 50px;
+    max-width: 70%;
+    right: 0;
+    bottom: auto;
+    left: auto;
+  }
+
+  &.skin-silver {
+    .audioplayer-inner {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      .scrubbar, .ap-controls-right {
+
+        position: absolute;
+        top: auto;
+      }
+
+      .con-playpause {
+
+        @include centerit();
+
+        margin-top: 0px;
+        margin-left: 0;
+        margin-right: 0;
+
+        &, svg {
+
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .scrubbar {
+        left: 10px;
+        width: calc(100% - 20px);
+        bottom: 3px;
+      }
+
+      .ap-controls-right {
+        bottom: 10px;
+        height: 50px;
+        text-align: center;
+        width: 100%;
+        margin-right: 0;
+
+        .meta-artist-con {
+          max-width: none;
+          width: 100%;
+          margin-left: 0;
+        }
+
+      }
+
+      .ap-controls-left {
+        position: absolute;
+        @include centerit();
+
+      }
+
+      .next-btn, .prev-btn {
+        top: 50%;
+        margin-top: -12px;
+      }
+
+      .the-bg {
+        background-color: transparent;
+      }
+    }
+
+    .ap-controls {
+      background-color: transparent;
+    }
+
+    .curr-time, .total-time {
+      display: none !important;
+    }
+  }
+
+  .controls-right {
+    display: none;
+  }
+
+  .dzsap-wrapper-buts {
+    mix-blend-mode: exclusion;
+  }
+}

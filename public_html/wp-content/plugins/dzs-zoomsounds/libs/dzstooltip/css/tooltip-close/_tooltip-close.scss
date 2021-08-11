@@ -1,0 +1,37 @@
+
+
+$color_bg: #fff;
+$color_text: #444;
+.dzstooltip--close {
+  $size: 23px;
+  width: $size;
+  height: $size;
+  position: absolute;
+  cursor: pointer;
+  top: -($size/2.5);
+  right: -($size/2.5);
+  box-shadow: 1px 1px 4px 0 rgba(50, 50, 50, 0.3);
+  border-radius: 50%;
+  z-index: 5;
+  background-color: $color_bg;
+  color: $color_text;
+
+  >.label--x-button{
+    font-size: 18px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Arial, sans-serif;
+    font-weight: bold;
+    @include center_it();
+  }
+  > svg {
+    width: $size;
+    height: $size;
+
+    .bg-circle {
+      fill: #fff;
+    }
+
+    .x-path {
+      fill: #444;
+    }
+  }
+}

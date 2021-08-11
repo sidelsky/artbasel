@@ -1,0 +1,308 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Ajax Load More WooCommerce\n"
+"POT-Creation-Date: 2021-02-11 12:57-0500\n"
+"PO-Revision-Date: 2018-06-20 13:05-0500\n"
+"Last-Translator: Darren Cooney <darren@connekthq.com>\n"
+"Language-Team: \n"
+"Language: en_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: core/src\n"
+"X-Poedit-SearchPathExcluded-1: admin/src\n"
+
+#: admin/customizer/class.customizer.php:24
+msgid "Load More Products"
+msgstr ""
+
+#: admin/customizer/customizer.php:16
+msgid "Ajax Load More [Settings]"
+msgstr ""
+
+#: admin/customizer/customizer.php:17
+msgid ""
+"Edit these global settings to select where Ajax Load More integrates with "
+"WooCommerce."
+msgstr ""
+
+#: admin/customizer/customizer.php:37
+msgid "Shop Page"
+msgstr ""
+
+#: admin/customizer/customizer.php:58
+msgid "Shop Cache"
+msgstr ""
+
+#: admin/customizer/customizer.php:79
+msgid "Shop Archives"
+msgstr ""
+
+#: admin/customizer/customizer.php:100
+msgid "Shop Archive Cache"
+msgstr ""
+
+#: admin/customizer/customizer.php:121
+msgid "Product Search"
+msgstr ""
+
+#: admin/customizer/customizer.php:122
+msgid "Enable Ajax Load More on product searches."
+msgstr ""
+
+#: admin/customizer/customizer.php:141
+msgid "Container Class"
+msgstr ""
+
+#: admin/customizer/customizer.php:142
+msgid ""
+"Set the target classname of the WooCommerce listing container. You need to "
+"update this value if your theme does not follow the standard WooCommerce "
+"class structure.<br/>Default: `<em>ul.products</em>`"
+msgstr ""
+
+#: admin/customizer/customizer.php:163
+msgid "Product Class"
+msgstr ""
+
+#: admin/customizer/customizer.php:164
+msgid ""
+"Set the target classname of the individual WooCommerce products.<br/"
+">Default: `<em>.product</em>`"
+msgstr ""
+
+#: admin/customizer/customizer.php:177
+msgid "Ajax Load More [Display]"
+msgstr ""
+
+#: admin/customizer/customizer.php:178
+msgid ""
+"Edit the following Ajax Load More display parameters to create a custom "
+"experience for your visitors."
+msgstr ""
+
+#: admin/customizer/customizer.php:199
+msgid "Button/Loading Style"
+msgstr ""
+
+#: admin/customizer/customizer.php:200
+msgid ""
+"Select an Ajax loading style - choose between a Button or Infinite Scroll.."
+msgstr ""
+
+#: admin/customizer/customizer.php:203
+msgid "Button - Default"
+msgstr ""
+
+#: admin/customizer/customizer.php:204
+msgid "Button - Blue"
+msgstr ""
+
+#: admin/customizer/customizer.php:205
+msgid "Button - Green"
+msgstr ""
+
+#: admin/customizer/customizer.php:206
+msgid "Button - Purple"
+msgstr ""
+
+#: admin/customizer/customizer.php:207
+msgid "Button - Grey"
+msgstr ""
+
+#: admin/customizer/customizer.php:208
+msgid "Button - White"
+msgstr ""
+
+#: admin/customizer/customizer.php:209
+msgid "Button - Light Grey"
+msgstr ""
+
+#: admin/customizer/customizer.php:210
+msgid "Infinite Scroll - Classic"
+msgstr ""
+
+#: admin/customizer/customizer.php:211
+msgid "Infinite Scroll - Skype"
+msgstr ""
+
+#: admin/customizer/customizer.php:212
+msgid "Infinite Scroll - Ring"
+msgstr ""
+
+#: admin/customizer/customizer.php:213
+msgid "Infinite Scroll - Fading Blocks"
+msgstr ""
+
+#: admin/customizer/customizer.php:214
+msgid "Infinite Scroll - Fading Circles"
+msgstr ""
+
+#: admin/customizer/customizer.php:215
+msgid "Infinite Scroll - Chasing Arrows"
+msgstr ""
+
+#: admin/customizer/customizer.php:234
+msgid "Button Label"
+msgstr ""
+
+#: admin/customizer/customizer.php:235
+msgid "The text of the Load More button."
+msgstr ""
+
+#: admin/customizer/customizer.php:256
+msgid "Button Loading Label"
+msgstr ""
+
+#: admin/customizer/customizer.php:257
+msgid "Update the button label while content is loading."
+msgstr ""
+
+#: admin/customizer/customizer.php:275
+msgid "Scrolling"
+msgstr ""
+
+#: admin/customizer/customizer.php:276
+msgid "Load products as users scroll the page."
+msgstr ""
+
+#: admin/customizer/customizer.php:279 admin/customizer/customizer.php:303
+#: admin/customizer/customizer.php:350
+msgid "True"
+msgstr ""
+
+#: admin/customizer/customizer.php:280 admin/customizer/customizer.php:304
+#: admin/customizer/customizer.php:351
+msgid "False"
+msgstr ""
+
+#: admin/customizer/customizer.php:299
+msgid "Scroll Override"
+msgstr ""
+
+#: admin/customizer/customizer.php:300
+msgid ""
+"Allow scrolling to initiate the loading of posts. If false, users will have "
+"to click the 'Load More' button to begin."
+msgstr ""
+
+#: admin/customizer/customizer.php:323
+msgid "Scroll Distance"
+msgstr ""
+
+#: admin/customizer/customizer.php:324
+msgid ""
+"The distance (in pixels) from the bottom of the screen to trigger a post "
+"load."
+msgstr ""
+
+#: admin/customizer/customizer.php:346
+msgid "Back/Fwd Button"
+msgstr ""
+
+#: admin/customizer/customizer.php:347
+msgid ""
+"Enable navigation between Ajax loaded content using back and forward browser "
+"buttons."
+msgstr ""
+
+#: admin/customizer/customizer.php:370
+msgid "Scroll Offset"
+msgstr ""
+
+#: admin/customizer/customizer.php:371
+msgid ""
+"Set the offset top position of the window. The offset determines at which "
+"point the URL will update while scrolling through Ajax loaded pages."
+msgstr ""
+
+#: admin/views/woocommerce.php:5
+msgid "WooCommerce"
+msgstr ""
+
+#: admin/views/woocommerce.php:6
+msgid "Infinite scroll WooCommerce products and archives."
+msgstr ""
+
+#: admin/views/woocommerce.php:16
+msgid "Getting Started"
+msgstr ""
+
+#: admin/views/woocommerce.php:18
+msgid ""
+"The Ajax Load More WooCommerce add-on integrates directly into the main shop "
+"and archive templates using existing WooCommerce core hooks and filters."
+msgstr ""
+
+#: admin/views/woocommerce.php:21
+msgid ""
+"modification of page templates, building custom shortcodes or creating <a "
+"href=\"admin.php?page=ajax-load-more-repeaters\">Repeater Templates</a> is "
+"not required for implementation."
+msgstr ""
+
+#: admin/views/woocommerce.php:33
+msgid "Shop, Product Archives & Search"
+msgstr ""
+
+#: admin/views/woocommerce.php:34
+msgid ""
+"Ajax Load More integrates directly into your WooCommerce shop and search "
+"templates."
+msgstr ""
+
+#: admin/views/woocommerce.php:36 admin/views/woocommerce.php:47
+msgid "Edit in Customizer</a>"
+msgstr ""
+
+#: admin/views/woocommerce.php:44
+msgid "Display Options"
+msgstr ""
+
+#: admin/views/woocommerce.php:45
+msgid "Adjust the look and feel and set default configurations options."
+msgstr ""
+
+#: admin/views/woocommerce.php:46
+msgid ""
+"Display options allow for configuration of Ajax Load More parameters such "
+"and loading style, button labels and scroll settings."
+msgstr ""
+
+#: admin/views/woocommerce.php:58
+msgid "WooCommerce Resources"
+msgstr ""
+
+#: admin/views/woocommerce.php:63
+msgid "Documentation"
+msgstr ""
+
+#: admin/views/woocommerce.php:68
+msgid "Examples"
+msgstr ""
+
+#: admin/views/woocommerce.php:73
+msgid "Support and Issues"
+msgstr ""
+
+#: ajax-load-more-woocommerce.php:32
+msgid ""
+"You must install and activate <a href=\"https://wordpress.org/plugins/ajax-"
+"load-more/\">Ajax Load More</a> before installing the ALM WooCommerce Add-on."
+msgstr ""
+
+#: ajax-load-more-woocommerce.php:35
+msgid ""
+"WooCommerce must be installed and activated in order to use Ajax Load More "
+"WooCommerce Add-on"
+msgstr ""
+
+#: ajax-load-more-woocommerce.php:300
+msgid "Previous Products"
+msgstr ""

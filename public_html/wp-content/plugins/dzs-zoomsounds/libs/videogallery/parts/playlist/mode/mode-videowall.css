@@ -1,0 +1,26 @@
+.videogallery.mode-videowall {
+  transition-property: opacity, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  background-color: transparent;
+}
+.videogallery.mode-videowall .main-navigation {
+  display: none;
+}
+.videogallery.mode-videowall .sliderMain {
+  overflow: visible;
+  height: auto;
+}
+.videogallery.mode-videowall .sliderCon {
+  position: relative;
+  width: auto;
+  height: auto;
+  transition-property: opacity, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+.videogallery.mode-videowall .embed-button {
+  display: none;
+}
+
+/*# sourceMappingURL=mode-videowall.css.map */

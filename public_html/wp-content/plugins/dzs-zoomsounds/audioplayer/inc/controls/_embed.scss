@@ -1,0 +1,46 @@
+.copy-embed-code-btn{
+  position: absolute;
+  padding: 10px 13px;
+  line-height: 1;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,0.8);
+  color: #444444;
+  right: 10px;
+  bottom: 10px;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  z-index: 1;
+}
+
+*[class*="audioplayer"] .feed-embed-code {
+  display: none;
+}
+div.btn-embed-code-con {
+  position: relative;
+
+  top: auto;
+}
+.btn-embed{
+  .dzstooltip--inner{
+    white-space: pre-wrap;
+    word-break: break-all;;
+  }
+}
+
+.btn-embed-code-con {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  bottom: auto;
+  margin-left: 13px;
+
+  .embed-code--text{
+    max-height: 80px; overflow:hidden; display: block;
+    white-space: normal;
+    word-break: break-all;;
+  }
+}

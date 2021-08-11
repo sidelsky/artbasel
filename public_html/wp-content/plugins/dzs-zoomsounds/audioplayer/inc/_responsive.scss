@@ -1,0 +1,20 @@
+
+
+@media all and (max-width: 770px) {
+  .slider-clipper{
+    &[class*='layout']{
+      .audioplayer:not(.a):not(.a):not(.a):not(.a){
+        width: 100%;
+      }
+    }
+  }
+}
+@media all and (max-width: 500px) {
+
+
+  .dzstooltip:not(.ceva){
+
+
+    max-width: 70vw;
+  }
+}

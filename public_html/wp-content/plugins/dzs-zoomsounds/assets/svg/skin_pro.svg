@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 500" style="enable-background:new 0 0 1280 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B5E8CF;}
+	.st1{fill:#29ABE2;}
+	.st2{fill:#6184AF;}
+	.st3{font-family:'ArialMT';}
+	.st4{font-size:36px;}
+	.st5{fill:#896666;}
+	.st6{font-family:'Arial-BoldMT';}
+	.st7{fill:#8C8C8C;}
+	.st8{fill:#7A4C4C;}
+	.st9{font-size:18px;}
+</style>
+<g id="Layer_3">
+</g>
+<g id="scrub">
+	<rect x="75.3" y="103.6" class="st0" width="1129.4" height="149"/>
+</g>
+<g id="thumb">
+</g>
+<g id="play_outer">
+</g>
+<g id="play_inner">
+	<path class="st1" d="M216.2,176.8l-107.3,53.7c-7.5,3.7-16.3-1.7-16.3-10v-87.2c0-8.4,8.8-13.8,16.3-10L216.2,176.8L216.2,176.8z"
+		/>
+</g>
+<g id="time">
+	<text transform="matrix(1 0 0 1 1091.2745 201.6906)" class="st2 st3 st4">00:00</text>
+</g>
+<g id="author">
+	<text transform="matrix(1 0 0 1 264.2682 192.1788)"><tspan x="0" y="0" class="st5 st6 st4">author</tspan><tspan x="112" y="0" class="st6 st4"> </tspan><tspan x="122" y="0" class="st7 st3 st4">-</tspan><tspan x="134" y="0" class="st3 st4"> </tspan></text>
+</g>
+<g id="track_info">
+	<text transform="matrix(1 0 0 1 411.7605 189.2964)" class="st8 st3 st9">track info</text>
+</g>
+<g id="volume">
+</g>
+</svg>

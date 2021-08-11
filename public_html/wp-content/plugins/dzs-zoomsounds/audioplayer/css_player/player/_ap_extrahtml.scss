@@ -1,0 +1,125 @@
+$transition-property: all;
+$transition-duration: 0.3s;
+$transition-timing: ease-out;
+
+.extra-html {
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+
+  > * {
+    line-height: 1;
+  }
+
+  > p {
+
+    line-height: 1.7;
+  }
+
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(20px);
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+  > *:not(.display-block) {
+
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+
+    & + .the-number {
+      margin-left: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .float-left {
+    position: relative;
+    top: -3px;
+  }
+
+  .float-left.thumb-margin {
+    padding-left: 150px;
+  }
+}
+
+.extra-html.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0px);
+}
+
+.extra-html:after {
+  display: block;
+  clear: both;
+  content: " ";
+}
+
+.extra-html--left {
+  display: inline-block;
+  margin-right: 5px;
+
+  &+.dzsap-counter{
+    margin-left: auto;
+  }
+}
+
+
+.audioplayer > .extra-html-in-controls-left {
+  display: none;
+}
+
+.audioplayer > .extra-html-in-controls-right {
+  display: none;
+}
+
+
+.extra-html i {
+  height: auto;
+}
+
+.extrahtml-in-float-right {
+  white-space: nowrap;
+
+  > * {
+    display: inline-block;
+  }
+
+  &:empty{
+    display: none;
+  }
+
+  &:last-child {
+    margin-left: 10px;
+  }
+}
+
+
+.dzsap-counter{
+
+  margin-left: auto;
+  margin-right: 10px;
+
+  &+.dzsap-counter{
+    margin-left: 5px;
+  }
+}
+
+.extra-html {
+  div:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.dzsap-counter .the-number, .counter-likes .the-number, .counter-hits .the-number, .counter-rates .the-number {
+  font-size: 13px;
+}

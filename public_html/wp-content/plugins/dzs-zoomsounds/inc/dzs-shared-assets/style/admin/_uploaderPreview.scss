@@ -1,0 +1,45 @@
+
+
+.setting-upload {
+  .uploader-preview {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+
+    background-size: cover;
+    background-position: center center;
+
+    border-radius: 5px;
+
+    margin-left: 0px;
+    margin-right: 5px;
+
+
+    $transition-property: margin, width, height;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-in;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+    &:hover {
+      width: 80px;
+      height: 80px;
+    }
+
+    &:empty {
+      margin-right: 0;
+      width: 0;
+      height: 0;
+      margin-left: -1px;
+    }
+  }
+
+  .uploader-target {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+
+
+  }
+}

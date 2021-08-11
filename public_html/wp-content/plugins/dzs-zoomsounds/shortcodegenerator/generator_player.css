@@ -1,0 +1,253 @@
+.submit-shortcode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5555;
+}
+
+.shortcode-output {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d3d3d3;
+  color: #444;
+  font-family: Courier New, Arial;
+}
+
+.shortcode-output:empty {
+  display: none;
+}
+
+.warning {
+  background-color: #dab37a;
+  padding: 10px 15px;
+  font-size: 11px;
+  color: #444444;
+  display: inline-block;
+}
+
+.player-mockup {
+  max-width: 450px;
+  position: relative;
+}
+
+.player-mockup .the-img {
+  opacity: 0.6;
+}
+
+.player-mockup .bottom-right-buttons-area {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 44.44%;
+  min-width: 25px;
+  min-height: 25px;
+  border: 1px dashed rgba(132, 62, 173, 0.71);
+}
+
+.player-mockup .bottom-buttons-area {
+  position: absolute;
+  left: 0;
+  text-align: left;
+  top: 70%;
+  min-width: 25px;
+  min-height: 25px;
+  border: 1px dashed rgba(173, 162, 80, 0.71);
+}
+
+*[name=extrahtml_in_bottom_controls_from_player] {
+  width: 100%;
+}
+
+.dzs-col-md-6 textarea {
+  width: 100%;
+}
+
+.btn-zoomsounds {
+  position: relative;
+  padding: 7px 10px;
+  border-radius: 3px;
+  line-height: 1;
+  white-space: nowrap;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #222222;
+  text-decoration: none;
+  font-size: 13px;
+  cursor: pointer;
+  transition-property: color, background, border;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: color, background, border;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: color, background, border;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: color, background, border;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: color, background, border;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out;
+}
+
+.btn-zoomsounds:before, .btn-zoomsounds > .the-bg {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eaeaea;
+  border-radius: 4px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: transform;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: transform;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out;
+}
+
+.btn-zoomsounds > * {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.btn-zoomsounds > .the-icon {
+  margin-right: 6px;
+}
+
+.btn-zoomsounds > .the-icon > svg {
+  display: block;
+}
+
+.btn-zoomsounds > .the-icon > svg path, .btn-zoomsounds > .the-icon > svg polygon, .btn-zoomsounds > .the-icon > svg polyline {
+  fill: #444;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: fill;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: fill;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: fill;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: fill;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out;
+}
+
+.btn-zoomsounds .show-on-active {
+  display: none;
+}
+
+.player-but, .player-but-no-style {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.player-but {
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  color: #444444;
+}
+
+.player-but .the-icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #444444;
+  border-radius: 50%;
+  -webkit-transform: translate3d(0%, 0%, 0) scale(1);
+          transform: translate3d(0%, 0%, 0) scale(1);
+  transform: translate3d(0%, 0%, 0) scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: transform;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: transform;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out;
+}
+
+.player-but svg.svg-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.player-but .svg-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  -moz-transition-property: transform;
+  -moz-transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-out;
+  -webkit-transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-property: transform;
+  -o-transition-duration: 0.3s;
+  -o-transition-timing-function: ease-out;
+  -ms-transition-property: transform;
+  -ms-transition-duration: 0.3s;
+  -ms-transition-timing-function: ease-out;
+}
+
+.player-but .svg-icon path {
+  fill: #444444;
+}
+
+.player-but:hover .the-icon-bg {
+  transform: translate3d(0%, 0%, 0) scale(0.9);
+  -webkit-transform: translate3d(0%, 0%, 0) scale(0.9);
+}
+
+.player-but:hover svg.svg-icon {
+  transform: translate3d(-50%, -50%, 0) scale(1.1);
+  -webkit-transform: translate3d(-50%, -50%, 0) scale(1.1);
+}
+/*# sourceMappingURL=generator_player.css.map */

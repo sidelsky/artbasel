@@ -1,0 +1,64 @@
+@import "../../../TOKENS";
+
+
+.videogallery.mode-rotator .main-navigation .navMain{
+  border-top:1px solid #222;
+  background: #131313;
+  @include boxsizing();
+}
+$btnsize: 20px;
+.videogallery.mode-rotator .main-navigation .rotator-btn-gotoNext{
+  background-repeat:no-repeat; background-position:center center; background-color:transparent;
+  width: $btnsize;
+  height: $btnsize;
+  position:absolute;
+  right:$btnsize/4;
+  top:$btnsize/4;
+  cursor:pointer;
+}
+.videogallery.mode-rotator .main-navigation .rotator-btn-gotoPrev{
+  background-repeat:no-repeat; background-position:center center; background-color:transparent;
+  width: $btnsize;
+  height: $btnsize;
+  position:absolute;
+  right:$btnsize + $btnsize/4;
+  top:$btnsize/4;
+  cursor:pointer;
+}
+
+.videogallery.mode-rotator .main-navigation .descriptionsCon{
+  position: absolute;
+  top:4px;
+  left:10px;
+  font-size:12px;
+  font-family: Arial, sans-serif;
+  width:50%;
+}
+
+
+
+$transition-property: top,opacity,color,text-shadow;
+$transition-duration: 0.3s;
+$transition-timing: ease-out;
+
+
+.videogallery.mode-rotator .main-navigation .descriptionsCon .desc{
+  position: absolute;
+  top: 20px;
+  left:0;
+  color: rgba(200,200,200,1);
+  width:50%;
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+}
+.videogallery.mode-rotator .main-navigation .descriptionsCon .desc.currDesc{
+  position: absolute;
+  top: 0px;
+  left:0;
+}
+.videogallery.mode-rotator .main-navigation .descriptionsCon .desc.pastDesc{
+  position: absolute;
+  top: -20px;
+  left:0;
+  color: rgba(200,200,200,0);
+  text-shadow: 0 0 15px rgba(200,200,200,0.5);
+}

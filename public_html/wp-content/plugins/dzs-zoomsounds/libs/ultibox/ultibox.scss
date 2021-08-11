@@ -1,0 +1,388 @@
+@mixin apply_transition($transition-property, $transition-duration, $transition-timing) {
+  transition-property: $transition-property;
+  transition-duration: $transition-duration;
+
+  @if $transition-timing == ease-out-quart {
+    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  } @else {
+    transition-timing-function: $transition-timing;
+  }
+}
+
+@mixin boxsizing() {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@mixin centerit() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+
+$color_highlight: #cb1919;
+
+
+$transition-property: color;
+$transition-duration: 0.3s;
+$transition-timing: ease-in;
+
+$animation_time: 0.3s;
+
+//@include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+html.ultibox-opened {
+  overflow: hidden;
+}
+
+
+.dzsulb-main-con {
+  z-index: 5555;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  visibility: hidden;
+
+  top: 0;
+  left: 0;
+
+
+  $transition-property: opacity, visibility;
+  $transition-duration: $animation_time;
+  $transition-timing: ease-out;
+
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+  .overlay-background {
+    background-color: rgba(50, 50, 50, 0.5);
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+
+  .dzsulb-preloader {
+
+    opacity: 0;
+    visibility: hidden;
+
+
+    animation-delay: 3s;
+
+
+    $transition-property: opacity, visibility;
+    $transition-duration: $animation_time;
+    $transition-timing: ease-out;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+  .box-mains-con {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+  }
+
+  .box-main {
+
+    pointer-events: auto;
+
+    max-width: 100%;
+    @include centerit();
+
+
+    $transition-property: left, opacity;
+    $transition-duration: $animation_time;
+    $transition-timing: ease-out;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+    .close-btn-con {
+      position: absolute;
+      right: -15px;
+      top: -15px;
+      z-index: 5;
+
+      cursor: pointer;
+
+
+      width: 30px;
+      height: 30px;
+
+
+      >.close-btn--icon{
+        @include centerit();
+
+        color: #222;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        transform: translate3d(-50%,-50%,0);
+      }
+
+      &:before {
+        content: "";
+
+        position: absolute;
+        top: 8%;
+        left: 8%;
+        width: 84%;
+        height: 84%;
+
+        background-color: rgba(200, 200, 200, 0.95);
+        border-radius: 50%;
+      }
+
+
+      svg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        path {
+          fill: #444444;
+        }
+      }
+    }
+
+    &.gallery-transitioning-out {
+      left: 0;
+      opacity: 0;
+    }
+
+    &.gallery-preparing-transitioning-in {
+      left: 100%;
+      opacity: 0;
+    }
+
+    &.gallery-transitioning-in {
+      left: 50%;
+
+      opacity: 1;
+    }
+  }
+
+  .box-main-media-con {
+
+    max-width: 100%;
+
+    .box-main-media {
+
+
+      $transition-property: width, height;
+      $transition-duration: $animation_time;
+      $transition-timing: ease-out;
+
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      > .real-media {
+        width: 100%;
+        height: 100% !important;
+
+      }
+
+      &.type-audio {
+        padding: 30px;
+      }
+    }
+  }
+
+  .box-main-under {
+
+
+    background-color: #ffffff;
+    padding: 10px 20px;
+
+    color: #222222;
+
+    > h3:first-child {
+      margin-top: 0;
+    }
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  .ultibox-gallery-arrow {
+    position: absolute;
+    left: 100%;
+
+    margin-left: 15px;
+    top: 50%;
+
+
+    $size: 45px;
+    width: $size;
+    height: $size;
+
+    cursor: pointer;
+
+    background-color: #eeeeee;
+    border-radius: 50%;
+
+    transform: translate3d(0%, -50%, 0);
+
+    > svg {
+
+      @include centerit();
+
+      $size: 20px;
+      width: $size;
+      height: $size;
+      transform: translate3d(-50%, -50%, 0) rotate(180deg);
+    }
+  }
+
+  .ultibox-gallery-arrow--left {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 15px;
+
+    > svg {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+  }
+
+  .box-main.scroll-mode {
+    top: 30px;
+    transform: translate3d(-50%, 0, 0);
+    max-height: 100%;
+
+
+    $transition-property: top, left, opacity;
+    $transition-duration: $animation_time;
+    $transition-timing: ease-int;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+
+  /* -- enabled from js */
+  &.responsive-mode {
+
+  }
+
+  &.close-btn-inset {
+
+    .close-btn-con {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+    }
+  }
+
+}
+
+.dzsulb-main-con.gallery-direction-reverse {
+
+  .box-main {
+
+    &.gallery-transitioning-out {
+      left: 100%;
+    }
+
+    &.gallery-preparing-transitioning-in {
+      left: 0;
+    }
+
+    &.gallery-transitioning-in {
+      left: 50%;
+    }
+
+  }
+}
+
+
+@import "cssinc/transitions";
+
+
+.ultibox-item {
+  cursor: pointer;
+}
+
+
+.dzsulb-main-con.loading-item {
+
+  opacity: 1;
+  visibility: visible;
+
+
+  .dzsulb-preloader {
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.dzsulb-main-con.loaded-item {
+
+  opacity: 1;
+  visibility: visible;
+
+
+  .dzsulb-preloader {
+
+    opacity: 0;
+    visibility: hidden;
+  }
+
+}
+
+.dzsulb-main-con.closing-ultibox {
+
+  .dzsulb-preloader {
+
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
+.feed-ultibox {
+  display: none;
+}
+
+.show-only-in-ultibox {
+  display: none;
+}
+
+.dzsulb-main-con.loading-item {
+
+  .show-only-in-ultibox {
+    display: block;
+  }
+}
+
+
+@import "cssinc/skin_default";
+@import "cssinc/preloader";
+@import "cssinc/gallery_style";
+@import "cssinc/dzs_common";
+
+
+
+
+
