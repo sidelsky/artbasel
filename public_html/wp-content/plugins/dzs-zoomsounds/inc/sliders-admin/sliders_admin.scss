@@ -1,0 +1,362 @@
+
+@mixin centerit() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+}
+
+@mixin apply_transition($transition-property, $transition-duration, $transition-timing) {
+  transition-property: $transition-property;
+  transition-duration: $transition-duration;
+
+  @if $transition-timing == ease-out-quart {
+    transition-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  } @else {
+    transition-timing-function: $transition-timing;
+  }
+}
+
+@mixin boxsizing() {
+  box-sizing: border-box;
+}
+// -- summary
+
+.sliders-con {
+
+  margin-bottom: 15px;
+
+  tfoot, .check-column {
+    display: none;
+  }
+
+  .widefat td {
+    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+
+  .name {
+    padding-left: 15px;
+  }
+
+  .row-title {
+    font-size: 21px !important;
+
+    margin-bottom: -3px;
+
+    font-weight: 300;
+
+    display: block;
+
+    margin-bottom: -15px;
+
+    margin-top: 5px;
+
+    filter: brightness(118%) grayscale(52%);
+
+
+    $transition-property: margin, font;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+  .row-actions {
+    max-height: 0;
+
+    transform: scale(0);
+
+    transform-origin: top left;
+
+    $transition-property: max-height, transform, opacity, visibility;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+
+  tr:hover {
+    .row-title {
+      font-size: 14px !important;;
+      margin-bottom: -13px;
+
+
+    }
+
+    .row-actions {
+      transform: scale(1);
+      max-height: 50px;
+    }
+  }
+
+  > #col-right {
+    display: block;
+    float: none;
+    width: 100%;
+
+    .bulkactions{
+      display: none;
+    }
+
+    .row-actions {
+      position: static;
+    }
+
+    .tablenav.top, .tablenav.bottom {
+
+    }
+  }
+}
+.dzs--nag-intro-tooltip--sliders-admin{
+  margin-left: 10px;
+  font-size: 20px;
+  .dzstooltip{
+    font-size: 15px;
+  }
+}
+.dzs--nag--hide-all-tips{
+  display: block;
+  margin-top: 10px;
+  label{
+    display:inline-block;;
+  }
+  input{
+    &:checked{
+       ~ button.dzs-ajax--hide-tips{
+        font-size: 13px;
+        opacity: 1;
+        margin:0 0 0 10px;
+      }
+    }
+  }
+
+  button.dzs-ajax--hide-tips{
+    font-size: 0;
+    opacity: 0;
+    margin:0;
+
+    $transition-property: all;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+  label{
+    color: white;
+    font-style: italic;
+    font-size: 12px;
+  }
+}
+
+
+.dzs--close-btn{
+  position: absolute;
+  top:10px;
+  right: 10px;
+  color: #ffffff;
+}
+
+
+
+
+body.taxonomy-dzsap_sliders {
+  #ajax-response {
+    &.empty {
+      font-size: 0;
+    }
+  }
+
+  .sidenote-2 {
+    opacity: 0.6;
+  }
+
+  .button-primary {
+    z-index: 55;
+  }
+
+  .edit-tag-actions {
+    > input {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      padding: 10px 20px;
+      height: auto;
+      font-size: 15px;
+
+      z-index: 55;
+
+    }
+  }
+
+  .dzstooltip {
+    .dzstooltip--inner{
+
+      background-color: rgba(50, 50, 50, 0.998);
+      width: 350px;
+    }
+
+    .setting-label{
+      font-size: 0.9rem;
+    }
+    .setting + .setting{
+      margin-top: 15px;
+    }
+    div.sidenote{
+      margin-top: 5px;
+    }
+
+    input[type=text].setting-field {
+      border-radius: 5px;
+      padding: 5px;
+    }
+  }
+
+  .add-btn {
+    margin-top: 15px;
+    display: inline-block;
+    position: relative;
+
+    > i {
+      font-size: 42px;
+      transform: scale(1);
+      $transition-property: transform;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+
+    > .add-btn-new, > .add-btn-existing {
+
+      transform: scale(0) rotate(0deg);
+
+      position: absolute;
+      left: 100%;
+      margin-left: 15px;
+      top: 0;
+
+      transform-origin: bottom left;
+
+
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0);
+      $transition-property: transform, top, box-shadow;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+    .add-btn-existing {
+      top: 20px;
+      transform-origin: top left;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 100%;
+      height: 100%;
+      width: 0px;
+    }
+
+    &:hover {
+      &:before {
+        width: 100px;
+      }
+
+
+      > .add-btn-new, .add-btn-existing {
+
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+      }
+
+      > .add-btn-new {
+
+        top: -20px;
+        transform: scale(1) rotate(-5deg);
+      }
+
+      > .add-btn-existing {
+
+        top: 30px;
+        transform: scale(1) rotate(5deg);
+      }
+
+      > i {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.slider-label {
+  > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .slider-status.loading {
+
+    background-color: #5c6834;
+  }
+
+  .slider-status {
+
+    .slider-status--inner {
+
+
+      line-height: 1;
+      white-space: nowrap;
+      padding: 5px 10px;
+      background-color: #347534;
+      color: #ffffff;
+
+      border-radius: 5px;
+
+      margin-left: 15px;
+
+      font-size: 11px;
+
+      $transition-property: margin, width, height, padding, font-size, line-height, background;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+      > i {
+
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+
+      > .text-label {
+
+        display: inline-block;
+        vertical-align: middle;
+
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+
+  .slider-status.empty {
+    .slider-status--inner {
+      font-size: 0;
+      line-height: 0;
+      padding: 0;
+    }
+
+
+  }
+}
+
+
+.dzssa--sample-shortcode-area--readonly{
+  background-color: #dadada;
+  padding: 15px;
+}

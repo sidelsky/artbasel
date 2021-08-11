@@ -13,7 +13,7 @@
 } ?>
 
 
- 	<section class="c-ma-email-sub u-l-horizontal-padding u-l-vertical-padding--x-small">
+ 	<div class="c-ma-email-sub u-l-horizontal-padding u-l-vertical-padding--x-small">
 		<div class="c-ma-email-sub__wrapper">
 
 			<div class="c-ma-email-sub__column">
@@ -22,4 +22,4 @@
 			</div>
 		</div>
 		<?php /* $smallPrint */ ?>
-	</section>
+	</div>

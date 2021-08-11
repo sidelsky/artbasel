@@ -1,0 +1,19 @@
+
+.audioplayer.errored-out {
+
+  &:not(.dzsap_footer) {
+
+    .audioplayer-inner {
+      opacity: 0.9;
+    }
+
+    .feedback-tooltip-con{
+
+      position: absolute;
+      top: 0%;
+      right: 0;
+
+    }
+  }
+}
+

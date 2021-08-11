@@ -1,0 +1,26 @@
+.dzs-layout--style-grid{
+  display: grid;
+  column-count: 3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+
+  a, a:hover{
+    color: inherit;
+  }
+  .dzs-grid-item{
+    text-align: center;
+    .dzs-grid-item--title{
+      margin-top: 10px;
+      font-size: 21px;
+    }
+    .dzs-grid-item--subtitle{
+      font-size: 11px;
+      font-style: italic;
+    }
+  }
+}
+
+.dzs-grid-item--thumbnail{
+  padding-top: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,113 @@
+
+.dzsvg-main-con.loaded-item {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dzsvg-main-con.loading-item {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dzsvg-main-con {
+  z-index: 10002;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  transition-property: opacity, visibility;
+  transition-duration: 0.3s;
+
+
+  transition-timing-function: ease-out;
+}
+
+.dzsvg-main-con .overlay-background {
+  background-color: rgba(50, 50, 50, 0.5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.dzsvg-main-con .box-mains-con {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.dzsvg-main-con .box-main {
+  pointer-events: auto;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  transition-property: left, opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.dzsvg-main-con.transition-slideup.loaded-item .transition-target {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3d(0, 0, 0);
+}
+
+.dzsvg-main-con.transition-slideup .transition-target {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3d(0, 50px, 0);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.dzsvg-main-con .box-main-media-con {
+  max-width: 100%;
+}
+
+
+.dzsvg-main-con .box-main .close-btn-con {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  z-index: 5;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+
+
+  background-color: #dadada;
+  border-radius: 50%;
+}
+
+.dzsvg-main-con.gallery-skin-default .box-main-media {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.dzsvg-main-con .box-main-media-con .box-main-media {
+  transition-property: width, height;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.box-main-media.type-inlinecontent {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+
+.dzsvg-main-con.skin-default .box-main:not(.with-description) .real-media {
+  border-radius: 5px;
+}
+
+.dzsvg-main-con .box-main-media-con .box-main-media > .real-media {
+  width: 100%;
+  height: 100%;
+}

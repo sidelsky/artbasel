@@ -42,6 +42,7 @@ $wordpress = new WordpressHelper;
 		<!-- VPS Server -->
 
 		<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-style.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-responsive.css' type='text/css' media='all' />
 
 	</head>
 

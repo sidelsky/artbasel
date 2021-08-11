@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 500" style="enable-background:new 0 0 1280 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#29ABE2;}
+	.st1{fill:none;stroke:#29ABE2;stroke-width:7;stroke-miterlimit:10;}
+	.st2{fill:#22B573;}
+	.st3{fill:#6184AF;}
+	.st4{font-family:'ArialMT';}
+	.st5{font-size:36px;}
+	.st6{fill:#896666;}
+	.st7{font-family:'Arial-BoldMT';}
+	.st8{fill:#8C8C8C;}
+	.st9{fill:#7A4C4C;}
+	.st10{font-size:18px;}
+</style>
+<g id="Layer_3">
+</g>
+<g id="thumb">
+	<path class="st0" d="M1205.6,209.6H94.6c-6.6,0-12-5.4-12-12V91.9c0-6.6,5.4-12,12-12h1111c6.6,0,12,5.4,12,12v105.7
+		C1217.6,204.2,1212.2,209.6,1205.6,209.6z"/>
+</g>
+<g id="play_outer">
+	<circle class="st1" cx="119.4" cy="287.7" r="24.2"/>
+</g>
+<g id="play_inner">
+	<path class="st0" d="M131.9,287.7l-17.4,8.7c-1.2,0.6-2.6-0.3-2.6-1.6v-14.1c0-1.4,1.4-2.2,2.6-1.6L131.9,287.7L131.9,287.7z"/>
+</g>
+<g id="scrub">
+	<rect x="88.1" y="222.7" class="st2" width="1129.4" height="27.3"/>
+</g>
+<g id="time">
+	<text transform="matrix(1 0 0 1 166.1143 301.0879)" class="st3 st4 st5">00:00</text>
+</g>
+<g id="author">
+	<text transform="matrix(1 0 0 1 277.1082 299.5761)" class="st6 st7 st5">author</text>
+	<text transform="matrix(1 0 0 1 389.1082 299.5761)" class="st7 st5"> </text>
+	<text transform="matrix(1 0 0 1 399.1082 299.5761)" class="st8 st4 st5">-</text>
+	<text transform="matrix(1 0 0 1 411.1082 299.5761)" class="st4 st5"> </text>
+</g>
+<g id="track_info">
+	<text transform="matrix(1 0 0 1 424.6005 296.6938)" class="st9 st4 st10">track info</text>
+</g>
+<g id="volume">
+	<polygon class="st9" points="1127.5,288.4 1114.9,287.1 1114.9,281.6 1127.5,280.4 	"/>
+	<polygon class="st9" points="1127.5,280.4 1132.4,274.5 1132.4,293.6 1127.5,288.4 	"/>
+	<rect x="1140.1" y="278.9" class="st9" width="70.1" height="11.8"/>
+</g>
+</svg>

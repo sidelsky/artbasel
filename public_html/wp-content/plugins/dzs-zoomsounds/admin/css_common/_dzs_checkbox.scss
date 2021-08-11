@@ -1,0 +1,73 @@
+
+
+
+.dzscheckbox.skin-nova input[type="checkbox"]{
+  visibility: hidden;;
+}
+/* SLIDE THREE */
+.dzscheckbox.skin-nova {
+  width: 80px;
+  height: 26px;
+  background: #eee;
+
+  border-radius: 10px;
+  position: relative;
+
+  box-shadow: 0 0 0 1px rgba(0,20,0,0.1);
+
+  box-sizing: border-box;
+  display: block;
+}
+.dzscheckbox.skin-nova *{
+
+  box-sizing: border-box;
+}
+
+.dzscheckbox.skin-nova:after {
+  content: 'OFF';
+  font: 11px/26px "Open Sans", Arial, sans-serif;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+
+.dzscheckbox.skin-nova:before {
+  content: 'ON';
+  font: 11px/26px Arial, sans-serif;
+  color: #c9302c;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+}
+
+.dzscheckbox.skin-nova label {
+  display: block;
+  width: 34px;
+  height: 20px;
+
+  border-radius: 10px;
+
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+
+  background: #aaa;
+}
+
+
+
+.dzscheckbox.skin-nova.active > label{
+
+}
+.dzscheckbox.skin-nova > input[type="checkbox"]:checked + label{
+  left: 43px;
+}

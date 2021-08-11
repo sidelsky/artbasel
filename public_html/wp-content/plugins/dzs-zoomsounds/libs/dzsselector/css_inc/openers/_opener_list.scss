@@ -1,0 +1,136 @@
+
+$color: rgba(0, 0, 0, 0.05);
+.dzs-select-wrapper.opener-list {
+
+  .search-field {
+    width: calc(100% - 10px);
+
+    border: 1px solid rgba(0, 0, 0, .1);
+
+    margin: 5px 5px;
+
+    padding: 5px 10px;
+  }
+
+  .opener-list-wrap {
+
+    max-height: 200px;
+    overflow: auto;
+    display: none;
+
+
+
+    //border: 1px solid #ddd;
+    background-color: #ffffff;
+    border-top-width: 0;
+
+
+    > .search-field {
+      font-size: 13px;
+
+    }
+
+    > .opener-list {
+
+      > .bigoption {
+        padding: 10px 14px;
+        line-height: 1;
+        background-color: #ffffff;
+
+        font-size: 13px;
+
+        display: block;
+      }
+
+      > .bigoption:hover {
+        background-color: #eeeeee;
+      }
+    }
+
+  }
+
+  &.skin-tooltip {
+    .search-field {
+      display: none;
+    }
+
+    .opener-list-wrap {
+
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translate3d(-50%, 0, 0);
+      z-index: 5;
+
+      overflow: visible;
+
+      &:before {
+        content: "";
+        $border_size: 5px;
+
+        border: $border_size solid transparent;
+
+        border-bottom-color: #ffffff;
+
+        position: absolute;
+        bottom: 100%;
+        left: 49%;
+      }
+
+      margin-top: 15px;
+
+      max-width: 180px;
+
+      padding: 5px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 5px;
+
+      box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+
+      .bigoption:first-child {
+        border-radius: 5px 5px 0 0;
+      }
+
+      .bigoption:last-child {
+        border-radius: 0 0 5px 5px;
+      }
+
+      .bigoption {
+        padding: 12px;
+
+        text-align: center;
+
+        > * {
+          display: inline-block;
+          vertical-align: middle;
+
+          & + * {
+            margin-left: 5px;
+          }
+        }
+      }
+
+
+      .the-icon {
+
+      }
+    }
+  }
+
+  &.opener-list-absolute {
+    .opener-list-wrap {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      min-width: 150px;
+      z-index: 55;
+    }
+  }
+}
+.dzs-select-wrapper.opener-list.active-animation, .dzs-select-wrapper.opener-list.active {
+  .opener-list-wrap {
+    display: block;
+
+  }
+}

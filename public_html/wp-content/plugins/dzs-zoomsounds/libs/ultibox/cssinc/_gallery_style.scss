@@ -1,0 +1,210 @@
+
+/* -- gallery skins */
+
+
+
+.dzsulb-main-con.has-gallery{
+
+  $gallery_size: 120px;
+  $thumb_width: 120px;
+  $thumb_height: 80px;
+
+  .box-mains-con{
+    height: calc(100% - #{$gallery_size});
+  }
+
+  .gallery-clip-con{
+    position: absolute;
+    bottom: 0;
+    height: $gallery_size;
+    left:0;
+    width: 100%;
+
+    text-align: center;
+
+    .gallery-items-con{
+      display: inline-block;
+
+      white-space: nowrap;
+
+      position: relative;
+      left:0;
+
+
+      &.scroll-mode{
+
+        $transition-property: left;
+        $transition-duration: $animation_time;
+        $transition-timing: ease-in;
+
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      }
+
+
+
+
+      .gallery-thumb{
+        display: inline-block;
+        vertical-align: bottom;
+
+        width:$thumb_width;
+        height:$thumb_height;
+
+        margin-top: ($gallery_size - $thumb_height)/2;
+
+        position: relative;
+
+        margin-right: 15px;
+
+        opacity: 0;
+
+        transform: translate3d(0,-5px,0) scale(0.5);
+
+        $transition-property: opacity,transform,width, height;
+        $transition-duration: $animation_time;
+        $transition-timing: ease-out;
+
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+        .gallery-thumb--image{
+
+          position: absolute;
+          top:0; left:0;
+          width: 100%; height: 100%;
+          background-size: cover;
+          background-position: center center;
+
+          border-radius: 5px;
+
+
+          transform: scale(1);
+          box-shadow: 0 0 3px 0 rgba(50,50,50,0.2);
+
+          $transition-property: transform,box-shadow;
+          $transition-duration: $animation_time;
+          $transition-timing: ease-out;
+
+          @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+        }
+        svg{
+
+          transform: scale(1) translate3d(-50%,-50%,0);
+          transform-origin: top left;
+          $transition-property: transform,box-shadow;
+          $transition-duration: $animation_time;
+          $transition-timing: ease-out;
+
+
+        }
+
+        &:last-child{
+          margin-right: 0;
+        }
+
+        &:hover,&.active{
+          .gallery-thumb--image{
+
+            transform: scale(1.07);
+            box-shadow: 0 0 12px 0 rgba(50,50,50,0.4);
+
+          }
+
+          .gallery-thumb--icon{
+
+            border: 3px solid rgba(255,255,255,0.2);
+          }
+          svg{
+
+          }
+        }
+
+        $delay : 0s;
+        $delay_increment: 0.05s;
+        $i: 1;
+
+        $delay: $delay+$delay_increment;
+        $i: $i+1;
+        &:nth-child(#{$i}){
+          transition-delay: $delay;
+        }
+
+        $delay: $delay+$delay_increment;
+        $i: $i+1;
+        &:nth-child(#{$i}){
+          transition-delay: $delay;
+        }
+
+        $delay: $delay+$delay_increment;
+        $i: $i+1;
+        &:nth-child(#{$i}){
+          transition-delay: $delay;
+        }
+
+        $delay: $delay+$delay_increment;
+        $i: $i+1;
+        &:nth-child(#{$i}){
+          transition-delay: $delay;
+        }
+
+        $delay: $delay+$delay_increment;
+        $i: $i+1;
+        &:nth-child(#{$i}){
+          transition-delay: $delay;
+        }
+
+        $delay: $delay+$delay_increment;
+        $i: $i+1;
+        &:nth-child(#{$i}){
+          transition-delay: $delay;
+        }
+      }
+    }
+
+
+    &.gallery-loaded{
+
+      .gallery-items-con {
+        .gallery-thumb {
+          height: $thumb_height;
+          width: $thumb_width;
+          opacity: 1;
+
+          transform: translate3d(0, 0, 0) scale(1);
+        }
+      }
+    }
+
+  }
+
+
+  $size: 30px;
+  .gallery-thumb--icon{
+    border-radius: 50%;
+    width: $size;
+    height: $size;
+
+    border: 3px solid rgba(255,255,255,0.7);
+    background-color: rgba(255,255,255,0.25);
+    @include centerit();
+    box-shadow:  0 0 2px 0 rgba(30,30,30,0.3);
+    $transition-property: transform,border;
+    $transition-duration: $animation_time;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+    svg{
+
+      @include centerit();
+
+      path{
+        fill: rgba(255,255,255,0.7);
+      }
+    }
+
+    &:empty{
+      display: none;
+    }
+  }
+}

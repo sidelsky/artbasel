@@ -1,0 +1,29 @@
+
+.con-dzsvg-pagination {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+}
+
+.con-dzsvg-pagination .pagination-number {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  background: rgba(100, 100, 100, 0.8);
+  color: #dadada;
+  text-decoration: none;
+  padding: 8px 10px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+
+  font-size: 13px;
+
+
+  line-height: 1;
+
+}
+
+.con-dzsvg-pagination .pagination-number.active {
+  background: rgba(100, 100, 100, 1);
+
+}  

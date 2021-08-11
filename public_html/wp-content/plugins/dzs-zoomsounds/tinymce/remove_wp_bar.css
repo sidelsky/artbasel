@@ -1,0 +1,30 @@
+html #wpadminbar{
+    display: none;
+}
+
+html #adminmenuwrap{
+    display: none;
+}
+html #adminmenuback{
+    display: none;
+}
+html #wpcontent{
+    margin-left: 10px;;
+    margin-right: 30px;
+}
+
+
+
+#wpfooter p{
+    display: none;
+}
+
+.dzs_admin_table{
+    display: none;
+}
+.dzs_admin_table+.add-slider{
+    display: none;
+}
+.top-buttons{
+    display: none;
+}

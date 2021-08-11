@@ -1,0 +1,152 @@
+
+$border_color: rgba(0, 0, 0, 0.1);
+
+$color_bg: #fff;
+$color_text: #111;
+$color_highlight: #e74c3c;
+
+$transition-property: all;
+$transition-duration: 0.3s;
+$transition-timing: ease-out;
+
+.dzs-tabs.skin-qcre {
+
+
+  .tabs-menu {
+    position: relative;
+
+
+    .plus-sign {
+      display: none;
+    }
+
+    .tab-menu-con {
+      border: 1px solid #DDDDDD;
+      border-left: 1px solid rgba(0, 0, 0, 0);
+      background: $color_bg;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      .tab-menu {
+        padding: 10px 14px;
+
+        color: #999999;
+        font-family: "Open Sans", arial, serif;
+
+        > a {
+
+          color: #999999;
+        }
+      }
+    }
+
+    .tab-menu-con:first-child {
+      .tab-menu {
+
+      }
+
+      border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-menu-con.active {
+      border-bottom: 1px solid $color_highlight;
+      border-left: 1px solid $color_highlight;
+      border-top: 1px solid $color_highlight;
+      border-right: 1px solid $color_highlight;
+
+      .tab-menu {
+        background-color: $color_highlight;
+        color: #FFFFFF;
+
+        > a {
+
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    margin-top: -1px;
+
+    .tab-content {
+      padding: 20px;
+      border: 1px solid #DDDDDD;
+      background-color: $color_bg;
+    }
+  }
+}
+
+.dzs-tabs.skin-qcre.is-toggle {
+
+  .tabs-menu {
+    .tab-menu-con {
+      border: 0px solid rgba(0, 0, 0, 0);
+
+      .tab-menu {
+        width: 100%;
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 39px;
+        position: relative;
+        border: 1px solid #DDDDDD;
+        background-color: #FFFFFF;
+        margin-bottom: 1px;
+
+
+        $transition-property: all;
+        $transition-duration: 0.5s;
+        $transition-timing: ease-out;
+
+        > .plus-sign {
+
+          display: inline-block;
+          position: absolute;
+          top: 16px;
+          left: 15px;
+
+
+          circle, rect {
+            transform-origin: 50% 50%;
+            @include apply_transition($transition-property, $transition-duration, $transition-timing);
+          }
+        }
+
+      }
+
+
+      .tab-menu-content {
+
+        padding: 20px;
+      }
+    }
+
+    .tab-menu-con.active {
+      .tab-menu {
+        background-color: $color_highlight;
+        border: 1px solid rgba(0, 0, 0, 0);
+      }
+
+      .plus-sign {
+        circle {
+          fill: #f5f5f5;
+        }
+
+        rect {
+          fill: $color_highlight;
+        }
+
+        .rect1 {
+          transform: scaleY(0);
+        }
+      }
+
+      > .tab-menu-content-con {
+        border: 1px solid #DDDDDD;
+        margin-bottom: 1px;
+
+      }
+
+    }
+  }
+}

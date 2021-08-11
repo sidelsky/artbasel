@@ -1,0 +1,53 @@
+.zoomsounds-nav{
+
+
+
+  &.skin-default{
+    $transition-property: background;
+    $transition-duration: .5s;
+    $transition-timing: ease-out;
+    .menu-item{
+      padding: 10px;
+      background-color: #444444;
+      color :#dddddd;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      .menu-item-thumb-con{
+        float: left;
+
+        margin-right: 10px;
+      }
+      .the-artist{
+        float: left;
+        display: block;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+      }
+      .the-name{
+        float: left;
+        display: block;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+        opacity: 0.5;
+      }
+
+
+      .float-right {
+        > a {
+          display: inline-block;
+          vertical-align: top;
+          font-size:0;
+        }
+
+      }
+    }
+    .menu-item:nth-child(odd){
+
+      background-color: #3d3d3d;
+    }
+    .menu-item.active{
+      background-color: #222222;
+    }
+  }
+}

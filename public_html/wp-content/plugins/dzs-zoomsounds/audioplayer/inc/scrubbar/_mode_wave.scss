@@ -1,0 +1,233 @@
+
+.zoomsounds-external-scrubbar.skin-wave, .audioplayer.scrubbar-type-wave {
+
+
+  .scrubbar-type-wave--canvas{
+    image-rendering: crisp-edges;
+
+    height: 100%;
+    width: 100%;
+    max-width: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    $transition-property: visibility, opacity, transform;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+  .scrubbar .scrub-bg .scrub-bg-img {
+  }
+
+  .scrubbar-type-wave--canvas.transitioning-out, .scrubbar-type-wave--canvas.preparing-transitioning-in {
+
+    opacity: 0;
+  }
+  .scrubbar-type-wave--canvas.transitioning-in, .scrubbar-type-wave--canvas.transitioning-in {
+    opacity: 1;
+  }
+
+
+
+  &.scrubbar-type-wave--has-reveal-animation {
+
+    .scrub-bg {
+      transition-delay: 0.2s;
+      transform: scaleY(0);
+      $transition-property: transform;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+    .scrubbar{
+
+      opacity: 0;
+
+
+      $transition-property: transform, opacity, margin;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+  }
+
+
+  .scrubbar {
+
+
+    width: 100%;
+    height: ($size_scrub + $size_scrub_reflect + 10);
+    cursor: pointer;
+    position: relative;
+
+
+
+    .scrub-bg {
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 100%;
+      height: $size_scrub;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: transparent;
+
+
+      canvas.scrub-bg-img {
+        // todo: we set in javascript for perfect pixel
+        //width: 100% !important;
+      }
+    }
+
+
+    .scrub-prog {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: $size_scrub;
+      height: 100%;
+      overflow: hidden;
+      background-color: transparent;
+      direction: ltr;
+    }
+
+
+    .scrub-bg-reflect {
+      position: absolute;
+      top: $size_scrub;
+      left: 0;
+      width: 100%;
+      height: $size_scrub_reflect;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-color: transparent;
+      opacity: 0.5;
+      -webkit-transform: scaleY(-1);
+      transform: scaleY(-1);
+
+
+    }
+
+
+    .scrub-prog-reflect {
+      position: absolute;
+      top: $size_scrub;
+      left: 0;
+      width: 0;
+      height: $size_scrub_reflect;
+      overflow: hidden;
+      background-color: transparent;
+      direction: ltr;
+
+      .scrub-prog-canvas-reflect {
+
+        height: 100%;
+        width: 100%;
+        max-width: none;
+        opacity: 0.5;
+        -webkit-transform: scaleY(-1);
+        transform: scaleY(-1);
+
+        display: block;
+      }
+    }
+
+
+  }
+}
+
+.audioplayer.scrubbar-type-wave{
+
+
+
+    .scrubbar {
+      .scrubBox-hover {
+        height: 100%;
+        top: 0;
+      }
+
+      .scrub-bg, .scrub-prog {
+        height: 100%;
+      }
+
+
+    }
+
+  .scrubbar .scrub-prog .scrub-prog-img{
+    height:100%;
+    width: 100%;
+    max-width: none;
+  }
+
+  &[data-reflection-size="0.75"] {
+
+    .scrubbar {
+
+      transform-origin: left 75%;
+    }
+
+    .scrub-bg, .scrub-prog {
+
+      transform-origin: left 75%;
+
+      > canvas {
+
+        transform-origin: left 75%;
+      }
+    }
+
+    .scrubbar {
+      &:after {
+        top: 75%;
+      }
+    }
+
+    .curr-time, .total-time {
+    }
+  }
+
+  &[data-reflection-size="0.5"] {
+
+    .scrubbar {
+
+      transform-origin: left 50%;
+    }
+
+    .scrub-bg, .scrub-prog {
+
+      transform-origin: left 50%;
+
+      > canvas {
+
+        transform-origin: left 50%;
+      }
+    }
+
+    .scrubbar {
+      &:after {
+        top: 50%;
+      }
+    }
+  }
+
+  &[data-reflection-size="1"] {
+
+    .scrub-bg, .scrub-prog {
+
+      transform-origin: left 100%;
+
+      > canvas {
+
+        transform-origin: left 100%;
+      }
+    }
+
+  }
+}

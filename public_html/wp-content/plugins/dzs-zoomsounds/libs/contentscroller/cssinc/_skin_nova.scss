@@ -1,0 +1,56 @@
+.contentscroller.skin-nova{
+
+  .divimage{
+
+    border-radius: 5px;
+  }
+
+  .thumbsClip{
+
+  }
+
+
+  &.direction-horizontal{
+    .csc-item + .csc-item:not(.csc-row-part){
+      margin-left: 15px;
+    }
+  }
+
+  &.height-auto{
+    .thumbsCon{
+      .csc-item{
+        .fullwidth{
+          padding-top: 100%;
+        }
+      }
+    }
+  }
+
+  &.is-functional{
+
+
+    .csc-item{
+      .csc-item--inner{
+
+      }
+      .divimage{
+
+        cursor: pointer;
+
+        box-shadow: 0 0 0 0px rgba(132, 180, 212,0) inset;
+        $transition-property: all;
+        $transition-duration: 0.3s;
+        $transition-timing: ease-out;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      }
+      &.active, &:hover{
+        .divimage{
+
+          box-shadow: 0 0 0 3px rgba(132, 180, 212,1) inset;
+        }
+      }
+    }
+  }
+
+}

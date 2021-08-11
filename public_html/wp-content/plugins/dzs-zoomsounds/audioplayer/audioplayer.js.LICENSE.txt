@@ -1,0 +1,515 @@
+/*!   exports [maybe provided (runtime-defined)] [no usage info] */
+
+/*! CommonJS bailout: exports is used directly at 5:49-56 */
+
+/*! CommonJS bailout: exports is used directly at 6:23-30 */
+
+/*! CommonJS bailout: module.exports is used directly at 117:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 12:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 14:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 21:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 22:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 2:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 2:72-86 */
+
+/*! CommonJS bailout: module.exports is used directly at 31:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 32:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 3:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 40:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 46:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 4:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 52:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 55:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 56:0-14 */
+
+/*! CommonJS bailout: module.exports is used directly at 88:0-14 */
+
+/*! CommonJS bailout: this is used directly at 16:2-6 */
+
+/*! CommonJS bailout: this is used directly at 530:2-6 */
+
+/*! default exports */
+
+/*! export AllHtmlEntities [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export DzsapInnerPlaylist [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Html4Entities [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Html5Entities [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export MD5 [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export PlayerTime [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export Url [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export XmlEntities [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ZoomSoundsNav [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export __esModule [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export add_query_arg [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ajax_comment_publish [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ajax_retract_like [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ajax_submit_download [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ajax_submit_like [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export ajax_submit_views [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export assignHelperFunctionsToJquery [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export buildAudioElementHtml [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export can_canvas [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export can_history_api [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export comments_handleClickCancel [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export comments_handleClickCommentsBg [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export comments_handleClickSubmit [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export comments_selector_event [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export comments_setupCommentsHolder [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export comments_setupCommentsInitial [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export configureAudioPlayerOptionsInitial [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export constants [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export convertPluginOptionsToFinalOptions [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export decode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export decode_json [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export default_opts [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export draw_canvas [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export dzs_clean_string [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export dzsapInitjQueryRegisters [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export dzsap_generate_keyboard_controls [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export dzsap_generate_keyboard_tooltip [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export dzsap_is_mobile [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export encode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export extraHtmlBottomFunctionality [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export feedEmbedFunctionality [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export format [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export formatTime [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export generateFakeArrayForPcm [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export getBaseUrl [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export getRelativeX [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export get_query_arg [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export handle_keypresses [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export hexToRgb [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export hide_comments_writer [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export htmlEncode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isInt [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export isValid [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export is_android [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export is_android_good [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export is_ie [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export is_ios [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export is_safari [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export jQueryAuxBindings [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export loadScriptIfItDoesNotExist [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export media_pause [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export media_tryToPlay [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export miscFunctions [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export parse [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export parse [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/querystring/decode.js */
+
+/*! export pausebtn_svg [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export playbtn_svg [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export playerFunctions [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_adjustIdentifiers [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_checkIfWeShouldShowAComment [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_constructArtistAndSongCon [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_delete [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_detect_skinwave_mode [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_determineActualPlayer [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_determineHtmlAreas [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_determineProperties [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_getPlayFromTime [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_initSpectrumOnUserAction [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_stopOtherPlayers [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_viewApplySkinWaveModes [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export radio_setUpdateArtistName [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export player_radio_isNameUpdatable [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export registerTextWidth [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export registerToJquery [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export resolve [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export resolveObject [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export retrieve_soundcloud_url [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export sanitizeObjectForChangeMediaArgs [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export sanitizeToCssPx [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export sanitizeToHexColor [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export sanitizeToIntFromPointTime [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubModeWave__checkIfWeShouldTryToGetPcm [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubModeWave__generateWaveData [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubModeWave__initGenerateWaveData [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubModeWave__sendPcm [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubModeWave__view_transitionIn [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubbar_modeWave_clearObsoleteCanvas [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export scrubbar_modeWave_setupCanvas [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export selectText [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export select_all [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export setupMediaListeners [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export setupSoftWatermark [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export setupTooltip [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export setup_structure [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export setup_structure_extras [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export stringify [provided] [no usage info] [provision prevents renaming (no use info)] -> ./node_modules/querystring/encode.js */
+
+/*! export svg_embed_btn [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_embed_button [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_footer_playlist [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_menu_state [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_next_btn [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_pause [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_play_icon [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_prev_btn [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_share_icon [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_volume [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export svg_volume_static [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export view_drawCanvases [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export waitForScriptToBeAvailableThenExecute [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! export wave_mode_canvas_try_to_get_pcm [provided] [no usage info] [missing usage info prevents renaming] */
+
+/*! exports [not provided] [no usage info] */
+
+/*! flagged exports */
+
+/*! namespace exports */
+
+/*! other exports [not provided] [no usage info] */
+
+/*! runtime requirements: __webpack_exports__ */
+
+/*! runtime requirements: __webpack_exports__, __webpack_require__ */
+
+/*! runtime requirements: __webpack_exports__, module.loaded, module.id, module, __webpack_require__.nmd, top-level-this-exports, __webpack_require__.g, __webpack_require__, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__ */
+
+/*! runtime requirements: __webpack_require__, __webpack_exports__ */
+
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, __webpack_require__.t, __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__, module */
+
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: __webpack_require__.r, __webpack_exports__, __webpack_require__.d, __webpack_require__.* */
+
+/*! runtime requirements: module */
+
+/*! runtime requirements: module, __webpack_require__ */
+
+/*! runtime requirements: module, __webpack_require__.g, __webpack_require__.* */
+
+/*! runtime requirements: module, __webpack_require__.o, __webpack_require__ */
+
+/*! runtime requirements: top-level-this-exports, __webpack_require__, __webpack_exports__, module */
+
+/*! unknown exports (runtime-defined) */
+
+/*!*********************************!*\
+  !*** ./node_modules/url/url.js ***!
+  \*********************************/
+
+/*!**********************************!*\
+  !*** ./node_modules/url/util.js ***!
+  \**********************************/
+
+/*!***************************************!*\
+  !*** ./node_modules/events/events.js ***!
+  \***************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/ansi-html/index.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/webpack/hot/log.js ***!
+  \*****************************************/
+
+/*!*******************************************!*\
+  !*** ./node_modules/querystring/index.js ***!
+  \*******************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/querystring/decode.js ***!
+  \********************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/querystring/encode.js ***!
+  \********************************************/
+
+/*!*********************************************!*\
+  !*** ./node_modules/webpack/hot/emitter.js ***!
+  \*********************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/html-entities/lib/index.js ***!
+  \*************************************************/
+
+/*!**************************************************!*\
+  !*** ../source/audioplayer/jsinc/_dzsap_ajax.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ../source/audioplayer/jsinc/_dzsap_misc.js ***!
+  \**************************************************/
+
+/*!**************************************************!*\
+  !*** ../source/audioplayer/jsinc/_dzsap_svgs.js ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ../source/audioplayer/configs/_constants.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/sockjs-client/dist/sockjs.js ***!
+  \***************************************************/
+
+/*!*****************************************************!*\
+  !*** ../source/audioplayer/jsinc/_dzsap_helpers.js ***!
+  \*****************************************************/
+
+/*!******************************************************!*\
+  !*** ../source/audioplayer/jsinc/_dzsap_playlist.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ../source/audioplayer/jsinc/components/_nav.js ***!
+  \******************************************************/
+
+/*!*******************************************************!*\
+  !*** ../source/audioplayer/audioplayer.sourcepack.js ***!
+  \*******************************************************/
+
+/*!*******************************************************!*\
+  !*** ../source/audioplayer/js_common/_dzs_helpers.js ***!
+  \*******************************************************/
+
+/*!********************************************************!*\
+  !*** ../source/audioplayer/configs/_settingsPlayer.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ../source/audioplayer/jsinc/_dzsap_time_model.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/html-entities/lib/xml-entities.js ***!
+  \********************************************************/
+
+/*!**********************************************************!*\
+  !*** ../source/audioplayer/configs/_settingsPlaylist.js ***!
+  \**********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/html-entities/lib/html4-entities.js ***!
+  \**********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/html-entities/lib/html5-entities.js ***!
+  \**********************************************************/
+
+/*!**********************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/socket.js ***!
+  \**********************************************************/
+
+/*!***********************************************************!*\
+  !*** ../source/audioplayer/jsinc/components/_comments.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/overlay.js ***!
+  \***********************************************************/
+
+/*!************************************************************!*\
+  !*** ../source/audioplayer/jsinc/components/_structure.js ***!
+  \************************************************************/
+
+/*!************************************************************!*\
+  !*** ./node_modules/url/node_modules/punycode/punycode.js ***!
+  \************************************************************/
+
+/*!*************************************************************!*\
+  !*** ../source/audioplayer/jsinc/media/_media_functions.js ***!
+  \*************************************************************/
+
+/*!*************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/utils/log.js ***!
+  \*************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/webpack/hot/ sync nonrecursive ^\.\/log$ ***!
+  \***************************************************************/
+
+/*!*******************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/utils/reloadApp.js ***!
+  \*******************************************************************/
+
+/*!*********************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/utils/sendMessage.js ***!
+  \*********************************************************************/
+
+/*!**********************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/clients/BaseClient.js ***!
+  \**********************************************************************/
+
+/*!************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/clients/SockJSClient.js ***!
+  \************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ../source/audioplayer/jsinc/extra-functionality/_innerPlaylist.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ../source/audioplayer/jsinc/wave-render/_wave-render-functions.js ***!
+  \*************************************************************************/
+
+/*!*************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/utils/createSocketUrl.js ***!
+  \*************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/node_modules/ansi-regex/index.js ***!
+  \**************************************************************************/
+
+/*!**************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/node_modules/strip-ansi/index.js ***!
+  \**************************************************************************/
+
+/*!******************************************************************************!*\
+  !*** ../source/audioplayer/jsinc/extra-functionality/_extraHtmlFunctions.js ***!
+  \******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/index.js?http://localhost:8712 ***!
+  \*******************************************************************************/
+
+/*!*******************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/node_modules/loglevel/lib/loglevel.js ***!
+  \*******************************************************************************/
+
+/*!********************************************************************************!*\
+  !*** ./node_modules/webpack-dev-server/client/utils/getCurrentScriptSource.js ***!
+  \********************************************************************************/

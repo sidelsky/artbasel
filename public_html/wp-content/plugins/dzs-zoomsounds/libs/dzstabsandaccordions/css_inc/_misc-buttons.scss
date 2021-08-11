@@ -1,0 +1,53 @@
+
+a.dzs-button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+.button--vive {
+  white-space: nowrap;
+  background-color: $color_highlight;
+
+  border-radius: 6px;
+
+
+  text-transform: uppercase;
+
+
+  font-weight: bold;
+
+
+  font-size: 11px;
+
+  padding: 6px 12px;
+
+
+  color: #ffffff;
+
+  $transition-property: color;
+  $transition-duration: 0.3s;
+  $transition-timing: ease-in;
+
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+}
+
+
+.button--vive:hover {
+  color: #eee;
+}
+
+
+
+.dzs-button.smaller-padding {
+  padding: 3px 15px 5px;
+}
+
+.dzs-button.dashed-border {
+  border-style: dashed;
+}
+
+

@@ -36,14 +36,12 @@ if ( post_password_required() ) {
 <div id="hero-single">
 	<div id="hero-single-wrap">
 		<div class="hero-audio">
-			<?php the_field('hero-audio'); ?>
-
-		<img src="/wp-content/themes/project-theme/assets/build/img/ab/audio.png" />
+			<?php echo do_shortcode(get_field('hero-audio-embed')); ?>
+ 		<img src="/wp-content/themes/project-theme/assets/build/img/ab/audio.png" />
 		</div>
 
 	<div class="hero-artwork">
-		<?php the_field('hero-single'); ?>
-				<img src="/wp-content/themes/project-theme/assets/build/img/ab/uhv.png" />
+			<lottie-player id="FirstLottie" src="<?php the_field('hero-single'); ?>"></lottie-player>
 	</div>
 	<div class="hero-summary">
 		<?php
@@ -246,5 +244,29 @@ $(window).scroll(function() {
 			    };
 });
 
+
+</script>
+
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+<script>
+
+//  document.addEventListener('DOMContentLoaded',function(){
+//    const player = document.getElementById('firstLottie').getLottie();
+//    player.goToAndStop(27,true);
+//  })
+
+LottieInteractivity.create({
+	player: "#FirstLottie",
+	mode:"scroll",
+	actions: [
+			{
+				visibility: [0, 1.0],
+				type: "seek",
+				frames: [0, 123]
+			}
+		]
+});
 
 </script>

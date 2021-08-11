@@ -1,0 +1,52 @@
+
+.videogallery-con {
+  &.dzsvg-loaded {
+    .dzsvg-preloader {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+}
+
+.dzsvg-preloader{
+  @include centerit();
+  z-index: 5;
+  width: 113px;
+  height: 58px;
+  background-color: #ffffffb5;
+  padding: 20px;
+  border-radius: 9px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.3s opacity ease-out;
+}
+.dzsvg-preloader--spinner {
+  width: 70px;
+  text-align: center;
+}
+
+.dzsvg-preloader--spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  animation: bounce-delay 1.4s infinite ease-in-out both;
+}
+
+.dzsvg-preloader--spinner .bc1 {
+  animation-delay: -0.32s;
+}
+.dzsvg-preloader--spinner .bc2 {
+  animation-delay: -0.16s;
+}
+
+@keyframes bounce-delay {
+  0%, 97%, 100% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(.9);
+  }
+}

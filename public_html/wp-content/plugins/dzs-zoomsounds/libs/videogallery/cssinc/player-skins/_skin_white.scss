@@ -1,0 +1,162 @@
+
+.vplayer.skin_white{
+
+  line-height: 1;
+
+  >.vp-inner{
+    .controls{
+      display: flex;
+
+      align-items: center;
+      height: 40px;
+      padding-right: 10px;
+    }
+    .controls > *:not(.background){
+      flex: 0 0 auto;
+      position: relative;
+
+
+      margin-left: 10px;
+
+
+
+
+    }
+
+    .playcontrols{
+      width: 14px;
+      height: 14px;
+    }
+
+    .controls{
+
+      .background{
+
+
+        background: linear-gradient(to bottom, transparent 0%, #000000 100%);
+        height: 181%;
+        filter: blur(7px);
+        bottom: -20px;
+        width: 120%;
+        left: -10%;
+
+        pointer-events: none;
+
+      }
+
+      .timetext{
+        display: none;
+      }
+      .scrubbar{
+        flex: 1000;
+        bottom: auto;
+        left:0;
+
+        height: 5px;
+
+        .scrub-bg{
+          background-color: #dddddd;
+          opacity: 0.5;
+        }
+        .scrub{
+          background-color: $color_highlight;
+        }
+
+        .scrub-buffer{
+
+          background-color: #dddddd;
+        }
+
+      }
+
+
+
+      .playcontrols, .fscreencontrols,.volumecontrols{
+
+        path,rect,polygon{
+          fill: #ddd;
+          $transition-property: fill;
+          $transition-duration: 0.3s;
+          $transition-timing: ease-out;
+
+          @include apply_transition($transition-property, $transition-duration, $transition-timing);
+        }
+
+      }
+
+      .scrubBox{
+        padding: 5px;
+
+        background-color: rgba(0, 0, 0, 0.3);
+        border:0;
+
+        color: #ffffff;
+        font-weight: bold;
+        border-radius: 3px;
+
+        &:before{
+
+          border-top-color: rgba(0, 0, 0, 0);
+        }
+        &:after{
+
+          border-top-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      $bar_height: 8px;
+
+      .volumecontrols{
+        width: 80px;
+
+        display: flex;
+        align-items: center;
+
+        .volumeicon{
+          position: absolute;
+          display: block;
+          >svg{
+
+            display: block;
+          }
+        }
+
+        .volume_static{
+          width: 60px;
+          left: auto;
+          right:0;
+          top:0px;
+
+          height: $bar_height;
+          .volbar{
+            background-color: #dddddd;
+            opacity: 0.5;
+            height: $bar_height;
+            top: 0%;
+            border-radius: 2px;
+
+
+            vertical-align: middle;
+          }
+          .volbar.active{
+            opacity: 1;
+          }
+        }
+      }
+
+      .fscreencontrols{
+        width: 16px;
+      }
+
+
+      .volumecontrols,.timetext,.playcontrols,.fscreencontrols{
+        &:hover{
+          path, polygon, rect {
+            fill: $color_highlight;
+          }
+
+        }
+      }
+    }
+  }
+}

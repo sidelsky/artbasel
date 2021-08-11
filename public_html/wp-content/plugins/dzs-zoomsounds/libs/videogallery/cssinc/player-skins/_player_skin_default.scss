@@ -1,0 +1,149 @@
+
+.vplayer.skin_default {
+  .controls {
+    display: flex;
+    align-items: center;
+
+    height: 40px;
+
+    .background {
+      background-color: rgba(66, 66, 66, 0.74);
+    }
+  }
+
+  .dzsvg-player-button {
+    color: #eeeeee;
+
+    i {
+
+      color: #eeeeee;
+    }
+
+    svg {
+      path {
+        fill: #eee;
+      }
+    }
+  }
+
+
+  .playcontrols {
+    position: relative;
+
+    width: 16px;
+    height: 14px;
+
+  }
+
+  .scrubbar {
+
+    flex: 1000;
+    bottom: auto;
+    top: 0;
+    left: 0;
+    height: 7px;
+
+    .scrub {
+      background: $color_highlight;
+    }
+  }
+
+  .timetext {
+    position: relative;
+
+    bottom: auto;
+    top: 0;
+    left: 0;
+    right: auto;
+
+    color: #dddddd;
+  }
+
+  .volumecontrols, .timetext, .playcontrols, .fscreencontrols {
+    flex: 0 0 auto;
+
+    position: relative;
+
+    right: auto;
+    left: 0;
+
+
+    path, polygon, rect {
+      fill: #ddd;
+
+
+      $transition-property: fill;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+  }
+
+  .volumecontrols, .timetext, .playcontrols, .fscreencontrols {
+    &:hover {
+
+      path, polygon, rect {
+        fill: $color_highlight;
+      }
+    }
+  }
+
+  .controls {
+    > *:first-child {
+
+      margin-left: 0px;
+    }
+
+    > * {
+
+      margin-left: 10px;
+    }
+
+    > *:last-child {
+      margin-right: 10px;
+    }
+  }
+
+  .volume_static, .volume_active {
+    svg {
+
+      height: 12px;
+    }
+  }
+
+  .volumecontrols {
+    position: relative;
+    bottom: auto;
+    height: 16px;
+
+    .volumeicon {
+
+
+      right: 0;
+      left: auto;
+
+    }
+
+    .volume_static, .volume_active {
+      left: 0;
+      height: 16px;
+
+      top: 0;
+    }
+
+  }
+
+  .fscreencontrols {
+    width: 22px;
+    height: 16px;
+  }
+}
+.vplayer.skin_default {
+  font-family: "Arial", serif;
+
+  .timetext {
+    font-size: 11px;
+    bottom: 6px;
+  }
+}

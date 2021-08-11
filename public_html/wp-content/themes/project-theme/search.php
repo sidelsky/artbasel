@@ -6,7 +6,16 @@
  get_header( 'artbasel' ); ?>
 
  <div id="product-wrap">
-   <div class="filter-left"></div>
+   <div class="filter-left">
+     <?php if ( is_active_sidebar( 'ab_left' ) ) : ?>
+       <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+
+         <?php echo do_shortcode('[yith_wcan_filters slug="default-preset"]'); ?>
+
+         <?php dynamic_sidebar( 'ab_left' ); ?>
+       </div><!-- #primary-sidebar -->
+     <?php endif; ?>
+   </div>
 
   		<div class="product-main">
  					<h1 class="page-title"> <?php echo $wp_query->found_posts; ?>
@@ -28,7 +37,6 @@
                       </div>
                       <div class="artist">Artist Attribute</div>
                       <h2 class="woocommerce-loop-product__title"><?php the_title(); ?></h2>
-                      <?php the_excerpt(); ?>
                    </a>
               </li>
 
@@ -47,11 +55,17 @@
            echo '</div>';
            echo '</div>';
           echo '</div>';
-         include('product-searchform.php');  
+         include('product-searchform.php');
         }?>
 
   	</div>
-    <div class="filter-right"></div>
+    <div class="filter-right">
+      <?php if ( is_active_sidebar( 'ab_right' ) ) : ?>
+        <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+          <?php dynamic_sidebar( 'ab_right' ); ?>
+        </div><!-- #primary-sidebar -->
+      <?php endif; ?>
+    </div>
 	</div><!-- end product contain -->
 
 

@@ -1,0 +1,384 @@
+@import "TOKENS";
+
+
+
+$height: 80px;
+
+
+
+
+
+
+
+
+$margin_between: 15px;
+.audioplayer.skin-silver{
+  line-height: 1;
+
+
+  .audioplayer-inner{
+    height: 50px;
+    display: flex;
+
+    >.the-thumb-con{
+      display: inline-block;
+
+      width: 50px;
+      flex: 0 0 auto;
+      transform: scale(1);
+      opacity: 1;
+      $transition-property: all;
+      $transition-duration: .3s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      .the-thumb{
+        background-size: cover;
+        height: 100%;
+      }
+    }
+  }
+
+
+  &.does-not-have-thumb{
+
+    .audioplayer-inner {
+      height: 50px;
+      display: flex;
+
+      > .the-thumb-con {
+
+
+        width: 0;
+        transform: scale(0);
+        opacity: 0;
+      }
+    }
+  }
+
+  .loading-svg{
+    display: none;
+  }
+  .playbtn{
+    border-left-color: transparent!important;
+
+
+    svg{
+      width: 15px;
+    }
+  }
+
+  .scrubbar{
+    canvas{
+      display: none;
+    }
+  }
+
+  .ap-controls{
+    height: 100%;
+    background-color: #ededed;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    > .the-bg{
+      display: none;
+    }
+
+    >.con-controls{
+      > .the-bg{
+        background-color: #ededed;
+      }
+    }
+
+    .con-playpause-con{
+      margin-right: $margin_between;
+      margin-left: $margin_between;
+      display: flex;
+      align-items: center;
+      width: auto;
+
+
+      .con-playpause{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .ap-controls-left{
+      width: auto;
+      height: 100%;
+      position: relative;
+
+
+      display: flex;
+      align-items: center;
+
+      border-radius: 5px 0 0 5px;
+
+      .con-playpause{
+
+        width: 20px;
+        height: 20px;
+        position: relative;
+
+        .playbtn,.pausebtn {
+          width: 20px;
+          height: 20px;
+        }
+        .playbtn{
+          width: 20px;
+          height: 20px;
+
+
+
+
+          path{
+          }
+        }
+        .pausebtn{
+
+
+          .pause-icon{
+
+          }
+
+          path{
+          }
+        }
+      }
+    }
+
+    .scrubbar{
+      flex: 1000;
+    }
+
+    .meta-artist-con{
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      top:0;
+      left:0;
+      white-space: nowrap;
+      line-height: 16px;
+      margin-top: 0px;
+      margin-left: $margin_between;
+
+      width: auto;
+      max-width: 190px;
+
+      overflow-y: hidden;
+
+      .meta-thumb{
+        display: inline-block;
+      }
+      .meta-artist{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+
+      .the-thumb-con{
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        vertical-align: middle;
+
+        margin-right: 10px;
+
+        >.the-thumb{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top:0;
+          left:0;
+
+          background-size: cover;
+
+          border-radius: 5px;
+        }
+      }
+
+      .the-artist{
+
+        font-size: 14px;
+        font-weight: bold;
+
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        display: block;
+
+      }
+
+
+      .the-artist:after{
+        content: "";
+        display: block;
+        clear: both;
+        height: 1px;
+      }
+
+      .the-name{
+        font-size: 12px;
+        font-weight: 300;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    .ap-controls-right{
+      flex: 0 0 auto;
+      float:none;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      margin-right: $margin_between;
+
+
+
+      .controls-volume{
+        display: inline-block;
+        vertical-align: middle;
+        bottom: auto;
+        right: auto;
+        left:0;
+        position: relative;
+
+        width: 10px;
+        margin-left: $margin_between;
+
+
+        .volumeicon{
+          position: relative;
+          background-color: #222222;
+        }
+        .volumeicon::before{
+          border-right-color: #222222;
+        }
+
+      }
+
+      .total-time{
+        position: relative;
+        vertical-align: middle;
+        top:0px; left: 0;
+        padding:0;
+        opacity: 1;
+        font-size: 12px;
+        margin-top: 0px;
+        display: inline-block;
+
+        margin-left: $margin_between;
+
+        bottom: auto;
+      }
+    }
+
+    .curr-time{
+      position: relative;
+      vertical-align: top;
+      top:0; left: 0;
+      padding:0;
+      font-size: 12px;
+
+
+      display: inline-block;
+
+      margin-right: $margin_between;
+
+
+      bottom: auto;
+    }
+
+
+
+    .scrubbar{
+      width: auto;
+      height: 12px;
+      position: relative;
+
+      overflow: hidden;
+
+      $scrub_size: 3px;
+      > .scrub-bg, >.scrub-prog{
+
+        height: $scrub_size;
+
+        position: absolute;
+        top:50%;
+        margin-top: -1px;
+      }
+
+      >.scrub-prog{
+
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+.audioplayer.skin-silver.scrubbar-tweak-overflow-hidden-on{
+
+  .ap-controls .scrubbar{
+    overflow: visible;
+
+
+
+
+    $transition-property: width, left, opacity;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+}
+
+
+
+
+
+.dzsap-sticktobottom-placeholder.dzsap-sticktobottom-placeholder-for-skin-silver.active {
+  height: 50px;
+}
+
+.dzsap-sticktobottom.dzsap-sticktobottom-for-skin-silver {
+
+  padding: 0;
+  height: 50px;
+  bottom: -100%;
+  background-color: #fafafa;
+
+
+  .audioplayer {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .audioplayer.skin-silver:not(.theme-dark) .ap-controls {
+    background-color: transparent;
+  }
+}
+.dzsap-sticktobottom.dzsap-sticktobottom-for-skin-silver.audioplayer-loaded {
+
+  bottom: 0;
+}

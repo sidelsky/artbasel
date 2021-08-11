@@ -1,0 +1,146 @@
+$color_border: rgba(0, 0, 0, .3);
+.dzs-select-wrapper.opener-listbuttons.skin-nova {
+
+
+  font-size: 0;
+
+  .bigoption.active-checked {
+    background-color: #2d6987;
+    color: #ffffff;
+  }
+
+  .bigoption {
+
+    font-size: 13px;
+    background-color: #FAFAFA;
+    color: #222222;
+
+    margin-right: 0;
+
+    line-height: 1;
+    padding: 10px;
+    border-right: 1px solid $color_border;
+
+    display: inline-block;
+
+
+    $transition-property: color, background;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-in;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+  }
+
+
+  .bigoption:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .bigoption:last-child {
+    border-radius: 0 5px 5px 0;
+    border-right: 0;
+  }
+
+
+}
+
+.dzs-select-wrapper.opener-listbuttons.skin-nova {
+
+
+  font-size: 0;
+
+  .bigoption.active-checked {
+    background-color: #2d6987;
+    color: #ffffff;
+  }
+
+  .bigoption {
+
+    font-size: 13px;
+    background-color: #FAFAFA;
+    color: #222222;
+
+    line-height: 1;
+    padding: 10px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+
+    display: inline-block;
+
+
+    $transition-property: color, background;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-in;
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+  }
+
+
+  .bigoption:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .bigoption:last-child {
+    border-radius: 0 5px 5px 0;
+    border-right: 0;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+.dzs-checkbox-selector.skin-nova {
+
+  > label {
+    input:checked + .the-label {
+      background-color: #2d6987;
+      color: #ffffff;
+    }
+
+    .the-label {
+
+      font-size: 13px;
+      background-color: #FAFAFA;
+      color: #222222;
+
+      line-height: 1;
+      padding: 10px;
+      border-right: 1px solid rgba(0, 0, 0, .3);
+
+      display: inline-block;
+
+
+      $transition-property: color, background;
+      $transition-duration: 0.3s;
+      $transition-timing: ease-in;
+
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+    }
+  }
+
+  > label:first-child {
+    .the-label {
+      border-radius: 5px 0 0 5px;
+      border-left: 1px solid $color_border; 
+    }
+  }
+
+  > label:last-child {
+    .the-label {
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+}

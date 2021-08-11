@@ -1,0 +1,32 @@
+
+$color_bg: rgba(70, 70, 70, 1);
+$color_text: #dddddd;
+.videogallery.skin-default{
+  .dzs-navigation--item {
+    color: $color_text;
+    left: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+
+    $transition-property: background, color;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+    background-color: $color_bg;
+
+
+  }
+  .dzs-navigation--item-content{
+
+    color: $color_text;
+
+    padding: 10px;
+  }
+
+  .dzs-navigation--item.active, .videogallery--navigation-container .dzs-navigation--item:hover {
+    background-color: lighten($color_bg, 10%);
+    color: #ffffff;
+  }
+}

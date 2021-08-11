@@ -1,0 +1,185 @@
+
+
+$color_bg: #fff;
+$color_text: #111;
+$color_highlight: #e74c3c;
+
+$transition-property: all;
+$transition-duration: 0.3s;
+$transition-timing: ease-out;
+
+.restaurant-menu-item {
+
+  margin-bottom: 19px;
+
+
+  .restaurant-menu-item--image {
+    float: left;
+    width: 65px;
+
+    margin-right: 15px;
+
+
+    .the-image {
+      width: 65px;
+      height: 65px;
+
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
+  a.restaurant-menu-item--image {
+    display: block;
+    position: relative;
+
+    overflow: hidden;
+  }
+
+  a.restaurant-menu-item--image:before {
+    content: "";
+
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, .5);
+
+
+    opacity: 0;
+    visibility: hidden;
+
+
+    $transition-property: opacity, visibility, top;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+  a.restaurant-menu-item--image:after {
+    content: "\f002";
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "FontAwesome";
+
+    color: #ffffff;
+    font-size: 18px;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    visibility: hidden;
+
+    margin-top: 10px;
+
+    $transition-property: opacity, visibility, margin;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+  a.restaurant-menu-item--image:hover:before {
+    top: 0;
+  }
+
+  a.restaurant-menu-item--image:hover:after {
+    margin-top: 0px;
+  }
+
+  a.restaurant-menu-item--image:hover:before, a.restaurant-menu-item--image:hover:after {
+
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .restaurant-menu-item--content {
+    overflow: hidden;
+  }
+
+  .the-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222222;
+    float: left;
+    margin-right: 10px;
+    margin-top: -1px;
+  }
+
+  .the-price {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+
+    color: #222222;
+    float: right;
+
+    margin-left: 10px;
+  }
+
+  .dots {
+    display: block;
+    overflow: hidden;
+
+    background-image: url(assets/img/dot2px.svg);
+    height: 2px;
+
+    position: relative;
+    top: 24px;
+  }
+
+  .the-ingredients {
+
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .the-ingredients {
+    float: left;
+    color: #777777;
+    font-weight: bold;
+    font-family: "Open Sans", serif;
+
+    font-size: 14px;
+    margin-top: -5px;
+    font-style: italic;
+
+
+  }
+
+  .the-mentions {
+    float: right;
+
+    font-size: 0;
+
+    .mention {
+      display: inline-block;
+
+      margin-left: 1px;
+
+      font-weight: 700;
+      font-family: "Lato", serif;
+
+      font-size: 11px;
+
+      background-color: #ff8000;
+      color: #ffffff;
+      line-height: 1;
+
+      padding: 4px 5px;
+
+    }
+  }
+}
+
+.restaurant-menu-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}

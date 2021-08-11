@@ -1,0 +1,619 @@
+
+$scrub_offset: 0px;
+$scrub_h: 7px;
+$color_highlight:#fdd500;
+
+.vplayer.skin_aurora{
+
+  line-height:1;
+
+  .timetext{
+    display: none;
+  }
+
+
+  .playcontrols{
+
+    $transition-property: bottom,right;
+    $transition-duration: 0.5s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+
+  .playHover{
+    background-image: none;
+    display: none;
+  }
+  .pauseSimple{
+  }
+
+  .pauseHover{
+    background-image: none;
+    display: none;
+  }
+
+
+
+  .background{
+    height:30px;
+    bottom:0;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQ5NDk0OSIgc3RvcC1vcGFjaXR5PSIwLjg2Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMC44NCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(73,73,73,0.86) 0%, rgba(53,53,53,0.84) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(73,73,73,0.86)), color-stop(100%,rgba(53,53,53,0.84)));
+    background: -webkit-linear-gradient(top, rgba(73,73,73,0.86) 0%,rgba(53,53,53,0.84) 100%);
+    background: -o-linear-gradient(top, rgba(73,73,73,0.86) 0%,rgba(53,53,53,0.84) 100%);
+    background: -ms-linear-gradient(top, rgba(73,73,73,0.86) 0%,rgba(53,53,53,0.84) 100%);
+    background: linear-gradient(to bottom, rgba(73,73,73,0.86) 0%,rgba(53,53,53,0.84) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db494949', endColorstr='#d6353535',GradientType=0 );
+    border-top:1px solid rgba(0,0,0,0.1);
+  }
+
+  $margin: 10px;
+  .controls{
+    display: flex;
+    height: 30px;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .playcontrols-con{
+
+      flex: 0 0 auto;
+      margin-left: $margin;
+      margin-right: $margin;
+
+    }
+
+    .playcontrols{
+      $size: 16px;
+
+      flex: 0 0 $size;
+      width: auto;
+      height: 11px;
+      width: 11px;
+
+      position: relative;
+
+
+      .playSimple,.pauseSimple{
+
+        left: 0px;
+        bottom: 0px;
+        width: 15px;
+        height: 100%;
+        background-image: none;
+
+        svg{
+          height: 11px;
+          display: block;
+        }
+      }
+
+
+      .playSimple:hover,.pauseSimple:hover{
+
+        path {
+          fill: $color_highlight;
+        }
+      }
+    }
+
+
+    .scrubbar{
+
+      position: relative;
+
+      bottom: auto; top:auto;
+      left: auto; right: auto;
+
+      flex: 150;
+
+      height: 7px;
+
+      $transition-property: bottom;
+      $transition-duration: 0.5s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      margin-right: $margin;
+
+      .scrubBox,.scrubBox-prog{
+        bottom: 30px;
+      }
+    }
+
+    &.is_fullscreen{
+
+      .scrubbar{
+
+        z-index: 5555555555;
+      }
+    }
+
+    .volumecontrols{
+      flex:0 0 43px;
+
+      margin-right: $margin;
+
+      height: 11px;
+
+      bottom: auto;
+      top:0;
+      position: relative;
+      right: auto;
+
+      .volumeicon{
+        bottom: auto;
+        top:0;
+      }
+    }
+  }
+
+
+  .scrubbar{
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+
+  .scrub-bg{
+    position: absolute;
+    background: #3C3C3C;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,.3) inset;
+    height:$scrub_h;
+    bottom: auto; top:$scrub_offset;
+  }
+
+  .scrub{
+    position:absolute;
+    height: ($scrub_h - 2px);
+    overflow: hidden;
+    background-color:$color_highlight;
+
+    background-image: none;
+    bottom: auto; top:$scrub_offset;
+    top: ( $scrub_offset + 1px);
+
+
+    left:1px;
+
+    svg{
+      position: absolute;
+      top: 0;
+      display: block;
+
+      rect{
+        fill: #fff;
+        opacity:0.2;
+
+      }
+    }
+
+  }
+
+
+  .scrub-buffer{
+    position:absolute;
+    left:1px!important;
+    bottom:auto;
+    top: ( $scrub_offset + 1px);
+    background: #464849;
+    height: ($scrub_h - 2px);
+  }
+
+
+
+
+  .scrubBox {
+    position: absolute;
+    background: #464849;
+    border: 1px solid #000000;
+    color: #eee;
+    width:40px;
+    bottom:19px;
+    left:-15px;
+    text-align:center;
+    padding:4px 0px;
+    font-size:10px;
+    height: auto;
+    opacity:0.9;
+    pointer-events:none;
+    font-family: "Open Sans",Helvetica, Arial , sans-serif;
+
+    font-weight: bold;
+
+    line-height: 1;
+  }
+  .scrubBox:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #464849;
+    border-width: 3px;
+    left: 15px;
+    margin-left: -3px;
+  }
+  .scrubBox:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #111;
+    border-width: 4px;
+    left: 15px;
+    margin-left: -4px;
+  }
+
+
+
+  .hdbutton-con{
+    display:block;
+
+
+    right: auto; left:0;
+    bottom: auto; top:1px;
+
+    position: relative;
+    flex: 0 0 23px;
+
+    width: 13px;
+    height: 10px;
+
+    padding-right: $margin;
+
+
+    $transition-property: bottom,right;
+    $transition-duration: 0.5s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+    .hdbutton-normal{
+      background-image: none;
+      line-height: 1;
+
+      text-transform: uppercase;
+
+      color: #eee;
+      font-size: 9px;
+      font-weight: bold;
+
+      white-space: nowrap;
+
+      $transition-property: color;
+      $transition-duration: 0.5s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+  }
+
+  .hdbutton-con:hover, .hdbutton-con.active{
+    .hdbutton-normal{
+      color: $color_highlight;
+    }
+  }
+
+
+
+
+
+
+
+
+  .fscreencontrols{
+    position: relative;
+    cursor : pointer;
+    bottom : auto; top:0;
+    right : auto;
+    left:0;
+    flex: 0 0 13px;
+    height: 13px;
+    width: 13px;
+
+
+    margin-right: $margin;
+  }
+  .full{
+    overflow: hidden;
+    position: absolute;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+
+    top:0;
+    left:0;
+
+
+
+
+    background: transparent;
+    >svg{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+
+      width: 13px;
+      height: 13px;
+
+      polygon,rect{
+
+        fill: #eee;
+
+
+        $transition-property: fill,transform;
+        $transition-duration: 0.3s;
+        $transition-timing: ease-out;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      }
+
+      rect{
+
+        transform: scale(0.7);
+        transform-origin: center center;
+      }
+
+
+    }
+
+    &:hover{
+      svg{
+
+        rect{
+
+          transform: scale(1);
+          transform-origin: center center;
+        }
+      }
+    }
+  }
+
+  $color_main: #eeeeee;
+
+
+  .volumecontrols{
+    bottom: 8px;
+    right : 31px;
+    width: 43px;
+
+
+
+    $transition-property: bottom,right;
+    $transition-duration: 0.5s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+
+
+  .volumeicon{
+    background-image:none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 12px;
+    top: -1px;
+
+
+    svg{
+      position: absolute;
+      top: 1px;
+      height: 10px;
+
+      path{
+        fill: $color_main;
+
+
+        $transition-property: fill;
+        $transition-duration: 0.3s;
+        $transition-timing: ease-out;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      }
+    }
+  }
+  .volumeicon:hover{
+
+    svg{
+
+      path{
+        fill: $color_highlight;
+
+      }
+    }
+  }
+
+
+  $scrub_offset: 2px;
+  .volume_static{
+    position:absolute;
+    bottom:auto; top:$scrub_offset;
+    left:17px;
+    background-image: none;
+    background-color: #3c3c3c;
+    background-position: center center;
+    background-repeat: repeat-x;
+    width:26px;
+    height:($scrub_h);
+
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3) inset;
+  }
+
+  .volume_active{
+    bottom:auto; top: ($scrub_offset + 1px);
+    left:18px;
+    background-image: none;
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-image: url(img/scrub_over.png);
+    width:24px;
+    height:($scrub_h - 2px);
+
+    background-color:$color_highlight;
+
+    svg{
+      position: absolute;
+      top: 0;
+
+      rect{
+        fill: #fff;
+        opacity:0.2;
+
+      }
+    }
+  }
+  .volume_cut{
+    bottom:6px;
+    left:-2px;
+    width:14px;
+    height:1px;
+    transform: rotate(-45deg);
+
+    background-color: #dd3636;
+    opacity: 0.5;
+  }
+
+
+
+  .full:hover{
+    >svg{
+      polygon,rect {
+        fill: #fdd500;
+      }
+    }
+  }
+
+  .fullHover{
+    display: none;
+    background-image: none;
+
+  }
+
+
+
+
+  .scrubBox-prog:empty {
+    display:none;
+  }
+  .scrubBox-prog {
+    position: absolute;
+    background: #ffffff;
+    color: #111;
+    border: 1px solid rgba(30,30,30,.9);
+    width:50px;
+    bottom:19px;
+    left:-15px;
+    text-align:center;
+    padding:4px 0px;
+    font-size:10px;
+    height:auto;
+    pointer-events:none;
+
+    visibility: hidden;
+    opacity: 0;
+
+
+    font-family: "Open Sans",Helvetica, Arial , sans-serif;
+
+    font-weight: bold;
+
+    line-height: 1;
+
+
+    $transition-property: opacity,visibility;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+  .scrubBox-prog:after,  .scrubBox-prog:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .scrubBox-prog:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #ffffff;
+    border-width: 5px;
+    left: 15px;
+    margin-left: -5px;
+  }
+  .scrubBox-prog:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-top-color: #000000;
+    border-width: 6px;
+    left: 15px;
+    margin-left: -6px;
+  }
+
+
+  a.dzsvg-control{
+
+  }
+  a.display-block{
+    display: block;
+  }
+
+
+
+
+  .dzsvg-player-button{
+
+    width: 14px;
+    height: 14px;
+
+    .the-icon{
+      path{
+
+        fill: $color_main;
+      }
+
+    }
+  }
+}
+
+
+.vplayer.skin_aurora.under-420{
+
+  .controls{
+    height: 40px;
+    align-items: center;
+    padding-top:0;
+
+    .playcontrols{
+      flex: 0 0 15px;
+    }
+
+    .scrubbar{
+    }
+
+    .scrubBox{
+      bottom: 20px;
+    }
+    .scrubBox-prog{
+      bottom: 20px;
+    }
+
+    .background{
+      height: 100%;
+    }
+
+    .hdbutton-con{
+    }
+
+    .volumecontrols{
+    }
+    .fscreencontrols, .dzsvg-player-button{
+      width: 20px;
+      flex: 0 0 20px;
+      height: 20px;
+
+
+      .full > svg{
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}

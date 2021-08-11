@@ -1,0 +1,357 @@
+$size_scrub: 50px;
+*[class*="audioplayer"] .the-comments {
+  display: none;
+}
+
+$color_comments_bg: #444343;
+$color_comments_bg_darker: #1d1d1d;
+$color_comments_inverse_bg: #dedede;
+
+$comments_color: #a8a6a6;
+.zoomsounds-comment-wrapper {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  background-color: #dddddd;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+
+  position: relative;
+
+
+  .zoomsounds-comment-wrapper--avatar {
+    $size: 50px;
+
+    width: $size;
+    flex: 0 0 $size;
+    height: $size;
+
+
+  }
+;
+
+
+  .zoomsounds-comment-wrapper--input-wrap {
+    padding: 10px;
+    flex: 1000;
+
+    display: flex;
+
+    input {
+      border: 0;
+      border-radius: 5px;
+
+      outline: none;
+      flex: 1000;
+      margin-left: 5px;
+      margin-right: 5px;
+
+
+    }
+  }
+
+  .zoomsounds-comment-wrapper--buttons {
+
+    position: absolute;
+    right: 0;
+    bottom: 0%;
+    opacity: 0;
+    visibility: hidden;
+
+
+    $transition-property: opacity, visibility, bottom;
+    $transition-duration: 0.3s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+  }
+
+  &.active {
+
+    .zoomsounds-comment-wrapper--buttons {
+      bottom: -31px;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+
+.audioplayer {
+
+
+  .comments-holder {
+    display: block;
+    position: absolute;
+    height: 14px;
+    top: ($size_scrub + 1);
+    visibility: hidden;
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+
+    $transition-property: opacity, visibility;
+    $transition-duration: 0.1s;
+    $transition-timing: ease-out;
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+    .dzstooltip-con {
+
+      $transition-property: opacity, visibility;
+      $transition-duration: 0.4s;
+      $transition-timing: ease-out;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    }
+
+
+    .the-comments-holder-bg {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+
+      .comments-avatar--placeholder{
+        opacity: 0;
+        position: relative;
+        box-shadow: 0 0 10px 5px #716c6c;
+        transform: scale(1.1);
+        $transition-property: opacity, visibility;
+        $transition-duration: 0.3s;
+        $transition-timing: ease-out;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      }
+
+      &:hover{
+
+        .comments-avatar--placeholder{
+        opacity: 0.5;
+      }
+      }
+    }
+
+    .dzstooltip-con {
+      position: absolute;
+      top: 0;
+    }
+
+    .the-avatar {
+      width: 14px;
+      height: 14px;
+      display: block;
+      background-color: #111;
+      background-position: center center;
+      background-size: contain;
+    }
+
+
+    .the-comment-author {
+      color: #53c3e2;
+    }
+
+
+    .placeholder .the-avatar {
+      box-shadow: 0 0 3px 0 rgba(255, 255, 255, 1);
+    }
+  }
+
+  .comments-holder.active {
+    visibility: visible;
+  }
+
+
+}
+
+.dzstooltip--comments-writer{
+
+
+  &:not(.active) {
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.comments-writer {
+
+
+
+  height: auto;
+
+  position: relative;
+
+  margin-left: 0;
+  margin-right: 0;
+  $transition-property: height;
+  $transition-duration: 0.3s;
+  $transition-timing: linear;
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+
+  .comments-writer-inner {
+    color: $comments_color;
+
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    position: relative;
+
+    > .comments-writer--form {
+      flex: 1;
+    }
+
+    .comments-writer--avatar-con {
+      flex: 0 0 60px;
+
+      .comments-writer--avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center center;
+      }
+    }
+  }
+
+  .overflow-and-fixed {
+    display: grid;
+
+    align-items: center;
+    grid-template-columns: 1fr 100px;
+  }
+
+  .dzsap-comments--comment-form-label {
+    font-style: italic;
+    line-height: 1;
+  }
+
+  .dzsap-comments--comment-form-label-time {
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .dzsap-comments--section {
+    & + .dzsap-comments--section {
+      margin-top: 15px;
+    }
+  }
+
+
+  input[type=text], textarea {
+
+    line-height: 1.7;
+
+    background-color: $color_comments_bg_darker;
+    color: $comments_color;
+    font-size: 13px;
+    border: 0;
+    border-radius: 5px;
+
+    padding: 5px 8px;
+    width: 100%;
+
+    resize: none;
+    display: block;
+
+
+    $transition-property: all;
+    $transition-duration: 0.3s;
+    $transition-timing: linear;
+
+
+    @include apply_transition($transition-property, $transition-duration, $transition-timing);
+    @include boxsizing();
+  }
+
+  textarea {
+    height: 50px;
+  }
+
+  input[type=text]:focus, textarea:focus {
+
+    border-color: rgba(219, 67, 67, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.01) inset, 0 0 8px rgba(219, 67, 67, 0.1) inset;
+    outline: 0 none;
+  }
+
+
+  .float-right {
+    position: relative;
+
+  }
+
+
+}
+
+.dzstooltip--comments-writer {
+  .dzstooltip--inner:not(.a):not(.a) {
+
+    background-color: $color_comments_bg;
+  }
+}
+
+.comments-writer.active {
+
+
+  .comments-writer-inner {
+
+  }
+
+  .comments-writer-inner:before {
+
+    opacity: 1;
+  }
+}
+
+
+body .audioplayer.scrubbar-loaded, .zoomsounds-external-scrubbar.scrubbar-loaded {
+  .comments-holder:not(.a) {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.dzs-button-dzsap {
+
+
+  border: 0;
+
+
+  text-transform: uppercase;
+  padding: 8px 15px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+
+
+  background-color: $color_comments_bg_darker;
+  color: $comments_color;
+
+  margin-left: 9px;
+
+  font-size: 11px;
+
+  border-radius: 5px;
+
+  font-weight: bold;
+
+
+  cursor: pointer;
+
+  $transition-property: background, color;
+  $transition-duration: 0.3s;
+  $transition-timing: linear;
+
+
+  @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+  &:hover {
+
+    background-color: rgba(69, 68, 68, 0.5);
+  }
+}

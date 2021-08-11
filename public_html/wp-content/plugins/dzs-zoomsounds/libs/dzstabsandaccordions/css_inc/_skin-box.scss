@@ -1,0 +1,123 @@
+
+$color_bg: #fff;
+$color_text: #111;
+
+$transition-property: all;
+$transition-duration: 0.3s;
+$transition-timing: ease-out;
+
+.dzs-tabs.skin-box {
+  .tabs-menu {
+    position: relative;
+    font-weight: bold;
+
+    .tab-menu-con {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      border-left: 0px solid rgba(0, 0, 0, 0.3);
+      background: $color_bg;
+      @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      .tab-menu {
+        padding: 10px 14px;
+
+        color: $color_text;
+      }
+
+      .tab-menu-content-con {
+        font-weight: 400;
+      }
+    }
+
+    .tab-menu-con:first-child {
+      .tab-menu {
+
+      }
+
+      border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .tab-menu-con.active {
+      border-bottom: 1px solid $color_bg;
+
+      .tab-menu {
+      }
+    }
+  }
+
+  .tabs-content {
+    margin-top: -1px;
+
+    .tab-content {
+      padding: 10px 15px;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      background-color: $color_bg;
+    }
+  }
+}
+
+.dzs-tabs.skin-box.is-toggle {
+
+
+  > .tabs-menu {
+
+    > .tab-menu-con, .tab-menu-con.active {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      margin-bottom: 5px;
+
+      > .tab-menu {
+        padding-left: 30px;
+        position: relative;
+        width: 100%;
+        text-align: left;
+
+
+      }
+
+
+      $transition-property: all;
+      $transition-duration: 0.2s;
+      $transition-timing: ease-out;
+
+      > .tab-menu:before {
+        content: "+";
+        position: absolute;
+        left: 12px;
+        top: 10px;
+        font-weight: normal;
+        font-size: 18px;
+        -webkit-font-smoothing: antialiased;
+        font-smoothing: antialiased;
+        text-rendering: geometricPrecision;
+        font-family: Courier New, Arial;
+        opacity: 0.5;
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+
+      }
+
+      $transition-property: height;
+      $transition-duration: 0.5s;
+      $transition-timing: ease-out-quart;
+
+      > .tab-menu-content-con {
+        .tab-menu-content {
+          padding: 10px 15px 15px;
+          color: $color_text;
+        }
+
+        @include apply_transition($transition-property, $transition-duration, $transition-timing);
+      }
+    }
+
+    > .tab-menu-con.active {
+      .tab-menu {
+
+      }
+
+      .tab-menu:before {
+        transform: rotate(43deg);
+        -webkit-transform: rotate(45deg);
+      }
+    }
+  }
+
+}
