@@ -1206,3 +1206,25 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
   overflow-y: hidden;
   max-height: inherit;
 }
+
+/* cookie notice */
+
+#cookie-notice {
+  background: #fff;
+  border: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cookie-notice-container {
+  color: #222 !important;
+}
+
+.cn-text-container {
+  font-size: 14px;
+}
+
+.cn-notice-buttons a {
+font-family: "newtransport-regular";
+ font-size: 14px;
+}
