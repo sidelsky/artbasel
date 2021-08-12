@@ -1094,7 +1094,7 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
   margin-top: 70px;
   display: flex;
   justify-content: space-between;
-  width: 140px;
+  width: 135px;
 }
 
 .single-product .yith-wcwl-add-to-wishlist {
@@ -1254,3 +1254,5 @@ font-family: "newtransport-regular";
   background-color: #fff !important;
   border: 1px solid #222 !important;
 }
+
+ 
