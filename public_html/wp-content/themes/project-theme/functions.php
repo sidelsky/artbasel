@@ -88,37 +88,6 @@ add_action( 'init', 'custom_post_type', 0 );
 
     getFunctions();
 
-    /**
-    * rename woocommerce checkout pages - https://www.hongkiat.com/blog/price-request-catalog-woocommerce/
-
-
-add_filter( 'woocommerce_free_price_html', 'hide_free_price_notice');
-add_filter( 'woocommerce_variable_free_price_html', 'hide_free_price_notice' );
-add_filter( 'woocommerce_variation_free_price_html', 'hide_free_price_notice' );
-
-function hide_free_price_notice( $price ) {
-   return '';
-}
-
-
-
-
-
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
-
-function woo_custom_cart_button_text() {
-   return __( 'Add to Wishlist', 'woocommerce' );
-}
-
-add_filter( 'woocommerce_product_add_to_cart_text', 'woo_custom_cart_button_text' );
-
-function woocommerce_button_proceed_to_checkout() {
-  $checkout_url = WC()->cart->get_checkout_url();
-?>
-<a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php _e( 'Demander des prix', 'woocommerce' ); ?></a>
-<?php
-}
-add_filter( 'woocommerce_order_button_text', create_function( '', 'return "Send Inquiry";' ) ); */
 
 
 /**
@@ -167,6 +136,11 @@ function customText(){
   echo '<ul class="anchor"><li><a href="#details" class="details">Details & Features</a></li>';
   echo '<li><a href="#artwork" class="artist">About the artwork</a></li>';
   echo '<li><a href="#artist" class="artist">About the artist</a></li></ul>';
+  echo '<div class="tools">';
+  echo do_shortcode('[yith_wcwl_add_to_wishlist]');
+  echo '<a href="#" class="share"><img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" /></a>';
+  echo '</div>';
+
 }
 add_action( 'woocommerce_single_product_summary','customText',25);
 
@@ -200,10 +174,8 @@ function woo_custom_product_searchform( $form ) {
 
 
 
-
-
 /**
- * shop image wrapper for zoom, and atribute for artist name
+ * shop image wrapper for zoom, and attribute for artist name
  **/
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
     // remove product thumbnail and title from the shop loop
@@ -216,7 +188,6 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
        echo '<div class="thumbnail" title="'.get_the_title().'" href="'. get_the_permalink() . '">'.woocommerce_get_product_thumbnail().'</div>';
        echo '<div class="artist">Artist Attribute</div>';
     }
-
 }
 
 

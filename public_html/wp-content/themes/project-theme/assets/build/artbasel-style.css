@@ -1034,6 +1034,10 @@ form.cart,
   margin-right: 0;
 }
 
+.woocommerce-page .upsells ul.products li.product a .thumbnail img {
+  width: 98%;
+}
+
  .woocommerce .upsells ul.products li.product h2 {
   font-size: 16px;
   font-style: normal;
@@ -1086,9 +1090,23 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
   clear: both;
 }
 
+.single-product .tools {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
+
 .single-product .yith-wcwl-add-to-wishlist {
-    margin-top: 70px;
+    width: 60px;
+    margin-top: 17px;
   }
+
+.single-product .tools .share {
+  padding: 20px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.05);
+}
 
 /* search results */
 
