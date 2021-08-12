@@ -163,7 +163,7 @@ function woo_remove_product_tabs( $tabs ) {
 function customText(){
   global $product;
   echo '<ul class="buttons"><li><a href="#chat" class="whatsapp">Live Chat</a></li>';
-  echo '<li><a href="#inquire" class="inquire">Inquire</a></li></ul>';
+  echo '<li><a href="#inquire" class="inquire">Email Inquiry</a></li></ul>';
   echo '<ul class="anchor"><li><a href="#details" class="details">Details & Features</a></li>';
   echo '<li><a href="#artwork" class="artist">About the artwork</a></li>';
   echo '<li><a href="#artist" class="artist">About the artist</a></li></ul>';

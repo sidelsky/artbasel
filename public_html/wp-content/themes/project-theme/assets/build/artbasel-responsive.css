@@ -486,7 +486,7 @@ lottie-player {
     }
 
 #hero-single .hero-summary {
-  min-width: inherit;
+  max-width: inherit;
   top: inherit;
   right: inherit;
   align-self: auto;
