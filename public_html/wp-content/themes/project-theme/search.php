@@ -37,6 +37,9 @@
                       </div>
                       <div class="artist">Artist Attribute</div>
                       <h2 class="woocommerce-loop-product__title"><?php the_title(); ?></h2>
+                      <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
+                      <?php echo wc_price( $price ); ?>
+                      <?php echo do_shortcode('[yith_wcwl_add_to_wishlist]');?>
                    </a>
               </li>
 
@@ -66,6 +69,7 @@
         </div><!-- #primary-sidebar -->
       <?php endif; ?>
     </div>
+
 	</div><!-- end product contain -->
 
 

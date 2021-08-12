@@ -1,6 +1,14 @@
 
 /* responsive - mobile breakpoint < 900 px */
 
+
+
+@media (max-width: 1400px) {
+  #product-wrap { /* shop on homepage width */
+    padding: 40px 30px;
+  }
+}
+
 @media (max-width: 1200px) and (min-width: 800px) {
   lottie-player {
     width: 79%;
@@ -19,7 +27,7 @@
   }
 
   #product-wrap .woocommerce ul.products li.product {
-    width: 46%;
+    width: 32%;
   }
 
   .filter-right {
@@ -88,12 +96,21 @@
 
 .c-ma-email-sub__column .gform_wrapper form .gform_body input[type="text"]#input_6_1 {
   margin-right: 0;
-  width: 49%;
+  width: 48%;
   float: left;
 }
+
+.social__link {
+    margin: 0px 10px 0;
+}
+
 }
 
 @media (max-width: 900px) {
+
+  .body--menu-is-expanded .c-header__wrap {
+      background-color: white;
+    }
 
 .woocommerce .upsells ul.products li.product,
 .woocommerce-page .upsells ul.products li.product {
@@ -176,7 +193,6 @@
 }
 
     #product-wrap {
-      padding: 40px 30px;
       flex-direction: column;
       position: relative;
     }
@@ -467,6 +483,19 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 
 
 @media (max-width: 800px) {
+
+.search-results #primary-sidebar .textwidget.custom-html-widget {
+    padding-top: 20px;
+  }
+
+
+.single-product .tools .share {
+    display: none;
+}
+
+.hero-text {
+      left: 38%;
+  }
 
 lottie-player {
     width: 100%;

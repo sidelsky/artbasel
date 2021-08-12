@@ -869,6 +869,7 @@ margin: 20px 0;
   float: left;
   width: 30%;
   line-height: 20px;
+  clear: left;
 }
 
 #details .desc {
@@ -1110,6 +1111,39 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 
 /* search results */
 
+.search-results .woocommerce ul.products li.product a .thumbnail {
+  margin-bottom: 15px;
+}
+
+.search-results .woocommerce ul.products li.product a .artist {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222;
+    text-transform: capitalize;
+    padding: .5em 0 0;
+  }
+
+.search.search-no-results .product-main .woocommerce.columns-4, .search.search-no-results .product-main form {
+  display: none;
+}
+
+/* back to all artworks widget */
+
+#primary-sidebar .textwidget.custom-html-widget,
+.page-template-page-art-basel  .textwidget.custom-html-widget {
+  display: none;
+}
+.search.search-no-results  #primary-sidebar .textwidget.custom-html-widget,
+.search-results #primary-sidebar .textwidget.custom-html-widget {
+  display: inline-block;
+}
+
+ .textwidget.custom-html-widget a {
+font-weight: 700;
+font-size: 14px;
+color: #222;
+}
+
 /* misc */
 
 .gform_confirmation_wrapper {
@@ -1124,6 +1158,17 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 
 .search-results h1.page-title {
   padding: 0 0 20px 10px;
+}
+
+.search-results .amount {
+  font-size: 14px;
+  color: #222;
+}
+
+.page-template-page-art-basel .c-site-nav .menu-item.current-menu-item a:after,
+.search-results .c-site-nav .menu-item.current-menu-item a:after,
+.single-product .c-site-nav .menu-item.current-menu-item a:after  {
+  background-color: none;
 }
 
 
@@ -1190,7 +1235,7 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
   height: 24px;
   width: 24px;
   left: -5px;
-  top: -1px;
+  top: -3px;
 }
 
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.open:after, .yith-wcan-filters .yith-wcan-filter h4.collapsable.opened:after {
@@ -1207,10 +1252,10 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.open:after,
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.opened:after {
-  top: 9px;
+  top: 11px;
 }
 
-.filters-modal .yith-wcan-filters.filters-modal .yith-wcan-filter {
+.yith-wcan-filters.filters-modal .yith-wcan-filter {
   padding: 0 15px 15px 0;
   border: 0;
 }
@@ -1250,9 +1295,8 @@ font-family: "newtransport-regular";
  font-size: 14px;
 }
 
+.page-template-page-art-basel #cookie-notice a.button,
 .woocommerce #cookie-notice a.button {
   background-color: #fff !important;
   border: 1px solid #222 !important;
 }
-
- 
