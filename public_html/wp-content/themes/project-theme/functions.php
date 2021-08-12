@@ -138,7 +138,8 @@ function customText(){
   echo '<li><a href="#artist" class="artist">About the artist</a></li></ul>';
   echo '<div class="tools">';
   echo do_shortcode('[yith_wcwl_add_to_wishlist]');
-  echo '<a href="#" class="share"><img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" /></a>';
+  echo '<a href="#" class="share"><img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" width="18" height="16" alt="share" /></a>';
+  echo do_shortcode('[popup_trigger id="9640"]share[/popup_trigger]');
   echo '</div>';
 
 }
