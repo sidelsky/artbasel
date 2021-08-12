@@ -69,7 +69,7 @@ if ( post_password_required() ) {
 	<div id="images">
 			<?php if( have_rows('artwork_images') ): ?>
 		    <?php while( have_rows('artwork_images') ): the_row(); ?>
-			<img src="<?php the_sub_field('images'); ?>" width="100%" height="auto" class="artwork" alt="<?php echo esc_attr($image['alt']); ?>"  />
+			<img src="<?php the_sub_field('images'); ?>" width="100%" height="auto" class="artwork zoooom" alt="<?php echo esc_attr($image['alt']); ?>"  />
 		<?php endwhile; ?>
 		<?php endif; ?>
 	</div>
