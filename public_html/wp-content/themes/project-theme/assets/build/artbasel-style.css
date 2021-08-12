@@ -1,13 +1,15 @@
 /* header */
 
-#menu-item-9392 a { /* favourites icon */
+#menu-item-9392 a,
+#menu-item-9772 a { /* favourites icon */
   background: url(/wp-content/themes/project-theme/assets/build/img/ab/heart.png) 0 50% no-repeat;
   text-indent: -9999em;
   width: 15px;
   height: 15px;
 }
 
-#menu-item-9393 a { /* account icon */
+#menu-item-9393 a,
+#menu-item-9773 a { /* account icon */
   background: url(/wp-content/themes/project-theme/assets/build/img/ab/account.png) 0 50% no-repeat;
   text-indent: -9999em;
   width: 15px;
@@ -215,15 +217,18 @@ color: #000;
     background: #222;
 }
 
-.logged-in .menu-item-9411 {
+.logged-in .menu-item-9411,
+.logged-in .menu-item-9774 {
     display: inline-block;
 }
 
-#header .menu-item-9411 {
+#header .menu-item-9411,
+#header .menu-item-9774 {
     display: none;
 }
 
-.logged-in .menu-artbasel-woocommerce-container .wc__menu li.menu-item-9411 a { color: #666 }
+.logged-in .menu-artbasel-woocommerce-container .wc__menu li.menu-item-9411 a,
+.logged-in .menu-artbasel-woocommerce-container .wc__menu li.menu-item-9774 a  { color: #666 }
 
 /* *********************** */
 /* *********************** */
@@ -748,7 +753,7 @@ button.yith-wcan-reset-filters {
 }
 
 #hero-single .hero-summary {
-  min-width: 225px;
+  max-width: 214px;
   top: 20%;
   right: 7%;
   align-self: flex-end;
@@ -765,7 +770,7 @@ button.yith-wcan-reset-filters {
 
 #hero-single .hero-summary p {
   padding-bottom: 15px;
-  line-height: 15px;
+  line-height: 20px;
   /* font-size: 14px; */
 }
 
@@ -801,7 +806,7 @@ button.yith-wcan-reset-filters {
 
 #hero-single .hero-summary  a.whatsapp,
 #hero-single .hero-summary  a.whatsapp:hover {
-    padding-left: 14px;
+      padding-left: 25px;
       background: url(/wp-content/themes/project-theme/assets/build/img/ab/whatsapp.png) 28% 40% no-repeat;
 }
 
