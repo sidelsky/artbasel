@@ -1209,13 +1209,16 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 
 /* cookie notice */
 
-#cookie-notice {
-  background: #fff;
+#cookie-notice  {
+  background: #fff  !important;
   border: 1px solid #222;
   display: flex;
   justify-content: space-between;
 }
 
+#cookie-notice .cookie-notice-container {
+  display: table;
+}
 .cookie-notice-container {
   color: #222 !important;
 }
@@ -1227,4 +1230,9 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 .cn-notice-buttons a {
 font-family: "newtransport-regular";
  font-size: 14px;
+}
+
+.woocommerce button.button {
+  background-color: #fff !important;
+  border: 1px solid #222 !important;
 }
