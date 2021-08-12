@@ -67,6 +67,10 @@
     display: inline-block; /* dont show read more for desktop in single product pages */
   }
 
+  .hero-summary .tools span  {
+    display: inline-block; /* show share link */
+  }
+
 
 } /* end of min width */
 
