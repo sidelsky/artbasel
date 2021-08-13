@@ -414,7 +414,6 @@ padding: 0 0 300px 0;
 #carousel .middle::-webkit-scrollbar {
   width: 0 !important;
   display: none;
-  border: 1px solid red;
  }
 
 #carousel .middle img {
@@ -584,7 +583,7 @@ margin: 0 auto;
 
 .filter-left .filter-content {
   max-height: 200px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .filter-left h3 {
@@ -680,8 +679,12 @@ button.yith-wcan-reset-filters {
 .woocommerce-loop-product__link .artist {
   color: #222;
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 14px;
   padding: .5em 0 0;
+}
+
+.upsells .woocommerce-loop-product__link .artist {
+    font-size: 24px;
 }
 
 .woocommerce-loop-product__link .artist {
@@ -1101,10 +1104,10 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 }
 
 .single-product .tools {
-  margin-top: 145px;
+  margin-top: 105px;
   display: flex;
   justify-content: space-between;
-  width: 148px;
+  width: 105px;
 }
 
 .single-product .yith-wcwl-add-to-wishlist {
@@ -1210,6 +1213,10 @@ a.c-header__link--left:hover,
   border: 0;
   font-size: 14px;
    padding: 25px 0 0;
+}
+
+.filter-right button.yith-wcan-reset-filters {
+  display: none;
 }
 
 .filter-right .yith-wcan-filters .yith-wcan-filter {
