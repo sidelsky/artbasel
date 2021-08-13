@@ -67,7 +67,6 @@
         <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
           <?php dynamic_sidebar( 'ab_right' ); ?>
         </div><!-- #primary-sidebar -->
-        <a href="/art-basel-home#product-wrap" class="artworks">Back to All artworks</a>
       <?php endif; ?>
 
     </div>
