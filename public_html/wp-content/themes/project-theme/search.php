@@ -66,6 +66,7 @@
       <?php if ( is_active_sidebar( 'ab_right' ) ) : ?>
         <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
           <?php dynamic_sidebar( 'ab_right' ); ?>
+          <a href="/art-basel-home#product-content" target="_parent">Back to All artworks</a>
         </div><!-- #primary-sidebar -->
       <?php endif; ?>
     </div>
