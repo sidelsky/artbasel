@@ -46,10 +46,20 @@
 
 @media (min-width: 900px) { /* MIN !!! */
 
-.filter-left,
-.filter-right {
-  position: sticky;
-}
+  /* sticky product side filters */
+
+  .filter-left,
+  .filter-right {
+    position: relative;
+  }
+
+  .filter-left  #primary-sidebar,
+  .filter-right  #primary-sidebar {
+    position: sticky;
+    height: 25vh;
+    top: 0;
+    padding-top: 30px;
+  }
 
   .is-desktop { display: inherit; }
   .is-mobile { display: none; }
