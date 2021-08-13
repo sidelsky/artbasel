@@ -228,7 +228,7 @@ function onScroll(event){
 
 // artwork audio
 $(window).scroll(function() {
-    if ($(this).scrollTop() < (4300)) {
+    if ($(this).scrollTop() < (4250)) {
         $(".hero-audio").fadeIn('fast');
     } else{
         $(".hero-audio").fadeOut('fast');
@@ -237,7 +237,7 @@ $(window).scroll(function() {
 
 // artwork summary
 $(window).scroll(function() {
-    if ($(this).scrollTop() < (4500)) {
+    if ($(this).scrollTop() < (4250)) {
 				$(".hero-summary").fadeIn('fast');
     } else{
         $(".hero-summary").fadeOut('fast');
