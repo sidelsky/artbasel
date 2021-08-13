@@ -1,7 +1,12 @@
 
-/* responsive - mobile breakpoint < 900 px */
+/* responsive - mobile breakpoints */
 
-
+@media (min-width: 1400px) {
+#carousel .left {
+    max-width: 220px;
+    margin-right: 5%;
+  }
+}
 
 @media (max-width: 1400px) {
   #product-wrap { /* shop on homepage width */
@@ -40,6 +45,11 @@
 }
 
 @media (min-width: 900px) { /* MIN !!! */
+
+.filter-left,
+.filter-right {
+  position: sticky;
+}
 
   .is-desktop { display: inherit; }
   .is-mobile { display: none; }

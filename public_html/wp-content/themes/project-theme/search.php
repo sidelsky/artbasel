@@ -22,9 +22,9 @@
 						<?php _e( 'Search results found for', 'locale' ); ?>: "<?php the_search_query(); ?>"
 					</h1>
 
+
    <div class="woocommerce columns-4">
           <ul class="products columns-4">
-
   				<?php if ( have_posts() ) { ?>
 
   						<?php while ( have_posts() ) {
@@ -66,9 +66,10 @@
       <?php if ( is_active_sidebar( 'ab_right' ) ) : ?>
         <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
           <?php dynamic_sidebar( 'ab_right' ); ?>
-          <a href="/art-basel-home#product-content" target="_parent">Back to All artworks</a>
         </div><!-- #primary-sidebar -->
+        <a href="/art-basel-home#product-wrap" class="artworks">Back to All artworks</a>
       <?php endif; ?>
+
     </div>
 
 	</div><!-- end product contain -->
