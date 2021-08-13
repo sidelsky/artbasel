@@ -21,7 +21,7 @@
 .l-site-header__nav {
     display: flex;
     border: 0;
-    margin-top: -20px;
+    margin-top: 5px;
 }
 
 .c-site-nav {
@@ -34,7 +34,8 @@
 
 .c-header__link--left {
   position: relative;
-  top: -20px;
+  top: 5px;
+  left: 40px;
 }
 
 .c-site-nav .menu-item a {
@@ -43,7 +44,7 @@
 
 .menu-artbasel-woocommerce-container { /* position of right hand side header nav - woocommerce */
     position: absolute;
-    top: 6px;
+    top: 34px;
     right: 20px;
     }
 
@@ -1333,7 +1334,8 @@ font-family: "newtransport-regular";
 }
 
 .page-template-page-art-basel #cookie-notice a.button,
-.woocommerce #cookie-notice a.button {
+.woocommerce #cookie-notice a.button,
+.search #cookie-notice a.button {
   background-color: #fff !important;
   border: 1px solid #222 !important;
   color: #222;
