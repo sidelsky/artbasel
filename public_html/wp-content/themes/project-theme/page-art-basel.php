@@ -90,7 +90,6 @@ include("header-artbasel.php");
 </section><!-- end carousel -->
 
 </container><!-- END full page wrapper for sticky scroll https://codepen.io/Nidor/pen/gZJPWd -->
-
 <div id="product-content">
 		<div id="product-wrap" class="slow wow fadeInUp"  data-wow-delay=".05s" data-wow-duration="2s" style="visibility: visible; animation-delay: .05s;  animation-name: fadeInUp;">
 					<div class="filter-left">
