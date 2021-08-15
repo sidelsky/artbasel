@@ -138,8 +138,7 @@ function customText(){
   echo '<li><a href="#artist" class="artist">About the artist</a></li></ul>';
   echo '<div class="tools">';
   echo do_shortcode('[yith_wcwl_add_to_wishlist]');
-  echo '<a href="#" class="share"><img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" width="18" height="16" alt="share" /></a>';
-  //echo do_shortcode('[popup_trigger id="9640"]share[/popup_trigger]');
+ echo do_shortcode('[popup_trigger id="9640"]<img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" width="18" height="16" alt="share" />[/popup_trigger]');
   echo '</div>';
 
 }
@@ -183,11 +182,10 @@ if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', g
     remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
 
     // add the product thumbnail and title back in with custom structure
-    add_action( 'woocommerce_before_shop_loop_item_title', 'sls_woocommerce_template_loop_product_thumbnail', 10 );
+    add_action( 'woocommerce_before_shop_loop_item_title', 'sls_woocommerce_template_loop_product_thumbnail', 4 );
 
     function sls_woocommerce_template_loop_product_thumbnail() {
        echo '<div class="thumbnail" title="'.get_the_title().'" href="'. get_the_permalink() . '">'.woocommerce_get_product_thumbnail().'</div>';
-       echo '<div class="artist">Artist Attribute</div>';
     }
 }
 
@@ -203,4 +201,25 @@ function add_cat_title_shop_loop(){
 	}
 
 }
-add_action( 'woocommerce_before_shop_loop_item_title', 'add_cat_title_shop_loop', 10 );
+add_action( 'woocommerce_before_shop_loop_item_title', 'add_cat_title_shop_loop', 50 );
+
+
+add_action('woocommerce_before_shop_loop_item_title', 'display_custom_product_attributes_on_loop', 5 );
+function display_custom_product_attributes_on_loop() {
+    global $product;
+
+    $value1 = $product->get_attribute('artists');
+
+    if ( ! empty($value1) ) {
+
+        echo '<div class="artist"><p>';
+
+        $attributes = array(); // Initializing
+
+        if ( ! empty($value1) ) {
+            $attributes[] = __("") . ' ' . $value1;
+        }
+
+        echo implode( '<br>', $attributes ) . '</p></div>';
+    }
+}
