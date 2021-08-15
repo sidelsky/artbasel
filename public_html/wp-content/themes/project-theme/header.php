@@ -182,4 +182,4 @@ $wordpress = new WordpressHelper;
 
 	<?php } ?>
 
-<main role="main" class="main"> 
+<main role="main" class="main">

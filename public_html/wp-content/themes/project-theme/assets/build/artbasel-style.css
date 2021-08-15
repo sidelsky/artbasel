@@ -1018,6 +1018,7 @@ form.cart,
   width: 215px;
   height: 215px;
   overflow: hidden;
+  transition: 0.2s;
 }
 
 .woocommerce .upsells ul.products li.product .thumbnail {
@@ -1121,7 +1122,7 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
     margin-right: 12px;
   }
 
-.single-product .tools .share {
+.single-product .tools .pum-trigger {
   padding: 12px;
   border-radius: 50px;
   background: rgba(0, 0, 0, 0.05);

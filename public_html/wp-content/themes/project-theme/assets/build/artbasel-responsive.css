@@ -587,20 +587,21 @@ lottie-player {
 min-width: 50%;
 }
 
-#hero-single .hero-summary a.whatsapp, #hero-single .hero-summary a.inquire {
+#hero-single .hero-summary a.whatsapp,
+#hero-single .hero-summary a.inquire {
     border: 0;
     border-radius: 0;
     text-align: center;
     transition: 0s;
   }
 
-#hero-single .hero-summary a.whatsapp:hover, #hero-single .hero-summary a.inquire:hover {
+#hero-single .hero-summary a.whatsapp:hover,
+#hero-single .hero-summary a.inquire:hover {
   background: inherit;
   color: inherit;
 }
 
 #hero-single .hero-summary a.whatsapp:hover {
-  padding-left: 14px;
   background: url(/wp-content/themes/project-theme/assets/build/img/ab/whatsapp.png) 28% 40% no-repeat;
 }
 
@@ -626,11 +627,10 @@ min-width: 50%;
 }
 
 #hero-single .hero-audio {
-  min-width: inherit;
-  bottom: inherit;
-  left: inherit;
-  align-self: auto;
-  position: inherit;
+  bottom: 42%;
+  right: 2%;
+  position: absolute;
+  z-index: 9999;
   }
 
 }  /* end of 900 max width */
