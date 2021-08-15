@@ -49,7 +49,7 @@ include("header-artbasel.php");
 				<div class="wow fadeInLeft slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeInLeft;"><p><?php the_sub_field('desc'); ?></p></div>
 				<div class="cta is-desktop wow fadeInLeft slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeInLeft;">
 					<a href="<?php the_sub_field('link'); ?>" >
-					  View details
+					  Explore
 					</a> 
 			</div>
 
