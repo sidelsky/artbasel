@@ -14,6 +14,12 @@
   }
 }
 
+@media (max-width: 1300px) {
+  #product-wrap .woocommerce ul.products li.product {
+   width: 46%;
+  }
+}
+
 @media (max-width: 1200px) and (min-width: 900px) {
   lottie-player {
     width: 79%;
@@ -37,10 +43,6 @@
 @media (max-width: 1300px) and (min-width: 900px) {
   #product-wrap {
     padding: 180px 30px;
-  }
-
-  #product-wrap .woocommerce ul.products li.product {
-    /* width: 32%; */
   }
 
   .filter-right {
