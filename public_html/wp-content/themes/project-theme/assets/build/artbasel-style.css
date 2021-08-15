@@ -377,6 +377,7 @@ position: absolute;
   align-self: flex-start;
   padding: 40px 0 150px 40px;
   max-width: 276px;
+  z-index: 9;
 }
 
 #carousel  .middle {
