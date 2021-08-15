@@ -14,9 +14,17 @@
   }
 }
 
-@media (max-width: 1200px) and (min-width: 800px) {
+@media (max-width: 1200px) and (min-width: 900px) {
   lottie-player {
     width: 79%;
+    padding-bottom: 200px;
+  }
+  #hero-single .hero-audio {
+    bottom: 28%;
+    left: 4%;
+  }
+  #hero-single .hero-summary {
+    right: 4%;
   }
 }
 
@@ -32,7 +40,7 @@
   }
 
   #product-wrap .woocommerce ul.products li.product {
-    width: 32%;
+    /* width: 32%; */
   }
 
   .filter-right {
@@ -124,9 +132,22 @@
     margin: 0px 10px 0;
 }
 
-}
+} /* end of 1024 */
 
 @media (max-width: 900px) {
+
+.c-ma-email-sub strong {
+  padding: 10px 0;
+}
+
+.c-ma-email-sub__column:nth-of-type(1) {
+  padding: 0;
+}
+
+.woocommerce ul.products[class*=columns-] li.product:nth-child(2n), .woocommerce-page ul.products[class*=columns-] li.product:nth-child(2n) {
+  float: right;
+  clear: none!important;
+}
 
   .body--menu-is-expanded .c-header__wrap {
       background-color: white;
@@ -167,8 +188,6 @@
    flex-direction: column-reverse;
 }
 
-
-
 *[id^='readlink'],
 *[id^='readlink']:hover {
   padding: 0 30px;
@@ -177,6 +196,7 @@
   font-size: 14px;
   border: 0;
   text-decoration: none;
+  display: inline-block;
 }
 
 .read_div {
@@ -185,7 +205,7 @@
 
 #quote {
   margin: 20px auto;
-  padding: 0 71px;
+  padding: 0 42px;
 }
 
   #quote-wrap {
@@ -245,11 +265,6 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
       width: 100%;
       }
 
-/*
-.hero-wrap iframe {
-  top: 6%;
-  height: 33%;
-} */
 
 .hero-text h2 {
     font-size: 48px;
@@ -357,7 +372,6 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 
 #hero {
     margin: 0;
-    height: inherit;
 }
 
 #hero-wrap {
@@ -397,6 +411,9 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     padding: 25px 0 0 25px;
     order: 2;
    position: relative;
+   max-width: inherit;
+   background: white;
+   margin-bottom: -20px;
 }
 
 #carousel .left .cta {
@@ -419,7 +436,6 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     margin: 0 auto;
     padding: 0;
     order: 1;
-    height: 400px;
     padding: 20px 0;
     margin: 20px 0 0;
 }
@@ -497,13 +513,6 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     margin-right: 0;
 }
 
-
-
-} /* end of 900 max width */
-
-
-@media (max-width: 800px) {
-
 .search-results #primary-sidebar .textwidget.custom-html-widget {
     padding-top: 20px;
   }
@@ -546,6 +555,8 @@ lottie-player {
   position: relative;
   display: flex;
   flex-direction: column;
+  background: white;
+  padding-top: 40px;
 }
 
 #hero-single .hero-summary h1,
@@ -557,7 +568,7 @@ lottie-player {
 #hero-single .hero-summary p.price {
   padding: 5px 30px;
   position: absolute;
-  top: 6px;
+  top: 46px;
   right: 0;
     font-size: 14px;
 }
@@ -620,4 +631,4 @@ min-width: 50%;
   position: inherit;
   }
 
-}  /* end of 800 max width */
+}  /* end of 900 max width */

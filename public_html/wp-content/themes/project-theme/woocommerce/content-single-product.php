@@ -229,18 +229,18 @@ function onScroll(event){
 // artwork audio
 $(window).scroll(function() {
     if ($(this).scrollTop() < (4250)) {
-        $(".hero-audio").fadeIn('fast');
+        $(".hero-audio").fadeIn('.1s');
     } else{
-        $(".hero-audio").fadeOut('fast');
+        $(".hero-audio").fadeOut('0');
 			    };
 });
 
 // artwork summary
 $(window).scroll(function() {
     if ($(this).scrollTop() < (4250)) {
-				$(".hero-summary").fadeIn('fast');
+				$(".hero-summary").fadeIn('.1s');
     } else{
-        $(".hero-summary").fadeOut('fast');
+        $(".hero-summary").fadeOut('0');
 			    };
 });
 
