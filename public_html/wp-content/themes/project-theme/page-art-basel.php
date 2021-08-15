@@ -6,7 +6,7 @@
 include("header-artbasel.php");
 ?>
 
-<container id="fullpage">
+<!-- <container id="fullpage"> -->
 <!-- hero -->
 <section id="hero" class="hero">
 	<?php if( have_rows('hero-home') ): ?>
@@ -75,21 +75,21 @@ include("header-artbasel.php");
 				<!-- end show images -->
 	</div>
 	<div class="right sidebar stickyside  wow fadeInUp"  data-wow-delay="1s" data-wow-duration="1.5s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeInUp;" id="sticky-contents">
-	<ul><!-- show images again but as thumbnails -->
-		<?php if( have_rows('right') ): $i = 0; ?>
-	    <?php while( have_rows('right') ): the_row(); $i++; ?>
+	<!-- <ul> show images again but as thumbnails
+		<//?php if( have_rows('right') ): $i = 0; ?>
+	    <//?php while( have_rows('right') ): the_row(); $i++; ?>
 			<li class="<?php echo $i; ?>"><a href="#block-<?php echo $i; ?>" class="smoothScroll active">
 				<img src="<?php the_sub_field('image'); ?>" width="100%" height="auto" class="middle-img" alt="<?php echo esc_attr($image['alt']); ?>" />
 				</a>
 					</li>
-		<?php endwhile; ?>
-		<?php endif; ?>
-</ul><!-- END show images again but as thumbnails -->
+		<//?php endwhile; ?>
+		<//?php endif; ?>
+</ul> END show images again but as thumbnails -->
 	</div>
 </div><!-- end carousel wrap-->
 </section><!-- end carousel -->
 
-</container><!-- END full page wrapper for sticky scroll https://codepen.io/Nidor/pen/gZJPWd -->
+<!-- </container>  END full page wrapper for sticky scroll https://codepen.io/Nidor/pen/gZJPWd -->
 <div id="product-content">
 		<div id="product-wrap" class="slow wow fadeInUp"  data-wow-delay=".05s" data-wow-duration="2s" style="visibility: visible; animation-delay: .05s;  animation-name: fadeInUp;">
 					<div class="filter-left">
@@ -194,9 +194,9 @@ include("footer-artbasel.php"); ?>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script> -->
 
- <script>
+ <!-- <script>
  $(document).ready(function() {
 		 // Activate fullpage.js -
 		 // https://github.com/alvarotrigo/fullPage.js#usage
@@ -208,7 +208,7 @@ include("footer-artbasel.php"); ?>
 				fitToSection: false,
 			});
 });
- </script>
+ </script> -->
 
  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
  <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
