@@ -592,6 +592,7 @@ margin: 0 auto;
 .filter-left {
   width: 360px;
   padding-right: 30px;
+  padding-bottom: 140px;
 }
 
 .filter-left .filter-content {
