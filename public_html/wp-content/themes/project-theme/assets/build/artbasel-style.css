@@ -266,6 +266,16 @@ color: #000;
 .hero-inner {
 }
 
+.hero-image {
+  height: 100vh;
+}
+img.image-mobile {
+  max-width: 170%;
+      height: 100%;
+      height: 100vh;
+      width: 130%;
+}
+
 .hero-wrap {
   margin-bottom: 30px;
   position: relative;
