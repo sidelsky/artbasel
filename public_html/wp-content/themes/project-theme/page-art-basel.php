@@ -15,7 +15,12 @@ include("header-artbasel.php");
 
 <div class="hero-inner">
 	<div class="hero-wrap">
-		<iframe src="https://player.vimeo.com/video/<?php the_sub_field('video-hero'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+				<div class="is-desktop">
+						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('video-hero'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+				</div>
+		<div class="hero-image is-mobile">
+							<img src="<?php the_sub_field('image-mobile'); ?>" width="100%" height="auto" class="image-mobile" alt="<?php echo esc_attr($image['alt']); ?>" />
+		</div>
 	</div>
 
 	<div class="hero-text">
