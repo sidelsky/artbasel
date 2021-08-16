@@ -6,7 +6,6 @@
 include("header-artbasel.php");
 ?>
 
-<!-- <container id="fullpage"> -->
 <!-- hero -->
 <section id="hero" class="hero">
 	<?php if( have_rows('hero-home') ): ?>
@@ -87,7 +86,6 @@ include("header-artbasel.php");
 </div><!-- end carousel wrap-->
 </section><!-- end carousel -->
 
-<!-- </container>  END full page wrapper for sticky scroll https://codepen.io/Nidor/pen/gZJPWd -->
 <div id="product-content">
 		<div id="product-wrap">
 					<div class="filter-left">
@@ -106,9 +104,9 @@ include("header-artbasel.php");
 							<// ?php echo do_shortcode('[shop_messages]'); ?>
 						</div> -->
 
-						<?php echo do_shortcode('[products per_page="20" columns="4" show_catalog_ordering="yes" orderby="rand"  pagination="true"]'); ?>
 
-						<!-- <// ?php echo do_shortcode('[ajax_load_more id="ajax" post_type="product" posts_per_page="20" taxonomy="product_cat" taxonomy_terms="artworks" taxonomy_operator="IN" scroll_container="#product-wrap" button_label="Show more" button_loading_label="Loading artworks" button_done_label="All artworks shown"]'); ?> -->
+
+					<?php echo do_shortcode('[ajax_load_more id="ajax" post_type="product" posts_per_page="20" taxonomy="product_cat" taxonomy_terms="artworks" taxonomy_operator="IN" scroll_container="#product-wrap" button_label="Show more" button_loading_label="Loading artworks" button_done_label="All artworks shown"]'); ?>
 
 					</div>
 					<div class="filter-right">
