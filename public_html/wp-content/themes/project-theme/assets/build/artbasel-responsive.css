@@ -15,11 +15,13 @@
 }
 
 @media (max-width: 1300px) {
-  #product-wrap .woocommerce ul.products li.product {
+  #product-wrap .alm-reveal li.product,
+  #product-wrap .woocommerce ul.products li.product  {
    flex-grow: 1;
    min-height: 310px;
   }
-  #product-wrap .woocommerce .products ul  {
+  #product-wrap .alm-reveal,
+  #product-wrap .woocommerce .products ul   {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -41,13 +43,12 @@
   }
 }
 
-
-
 @media (max-width: 1300px) and (min-width: 900px) {
   #product-wrap {
     padding: 180px 30px;
   }
 
+  #product-wrap .alm-reveal li.product .thumbnail,
  .woocommerce ul.products li.product .thumbnail {
     width: 100%;
     height: 100%;
@@ -103,10 +104,14 @@
 
 
 
-  .hero-summary .price span,
-  .hero-summary .inquire span.pum-trigger  {
+  .hero-summary .price span {
     display: inline-block; /* dont show read more for desktop in single product pages */
   }
+
+.hero-summary .inquire span.pum-trigger  {
+  padding: 0 54px;
+  cursor: pointer; /* popup trigger */
+}
 
   .hero-summary .tools span  {
      display: inline-block; /* show share link */
@@ -137,6 +142,11 @@
     margin: 0px 10px 0;
 }
 
+#product-wrap .alm-reveal li.product,
+#product-wrap .woocommerce ul.products li.product {
+ width: 46%;
+}
+
 } /* end of 1024 */
 
 @media (max-width: 900px) {
@@ -144,10 +154,6 @@
 .filter-left .filter-content {
   max-height: inherit;
 }
-
-  #product-wrap .woocommerce ul.products li.product {
-   width: 46%;
-  }
 
 .c-ma-email-sub strong {
   padding: 10px 0;
@@ -296,6 +302,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
         width: 100%;
       }
 
+  #product-wrap .alm-reveal li.product .thumbnail,
       .product-main .woocommerce ul.products li.product .thumbnail {
         width: 100%;
         height: 100%;
@@ -645,8 +652,8 @@ min-width: 50%;
   z-index: 9999;
   }
 
-.cn-close-icon:hover {
-  opacity: 0 !Important;
+.cookie-notice-container #cn-close-notice { /* cookie close x button */
+  display: none !Important;
 }
 
 }  /* end of 900 max width */
