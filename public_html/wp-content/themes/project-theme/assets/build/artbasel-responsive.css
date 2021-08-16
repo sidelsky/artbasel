@@ -101,7 +101,10 @@
     display: none; /* dont show read more for desktop in single product pages */
   }
 
-  .hero-summary .price span  {
+
+
+  .hero-summary .price span,
+  .hero-summary .inquire span.pum-trigger  {
     display: inline-block; /* dont show read more for desktop in single product pages */
   }
 

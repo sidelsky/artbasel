@@ -131,14 +131,16 @@ function woo_remove_product_tabs( $tabs ) {
 
 function customText(){
   global $product;
-  echo '<ul class="buttons"><li><a href="#chat" class="whatsapp">Live Chat</a></li>';
-  echo '<li><a href="#inquire" class="inquire">Email Inquiry</a></li></ul>';
+  echo '<ul class="buttons"><li><a href="https://wa.me/+447384525201" class="whatsapp">Live Chat</a></li>';
+  echo '<li class="inquire">';
+  echo do_shortcode('[popup_trigger id="9837"]Email Inquiry[/popup_trigger]');
+  echo '</li></ul>';
   echo '<ul class="anchor"><li><a href="#details" class="details">Details & Features</a></li>';
   echo '<li><a href="#artwork" class="artist">About the artwork</a></li>';
   echo '<li><a href="#artist" class="artist">About the artist</a></li></ul>';
   echo '<div class="tools">';
   echo do_shortcode('[yith_wcwl_add_to_wishlist]');
- echo do_shortcode('[popup_trigger id="9640"]<img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" width="18" height="16" alt="share" />[/popup_trigger]');
+  echo do_shortcode('[popup_trigger id="9640"]<img src="/wp-content/themes/project-theme/assets/build/img/ab/share.png" width="18" height="16" alt="share" />[/popup_trigger]');
   echo '</div>';
 
 }
