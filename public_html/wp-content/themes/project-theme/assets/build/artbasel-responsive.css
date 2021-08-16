@@ -110,7 +110,14 @@
 
 .hero-summary .inquire span.pum-trigger  {
   padding: 0 54px;
+  display: block;
+  transition: .3s;
   cursor: pointer; /* popup trigger */
+}
+
+.hero-summary .inquire span.pum-trigger:hover  {
+  color: #fff;
+  background: #222;
 }
 
   .hero-summary .tools span  {

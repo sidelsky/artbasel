@@ -60,8 +60,6 @@ if ( post_password_required() ) {
 		do_action( 'woocommerce_single_product_summary' );
 		?>
 
-<!--	share icons here -->
-
 		</div><!-- end of hero summary -->
 	</div><!-- end of hero wrap -->
 </div><!-- end of hero -->

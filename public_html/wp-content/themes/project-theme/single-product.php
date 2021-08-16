@@ -61,6 +61,13 @@
 	 */
 	include("partials/artbasel-email-sub.php"); ?>
 
+  <?php
+	/**
+	 * social buttons for popup
+	 */
+	include("partials/artbasel-social-buttons.php"); ?>
+
+
 
 <?php
 get_footer( 'artbasel' );
