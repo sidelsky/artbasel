@@ -259,7 +259,7 @@ color: #000;
 /* HERO */
 
 .hero {
-    /* height: 100vh; */
+   height: 100vh;
     position: relative;
 }
 
@@ -272,14 +272,14 @@ color: #000;
   padding-bottom: 56.25%;
   overflow: hidden;
   max-width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 .hero-wrap iframe {
 position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: -15%;
+    width: 150%;
     height: 100%;
     background: #222;
   }
@@ -1140,7 +1140,7 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
 }
 
 .single-product .tools {
-  margin-top: 105px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
   width: 105px;
