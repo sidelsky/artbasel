@@ -43,6 +43,9 @@ $wordpress = new WordpressHelper;
 		<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-style.css' type='text/css' media='all' />
 		<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-responsive.css' type='text/css' media='all' />
 
+		<!-- share script for popup -->
+		<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=611ae15232c4190013251a80&product=inline-share-buttons" async="async"></script>
+		
 	</head>
 
 	<body <?php body_class($isHome); ?> id="body">
