@@ -100,15 +100,12 @@ include("header-artbasel.php");
 						<?php endif; ?>
 					</div>
 					<div class="product-main">
-						<!-- <div class="product-message">
-							<// ?php echo do_shortcode('[shop_messages]'); ?>
-						</div> -->
 
+						<!-- <// ?php echo do_shortcode('[products per_page="20" columns="4" show_catalog_ordering="yes" orderby="rand"  pagination="true"]'); ?>-->
 
-
-					<?php echo do_shortcode('[ajax_load_more id="ajax" post_type="product" posts_per_page="20" taxonomy="product_cat" taxonomy_terms="artworks" taxonomy_operator="IN" scroll_container="#product-wrap" button_label="Show more" button_loading_label="Loading artworks" button_done_label="All artworks shown"]'); ?>
-
-					</div>
+					<?php echo do_shortcode('[ajax_load_more id="ajax" post_type="product" posts_per_page="20" taxonomy="product_cat" taxonomy_terms="artworks" taxonomy_operator="IN" scroll_container="#product-wrap" button_label="Show more" button_loading_label="Loading artworks" button_done_label="All artworks shown" scroll_container=".product-main"]'); ?>
+				</div>
+				
 					<div class="filter-right">
 						<?php if ( is_active_sidebar( 'ab_right' ) ) : ?>
 							<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">

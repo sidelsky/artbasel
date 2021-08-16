@@ -205,7 +205,6 @@ function add_cat_title_shop_loop(){
 }
 add_action( 'woocommerce_before_shop_loop_item_title', 'add_cat_title_shop_loop', 50 );
 
-
 add_action('woocommerce_before_shop_loop_item_title', 'display_custom_product_attributes_on_loop', 5 );
 function display_custom_product_attributes_on_loop() {
     global $product;

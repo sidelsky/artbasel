@@ -30,7 +30,7 @@
   						<?php while ( have_posts() ) {
   							the_post(); ?>
 
-              <li class="product wow fadeInUp" data-wow-delay="0" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0;  animation-name: fadeInUp;">
+              <li class="product">
                   	<a href="<?php echo esc_url(get_the_permalink()); ?>">
                       <div class="thumbnail">
                         <?php echo get_the_post_thumbnail( $page->ID, 'thumbnail' ); ?>
