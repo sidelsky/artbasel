@@ -265,6 +265,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     .filter-left  {
       order: 1;
       width: 100%;
+      padding-bottom: 0;
       }
 
 

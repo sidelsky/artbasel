@@ -227,17 +227,17 @@ function onScroll(event){
 }
 
 // artwork audio
-$(window).scroll(function() {
-    if ($(this).scrollTop() < (2450)) {
-        $(".hero-audio").fadeIn('.1s');
-    } else{
-        $(".hero-audio").fadeOut('0');
-			    };
-});
+// $(window).scroll(function() {
+//     if ($(this).scrollTop() < (2950)) {
+//         $(".hero-audio").fadeIn('.1s');
+//     } else{
+//         $(".hero-audio").fadeOut('0');
+// 			    };
+// });
 
 // artwork summary
 $(window).scroll(function() {
-    if ($(this).scrollTop() < (2450)) {
+    if ($(this).scrollTop() < (3450)) {
 				$(".hero-summary").fadeIn('.1s');
     } else{
         $(".hero-summary").fadeOut('0');

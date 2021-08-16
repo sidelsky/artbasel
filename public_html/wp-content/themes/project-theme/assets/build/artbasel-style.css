@@ -285,7 +285,7 @@ position: absolute;
   }
 
   lottie-player {
-  width: 93%;
+  width: 86%;
   height: auto;
   }
 
@@ -309,7 +309,8 @@ position: absolute;
   color: #fff;
 }
 
-.hero-text p a.play {
+.hero-text .popmake-9650,
+.hero-text .popmake-9828 {
   background: url(/wp-content/themes/project-theme/assets/build/img/ab/play.png) 0 50% no-repeat;
   background-position: 50% 50%;
   padding: 10px 30px;
@@ -318,6 +319,7 @@ position: absolute;
   border-radius: 4px;
   background-color:rgba(255, 255, 255, 0.5);
   margin-right: 15px;
+  text-indent: -9999em;
 }
 
 .hero-text h2 {
@@ -414,7 +416,10 @@ padding: 0 0 150px 0;
     border-radius: 2px;
     padding: 12px 63px;
     color: #222;
+    width: 96%;
     transition: .3s;
+    display: flex;
+    justify-content: center;
 }
 
 #carousel .left  a:hover {
@@ -470,6 +475,9 @@ padding: 0 0 150px 0;
 
 #twin-content {
   background: #F8F8F8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 #twin-wrap {
@@ -544,10 +552,11 @@ margin: 0 auto;
 /* TRIPLE IMG */
 
 #triple-wrap {
-  max-width: 1440px;
+  max-width: 98%;
   display: flex;
   margin: 20px auto 120px;
   padding: 0 30px;
+  justify-content: space-around;
 }
 
 #triple-wrap > div {
@@ -759,13 +768,6 @@ button.yith-wcan-reset-filters {
   background: transparent;
 }
 
-.page-template-page-art-basel  .c-site-nav .menu-item a {
-  color: #fff;
-}
-
-.page-template-page-art-basel  .c-header__icon {
-  fill: #fff;
-}
 
 #hero-single {
   background: #F8F8F8;
@@ -788,7 +790,7 @@ button.yith-wcan-reset-filters {
   bottom: 13%;
   left: 10%;
   align-self: flex-end;
-  position: fixed;
+  position: sticky;
 }
 
 #hero-single .hero-artwork {
@@ -1142,6 +1144,14 @@ background: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.
   display: flex;
   justify-content: space-between;
   width: 105px;
+}
+
+.yith-wcwl-add-button .blockOverlay {
+      display: none !important;
+}
+
+.yith-wcwl-add-button a.add_to_wishlist.single_add_to_wishlist {
+  opacity: 1 !important;
 }
 
 .single-product .yith-wcwl-add-to-wishlist {
