@@ -267,12 +267,12 @@ color: #000;
 }
 
 .hero-wrap {
-  /*
+  margin-bottom: 30px;
+  position: relative;
   padding-bottom: 56.25%;
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto; */
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
 .hero-wrap iframe {
