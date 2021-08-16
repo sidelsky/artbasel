@@ -129,7 +129,17 @@ color: #000;
     font-size: 65%;
     border-radius: 2px;
     border: 1px solid #222;
+        transition: .3s;
 }
+
+.c-ma-email-sub__column .gform_wrapper input[type="submit"]:hover {
+  background: #222;
+  color: #fff;
+}
+.c-ma-email-sub input[type="submit"] {
+  line-height: inherit;
+}
+
 
 .c-ma-email-sub form .validation_error {
   display: block;
@@ -281,7 +291,7 @@ position: absolute;
 
 .hero-text {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 35%;
   transform: translate(-50%,-50%);
   color: white;
@@ -373,7 +383,7 @@ position: absolute;
 #carousel .left {
   width: 25%;
   position: sticky;
-  top: 40%;
+  top: 35%;
   align-self: flex-start;
   padding: 40px 0 150px 40px;
   max-width: 276px;
@@ -1345,4 +1355,10 @@ font-family: "newtransport-regular";
   background-color: #fff !important;
   border: 1px solid #222 !important;
   color: #222;
+}
+
+/* popup */
+
+.pum-theme-default-theme .pum-content {
+  outline: 0;
 }
