@@ -259,7 +259,7 @@ color: #000;
 /* HERO */
 
 .hero {
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
 }
 
@@ -291,7 +291,7 @@ position: absolute;
 
 .hero-text {
   position: absolute;
-  top: 42%;
+  top: 50%;
   left: 35%;
   transform: translate(-50%,-50%);
   color: white;
