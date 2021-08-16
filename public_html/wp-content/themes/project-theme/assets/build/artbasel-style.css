@@ -1464,3 +1464,11 @@ font-family: "newtransport-regular";
     font-size: 14px;
     color: #222;
   }
+
+.alm-btn-wrap .alm-load-more-btn {
+  border-radius: 2px;
+}
+
+.ajax-load-more-wrap.white .alm-load-more-btn {
+      border: 1px solid #222;
+}
