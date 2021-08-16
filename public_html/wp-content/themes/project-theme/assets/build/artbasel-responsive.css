@@ -16,7 +16,7 @@
 
 @media (max-width: 1300px) {
   #product-wrap .woocommerce ul.products li.product {
-   width: 46%;
+   width: 22%;
   }
 }
 
@@ -34,11 +34,7 @@
   }
 }
 
-@media (max-width: 1300px) and (min-width: 1200px) {
-  #product-wrap .woocommerce ul.products li.product {
-    margin: 0 9.35% 2.55% 1.35%;
-  }
-}
+
 
 @media (max-width: 1300px) and (min-width: 900px) {
   #product-wrap {
@@ -137,6 +133,10 @@
 } /* end of 1024 */
 
 @media (max-width: 900px) {
+
+  #product-wrap .woocommerce ul.products li.product {
+   width: 46%;
+  }
 
 .c-ma-email-sub strong {
   padding: 10px 0;
