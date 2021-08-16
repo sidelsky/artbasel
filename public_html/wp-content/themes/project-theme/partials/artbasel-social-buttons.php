@@ -21,40 +21,11 @@
 </script>
 
 <style>
-// Base (specific to demo, not needed for buttons)
-body {
-  padding: 10px 20px;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 10px 10px 10px 0;
-  color: #222;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
 
-p {
-  color: black;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.heading-sizes {
-	margin-top: 30px;
-}
-
-.divider {
-	height: 5px;
-}
-
-// Icons
 @font-face {
 	font-family: 'share-buttons';
-	// Fonts are served from Share Buttons v1.0.0 repository via RawGit
-	src:url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.eot?gpra60');
+ 	src:url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.eot?gpra60');
 	src:url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.eot?#iefixgpra60') format('embedded-opentype'),
 		url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.woff?gpra60') format('woff'),
 		url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.ttf?gpra60') format('truetype'),
@@ -130,7 +101,7 @@ p {
   box-sizing: border-box;
 }
 
-// Reset box-sizing
+/* Reset box-sizing */
 .share-btn,
 .share-btn *,
 .share-btn *:before,
@@ -138,11 +109,8 @@ p {
 	box-sizing: border-box;
 }
 
-// All share button styles are enclosed in .share-btn
+/* All share button styles are enclosed in .share-btn */
 .share-btn {
-	@color-bg: #e0e0e0;
-	@color: #111;
-
 	position: relative;
 	display: inline-block;
 	height: 24px;
@@ -161,36 +129,35 @@ p {
 	text-decoration: none;
 	transition: all 0.2s ease;
 
-	&:hover,
-	&:focus {
+	.share-btn:hover,
+	.share-btn:focus {
 		background: darken(@color-bg, 5%);
 		border-color: darken(@color-bg, 15%);
 		text-decoration: none;
 		color: @color;
 	}
 
-	&:active {
+	.share-btn:active {
 		background: darken(@color-bg, 10%);
 		border-color: darken(@color-bg, 20%);
 		text-decoration: none;
 		color: @color;
 	}
 
-	&.share-btn-sm {
+	.share-btn.share-btn-sm {
 		height: 20px;
 		font-size: 10px;
 		padding: 0 8px;
 		line-height: 1.6;
 	}
 
-	&.share-btn-lg {
+	.share-btn.share-btn-lg {
 		height: 28px;
 		font-size: 16px;
 		line-height: 1.4;
 	}
 
-	// More button
-	.share-btn-text-sr {
+ 	.share-btn-text-sr {
 		// Screen readers only
 		position: absolute;
 		width: 1px;
@@ -202,196 +169,12 @@ p {
 		border: 0;
 	}
 
-	// Branded
-
-	&.share-btn-branded {
-		color: #fff;
-	}
-
-	&.share-btn-branded.share-btn-twitter {
-		@color-brand: #55acee;
-		background: @color-brand;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-facebook {
-		@color-brand: #3b5998;
-		background: @color-brand;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-googleplus {
-		@color-brand: #dd4b39;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-tumblr {
-		@color-brand: #35465c;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-reddit {
-		@color-brand: #ff4500;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-linkedin {
-		@color-brand: #0976b4;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-delicious {
-		@color-brand: #3399ff;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-stumbleupon {
-		@color-brand: #eb4924;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	&.share-btn-branded.share-btn-pinterest {
-		@color-brand: #cc2127;
-		background: @color-brand;
-		color: #fff;
-		border-color: darken(@color-brand, 5%);
-		&:hover, &:focus {
-			background: darken(@color-brand, 5%);
-			border-color: darken(@color-brand, 10%);
-		}
-		&:active {
-			background: darken(@color-brand, 10%);
-			border-color: darken(@color-brand, 15%);
-		}
-	}
-
-	// Inverse
-	&.share-btn-inverse {
-		color: #fff - @color;
-		background: #fff - @color-bg;
-		border-color: darken(#fff - @color-bg, 10%);
-		&:hover,
-		&:focus {
-			background: darken(#fff - @color-bg, 5%);
-			border-color: darken(#fff - @color-bg, 15%);
-			color: #fff - @color;
-		}
-		&:active {
-			background: darken(#fff - @color-bg, 10%);
-			border-color: darken(#fff - @color-bg, 20%);
-			color: #fff - @color;
-		}
-	}
-
-	// Share icon
-	&.share-btn-twitter .share-btn-icon,
-	&.share-btn-googleplus .share-btn-icon,
-	&.share-btn-tumblr .share-btn-icon,
-	&.share-btn-linkedin .share-btn-icon,
-	&.share-btn-pinterest .share-btn-icon,
-	&.share-btn-stumbleupon .share-btn-icon,
-	&.share-btn-delicious .share-btn-icon,
-	&.share-btn-more .share-btn-icon {
-		position: relative;
-		top: 1px;
-	}
-
-	// Super hacky but needed until a better fix
-	@-moz-document url-prefix() {
-		&.share-btn-twitter .share-btn-icon,
-		&.share-btn-googleplus .share-btn-icon,
-		&.share-btn-tumblr .share-btn-icon,
-		&.share-btn-linkedin .share-btn-icon,
-		&.share-btn-pinterest .share-btn-icon,
-		&.share-btn-stumbleupon .share-btn-icon,
-		&.share-btn-delicious .share-btn-icon,
-		&.share-btn-more .share-btn-icon {
-			top: 0;
-		}
-	}
-
-	&.share-btn-more.share-btn-lg .share-btn-icon {
+	.share-btn-more.share-btn-lg .share-btn-icon {
 		top: 2px;
 	}
 
-	// Text
 	.share-btn-text {
 		padding-left: 2px;
 	}
-}</style>
+
+</style>
