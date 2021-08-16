@@ -851,7 +851,7 @@ button.yith-wcan-reset-filters {
 }
 
 #hero-single .hero-summary  a.whatsapp,
-#hero-single .hero-summary  a.inquire {
+#hero-single .hero-summary  .inquire {
     border: 1px solid #222;
     border-radius: 2px;
     text-align: center;

@@ -16,7 +16,7 @@
 		</a>
 <br /><br />
 	</div>
-		<p class="c-footer__copyright"><small>Shopping assistance via 	<a href="#">WhatsApp</a><br /><br />The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT<br />
+		<p class="c-footer__copyright"><small>Shopping assistance via 	<a href="https://wa.me/+447384525201">WhatsApp</a><br /><br />The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT<br />
 		<a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a>   |   &copy; 2021 Hauser &amp; Wirth<br></small></p>
 	</div>
 

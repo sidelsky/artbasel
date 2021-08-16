@@ -15,10 +15,11 @@
 }
 
 @media (max-width: 1300px) {
-.woocommerce   #product-wrap ul.products li.product {
+  #product-wrap .woocommerce ul.products li.product {
    flex-grow: 1;
+   min-height: 310px;
   }
-  .woocommerce #product-wrap .products ul  {
+  #product-wrap .woocommerce .products ul  {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
@@ -47,10 +48,7 @@
     padding: 180px 30px;
   }
 
-  .filter-right {
-    padding: 0;
-  }
-    .woocommerce ul.products li.product .thumbnail {
+ .woocommerce ul.products li.product .thumbnail {
     width: 100%;
     height: 100%;
   }
@@ -103,7 +101,10 @@
     display: none; /* dont show read more for desktop in single product pages */
   }
 
-  .hero-summary .price span  {
+
+
+  .hero-summary .price span,
+  .hero-summary .inquire span.pum-trigger  {
     display: inline-block; /* dont show read more for desktop in single product pages */
   }
 
