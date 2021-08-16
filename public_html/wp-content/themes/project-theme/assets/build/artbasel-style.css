@@ -336,10 +336,10 @@ position: absolute;
 .hero-text h2 {
   color: #fff;
   padding: 50px 0;
-  font-size: 80px;
   font-weight: 700;
   line-height: 98px;
   max-width: 548px;
+  font-size: clamp(48px, 8vw, 80px);
 }
 
 /* FEATURED */
