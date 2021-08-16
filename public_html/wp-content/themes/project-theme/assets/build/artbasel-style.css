@@ -590,13 +590,29 @@ margin: 0 auto;
 }
 
 .filter-left {
- width: 300px;
+  width: 360px;
+  padding-right: 30px;
 }
 
 .filter-left .filter-content {
   max-height: 200px;
   overflow-y: auto;
+  padding: 10px 0 0 30px;
 }
+
+.filter-left .filter-content::-webkit-scrollbar {
+  width: 1px;
+}
+
+.filter-left .filter-content::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+}
+
+.filter-left .filter-content::-webkit-scrollbar-thumb {
+  background-color: #222;
+  outline: 1px solid #E0E0E0;
+}
+
 
 .filter-left h3 {
   font-size: 24px;
@@ -1294,7 +1310,7 @@ a.c-header__link--left:hover,
 
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.open:after,
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.opened:after {
-  top: 11px;
+  top: 8px;
 }
 
 .yith-wcan-filters.filters-modal .yith-wcan-filter {
