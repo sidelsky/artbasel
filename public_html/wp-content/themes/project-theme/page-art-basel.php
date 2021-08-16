@@ -19,9 +19,10 @@ include("header-artbasel.php");
 	</div>
 
 	<div class="hero-text">
-			<p class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><?php the_sub_field('date-hero'); ?></p>
-			<h2 class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInUp;"><?php the_sub_field('title-hero'); ?></h2>
-			 <p class="wow fadeInUp" data-wow-delay="1.2s"data-wow-duration="1s"  style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;"><a href="<?php the_sub_field('link-hero'); ?>" class="play"></a><?php the_sub_field('cta-hero'); ?></p>
+			<p class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;"><?php the_sub_field('date-hero'); ?></p>
+			<h2 class="wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeIn;"><?php the_sub_field('title-hero'); ?></h2>
+			 <p class="wow fadeIn" data-wow-delay="1.2s"data-wow-duration="1s"  style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;">
+  <?php echo do_shortcode('[popup_trigger id="9828"][/popup_trigger]');  ?><?php the_sub_field('cta-hero'); ?></p>
 </div>
 </div>
 
@@ -33,7 +34,7 @@ include("header-artbasel.php");
 <section id="featured">
 	<?php if( get_field('featured') ) : ?>
 		<div class="featured-inner">
-			<h2 class="wow fadeInUp" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInUp;"><?php the_field('featured'); ?></h2>
+			<h2 class="wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeIn;"><?php the_field('featured'); ?></h2>
 		</div>
 	 <?php endif; ?>
 	</section>
@@ -45,19 +46,11 @@ include("header-artbasel.php");
 	<div class="left">
 		<?php if( have_rows('left') ): ?>
 	    <?php while( have_rows('left') ): the_row(); ?>
-				<h2 class="wow fadeInLeft slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInLeft;"><?php the_sub_field('title'); ?></h2>
-				<div class="wow fadeInLeft slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeInLeft;"><p><?php the_sub_field('desc'); ?></p></div>
-				<div class="cta is-desktop wow fadeInLeft slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeInLeft;">
-					<a href="<?php the_sub_field('link'); ?>" >
-					  Explore
-					</a> 
-			</div>
+				<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInt;"><?php the_sub_field('title'); ?></h2>
+				<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeIn;"><p><?php the_sub_field('desc'); ?></p></div>
+				<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
 
-				<div class="cta is-mobile">
-					<a href="<?php the_sub_field('link'); ?>">
-					   Explore
-					</a> 
-			</div>
+				<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
 <?php endwhile; ?>
 <?php endif; ?>
 </div>
@@ -74,7 +67,7 @@ include("header-artbasel.php");
 			<?php endif; ?>
 				<!-- end show images -->
 	</div>
-	<div class="right sidebar stickyside  wow fadeInUp"  data-wow-delay="1s" data-wow-duration="1.5s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeInUp;" id="sticky-contents">
+	<div class="right sidebar stickyside  wow fadeIn"  data-wow-delay="1s" data-wow-duration="1.5s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeIn;" id="sticky-contents">
 	<!-- <ul> show images again but as thumbnails
 		<//?php if( have_rows('right') ): $i = 0; ?>
 	    <//?php while( have_rows('right') ): the_row(); $i++; ?>
@@ -91,7 +84,7 @@ include("header-artbasel.php");
 
 <!-- </container>  END full page wrapper for sticky scroll https://codepen.io/Nidor/pen/gZJPWd -->
 <div id="product-content">
-		<div id="product-wrap" class="slow wow fadeInUp"  data-wow-delay=".05s" data-wow-duration="2s" style="visibility: visible; animation-delay: .05s;  animation-name: fadeInUp;">
+		<div id="product-wrap">
 					<div class="filter-left">
 						<h3 class"leftcol">All artworks</h3>
 						<?php if ( is_active_sidebar( 'ab_left' ) ) : ?>
@@ -130,7 +123,7 @@ include("header-artbasel.php");
 	    <?php while( have_rows('twin_content') ): the_row();
 	?>
 		<div id="twin-wrap">
-				<div class="title slow wow fadeInLeft"  data-wow-delay=".0" data-wow-duration="2s" style="visibility: visible; animation-delay: 0;  animation-name: fadeInLeft;"><h2><?php the_sub_field('twin-title'); ?></h2>	</div>
+				<div class="title slow wow fadeIn"  data-wow-delay=".0" data-wow-duration="2s" style="visibility: visible; animation-delay: 0;  animation-name: fadeIn;"><h2><?php the_sub_field('twin-title'); ?></h2>	</div>
 				<div class="desc slow wow fadeInRight"  data-wow-delay=".4s" data-wow-duration="2s" style="visibility: visible; animation-delay: .4s;  animation-name: fadeInRight;"><p><?php the_sub_field('twin-desc'); ?></p>	</div>
 	</div>
 	<?php endwhile; ?>
@@ -140,7 +133,7 @@ include("header-artbasel.php");
 <?php if( get_field('video') ): ?>
 	<div id="video-content">
 			<div id="video-wrap">
-					<div class="video slow wow fadeInUp" data-wow-duration="2s" style="visibility: visible; animation-name: fadeInUp;"><?php the_field('video'); ?></div>
+					<div class="video slow wow fadeIn" data-wow-duration="2s" style="visibility: visible; animation-name: fadeIn;"><?php the_field('video'); ?></div>
 					<div class="video-desc"><h3><?php the_field('video_desc'); ?></h3></div>
 					</div>
 	</div>
@@ -151,21 +144,21 @@ include("header-artbasel.php");
 <div id="triple-content">
 
 		<div id="triple-wrap">
-			<div class="wow fadeInUp" data-wow-delay="0" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0;  animation-name: fadeInUp;">
+			<div class="wow fadeIn" data-wow-delay="0" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0;  animation-name: fadeIn;">
 				<div class="img">
 					<img src="<?php the_field('image_content1'); ?>" width="100%" height="auto" class="middle-img" alt="<?php echo esc_attr($image['alt']); ?>" />
 				</div>
 				<div class="caption-ab"><p><?php the_field('image_1_caption'); ?></p></div>
 			</div>
 
-			<div  class="wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0.2s;  animation-name: fadeInUp;">
+			<div  class="wow fadeIn" data-wow-delay=".2s" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0.2s;  animation-name: fadeIn;">
 				<div class="img">
 					<img src="<?php the_field('image_content2'); ?>" width="100%" height="auto" class="middle-img" alt="<?php echo esc_attr($image['alt']); ?>" />
 				</div>
 				<div class="caption-ab"><p><?php the_field('image_2_caption'); ?></p></div>
 				</div>
 
-			<div  class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeInUp;">
+			<div  class="wow fadeIn" data-wow-delay=".4s" data-wow-duration="1.4s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;">
 					<div class="img">
 						<img src="<?php the_field('image_content3'); ?>" width="100%" height="auto" class="middle-img" alt="<?php echo esc_attr($image['alt']); ?>" />
 					</div>
@@ -176,7 +169,7 @@ include("header-artbasel.php");
 
 <?php endif; ?>
 
-<!-- <div class="slow wow fadeInLeft"  data-wow-delay="1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeInUp;"> -->
+<!-- <div class="slow wow fadeIn"  data-wow-delay="1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeIn;"> -->
 <?php
 /**
  * Email submission
