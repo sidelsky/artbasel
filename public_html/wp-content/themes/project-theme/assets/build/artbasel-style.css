@@ -303,7 +303,6 @@ position: absolute;
   lottie-player {
     width: 86%;
     height: 100vh;
-    padding-top: 100px;
   }
 
 .hero-text {
@@ -619,7 +618,7 @@ margin: 0 auto;
 .filter-left {
   width: 360px;
   padding-right: 30px;
-  padding-bottom: 140px;
+  padding-bottom: 360px;
 }
 
 .filter-left .filter-content {
@@ -815,6 +814,7 @@ button.yith-wcan-reset-filters {
   left: 10%;
   align-self: flex-end;
   position: sticky;
+  padding-bottom: 30px;
 }
 
 #hero-single .hero-artwork {
