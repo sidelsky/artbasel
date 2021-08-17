@@ -72,12 +72,10 @@ $wordpress = new WordpressHelper;
 		</div>
 
 
-
-
 			<div class="l-site-header__nav" data-id="site-header-nav" id="header">
 
 				<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--white is-desktop">
-					<img src="https://www.hauserwirth.com/images/main-logo.svg" />
+					<img src="/wp-content/themes/project-theme/assets/build/img/ab/logo.svg" />
 				</a>
 
 				<?php
