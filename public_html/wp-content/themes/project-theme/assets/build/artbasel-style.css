@@ -790,17 +790,21 @@ button.yith-wcan-reset-filters {
 
 #hero-single {
   background: #F8F8F8;
-   height: 100vh;  
+   height: 100vh;
 }
 
 #hero-single-wrap {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 10% 5%;
+/*  padding: 10% 5%; */
   display: flex;
   justify-content: space-between;
   position: relative;
+  height: 100%;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); */
 }
 
 #hero-single .hero-audio {
@@ -1477,9 +1481,9 @@ font-family: "newtransport-regular";
   border-radius: 0;
 }
 
-/* popup */
+/* popup share */
 
-.pum-theme-9808 .pum-container  {
+#pum-9837 .pum-container  {
   padding: 0;
 }
 
