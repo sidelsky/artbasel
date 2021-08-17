@@ -301,8 +301,9 @@ position: absolute;
   }
 
   lottie-player {
-  width: 86%;
-  height: auto;
+    width: 86%;
+    height: auto;
+    padding-top: 100px;
   }
 
 .hero-text {
