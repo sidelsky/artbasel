@@ -101,11 +101,6 @@
 
 @media (min-width: 769px) { /* MIN !!! */
 
-
-
-
-
-
   .hero-summary .price span {
     display: inline-block; /* dont show read more for desktop in single product pages */
   }
@@ -160,6 +155,9 @@
 
 @media (max-width: 900px) {
 
+#hero-single .hero-artwork {
+  height: 100vh;
+}
 
 .tools .pum-trigger {
     display: none;
