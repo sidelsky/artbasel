@@ -21,7 +21,7 @@
 .l-site-header__nav {
     display: flex;
     border: 0;
-    margin-top: 5px;
+    margin-top: 33px;
 }
 
 .c-site-nav {
@@ -42,9 +42,13 @@
     margin-top: 0;
 }
 
+.l-site-header__nav .c-header__link {
+
+}
+
 .menu-artbasel-woocommerce-container { /* position of right hand side header nav - woocommerce */
     position: absolute;
-    top: 34px;
+    top: 32px;
     right: 20px;
     }
 

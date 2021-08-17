@@ -43,9 +43,9 @@ $wordpress = new WordpressHelper;
 		<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-style.css' type='text/css' media='all' />
 		<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-responsive.css' type='text/css' media='all' />
 
-		<!-- share script for popup -->
+		<!-- share  (sharethis) script for popup -->
 		<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=611ae15232c4190013251a80&product=inline-share-buttons" async="async"></script>
-		
+
 	</head>
 
 	<body <?php body_class($isHome); ?> id="body">
@@ -60,6 +60,10 @@ $wordpress = new WordpressHelper;
 
 		<div class="c-header__wrap">
 
+			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--white">
+				<img src="https://www.hauserwirth.com/images/main-logo.svg" />
+			</a>
+
  				<!-- START: Hamburger -->
 				<a class="c-hamburger js-hamburger">
 					<span class="c-hamburger__bar"></span>
@@ -68,13 +72,14 @@ $wordpress = new WordpressHelper;
 		</div>
 
 
-			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--left">
-				<svg class="c-header__icon">
-					<use xlink:href='#shape-hauserwirth-logo'></use>
-				</svg>
-			</a>
+
 
 			<div class="l-site-header__nav" data-id="site-header-nav" id="header">
+
+				<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--white is-desktop">
+					<img src="https://www.hauserwirth.com/images/main-logo.svg" />
+				</a>
+
 				<?php
 					$menu_args = [
 						'menu' => 'artbasel',
