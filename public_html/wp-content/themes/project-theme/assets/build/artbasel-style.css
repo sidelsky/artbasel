@@ -2,15 +2,29 @@
 
 #menu-item-9392 a,
 #menu-item-9772 a { /* favourites icon */
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/heart.png) 0 50% no-repeat;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/heart1.svg) 0 50% no-repeat;
   text-indent: -9999em;
   width: 15px;
   height: 15px;
 }
 
+#menu-item-9392 a:hover,
+#menu-item-9772 a:hover { /* favourites icon */
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/heart1-roll.svg) 0 50% no-repeat;
+}
+
+
 #menu-item-9393 a,
 #menu-item-9773 a { /* account icon */
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/account.png) 0 50% no-repeat;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/profile.svg) 0 50% no-repeat;
+  text-indent: -9999em;
+  width: 15px;
+  height: 15px;
+}
+
+#menu-item-9393 a:hover,
+#menu-item-9773 a:hover { /* account icon */
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/profile-roll.svg) 0 50% no-repeat;
   text-indent: -9999em;
   width: 15px;
   height: 15px;
@@ -181,43 +195,43 @@ color: #000;
 }
 
 .artbasel-social a.social__link.fb {
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/vector.png) 0 50% no-repeat;
-  width: 20px;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/facebook.svg) 0 50% no-repeat;
+  width: 23px;
   height: 20px;
   text-indent: -9999em;
 }
 
 .artbasel-social a.social__link.insta {
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/vector-1.png) 0 50% no-repeat;
-  width: 20px;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/instagram.svg) 0 50% no-repeat;
+  width: 23px;
   height: 20px;
   text-indent: -9999em;
 }
 
 .artbasel-social a.social__link.twit {
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/vector-2.png) 0 50% no-repeat;
-  width: 20px;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/Vector.svg) 0 50% no-repeat;
+  width: 23px;
   height: 20px;
   text-indent: -9999em;
 }
 
 .artbasel-social a.social__link.yt {
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/vector-3.png) 0 50% no-repeat;
-  width: 20px;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/youtube.svg) 0 50% no-repeat;
+  width: 23px;
   height: 20px;
   text-indent: -9999em;
 }
 
 .artbasel-social a.social__link.wc {
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/vector-6.png) 0 50% no-repeat;
-  width: 20px;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/wechat.svg) 0 50% no-repeat;
+  width: 23px;
   height: 20px;
   text-indent: -9999em;
 }
 
 .artbasel-social a.social__link.we {
-  background: url(/wp-content/themes/project-theme/assets/build/img/ab/vector-4.png) 0 50% no-repeat;
-  width: 20px;
+  background: url(/wp-content/themes/project-theme/assets/build/img/ab/weibo.svg) 0 50% no-repeat;
+  width: 23px;
   height: 20px;
   text-indent: -9999em;
 }
@@ -779,6 +793,7 @@ button.yith-wcan-reset-filters {
 .single-product .l-site-header__nav {
   background: #F8F8F8;
   z-index: 999999;
+  padding-bottom: 15px;
 }
 
 .page-template-page-art-basel  .c-header,
@@ -878,7 +893,7 @@ button.yith-wcan-reset-filters {
 #hero-single .hero-summary  a.whatsapp,
 #hero-single .hero-summary  a.whatsapp:hover {
       padding-left: 25px;
-      background: url(/wp-content/themes/project-theme/assets/build/img/ab/whatsapp.png) 28% 40% no-repeat;
+      background: url(/wp-content/themes/project-theme/assets/build/img/ab/whatsapp.svg) 28% 40% no-repeat;
 }
 
 #hero-single .hero-summary  a.whatsapp:hover,
