@@ -1420,11 +1420,13 @@ font-family: "newtransport-regular";
 #gform_wrapper_13 [type="text"],
 #gform_wrapper_13 textarea {
   border: 0;
+  font-family: "newtransport-regular";
   border-bottom: 1px solid #222;
   text-align: left;
   font-size: 14px;
   padding-left: 0;
   border-radius: 0
+  color: #222;
 }
 
 #gform_wrapper_13 #field_13_17 {
@@ -1441,8 +1443,8 @@ font-family: "newtransport-regular";
    padding-left: 0;
  }
 
- #gform_wrapper_13  {
-   padding-top: 17px;
+ #gform_wrapper_13 #input_13_5  {
+   padding-top: 16px;
 }
 
  #gform_wrapper_13 #gform_submit_button_13 {
@@ -1450,6 +1452,7 @@ font-family: "newtransport-regular";
       border: 1px solid #222;
       border-radius: 0;
       color: #222;
+      transition: 0.3s;
 }
 
 #gform_wrapper_13 #gform_submit_button_13:hover {
