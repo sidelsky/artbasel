@@ -1481,11 +1481,13 @@ font-family: "newtransport-regular";
   border-radius: 0;
 }
 
-/* popup share */
+/* home popup video */
 
-#pum-9837 .pum-container  {
+#pum-9828 .pum-container  {
   padding: 0;
 }
+
+/* popup share */
 
 .pum-theme-default-theme .pum-content {
   outline: 0;
