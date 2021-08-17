@@ -32,7 +32,6 @@
 @media (max-width: 1200px) and (min-width: 900px) {
   lottie-player {
     width: 79%;
-    padding-bottom: 200px;
   }
   #hero-single .hero-audio {
     bottom: 28%;
@@ -60,7 +59,7 @@
   .hero-summary span {
     display: none; /* dont show read more for desktop in single product pages */
   }
-  
+
   .c-header__link {
     margin: -15px 0 0 30px;
     }
