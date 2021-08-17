@@ -444,21 +444,6 @@ padding: 0 0 150px 0;
   display: none;
  } */
 
- .st-btn data-network="facebook"::before {
-   content: "Share on Facebook";
- }
-
- .st-btn data-network="email"::before {
-   content: "Share via Email";
- }
-
- .st-btn data-network="messenger"::before {
-   content: "Share on Messenger";
- }
-
-  .st-btn data-network="twitter"::before {
-   content: "Share on Twitter";
- }
 
 #carousel .middle img {
   width: 80%;
@@ -633,7 +618,7 @@ margin: 0 auto;
 
 .filter-left .filter-content {
   max-height: 200px;
-  overflow-y: auto;
+  overflow-y: auto !important;
   padding: 10px 0 0 30px;
 }
 
@@ -1416,6 +1401,14 @@ font-family: "newtransport-regular";
 
 .pum-theme-default-theme .pum-content {
   outline: 0;
+}
+
+.pum-overlay {
+  backdrop-filter: blur(10px);
+}
+
+ .pum-theme-enterprise-blue {
+    background-color: rgba( 255, 255, 255, 0.2 );
 }
 
 /* ajax load more */
