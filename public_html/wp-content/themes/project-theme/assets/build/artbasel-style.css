@@ -1245,6 +1245,10 @@ color: #222;
   background-color: transparent !important;
 }
 
+.c-header__wrap {
+  height: 70px !important;
+}
+
 .c-header__icon,
 .c-site-nav__menu li a {
   opacity: 1;

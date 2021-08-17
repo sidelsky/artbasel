@@ -58,7 +58,7 @@
 @media (min-width: 900px) { /* MIN !!! */
 
   .c-header__link {
-    margin: 9px 0 0 30px;
+    margin: -15px 0 0 30px;
     }
 
   /* sticky product side filters */
@@ -164,6 +164,19 @@
 } /* end of 1024 */
 
 @media (max-width: 900px) {
+
+.pum-trigger {
+    display: none;
+}
+
+#popmake-9817 {
+  width: 90%;
+  left: 5%;
+}
+
+.pum-theme-enterprise-blue .pum-container {
+    padding: 50px;
+  }
 
   #hero-single .hero-summary  .inquire {
       border: 0;
