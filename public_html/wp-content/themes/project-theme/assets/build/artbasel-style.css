@@ -1373,6 +1373,10 @@ a.c-header__link--left:hover,
   border: 0;
 }
 
+#yith-wcwl-form {
+    padding: 80px 40px 450px; 
+}
+
 .yith-wcwl-icon .blockUI.blockOverlay  {
     opacity: 0;
     cursor: pointer;

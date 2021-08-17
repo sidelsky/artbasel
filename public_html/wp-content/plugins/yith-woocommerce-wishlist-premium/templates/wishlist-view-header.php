@@ -25,7 +25,11 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 
 <?php do_action( 'yith_wcwl_before_wishlist_form', $wishlist ); ?>
 
-<form id="yith-wcwl-form" action="<?php echo esc_attr( $form_action ); ?>" method="post" class="woocommerce yith-wcwl-form wishlist-fragment" data-fragment-options="<?php echo esc_attr( json_encode( $fragment_options ) ); ?>">
+<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-responsive.css' type='text/css' media='all' />
+
+
+<form id="yith-wcwl-form" action="<?php echo esc_attr( $form_action ); ?>" method="post" class="1 woocommerce yith-wcwl-form wishlist-fragment" data-fragment-options="<?php echo esc_attr( json_encode( $fragment_options ) ); ?>">
 
 	<!-- TITLE -->
 	<?php

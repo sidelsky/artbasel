@@ -83,8 +83,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 							<a href="<?php echo esc_url( get_permalink( apply_filters( 'woocommerce_in_cart_product', $item->get_product_id() ) ) ); ?>">
 								<?php woocommerce_template_loop_product_thumbnail(); ?>
 							</a>
-						</div>
-						<div class="item-details">
+
 							<div class="item-details-wrapper">
 								<h3 class="product-name"><?php echo wp_kses_post( apply_filters( 'woocommerce_in_cartproduct_obj_title', $product->get_title(), $product ) ); ?></h3>
 
@@ -116,7 +115,9 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 													?>
 													<tr>
 														<td class="label">
-															<?php echo esc_html( wc_attribute_label( $name, $product ) ); ?>:
+															<div class="artist"
+															>Artist attribute here</div>
+															<?php echo esc_html( wc_attribute_label( $name, $product, $artists ) ); ?>:
 														</td>
 														<td class="value">
 															<?php echo esc_html( rawurldecode( $value ) ); ?>
@@ -142,9 +143,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 										<?php if ( $show_price || $show_price_variations ) : ?>
 											<tr class="product-price">
 												<td class="label">
-													<?php esc_html_e( 'Unit Price:', 'yith-woocommerce-wishlist' ); ?>
-												</td>
-												<td class="value">
+
+
 													<?php
 													if ( $show_price ) {
 														echo $item->get_formatted_product_price(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
@@ -154,6 +154,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 														echo $item->get_price_variation(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 													}
 													?>
+													<p>
+														<!-- custom field for PDF download goes here --><a href="#"><img src="/wp-content/themes/project-theme/assets/build/img/ab/pdf.svg" /></a></p>
 												</td>
 											</tr>
 										<?php endif; ?>
@@ -224,7 +226,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 
 								<?php if ( $show_remove_product ) : ?>
 									<div class="product-remove">
-										<a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item->get_product_id() ) ); ?>" class="remove_from_wishlist" title="<?php echo esc_attr( apply_filters( 'yith_wcwl_remove_product_wishlist_message_title', __( 'Remove this product', 'yith-woocommerce-wishlist' ) ) ); ?>"><i class="fa fa-trash"></i></a>
+										<a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item->get_product_id() ) ); ?>" class="remove_from_wishlist" title="<?php echo esc_attr( apply_filters( 'yith_wcwl_remove_product_wishlist_message_title', __( 'Remove this artwork', 'yith-woocommerce-wishlist' ) ) ); ?>"><i class="fa fa-trash"></i></a>
 									</div>
 								<?php endif; ?>
 
@@ -240,8 +242,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 		endforeach;
 	else :
 		?>
-		<li class="wishlist-empty">
-			<?php echo esc_html( apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No products added to the wishlist', 'yith-woocommerce-wishlist' ) ) ); ?>
+		<li class="wishlist-empty"><span style="font-size: 14px;">
+			<?php echo esc_html( apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No artworks added to your wishlist', 'yith-woocommerce-wishlist' ) ) ); ?></span>
 		</li>
 	<?php endif; ?>
 </ul>
