@@ -1374,7 +1374,26 @@ a.c-header__link--left:hover,
 }
 
 #yith-wcwl-form {
-    padding: 80px 40px 450px; 
+    padding: 80px 40px 450px;
+}
+
+h2.wishlist-title {
+  font-family: "newtransport-regular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  padding:  0;
+  color: #222;
+}
+
+#yith-wcwl-form .show-title-form {
+  display: none;
+}
+
+#yith-wcwl-form .item-details-wrapper {
+  font-size: 14px;
+  padding: 15px 0;
+  line-height: 2.1;
 }
 
 .yith-wcwl-icon .blockUI.blockOverlay  {
