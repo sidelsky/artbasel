@@ -57,6 +57,10 @@
 
 @media (min-width: 900px) { /* MIN !!! */
 
+  .c-header__link {
+    margin: 10px 0 0 30px;
+    }
+
   /* sticky product side filters */
 
   .filter-left,
@@ -93,6 +97,9 @@
 } /* end of min width */
 
 @media (min-width: 769px) { /* MIN !!! */
+
+  .c-header__link {
+    }
 
 .c-header__wrap { /* hide main header - and show mobile on < 769 */
     height: 45px;
@@ -159,7 +166,7 @@
 @media (max-width: 900px) {
 
 .filter-left .filter-content {
-  max-height: inherit;
+  padding-right: 0;
 }
 
 .c-ma-email-sub strong {
@@ -329,6 +336,12 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 
   /* header */
 
+  .c-header__link {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+
   .c-header__wrap {
     border: 0;
     background-color: transparent;
@@ -346,7 +359,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     right: 3rem;
     left: auto;
     text-align: right;
-    top: 20px;
+    top: 25px;
   }
   .l-site-header__nav {
     display: none;
@@ -363,7 +376,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 }
 
 #header .menu-artbasel-woocommerce-container {
-    top: 9px;
+    top: 16px;
     right: 60px;
 }
 
