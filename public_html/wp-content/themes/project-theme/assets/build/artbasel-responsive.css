@@ -98,12 +98,6 @@
 
 @media (min-width: 769px) { /* MIN !!! */
 
-  .c-header__link {
-    }
-
-.c-header__wrap { /* hide main header - and show mobile on < 769 */
-    height: 45px;
-  }
 
   .hero-summary span {
     display: none; /* dont show read more for desktop in single product pages */
@@ -165,7 +159,7 @@
 
 @media (max-width: 900px) {
 
-.pum-trigger {
+.tools .pum-trigger {
     display: none;
 }
 
@@ -356,7 +350,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
   .c-header__link {
     position: absolute;
     left: 30px;
-    top: 30px;
+    top: 23px;
   }
 
   .c-header__wrap {
