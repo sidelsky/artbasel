@@ -57,6 +57,10 @@
 
 @media (min-width: 900px) { /* MIN !!! */
 
+  .hero-summary span {
+    display: none; /* dont show read more for desktop in single product pages */
+  }
+  
   .c-header__link {
     margin: -15px 0 0 30px;
     }
@@ -99,9 +103,7 @@
 @media (min-width: 769px) { /* MIN !!! */
 
 
-  .hero-summary span {
-    display: none; /* dont show read more for desktop in single product pages */
-  }
+
 
 
 
@@ -158,6 +160,7 @@
 } /* end of 1024 */
 
 @media (max-width: 900px) {
+
 
 .tools .pum-trigger {
     display: none;
