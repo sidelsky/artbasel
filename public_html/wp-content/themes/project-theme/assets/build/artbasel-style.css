@@ -1344,7 +1344,7 @@ a.c-header__link--left:hover,
 }
 
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.closed:after {
-  background-image: url(/wp-content/themes/project-theme/assets/build/img/ab/plus.png);
+  background-image: url(/wp-content/themes/project-theme/assets/build/img/ab/small-plus.svg);
   height: 24px;
   width: 24px;
   left: -5px;
@@ -1352,7 +1352,7 @@ a.c-header__link--left:hover,
 }
 
 .yith-wcan-filters .yith-wcan-filter h4.collapsable.open:after, .yith-wcan-filters .yith-wcan-filter h4.collapsable.opened:after {
-  background-image: url(/wp-content/themes/project-theme/assets/build/img/ab/minus.png);
+  background-image: url(/wp-content/themes/project-theme/assets/build/img/ab/minus.svg);
   height: 2px;
   width: 12px;
   left: 0;
@@ -1371,6 +1371,10 @@ a.c-header__link--left:hover,
 .yith-wcan-filters.filters-modal .yith-wcan-filter {
   padding: 0 15px 15px 0;
   border: 0;
+}
+
+#yith-wcwl-form {
+    padding: 80px 40px 450px; 
 }
 
 .yith-wcwl-icon .blockUI.blockOverlay  {
