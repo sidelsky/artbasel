@@ -1377,7 +1377,7 @@ a.c-header__link--left:hover,
     padding: 80px 40px 450px;
 }
 
-h2.wishlist-title {
+.wishlist-title h2 {
   font-family: "newtransport-regular";
   font-size: 24px;
   font-style: normal;
