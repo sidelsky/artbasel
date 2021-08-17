@@ -778,11 +778,13 @@ button.yith-wcan-reset-filters {
 .single-product  .c-header,
 .single-product .l-site-header__nav {
   background: #F8F8F8;
+  z-index: 999999;
 }
 
 .page-template-page-art-basel  .c-header,
 .page-template-page-art-basel .l-site-header__nav {
   background: transparent;
+  z-index: 999999;
 }
 
 
@@ -1246,7 +1248,7 @@ color: #222;
 }
 
 .c-header__wrap {
-  height: 70px !important;
+  min-height: 70px !important;
 }
 
 .c-header__icon,
