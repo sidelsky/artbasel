@@ -81,7 +81,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 					<?php if ( $show_remove_product ) : ?>
 						<td class="product-remove">
 							<div>
-								<a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item->get_product_id() ) ); ?>" class="remove remove_from_wishlist" title="<?php echo esc_html( apply_filters( 'yith_wcwl_remove_product_wishlist_message_title', __( 'Remove this product', 'yith-woocommerce-wishlist' ) ) ); ?>">&times;</a>
+								<a href="<?php echo esc_url( add_query_arg( 'remove_from_wishlist', $item->get_product_id() ) ); ?>" class="remove remove_from_wishlist" title="<?php echo esc_html( apply_filters( 'yith_wcwl_remove_product_wishlist_message_title', __( 'Remove this artwork', 'yith-woocommerce-wishlist' ) ) ); ?>">&times;</a>
 							</div>
 						</td>
 					<?php endif; ?>
@@ -153,7 +153,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 	else :
 		?>
 		<tr>
-			<td colspan="<?php echo esc_attr( $column_count ); ?>" class="wishlist-empty"><?php echo esc_html( apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No products added to the wishlist', 'yith-woocommerce-wishlist' ), $wishlist ) ); ?></td>
+			<td colspan="<?php echo esc_attr( $column_count ); ?>" class="wishlist-empty"><?php echo esc_html( apply_filters( 'yith_wcwl_no_product_to_remove_message', __( 'No artworks added to your favorites', 'yith-woocommerce-wishlist' ), $wishlist ) ); ?></td>
 		</tr>
 		<?php
 	endif;

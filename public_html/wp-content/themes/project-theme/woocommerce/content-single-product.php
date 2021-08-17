@@ -31,11 +31,14 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 <div id="hero-single">
 	<div id="hero-single-wrap">
 		<div class="hero-audio">
+			<?php the_sub_field('hero-audio-embed'); ?>
+
 			<?php echo do_shortcode(get_field('hero-audio-embed')); ?>
  		<img src="/wp-content/themes/project-theme/assets/build/img/ab/audio.png" />
 		</div>
@@ -256,15 +259,14 @@ $(window).scroll(function() {
 //  })
 
 LottieInteractivity.create({
-	player: "#FirstLottie",
-	mode:"scroll",
+  player: '#FirstLottie',
+	mode: 'scroll',
 	actions: [
-			{
-				visibility: [0, 1.0],
-				type: "seek",
-				frames: [0, 123]
-			}
-		]
+    {
+      visibility: [0, 1],
+      type: "loop",
+      frames: [0, 85]
+    }
+  ]
 });
-
 </script>
