@@ -58,7 +58,7 @@
 @media (min-width: 900px) { /* MIN !!! */
 
   .c-header__link {
-    margin: 10px 0 0 30px;
+    margin: 9px 0 0 30px;
     }
 
   /* sticky product side filters */
@@ -164,6 +164,10 @@
 } /* end of 1024 */
 
 @media (max-width: 900px) {
+
+  #hero-single .hero-summary  .inquire {
+      border: 0;
+  }
 
 .filter-left .filter-content {
   padding-right: 0;
