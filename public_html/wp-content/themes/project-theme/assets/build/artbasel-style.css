@@ -302,7 +302,7 @@ position: absolute;
 
   lottie-player {
     width: 86%;
-    height: auto;
+    height: 100vh;
     padding-top: 100px;
   }
 
@@ -1419,8 +1419,9 @@ font-family: "newtransport-regular";
   font-family: "newtransport-regular";
   font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   padding: 0 0 30px 0;
+  color: #222;
 }
 
 #gform_wrapper_13 #field_13_16.gfield_html_formatted {
@@ -1465,6 +1466,7 @@ font-family: "newtransport-regular";
       border-radius: 0;
       color: #222;
       transition: 0.3s;
+      font-weight: 500;
 }
 
 #gform_wrapper_13 #gform_submit_button_13:hover {
