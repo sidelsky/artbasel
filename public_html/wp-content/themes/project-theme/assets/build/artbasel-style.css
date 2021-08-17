@@ -1377,6 +1377,10 @@ a.c-header__link--left:hover,
     padding: 80px 40px 450px;
 }
 
+#yith-wcwl-form .artist {
+    font-weight: 700;
+}
+
 .wishlist-title h2 {
   font-family: "newtransport-regular";
   font-size: 24px;
@@ -1390,10 +1394,20 @@ a.c-header__link--left:hover,
   display: none;
 }
 
+#yith-wcwl-form a.pdf {
+  margin-top: 10px;
+  float: left;
+  transition: 0.3s;
+}
+
+#yith-wcwl-form a.pdf:hover {
+    opacity: .7;
+}
+
 #yith-wcwl-form .item-details-wrapper {
   font-size: 14px;
   padding: 15px 0;
-  line-height: 2.1;
+  line-height: 1.7;
 }
 
 .yith-wcwl-icon .blockUI.blockOverlay  {
