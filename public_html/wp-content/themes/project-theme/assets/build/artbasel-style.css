@@ -1401,6 +1401,44 @@ font-family: "newtransport-regular";
   color: #222;
 }
 
+/* inquiry form */
+
+#gform_wrapper_13 h3.gform_title {
+  font-family: "newtransport-regular";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 0 30px 0;
+}
+
+#gform_wrapper_13 #field_13_16.gfield_html_formatted {
+    margin: 2rem 0;
+    line-height: 20px;
+}
+
+#gform_wrapper_13 [type="email"],
+#gform_wrapper_13 [type="text"],
+#gform_wrapper_13 textarea {
+  border: 0;
+  border-bottom: 1px solid #222;
+  text-align: left;
+  font-size: 14px;
+}
+
+#gform_wrapper_13 #field_13_15 {
+    display: flex;
+    flex-direction: column;
+}
+ 
+#gform_wrapper_13 .gfield_captcha_container [type="text"] {
+  font-family: "newtransport-regular";
+  border: 0;
+  border-bottom: 1px solid #222;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 0;
+}
+
 /* popup */
 
 .pum-theme-default-theme .pum-content {
