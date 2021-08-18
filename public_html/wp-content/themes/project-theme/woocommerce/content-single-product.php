@@ -265,7 +265,7 @@ LottieInteractivity.create({
     {
       visibility: [0, 1],
       type: "loop",
-      frames: [0, 100]
+      frames: [0, 110]
     }
   ]
 });
