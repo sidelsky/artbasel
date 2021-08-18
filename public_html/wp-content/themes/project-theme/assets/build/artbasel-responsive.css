@@ -572,8 +572,13 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 
 #twin-wrap {
     padding: 40px;
+    margin: inherit;
     display: flex;
     flex-direction: column;
+}
+
+#twin-wrap .desc {
+    max-width: inherit;
 }
 
 #twin-wrap > div {
