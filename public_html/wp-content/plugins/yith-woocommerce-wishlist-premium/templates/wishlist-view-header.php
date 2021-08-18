@@ -25,6 +25,10 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 
 <?php do_action( 'yith_wcwl_before_wishlist_form', $wishlist ); ?>
 
+<!-- share  (sharethis) script for popup -->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=611ae15232c4190013251a80&product=inline-share-buttons" async="async"></script>
+
+
 <link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-style.css' type='text/css' media='all' />
 <link rel='stylesheet' id='artbasel_css-css'  href='/wp-content/themes/project-theme/assets/build/artbasel-responsive.css' type='text/css' media='all' />
 
