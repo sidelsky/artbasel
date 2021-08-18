@@ -58,30 +58,30 @@ include("header-artbasel.php");
 <?php endwhile; ?>
 <?php endif; ?>
 </div>
-	<div class="middle wow fadeIn"  data-wow-delay=".1s" data-wow-duration="1s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeIn;">
+	<div class="middle wow fadeIn" data-wow-duration=".3s" style="animation-name: fadeIn;">
 		<!-- show images -->
 		<?php if( have_rows('middle') ): $i = 0; ?>
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
-				<div id="block-<?php echo $i; ?>">
+				<div id="block-<?php echo $i; ?>"  >
 					<div class="slide">
-					<lottie-player id="Lottie-<?php echo $i; ?>" src="<?php the_sub_field('lottie'); ?>" style="width: 95%; "></lottie-player>
+					<lottie-player id="Lottie-<?php echo $i; ?>" src="<?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player>
 				</div>
 				</div>
 				<?php endwhile; ?>
 			<?php endif; ?>
 				<!-- end show images -->
 	</div>
-	<div class="right sidebar stickyside  wow fadeIn"  data-wow-delay="1s" data-wow-duration="1.5s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeIn;" id="sticky-contents">
-	<!-- <ul> show images again but as thumbnails
-		<//?php if( have_rows('right') ): $i = 0; ?>
-	    <//?php while( have_rows('right') ): the_row(); $i++; ?>
+	<div class="right sidebar stickyside wow fadeIn"  data-wow-duration="1.5s" style="visibility: visible; animation-name: fadeIn;" id="sticky-contents">
+	 <ul>
+		<?php if( have_rows('right') ): $i = 0; ?>
+	    <?php while( have_rows('right') ): the_row(); $i++; ?>
 			<li class="<?php echo $i; ?>"><a href="#block-<?php echo $i; ?>" class="smoothScroll active">
 				<img src="<?php the_sub_field('image'); ?>" width="100%" height="auto" class="middle-img" alt="<?php echo esc_attr($image['alt']); ?>" />
 				</a>
 					</li>
-		<//?php endwhile; ?>
-		<//?php endif; ?>
-</ul> END show images again but as thumbnails -->
+		<?php endwhile; ?>
+		<?php endif; ?>
+</ul>
 	</div>
 </div><!-- end carousel wrap-->
 </section><!-- end carousel -->
@@ -101,11 +101,15 @@ include("header-artbasel.php");
 					</div>
 					<div class="product-main">
 
-						<!-- <// ?php echo do_shortcode('[products per_page="20" columns="4" show_catalog_ordering="yes" orderby="rand"  pagination="true"]'); ?>-->
+						<!-- PREVIOUS SHOP SHORTCODE - WITHOUT AJAX INFINITE SCROLL <// ?php echo do_shortcode('[products per_page="20" columns="4" show_catalog_ordering="yes" orderby="rand"  pagination="true"]'); ?>-->
 
+<!-- AJAX INFINITE SCROLL starts -->
 					<?php echo do_shortcode('[ajax_load_more id="ajax" post_type="product" posts_per_page="20" taxonomy="product_cat" taxonomy_terms="artworks" taxonomy_operator="IN" scroll_container="#product-wrap" button_label="Show more" button_loading_label="Loading artworks" button_done_label="All artworks shown" scroll_container=".product-main"]'); ?>
+
+<!-- AJAX INFINITE SCROLL ends -->
+
 				</div>
-				
+
 					<div class="filter-right">
 						<?php if ( is_active_sidebar( 'ab_right' ) ) : ?>
 							<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
