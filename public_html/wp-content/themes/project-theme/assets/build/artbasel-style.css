@@ -420,7 +420,7 @@ lottie-player {
   width: 25%;
   position: sticky;
   top: 35%;
-  align-self: flex-start;
+  align-self: center;
   padding: 100px 0 100px 20px;
   max-width: 256px;
   z-index: 9;
@@ -434,14 +434,11 @@ lottie-player {
 #carousel .middle .blocks {
   height: 100vh;
   display: flex;
- /*  justify-content: center; */
+ /*  justify-content: center;
   align-self: start;
-  flex-direction: row;
+  flex-direction: row; */
 }
 
-#carousel .middle .carousel-content {
-  align-self: center;
-}
 
 #block-1,
 #block-2,
@@ -540,8 +537,8 @@ lottie-player {
   position: sticky;
   top: 35%;
   align-self: flex-start;
-  padding: 2% 0;
-  height: 40vh;
+  padding: 12% 0;
+  height: 60vh;
 }
 
 #carousel .right ul {
@@ -631,7 +628,7 @@ max-width: 896px;
 position: relative;
  padding-bottom: 56.25%;
  overflow: hidden;
- max-width: 706px; 
+ max-width: 706px;
  margin: 0 auto;
 }
 
