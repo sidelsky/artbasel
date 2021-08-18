@@ -408,7 +408,15 @@ lottie-player {
   margin: 0 auto;
 }
 
-#carousel .left {
+#carousel .middle {
+  width: 80%;
+  margin: 20px;
+  padding: 0;
+  overflow: hidden;
+  height: 90vh;
+}
+
+#carousel .middle .carousel-content {
   width: 25%;
   position: sticky;
   top: 35%;
@@ -419,20 +427,16 @@ lottie-player {
   height: 40vh;
 }
 
-#carousel  .middle {
-  flex: 1;
-  width: 50%;
-  margin: 40px auto;
-  padding: 0;
-  overflow: hidden;
-  height: 90vh;
-}
-
-#carousel  .middle .blocks {
+#carousel .middle .blocks {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-self: start;
+  flex-direction: row;
+}
+
+#carousel .middle .carousel-content {
+
 }
 
 #block-1,
@@ -487,18 +491,18 @@ lottie-player {
 }
 }
 
-#carousel .left h2 {
+#carousel .middle h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 32px;
   margin-bottom: 10px;
 }
 
-#carousel .left  p {
+#carousel .middle  p {
   padding-bottom: 15px;
 }
 
-#carousel .left  a {
+#carousel .middle  a {
   margin-top: 2px;
     border: 1px solid #222;
     border-radius: 2px;
@@ -510,7 +514,7 @@ lottie-player {
     justify-content: center;
 }
 
-#carousel .left  a:hover {
+#carousel .middle  a:hover {
   color: #fff;
   background: #222;
 }

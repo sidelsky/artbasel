@@ -15,7 +15,7 @@ include("header-artbasel.php");
 <div class="hero-inner">
 	<div class="hero-wrap">
 				<div class="is-desktop">
-						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('video-hero'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('video-hero'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
 				</div>
 		<div class="hero-image is-mobile">
 							<img src="<?php the_sub_field('image-mobile'); ?>" width="100%" height="auto" class="image-mobile" alt="<?php echo esc_attr($image['alt']); ?>" />
@@ -53,14 +53,14 @@ include("header-artbasel.php");
 		<?php if( have_rows('middle') ): $i = 0; ?>
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
 				<div id="block-<?php echo $i; ?>" class="blocks">
-
-					<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInt;"><?php the_sub_field('title'); ?></h2>
-					<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeIn;"><p><?php the_sub_field('desc'); ?></p></div>
-					<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
-					<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
-
+					<div class="carousel-content">
+						<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInt;"><?php the_sub_field('title'); ?></h2>
+						<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeIn;"><p><?php the_sub_field('desc'); ?></p></div>
+						<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+						<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+					</div>
 					<div class="slide">
-						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
 
 						<!-- <lottie-player id="Lottie-</?php echo $i; ?>" src="<//?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player> -->
 				</div>
@@ -73,7 +73,7 @@ include("header-artbasel.php");
 	 <ul>
 		<?php if( have_rows('right') ): $i = 0; ?>
 	    <?php while( have_rows('right') ): the_row(); $i++; ?>
-			<li class="<?php echo $i; ?>"><a href="#block-<?php echo $i; ?>" class="smoothScroll active">
+			<li class="<?php echo $i; ?>"><a href="#block-<?php echo $i; ?>" class="active">
 				<img src="<?php the_sub_field('image'); ?>" width="100%" height="auto" class="middle-img" alt="<?php echo esc_attr($image['alt']); ?>" />
 				</a>
 					</li>
@@ -204,4 +204,3 @@ include("footer-artbasel.php"); ?>
 			});
 });
  </script> -->
- 
