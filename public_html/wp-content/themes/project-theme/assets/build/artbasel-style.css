@@ -1287,10 +1287,14 @@ a.c-header__link--left:hover,
     padding-bottom: 200px;
 }
 
-.yith_wcwl_wishlist_footer,
-.yith-wcwl-share,
-.wishlist-page-links {
-  display: none;
+.copy-target,
+.copy-target:focus  {
+  border: 0;
+  border-bottom: 1px solid #222;
+  padding: 10px 0;
+  color: #222;
+  width: 150px;
+  margin-right: 20px;
 }
 
 /* woocommerce-ordering */
