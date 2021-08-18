@@ -462,11 +462,10 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 #carousel-wrap {
     min-height: inherit;
     height: inherit;
-    flex-direction: column;
     flex-flow: wrap;
 }
 
-#carousel .left {
+/* #carousel .left {
     width: 100%;
     position: inherit;
     top: inherit;
@@ -478,32 +477,70 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
    margin-bottom: -20px;
 }
 
-#carousel .left .cta {
+#carousel .left p:nth-child(4){
+  display: none;
+}
+
+*/
+
+.featured-inner {
+  top: 70%;
+}
+
+#carousel .middle .carousel-content {
+  padding: 30px;
+  padding-bottom: 33%;
+  height: auto;
+}
+
+#carousel {
+    background: white;
+}
+
+#carousel .middle .slide {
+    width: 100%;
+    padding-bottom: 86.25%;
+    max-width: inherit;
+    background: #F8F8F8
+}
+
+#carousel .middle .cta {
     position: absolute;
-    right: 30px;
-    top: 106px;
+    right: 20px;
+    top: 76px;
   }
 
-  #carousel .left .cta a {
+  #carousel .middle .cta a {
       border: 0;
-      padding: 12px 0;
-      background: url(/wp-content/themes/project-theme/assets/build/img/ab/arrow.png) 100% 50% no-repeat;
-      padding-right: 15px;
+      background: url(/wp-content/themes/project-theme/assets/build/img/ab/arrow.svg) 100% 50% no-repeat;
+      padding-right: 30px;
   }
 
+  #carousel .middle  a:hover {
+    background: url(/wp-content/themes/project-theme/assets/build/img/ab/arrow.svg) 100% 50% no-repeat;
+    color: #222;
+  }
 
 #carousel .middle {
     flex: initial;
     width: 100%;
     margin: 0 auto;
     padding: 0;
-    order: 1;
-    padding: 20px 0;
-    margin: 20px 0 0;
+    height: 87vh;
+    position: relative;
 }
 
-#carousel .left p:nth-child(4){
-  display: none;
+#carousel .middle .blocks {
+    flex-direction: column-reverse;
+    background: #fff;
+  }
+
+.carousel-content {
+  align-self: normal !important;
+  width: 100% !important;
+  position: relative !important;
+  top: inherit !important;
+  max-width: inherit !important;
 }
 
 #carousel .right {
@@ -513,6 +550,8 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     padding: 10px;
     order: 3;
     text-align: right;
+    background: #fff;
+    height: inherit;
 }
 
 #carousel .right ul {
@@ -523,7 +562,6 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
   width: 90px;
   display: inline-block;
   margin: 10px 10px 0 0;
-  float: right;
 }
 
 

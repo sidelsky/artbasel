@@ -56,8 +56,9 @@ include("header-artbasel.php");
 					<div class="carousel-content">
 						<h2><?php the_sub_field('title'); ?></h2>
 						 <p><?php the_sub_field('desc'); ?></p>
-						<a href="<?php the_sub_field('link'); ?>">Explore</a>
-						<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+						 <div class="cta">
+							 <a href="<?php the_sub_field('link'); ?>">Explore</a>
+							</div>
 					</div>
 					<div class="slide">
 						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
