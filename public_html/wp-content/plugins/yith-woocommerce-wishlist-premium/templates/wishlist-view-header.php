@@ -63,7 +63,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 				</div>
 			<?php endif; ?>
 
-			<div class="share"><?php echo do_shortcode("[popup_trigger id='9640']<img src='/wp-content/themes/project-theme/assets/build/img/ab/share.svg' width='18' height='16' alt='share' /> Share[/popup_trigger]"); ?></div>
+			<div class="share"><?php echo do_shortcode("[popup_trigger id='9817']<img src='/wp-content/themes/project-theme/assets/build/img/ab/share.svg' width='18' height='16' alt='share' /> Share[/popup_trigger]"); ?></div>
 
 
 
