@@ -58,7 +58,7 @@ include("header-artbasel.php");
 <?php endwhile; ?>
 <?php endif; ?>
 </div>
-	<div class="middle wow fadeIn" data-wow-duration=".3s" style="animation-name: fadeIn;">
+	<div class="middle">
 		<!-- show images -->
 		<?php if( have_rows('middle') ): $i = 0; ?>
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
