@@ -25,7 +25,7 @@ include("header-artbasel.php");
 	<div class="hero-text">
 			<p class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;"><?php the_sub_field('date-hero'); ?></p>
 			<h2 class="wow fadeIn" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeIn;"><?php the_sub_field('title-hero'); ?></h2>
-			 <p class="wow fadeIn" data-wow-delay="1.2s"data-wow-duration="1s"  style="visibility: visible; animation-delay: 1.2s; animation-name: fadeIn;">
+			 <p class="wow fadeIn" data-wow-delay="1.2s"data-wow-duration="1s"  style="visibility: visible; animation-delay: .6s; animation-name: fadeIn;">
   <?php echo do_shortcode('[popup_trigger id="9828"][/popup_trigger]');  ?><?php the_sub_field('cta-hero'); ?></p>
 </div>
 </div>
@@ -54,9 +54,9 @@ include("header-artbasel.php");
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
 				<div id="block-<?php echo $i; ?>" class="blocks">
 					<div class="carousel-content">
-						<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInt;"><?php the_sub_field('title'); ?></h2>
-						<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeIn;"><p><?php the_sub_field('desc'); ?></p></div>
-						<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+						<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s"><?php the_sub_field('title'); ?></h2>
+						<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s"><p><?php the_sub_field('desc'); ?></p></div>
+						<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
 						<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
 					</div>
 					<div class="slide">
