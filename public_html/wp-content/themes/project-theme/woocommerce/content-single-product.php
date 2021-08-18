@@ -43,7 +43,7 @@ if ( post_password_required() ) {
  		<img src="/wp-content/themes/project-theme/assets/build/img/ab/audio.png" />
 		</div>
 
-	<div class="hero-artwork">
+	<div class="hero-artwork" id="hero-artwork">
 			<lottie-player id="FirstLottie" src="<?php the_field('hero-single'); ?>"></lottie-player>
 	</div>
 	<div class="hero-summary">
@@ -259,14 +259,15 @@ $(window).scroll(function() {
 //  })
 
 LottieInteractivity.create({
-  player: '#FirstLottie',
-	mode: 'scroll',
-	actions: [
-    {
-      visibility: [0, 1],
-      type: "loop",
-      frames: [0, 110]
-    }
-  ]
-});
+		mode:"scroll",
+  	player: '#FirstLottie',
+    container: "#hero-artwork",
+    actions: [
+     {
+       visibility:[0,1],
+       type: "seek",
+       frames: [0, 110]
+     }
+   ]
+ });
 </script>
