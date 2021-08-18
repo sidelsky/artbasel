@@ -224,3 +224,13 @@ function display_custom_product_attributes_on_loop() {
         echo implode( '<br>', $attributes ) . '</p></div>';
     }
 }
+
+/* yith ajax filtering */
+
+if( ! function_exists( 'yith_wcan_content_selector' ) ){
+ function yith_wcan_content_selector( $selector ){
+ $selector = '#product-content';
+ return $selector;
+   }
+ add_filter( 'yith_wcan_content_selector', 'yith_wcan_content_selector' );
+}
