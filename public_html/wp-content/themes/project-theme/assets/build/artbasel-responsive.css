@@ -155,6 +155,15 @@
 
 @media (max-width: 900px) {
 
+#yith-wcwl-form {
+  padding: 80px 20px 50px;
+}
+
+.wishlist_table.modern_grid li {
+  padding: 0px 10px 0 10px;
+  width: 48.33%;
+}
+
 #hero-single .hero-artwork {
   height: 100vh;
 }

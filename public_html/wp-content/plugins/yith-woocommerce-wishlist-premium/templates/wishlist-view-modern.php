@@ -85,6 +85,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 							</a>
 
 							<div class="item-details-wrapper">
+ 									<div class="artist"
+									>Artist attribute here</div>
 								<h3 class="product-name"><?php echo wp_kses_post( apply_filters( 'woocommerce_in_cartproduct_obj_title', $product->get_title(), $product ) ); ?></h3>
 
 								<?php do_action( 'yith_wcwl_table_after_product_name', $item ); ?>
@@ -115,9 +117,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 													?>
 													<tr>
 														<td class="label">
-															<div class="artist"
-															>Artist attribute here</div>
-															<?php echo esc_html( wc_attribute_label( $name, $product, $artists ) ); ?>:
+															<?php echo esc_html( wc_attribute_label( $name, $product ) ); ?>:
 														</td>
 														<td class="value">
 															<?php echo esc_html( rawurldecode( $value ) ); ?>
@@ -155,7 +155,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 													}
 													?>
 													<p>
-														<!-- custom field for PDF download goes here --><a href="#"><img src="/wp-content/themes/project-theme/assets/build/img/ab/pdf.svg" /></a></p>
+														<!-- custom field for PDF download goes here --><a href="#" class="pdf"><img src="/wp-content/themes/project-theme/assets/build/img/ab/pdf.svg" /></a></p>
 												</td>
 											</tr>
 										<?php endif; ?>
