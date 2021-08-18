@@ -422,9 +422,9 @@ lottie-player {
   flex: 1;
   width: 50%;
   margin: 40px auto;
-  padding: 0 0 150px 0;
+  padding: 0;
   overflow: hidden;
-  height: 100vh;
+  height: 90vh;
 }
 
 #carousel .left h2 {
@@ -836,6 +836,7 @@ button.yith-wcan-reset-filters {
   justify-content: center;
   margin: 0 auto;
   position: sticky;
+  position: -webkit-sticky;
   height: calc(100vh - 7.25rem);
    top: 0;
  }

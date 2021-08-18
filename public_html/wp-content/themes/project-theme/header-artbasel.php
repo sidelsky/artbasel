@@ -46,6 +46,8 @@ $wordpress = new WordpressHelper;
 		<!-- share  (sharethis) script for popup -->
 		<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=611ae15232c4190013251a80&product=inline-share-buttons" async="async"></script>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.5.2/smooth-scrollbar.js'></script>
+	
 	</head>
 
 	<body <?php body_class($isHome); ?> id="body">
