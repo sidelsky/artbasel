@@ -38,7 +38,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 <?php do_action( 'yith_wcwl_before_wishlist_share', $wishlist ); ?>
 
 <div class="yith-wcwl-share">
-	<h4 class="yith-wcwl-share-title"><?php echo esc_html( $share_title ); ?></h4>
+	<h4 class="yith-wcwl-share-title">Share Favorites -</h4>
 	<ul>
 		<?php if ( $share_facebook_enabled ) : ?>
 			<li class="share-button">
@@ -84,7 +84,7 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 	<?php if ( $share_url_enabled ) : ?>
 		<div class="yith-wcwl-after-share-section">
 			<input class="copy-target" readonly="readonly" type="url" name="yith_wcwl_share_url" id="yith_wcwl_share_url" value="<?php echo esc_attr( $share_link_url ); ?>"/>
-			<?php echo ( ! empty( $share_link_url ) ) ? sprintf( '<small>%s <span class="copy-trigger">%s</span> %s</small>', esc_html__( '(Now', 'yith-woocommerce-wishlist' ), esc_html__( 'copy', 'yith-woocommerce-wishlist' ), esc_html__( 'this wishlist link and share it anywhere)', 'yith-woocommerce-wishlist' ) ) : ''; ?>
+			<?php echo ( ! empty( $share_link_url ) ) ? sprintf( '<small>%s <span class="copy-trigger">%s</span> %s</small>', esc_html__( '', 'yith-woocommerce-wishlist' ), esc_html__( 'Click to copy', 'yith-woocommerce-wishlist' ), esc_html__( ' wishlist link', 'yith-woocommerce-wishlist' ) ) : ''; ?>
 		</div>
 	<?php endif; ?>
 

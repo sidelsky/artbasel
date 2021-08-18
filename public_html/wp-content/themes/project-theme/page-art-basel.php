@@ -47,24 +47,22 @@ include("header-artbasel.php");
 
 <section id="carousel" class="fp-auto-height">
 	<div id="carousel-wrap">
-	<div class="left">
-		<?php if( have_rows('left') ): ?>
-	    <?php while( have_rows('left') ): the_row(); ?>
-				<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInt;"><?php the_sub_field('title'); ?></h2>
-				<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeIn;"><p><?php the_sub_field('desc'); ?></p></div>
-				<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
 
-				<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
-<?php endwhile; ?>
-<?php endif; ?>
-</div>
 	<div class="middle">
 		<!-- show images -->
 		<?php if( have_rows('middle') ): $i = 0; ?>
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
 				<div id="block-<?php echo $i; ?>" class="blocks">
+
+					<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.1s;  animation-name: fadeInt;"><?php the_sub_field('title'); ?></h2>
+					<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.25s;  animation-name: fadeIn;"><p><?php the_sub_field('desc'); ?></p></div>
+					<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s" style="visibility: visible; animation-delay: 0.4s;  animation-name: fadeIn;"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+					<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+
 					<div class="slide">
-					<lottie-player id="Lottie-<?php echo $i; ?>" src="<?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player>
+						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+
+						<!-- <lottie-player id="Lottie-</?php echo $i; ?>" src="<//?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player> -->
 				</div>
 				</div>
 				<?php endwhile; ?>
