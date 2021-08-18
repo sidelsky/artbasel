@@ -1151,6 +1151,8 @@ form.cart,
     margin: 20px 0;
     transition: .3s;
     background: transparent;
+    background: blue;
+    display: block;
 }
 
 /*

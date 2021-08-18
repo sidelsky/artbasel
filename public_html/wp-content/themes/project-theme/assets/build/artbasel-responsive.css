@@ -57,7 +57,8 @@
 @media (min-width: 900px) { /* MIN !!! */
 
   .hero-summary span {
-    display: none; /* dont show read more for desktop in single product pages */
+    display: block;
+    background: red;/* dont show read more for desktop in single product pages */
   }
 
   .c-header__link {
