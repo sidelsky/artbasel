@@ -416,6 +416,7 @@ lottie-player {
   padding: 40px 0 150px 40px;
   max-width: 276px;
   z-index: 9;
+  height: 40vh;
 }
 
 #carousel  .middle {
@@ -432,6 +433,58 @@ lottie-player {
   display: flex;
   justify-content: center;
   align-self: start;
+}
+
+#block-1,
+#block-2,
+#block-3,
+#block-4 {
+    animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
 }
 
 #carousel .left h2 {
@@ -480,6 +533,7 @@ lottie-player {
   top: 35%;
   align-self: flex-start;
   padding: 2% 0;
+  height: 40vh;
 }
 
 #carousel .right ul {
@@ -493,7 +547,8 @@ lottie-player {
 }
 
 #carousel .right li img {
-  max-width: 64px;
+  width: 64px;
+  height: 72px
   text-align: right;
   margin-bottom: 5px;
   border: 1px solid white;
@@ -1303,7 +1358,7 @@ a.c-header__link--left:hover,
   border-bottom: 1px solid #222;
   padding: 10px 0;
   color: #222;
-  width: 150px;
+  width: 320px;
   margin-right: 20px;
 }
 
@@ -1430,7 +1485,12 @@ a.c-header__link--left:hover,
     margin-right: 10px;
   }
 
-.wishlist-title h2 {
+.wishlist_table.modern_grid {
+  margin: 0 -7px 23px 0;
+}
+
+.wishlist-title h2,
+h4.yith-wcwl-share-title {
   font-family: "newtransport-regular";
   font-size: 24px;
   font-style: normal;

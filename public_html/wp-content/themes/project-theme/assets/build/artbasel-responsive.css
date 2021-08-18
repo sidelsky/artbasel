@@ -85,6 +85,11 @@
 
 @media (min-width: 900px) { /* MIN !!! */
 
+.yith-wcwl-after-share-section .copy-target, .copy-target:focus {
+  width: 100%:
+  margin-bottom: 20px;
+}
+
   .hero-summary span {
     display: none; /* dont show read more for desktop in single product pages */
   }

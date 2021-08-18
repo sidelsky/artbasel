@@ -154,8 +154,14 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 														echo $item->get_price_variation(); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 													}
 													?>
-													<p>
-														<!-- custom field for PDF download goes here --><a href="#" class="pdf"><img src="/wp-content/themes/project-theme/assets/build/img/ab/pdf.svg" /></a></p>
+
+													<!-- custom field for PDF download goes here -->
+
+													<br /><a href="<?php the_field(pdf_file, $product->get_id()); ?>" class="pdf" target="_blank">
+														<img src="/wp-content/themes/project-theme/assets/build/img/ab/pdf.svg" />
+													</a>
+  
+
 												</td>
 											</tr>
 										<?php endif; ?>
