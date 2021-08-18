@@ -434,9 +434,9 @@ lottie-player {
 #carousel .middle .blocks {
   height: 100vh;
   display: flex;
- /*  justify-content: center; */
+ /*  justify-content: center;
   align-self: start;
-  flex-direction: row;
+  flex-direction: row; */
 }
 
 #carousel .middle .carousel-content {
@@ -540,8 +540,8 @@ lottie-player {
   position: sticky;
   top: 35%;
   align-self: flex-start;
-  padding: 2% 0;
-  height: 40vh;
+  padding: 12% 0;
+  height: 60vh;
 }
 
 #carousel .right ul {
@@ -631,7 +631,7 @@ max-width: 896px;
 position: relative;
  padding-bottom: 56.25%;
  overflow: hidden;
- max-width: 706px; 
+ max-width: 706px;
  margin: 0 auto;
 }
 
