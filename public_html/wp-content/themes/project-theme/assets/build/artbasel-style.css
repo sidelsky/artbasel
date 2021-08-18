@@ -1377,13 +1377,47 @@ a.c-header__link--left:hover,
   border: 0;
 }
 
+/* wishlist page */
+
+.wishlist_table.modern_grid li {
+  padding: 0 40px 0 0;
+}
+
 #yith-wcwl-form {
-    padding: 80px 40px 450px;
+    padding: 80px 40px 350px;
 }
 
 #yith-wcwl-form .artist {
     font-weight: 700;
 }
+
+
+.woocommerce-wishlist .c-footer__column:last-child {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+.woocommerce-wishlist .c-footer__column:nth-of-type(1) {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+  }
+}
+.woocommerce-wishlist .c-footer__copyright small {
+  display: none;
+}
+
+.woocommerce-wishlist .share {
+  float:right;
+  margin-right: 20px;
+  margin-top: 10px;
+  width: 100px;
+}
+
+.woocommerce-wishlist .share img {
+    float: left;
+    margin-right: 10px;
+  }
 
 .wishlist-title h2 {
   font-family: "newtransport-regular";

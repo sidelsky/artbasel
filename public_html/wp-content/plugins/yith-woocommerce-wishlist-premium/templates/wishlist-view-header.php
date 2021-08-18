@@ -38,6 +38,8 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 	if ( ! empty( $page_title ) ) :
 		?>
 		<div class="wishlist-title-container">
+
+
 			<div class="wishlist-title <?php echo ( $can_user_edit_title ) ? 'wishlist-title-with-form' : ''; ?>">
 				<?php echo apply_filters( 'yith_wcwl_wishlist_title', '<h2>' . esc_html( $page_title ) . '</h2>' ); ?>
 				<?php if ( $can_user_edit_title ) : ?>
@@ -60,6 +62,11 @@ if ( ! defined( 'YITH_WCWL' ) ) {
 					</div>
 				</div>
 			<?php endif; ?>
+
+			<div class="share"><?php echo do_shortcode("[popup_trigger id='9640']<img src='/wp-content/themes/project-theme/assets/build/img/ab/share.svg' width='18' height='16' alt='share' /> Share[/popup_trigger]"); ?></div>
+
+
+
 		</div>
 		<?php
 	endif;
