@@ -54,9 +54,9 @@ include("header-artbasel.php");
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
 				<div id="block-<?php echo $i; ?>" class="blocks">
 					<div class="carousel-content">
-						<h2 class="wow fadeIn slow"  data-wow-delay=".1s" data-wow-duration="2s"><?php the_sub_field('title'); ?></h2>
-						<div class="wow fadeIn slow" data-wow-delay=".1s" data-wow-duration="2s"><p><?php the_sub_field('desc'); ?></p></div>
-						<div class="cta is-desktop wow fadeIn slow" data-wow-delay=".3s" data-wow-duration="2s"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
+						<h2><?php the_sub_field('title'); ?></h2>
+						 <p><?php the_sub_field('desc'); ?></p>
+						<a href="<?php the_sub_field('link'); ?>">Explore</a>
 						<div class="cta is-mobile"><a href="<?php the_sub_field('link'); ?>">Explore</a></div>
 					</div>
 					<div class="slide">
