@@ -62,7 +62,7 @@ include("header-artbasel.php");
 		<!-- show images -->
 		<?php if( have_rows('middle') ): $i = 0; ?>
 	    <?php while( have_rows('middle') ): the_row(); $i++; ?>
-				<div id="block-<?php echo $i; ?>"  >
+				<div id="block-<?php echo $i; ?>" class="blocks">
 					<div class="slide">
 					<lottie-player id="Lottie-<?php echo $i; ?>" src="<?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player>
 				</div>

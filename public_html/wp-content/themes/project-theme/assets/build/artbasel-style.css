@@ -427,6 +427,13 @@ lottie-player {
   height: 90vh;
 }
 
+#carousel  .middle .blocks {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-self: start;
+}
+
 #carousel .left h2 {
   font-size: 20px;
   font-weight: 700;
