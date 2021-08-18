@@ -1704,6 +1704,7 @@ font-family: "newtransport-regular";
   height: 100%;
   overflow: hidden;
   transition: 0.2s;
+  margin: 0 0 1em;
 }
 
 .alm-reveal .thumbnail img {
@@ -1712,7 +1713,7 @@ font-family: "newtransport-regular";
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 0 1em;
+  margin: 0;
   box-shadow: none;
 }
 
