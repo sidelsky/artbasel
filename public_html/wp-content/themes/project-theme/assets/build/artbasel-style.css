@@ -901,24 +901,28 @@ button.yith-wcan-reset-filters {
 
 .sc_player_container1 .myButton_play {
   border-radius: 50%;
-  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/play-audio.png) 50% 50% no-repeat !Important;
+  opacity: .7;
+/*  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/play-audio.png) 50% 50% no-repeat !Important; */
   padding: 10px !important;
   width: 50px !important;
   height: 50px !important;
-  border: 2px solid #222 !important;
+  border: 1px solid #222 !important;
   animation: pulse 1s infinite;
   transition: all .3s ease;
   box-shadow: 0 20px 34px -12px rgb(21 22 23 / 93%);
+  background-position: 50% 50% !important;
 }
 
 .sc_player_container1 .myButton_stop {
   border-radius: 50%;
-  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/pause.png) 50% 50% no-repeat !Important;
+  opacity: .7;
+  /*  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/pause.png) 50% 50% no-repeat !Important; */
   padding: 10px !important;
   width: 50px !important;
   height: 50px !important;
-  border: 2px solid #666 !important;
+  border: 1px solid #666 !important;
   box-shadow: 0 20px 34px -12px rgb(21 22 23 / 93%);
+  background-position: 50% 50% !important;
 }
 
 .sc_player_container1 .myButton_play:hover,

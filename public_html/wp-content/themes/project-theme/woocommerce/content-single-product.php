@@ -36,10 +36,12 @@ if ( post_password_required() ) {
 
 <div id="hero-single">
 	<div id="hero-single-wrap">
-		<div class="hero-audio" style="background: url(<?php the_field('hero-audio-img'); ?>) 0 0 no-repeat;">
+		<div class="hero-audio">
 
-			<?php echo do_shortcode( '[sc_embed_player fileurl="'.get_field('hero-audio').'"]' ); ?>
-			<div class="audio-caption"><?php the_field('hero-audio-avatar'); ?></div>
+<div clas="audio"  style="background: url(<?php the_field('hero-audio-img'); ?>) 50% 50% no-repeat; background-size: 130%; height: 50px; border-radius: 100%;">
+	<?php echo do_shortcode( '[sc_embed_player fileurl="'.get_field('hero-audio').'"]' ); ?>
+</div>
+<div class="audio-caption"><?php the_field('hero-audio-avatar'); ?></div>
 
 		<!-- <// ?php echo do_shortcode('[sc_embed_player fileurl=”/wp-content/uploads/2021/08/vip.mp3” autoplay=true]'); ?> -->
 
