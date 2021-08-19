@@ -311,10 +311,6 @@ img.image-mobile {
   background: #222;
 }
 
-lottie-player {
-  width: 93%;
-}
-
 .hero-text {
   position: absolute;
   top: 50%;
@@ -843,8 +839,7 @@ button.yith-wcan-reset-filters {
 }
 
 #yith-wcwl-popup-message {
-  margin-left: -10% !important;
-  padding: 40px;
+  /* position added to wishlist css */
 }
 
 /* single product page */
@@ -903,13 +898,15 @@ button.yith-wcan-reset-filters {
 }
 
 #hero-single .hero-artwork {
-  align-self: center;
-  justify-content: center;
   margin: 0 auto;
-  position: sticky;
-  position: -webkit-sticky;
-  height: calc(100vh - 7.25rem);
+ }
+
+ lottie-player {
+   width: 93%;
+   position: -webkit-sticky;
+   height: calc(100vh - 7.25rem);
    top: 0;
+   position: sticky;
  }
 
 #hero-single .hero-summary {

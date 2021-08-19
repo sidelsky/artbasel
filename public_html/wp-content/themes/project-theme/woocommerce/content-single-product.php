@@ -244,10 +244,7 @@ $(window).scroll(function() {
         $(".hero-summary").fadeOut('0');
 			    };
 });
-
-
 </script>
-
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
@@ -261,7 +258,7 @@ $(window).scroll(function() {
 LottieInteractivity.create({
 		mode:"scroll",
   	player: '#FirstLottie',
-    container: "#FirstLottie",
+    container: "#hero-artwork",
     actions: [
      {
        visibility:[0,1],
