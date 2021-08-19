@@ -64,6 +64,7 @@ include("header-artbasel.php");
 						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
 
 						<!-- <lottie-player id="Lottie-</?php echo $i; ?>" src="<//?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player> -->
+						
 				</div>
 				</div>
 				<?php endwhile; ?>
@@ -172,7 +173,7 @@ include("header-artbasel.php");
 
 <?php endif; ?>
 
-<!-- <div class="slow wow fadeIn"  data-wow-delay="1s" data-wow-duration="2s" style="visibility: visible; animation-delay: 1s;  animation-name: fadeIn;"> -->
+
 <?php
 /**
  * Email submission
@@ -185,23 +186,3 @@ include("partials/artbasel-email-sub.php"); ?>
  * Footer
  */
 include("footer-artbasel.php"); ?>
-
-<!-- for page scroll animation -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script> -->
-
- <!-- <script>
- $(document).ready(function() {
-		 // Activate fullpage.js -
-		 // https://github.com/alvarotrigo/fullPage.js#usage
-		 $('#fullpage').fullpage({
-			 	scrollBar: true,
-			 	navigation: false,
-				loopBottom: false,
-			 	sectionSelector: 'section',
-				fitToSection: false,
-			});
-});
- </script> -->
