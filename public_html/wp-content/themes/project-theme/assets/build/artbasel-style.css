@@ -918,6 +918,7 @@ button.yith-wcan-reset-filters {
   width: 50px !important;
   height: 50px !important;
   border: 2px solid #666 !important;
+  box-shadow: 0 20px 34px -12px rgb(21 22 23 / 93%);
 }
 
 .sc_player_container1 .myButton_play:hover,
