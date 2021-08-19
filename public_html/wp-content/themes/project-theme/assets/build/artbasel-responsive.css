@@ -735,8 +735,8 @@ min-width: 50%;
 }
 
 #hero-single .hero-audio {
-  bottom: 35%;
-  right: 5%;
+  bottom: 515px;
+  right: 34px;
   position: absolute;
   z-index: 9999;
   display: inline;
