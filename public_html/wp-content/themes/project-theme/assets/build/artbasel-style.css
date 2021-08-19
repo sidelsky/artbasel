@@ -964,6 +964,7 @@ button.yith-wcan-reset-filters {
   right: 7%;
   align-self: flex-end;
   position: fixed;
+  padding-right: 5px;
 }
 
 
