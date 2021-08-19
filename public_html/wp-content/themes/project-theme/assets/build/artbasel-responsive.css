@@ -34,7 +34,6 @@
     width: 79%;
   }
   #hero-single .hero-audio {
-    bottom: 28%;
     left: 4%;
   }
   #hero-single .hero-summary {
@@ -743,6 +742,10 @@ min-width: 50%;
   display: inline;
   padding-bottom: 0;
   left: inherit;
+  }
+
+  #hero-single .hero-audio .audio {
+    height: 50px;
   }
 
   .sc_player_container1 .myButton_play {
