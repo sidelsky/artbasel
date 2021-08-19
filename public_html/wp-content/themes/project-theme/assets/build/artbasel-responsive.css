@@ -491,7 +491,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 
 #carousel .middle .carousel-content {
   padding: 30px;
-  padding-bottom: 33%;
+  padding-bottom: 25%;
   height: auto;
 }
 
@@ -509,7 +509,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 #carousel .middle .cta {
     position: absolute;
     right: 20px;
-    top: 76px;
+    top: 72px;
   }
 
   #carousel .middle .cta a {
