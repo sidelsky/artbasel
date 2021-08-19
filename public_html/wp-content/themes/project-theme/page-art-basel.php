@@ -61,7 +61,7 @@ include("header-artbasel.php");
 							</div>
 					</div>
 					<div class="slide">
-						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&h=5cd36b5e4f&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+						<iframe src="https://player.vimeo.com/video/<?php the_sub_field('lottie_video_id'); ?>?dnt=1&app_id=122963&h=5cd36b5e4f&controls=0&hd=1&fs=1&rel=0&modestbranding=1&autopause=0&autoplay=1&muted=1&loop=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0"></iframe>
 
 						<!-- <lottie-player id="Lottie-</?php echo $i; ?>" src="<//?php the_sub_field('lottie'); ?>" style="width: 95%;"></lottie-player> -->
 
