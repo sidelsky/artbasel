@@ -38,7 +38,7 @@ if ( post_password_required() ) {
 	<div id="hero-single-wrap">
 		<div class="hero-audio">
 
-<div clas="audio"  style="background: url(<?php the_field('hero-audio-img'); ?>) 50% 50% no-repeat;">
+<div class="audio"  style="background: url(<?php the_field('hero-audio-img'); ?>) 50% 50% no-repeat;">
 	<?php echo do_shortcode( '[sc_embed_player fileurl="'.get_field('hero-audio').'"]' ); ?>
 </div>
 <div class="audio-caption"><?php the_field('hero-audio-avatar'); ?></div>
