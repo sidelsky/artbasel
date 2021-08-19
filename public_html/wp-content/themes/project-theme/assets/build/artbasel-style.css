@@ -842,6 +842,11 @@ button.yith-wcan-reset-filters {
   text-decoration: underline !important;
 }
 
+#yith-wcwl-popup-message {
+  margin-left: -10% !important;
+  padding: 40px;
+}
+
 /* single product page */
 
 .single-product .main,

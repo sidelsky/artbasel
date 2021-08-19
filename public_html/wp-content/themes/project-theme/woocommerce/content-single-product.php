@@ -261,7 +261,7 @@ $(window).scroll(function() {
 LottieInteractivity.create({
 		mode:"scroll",
   	player: '#FirstLottie',
-    container: "#hero-artwork",
+    container: "#FirstLottie",
     actions: [
      {
        visibility:[0,1],
