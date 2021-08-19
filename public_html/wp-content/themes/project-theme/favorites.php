@@ -7,12 +7,11 @@ include("header-artbasel.php");
 ?>
 
 <!-- hero -->
-<section>
-<div class="wrapper favorites>
- 	<?php echo do_shortcode('[yith_wcwl_wishlist]'); ?>
+<div class="favorite-contain">
+	 <div class="wrapper-favorites">
+	 	<?php echo do_shortcode('[yith_wcwl_wishlist]'); ?>
+	</div>
 </div>
-</section>
-
 
 <?php
 /**
