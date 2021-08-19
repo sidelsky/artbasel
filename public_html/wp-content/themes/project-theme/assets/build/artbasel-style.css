@@ -1,7 +1,7 @@
 /* header */
 
 #menu-item-9392 a,
-#menu-item-9772 a { /* favourites icon */
+#menu-item-9910 a { /* favourites icon */
   background: url(/wp-content/themes/project-theme/assets/build/img/ab/heart1.svg) 0 50% no-repeat;
   text-indent: -9999em;
   width: 15px;
@@ -9,7 +9,7 @@
 }
 
 #menu-item-9392 a:hover,
-#menu-item-9772 a:hover { /* favourites icon */
+#menu-item-9910 a:hover { /* favourites icon */
   background: url(/wp-content/themes/project-theme/assets/build/img/ab/heart1-roll.svg) 0 50% no-repeat;
 }
 
