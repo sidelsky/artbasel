@@ -545,7 +545,7 @@ img.image-mobile {
 
 #carousel .right li img {
   width: 64px;
-  height: 72px
+  height: 72px;
   text-align: right;
   margin-bottom: 5px;
   border: 1px solid white;
@@ -1406,8 +1406,6 @@ a.c-header__link--left:hover,
 .wrapper-favorites {
   margin: 0 auto;
   max-width: 980px;
-  display: flex;
-  padding: 180px 0;
 }
 
 .u-l-container--shallow {
