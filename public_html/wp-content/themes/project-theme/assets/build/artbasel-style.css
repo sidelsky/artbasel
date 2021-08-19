@@ -434,17 +434,7 @@ lottie-player {
 #carousel .middle .blocks {
   height: 100vh;
   display: flex;
- /*  justify-content: center;
-  align-self: start;
-  flex-direction: row; */
-}
-
-
-#block-1,
-#block-2,
-#block-3,
-#block-4 {
-    animation: fadeIn ease 1s;
+  animation: fadeIn ease 1s;
 }
 
 @keyframes fadeIn {
@@ -1727,7 +1717,7 @@ font-family: "newtransport-regular";
     font-size: 14px;
     color: #222;
     text-transform: capitalize;
-    padding: .5em 0 0;
+    padding: 0;
 }
 
 .alm-reveal h2.woocommerce-loop-product__title {

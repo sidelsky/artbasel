@@ -168,6 +168,7 @@
 
 #hero-single .hero-artwork {
   height: 100vh;
+  position: relative;
 }
 
 .tools .pum-trigger {
@@ -448,6 +449,7 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
 
 #featured {
     padding: 240px 80px;
+    height: 90vh;
 }
 
 #featured h2 {
@@ -646,6 +648,7 @@ lottie-player {
 #hero-single {
     height: inherit;
     margin-bottom: -25px;
+    padding-bottom: 0;
 }
 
 #hero-single-wrap {
@@ -656,6 +659,7 @@ lottie-player {
       justify-content: inherit;
       position: relative;
       flex-direction: column;
+      height: inherit;
     }
 
 #hero-single .hero-summary {
