@@ -747,7 +747,7 @@ min-width: 50%;
 
   .sc_player_container1 .myButton_play {
     border-radius: 50%;
-    background: #fff url(/wp-content/themes/project-theme/assets/build/img/ab/play-audio.png) 50% 50% no-repeat !Important;
+/*  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/play-audio.png) 50% 50% no-repeat !Important; */
     padding: 10px !important;
     width: 40px !important;
     height: 40px !important;
@@ -760,7 +760,7 @@ min-width: 50%;
 
   .sc_player_container1 .myButton_stop {
     border-radius: 50%;
-    background: #fff url(/wp-content/themes/project-theme/assets/build/img/ab/pause.png) 50% 50% no-repeat !Important;
+  /*  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/pause.png) 50% 50% no-repeat !Important; */
     padding: 10px !important;
     width: 40px !important;
     height: 40px !important;
