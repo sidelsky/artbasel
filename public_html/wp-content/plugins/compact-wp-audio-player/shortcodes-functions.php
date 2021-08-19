@@ -86,17 +86,17 @@ function sc_embed_player_templater1_handler($atts){
     if (empty($fileurl)) {
         return '<div style="color:red;font-weight:bold;">Compact Audio Player Error! You must enter the mp3 file URL via the "fileurl" parameter in this shortcode. Please check the documentation and correct the mistake.</div>';
     }
-    
+
     if (empty($class)) {
         $class = "sc_fancy_player_container";//Set default container class
     }
-    
+
     if (empty($autoplay)) {//Set autoplay value
         $autoplay = "";
     }else{
         $autoplay = "on";
     }
-    
+
     if (empty($loops)) {//Set the loops value
         $loops = "";
     }else{
@@ -111,7 +111,7 @@ function sc_embed_player_templater1_handler($atts){
     );
 
     $player_container = "";
-    $player_container .= '<div class="'.$class.'">';    
+    $player_container .= '<div class="'.$class.'">';
     $player_container .= wp_audio_shortcode($args);
     $player_container .= '</div>';
     return $player_container;

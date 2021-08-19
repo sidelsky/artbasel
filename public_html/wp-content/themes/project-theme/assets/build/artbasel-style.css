@@ -880,7 +880,7 @@ button.yith-wcan-reset-filters {
   display: flex;
   justify-content: space-between;
   position: relative;
-  height: 200vh;
+  height: 300vh;
   /* top: 50%;
   left: 50%;
   padding: 10% 5%;
@@ -889,12 +889,44 @@ button.yith-wcan-reset-filters {
 
 #hero-single .hero-audio {
   z-index: 3;
-  min-width: 205px;
+  max-width: 225px;
   bottom: 13%;
   left: 10%;
   align-self: flex-end;
   position: sticky;
   padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.sc_player_container1 .myButton_play {
+  border-radius: 50%;
+  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/play-audio.png) 50% 50% no-repeat !Important;
+  padding: 10px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: 2px solid #222 !important;
+  animation: pulse 1s infinite;
+  transition: all .3s ease;
+  box-shadow: 0 20px 34px -12px rgb(21 22 23 / 93%);
+}
+
+.sc_player_container1 .myButton_stop {
+  border-radius: 50%;
+  background: transparent url(/wp-content/themes/project-theme/assets/build/img/ab/pause.png) 50% 50% no-repeat !Important;
+  padding: 10px !important;
+  width: 50px !important;
+  height: 50px !important;
+  border: 2px solid #666 !important;
+}
+
+.sc_player_container1 .myButton_play:hover,
+.sc_player_container1 .myButton_stop:hover {
+  opacity: .7;
+}
+
+.audio-caption {
+    padding-left: 15px;
 }
 
 #hero-single .hero-artwork {

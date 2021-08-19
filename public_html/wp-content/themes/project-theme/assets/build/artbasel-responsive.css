@@ -328,10 +328,6 @@ button.btn.btn-primary.yith-wcan-filters-opener:hover {
     padding: 30px 0;
 }
 
-#hero-single .hero-audio {
-    z-index: inherit;
-}
-
       .product-main {
         padding: 40px 0;
         order: 3;
@@ -740,10 +736,40 @@ min-width: 50%;
 }
 
 #hero-single .hero-audio {
-  bottom: 42%;
-  right: 2%;
+  bottom: 35%;
+  right: 5%;
   position: absolute;
   z-index: 9999;
+  display: inline;
+  padding-bottom: 0;
+  left: inherit;
+  }
+
+  .sc_player_container1 .myButton_play {
+    border-radius: 50%;
+    background: #fff url(/wp-content/themes/project-theme/assets/build/img/ab/play-audio.png) 50% 50% no-repeat !Important;
+    padding: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border: 0 !important;
+    animation: pulse 1s infinite;
+    transition: all .3s ease;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .sc_player_container1 .myButton_stop {
+    border-radius: 50%;
+    background: #fff url(/wp-content/themes/project-theme/assets/build/img/ab/pause.png) 50% 50% no-repeat !Important;
+    padding: 10px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border: 0 !important;
+  }
+
+
+  .audio-caption {
+    display: none;
   }
 
 .cookie-notice-container #cn-close-notice { /* cookie close x button */
