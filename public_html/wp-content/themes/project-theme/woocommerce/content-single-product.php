@@ -242,7 +242,7 @@ function onScroll(event){
 
 // artwork summary
 $(window).scroll(function() {
-    if ($(this).scrollTop() < (3450)) {
+    if ($(this).scrollTop() < (5250)) {
 				$(".hero-summary").fadeIn('.1s');
     } else{
         $(".hero-summary").fadeOut('0');
