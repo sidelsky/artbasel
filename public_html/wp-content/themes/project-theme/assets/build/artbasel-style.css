@@ -305,7 +305,7 @@ img.image-mobile {
 .hero-wrap iframe {
   position: absolute;
   top: 0;
-  left: -15%;
+  left: -25%;
   width: 150%;
   height: 100%;
   background: #222;
@@ -431,6 +431,8 @@ img.image-mobile {
   height: 100vh;
   display: flex;
   animation: fadeIn ease 1s;
+  padding-top: 20px;
+  padding-top: 20px;
 }
 
 @keyframes fadeIn {
@@ -939,7 +941,7 @@ button.yith-wcan-reset-filters {
  }
 
  lottie-player {
-   width: 93%;
+   width: 82%;
    position: -webkit-sticky;
    height: calc(100vh - 7.25rem);
    top: 0;
