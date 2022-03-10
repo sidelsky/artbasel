@@ -87,6 +87,14 @@ if( get_field('modal_notice') ) { ?>
 
 <?php } ?>
 
+<?php if ( get_field('has_vimeo_hero') == true ) { ?>
+
+<!-- Show vimeo hero -->
+<?php get_template_part( 'Theme/View/Components/c-vimeo-hero' ); ?>
+
+<?php } ?>
+
+
 <?php
 /**
  * Hero  image
@@ -177,7 +185,7 @@ if( $parallax_hero ) : ?>
 		</figure>
 
 	</section>
-
+ 
 <?php else :
 	$hero = get_field('hero');
 	if($hero) :
@@ -191,6 +199,8 @@ if( $parallax_hero ) : ?>
 		</span>
 
 		<section class="u-section c-paralax-header c-paralax-header--desktop">
+
+
 			<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">
 			<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0,<?= get_field('image_shading_cover') ?>);"></span>
 				<div class="parallax-window__content" data-id="title">
