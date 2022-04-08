@@ -98,7 +98,9 @@ if( get_field('modal_notice') ) { ?>
 
 <!-- single hero video ends here -->
 
-<?php if ( get_field('has_image_hero') == true ) { ?>
+<!-- start of image hero -->
+
+<?php if ( get_field('has_vimeo_hero') == false ) { ?>
 
 <?php
 /**
@@ -227,6 +229,9 @@ if( $parallax_hero ) : ?>
 
 <?php endif; ?>
 <?php } ?>
+
+<!-- end of image hero -->
+
 <?php
 /**
  * Show email field at the Top
