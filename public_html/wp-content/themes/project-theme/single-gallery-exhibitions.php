@@ -400,7 +400,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
  */
 ?>
 
-	<section class="l-content" id="top">
+	<section class="" id="top">
 		<?php
 
 		foreach($allLayouts as $index => $value) {

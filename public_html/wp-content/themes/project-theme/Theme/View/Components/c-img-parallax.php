@@ -8,14 +8,15 @@
 
 <style>
 .parallax {
- 
+
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 750px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 70px;
 }
 </style>
