@@ -71,6 +71,7 @@ class LayoutVr {
          case 'anchor':
                    $anchor = new Anchor($layout);
                    $currentLayout = $anchor->getAnchor();
+                   
             //parallax image
          case 'kuula1':
                    $kuula1 = new Kuula1($layout);
@@ -78,11 +79,6 @@ class LayoutVr {
         break;
 
 
-        //anchor
-     case 'anchor':
-               $anchor = new Anchor($layout);
-               $currentLayout = $anchor->getAnchor();
-    break;
 
             //text iframe
    				  //   case 'text_iframe_content':
