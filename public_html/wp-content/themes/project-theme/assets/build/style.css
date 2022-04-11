@@ -2097,6 +2097,11 @@ span.img-text:hover {
   background: #fff;
 }
 
+.works-template-default .c-lightbox  {
+  display: none !important;
+}
+
+
 .c-lightbox__image {
   margin: auto;
   position: absolute;
