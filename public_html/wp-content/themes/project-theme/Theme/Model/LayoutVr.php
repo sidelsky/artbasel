@@ -8,6 +8,7 @@ use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
 use Theme\Model\WorksContent;
 use Theme\Model\WiderTextContent;
+use Theme\Model\Anchor;
 use Theme\Model\Kuula;
 use Theme\Model\Kuula1;
 
@@ -64,6 +65,11 @@ class LayoutVr {
                $currentLayout = $kuula->getKuula();
             break;
 
+
+            //anchor
+         case 'anchor':
+                   $anchor = new Anchor($layout);
+                   $currentLayout = $anchor->getAnchor();
             //parallax image
          case 'kuula1':
                    $kuula1 = new Kuula1($layout);
