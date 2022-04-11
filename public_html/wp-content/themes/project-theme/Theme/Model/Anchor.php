@@ -1,0 +1,21 @@
+<?php
+
+namespace Theme\Model;
+use App\WordPress\WordPress;
+
+class Anchor {
+
+   public function __construct($layout)
+   {
+	   $this->layout = $layout;
+   }
+
+   public function getAnchor() {
+		$anchor = $this->layout['anchor'];
+    $anchor_title = $this->layout['anchor_title'];
+	return [
+		'layoutName' => 'anchor',
+		'anchor_title' => $anchor_title,
+	];
+   }
+}
