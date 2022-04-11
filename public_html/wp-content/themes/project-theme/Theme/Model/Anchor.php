@@ -11,7 +11,7 @@ class Anchor {
    }
 
    public function getAnchor() {
-		$anchor = $this->layout['anchor'];
+ 		$anchor = $this->layout['anchor'];
     $anchor_title = $this->layout['anchor_title'];
 	return [
 		'layoutName' => 'anchor',

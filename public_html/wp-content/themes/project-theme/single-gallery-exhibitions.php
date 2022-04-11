@@ -440,12 +440,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 					$templateName = 'c-kuula';
 				break;
 
-
 				//Get anchor
 			case 'anchor':
 				$templateName = 'c-anchor';
 			break;
-
 
 				        //text iframe
 				     case 'text_iframe_content':
