@@ -7,13 +7,13 @@
 				<?= $data['textContentTitle']; ?>
 			</h2>
 		<?php endif; ?>
-		
+
 		<?php if($data['textContentDate']) : ?>
 			<div class="l-content__block__date">
 				<?= $data['textContentDate']; ?>
 			</div>
 		<?php endif; ?>
-		
+
 		<?php if($data['textContentCopy']) : ?>
 			<div class="l-content__block__body-text">
 				<?= $data['textContentCopy']; ?>
@@ -26,14 +26,11 @@
 			<?php if( $data['textContentLinkDescription'] && !$data['textContentLink'] ) : ?>
 				<?= $data['textContentLinkDescription']; ?>
 			<?php endif; ?>
-			
+
 			<?php if( $data['textContentLink'] && $data['textContentLinkDescription'] ) : ?>
-				<a href="<?= $data['textContentLink']['url'] ?>" target="<?= $data['textContentLink']['target'] ?>" class="c-works__href"><?= $data['textContentLinkDescription']; ?></a>
-				<svg class="u-icon c-works__icon">
-					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#<?= $data['darkBackground'] ? 'shape-link-arrow-white' : 'shape-link-arrow-black'; ?>" viewBox="0 0 32 32"></use>
-				</svg>
+			<a href="<?= $data['textContentLink']['url'] ?>" target="<?= $data['textContentLink']['target'] ?>" class="cta-button"><?= $data['textContentLinkDescription']; ?></a>
 			<?php endif; ?>
-			
+
 			</span>
 		<?php endif; ?>
 

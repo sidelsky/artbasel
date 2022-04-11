@@ -508,6 +508,10 @@ button[disabled]:hover {
   background-color: #1f1f1f;
 }
 
+.l-content__block--link a.cta-button:hover {
+  color: white !important;
+}
+
 .c-clock {
   font-size: 4.8rem;
   color: #fff;

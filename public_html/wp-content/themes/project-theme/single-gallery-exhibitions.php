@@ -98,7 +98,9 @@ if( get_field('modal_notice') ) { ?>
 
 <!-- single hero video ends here -->
 
-<?php if ( get_field('has_image_hero') == true ) { ?>
+<!-- start of image hero -->
+
+<?php if ( get_field('has_vimeo_hero') == false ) { ?>
 
 <?php
 /**
@@ -227,6 +229,9 @@ if( $parallax_hero ) : ?>
 
 <?php endif; ?>
 <?php } ?>
+
+<!-- end of image hero -->
+
 <?php
 /**
  * Show email field at the Top
@@ -395,7 +400,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
  */
 ?>
 
-	<section class="l-content" id="top">
+	<section class="" id="top">
 		<?php
 
 		foreach($allLayouts as $index => $value) {
@@ -443,6 +448,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				//Get anchor
 			case 'anchor':
 				$templateName = 'c-anchor';
+            
+				//Get image parallax
+			case 'kuula1':
+				$templateName = 'c-img-parallax';
 			break;
 
 				        //text iframe

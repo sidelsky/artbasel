@@ -1,0 +1,205 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Social Share For WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-30 17:32+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
+
+#: includes/wpsi_register_settings.php:43
+msgid "Add Social Buttons"
+msgstr ""
+
+#: includes/template/wpsi_buttons_list.php:36
+msgid "Add Social Service +"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Add your valualble products on social sharing platform using Social Share "
+"For WooCommerce plugin with responsive design."
+msgstr ""
+
+#: includes/template/wpsi_buttons_position.php:17
+msgid "After Add To Cart Button"
+msgstr ""
+
+#: includes/template/wpsi_buttons_position.php:14
+msgid "After Product Title"
+msgstr ""
+
+#: includes/template/wpsi_buttons_position.php:16
+msgid "After Short Description"
+msgstr ""
+
+#: includes/template/wpsi_buttons_position.php:15
+msgid "Before Product Title"
+msgstr ""
+
+#: includes/template/wpsi_buttons_position.php:18
+msgid "Before Tab Information"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:42 images/data/template.php:27
+msgid "Blogger"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:44 images/data/template.php:29
+msgid "Buffer"
+msgstr ""
+
+#: includes/wpsi_register_settings.php:27
+msgid "Buttons Positions"
+msgstr ""
+
+#: includes/wpsi_register_settings.php:35
+msgid "Buttons Style"
+msgstr ""
+
+#: includes/template/wpsi_buttons_position.php:13
+msgid "Default"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:46 images/data/template.php:31
+msgid "Digg"
+msgstr ""
+
+#: includes/wpsi_register_settings.php:51
+msgid "Display Type"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:28 images/data/template.php:11
+msgid "Email"
+msgstr ""
+
+#: includes/wpsi_register_settings.php:19
+msgid "Enable Sharing Buttons"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:22 images/data/template.php:5
+msgid "Facebook"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:48
+msgid "FB Messanger"
+msgstr ""
+
+#: images/data/template.php:19
+msgid "FB Messenger"
+msgstr ""
+
+#: includes/wpsi_register_settings.php:12
+msgid "General Settings"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:38 images/data/template.php:23
+msgid "Gmail"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://ignizeo.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://wordpress.org/plugins/wpsi-social-share-for-woocommerce/"
+msgstr ""
+
+#: includes/template/wpsi_buttons_icon_text.php:14
+msgid "Icons Only"
+msgstr ""
+
+#. Author of the plugin
+msgid "kuldip_raghu"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:30 images/data/template.php:13
+msgid "LinkedIn"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:26 images/data/template.php:9
+msgid "Pinterest"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:32 images/data/template.php:15
+msgid "Reddit"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:10
+#: includes/wpsi_render_settings_panel.php:24
+msgid "Save Changes"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:12
+msgid "Select Social Icon For WooCommerce"
+msgstr ""
+
+#: wpsi-social-share-for-woocommerce.php:124
+msgid "Settings"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:50 images/data/template.php:33
+msgid "Skype"
+msgstr ""
+
+#. Name of the plugin
+#: wpsi-social-share-for-woocommerce.php:161
+#: includes/wpsi_render_settings_panel.php:16
+msgid "Social Share For WooCommerce"
+msgstr ""
+
+#: wpsi-social-share-for-woocommerce.php:125
+msgid "Support"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:52 images/data/template.php:35
+msgid "Telegram"
+msgstr ""
+
+#: includes/template/wpsi_buttons_icon_text.php:15
+msgid "Text With Icons"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:34 images/data/template.php:17
+msgid "Tumblr"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:24 images/data/template.php:7
+msgid "Twitter"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:54 images/data/template.php:37
+msgid "VK"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:40 images/data/template.php:25
+msgid "WhatsApp"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:36 images/data/template.php:21
+msgid "WordPress"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:56 images/data/template.php:39
+msgid "Yi Bookmarks"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:58 images/data/template.php:41
+msgid "Yi Mail"
+msgstr ""
+
+#: includes/wpsi_modal_template.php:60
+msgid "Yi Messanger"
+msgstr ""
+
+#: images/data/template.php:43
+msgid "Yi Messenger"
+msgstr ""

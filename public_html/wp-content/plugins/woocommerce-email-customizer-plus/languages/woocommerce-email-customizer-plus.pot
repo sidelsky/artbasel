@@ -1,0 +1,839 @@
+# Copyright (C) 2020 WooCommerce Email Customizer Plus
+# This file is distributed under the same license as the WooCommerce Email Customizer Plus package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Email Customizer Plus 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/woocommerce-email-customizer-plus\n"
+"POT-Creation-Date: 2020-06-22 06:19:15+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: App/Controllers/Admin/License.php:89
+msgid "WooCommerce Email Customizer Plus installed"
+msgstr ""
+
+#: App/Controllers/Admin/License.php:91
+msgid " - Make sure to activate your copy of the plugin to receive updates, support and security fixes!"
+msgstr ""
+
+#: App/Controllers/Admin/License.php:94 App/Controllers/Admin/Main.php:1106
+#: App/Views/Admin/main.php:10
+msgid "Settings"
+msgstr ""
+
+#: App/Controllers/Admin/License.php:96
+msgid "Dismiss this notice."
+msgstr ""
+
+#: App/Controllers/Admin/License.php:171
+msgid "enter license key"
+msgstr ""
+
+#: App/Controllers/Admin/License.php:172 App/Controllers/Admin/License.php:175
+msgid "Please %s to receive automatic updates or you can manually update the plugin by downloading it."
+msgstr ""
+
+#: App/Controllers/Admin/License.php:174
+msgid "renew your support license"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:21 App/Controllers/Admin/Main.php:22
+#: App/Views/Admin/editor.php:16 App/Views/Admin/main.php:3
+msgid "Email Customizer Plus"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:59 App/Controllers/Admin/Main.php:162
+msgid "Your template was ready to download!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:83
+msgid "Sorry, Source template not found!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:89
+msgid "can't copy the template because source and destination templates are same!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:111
+msgid "Template copied successfully!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:123
+msgid "Old template successfully replaced by new template!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:128
+msgid "Sorry, Invalid ajax call!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:168 App/Controllers/Admin/Main.php:255
+#: App/Controllers/Admin/Main.php:716 App/Controllers/Admin/Main.php:735
+msgid "Data corrupted!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:250
+msgid "Template status changed successfully!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:252 App/Controllers/Admin/Main.php:947
+msgid "Sorry, template not found!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:306
+msgid "Can't process further"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:362
+msgid "Unable to process"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:425
+msgid "Dummy Data"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:444
+msgid "Enter License Key"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:449 App/Views/Admin/Settings/general.php:18
+msgid "Validate"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:464
+msgid "- To get billing address"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:465
+msgid "- To get billing first name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:466
+msgid "- To get billing last name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:467
+msgid "- To get billing name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:468
+msgid "- to get billing company"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:469
+msgid "- To get billing phone"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:470
+msgid "- To get billing address 1"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:471
+msgid "- To get billing address 2"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:472
+msgid "- To get billing city"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:473
+msgid "- To get billing state"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:474
+msgid "- To get billing province"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:475
+msgid "- To get billing zip code"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:476
+msgid "- To get billing country"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:479
+msgid "- To get shipping address"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:480
+msgid "- To get shipping first name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:481
+msgid "- To get shipping last name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:482
+msgid "- To get shipping name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:483
+msgid "- To get shipping company"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:484
+msgid "- To get shipping address 1"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:485
+msgid "- To get shipping address 2"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:486
+msgid "- To get shipping city"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:487
+msgid "- To get shipping state"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:488
+msgid "- To get shipping province"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:489
+msgid "- To get shipping zip code"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:490
+msgid "- To get shipping country"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:491
+msgid "- To get shipping method title"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:492
+msgid "- To get shipping price"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:495
+msgid "- To get shop name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:496
+msgid "- To get shop E-Mail"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:497
+msgid "- To get shop URL"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:498
+msgid "- To get shop address 1"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:499
+msgid "- To get shop address 2"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:500
+msgid "- To get shop city"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:501
+msgid "- To get shop zip code"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:504
+msgid "- to get order id"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:505
+msgid "- To get order E-Mail"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:506
+msgid "- To get order number"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:507
+msgid "- To get total item count"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:508
+msgid "- To get last note"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:509
+msgid "- To get landing site URL"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:510
+msgid "- To get note"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:511
+msgid "- To get order status URL"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:512
+msgid "- To get order status link"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:513
+msgid "- To get order sub-total"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:514
+msgid "- To get order total"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:515
+msgid "- To get order created date"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:516
+msgid "- To get order id"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:517
+msgid "- To get order fee"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:518
+msgid "- To get order refund"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:519
+msgid "- To get order url"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:520
+msgid "- To get order cart details"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:521
+msgid "- To get customer provided note"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:524
+msgid "- To get order payment method"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:525
+msgid "- To get payment URL"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:526
+msgid "- To get order transaction id"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:529 App/Controllers/Admin/Main.php:537
+msgid "- To get customer name"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:530
+msgid "- To get customer E-Mail"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:533
+msgid "- To get customer password"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:534
+msgid "- To get customer activation URL"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:540
+msgid "- Facebook URL from settings"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:541
+msgid "- Twitter URL from settings"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:542
+msgid "- Instagram URL from settings"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:543
+msgid "- Linkedin URL from settings"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:544
+msgid "- Pintrest URL from settings"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:591
+#: App/Controllers/Admin/Settings/General.php:18
+msgid "Please enter valid license key!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:594
+#: App/Controllers/Admin/Settings/General.php:20
+msgid "Your license key was expired!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:597
+#: App/Controllers/Admin/Settings/General.php:23
+msgid "Your license key validated successfully!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:601
+msgid "Please enter license key!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:681
+msgid "Yellow"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:686
+msgid "Blue"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:698
+msgid "Test E-Mail disabled for this site!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:709
+msgid "Email customizer test email"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:710
+msgid "Email sent successfully!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:712
+msgid "Error in sending E-Mail!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:771
+msgid "Admin"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:867
+msgid "Saving..."
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:868
+msgid "Copying..."
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:869 App/Views/Admin/customizer.php:82
+#: App/Views/Admin/customizer.php:151
+msgid "Copy"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:870
+msgid "Are you sure want to delete this template?"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:871
+msgid "Save  "
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:872
+msgid "Validating..."
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:873
+msgid "Validate  "
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:875
+msgid "You need to install and activate the Retainful plugin in-order to enable integration."
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:925
+msgid "Data has corrupted!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:944
+msgid "Template saved successfully!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:1105
+msgid "Templates"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:1133
+msgid "Settings saved successfully!"
+msgstr ""
+
+#: App/Controllers/Admin/Main.php:1136
+msgid "Settings key not found!"
+msgstr ""
+
+#: App/Controllers/Admin/Settings/General.php:10
+msgid "General"
+msgstr ""
+
+#: App/Controllers/Compatibles/Retainful.php:68
+msgid "Display next order coupon code"
+msgstr ""
+
+#: App/Controllers/Compatibles/Retainful.php:69
+msgid "Display next order coupon code with E-mail tracking"
+msgstr ""
+
+#: App/Controllers/Compatibles/Retainful.php:70
+msgid "Display next order coupon value"
+msgstr ""
+
+#: App/Controllers/Compatibles/Retainful.php:71
+msgid "Next order coupon auto apply URL"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:58
+msgid "To load the subscription details in table format"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:59
+msgid "Display subscription start date"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:60
+msgid "Display subscription end date"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:61
+msgid "Display subscription next payment date"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:62
+msgid "Display subscription trial end date"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:63
+msgid "Display subscription cancelled date"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:64
+msgid "Display subscription payment retry date"
+msgstr ""
+
+#: App/Controllers/Compatibles/Subscription.php:65
+msgid "Display subscription last order created"
+msgstr ""
+
+#: App/Controllers/ShortCodes.php:127
+msgid "Order"
+msgstr ""
+
+#: App/Helpers/Template.php:65
+msgid "Template not found"
+msgstr ""
+
+#: App/Router.php:80
+msgid "This plugin can not be activated because it requires minimum PHP version of %1$s."
+msgstr ""
+
+#: App/Router.php:83
+msgid "Woocommerce must installed and activated in-order to use WooCommerce Email Customizer Plus!"
+msgstr ""
+
+#: App/Router.php:86
+msgid "Woocommerce Email Customizer + requires at least Woocommerce"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:10
+msgid "License key"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:16
+msgid "Enter license key here..."
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:37
+msgid "Custom CSS"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:44
+msgid "Put your custom Css here..."
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:48
+msgid "Show product SKU "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:55
+#: App/Views/Admin/Settings/general.php:69
+#: App/Views/Admin/Settings/general.php:84
+#: App/Views/Admin/Settings/general.php:98
+#: App/Views/Admin/Settings/general.php:114
+msgid "Yes"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:58
+#: App/Views/Admin/Settings/general.php:70
+#: App/Views/Admin/Settings/general.php:87
+#: App/Views/Admin/Settings/general.php:101
+#: App/Views/Admin/Settings/general.php:117
+msgid "No"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:62
+msgid "Show payment instruction "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:71
+msgid "Only to customers"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:77
+msgid "Auto fix broken HTML "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:91
+msgid "Enable Retainful Integration "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:107
+msgid "Show product image "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:123
+msgid "Image size "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:130
+msgid "Thumbnail"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:131
+msgid "Full"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:140
+msgid "Image height "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:151
+msgid "Image width "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:220
+msgid "Direction Settings "
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:235
+msgid "Left to Right"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:238
+msgid "Right to Left"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:253
+msgid "Save"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:258
+msgid "Change email subject and from name"
+msgstr ""
+
+#: App/Views/Admin/Settings/general.php:259
+msgid ""
+"Click\n"
+"                    here"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:20
+msgid "Export All"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:26
+msgid "Status"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:27
+msgid "Email"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:28
+msgid "Action"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:78
+msgid "Export"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:109
+msgid "Copy to Language"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:128
+msgid "Copy to Email Type"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:147
+msgid "Note:"
+msgstr ""
+
+#: App/Views/Admin/customizer.php:147
+msgid "Copying template will overwrite the destination template with the chosen template."
+msgstr ""
+
+#: App/Views/Admin/customizer.php:153
+msgid "Go to copied template"
+msgstr ""
+
+#: App/Views/Admin/editor.php:3
+msgid "Loading editor, Please Wait..."
+msgstr ""
+
+#: App/Views/Admin/editor.php:13
+msgid "Sample Data"
+msgstr ""
+
+#: App/Views/Admin/main.php:7
+msgid "Customizer"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:6
+msgid "Billing Address"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:22
+msgid "Shipping Address"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:38
+msgid "Shop Details"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:54
+msgid "Order Details"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:69
+msgid "Order Meta"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:72
+msgid "Your meta key"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:81
+msgid "Payment Details"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:97
+msgid "Reset Password"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:113
+msgid "New User"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:129
+msgid "Customer Details"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:145
+msgid "Additional Short codes"
+msgstr ""
+
+#: App/Views/Admin/short_codes.php:161
+msgid "Social media Short codes"
+msgstr ""
+
+#: App/Views/Admin/template_chooser.php:4
+msgid "Choose Your Template"
+msgstr ""
+
+#: App/Views/Admin/template_chooser.php:21
+msgid "Use"
+msgstr ""
+
+#: templates/order_items.php:32
+msgid "Product"
+msgstr ""
+
+#: templates/order_items.php:33
+msgid "Quantity"
+msgstr ""
+
+#: templates/order_items.php:34
+msgid "Price"
+msgstr ""
+
+#: templates/order_items.php:51
+msgid "Product image"
+msgstr ""
+
+#: templates/subscription_details.php:2
+msgid "Subscription details"
+msgstr ""
+
+#: templates/subscription_details.php:7
+msgid "Subscription"
+msgstr ""
+
+#: templates/subscription_details.php:9
+msgctxt "table headings in notification email"
+msgid "Price"
+msgstr ""
+
+#: templates/subscription_details.php:11
+msgctxt "table heading"
+msgid "Last Order Date"
+msgstr ""
+
+#: templates/subscription_details.php:13
+msgctxt "table headings in notification email"
+msgid "End of Prepaid Term"
+msgstr ""
+
+#: templates/subscription_details.php:30
+msgid "-"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:54
+msgid "View details"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:77
+msgid "More information about %s"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:128
+msgid "Check for updates"
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:213
+msgctxt "the plugin title"
+msgid "The %s plugin is up to date."
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:215
+msgctxt "the plugin title"
+msgid "A new version of the %s plugin is available."
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:217
+msgctxt "the plugin title"
+msgid "Could not determine if updates are available for %s."
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Plugin/Ui.php:223
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: vendor/yahnis-elsts/plugin-update-checker/Puc/v4p8/Vcs/PluginUpdateChecker.php:98
+msgid "There is no changelog available."
+msgstr ""
+#. Plugin Name of the plugin/theme
+msgid "WooCommerce Email Customizer Plus"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.flycart.org"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Create awesome transactional emails with a drag and drop email builder."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Flycart"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.flycart.org"
+msgstr ""
