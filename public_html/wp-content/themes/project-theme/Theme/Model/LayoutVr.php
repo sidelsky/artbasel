@@ -8,9 +8,6 @@ use Theme\Model\TextContent;
 use Theme\Model\ImageContent;
 use Theme\Model\WorksContent;
 use Theme\Model\WiderTextContent;
-use Theme\Model\Kuula;
-use Theme\Model\Kuula1;
-use Theme\Model\Anchor;
 
 class LayoutVr {
 
@@ -59,6 +56,7 @@ class LayoutVr {
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
 
+
             //Kuula
 			   case 'kuula':
                $kuula = new Kuula($layout);
@@ -73,10 +71,10 @@ class LayoutVr {
 
 
         //anchor
-     case 'anchor':
-               $anchor = new Anchor($layout);
-               $currentLayout = $anchor->getAnchor();
-    break;
+         case 'anchor':
+                   $anchor = new Anchor($layout);
+                   $currentLayout = $anchor->getAnchor();
+        break;
 
             //text iframe
    				  //   case 'text_iframe_content':
