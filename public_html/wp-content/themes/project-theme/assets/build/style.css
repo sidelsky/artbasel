@@ -7759,3 +7759,16 @@ ul.link li a {
 ul.link li:last-child {
   border: 0;
 }
+
+.parallax {
+  width: 100%;
+  /* Set a specific height */
+  min-height: 750px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
