@@ -7740,6 +7740,10 @@ body.is-scrolled > .header {
     text-align: center;
 }
 
+.anchorlink {
+  scroll-margin-top: 6rem;  
+}
+
 ul.link {
 
 }
