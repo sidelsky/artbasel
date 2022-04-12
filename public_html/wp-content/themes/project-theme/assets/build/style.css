@@ -7772,3 +7772,7 @@ ul.link li:last-child {
   background-size: cover;
   margin-bottom: 30px;
 }
+
+html {
+scroll-behavior: smooth;
+}
