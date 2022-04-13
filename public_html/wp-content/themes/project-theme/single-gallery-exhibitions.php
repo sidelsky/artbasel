@@ -98,7 +98,7 @@ if( get_field('modal_notice') ) { ?>
 
 <!-- single hero video ends here -->
 
-<?php if ( get_field('has_image_hero') == true ) { ?>
+<?php if ( get_field('has_hero_image') == true ) { ?>
 
 <?php
 /**
