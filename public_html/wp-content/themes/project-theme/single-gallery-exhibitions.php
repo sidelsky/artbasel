@@ -453,11 +453,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				$templateName = 'c-anchor';
 					 break;
 
-		
-					//Get Kuula
-				case 'kuula':
-					$templateName = 'c-kuula';
-				break;
+				//Get Kuula
+			case 'kuula':
+				$templateName = 'c-kuula';
+			break;
 
 				        //text iframe
 				     case 'text_iframe_content':
