@@ -227,6 +227,10 @@ if( $parallax_hero ) : ?>
 
 <?php endif; ?>
 <?php } ?>
+
+<!-- end of image hero -->
+
+
 <?php
 /**
  * Show email field at the Top
@@ -396,6 +400,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 ?>
 
 	<section class="l-content" id="top">
+
 		<?php
 
 		foreach($allLayouts as $index => $value) {
@@ -439,6 +444,16 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				case 'kuula':
 					$templateName = 'c-kuula';
 				break;
+
+				//Get image parallax
+						case 'kuula1':
+							$templateName = 'c-img-parallax';
+						break;
+
+						//Get anchor
+								case 'anchor':
+									$templateName = 'c-anchor';
+								break;
 
 				        //text iframe
 				     case 'text_iframe_content':

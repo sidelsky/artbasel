@@ -508,6 +508,10 @@ button[disabled]:hover {
   background-color: #1f1f1f;
 }
 
+.l-content__block--link a.cta-button:hover {
+  color: white !important;
+}
+
 .c-clock {
   font-size: 4.8rem;
   color: #fff;
@@ -7728,4 +7732,57 @@ a img.aligncenter {
 
 body.is-scrolled > .header {
   background-color: #3b5998;
-} 
+}
+
+
+.anchor-wrap {
+  text-align: center;
+}
+
+.anchor-wrap .anchor {
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul.link {
+
+}
+
+ul.link li {
+  display: inline; margin: 0 5px 0;
+  border-right: 1px solid black;
+  padding-right: 5px;
+}
+
+ul.link li a {
+  color: black;
+  font-size: 110%;
+  text-transform: capitalize;
+}
+
+ul.link li:last-child {
+  border: 0;
+}
+
+.parallax {
+  width: 100%;
+  /* Set a specific height */
+  min-height: 750px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+html { /* smoothscroll everywhere */
+scroll-behavior: smooth;
+}
+
+.anchorlink {
+  scroll-margin-top: 6rem;
+}
