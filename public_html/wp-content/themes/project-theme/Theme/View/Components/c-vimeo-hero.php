@@ -33,6 +33,17 @@
     $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
 
     // Display customized HTML.
+
+    // YB - Get direct link for Vimeo MP4, Use HTML5 video container instead of iframe.
+  $vimeo_direct = get_sub_field('vimeo_direct_link');
+  if($vimeo_direct){
+      $iframe = '<video class="slider-video-hero" id="hero-full-video" poster="" loop="" muted="" playsinline="" autoplay="">
+      <source src="'.$vimeo_direct.'" type="video/mp4">
+    </video>';
+  }else{
+    // Do nothing
+  }
+
      echo $iframe;
 
     // Get sub field values.
@@ -45,7 +56,22 @@
           <p><?php the_sub_field('vimeo_hero_pre_title'); ?></p>
           <h1><?php the_sub_field('vimeo_hero_title'); ?></h1>
           <p><?php the_sub_field('vimeo_hero_desc'); ?></p>
-          <a href="<?php echo esc_url( $link['url'] ); ?>" class="vimeo-anchor-link"><?php echo esc_html( $link_title ); ?></a>
+
+          <?php
+          if($link_title){
+            echo '<a href="'.esc_url( $link['url'] ).'" class="vimeo-anchor-link">'.esc_html( $link_title ).'</a>';
+          }else{
+            // Do nothing
+          }
+        ?>
+
+          <?php if ( get_sub_field('vimeo_hero_link_title') == true ) { ?>
+           <?php the_sub_field('vimeo_hero_link_title'); ?>
+              <a href="<?php echo esc_url( $link['url'] ); ?>" class="vimeo_hero_link">
+                <?php echo esc_html( $link_title ); ?>
+              </a>
+          <?php } ?>
+
       </div>
 <?php endwhile; ?>
 <?php endif; ?>
@@ -65,6 +91,20 @@ if (windowWidth <= 540) {
 </script>
 
 <style>
+
+/* YB Styles */
+.slider-video-hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hide-parallax{
+  display: none;
+}
+
   #hero {
     position: absolute;
         top: 50%;
