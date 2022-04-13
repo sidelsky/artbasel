@@ -87,25 +87,37 @@ if( get_field('modal_notice') ) { ?>
 
 <?php } ?>
 
+
+
 <!-- single hero video starts here -->
+<?php
 
-<?php if ( get_field('has_vimeo_hero') == true ) { ?>
+$hero = get_field('vimeo_hero_panel');
+$direct_link = $hero['vimeo_direct_link'];
 
-<!-- Show vimeo hero -->
-<?php get_template_part( 'Theme/View/Components/c-vimeo-hero' ); ?>
+if($direct_link){
 
-<?php } ?>
+ get_template_part( 'Theme/View/Components/c-vimeo-hero' );
+
+ // Add class to hide parallax
+ $hide_parallax = "hide-parallax";
+ }
+
+
+?>
+
 
 <!-- single hero video ends here -->
 
-<?php if ( get_field('has_hero_image') == true ) { ?>
+
+
 
 <?php
 /**
  * Hero  image
  */
 $parallax_hero = get_field( 'parallax_hero' );
-if( $parallax_hero ) : ?>
+if( get_field('parallax_hero') == true  ) : ?>
 	<?php
 	/**
 	 * Parallax hero
@@ -193,7 +205,7 @@ if( $parallax_hero ) : ?>
 
 <?php else :
 	$hero = get_field('hero');
-	if($hero) :
+	if($hero['image'] ) :
 	?>
 
 		<span class="c-works__href-wrap c-works__href-wrap--back c-works__href-wrap--center">
@@ -204,8 +216,6 @@ if( $parallax_hero ) : ?>
 		</span>
 
 		<section class="u-section c-paralax-header c-paralax-header--desktop">
-
-
 			<div class="c-header-background-image" style="background-image: url('<?= $hero['image']['sizes']['large']; ?>')">
 			<span class="c-header-background-image__shading" style="background-color: rgba(0,0,0,<?= get_field('image_shading_cover') ?>);"></span>
 				<div class="parallax-window__content" data-id="title">
@@ -221,15 +231,9 @@ if( $parallax_hero ) : ?>
 				</div>
 			</div>
 		</section>
-
-
 	<?php endif; ?>
 
 <?php endif; ?>
-<?php } ?>
-
-<!-- end of image hero -->
-
 
 <?php
 /**
@@ -400,7 +404,6 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 ?>
 
 	<section class="l-content" id="top">
-
 		<?php
 
 		foreach($allLayouts as $index => $value) {
@@ -440,21 +443,10 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
          			];
 						break;
 
-						//Get image parallax
-			 	 case 'kuula1':
-			 		$templateName = 'c-img-parallax';
-			 	 break;
-
-				//Get anchor
-			case 'anchor':
-				$templateName = 'c-anchor';
-					 break;
-
-				//Get Kuula
-			case 'kuula':
-				$templateName = 'c-kuula';
-			break;
-
+					//Get Kuula
+				case 'kuula':
+					$templateName = 'c-kuula';
+				break;
 
 				        //text iframe
 				     case 'text_iframe_content':
