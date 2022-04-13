@@ -59,6 +59,7 @@ class LayoutVr {
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
 
+
             //Kuula
 			   case 'kuula':
                $kuula = new Kuula($layout);
@@ -77,6 +78,7 @@ class LayoutVr {
                  $anchor = new Anchor($layout);
                  $currentLayout = $anchor->getAnchor();
               break;
+
 
             //text iframe
    				  //   case 'text_iframe_content':

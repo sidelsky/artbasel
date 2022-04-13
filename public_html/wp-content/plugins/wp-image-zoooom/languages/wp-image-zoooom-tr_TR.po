@@ -1,0 +1,536 @@
+# Copyright (C) 2017 WP Image Zoom
+# This file is distributed under the same license as the WP Image Zoom package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Image Zoom 1.12\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-image-zoooom\n"
+"POT-Creation-Date: 2017-07-09 12:33:44+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-05-31 03:21+0300\n"
+"Language-Team: İbrahim Arıkan | https://ibrahimarikan.tk\n"
+"X-Generator: Poedit 2.2.3\n"
+"Last-Translator: İbrahim Arıkan <gsi33@gmail.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: tr_TR\n"
+
+#: image-zoooom.php:51 image-zoooom.php:58 includes/image-zoom.php:36
+#: includes/image-zoom.php:43
+msgid "Cheatin&#8217; huh?"
+msgstr "Hile mi Yapıyorsun &#8217; Haa ?"
+
+#: image-zoooom.php:158
+msgid "WP Image Zoooom"
+msgstr "WP Image Zoooom"
+
+#: image-zoooom.php:481
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: includes/image-zoom-admin-general.php:33
+#: includes/image-zoom-admin-template.php:22
+msgid "WP Image Zoom by %1$s"
+msgstr "WP Image Zoom Yapımcı %1$s"
+
+#: includes/image-zoom-admin-general.php:40
+#: includes/image-zoom-admin-template.php:29
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: includes/image-zoom-admin-general.php:42
+#: includes/image-zoom-admin-template.php:31
+msgid "Zoom Settings"
+msgstr "Yakınlaştırma Ayarları"
+
+#: includes/image-zoom-admin-general.php:80
+#: includes/image-zoom-admin-template.php:195
+msgid "Save changes"
+msgstr "Değişiklikleri Kaydet"
+
+#: includes/image-zoom-admin-template.php:47
+msgid "Step 1"
+msgstr "1.Adım"
+
+#: includes/image-zoom-admin-template.php:47
+msgid "Choose the Lens Shape"
+msgstr "Lens Şeklini Seçin"
+
+#: includes/image-zoom-admin-template.php:72
+msgid "Step 2"
+msgstr "2.Adım"
+
+#: includes/image-zoom-admin-template.php:72
+msgid "Check your configuration changes on the image"
+msgstr "Resimdeki Yapılandırma Değişikliklerinizi Kontrol Edin"
+
+#: includes/image-zoom-admin-template.php:78
+msgid "Step 3"
+msgstr "3.Adım"
+
+#: includes/image-zoom-admin-template.php:78
+msgid "Make more fine-grained configurations on the zoom"
+msgstr "Yakınlaştırma için daha iyi ayarlanmış yapılandırmalar yapın"
+
+#: includes/image-zoom-admin-template.php:82
+msgid "General"
+msgstr "Genel"
+
+#: includes/image-zoom-admin-template.php:85
+msgid "Lens"
+msgstr "Lens"
+
+#: includes/image-zoom-admin-template.php:88
+msgid "Zoom Window"
+msgstr "Yakınlaştırma Penceresi"
+
+#: includes/image-zoom-admin-template.php:91
+msgid "Custom Text"
+msgstr "Özel Metin"
+
+#: includes/image-zoom-admin-template.php:192
+msgid "Step 4"
+msgstr "4.Adım"
+
+#: includes/image-zoom-admin-template.php:192
+msgid "Don't forget to save the changes in order to apply them on the website"
+msgstr ""
+"Değişikliklerin web sitede etkinleşmesi için ayarlarınızı kaydetmeyi "
+"unutmayın"
+
+#. Plugin Name of the plugin/theme
+#: includes/admin-side.php:31 includes/admin-side.php:32
+msgid "WP Image Zoom"
+msgstr "WP Görsel Yakınlaştırıcı"
+
+#: includes/admin-side.php:113 includes/admin-side.php:130
+msgid "Your settings have been saved."
+msgstr "Ayarlarınız Başarıyla Kaydedildi."
+
+#: includes/admin-side.php:302 includes/admin-side.php:319
+msgid "Unrecognized <b>%1$s</b>. The value was reset to <b>%2$s</b>"
+msgstr "Tanınmayan <b>%1$s</b>. Değer <b>%2$s</b> olarak sıfırlandı"
+
+#: includes/admin-side.php:339
+msgid ""
+"<b>%1$s</b> accepts values between %2$s and %3$s. Your value was reset to <b>"
+"%4$s</b>"
+msgstr ""
+"<b>%1$s</b> Sağda belirtilen değerler arasındakileri kabul ediyor, %2$s ve "
+"%3$s. Değer <b>%4$s</b> olarak sıfırlandı"
+
+#: includes/image-zoom-notices.php:173
+msgid "Dismiss this notice"
+msgstr "Bildirimi Reddet"
+
+#: includes/image-zoom-warnings.php:58
+msgid ""
+"<b>If the zoom does not show up</b> on your website, it could be because you "
+"need to add the “image_zoooom-init” and the “image_zoooom” to the “Scripts "
+"to NOT minify” option in the BWP Minify settings, as shown in <a href=\"%1$s"
+"\" target=\"_blank\">this screenshot</a>."
+msgstr ""
+"Web site üzerinde <b>Eğer ki Yakınlaştırma görünmezse</b>, yanda ki "
+"“image_zoooom-init” ve “image_zoooom” kodlarını, yine “Scripts to NOT "
+"minify” seçeneği ile BWP Minify ayarlarında, <a href=\"%1$s\" target=\"_blank"
+"\">Bu Ekran Görüntüsü</a> 'nde gösterildiği gibi eklemeniz gerekebilir."
+
+#: includes/image-zoom-warnings.php:120
+msgid ""
+"The WP Image Zoom plugin <b>will not work</b> on the WooCommerce products "
+"gallery with the Avada theme. The Avada theme changes entirely the default "
+"WooCommerce gallery with the <a href=\"%1$s\" target=\"_blank\">Flexslider "
+"gallery</a> and the zoom plugin does not support the Flexslider gallery. "
+"Please check the <a href=\"%2$s\" target=\"_blank\">PRO version</a> of the "
+"plugin for compatibility with the Flexslider gallery."
+msgstr ""
+"WP Image Zoom eklentisi, Avada temasında WooCommerce ürünleri galerisinde "
+"<b>çalışmayacak</b>. Avada teması <a href=\"%1$s\" target=\"_blank"
+"\">Flexslider Galerisi</a> ile tamamen varsayılan WooComerce galerisini "
+"değiştiriyor. Ve Zoom eklentisi Flexslider Galerisi'ni desteklemiyor. "
+"Flexslider Galerisiyle uyumluluk için lütfen, eklentinin <a href=\"%2$s\" "
+"target=\"_blank\">PRO versiyon</a> sürümünü kontrol edin."
+
+#: includes/image-zoom-warnings.php:137
+msgid ""
+"The WP Image Zoom plugin <b>will not work</b> on the WooCommerce products "
+"gallery with the Shopkeeper theme. The Shopkeeper theme changes entirely the "
+"default WooCommerce gallery with a custom made gallery not supported by the "
+"free version of the WP Image Zoom plugin. Please check the <a href=\"%1$s\" "
+"target=\"_blank\">PRO version</a> of the plugin for compatibility with the "
+"Shopkeeper's gallery."
+msgstr ""
+"WP Image Zoom eklentisi, Shopkeeper temasında WooCommerce ürünleri "
+"galerisinde <b>çalışmayacak</b>. Shopkeeper teması eklentinin ücretsiz "
+"sürümü tarafından desteklenmeyen özel yapım bir galeri ile tamamen "
+"varsayılan WooComerce galerisini değiştiriyor. Shopkeeper Galerisiyle "
+"uyumluluk için lütfen, eklentinin <a href=\"%1$s\" target=\"_blank\">PRO "
+"version</a> sürümünü kontrol edin."
+
+#: includes/image-zoom-warnings.php:173
+msgid ""
+"WP Image Zoom plugin is not compatible with the <a href=\"admin.php?"
+"page=jetpack\">Jetpack Photon</a> module. If you find that the zoom is not "
+"working, try to deactivate the Photon module and see if that solves it."
+msgstr ""
+"WP Image Zoom eklentisi <a href=\"admin.php?page=jetpack\">Jetpack Photon</"
+"a> modülü ile kesinlikle uyumlu değildir. Eklentinin çalışmadığını tespit "
+"ederseniz, Photon modülünü devre dışı bırakın ve tekrar deneyin."
+
+#: includes/premium-tooltips.php:3
+msgid "Only available in <a href=\"%1$s\" target=\"_blank\">PRO version</a>"
+msgstr ""
+"Yalnızca <a href=\"%1$s\" target=\"_blank\">PRO versiyon</a> da "
+"kullanılabilir"
+
+#: includes/right_columns.php:48
+msgid "WP Image Zoooom Pro"
+msgstr "WP Image Zoooom Pro"
+
+#: includes/right_columns.php:61
+msgid "Upgrade to PRO"
+msgstr "PRO versiyona Yükseltin"
+
+#: includes/right_columns.php:92
+msgid "Like this Plugin?"
+msgstr "Eklentiyi beğendiniz mi ?"
+
+#: includes/right_columns.php:95
+msgid ""
+"Share your opinion with the world on the WordPress.org Plugin Repository."
+msgstr "Fikrinizi dünya ile WordPress.org'ta Eklenti Havuzunda paylaşın."
+
+#: includes/right_columns.php:96
+msgid "Rate it on WordPress.org"
+msgstr "WordPress.org'ta oy verin"
+
+#: includes/settings.php:18
+msgid "Lens Shape"
+msgstr "Lens Şekli"
+
+#: includes/settings.php:20
+msgid "No Lens"
+msgstr "Lens Yok"
+
+#: includes/settings.php:21
+msgid "Circle Lens"
+msgstr "Yuvarlak Lens"
+
+#: includes/settings.php:22
+msgid "Square Lens"
+msgstr "Kare Lens"
+
+#: includes/settings.php:23
+msgid "With Zoom Window"
+msgstr "Pencere üzerinde Yakınlaştır"
+
+#: includes/settings.php:30
+msgid "Cursor Type"
+msgstr "İmleç Şekli"
+
+#: includes/settings.php:32 includes/settings.php:234
+msgid "Default"
+msgstr "Varsayılan"
+
+#: includes/settings.php:33
+msgid "Pointer"
+msgstr "İşaretçi"
+
+#: includes/settings.php:34
+msgid "Crosshair"
+msgstr "Hedef"
+
+#: includes/settings.php:35
+msgid "Zoom"
+msgstr "Büyüteç"
+
+#: includes/settings.php:42
+msgid "Animation Easing Effect"
+msgstr "Animasyon Kaydırma Efekti"
+
+#: includes/settings.php:44
+msgid ""
+"A number between 0 and 200 to represent the degree of the Animation Easing "
+"Effect"
+msgstr ""
+"Animasyon hareket hızı efektinin derecesini gösteren 0 ile 200 arasında bir "
+"sayı girin"
+
+#: includes/settings.php:49
+msgid "Lens Size"
+msgstr "Lens Büyüklüğü"
+
+#: includes/settings.php:52
+msgid ""
+"For Circle Lens it means the diameters, for Square Lens it means the width"
+msgstr "Yuvarlak Lens için Çap, Kare Lens için Genişlik anlamına gelir"
+
+#: includes/settings.php:56 includes/settings.php:109
+msgid "Border Thickness"
+msgstr "Kenar Kalınlığı"
+
+#: includes/settings.php:62 includes/settings.php:122
+msgid "Border Color"
+msgstr "Kenar Rengi"
+
+#: includes/settings.php:67 includes/settings.php:133
+msgid "Fade Time"
+msgstr "Solma Süresi"
+
+#: includes/settings.php:70
+msgid "The amount of time it takes for the Lens to slowly appear or dissapear"
+msgstr "Merceğin yumuşak bir şekilde görünmesi ve kaybolması için geçen süre"
+
+#: includes/settings.php:74
+msgid "Tint"
+msgstr "Ton"
+
+#: includes/settings.php:76
+msgid ""
+"A color that will layed on top the of non-magnified image in order to "
+"emphasize the lens"
+msgstr ""
+"Lensi vurgulamak için büyütülmüş görüntünün üstüne yerleştirilecek bir renk"
+
+#: includes/settings.php:80
+msgid "Tint Color"
+msgstr "Renk Tonu"
+
+#: includes/settings.php:85
+msgid "Tint Opacity"
+msgstr "Opaklık Tonu"
+
+#: includes/settings.php:91
+msgid "Zoom Window Width"
+msgstr "Yakınlaştırma Penceresi Genişliği"
+
+#: includes/settings.php:97
+msgid "Zoom Window Height"
+msgstr "Yakınlaştırma Penceresi Uzunluğu"
+
+#: includes/settings.php:103
+msgid "Distance from the Main Image"
+msgstr "Ana Görüntüden Uzaklık"
+
+#: includes/settings.php:115
+msgid "Shadow Thickness"
+msgstr "Gölge Kalınlığı"
+
+#: includes/settings.php:119
+msgid "Use 0px to remove the shadow"
+msgstr "Gölgeyi Kaldırmak için 0px olarak belirtin"
+
+#: includes/settings.php:127
+msgid "Rounded Corners"
+msgstr "Yuvarlak Köşeler"
+
+#: includes/settings.php:136
+msgid ""
+"The amount of time it takes for the Zoom Window to slowly appear or disappear"
+msgstr ""
+"Yakınlaştırma Penceresinin yavaşça görünmesi veya kaybolması için geçen süre"
+
+#: includes/settings.php:140
+msgid "Enable the zoom on WooCommerce products"
+msgstr "WooCommerce ürünlerinde Yakınlaştırmayı Etkinleştir"
+
+#: includes/settings.php:145
+msgid "Exchange the thumbnail with main image on WooCommerce products"
+msgstr "WooCommerce ürünlerinde ana resimle küçük resmi değiştirin"
+
+#: includes/settings.php:148
+msgid ""
+"On a WooCommerce gallery, when clicking on a thumbnail, not only the main "
+"image will be replaced with the thumbnail's image, but also the thumbnail "
+"will be replaced with the main image"
+msgstr ""
+"WooCommerce galerisinde küçük resme tıklandığında sadece ana resim küçük "
+"resimle değiştirilmez, ayrıca küçük resim ana resimle değiştirilir"
+
+#: includes/settings.php:151
+msgid "Enable the zoom on mobile devices"
+msgstr "Yakınlaştırmayı Mobil Cihazlar'da Etkinleştir"
+
+#: includes/settings.php:154
+msgid "Tablets are also considered mobile devices"
+msgstr "Tabletler'de Mobil Cihazlar olarak kabul edilir"
+
+#: includes/settings.php:157
+msgid "Enable the zoom on WooCommerce category pages"
+msgstr "Yakınlaştırmayı WooCommerce Kategori sayfasında Etkinleştir"
+
+#: includes/settings.php:163
+msgid "Force it to work on WooCommerce"
+msgstr "WooCommerce'de çalışmaya zorla"
+
+#: includes/settings.php:173
+msgid "Remove the Lightbox on thumbnail images"
+msgstr "Küçük resimler üzerindeki LightBox'u kaldırın"
+
+#: includes/settings.php:179
+msgid "Remove the Lightbox"
+msgstr "LightBox'u kaldır"
+
+#: includes/settings.php:185
+msgid "Enable on WooCommerce variation products"
+msgstr "WooCommerce varyasyon ürünlerinde etkinleştir"
+
+#: includes/settings.php:191
+msgid "Enable on attachments pages"
+msgstr "Ek sayfalarda Etkinleştir"
+
+#: includes/settings.php:197
+msgid "FlexSlider container class"
+msgstr "FlexSlide konteyner sınıfı"
+
+#: includes/settings.php:203
+msgid ""
+"Enable inside <a href=\"http://fancyapps.com/fancybox/\" target=\"_blank"
+"\">fancyBox</a> lightbox"
+msgstr ""
+"<a href=\"http://fancyapps.com/fancybox/\" target=\"_blank\">fancyBox</a> "
+"için LightBox'u etkinleştir"
+
+#: includes/settings.php:209
+msgid ""
+"Enable inside <a href=\"https://jetpack.com/ support/carousel/\" target="
+"\"_blank\">Jetpack Carousel</a> lightbox"
+msgstr ""
+"<a href=\"https://jetpack.com/ support/carousel/\" target=\"_blank\">Jetpack "
+"Carousel</a> için LightBox'u etkinleştir"
+
+#: includes/settings.php:216
+msgid "Huge IT Gallery id"
+msgstr "Huge IT Galeri Kimlik Numarası ( ID )"
+
+#: includes/settings.php:222
+msgid "Enable the zoom on ..."
+msgstr "Yakınlaştırmayı etkinleştir ..."
+
+#: includes/settings.php:232
+msgid "Zoom Level"
+msgstr "Yakınlaştırma Seviyesi"
+
+#: includes/settings.php:235
+msgid "1,5 times"
+msgstr "1,5 Defa"
+
+#: includes/settings.php:236
+msgid "2 times"
+msgstr "2 Defa"
+
+#: includes/settings.php:237
+msgid "2,5 times"
+msgstr "2,5 Defa"
+
+#: includes/settings.php:238
+msgid "3 times"
+msgstr "3 Defa"
+
+#: includes/settings.php:246
+msgid "Lens Color"
+msgstr "Lens Rengi"
+
+#: includes/settings.php:252
+msgid "Show as Grid"
+msgstr "Izgara şeklinde göster"
+
+#: includes/settings.php:258
+msgid "Responsive"
+msgstr "Uyumlu (Responsive)"
+
+#: includes/settings.php:264
+msgid "Responsive Threshold"
+msgstr "Uyumlu(Responsive) Eşik"
+
+#: includes/settings.php:271
+msgid "Positioning"
+msgstr "Konumlandırma"
+
+#: includes/settings.php:273
+msgid "Right Top"
+msgstr "Sağ Üst"
+
+#: includes/settings.php:274
+msgid "Right Bottom"
+msgstr "Sağ Alt"
+
+#: includes/settings.php:275
+msgid "Right Center"
+msgstr "Sağ Orta"
+
+#: includes/settings.php:276
+msgid "Left Top"
+msgstr "Sol Üst"
+
+#: includes/settings.php:277
+msgid "Left Bottom"
+msgstr "Sol Alt"
+
+#: includes/settings.php:278
+msgid "Left Center"
+msgstr "Sol Orta"
+
+#: includes/settings.php:287
+msgid "Mousewheel Zoom"
+msgstr "Fare Tekerleği ile Yakınlaştır-Uzaklaştır"
+
+#: includes/settings.php:293
+msgid "Text on the image"
+msgstr "Görsel üzerinde Yazı"
+
+#: includes/settings.php:299
+msgid "Text Size"
+msgstr "Yazı Boyutu"
+
+#: includes/settings.php:306
+msgid "Text Color"
+msgstr "Yazı Rengi"
+
+#: includes/settings.php:312
+msgid "Text Align"
+msgstr "Yazı Hizası"
+
+#: includes/settings.php:314
+msgid "Top Left"
+msgstr "Sol Üst Köşe"
+
+#: includes/settings.php:315
+msgid "Top Center"
+msgstr "Yukarı Ortala"
+
+#: includes/settings.php:316
+msgid "Top Right"
+msgstr "Sağ Üst Köşe"
+
+#: includes/settings.php:317
+msgid "Bottom Left"
+msgstr "Sol Alt Köşe"
+
+#: includes/settings.php:318
+msgid "Bottom Center"
+msgstr "Aşağı Ortala"
+
+#: includes/settings.php:319
+msgid "Bottom Right"
+msgstr "Sağ Alt Köşe"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wp-image-zoooom/"
+msgstr "https://wordpress.org/plugins/wp-image-zoooom/"
+
+#. Description of the plugin/theme
+msgid ""
+"Add zoom effect over the an image, whether it is an image in a post/page or "
+"the featured image of a product in a WooCommerce shop"
+msgstr ""
+"Bir yazı/sayfa'daki veya WooCommerce mağazasındaki bir ürünün öne çıkan bir "
+"resmi olduğu anlamak için, Görsele Yakınlaştırma efekti uygulayın"
+
+#. Author of the plugin/theme
+msgid "SilkyPress"
+msgstr "SilkyPress"
+
+#. Author URI of the plugin/theme
+msgid "https://www.silkypress.com"
+msgstr "https://www.silkypress.com"

@@ -7730,10 +7730,10 @@ a img.aligncenter {
   text-align: center;
 }
 
-body.is-scrolled > .header {
+body.is-scrolle
+d > .header {
   background-color: #3b5998;
 }
-
 
 .anchor-wrap {
   text-align: center;
@@ -7745,6 +7745,7 @@ body.is-scrolled > .header {
     margin: 0 auto;
     text-align: center;
 }
+
 
 ul.link {
 
@@ -7779,10 +7780,11 @@ ul.link li:last-child {
   margin-bottom: 30px;
 }
 
-html { /* smoothscroll everywhere */
-scroll-behavior: smooth;
-}
 
 .anchorlink {
   scroll-margin-top: 6rem;
+}
+
+html { /* smoothscroll everywhere */
+scroll-behavior: smooth;
 }

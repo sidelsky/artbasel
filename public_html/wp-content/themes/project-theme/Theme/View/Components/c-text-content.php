@@ -31,7 +31,6 @@
 
 			 <a href="<?= $data['textContentLink']['url'] ?>" target="<?= $data['textContentLink']['target'] ?>" class="cta-button"><?= $data['textContentLinkDescription']; ?></a>
 
-
 			<?php endif; ?>
 
 			</span>
