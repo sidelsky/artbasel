@@ -508,6 +508,10 @@ button[disabled]:hover {
   background-color: #1f1f1f;
 }
 
+.l-content__block--link a.cta-button:hover {
+  color: white !important;
+}
+
 .c-clock {
   font-size: 4.8rem;
   color: #fff;
@@ -7726,9 +7730,11 @@ a img.aligncenter {
   text-align: center;
 }
 
-body.is-scrolled > .header {
+body.is-scrolle
+d > .header {
   background-color: #3b5998;
 }
+
 .anchor-wrap {
   text-align: center;
 }
@@ -7740,9 +7746,6 @@ body.is-scrolled > .header {
     text-align: center;
 }
 
-.anchorlink {
-  scroll-margin-top: 6rem;  
-}
 
 ul.link {
 
@@ -7777,6 +7780,11 @@ ul.link li:last-child {
   margin-bottom: 30px;
 }
 
-html {
+
+.anchorlink {
+  scroll-margin-top: 6rem;
+}
+
+html { /* smoothscroll everywhere */
 scroll-behavior: smooth;
 }
