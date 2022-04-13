@@ -454,19 +454,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 			case 'kuula':
 				$templateName = 'c-kuula';
 			break;
-
-
-							//Get image parallax
-									case 'kuula1':
-										$templateName = 'c-img-parallax';
-									break;
-
-									//Get anchor
-											case 'anchor':
-												$templateName = 'c-anchor';
-											break;
-											
-
+  
 				        //text iframe
 				     case 'text_iframe_content':
 							 $templateName = 'c-text-iframe';
