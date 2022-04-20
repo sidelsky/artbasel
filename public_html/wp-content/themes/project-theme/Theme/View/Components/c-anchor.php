@@ -18,10 +18,10 @@
 														<?php the_sub_field('title'); ?>
 													</a>
 											 </li>
-												    <?php endwhile; ?>
-												    </ul>
-												<?php endif; ?>
-											</div>
+											<?php endwhile; ?>
+										</ul>
+										<?php endif; ?>
+									</div>
 						</section>
 	   		<?php endif; ?>
     <?php endwhile; ?>
