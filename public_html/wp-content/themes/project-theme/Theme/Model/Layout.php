@@ -15,7 +15,6 @@ use Theme\Model\VideoCentered;
 use Theme\Model\TwoImages;
 use Theme\Model\FullWidthImages;
 
-
 class Layout {
 
    public function __construct()
@@ -98,7 +97,6 @@ class Layout {
                $kuula = new Kuula($layout);
                $currentLayout = $kuula->getKuula();
 				break;
-
 
 
         }

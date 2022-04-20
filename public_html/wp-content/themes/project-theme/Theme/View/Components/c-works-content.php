@@ -1,6 +1,6 @@
 <?php
-$showWorksFilters = $data['show_works_filters'];
-$worksFilterTitle = $data['works_filter_title'];
+$showWorksFilters = $data['show_works_filters']; 
+$worksFilterTitle = $data['works_filter_title']; 
 
 $postContent = $data['works_content'];
 foreach( $postContent as $content ):
@@ -16,11 +16,11 @@ $surnames = array_unique($surnames);
 ?>
 
 <section class="u-section" id="section-top">
-	<?php
+	<?php 
 		if( $showWorksFilters ) : ?>
 			<section class="u-l-container--full-width u-l-horizontal-padding--medium u-l-vertical-padding--small c-online-exhibitions__btn-title-wrap stickyTb" >
 				<h3 class="l-content__title-break c-online-exhibitions__btn-title"><?= $worksFilterTitle ?></h3>
-
+				
 				<div class="c-online-exhibitions__btn-container c-filter__wrap filters">
 
 						<!-- Filter button — mobile only -->
@@ -106,13 +106,13 @@ $surnames = array_unique($surnames);
 				<!-- Clear filter -->
 				<span class="button--reset c-filter__container--clear c-filter__reset c-filter__reset--mobile">Clear filters</span>
 			</div>
-
+			
 	<?php endif; ?>
 
 	<div class="u-l-container--center">
 		<div class="u-l-container u-l-container--row u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 			<div class="c-works">
-
+				
 				<div class="c-filter__no-results">
 					Sorry, no results found. <span class="button--reset">Clear filters</span>
 				</div>
@@ -121,8 +121,8 @@ $surnames = array_unique($surnames);
 
 				<?php
 
-					$postContent = $data['works_content'];
-
+					$postContent = $data['works_content']; 
+					
 					// If Show filters if on c-title-break then shuffle Works content
 					if( $showWorksFilters ) {
 						shuffle($postContent);
@@ -151,7 +151,7 @@ $surnames = array_unique($surnames);
                   $creditLine = get_field('credit_line', $content->ID);
 						$hidePurchaseButton = get_field('hide_purchase_button', $content->ID);
 						$surnameToLower = strtolower( $surname );
-
+					
 					?>
             	<article class="c-works__card filter-item <?= $surnameToLower ?> <?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" data-subject="<?= $surnameToLower ?>" data-type="<?php foreach( $medium as $value ): echo $value['value'] . ' '; endforeach; ?>" >
 						<figure class="c-works__figure">
@@ -160,10 +160,10 @@ $surnames = array_unique($surnames);
 							</a>
 						</figure>
 
-						<?php
+						<?php 
 						//If filters are active
 						if( $showWorksFilters ) : ?>
-
+							
 							<span class="name" style="display:none"><?= $surname ?></span>
 
 							<?php if( $fullName ) { ?>
@@ -181,7 +181,7 @@ $surnames = array_unique($surnames);
 							<?php if( $mediumText ) { ?>
 								<div class="c-works__medium"><?= $mediumText ?></div>
 							<?php } ?>
-
+							
 							<?php if($sold === 'available') : ?>
 								<div class="c-works__price"><span><?= $price ?></span></div>
 							<?php endif; ?>
@@ -189,7 +189,7 @@ $surnames = array_unique($surnames);
 						<?php else :?>
 
 							<a href="<?= $link; ?>"><h2 class="c-works__title"><?= $title; ?></h2></a>
-
+							
 							<?php if( $fullName) { ?>
 								<div class="c-works__name"><?= $fullName ?></div>
 							<?php } ?>
@@ -201,7 +201,7 @@ $surnames = array_unique($surnames);
 							<?php if( $mediumText ) { ?>
 								<div class="c-works__medium"><?= $mediumText ?></div>
 							<?php } ?>
-
+							
 							<?php if($sold === 'available') : ?>
 								<div class="c-works__price"><span><?= $price ?></span></div>
 							<?php endif; ?>
