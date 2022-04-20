@@ -1,0 +1,274 @@
+/* Theme settings page. */
+#social_service_modal::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+#social_service_modal::-webkit-scrollbar{
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+#social_service_modal::-webkit-scrollbar-thumb{
+  background-color: #AAA;
+  border-radius: 10px;
+  background-image: -webkit-linear-gradient(90deg,
+    rgba(0, 0, 0, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(0, 0, 0, .2) 50%,
+    rgba(0, 0, 0, .2) 75%,
+    transparent 75%,
+    transparent)
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 25px;
+}
+.switch input {display:none;}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 40px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 100;
+}
+
+input:checked + .slider {
+  background-color: #0073aa;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+.slider:after {
+  content: "OFF";
+  position: absolute;
+  right: 5px;
+  font-size: 1.2em;
+  top: 2px;
+  font-family: serif;
+}
+
+input:checked + .slider:after{
+  content:"ON";
+  right: 48px;
+  color:white;
+}
+
+
+.buttons_style_preview img {
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.buttons_style_preview label {
+  position: relative;
+}
+
+.buttons_style_preview input[type="radio"]{
+  position: absolute;
+  bottom: 15px;
+  left: -18px;
+}
+.control_list li span {
+  background-repeat: no-repeat;
+  background-size: 24px;
+  border-radius: 4px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 6px 0 0;
+  vertical-align: top;
+  width: 24px;
+}
+.control_list li {
+  border: 1px solid transparent;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 24px;
+  overflow: hidden;
+  padding: 8px;
+  text-align: left;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: opacity .2s;
+  white-space: nowrap;
+  width: 206px;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+#selected{
+  margin: 0;
+  padding: 0;
+}
+#selected li {
+  border: 1px solid transparent;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 10px;
+}
+
+#selected span {
+  background-repeat: no-repeat;
+  background-size: 24px;
+  border-radius: 4px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  margin: 0 6px 0 0;
+  vertical-align: top;
+  width: 24px;
+}
+
+.selected_container{
+  display:inline-block;
+}
+
+section.selected_container li {
+  background-color: transparent!important;
+  color: inherit;
+}
+
+#wpsee_buttons_position,#wpss_buttons_icontext_field{
+  width:250px;
+}
+div#social_service_modal {
+  height: 600px;
+  overflow: auto;
+}
+.added{
+  color:white;
+}
+.icons_only{
+	width: auto!important;
+	border-right: 5px solid white;
+}
+.text_only {
+    line-height: 32px !important;
+    color: white !important;
+    padding: 2px 5px !important;
+    white-space: nowrap;
+}
+.wpsi_social_background_css {
+    background-repeat:  no-repeat;
+    background-position: left 12px;
+    background-size: 25px;
+    padding-left: 30px !important;
+}
+.a2a_s_facebook,
+li.fb.added {
+    background-color:#3B5998;
+}
+.a2a_s_twitter,
+li.tw.added {
+    background-color:#55ACEE;
+}
+.a2a_s_pinterest,
+li.pn.added {
+    background-color:#BD081C;
+}
+.a2a_s_email,
+li.email.added {
+    background-color:#0166FF;
+}
+.a2a_s_linkedin,
+li.li.added {
+    background-color:#007BB5;
+}
+.a2a_s_reddit,
+li.rd.added {
+    background-color:#ff4500;
+}
+.a2a_s_tumblr,
+li.tmb.added {
+    background-color:#35465C;
+}
+.a2a_s_facebook_messenger,
+li.fbm.added {
+    background-color:#0084FF;
+}
+.a2a_s_wordpress,
+li.wp.added {
+    background-color:#464646;
+}
+.a2a_s_gmail,
+li.gmail.added {
+    background-color:#DD5347;
+}
+.a2a_s_whatsapp,
+li.wha.added {
+    background-color:#12AF0A;
+}
+.a2a_s_blogger,
+li.blg.added {
+    background-color:#FDA352;
+}
+.a2a_s_buffer,
+li.buff.added {
+    background-color:#2A2A2A;
+}
+.a2a_s_digg,
+li.digg.added {
+    background-color:#2A2A2A;
+}
+.a2a_s_skype,
+li.skype.added {
+    background-color:#00AFF0;
+}
+.a2a_s_telegram,
+li.tele.added {
+    background-color:#2CA5E0;
+}
+.a2a_s_vk,
+li.vk.added {
+    background-color:#587EA3;
+}
+.a2a_s_yahoo,
+li.yahoo.added {
+    background-color:#400090;
+}
+.a2a_s_yahoo,
+li.yahoo.added {
+    background-color:#400090;
+}
+.a2a_s_yim,
+li.yim.added {
+    background-color:#400090;
+}
+@media (min-width: 768px){
+  .modal-dialog {
+    width: 65%!important;
+  }
+}

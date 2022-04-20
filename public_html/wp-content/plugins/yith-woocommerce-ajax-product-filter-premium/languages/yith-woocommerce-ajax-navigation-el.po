@@ -1,0 +1,2710 @@
+# Translation of YITH WooCommerce Ajax Product Filter in Greek
+# This file is distributed under the same license as the YITH WooCommerce Ajax Product Filter package.
+msgid ""
+msgstr ""
+"Project-Id-Version: YITH WooCommerce Ajax Product Filter\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/yith-woocommerce-"
+"ajax-product-filter-premium\n"
+"POT-Creation-Date: 2021-06-18 09:45:32+00:00\n"
+"PO-Revision-Date: 2021-02-12 13:32:43+0000\n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+
+#: includes/class.yith-wcan-premium.php:234
+#: includes/class.yith-wcan-premium.php:235
+msgid "Parent tag"
+msgstr "Γονική ετικέτα"
+
+#: includes/data-stores/class.yith-wcan-preset-data-store.php:57
+msgid "Draft Preset"
+msgstr "Προρύθμιση Πρόχειρου"
+
+#: includes/functions.yith-wcan.php:98 includes/functions.yith-wcan.php:112
+#: includes/functions.yith-wcan.php:132
+msgid "Term"
+msgstr "Όρος"
+
+#: includes/functions.yith-wcan.php:98
+#: includes/widgets/class.yith-wcan-navigation-widget.php:434
+msgid "Color"
+msgstr "Χρώμα"
+
+#: includes/functions.yith-wcan.php:132
+msgid "Labels"
+msgstr "Επιγραφές"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:39
+msgid ""
+"Show a price filter widget with a list of preset price ranges that users can "
+"use to better narrow down the products"
+msgstr ""
+"Εμφάνιση μικροεφαρμογής φίλτρου τιμής με λίστα προρυθμισμένων ευρών τιμής "
+"που μπορούν να χρησιμοποιήσουν οι χρήστες για να περιορίσουν καλύτερα τα "
+"προϊόντα"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:46
+msgid "YITH AJAX Price List Filter"
+msgstr "YITH AJAX Φίλτρο Λίστας Τιμής"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:216
+#: includes/widgets/class.yith-wcan-navigation-widget.php:443
+#: includes/widgets/class.yith-wcan-reset-navigation-widget.php:194
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:177
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:195
+msgid "Title"
+msgstr "Τίτλος"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:222
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:188
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:183
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:213
+msgid "Show widget dropdown"
+msgstr "Εμφάνιση αναδιπλούμενης λίστας μικροεφαρμογής"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:230
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:196
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:191
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:221
+msgid "Opened"
+msgstr "Ανοιχτή"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:231
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:197
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:192
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:222
+msgid "Closed"
+msgstr "Κλειστή"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:237
+msgid "Price Range"
+msgstr "Εύρος Τιμής"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:252
+msgid "Add new range"
+msgstr "Προσθήκη νέου εύρους"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:86
+msgid "\"See all categories/tags\" link text"
+msgstr "Κείμενο συνδέσμου “Προβολή όλων των κατηγοριών/ετικετών”"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:92
+msgid "Leave it empty to use the default text available"
+msgstr ""
+"Διατηρήστε κενό για να χρησιμοποιήσετε το διαθέσιμο προεπιλεγμένο κείμενο"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:102
+msgid "here"
+msgstr "εδώ"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:103
+msgid "current categories text"
+msgstr "κείμενο τρεχόντων κατηγοριών"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:105
+msgid "current tags text"
+msgstr "κείμενο τρεχόντων ετικετών"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:117
+msgid "No tags found."
+msgstr "Δεν βρέθηκαν ετικέτες."
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:122
+msgid "Show Selected"
+msgstr "Εμφάνιση Επιλεγμένων"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:123
+msgid "Hide Selected"
+msgstr "Απόκρυψη Επιλεγμένων"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:127
+msgid "Select all"
+msgstr "Επιλογή όλων"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:130
+msgid "Unselect all"
+msgstr "Αποεπιλογή όλων"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:138
+msgid "Tag name"
+msgstr "Όνομα ετικέτας"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:139
+msgid "Count"
+msgstr "Αρίθμηση"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:176
+msgid "Square"
+msgstr "Τετράγωνο"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:177
+msgid "Round"
+msgstr "Στρογγυλό"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:182
+msgid "Hide product count"
+msgstr "Απόκρυψη αρίθμησης προϊόντος"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:319
+msgid "See all"
+msgstr "Προβολή όλων"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:390
+msgid "Categories"
+msgstr "Κατηγορίες"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:391
+msgid "BiColor"
+msgstr "BiColor"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:392
+msgid "Tag"
+msgstr "Ετικέτα"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:395
+msgid "Brand"
+msgstr "Μάρκα"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:47
+msgid "Filter the list of products without reloading the page"
+msgstr "Ταξινομήστε τη λίστα προϊόντων χωρίς να γίνει επαναφόρτωση της σελίδας"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:201
+msgid "Filters:"
+msgstr "Φίλτρα:"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:433
+msgid "List"
+msgstr "Λίστα"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:435
+msgid "Label"
+msgstr "Επιγραφή"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:436
+msgid "Dropdown"
+msgstr "Αναδιπλούμενη λίστα"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:449
+msgid "Type:"
+msgstr "Τύπος:"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:460
+msgid "Query Type:"
+msgstr "Τύπος Ερωτήματος:"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:463
+msgid "OR"
+msgstr "Ή"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:468
+msgid "Attribute:"
+msgstr "Ιδιότητα:"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:475
+msgid "Display (default All):"
+msgstr "Εμφάνιση (προεπιλεγμένα Όλα):"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:477
+msgid "All (no hierarchical)"
+msgstr "Όλοι (μη ιεραρχικά)"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:478
+msgid "All (hierarchical)"
+msgstr "Όλοι (ιεραρχικά)"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:479
+msgid "Only Parent"
+msgstr "Μόνο Γονικός"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:486
+msgid "CSS custom class"
+msgstr "Κλάση προσαρμοσμένου CSS"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:54
+msgid "Use custom style for reset button"
+msgstr "Χρησιμοποιήστε προσαρμοσμένο στυλ για το κουμπί επαναφοράς"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:62
+msgid "Background color"
+msgstr "Χρώμα φόντου"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:69
+msgid "Background color on hover"
+msgstr "Χρώμα φόντου κατα την αιώρηση"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:76
+msgid "Text color"
+msgstr "Χρώμα κειμένου"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:83
+msgid "Text color on hover"
+msgstr "Χρώμα κειμένου κατα την αιώρηση"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:90
+msgid "Border color"
+msgstr "Χρώμα πλαισίου"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget-premium.php:97
+msgid "Border color on hover"
+msgstr "Χρώμα πλαισίου κατα την αιώρηση"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget.php:37
+msgid "YITH AJAX Reset Filter"
+msgstr "YITH AJAX Επαναφορά Φίλτρου"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget.php:187
+msgid "Reset All Filters"
+msgstr "Επαναφορά Όλων των Φίλτρων"
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget.php:200
+msgid "Button Label"
+msgstr "Επιγραφή Κουμπιού"
+
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:39
+msgid "Choose how to sort WooCommerce products"
+msgstr "Επιλέξτε πώς να ταξινομούνται τα προϊόντα WooCommerce"
+
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:45
+msgid "YITH AJAX Sort By"
+msgstr "YITH AJAX Ταξινόμηση Κατά"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:39
+msgid "Display on sale and in stock WooCommerce products"
+msgstr "Εμφάνιση WooCommerce προϊόντων σε προσφορά και σε απόθεμα"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:46
+msgid "YITH AJAX In Stock/On Sale Filters"
+msgstr "YITH AJAX Φίλτρα Σε Απόθεμα/Σε Προσφορά"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:140
+msgid "Show only \"On Sale\" products"
+msgstr "Εμφάνιση μόνο προϊόντων “Σε Προσφορά”"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:141
+msgid "Show only \"In Stock\" products"
+msgstr "Εμφάνιση μόνο προϊόντων “Σε Απόθεμα”"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:201
+msgid "Show \"On Sale\" filter"
+msgstr "Εμφάνιση φίλτρου “Σε Προσφορά”"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:207
+msgid "Show \"In Stock\" filter"
+msgstr "Εμφάνιση φίλτρου \"Σε Απόθεμα\""
+
+#. Description of the plugin/theme
+msgid ""
+"<code><strong>YITH WooCommerce AJAX Product Filter</strong></code> allows "
+"your users to find the product they are looking for as quickly as possible. "
+"Thanks to the plugin you will be able to set up one or more search filters "
+"for your WooCommerce products and improve the user experience of your shop. "
+"<a href=\"https://yithemes.com/\" target=\"_blank\">Get more plugins for "
+"your e-commerce shop on <strong>YITH</strong></a>"
+msgstr ""
+"To <code><strong>YITH WooCommerce AJAX Product Filter</strong></code> "
+"επιτρέπει στους χρήστες σας να βρίσκουν το προϊόν που ψάχνουν όσο το δυνατόν "
+"πιο γρήγορα. Χάρη στο πρόσθετο θα μπορείτε να ορίσετε ένα ή περισσότερα "
+"φίλτρα για τα προϊόντα WooCommerce σας και να βελτιώσετε την εμπειρία "
+"χρήστη. <a href=\"https://yithemes.com/\" target=\"_blank\">Βρείτε "
+"περισσότερα πρόσθετα για το ηλεκτρονικό σας κατάστημα στο <strong>YITH</"
+"strong></a>"
+
+#: includes/class.yith-wcan-admin-premium.php:57
+msgctxt "[ADMIN] General settings page"
+msgid "Filter mode"
+msgstr "Λειτουργία φίλτρου"
+
+#: includes/class.yith-wcan-admin-premium.php:58
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Choose to apply filters in real time using AJAX or whether to show a button "
+"to apply all filters"
+msgstr ""
+"Επιλέξτε να γίνεται εφαρμογή φίλτρων σε ζωντανό χρόνο χρησιμοποιώντας AJAX ή "
+"να εμφανίζεται κουμπί εφαρμογής όλων των φίλτρων"
+
+#: includes/class.yith-wcan-admin-premium.php:64
+msgctxt "[ADMIN] General settings page"
+msgid "Instant result"
+msgstr "Άμεσο αποτέλεσμα"
+
+#: includes/class.yith-wcan-admin-premium.php:65
+msgctxt "[ADMIN] General settings page"
+msgid "By clicking \"Apply filters\" button"
+msgstr "Κάνοντας κλικ στο κουμπί “Εφαρμογή φίλτρων”"
+
+#: includes/class.yith-wcan-admin-premium.php:70
+msgctxt "[ADMIN] General settings page"
+msgid "Show results"
+msgstr "Εμφάνιση αποτελεσμάτων"
+
+#: includes/class.yith-wcan-admin-premium.php:71
+#, fuzzy
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Choose whether to load the results on the same page using AJAX or load the "
+"results on a new page"
+msgstr ""
+"Eπιλέξτε αν θέλετε να γίνεται φόρτωση αποτελεσμάτων στην ίδια σελίδα "
+"χρησιμοποιώντας AJAX ή να γίνεται φόρτωση αποτελεσμάτων σε νέα σελίδα "
+
+#: includes/class.yith-wcan-admin-premium.php:77
+msgctxt "[ADMIN] General settings page"
+msgid "In same page using AJAX"
+msgstr "Στην ίδια σελίδα χρησιμοποιώντας AJAX"
+
+#: includes/class.yith-wcan-admin-premium.php:78
+msgctxt "[ADMIN] General settings page"
+msgid "Reload the page without AJAX"
+msgstr ""
+
+#: includes/class.yith-wcan-admin-premium.php:83
+msgctxt "[ADMIN] General settings page"
+msgid "Hide empty terms"
+msgstr "Απόκρυψη κενών όρων"
+
+#: includes/class.yith-wcan-admin-premium.php:84
+msgctxt "[ADMIN] General settings page"
+msgid "Enable to hide empty terms from filters section"
+msgstr "Ενεργοποίηση απόκρυψης κενών όρων από την ενότητα φίλτρων"
+
+#: includes/class.yith-wcan-admin-premium.php:92
+msgctxt "[ADMIN] General settings page"
+msgid "Hide out of stock products"
+msgstr "Απόκρυψη προϊόντων εκτός αποθέματος"
+
+#: includes/class.yith-wcan-admin-premium.php:93
+msgctxt "[ADMIN] General settings page"
+msgid "Enable to hide \"out of stock\" products from the results."
+msgstr "Ενεργοποίηση απόκρυψης προϊόντων “εκτός αποθέματος” από αποτελέσματα."
+
+#: includes/class.yith-wcan-admin-premium.php:105
+msgctxt "[ADMIN] General settings page"
+msgid "Show \"Clear\" above each filter"
+msgstr "Εμφάνιση “Καθαρισμός” πάνω από κάθε φίλτρο"
+
+#: includes/class.yith-wcan-admin-premium.php:106
+msgctxt "[ADMIN] General settings page"
+msgid "Enable to show the \"Clear\" link above each filter of the preset"
+msgstr ""
+"Ενεργοποίηση εμφάνισης συνδέσμου “Καθαρισμός” πάνω από κάθε φίλτρο "
+"προρύθμισης"
+
+#: includes/class.yith-wcan-admin-premium.php:114
+msgctxt "[ADMIN] General settings page"
+msgid "Show active filters as labels"
+msgstr "Εμφάνιση ενεργών φίλτρων ως επιγραφές"
+
+#: includes/class.yith-wcan-admin-premium.php:115
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Enable to show the active filters as labels. Labels show the current filters "
+"selection, and can be used to remove any active filter."
+msgstr ""
+"Ενεργοποιήστε την εμφάνιση ενεργών φίλτρων ως επιγραφές. Οι επιγραφές "
+"εμφανίζουν την τρέχουσα επιλογή φίλτρων, και μπορούν να χρησιμοποιηθούν για "
+"να αφαιρέσουν οποιοδήποτε ενεργό φίλτρο."
+
+#: includes/class.yith-wcan-admin-premium.php:123
+msgctxt "[ADMIN] General settings page"
+msgid "Active filters labels position"
+msgstr "Θέση επιγραφών ενεργών φίλτρων"
+
+#: includes/class.yith-wcan-admin-premium.php:124
+msgctxt "[ADMIN] General settings page"
+msgid "Choose the default position for Active Filters labels"
+msgstr "Επιλέξτε την προεπιλεγμένη θέση για τις επιγραφές Ενεργών Φίλτρων"
+
+#: includes/class.yith-wcan-admin-premium.php:130
+#: plugin-options/general-options.php:39
+msgctxt "[ADMIN] General settings page"
+msgid "Before filters"
+msgstr "Πριν από φίλτρα"
+
+#: includes/class.yith-wcan-admin-premium.php:131
+#: plugin-options/general-options.php:40
+msgctxt "[ADMIN] General settings page"
+msgid "After filters"
+msgstr "Μετά από φίλτρα"
+
+#: includes/class.yith-wcan-admin-premium.php:132
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Above products list<small>When using WooCommerce's Gutenberg product blocks, "
+"this may not work as expected; in these cases you can place Reset Button "
+"anywhere in the page using <code>[yith_wcan_active_filters_labels]</code> "
+"shortcode or <code>YITH Mobile Filters Modal Opener</code> block</small>"
+msgstr ""
+"Λίστα παραπάνω προϊόντων<small>Κατα την χρήση πλαισίων προϊόντος WooCommerce "
+"Gutenberg, μπορεί να μην λειτουργήσει όπως αναμένεται. Σε αυτή την περίπτωση "
+"μπορείτε να τοποθετήσετε Κουμπί Επαναφοράς οπουδήποτε στη σελίδα "
+"χρησιμοποιώντας μικροκώδικα <code>[yith_wcan_active_filters_labels]</code> ή "
+"στο <code>YITH Άνοιγμα Παραθύρου Φίλτρων Κινητού</code> πλαίσιο</small>"
+
+#: includes/class.yith-wcan-admin-premium.php:141
+msgctxt "[ADMIN] General settings page"
+msgid "Show titles for active filter labels"
+msgstr "Εμφάνιση τίτλων για ενεργές επιγραφές φίλτρου"
+
+#: includes/class.yith-wcan-admin-premium.php:142
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Enable to show labels subdivided by filter, and to show a title for each "
+"group"
+msgstr ""
+"Ενεργοποιήστε την εμφάνιση επιγραφών υποδιαιρούμενες κατα φίλτρο, και την "
+"εμφάνιση ενός τίτλου για κάθε ομάδα"
+
+#: includes/class.yith-wcan-admin-premium.php:178
+msgctxt "[ADMIN] General settings page"
+msgid "Inline with active filters"
+msgstr "Σε γραμμή με ενεργά φίλτρα"
+
+#: includes/class.yith-wcan-admin-premium.php:476
+msgctxt "[ADMIN] General settings page"
+msgid "Filter by price using AJAX"
+msgstr "Ταξινόμηση κατα τιμή χρησιμοποιώντας AJAX"
+
+#: includes/class.yith-wcan-admin-premium.php:477
+#: includes/class.yith-wcan-admin-premium.php:495
+msgctxt "[ADMIN] General settings page"
+msgid "Filter products via AJAX when using WooCommerce price filter widget"
+msgstr ""
+"Ταξινόμηση προϊόντων μέσω AJAX όταν χρησιμοποιείται WooCommerce "
+"μικροεφαρμογή φίλτρου τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:485
+msgctxt "[ADMIN] General settings page"
+msgid "Use slider for price filtering"
+msgstr "Χρησιμοποιήστε ολισθητή για φίλτρο τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:486
+msgctxt "[ADMIN] General settings page"
+msgid "Transform default WooCommerce price filter into a slider"
+msgstr "Μετατροπή προεπιλεγμένου WooCommerce φίλτρου τιμής σε ολισθητή"
+
+#: includes/class.yith-wcan-admin-premium.php:494
+msgctxt "[ADMIN] General settings page"
+msgid "Filter by price using AJAX slider"
+msgstr "Ταξινόμηση κατα τιμή χρησιμοποιώντας AJAX ολισθητή"
+
+#: includes/class.yith-wcan-admin-premium.php:503
+msgctxt "[ADMIN] General settings page"
+msgid "Add toggle for price filter widget"
+msgstr "Προσθήκη εναλλαγής για την μικροεφαρμογή φίλτρου τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:504
+msgctxt "[ADMIN] General settings page"
+msgid "Show price filtering widget as a toggle"
+msgstr "Εμφάνιση μικροεφαρμογής φίλτρου τιμής ως εναλλαγή"
+
+#: includes/class.yith-wcan-admin-premium.php:512
+msgctxt "[ADMIN] General settings page"
+msgid "Chose how to show price filter toggle"
+msgstr "Επιλέξτε πώς να εμφανίζεται η εναλλαγή φίλτρου τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:513
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Choose whether to show price filtering widget as an open or closed toggle"
+msgstr ""
+"Επιλέξτε αν θέλετε να εμφανίσετε την μικροεφαρμογή φίλτρου τιμής ως ανοιχτή "
+"ή κλειστή εναλλαγή"
+
+#: includes/class.yith-wcan-admin-premium.php:525
+msgctxt "[ADMIN] General settings page"
+msgid "Enable ajax pagination"
+msgstr "Ενεργοποίηση ajax σελιδοποίησης"
+
+#: includes/class.yith-wcan-admin-premium.php:526
+msgctxt "[ADMIN] General settings page"
+msgid "Make shop pagination anchors load new page via ajax"
+msgstr ""
+"Επιτρέψτε στα anchors σελιδοποίησης καταστήματος να φορτώνουν νέα σελίδα "
+"μέσω ajax"
+
+#: includes/class.yith-wcan-admin-premium.php:543
+msgctxt "[ADMIN] General settings page"
+msgid "Show current categories"
+msgstr "Εμφάνιση τρέχουσων κατηγοριών"
+
+#: includes/class.yith-wcan-admin-premium.php:544
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Enable if you want to show link to current category in the filter, when "
+"visiting category page"
+msgstr ""
+"Ενεργοποιήστε αν θέλετε να εμφανίζετε σύνδεσμο στην τρέχουσα κατηγορία στο "
+"φίλτρο, κατα την επίσκεψη σε σελίδα κατηγορίας"
+
+#: includes/class.yith-wcan-admin-premium.php:552
+msgctxt "[ADMIN] General settings page"
+msgid "Show \"All categories\" anchor"
+msgstr "Εμφάνιση anchor “Όλες οι κατηγορίες”"
+
+#: includes/class.yith-wcan-admin-premium.php:553
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Enable if you want to show a link to retrieve products from all categories, "
+"after a category filter is applied"
+msgstr ""
+"Ενεργοποιήστε αν θέλετε να εμφανίζετε σύνδεσμο που να ανακτά προϊόντα από "
+"όλες τις κατηγορίες, μετά την εφαρμογή φίλτρου κατηγορίας"
+
+#: includes/class.yith-wcan-admin-premium.php:570
+msgctxt "[ADMIN] General settings page"
+msgid "Show \"All tags\" anchor"
+msgstr "Εμφάνιση anchor “Όλες οι ετικέτες”"
+
+#: includes/class.yith-wcan-admin-premium.php:571
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Enable if you want to show a link to retrieve products from all tags, after "
+"a category filter is applied"
+msgstr ""
+"Ενεργοποιήστε αν θέλετε να εμφανίζετε σύνδεσμο που να ανακτά προϊόντα από "
+"όλες τις ετικέτες, μετά την εφαρμογή φίλτρου κατηγορίας"
+
+#: plugin-options/general-options.php:16
+msgctxt "[ADMIN] General settings page"
+msgid "General settings"
+msgstr "Γενικές ρυθμίσεις"
+
+#: plugin-options/general-options.php:23
+msgctxt "[ADMIN] General settings page"
+msgid "Show reset button"
+msgstr "Εμφάνιση κουμπιού επαναφοράς"
+
+#: plugin-options/general-options.php:24
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Enable to show the \"Reset filter\" button to allow the user to cancel the "
+"filter selection in one click"
+msgstr ""
+"Ενεργοποίηση εμφάνισης κουμπιού “Επαναφορά φίλτρου” για να επιτρέψετε στον "
+"χρήστη να ακυρώσει την επιλογή φίλτρου με ένα κλικ"
+
+#: plugin-options/general-options.php:32
+msgctxt "[ADMIN] General settings page"
+msgid "Reset button position"
+msgstr "Θέση κουμπιού επαναφοράς"
+
+#: plugin-options/general-options.php:33
+msgctxt "[ADMIN] General settings page"
+msgid "Choose the default position for reset button"
+msgstr "Επιλέξτε την προεπιλεγμένη θέση για το κουμπί επαναφοράς"
+
+#: plugin-options/general-options.php:41
+msgctxt "[ADMIN] General settings page"
+msgid ""
+"Above products list<small>When using WooCommerce's Gutenberg product blocks, "
+"this may not work as expected; in these cases you can place Reset Button "
+"anywhere in the page using <code>[yith_wcan_reset_button]</code> shortcode "
+"or <code>YITH Filters Reset Button</code> block</small>"
+msgstr ""
+"Λίστα παραπάνω προϊόντων<small>Κατα την χρήση πλαισίων προϊόντος WooCommerce "
+"Gutenberg, μπορεί να μην λειτουργήσει όπως αναμένεται. Σε αυτή την περίπτωση "
+"μπορείτε να τοποθετήσετε Κουμπί Επαναφοράς οπουδήποτε στη σελίδα "
+"χρησιμοποιώντας μικροκώδικα <code>[yith_wcan_reset_button]</code> ή "
+"<code>YITH Filters Reset Button</code> πλαίσιο</small>"
+
+#: includes/class.yith-wcan-admin-premium.php:154
+msgctxt "[ADMIN] Customization settings page"
+msgid "Scroll top after filtering"
+msgstr "Κύλιση επάνω μετά από ταξινόμηση"
+
+#: includes/class.yith-wcan-admin-premium.php:155
+msgctxt "[ADMIN] Customization settings page"
+msgid "Enable this option if you want to scroll to top after filtering."
+msgstr ""
+"Ενεργοποιήστε αυτή την επιλογή αν θέλετε να γίνεται κύλιση προς τα πάνω μετά "
+"την ταξινόμηση."
+
+#: includes/class.yith-wcan-admin-premium.php:163
+msgctxt "[ADMIN] Customization settings page"
+msgid "Show as modal on mobile"
+msgstr "Εμφάνιση ως παράθυρο σε κινητή συσκευή"
+
+#: includes/class.yith-wcan-admin-premium.php:164
+msgctxt "[ADMIN] Customization settings page"
+msgid ""
+"Enable this option if you want to show filter section as a modal on mobile "
+"devices.<small>The modal opener will appear before products. When using "
+"WooCommerce's Gutenberg product blocks, this may not work as expected. If "
+"this is the case, you can place the Modal opener button anywhere in the page "
+"using <code>[yith_wcan_mobile_modal_opener]</code> shortcode or <code>YITH "
+"Mobile Filters Modal Opener</code> block</small>"
+msgstr ""
+"Ενεργοποιήστε αυτή την επιλογή αν θέλετε να εμφανίζετε την ενότητα φίλτρου "
+"ως παράθυρο σε κινητές συσκευές.<small>Το παράθυρο θα ανοίγει πριν "
+"εμφανιστούν τα προϊόντα. Κατα την χρήση πλαισίων προϊόντος WooCommerce "
+"Gutenberg, μπορεί να μην λειτουργήσει όπως αναμένεται. Σε αυτή την "
+"περίπτωση, μπορείτε να τοποθετήσετε το κουμπί Ανοίγματος παραθύρου "
+"οπουδήποτε στη σελίδα χρησιμοποιώντας τον μικροκώδικα "
+"<code>[yith_wcan_mobile_modal_opener]</code> ή το <code>YITH Άνοιγμα "
+"Παραθύρου Φίλτρων Κινητού</code> πλαίσιο</small>"
+
+#: plugin-options/customization-options.php:17
+msgctxt "[ADMIN] Customization settings page"
+msgid "Customization"
+msgstr "Προσαρμογή"
+
+#: plugin-options/customization-options.php:24
+msgctxt "[ADMIN] Customization settings page"
+msgid "Filters area title"
+msgstr "Τίτλος περιοχής φίλτρων"
+
+#: plugin-options/customization-options.php:25
+msgctxt "[ADMIN] Customization settings page"
+msgid "Enter a title to identify the “AJAX filter Preset” section"
+msgstr ""
+"Εισάγετε τίτλο για να αναγνωρίζετε την ενότητα “Προρύθμιση AJAX φίλτρου”"
+
+#: plugin-options/customization-options.php:33
+msgctxt "[ADMIN] Customization settings page"
+msgid "Filters area colors"
+msgstr "Χρώματα περιοχής φίλτρων"
+
+#: plugin-options/customization-options.php:39
+msgctxt "[ADMIN] Customization settings page"
+msgid "Titles"
+msgstr "Τίτλοι"
+
+#: plugin-options/customization-options.php:44
+#: plugin-options/customization-options.php:101
+msgctxt "[ADMIN] Customization settings page"
+msgid "Background"
+msgstr "Φόντο"
+
+#: plugin-options/customization-options.php:49
+msgctxt "[ADMIN] Customization settings page"
+msgid "Accent color"
+msgstr "Τόνος χρώματος"
+
+#: plugin-options/customization-options.php:57
+msgctxt "[ADMIN] Customization settings page"
+msgid "Options style"
+msgstr "Στυλ επιλογών"
+
+#: plugin-options/customization-options.php:58
+msgctxt "[ADMIN] Customization settings page"
+msgid ""
+"Choose which preset of style options you'd like to apply to your filters"
+msgstr ""
+"Επιλέξτε την προρύθμιση επιλογών στυλ που θέλετε να εφαρμόσετε στα φίλτρα σας"
+
+#: plugin-options/customization-options.php:64
+msgctxt "[ADMIN] Customization settings page"
+msgid "Theme style"
+msgstr "Στυλ θέματος"
+
+#: plugin-options/customization-options.php:65
+msgctxt "[ADMIN] Customization settings page"
+msgid "Custom style"
+msgstr "Προσαρμοσμένο στυλ"
+
+#: plugin-options/customization-options.php:70
+msgctxt "[ADMIN] Customization settings page"
+msgid "Color swatch style"
+msgstr "Στυλ εναλλαγής χρώματος"
+
+#: plugin-options/customization-options.php:71
+msgctxt "[ADMIN] Customization settings page"
+msgid "Choose the style for color thumbnails"
+msgstr "Επιλέξτε το στυλ για τις μικρογραφίες χρωμάτων"
+
+#: plugin-options/customization-options.php:77
+msgctxt "[ADMIN] Customization settings page"
+msgid "Rounded"
+msgstr "Στρογγυλό"
+
+#: plugin-options/customization-options.php:78
+msgctxt "[ADMIN] Customization settings page"
+msgid "Square"
+msgstr "Τετράγωνο"
+
+#: plugin-options/customization-options.php:83
+msgctxt "[ADMIN] Customization settings page"
+msgid "Color swatch size"
+msgstr "Μέγεθος εναλλαγής χρώματος"
+
+#: plugin-options/customization-options.php:84
+msgctxt "[ADMIN] Customization settings page"
+msgid "The size for color thumbnails"
+msgstr "Μέγεθος μικρογραφιών χρωμάτων"
+
+#: plugin-options/customization-options.php:94
+msgctxt "[ADMIN] Customization settings page"
+msgid "Labels style color"
+msgstr "Στυλ χρώματος επιγραφών"
+
+#: plugin-options/customization-options.php:106
+msgctxt "[ADMIN] Customization settings page"
+msgid "Background Hover"
+msgstr "Αιώρηση Φόντου"
+
+#: plugin-options/customization-options.php:111
+msgctxt "[ADMIN] Customization settings page"
+msgid "Background Active"
+msgstr "Φόντο Ενεργό"
+
+#: plugin-options/customization-options.php:118
+#: plugin-options/customization-options.php:143
+msgctxt "[ADMIN] Customization settings page"
+msgid "Text"
+msgstr "Κείμενο"
+
+#: plugin-options/customization-options.php:123
+msgctxt "[ADMIN] Customization settings page"
+msgid "Text Hover"
+msgstr "Αιώρηση Κειμένου"
+
+#: plugin-options/customization-options.php:128
+msgctxt "[ADMIN] Customization settings page"
+msgid "Text Active"
+msgstr "Κείμενο Ενεργό"
+
+#: plugin-options/customization-options.php:137
+msgctxt "[ADMIN] Customization settings page"
+msgid "Textual terms color"
+msgstr "Χρώμα κειμενικών όρων"
+
+#: plugin-options/customization-options.php:148
+msgctxt "[ADMIN] Customization settings page"
+msgid "Text hover"
+msgstr ""
+
+#: plugin-options/customization-options.php:153
+msgctxt "[ADMIN] Customization settings page"
+msgid "Text active"
+msgstr ""
+
+#: plugin-options/customization-options.php:161
+msgctxt "[ADMIN] Customization settings page"
+msgid "AJAX loader"
+msgstr "AJAX φορτωτής"
+
+#: plugin-options/customization-options.php:162
+msgctxt "[ADMIN] Customization settings page"
+msgid "Choose the style for AJAX loader icon"
+msgstr "Επιλέξτε το στυλ του εικονιδίου AJAX φορτωτή"
+
+#: plugin-options/customization-options.php:168
+msgctxt "[ADMIN] Customization settings page"
+msgid "Use default loader"
+msgstr "Χρησιμοποιήστε προσαρμοσμένο φορτωτή"
+
+#: plugin-options/customization-options.php:169
+msgctxt "[ADMIN] Customization settings page"
+msgid "Upload custom loader"
+msgstr "Ανέβασμα προσαρμοσμένου φορτωτή"
+
+#: plugin-options/customization-options.php:174
+msgctxt "[ADMIN] Customization settings page"
+msgid "Custom AJAX loader"
+msgstr "Προσαρμοσμένος AJAX φορτωτής"
+
+#: plugin-options/customization-options.php:175
+msgctxt "[ADMIN] Customization settings page"
+msgid "Upload an icon you'd like to use as AJAX Loader (suggested 50px x 50px)"
+msgstr ""
+"Ανέβασμα του εικονιδίου που θέλετε να χρησιμοποιήσετε ως AJAX Φορτωτή "
+"(προτείνεται 50px x 50px)"
+
+#: includes/class.yith-wcan-admin-premium.php:195
+#, fuzzy
+msgctxt "[Admin] Label in new preset page"
+msgid "Preset layout"
+msgstr "Όνομα προρύθμισης"
+
+#: includes/class.yith-wcan-admin-premium.php:198
+#, fuzzy
+msgctxt "[Admin] Label in new preset page"
+msgid "Choose the layout for this filter preset"
+msgstr "Επιλέξτε το στυλ φίλτρου μέσα στις μικροεφαρμογές"
+
+#: includes/class.yith-wcan-premium.php:168
+msgctxt "[Admin] Label in new preset page"
+msgid "Horizontal"
+msgstr ""
+
+#: includes/class.yith-wcan-preset-factory.php:112
+#, fuzzy
+msgctxt "[Admin] Label in new preset page"
+msgid "Default"
+msgstr "Προεπιλεγμένο"
+
+#: plugin-options/preset-options.php:14
+msgctxt "[Admin] Label in new preset page"
+msgid "Preset name"
+msgstr "Όνομα προρύθμισης"
+
+#: plugin-options/preset-options.php:16
+msgctxt "[Admin] Label in new preset page"
+msgid "Enter a name to identify this filter preset"
+msgstr "Εισάγετε όνομα για να αναγνωρίζετε αυτή την προρύθμιση φίλτρου"
+
+#: templates/admin/preset-filters.php:20
+msgctxt "[Admin] Label in new preset page"
+msgid "Filters of this preset"
+msgstr "Φίλτρα αυτής της προρύθμισης"
+
+#: includes/class.yith-wcan-admin-premium.php:214
+msgctxt "[Admin] Filter edit form"
+msgid "Show search field"
+msgstr "Εμφάνιση πεδίου αναζήτησης"
+
+#: includes/class.yith-wcan-admin-premium.php:216
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if you want to show search field inside dropdown"
+msgstr ""
+"Ενεργοποιήστε την εμφάνιση πεδίου αναζήτησης μέσα στo αναπτυσσόμενο μενού"
+
+#: includes/class.yith-wcan-admin-premium.php:220
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Price slider style"
+msgstr "Ολισθητής Τιμής "
+
+#: includes/class.yith-wcan-admin-premium.php:223
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Show slider"
+msgstr "Εμφάνιση φίλτρου προσφοράς"
+
+#: includes/class.yith-wcan-admin-premium.php:224
+msgctxt "[Admin] Filter edit form"
+msgid "Show \"From\" and \"To\" fields"
+msgstr ""
+
+#: includes/class.yith-wcan-admin-premium.php:225
+msgctxt "[Admin] Filter edit form"
+msgid "Show both"
+msgstr ""
+
+#: includes/class.yith-wcan-admin-premium.php:227
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Choose the design for your price slider"
+msgstr "Ορίστε την ελάχιστη αξία του ολισθητή τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:231
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Adaptive limits"
+msgstr "Ενεργά φίλτρα"
+
+#: includes/class.yith-wcan-admin-premium.php:233
+msgctxt "[Admin] Filter edit form"
+msgid ""
+"Automatically calculate min/max values for the slider, depending on current "
+"selection of products."
+msgstr ""
+
+#: includes/class.yith-wcan-admin-premium.php:237
+msgctxt "[Admin] Filter edit form"
+msgid "Slider min value"
+msgstr "Ελάχιστη αξία ολισθητή"
+
+#: includes/class.yith-wcan-admin-premium.php:242
+msgctxt "[Admin] Filter edit form"
+msgid "Set the minimum value for the price slider"
+msgstr "Ορίστε την ελάχιστη αξία του ολισθητή τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:246
+msgctxt "[Admin] Filter edit form"
+msgid "Slider max value"
+msgstr "Μέγιστη αξία ολισθητή"
+
+#: includes/class.yith-wcan-admin-premium.php:251
+msgctxt "[Admin] Filter edit form"
+msgid "Set the maximum value for the price slider"
+msgstr "Ορίστε την μέγιστη αξία του ολισθητή τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:255
+msgctxt "[Admin] Filter edit form"
+msgid "Slider step"
+msgstr "Βήμα ολισθητή"
+
+#: includes/class.yith-wcan-admin-premium.php:260
+msgctxt "[Admin] Filter edit form"
+msgid "Set the value for each increment of the price slider"
+msgstr "Ορίστε την αξία για κάθε προσαύξηση του ολισθητή τιμής"
+
+#: includes/class.yith-wcan-admin-premium.php:264
+msgctxt "[Admin] Filter edit form"
+msgid "Order options"
+msgstr "Σειρά επιλογών"
+
+#: includes/class.yith-wcan-admin-premium.php:269
+msgctxt "[Admin] Filter edit form"
+msgid "Select sorting options to show"
+msgstr "Διαλέξτε τις επιλογές ταξινόμησης προς εμφάνιση"
+
+#: includes/class.yith-wcan-admin-premium.php:273
+msgctxt "[Admin] Filter edit form"
+msgid "Customize price ranges"
+msgstr "Προσαρμόστε τα εύρη τιμών"
+
+#: includes/class.yith-wcan-admin-premium.php:279
+msgctxt "[Admin] Filter edit form"
+msgid "Show stock filter"
+msgstr "Εμφάνιση φίλτρου αποθέματος"
+
+#: includes/class.yith-wcan-admin-premium.php:281
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if you want to show \"In Stock\" filter"
+msgstr "Επιλέξτε αν θέλετε να εμφανίζεται φίλτρο “Σε απόθεμα”"
+
+#: includes/class.yith-wcan-admin-premium.php:285
+msgctxt "[Admin] Filter edit form"
+msgid "Show sale filter"
+msgstr "Εμφάνιση φίλτρου προσφοράς"
+
+#: includes/class.yith-wcan-admin-premium.php:287
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if you want to show \"On Sale\" filter"
+msgstr "Επιλέξτε αν θέλετε να εμφανίζεται φίλτρο “Σε προσφορά”"
+
+#: includes/class.yith-wcan-admin-premium.php:291
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Show featured filter"
+msgstr "Εμφάνιση φίλτρου προσφοράς"
+
+#: includes/class.yith-wcan-admin-premium.php:293
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if you want to show \"Featured\" filter"
+msgstr "Επιλέξτε αν θέλετε να εμφανίζεται φίλτρο “Σε προσφορά”"
+
+#: includes/class.yith-wcan-admin-premium.php:297
+msgctxt "[Admin] Filter edit form"
+msgid "Show as toggle"
+msgstr "Εμφάνιση ως εναλλαγή"
+
+#: includes/class.yith-wcan-admin-premium.php:300
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if you want to show this filter as a toggle"
+msgstr "Επιλέξτε αν θέλετε να εμφανίζεται αυτό το φίλτρο ως εναλλαγή"
+
+#: includes/class.yith-wcan-admin-premium.php:304
+msgctxt "[Admin] Filter edit form"
+msgid "Toggle style"
+msgstr "Στυλ εναλλαγής"
+
+#: includes/class.yith-wcan-admin-premium.php:308
+msgctxt "[Admin] Filter edit form"
+msgid "Closed by default"
+msgstr "Προεπιλεγμένο κλείσιμο"
+
+#: includes/class.yith-wcan-admin-premium.php:309
+msgctxt "[Admin] Filter edit form"
+msgid "Opened by default"
+msgstr "Προεπιλεγμένο άνοιγμα"
+
+#: includes/class.yith-wcan-admin-premium.php:311
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Choose if the toggle has to be closed or opened by default"
+msgstr "Επιλέξτε αν η εναλλαγή πρέπει να κλείσει ή ανοίξει προεπιλεγμένα"
+
+#: includes/class.yith-wcan-admin-premium.php:315
+#: includes/class.yith-wcan-premium.php:130
+msgctxt "[Admin] Filter edit form"
+msgid "Order by"
+msgstr "Ταξινόμηση κατα"
+
+#: includes/class.yith-wcan-admin-premium.php:319
+msgctxt "[Admin] Filter edit form"
+msgid "Name"
+msgstr "Όνομα"
+
+#: includes/class.yith-wcan-admin-premium.php:320
+msgctxt "[Admin] Filter edit form"
+msgid "Slug"
+msgstr "Slug"
+
+#: includes/class.yith-wcan-admin-premium.php:321
+msgctxt "[Admin] Filter edit form"
+msgid "Term count"
+msgstr "Όρος αρίθμησης"
+
+#: includes/class.yith-wcan-admin-premium.php:322
+msgctxt "[Admin] Filter edit form"
+msgid "Term order"
+msgstr "Όρος σειράς"
+
+#: includes/class.yith-wcan-admin-premium.php:323
+msgctxt "[Admin] Filter edit form"
+msgid "Drag & drop"
+msgstr ""
+
+#: includes/class.yith-wcan-admin-premium.php:325
+#: includes/class.yith-wcan-admin-premium.php:336
+msgctxt "[Admin] Filter edit form"
+msgid "Select the default order for terms of this filter"
+msgstr "Επιλέξτε την προεπιλεγμένη σειρά για τους όρους αυτού του φίλτρου"
+
+#: includes/class.yith-wcan-admin-premium.php:329
+msgctxt "[Admin] Filter edit form"
+msgid "Order type"
+msgstr "Τύπος σειράς"
+
+#: includes/class.yith-wcan-admin-premium.php:333
+msgctxt "[Admin] Filter edit form"
+msgid "ASC"
+msgstr "ΑΥΞΟΥΣΑ"
+
+#: includes/class.yith-wcan-admin-premium.php:334
+msgctxt "[Admin] Filter edit form"
+msgid "DESC"
+msgstr "ΦΘIΝΟΥΣΑ"
+
+#: includes/class.yith-wcan-admin-premium.php:340
+msgctxt "[Admin] Filter edit form"
+msgid "Show count of items"
+msgstr "Εμφάνιση αρίθμησης αντικειμένων"
+
+#: includes/class.yith-wcan-admin-premium.php:342
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if you want to show how many items are available for each term"
+msgstr ""
+"Ενεργοποιήστε αν θέλετε να εμφανίζετε πόσα αντικείμενα είναι διαθέσιμα για "
+"κάθε όρο"
+
+#: includes/class.yith-wcan-admin-premium.php:349
+msgctxt "[Admin] Filter edit form"
+msgid "Adoptive filtering"
+msgstr "Θετό φίλτρο"
+
+#: includes/class.yith-wcan-admin-premium.php:352
+msgctxt "[Admin] Filter edit form"
+msgid "Terms will be hidden"
+msgstr "Θα γίνει απόκρυψη όρων"
+
+#: includes/class.yith-wcan-admin-premium.php:353
+msgctxt "[Admin] Filter edit form"
+msgid "Terms will be visible, but not clickable"
+msgstr ""
+
+#: includes/class.yith-wcan-admin-premium.php:355
+msgctxt "[Admin] Filter edit form"
+msgid ""
+"Decide how to manage filter options that show no results when applying "
+"filters. Choose to hide them or make them visible (this will show them in "
+"lighter grey and not clickable)"
+msgstr ""
+"Επιλέξτε πώς να διαχειρίζεστε τις επιλογές φίλτρου που δεν εμφανίζουν "
+"αποτελέσματα κατα την εφαρμογή φίλτρων. Επιλέξτε να γίνει απόκρυψη ή "
+"εμφάνιση (αυτό θα τα εμφανίσει με ανοιχτό γκρι και χωρίς την επιλογή για "
+"κλικ)"
+
+#: includes/class.yith-wcan-admin-premium.php:364
+msgctxt "[Admin] Filter edit form"
+msgid "Yes, with terms collapsed"
+msgstr "Ναι, με σύμπτυξη όρων"
+
+#: includes/class.yith-wcan-admin-premium.php:365
+msgctxt "[Admin] Filter edit form"
+msgid "Yes, with terms expanded"
+msgstr "Ναι, με προέκταση όρων"
+
+#: includes/class.yith-wcan-admin-premium.php:370
+msgctxt "[Admin] Filter edit form"
+msgid "Yes, without toggles"
+msgstr "Ναι, χωρίς εναλλαγές"
+
+#: includes/class.yith-wcan-filter-factory.php:72
+msgctxt "[Admin] Filter edit form"
+msgid "Taxonomy"
+msgstr "Ταξινομία"
+
+#: includes/class.yith-wcan-filter-factory.php:86
+msgctxt "[Admin] Filter edit form"
+msgid "Checkbox"
+msgstr "Πλαίσιο ελέγχου"
+
+#: includes/class.yith-wcan-filter-factory.php:87
+msgctxt "[Admin] Filter edit form"
+msgid "Select"
+msgstr "Επιλογή"
+
+#: includes/class.yith-wcan-filter-factory.php:88
+msgctxt "[Admin] Filter edit form"
+msgid "Text"
+msgstr "Κείμενο"
+
+#: includes/class.yith-wcan-filter-factory.php:89
+msgctxt "[Admin] Filter edit form"
+msgid "Color Swatches"
+msgstr "Δείγματα Χρωμάτων"
+
+#: includes/class.yith-wcan-filter-factory.php:90
+msgctxt "[Admin] Filter edit form"
+msgid "Label"
+msgstr "Επιγραφή"
+
+#: includes/class.yith-wcan-premium.php:131
+msgctxt "[Admin] Filter edit form"
+msgid "Price Range"
+msgstr "Εύρος Τιμής"
+
+#: includes/class.yith-wcan-premium.php:132
+msgctxt "[Admin] Filter edit form"
+msgid "Price Slider"
+msgstr "Ολισθητής Τιμής "
+
+#: includes/class.yith-wcan-premium.php:133
+msgctxt "[Admin] Filter edit form"
+msgid "Review"
+msgstr "Κριτική"
+
+#: includes/class.yith-wcan-premium.php:134
+msgctxt "[Admin] Filter edit form"
+msgid "In stock/On sale"
+msgstr "Σε απόθεμα/Σε προσφορά"
+
+#: includes/class.yith-wcan-premium.php:148
+msgctxt "[Admin] Filter edit form"
+msgid "Label/Image"
+msgstr "Επιγραφή/Εικόνα"
+
+#: includes/class.yith-wcan-premium.php:153
+msgctxt "[Admin] Filter edit form"
+msgid "Radio"
+msgstr "Kουμπί επιλογής"
+
+#: plugin-options/filter-options.php:32
+msgctxt "[Admin] Filter edit form"
+msgid "Filter name"
+msgstr "Όνομα φίλτρου"
+
+#: plugin-options/filter-options.php:35
+msgctxt "[Admin] Filter edit form"
+msgid "Enter a name to identify this filter"
+msgstr "Εισάγετε όνομα για να αναγνωρίζετε αυτό το φίλτρο"
+
+#: plugin-options/filter-options.php:41
+msgctxt "[Admin] Filter edit form"
+msgid "Filter for"
+msgstr "Ταξινόμηση για"
+
+#: plugin-options/filter-options.php:45
+msgctxt "[Admin] Filter edit form"
+msgid "Select the parameters you wish to filter for"
+msgstr "Επιλέξτε τις παραμέτρους που θέλετε να ταξινομήσετε"
+
+#: plugin-options/filter-options.php:51
+msgctxt "[Admin] Filter edit form"
+msgid "Choose taxonomy"
+msgstr "Επιλογή ταξινομίας"
+
+#: plugin-options/filter-options.php:55
+msgctxt "[Admin] Filter edit form"
+msgid "Select which taxonomy to use for this filter"
+msgstr ""
+"Επιλέξτε την ταξινομία που θέλετε να χρησιμοποιήσετε για αυτό το φίλτρο"
+
+#: plugin-options/filter-options.php:60
+msgctxt "[Admin] Filter edit form"
+msgid "Auto-populate with all terms"
+msgstr ""
+
+#: plugin-options/filter-options.php:62
+msgctxt "[Admin] Filter edit form"
+msgid ""
+"Populate this filter with all existing terms of the selected taxonomy.\n"
+"\t\t\t\t\t<span class=\"future-terms-notice\"><b>Notice:</b> if you enable "
+"this option, all terms created in the future will be added to this filter as "
+"well.</span>"
+msgstr ""
+
+#: plugin-options/filter-options.php:71
+msgctxt "[Admin] Filter edit form"
+msgid "Choose terms"
+msgstr "Επιλογή όρων"
+
+#: plugin-options/filter-options.php:76
+msgctxt "[Admin] Filter edit form"
+msgid "Select which terms to use for filtering"
+msgstr "Επιλέξτε ποιους όρους να χρησιμοποιήσετε για την ταξινόμηση"
+
+#: plugin-options/filter-options.php:80
+msgctxt "[Admin] Filter edit form"
+msgid "Filter type"
+msgstr "Τύπος φίλτρου"
+
+#: plugin-options/filter-options.php:84
+msgctxt "[Admin] Filter edit form"
+msgid "Select the filter type for this filter"
+msgstr "Επιλέξτε τον τύπο για αυτό το φίλτρο"
+
+#: plugin-options/filter-options.php:88
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Labels"
+msgstr "Επιγραφές"
+
+#: plugin-options/filter-options.php:91
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Show below"
+msgstr "Εμφάνιση αποτελεσμάτων"
+
+#: plugin-options/filter-options.php:92
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Show on the right"
+msgstr "Εμφάνιση αρίθμησης αντικειμένων"
+
+#: plugin-options/filter-options.php:93
+msgctxt "[Admin] Filter edit form"
+msgid "Hide"
+msgstr ""
+
+#: plugin-options/filter-options.php:95
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Choose if and where to show the label inside your filter"
+msgstr "Επιλέξτε πώς να ταξινομούνται οι όροι μέσα στα φίλτρα"
+
+#: plugin-options/filter-options.php:99
+msgctxt "[Admin] Filter edit form"
+msgid "Columns number"
+msgstr "Αριθμός στηλών"
+
+#: plugin-options/filter-options.php:104
+msgctxt "[Admin] Filter edit form"
+msgid "Set the number of items per row you want to show for this design"
+msgstr ""
+"Ορίστε τον αριθμό αντικειμένων που θέλετε να εμφανίζετε ανά σειρά για αυτό "
+"το σχέδιο"
+
+#: plugin-options/filter-options.php:108
+msgctxt "[Admin] Filter edit form"
+msgid "Customize terms"
+msgstr "Προσαρμογή όρων"
+
+#: plugin-options/filter-options.php:111
+msgctxt "[Admin] Filter edit form"
+msgid ""
+"Configure your terms individually; system will otherwise use default labels/"
+"images for terms.\n"
+"\t\t\t\t\t<span class=\"wccl-notice\"><b>Notice:</b> optionally,  you can "
+"configure labels/images/colors for your attributes using YITH WooCommerce "
+"Color and Label Variations options, in the term's edit page. Otherwise, just "
+"enable this option and use boxes below.</span>\n"
+"\t\t\t\t\t<span class=\"images-notice\"><b>Notice:</b> optionally, you can "
+"configure the images in ‘edit page’ for the terms. Otherwise, just enable "
+"this option and use the boxes below</span>"
+msgstr ""
+
+#: plugin-options/filter-options.php:121
+#, fuzzy
+msgctxt "[Admin] Filter edit form"
+msgid "Terms options"
+msgstr "Σειρά επιλογών"
+
+#: plugin-options/filter-options.php:127
+msgctxt "[Admin] Filter edit form"
+msgid "Show hierarchy"
+msgstr "Εμφάνιση ιεραρχίας"
+
+#: plugin-options/filter-options.php:130
+msgctxt "[Admin] Filter edit form"
+msgid "No, show all terms in same level"
+msgstr "Όχι, να εμφανίζονται όλοι οι όροι στο ίδιο επίπεδο"
+
+#: plugin-options/filter-options.php:131
+msgctxt "[Admin] Filter edit form"
+msgid "No, show only parent terms"
+msgstr "Όχι, να εμφανίζονται μόνο γονικοί όροι"
+
+#: plugin-options/filter-options.php:132
+msgctxt "[Admin] Filter edit form"
+msgid "Yes"
+msgstr ""
+
+#: plugin-options/filter-options.php:134
+msgctxt "[Admin] Filter edit form"
+msgid "Choose how to show terms hierarchy"
+msgstr "Επιλέξτε πώς να εμφανίζεται η ιεραρχία όρων"
+
+#: plugin-options/filter-options.php:138
+msgctxt "[Admin] Filter edit form"
+msgid "Allow multiple selection"
+msgstr "Επιτρέψτε πολλαπλή επιλογή"
+
+#: plugin-options/filter-options.php:140
+msgctxt "[Admin] Filter edit form"
+msgid "Enable if the user can select multiple terms when filtering products"
+msgstr ""
+"Ενεργοποιήστε αν ο χρήστης μπορεί να επιλέξει πολλαπλούς όρους κατα την "
+"ταξινόμηση προϊόντων"
+
+#: plugin-options/filter-options.php:144
+msgctxt "[Admin] Filter edit form"
+msgid "Multiselect relation"
+msgstr "Σχέση πολλαπλής επιλογής"
+
+#: plugin-options/filter-options.php:150
+msgctxt "[Admin] Filter edit form"
+msgid "Choose how multiple terms selection should behave"
+msgstr "Επιλέξτε την συμπεριφορά επιλογής πολλαπλών όρων"
+
+#: templates/admin/preset-filter-ranges.php:19
+msgctxt "[Admin] Filter edit form"
+msgid "Add range"
+msgstr "Προσθήκη εύρους"
+
+#: includes/class.yith-wcan-admin-premium.php:388
+msgctxt "[ADMIN] Seo settings page"
+msgid "Use plugin customized permalinks"
+msgstr "Χρησιμοποιήστε προσαρμοσμένα permalinks πρόσθετου"
+
+#: plugin-options/seo-options.php:16
+msgctxt "[ADMIN] Seo settings page"
+msgid "SEO"
+msgstr "SEO"
+
+#: plugin-options/seo-options.php:23
+msgctxt "[ADMIN] Seo settings page"
+msgid "Enable SEO option"
+msgstr "Ενεργοποίηση επιλογής SEO"
+
+#: plugin-options/seo-options.php:24
+msgctxt "[ADMIN] Seo settings page"
+msgid ""
+"Add \"robots\" meta tag in head tag of HTML page if filters have been "
+"activated."
+msgstr ""
+"Προσθέστε ετικέτα meta “robots” σε ετικέτα επικεφαλίδας της σελίδα HTML αν "
+"έχουν ενεργοποιηθεί τα φίλτρα."
+
+#: plugin-options/seo-options.php:31
+msgctxt "[ADMIN] Seo settings page"
+msgid "Meta tag"
+msgstr "Ετικέτα meta"
+
+#: plugin-options/seo-options.php:32
+msgctxt "[ADMIN] Seo settings page"
+msgid "Select which tag to use on filtered pages"
+msgstr "Επιλέξτε την ετικέτα που θα χρησιμοποιήσετε στις ταξινομημένες σελίδες"
+
+#: plugin-options/seo-options.php:38
+msgctxt "[ADMIN] Seo settings page"
+msgid "Disabled"
+msgstr "Απενεργοποιημένο"
+
+#: plugin-options/seo-options.php:51
+msgctxt "[ADMIN] Seo settings page"
+msgid "Add \"nofollow\" to filter anchors"
+msgstr "Προσθέστε “nofollow” στα anchors φίλτρου"
+
+#: plugin-options/seo-options.php:52
+msgctxt "[ADMIN] Seo settings page"
+msgid ""
+"When enabled, adds re=\"nofollow\" attribute to all the filter anchors "
+"across the plugin"
+msgstr ""
+"Όταν ενεργοποιείται, προσθέτει ιδιότητα re=“nofollow” σε όλα τα anchors "
+"φίλτρου όλου του πρόσθετου"
+
+#: plugin-options/seo-options.php:63
+msgctxt "[ADMIN] Seo settings page"
+msgid "URL permalinks"
+msgstr "URL permalinks"
+
+#: plugin-options/seo-options.php:64
+msgctxt "[ADMIN] Seo settings page"
+msgid "Choose how to manage browser URL during filtering"
+msgstr ""
+"Επιλέξτε πώς να διαχειρίζεστε την πλοήγηση URL κατα την διάρκεια ταξινόμησης"
+
+#: plugin-options/seo-options.php:70
+msgctxt "[ADMIN] Seo settings page"
+msgid "Add filters parameters to default URL"
+msgstr "Προσθήκη παραμέτρων φίλτρου σε προεπιλεγμένο URL"
+
+#: plugin-options/seo-options.php:71
+msgctxt "[ADMIN] Seo settings page"
+msgid "Don't change URL"
+msgstr "Να μην γίνει αλλαγή URL"
+
+#: includes/class.yith-wcan-admin-premium.php:410
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Scroll to top after filtering"
+msgstr "Κύλιση προς τα πάνω μετά από ταξινόμηση"
+
+#: includes/class.yith-wcan-admin-premium.php:411
+msgctxt "[ADMIN] Legacy settings page"
+msgid ""
+"Choose whether you want to enable the \"Scroll to top\" option on Desktop, "
+"Mobile, or on both of them"
+msgstr ""
+"Επιλέξτε αν θέλετε να ενεργοποιήσετε την επιλογή “Κύλιση προς τα πάνω” για "
+"Επιφάνεια εργασίας, Κινητή συσκευή, ή και για τα δύο"
+
+#: includes/class.yith-wcan-admin-premium.php:417
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Disabled"
+msgstr "Απενεργοποιημένο"
+
+#: includes/class.yith-wcan-admin-premium.php:418
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Mobile"
+msgstr "Κινητή συσκευή"
+
+#: includes/class.yith-wcan-admin-premium.php:419
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Desktop"
+msgstr "Επιφάνεια εργασίας"
+
+#: includes/class.yith-wcan-admin-premium.php:420
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Mobile and Desktop"
+msgstr "Κινητή Συσκευή και Επιφάνεια Εργασίας"
+
+#: includes/class.yith-wcan-admin-premium.php:425
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Widget title selector"
+msgstr "Επιλογέας τίτλου μικροεφαρμογής"
+
+#: includes/class.yith-wcan-admin-premium.php:426
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Enter here the CSS selector (class or ID) of the widget title"
+msgstr "Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) του τίτλου μικροεφαρμογής"
+
+#: includes/class.yith-wcan-admin-premium.php:434
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Widget container"
+msgstr "Περιέκτης μικροεφαρμογής"
+
+#: includes/class.yith-wcan-admin-premium.php:435
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Enter here the CSS selector (class or ID) of the widget container"
+msgstr "Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) του περιέκτη μικροεφαρμογής"
+
+#: includes/class.yith-wcan-admin-premium.php:443
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Filter style"
+msgstr "Στυλ φίλτρου"
+
+#: includes/class.yith-wcan-admin-premium.php:444
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Choose the style of the filter inside widgets"
+msgstr "Επιλέξτε το στυλ φίλτρου μέσα στις μικροεφαρμογές"
+
+#: includes/class.yith-wcan-admin-premium.php:450
+msgctxt "[ADMIN] Legacy settings page"
+msgid "\"x\" icon before active filters"
+msgstr "Εικονίδιο “x” πριν από ενεργοποιημένα φίλτρα"
+
+#: includes/class.yith-wcan-admin-premium.php:451
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Checkboxes"
+msgstr "Πλαίσια ελέγχου"
+
+#: includes/class.yith-wcan-admin-premium.php:460
+msgctxt "[ADMIN] Legacy settings page"
+msgid "General options"
+msgstr "Γενικές επιλογές"
+
+#: includes/class.yith-wcan-admin-premium.php:467
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Ajax Loader"
+msgstr "Ajax Φόρτωση"
+
+#: includes/class.yith-wcan-admin-premium.php:468
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Choose loading icon you want to use for your widget filters"
+msgstr ""
+"Επιλέξτε το εικονίδιο φόρτωσης που θέλετε να χρησιμοποιήσετε για τα φίλτρα "
+"μικροεφαρμογής"
+
+#: includes/class.yith-wcan-admin-premium.php:519
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Opened"
+msgstr "Ανοιχτό"
+
+#: includes/class.yith-wcan-admin-premium.php:520
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Closed"
+msgstr "Κλειστό"
+
+#: includes/class.yith-wcan-admin-premium.php:534
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Shop pagination selector"
+msgstr "Επιλογέας σελιδοποίησης καταστήματος"
+
+#: includes/class.yith-wcan-admin-premium.php:535
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Enter here the CSS selector (class or ID) of the shop pagination"
+msgstr ""
+"Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) της σελιδοποίησης καταστήματος"
+
+#: includes/class.yith-wcan-admin-premium.php:561
+msgctxt "[ADMIN] Legacy settings page"
+msgid "\"All categories\" anchor label"
+msgstr "Επιγραφή anchor “Όλες οι κατηγορίες”"
+
+#: includes/class.yith-wcan-admin-premium.php:562
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Enter here the text you want to use for \"All categories\" anchor"
+msgstr ""
+"Εισάγετε εδώ το κείμενο που θέλετε να χρησιμοποιήσετε για το anchor “Όλες οι "
+"κατηγορίες”"
+
+#: includes/class.yith-wcan-admin-premium.php:566
+msgctxt "[ADMIN] Legacy settings page"
+msgid "See all categories"
+msgstr "Προβολή όλων των κατηγοριών"
+
+#: includes/class.yith-wcan-admin-premium.php:579
+msgctxt "[ADMIN] Legacy settings page"
+msgid "\"All tags\" anchor label"
+msgstr "Επιγραφή anchor “Όλες οι ετικέτες”"
+
+#: includes/class.yith-wcan-admin-premium.php:580
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Enter here the text you want to use for \"All tags\" anchor"
+msgstr ""
+"Εισάγετε εδώ το κείμενο που θέλετε να χρησιμοποιήσετε για το anchor “Όλες οι "
+"ετικέτες”"
+
+#: includes/class.yith-wcan-admin-premium.php:584
+msgctxt "[ADMIN] Legacy settings page"
+msgid "See all tags"
+msgstr "Προβολή όλων των ετικετών"
+
+#: includes/class.yith-wcan-admin-premium.php:589
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Hierarchical tags"
+msgstr "Ιεραρχικές ετικέτες"
+
+#: includes/class.yith-wcan-admin-premium.php:590
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Make product tag taxonomy hierarchical"
+msgstr "Ορίστε την ταξινομία ετικέτας προϊόντος ιεραρχικά"
+
+#: plugin-options/legacy-options.php:16
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Frontend options"
+msgstr "Ρυθμίσεις εμπρόσθιου μέρους"
+
+#: plugin-options/legacy-options.php:23
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Product container"
+msgstr "Περιέκτης προϊόντος"
+
+#: plugin-options/legacy-options.php:24
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Enter here the CSS selector (class or ID) of the product container"
+msgstr "Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) του περιέκτη προϊόντος"
+
+#: plugin-options/legacy-options.php:32
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Shop pagination container"
+msgstr "Περιέκτης σελιδοποίησης καταστήματος"
+
+#: plugin-options/legacy-options.php:33
+msgctxt "[ADMIN] Legacy settings page"
+msgid ""
+"Enter here the CSS selector (class or ID) of the shop pagination container"
+msgstr ""
+"Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) του περιέκτη σελιδοποίησης "
+"καταστήματος"
+
+#: plugin-options/legacy-options.php:41
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Result count container"
+msgstr "Περιέκτης αρίθμησης αποτελέσματος"
+
+#: plugin-options/legacy-options.php:42
+msgctxt "[ADMIN] Legacy settings page"
+msgid ""
+"Enter here the CSS selector (class or ID) of the results count container"
+msgstr ""
+"Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) του περιέκτη αρίθμησης "
+"αποτελεσμάτων"
+
+#: plugin-options/legacy-options.php:50
+msgctxt "[ADMIN] Legacy settings page"
+msgid "\"Scroll to top\" anchor selector"
+msgstr "Επιλογέας anchor “Κύλιση προς τα πάνω”"
+
+#: plugin-options/legacy-options.php:51
+msgctxt "[ADMIN] Legacy settings page"
+msgid ""
+"Enter here the CSS selector (class or ID) of the \"Scroll to to top\" anchor"
+msgstr ""
+"Εισάγετε εδώ τον επιλογέα CSS (κλάση ή ID) του anchor “Κύλιση προς τα πάνω”"
+
+#: plugin-options/legacy-options.php:59
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Terms sorting"
+msgstr "Ταξινόμηση όρων"
+
+#: plugin-options/legacy-options.php:60
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Choose how to sort terms inside filters"
+msgstr "Επιλέξτε πώς να ταξινομούνται οι όροι μέσα στα φίλτρα"
+
+#: plugin-options/legacy-options.php:66
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Product count"
+msgstr "Αρίθμηση προϊόντος"
+
+#: plugin-options/legacy-options.php:67
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Alphabetical"
+msgstr "Αλφαβητικά"
+
+#: plugin-options/legacy-options.php:68
+msgctxt "[ADMIN] Legacy settings page"
+msgid "Default"
+msgstr "Προεπιλεγμένο"
+
+#: includes/class.yith-wcan-admin-premium.php:627
+msgctxt "[Admin] tab name"
+msgid "Customization"
+msgstr "Προσαρμογή"
+
+#: includes/class.yith-wcan-admin.php:184
+msgctxt "[Admin] tab name"
+msgid "Filter presets"
+msgstr "Προρυθμίσεις φίλτρου"
+
+#: includes/class.yith-wcan-admin.php:185
+msgctxt "[Admin] tab name"
+msgid "General settings"
+msgstr "Γενικές ρυθμίσεις"
+
+#: includes/class.yith-wcan-admin.php:186
+msgctxt "[Admin] tab name"
+msgid "SEO"
+msgstr ""
+
+#: includes/class.yith-wcan-admin.php:187
+msgctxt "[Admin] tab name"
+msgid "Premium Version"
+msgstr "Premium Έκδοση"
+
+#: includes/class.yith-wcan-admin.php:191
+msgctxt "[Admin] tab name"
+msgid "Legacy"
+msgstr "Σύστημα κληρονομιάς"
+
+#: includes/class.yith-wcan-admin-premium.php:679
+msgctxt "[ADMIN] WooCommerce Tools tab, name of the tool"
+msgid "Clear Product Filter sessions"
+msgstr "Καθαρισμός συνεδριών φίλτρου προϊόντος"
+
+#: includes/class.yith-wcan-admin.php:478
+msgctxt "[ADMIN] WooCommerce Tools tab, name of the tool"
+msgid "Clear Product Filter transients"
+msgstr "Καθαρισμός μεταβάσεων φίλτρου προϊόντος"
+
+#: includes/class.yith-wcan-admin.php:484
+msgctxt "[ADMIN] WooCommerce Tools tab, name of the tool"
+msgid "Run filter widgets upgrade"
+msgstr "Εκτέλεση αναβάθμισης μικροεφαρμογών φίλτρου"
+
+#: includes/class.yith-wcan-admin-premium.php:680
+#: includes/class.yith-wcan-admin.php:479
+msgctxt "[ADMIN] WooCommerce Tools tab, button for the tool"
+msgid "Clear"
+msgstr "Καθαρισμός"
+
+#: includes/class.yith-wcan-admin.php:485
+msgctxt "[ADMIN] WooCommerce Tools tab, button for the tool"
+msgid "Run"
+msgstr "Εκτέλεση"
+
+#: includes/class.yith-wcan-admin-premium.php:681
+msgctxt "[ADMIN] WooCommerce Tools tab, description of the tool"
+msgid ""
+"This will clear all filter sessions on your site. It may be useful if you "
+"want to free some space (previously shared sessions won't be reachable any "
+"longer)."
+msgstr ""
+"Αυτή η επιλογή θα θέτει καθαρισμό για τις συνεδρίες φίλτρων του καταστήματός "
+"σας. Σας είναι χρήσιμο αν θέλετε να απελευθερώσετε χώρο (οι προηγουμένως "
+"κοινοποιημένες συνεδρίες δεν θα είναι πλέον προσβάσιμες)."
+
+#: includes/class.yith-wcan-admin.php:480
+msgctxt "[ADMIN] WooCommerce Tools tab, description of the tool"
+msgid ""
+"This will clear all transients related to the YITH WooCommerce AJAX Product "
+"Filter plugin. It may be useful if you changed your product's configuration, "
+"and filters do not display the expected results."
+msgstr ""
+"Αυτή η επιλογή θα ορίσει καθαρισμό για όλα τα transients σε σχέση με το "
+"πρόσθετο YITH WooCommerce AJAX Product Filter. Ίσως σας φανεί χρήσιμο αν "
+"κατα την αλλαγή της ρύθμισης του προϊόντος σας, τα φίλτρα δεν εμφανίζουν τα "
+"αποτελέσματα που περιμένετε. "
+
+#: includes/class.yith-wcan-admin.php:486
+msgctxt "[ADMIN] WooCommerce Tools tab, description of the tool"
+msgid ""
+"This will create a preset for any sidebar of your shop containing filter "
+"widgets; preset will be configured to match widgets specifications"
+msgstr ""
+"Αυτή η επιλογή θα δημιουργήσει προρύθμιση για κάθε πλευρική στήλη του "
+"καταστήματός σας, που περιέχει μικροεφαρμογές φίλτρου. Η προρύθμιση θα "
+"ρυθμιστεί για να αντιστοιχεί με τις προδιαγραφές μικροεφαρμογών"
+
+#: includes/class.yith-wcan-admin.php:107
+msgctxt "[Admin] Copy confirmation message"
+msgid "Content copied to your clipboard"
+msgstr "Έγινε αντιγραφή περιεχομένου σε πρόχειρο"
+
+#: includes/class.yith-wcan-admin.php:108
+msgctxt "[Admin] Confirm filter delete message"
+msgid "Are you sure you want to delete this item?"
+msgstr "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτό το αντικείμενο;"
+
+#. translators: 1. Number of items that will be added.
+#: includes/class.yith-wcan-admin.php:110
+msgctxt "[Admin] Confirm add all terms message"
+msgid "Are you sure you want to proceed? This operation will add %s items"
+msgstr ""
+"Είστε σίγουροι ότι θέλετε να προχωρήσετε; Αυτή η διαδικασία θα προσθέσει %s "
+"αντικείμενα"
+
+#: includes/class.yith-wcan-admin.php:111
+msgctxt "[Admin] Error message"
+msgid "\"Filter title\" is a required field"
+msgstr ""
+
+#: includes/class.yith-wcan-admin.php:114 templates/admin/preset-filter.php:31
+msgctxt "[Admin] Message shown when filter has empty title"
+msgid "&lt; no title &gt;"
+msgstr "&lt; χωρίς τίτλο &gt;"
+
+#: includes/class.yith-wcan-admin.php:115
+msgctxt "[Admin] Media library title, when selecting images"
+msgid "Select media you want to use"
+msgstr "Επιλέξτε τα πολυμέσα που θέλετε να χρησιμοποιήσετε"
+
+#: includes/class.yith-wcan-admin.php:116
+msgctxt "[Admin] Media library confirm button, when selecting images"
+msgid "Use this media"
+msgstr "Χρησιμοποιήστε αυτά τα πολυμέσα"
+
+#: includes/class.yith-wcan-admin.php:198
+msgctxt "[Admin] Menu title"
+msgid "Ajax Product Filter"
+msgstr "Ajax Product Filter"
+
+#: includes/class.yith-wcan-admin.php:199
+msgctxt "[Admin] Plugin description"
+msgid ""
+"It allows your users to find the product they are looking for as quickly as "
+"possible."
+msgstr ""
+"Επιτρέπει στους χρήστες σας να βρουν το προϊόν που επιθυμούν το συντομότερο "
+"δυνατό."
+
+#: includes/class.yith-wcan-admin.php:211
+msgctxt "[HELP TAB] Video title"
+msgid ""
+"Check this video to learn how to <b>create a filter preset and show it on "
+"the shop page:</b>"
+msgstr ""
+
+#: includes/class.yith-wcan-admin.php:329
+msgctxt "[Admin] Generic item name, in \"You have no x yet\""
+msgid "item"
+msgstr "αντικείμενο"
+
+#: includes/class.yith-wcan-admin.php:330
+msgctxt "[Admin] Preset table empty message second line"
+msgid "But don't worry, here you can create your first one!"
+msgstr "Μην ανησυχείτε, εδώ μπορείτε να δημιουργήσετε το πρώτο!"
+
+#: includes/class.yith-wcan-filter-factory.php:104
+msgctxt "[Admin] Filter edit form, sorting options"
+msgid "Default sorting"
+msgstr "Προεπιλεγμένη ταξινόμηση"
+
+#: includes/class.yith-wcan-filter-factory.php:105
+msgctxt "[Admin] Filter edit form, sorting options"
+msgid "Sort by popularity"
+msgstr "Ταξινόμηση κατά δημοτικότητα"
+
+#: includes/class.yith-wcan-filter-factory.php:106
+msgctxt "[Admin] Filter edit form, sorting options"
+msgid "Sort by average rating"
+msgstr "Ταξινόμηση κατα μέση αξιολόγηση"
+
+#: includes/class.yith-wcan-filter-factory.php:107
+msgctxt "[Admin] Filter edit form, sorting options"
+msgid "Sort by latest"
+msgstr "Ταξινόμηση κατά τελευταίο"
+
+#: includes/class.yith-wcan-filter-factory.php:108
+msgctxt "[Admin] Filter edit form, sorting options"
+msgid "Sort by price: low to high"
+msgstr "Ταξινόμηση ανά τιμή: χαμηλή προς υψηλή"
+
+#: includes/class.yith-wcan-filter-factory.php:109
+msgctxt "[Admin] Filter edit form, sorting options"
+msgid "Sort by price: high to low"
+msgstr "Ταξινόμηση ανά τιμή: υψηλή προς χαμηλή"
+
+#: includes/class.yith-wcan-filter.php:116
+msgctxt "[Admin] Default filter title"
+msgid "New filter"
+msgstr "Νέο φίλτρο"
+
+#: includes/class.yith-wcan-frontend-premium.php:173
+msgctxt "[FRONTEND] Default modal title - mobile only"
+msgid "Filter products"
+msgstr "Ταξινόμηση προϊόντων"
+
+#: includes/class.yith-wcan-frontend-premium.php:244
+msgctxt "[FRONTEND] Active filters title"
+msgid "Active filters"
+msgstr "Ενεργά φίλτρα"
+
+#: includes/class.yith-wcan-frontend-premium.php:281
+msgctxt "[FRONTEND] Label for the Filters button on mobile"
+msgid "Filters"
+msgstr "Φίλτρα"
+
+#: includes/class.yith-wcan-frontend.php:576
+#: includes/filters/class.yith-wcan-filter-tax.php:62
+msgctxt "[FRONTEND] \"All\" label shown when no term is selected"
+msgid "All"
+msgstr "Όλα"
+
+#: includes/class.yith-wcan-frontend.php:577
+msgctxt "[FRONTEND] Search placeholder shown in terms dropdown"
+msgid "Search..."
+msgstr "Αναζήτηση…"
+
+#: includes/class.yith-wcan-frontend.php:578
+msgctxt "[FRONTEND] Empty items list in the dropdown"
+msgid "No item found"
+msgstr "Δεν βρέθηκε αντικείμενο"
+
+#. translators: 1. Number of items to show.
+#: includes/class.yith-wcan-frontend.php:580
+msgctxt "[FRONTEND] Show more link on terms dropdown"
+msgid "Show %d more"
+msgstr "Εμφάνιση %d περισσότερων"
+
+#: includes/class.yith-wcan-frontend.php:581
+msgctxt "[FRONTEND] Alt text for modal close button on mobile"
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: includes/class.yith-wcan-frontend.php:582
+msgctxt "[FRONTEND] Label for filter button, on horizontal layout"
+msgid "Save"
+msgstr ""
+
+#: includes/class.yith-wcan-frontend.php:583
+msgctxt "[FRONTEND] Label for filter button, on mobile modal"
+msgid "Show results"
+msgstr "Εμφάνιση αποτελεσμάτων"
+
+#: includes/class.yith-wcan-frontend.php:584
+msgctxt ""
+"[FRONTEND] Label for clear selection link, that appears above filter after "
+"selection"
+msgid "Clear"
+msgstr "Καθαρισμός"
+
+#: includes/class.yith-wcan-frontend.php:585
+msgctxt ""
+"[FRONTEND] Label for clear selection link, that appears above filter after "
+"selection"
+msgid "Clear All"
+msgstr "Καθαρισμός Όλων"
+
+#: includes/class.yith-wcan-install-premium.php:257
+msgctxt "[ADMIN] Name of default price filter created by plugin"
+msgid "Filter by price"
+msgstr "Ταξινόμηση κατα τιμή"
+
+#: includes/class.yith-wcan-install-premium.php:274
+msgctxt "[ADMIN] Name of default review filter created by plugin"
+msgid "Filter by review"
+msgstr "Ταξινόμηση κατα κριτική"
+
+#: includes/class.yith-wcan-install-premium.php:290
+msgctxt "[ADMIN] Name of default stock/sale filter created by plugin"
+msgid "Additional filters"
+msgstr "Επιπλέον φίλτρα"
+
+#: includes/class.yith-wcan-install-premium.php:306
+msgctxt "[ADMIN] Name of default order by filter created by plugin"
+msgid "Order by"
+msgstr "Ταξινόμηση κατα"
+
+#: includes/class.yith-wcan-install.php:95
+msgctxt "[ADMIN] Name of default preset that is installed with the plugin"
+msgid "Default preset"
+msgstr "Προεπιλεγμένη προρύθμιση"
+
+#. translators: 1. Taxonomy name.
+#: includes/class.yith-wcan-install.php:285
+msgctxt "[ADMIN] Name of default taxonomy filter created by plugin"
+msgid "Filter by %s"
+msgstr "Ταξινόμηση κατά %s"
+
+#: includes/class.yith-wcan-presets.php:95
+#: includes/class.yith-wcan-presets.php:100
+msgctxt "[Admin] name of presets custom post type"
+msgid "Filter presets"
+msgstr "Φίλτρο προρυθμίσεων"
+
+#: includes/class.yith-wcan-presets.php:96
+msgctxt "[Admin] singular name of presets custom post type"
+msgid "Filter preset"
+msgstr "Φίλτρο προρύθμισης"
+
+#: includes/class.yith-wcan-presets.php:97
+msgctxt "[Admin] add new filter preset label"
+msgid "Add new preset"
+msgstr "Προσθήκη νέας προρύθμισης"
+
+#: includes/class.yith-wcan-presets.php:139
+msgctxt "[ADMIN] Convert widgets tools, in preset tab"
+msgid "Convert widgets in a preset"
+msgstr "Μετατροπή μικροεφαρμογών σε προρύθμιση"
+
+#: includes/class.yith-wcan-query-premium.php:61
+msgctxt "[FRONTEND] Active filter labels"
+msgid "Price"
+msgstr "Τιμή"
+
+#: includes/class.yith-wcan-query-premium.php:62
+msgctxt "[FRONTEND] Active filter labels"
+msgid "Order by"
+msgstr "Ταξινόμηση κατα"
+
+#: includes/class.yith-wcan-query-premium.php:63
+msgctxt "[FRONTEND] Active filter labels"
+msgid "Rating"
+msgstr "Βαθμολογία"
+
+#: includes/class.yith-wcan-query-premium.php:64
+msgctxt "[FRONTEND] Active filter labels"
+msgid "On sale"
+msgstr "Σε προσφορά"
+
+#: includes/class.yith-wcan-query-premium.php:65
+msgctxt "[FRONTEND] Active filter labels"
+msgid "In stock"
+msgstr "Σε απόθεμα"
+
+#: includes/class.yith-wcan-query-premium.php:66
+msgctxt "[FRONTEND] Active filter labels"
+msgid "Featured"
+msgstr ""
+
+#. translators: 1. Formatted min price of the range. 2. Formatted max price of
+#. the range.
+#: includes/class.yith-wcan-query-premium.php:248
+msgctxt "[FRONTEND] Active price filter label"
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+#. translators: 1. Formatted min price of the range. 2. Formatted max price of
+#. the range.
+#: includes/class.yith-wcan-query-premium.php:255
+msgctxt "[FRONTEND] Active price filter label"
+msgid "%1$s & above"
+msgstr "%1$s & παραπάνω"
+
+#: includes/data-stores/class.yith-wcan-preset-data-store.php:108
+msgctxt ""
+"[Generic] Error that happens when trying to read a filter preset that does "
+"not exist"
+msgid "Invalid preset."
+msgstr "Προρύθμιση άκυρη."
+
+#. translators: 1. Title of original preset.
+#: includes/data-stores/class.yith-wcan-preset-data-store.php:235
+msgctxt "[ADMIN] Title of the cloned preset"
+msgid "%s - Copy"
+msgstr "%s - Αντιγραφή"
+
+#: includes/data-stores/class.yith-wcan-session-data-store.php:31
+msgctxt "[DEV] Debug message triggered when unable to create filter session."
+msgid "Unable to create session. Missing required params."
+msgstr ""
+"Η δημιουργία συνεδρίας δεν είναι δυνατή. Λείπουν απαιτούμενες παράμετροι."
+
+#: includes/data-stores/class.yith-wcan-session-data-store.php:88
+#: includes/data-stores/class.yith-wcan-session-data-store.php:114
+msgctxt "[DEV] Debug message triggered when unable to find filter session."
+msgid "Invalid session."
+msgstr "Συνεδρία άκυρη."
+
+#: includes/elementor/class.yith-wcan-elementor-active-filters-labels.php:48
+msgctxt "[ADMIN] Name of the preset elementor widget"
+msgid "YITH AJAX Active Filters Labels"
+msgstr "Επιγραφές Ενεργών Φίλτρων YITH AJAX"
+
+#: includes/elementor/class.yith-wcan-elementor-filters.php:48
+msgctxt "[ADMIN] Name of the preset elementor widget"
+msgid "YITH AJAX Filters Preset"
+msgstr "Προρύθμιση Φίλτρων YITH AJAX"
+
+#: includes/elementor/class.yith-wcan-elementor-mobile-modal-opener.php:48
+msgctxt "[ADMIN] Name of the preset elementor widget"
+msgid "YITH AJAX Mobile Filters Modal Opener"
+msgstr "Άνοιγμα Παραθύρου Φίλτρων Κινητού YITH AJAX"
+
+#: includes/elementor/class.yith-wcan-elementor-reset-button.php:48
+msgctxt "[ADMIN] Name of the preset elementor widget"
+msgid "YITH AJAX Filters Reset Button"
+msgstr "Κουμπί Επαναφοράς Φίλτρων YITH AJAX"
+
+#: includes/elementor/class.yith-wcan-elementor-active-filters-labels.php:89
+#: includes/elementor/class.yith-wcan-elementor-mobile-modal-opener.php:89
+#: includes/elementor/class.yith-wcan-elementor-reset-button.php:89
+msgctxt "[ELEMENTOR] Section title"
+msgid "General"
+msgstr "Γενικά"
+
+#: includes/elementor/class.yith-wcan-elementor-filters.php:97
+msgctxt "[ELEMENTOR] Section title"
+msgid "Filters"
+msgstr "Φίλτρα"
+
+#: includes/elementor/class.yith-wcan-elementor-active-filters-labels.php:100
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"This widget will display one label for each active product filter, wherever "
+"it is placed"
+msgstr ""
+"Αυτή η μικροεφαρμογή θα εμφανίσει επιγραφή για κάθε ενεργό φίλτρο προϊόντος, "
+"όπου τοποθετηθεί"
+
+#: includes/elementor/class.yith-wcan-elementor-active-filters-labels.php:103
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"It will allow your users to quickly review and remove filters applied to "
+"current product selection; it will only appear when there is an active "
+"filter."
+msgstr ""
+"Θα επιτρέψει στους χρήστες σας να κάνουν γρήγορη ανασκόπηση και αφαίρεση "
+"φίλτρων που έχουν εφαρμοστεί στην τρέχουσα επιλογή προϊόντος. Θα εμφανιστεί "
+"μόνο όταν υπάρχει ενεργό φίλτρο."
+
+#: includes/elementor/class.yith-wcan-elementor-active-filters-labels.php:106
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"You can use this block to place \"Active filters\" labels inside your page, "
+"when \"Active filters labels position\" option won't work for your product's "
+"loop"
+msgstr ""
+"Μπορείτε να χρησιμοποιήσετε αυτό το πλαίσιο για να τοποθετήσετε ετικέτες για "
+"“Ενεργά φίλτρα\" μέσα στη σελίδα σας, όταν η επιλογή “Θέση ετικετών ενεργών "
+"φίλτρων\" δεν λειτουργεί για το βρόχο προϊόντος"
+
+#: includes/elementor/class.yith-wcan-elementor-mobile-modal-opener.php:100
+msgctxt "[ELEMENTOR] Widget description"
+msgid "This widget will display button to open mobile filters modal opener"
+msgstr ""
+"Αυτή η μικροεφαρμογή θα εμφανίσει το κουμπί για να ενεργοποιήσετε το άνοιγμα "
+"παραθύρου φίλτρων κινητού"
+
+#: includes/elementor/class.yith-wcan-elementor-mobile-modal-opener.php:103
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"It will only appear when this feature is enable in plugin settings; please, "
+"note that you'll need to place a valid preset widget in the same page, for "
+"the modal to correctly work."
+msgstr ""
+"Θα εμφανιστεί μόνο όταν το χαρακτηριστικό έχει ενεργοποιηθεί στις ρυθμίσεις "
+"πρόσθετου. Παρακαλώ, σημειώστε ότι θα πρέπει να τοποθετήσετε έγκυρη "
+"προρύθμιση μικροεφαρμογής στην ίδια σελίδα, για τη σωστή λειτουργία "
+"παραθύρου."
+
+#: includes/elementor/class.yith-wcan-elementor-mobile-modal-opener.php:107
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"You can use this block to place \"Mobile filters modal opener\" inside your "
+"page, when \"Show as modal on mobile\" option won't work for your product's "
+"loop"
+msgstr ""
+"Μπορείτε να χρησιμοποιήσετε αυτό το πλαίσιο για να τοποθετήσετε “Άνοιγμα "
+"παραθύρων φίλτρων κινητού“ μέσα στη σελίδα σας, όταν η επιλογή “Εμφάνιση ως "
+"παράθυρο στο κινητό\" δεν λειτουργεί για τον βρόχο προϊόντος"
+
+#: includes/elementor/class.yith-wcan-elementor-reset-button.php:100
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"This widget will display \"Filters reset\" button, wherever it is placed"
+msgstr ""
+"Αυτή η μικροεφαρμογή θα εμφανίσει το κουμπί \"Επαναφορά φίλτρων\", όπου "
+"τοποθετηθεί"
+
+#: includes/elementor/class.yith-wcan-elementor-reset-button.php:103
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"It will allow users to reset the filer selection; it will only appear when "
+"there is an active filter."
+msgstr ""
+"Θα επιτρέψει στους χρήστες να επαναρυθμίσουν την επιλογή φίλτρου. Θα "
+"εμφανιστεί μόνο όταν υπάρχει ενεργό φίλτρο."
+
+#: includes/elementor/class.yith-wcan-elementor-reset-button.php:107
+msgctxt "[ELEMENTOR] Widget description"
+msgid ""
+"You can use this block to place \"Reset filters\" button inside your page, "
+"when \"Reset button position\" option won't work for your product's loop"
+msgstr ""
+"Μπορείτε να χρησιμοποιήσετε αυτό το πλαίσιο για να τοποθετήσετε το κουμπί "
+"“Επαναφορά φίλτρων” μέσα στη σελίδα σας, όταν η επιλογή “Επαναφορά θέσης "
+"κουμπιού” δεν λειτουργεί για τον βρόχο προϊόντος"
+
+#: includes/elementor/class.yith-wcan-elementor-filters.php:89
+#: includes/shortcodes/class.yith-wcan-shortcode-filters.php:60
+msgctxt "[ELEMENTOR] Default preset option"
+msgid "Choose an option"
+msgstr "Διαλέξτε μια επιλογή"
+
+#: includes/elementor/class.yith-wcan-elementor-filters.php:105
+msgctxt "[ELEMENTOR] Control label"
+msgid "Preset"
+msgstr "Προρύθμιση"
+
+#. translators: 1. Min price of the range (formatted HTML).
+#: includes/filters/class.yith-wcan-filter-price-range.php:128
+msgctxt "[FRONTEND] Price range option: 1. Min value."
+msgid "%1$s & above"
+msgstr "%1$s & παραπάνω"
+
+#. translators: 1. Min price of the range (formatted HTML). 2. Max price of the
+#. range (formatted HTML).
+#: includes/filters/class.yith-wcan-filter-price-range.php:134
+msgctxt "[FRONTEND] Price range option: 1. Min value. 2. Max value"
+msgid "%1$s - %2$s"
+msgstr "%1$s - %2$s"
+
+#: includes/functions.yith-wcan.php:112
+msgctxt "For multicolor: I.E. white and red T-Shirt"
+msgid "Color 1"
+msgstr "Χρώμα 1"
+
+#: includes/functions.yith-wcan.php:112
+msgctxt "For multicolor: I.E. white and red T-Shirt"
+msgid "Color 2"
+msgstr "Χρώμα 2"
+
+#: includes/functions.yith-wcan.php:1001
+msgctxt "[FRONTEND] Star rating template"
+msgid "star"
+msgid_plural "stars"
+msgstr[0] "αστέρι"
+msgstr[1] "αστέρια"
+
+#. translators: 1. Rating.
+#: includes/functions.yith-wcan.php:1016
+msgctxt "[FRONTEND] Star rating label"
+msgid "Rated %s out of 5"
+msgstr "Βαθμολογήθηκε με %s από 5"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-active-filters-labels.php:49
+msgctxt "[GUTENBERG]: block name"
+msgid "YITH Active Filters Labels"
+msgstr "Επιγραφές Ενεργών Φίλτρων YITH"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-filters.php:69
+msgctxt "[GUTENBERG]: block name"
+msgid "YITH AJAX Filters Preset"
+msgstr "Προρύθμιση Φίλτρων YITH AJAX"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-mobile-modal-opener.php:49
+msgctxt "[GUTENBERG]: block name"
+msgid "YITH Mobile Filters Modal Opener"
+msgstr "YITH Άνοιγμα Παραθύρου Φίλτρων Κινητού"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-reset-button.php:49
+msgctxt "[GUTENBERG]: block name"
+msgid "YITH Reset Filters Button"
+msgstr "Κουμπί Επαναφοράς Φίλτρων YITH"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-active-filters-labels.php:50
+msgctxt "[GUTENBERG]: block description"
+msgid ""
+"Show active filters in current selection, as labels. You can use this block "
+"to place \"Active filters\" labels inside your page, when \"Active filters "
+"labels position\" option won't work for your product's loop"
+msgstr ""
+"Εμφάνιση ενεργών φίλτρων στην τρέχουσα επιλογή, ως επιγραφές. Μπορείτε να "
+"χρησιμοποιήσετε αυτό το πλαίσιο για την τοποθέτηση επιγραφών ως “Ενεργά "
+"φίλτρα” μέσα στη σελίδα σας, όταν η επιλογή “Θέση επιγραφών ενεργών φίλτρων” "
+"δεν λειτουργεί για τον βρόχο προϊόντος"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-filters.php:70
+msgctxt "[GUTENBERG]: block description"
+msgid "Show filters from a preset"
+msgstr "Εμφάνιση φίλτρων από προρύθμιση"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-mobile-modal-opener.php:50
+msgctxt "[GUTENBERG]: block description"
+msgid ""
+"Show button to open filters modal on mobile. Note that you need to have a "
+"valid preset in the same page where you use this block. Content will only "
+"appear at mobile. You can use this block to place \"Mobile filters modal "
+"opener\" inside your page, when \"Show as modal on mobile\" option won't "
+"work for your product's loop"
+msgstr ""
+"Εμφάνιση κουμπιού που ανοίγει το παράθυρο φίλτρων στις κινητές συσκευές. "
+"Σημειώστε ότι θα πρέπει να έχετε έγκυρη προρύθμιση στην ίδια σελίδα όπου "
+"χρησιμοποιείτε αυτό το πλαίσιο. Το περιεχόμενο θα εμφανίζεται μόνο σε "
+"κινητά. Μπορείτε να χρησιμοποιήσετε αυτό το πλαίσιο για να τοποθετήσετε το "
+"“Άνοιγμα παραθύρου φίλτρων κινητού” μέσα στη σελίδα σας, όταν η επιλογή "
+"“Εμφάνιση ως παράθυρο σε κινητό” δεν λειτουργεί για τον βρόχο προϊόντος"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-reset-button.php:50
+msgctxt "[GUTENBERG]: block description"
+msgid ""
+"Show reset filters button, when a filter is applied and button is enabled in "
+"plugins settings. You can use this block to place \"Reset filters\" button "
+"inside your page, when \"Reset button position\" option won't work for your "
+"product's loop"
+msgstr ""
+"Εμφάνιση κουμπιού επαναφοράς φίλτρων όταν εφαρμόζεται ένα φίλτρο, και "
+"ενεργοποιείται το κουμπί στις ρυθμίσεις πρόσθετου. Μπορείτε να "
+"χρησιμοποιήσετε αυτό το πλαίσιο για να τοποθετήσετε το κουμπί “Επαναφορά "
+"φίλτρων” μέσα στη σελίδα, όταν η επιλογή “Επαναφορά θέσης κουμπιού” δεν "
+"λειτουργεί για τον βρόχο προϊόντος"
+
+#: includes/shortcodes/class.yith-wcan-shortcode-filters.php:75
+msgctxt "[GUTENBERG]: attribute description"
+msgid "Preset"
+msgstr "Προρύθμιση"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:115
+msgctxt "[Admin] Preset table column header"
+msgid "Preset name"
+msgstr "Όνομα προρύθμισης"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:116
+msgctxt "[Admin] Preset table column header"
+msgid "Shortcode"
+msgstr "Μικροκώδικας"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:134
+msgctxt "[Admin] Preset edit action label"
+msgid "Edit this preset"
+msgstr "Επεξεργασία προρύθμισης"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:147
+msgctxt "[Admin] Preset clone action label"
+msgid "Clone this preset"
+msgstr "Κλωνοποίηση προρύθμισης"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:160
+msgctxt "[Admin] Preset delete action label"
+msgid "Delete this preset"
+msgstr "Διαγραφή προρύθμισης"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:161
+msgctxt "[Admin] Preset delete confirm label"
+msgid "Are you sure you want to delete this preset?"
+msgstr "Είστε σίγουρος ότι θέλετε να διαγράψετε αυτή τη προρύθμιση;"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:174
+msgctxt "[Admin] on-off yes"
+msgid "YES"
+msgstr "ΝΑΙ"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:174
+msgctxt "[Admin] on-off no"
+msgid "NO"
+msgstr "ΟΧΙ"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:194
+msgctxt ""
+"[Admin] Name of the item missing, shown in preset-empty-content template"
+msgid "filter preset"
+msgstr "προρύθμιση φίλτρου"
+
+#: templates/admin/preset-filters.php:29
+msgctxt ""
+"[Admin] Name of the item missing, shown in preset-empty-content template"
+msgid "filter"
+msgstr "φίλτρο"
+
+#: includes/tables/class.yith-wcan-filter-presets-table.php:195
+msgctxt "[Admin] New preset button label"
+msgid "Create a new preset"
+msgstr "Δημιουργία νέας προρύθμισης"
+
+#: includes/widgets/class.yith-wcan-filters-widget.php:34
+msgctxt "[ADMIN] Name of the preset widget"
+msgid "YITH AJAX Filters Preset"
+msgstr "Προρύθμιση Φίλτρων YITH AJAX"
+
+#: includes/widgets/class.yith-wcan-filters-widget.php:52
+msgctxt "[ADMIN] Preset widget options"
+msgid "Preset"
+msgstr "Προρύθμιση"
+
+#. translators: 1. Url to Ajax Product filter admin panel.
+#: includes/widgets/class.yith-wcan-filters-widget.php:65
+msgctxt "[ADMIN] Preset widget options"
+msgid ""
+"Please, go to <a href=\"%s\">WP Dashboard -> YITH -> Ajax Product Filter -> "
+"Presets</a> and create your first preset"
+msgstr ""
+"Παρακαλώ, μεταβείτε στο <a href=\"%s\">Πίνακα Ελέγχου WP -> YITH -> Ajax "
+"Product Filter -> Προρυθμίσεις</a> και χρησιμοποιήστε την πρώτη σας "
+"προρύθμιση"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:200
+msgctxt "refer to: product price"
+msgid "Price Filter"
+msgstr "Φίλτρο Τιμής"
+
+#: includes/widgets/class.yith-wcan-list-price-filter-widget.php:228
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:194
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:189
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:219
+msgctxt "Select this if you want to show the widget as open or closed"
+msgid "Dropdown style:"
+msgstr "Στυλ αναδιπλούμενης λίστας:"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:120
+msgctxt "Admin: Section title"
+msgid "Tag List"
+msgstr "Λίστα Ετικετών"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:132
+msgctxt "Admin: user note"
+msgid ""
+"Note: tags with no products assigned will not be showed in the front end"
+msgstr ""
+"Σημείωση: ετικέτες χωρίς ανατιθέμενα προϊόντα δεν θα εμφανίζονται στο "
+"εμπρόσθιο μέρος"
+
+#: includes/widgets/class.yith-wcan-navigation-widget-premium.php:173
+msgctxt "Select if you want to show round color box or square color box"
+msgid "Color Style:"
+msgstr "Στυλ Χρώματος:"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:54
+msgctxt "[Plugin Name] Admin: Widget Title"
+msgid "YITH AJAX Product Filter"
+msgstr "YITH AJAX Product Filter"
+
+#: includes/widgets/class.yith-wcan-navigation-widget.php:462
+msgctxt ""
+"[ADMIN] Ajax Filter Widget; logical operator that affects query behaviour"
+msgid "AND"
+msgstr ""
+
+#: includes/widgets/class.yith-wcan-reset-navigation-widget.php:30
+msgctxt "[Plugin Name]"
+msgid "Reset all filters set by YITH WooCommerce AJAX Product Filter"
+msgstr ""
+"Επαναφορά όλων των φίλτρων που έχουν οριστεί από το YITH WooCommerce AJAX "
+"Product Filter"
+
+#: init.php:155
+msgctxt "[Plugin Name]"
+msgid ""
+"YITH WooCommerce Ajax Product Filter is enabled but not effective. It "
+"requires WooCommerce in order to work."
+msgstr ""
+"Το YITH WooCommerce Ajax Product Filter είναι ενεργοποιημένο αλλά "
+"αναποτελεσματικό. Για σωστή λειτουργία απαιτείται WooCommerce."
+
+#: includes/widgets/class.yith-wcan-sort-by-widget.php:167
+msgctxt "Product sorting"
+msgid "Sort by"
+msgstr "Ταξινόμηση κατά"
+
+#: includes/widgets/class.yith-wcan-stock-on-sale-widget.php:183
+msgctxt "Product sorting"
+msgid "Stock/On sale"
+msgstr "Απόθεμα/Σε προσφορά"
+
+#: plugin-options/filter-options.php:147
+msgctxt ""
+"[Admin] Filter edit form; logical operator that affects query behaviour"
+msgid "AND - Results need to match all selected terms at the same time"
+msgstr ""
+
+#: plugin-options/filter-options.php:148
+msgctxt ""
+"[Admin] Filter edit form; logical operator that affects query behaviour"
+msgid "OR - Results need to match at least one of the selected terms"
+msgstr ""
+
+#: plugin-options/filter-preset-options.php:32
+msgctxt "[Admin] Filter Presets tab"
+msgid "Filter Presets"
+msgstr "Προρυθμίσεις Φίλτρου"
+
+#: plugin-options/filter-preset-options.php:38
+msgctxt "[Admin] Filter Presets table title"
+msgid "Filter Presets"
+msgstr "Προρυθμίσεις Φίλτρου"
+
+#: plugin-options/filter-preset-options.php:44
+msgctxt "[Admin] Add Preset button"
+msgid "Add preset"
+msgstr "Προσθήκη προρύθμισης"
+
+#: templates/admin/preset-edit.php:29
+msgctxt "[Admin] Back link in new preset page"
+msgid "< back to preset list"
+msgstr "< πίσω στη λίστα προρύθμισης"
+
+#: templates/admin/preset-edit.php:36
+msgctxt "[ADMIN] Title for new preset page"
+msgid "Edit filter preset"
+msgstr "Επεξεργασία προρύθμισης φίλτρου"
+
+#: templates/admin/preset-edit.php:38
+msgctxt "[ADMIN] Title for new preset page"
+msgid "Add new filter preset"
+msgstr "Προσθήκη νέας προρύθμισης φίλτρου"
+
+#: templates/admin/preset-edit.php:45
+msgctxt "[ADMIN] Preset save message"
+msgid "Preset saved correctly"
+msgstr ""
+
+#: templates/admin/preset-edit.php:90
+msgctxt "[Admin] Preset save button, in new/edit preset page"
+msgid "Save preset"
+msgstr "Αποθήκευση προρύθμισης"
+
+#: templates/admin/preset-empty-content.php:27
+msgctxt "Alt text for empty preset image"
+msgid "Empty preset"
+msgstr "Κενή προρύθμιση"
+
+#. translators: 1. Missing item name.
+#: templates/admin/preset-empty-content.php:33
+msgctxt "[Admin] Preset table empty message"
+msgid "You don't have any %s yet."
+msgstr "Δεν έχετε κανένα %s ακόμη."
+
+#: templates/admin/preset-filter-range.php:26
+msgctxt "[Admin] Range min (preset edit page)"
+msgid "Min"
+msgstr "Ελάχιστο"
+
+#: templates/admin/preset-filter-range.php:31
+msgctxt ""
+"[Admin] Range option that allows to skip max selection (preset edit page)"
+msgid "Show \"& Above\" in last range"
+msgstr "Εμφάνιση “& Παραπάνω” στο τελευταίο εύρος"
+
+#: templates/admin/preset-filter-range.php:46
+msgctxt "[Admin] Range max (preset edit page)"
+msgid "Max"
+msgstr "Μέγιστο"
+
+#: templates/admin/preset-filter-term-advanced.php:28
+#: templates/admin/preset-filter-term.php:28
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "Label"
+msgstr "Επιγραφή"
+
+#: templates/admin/preset-filter-term-advanced.php:33
+#: templates/admin/preset-filter-term.php:33
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "Tooltip"
+msgstr "Υπόμνηση"
+
+#: templates/admin/preset-filter-term-advanced.php:38
+#: templates/admin/preset-filter-term.php:39
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "Color"
+msgstr "Χρώμα"
+
+#: templates/admin/preset-filter-term-advanced.php:39
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "or"
+msgstr "ή"
+
+#: templates/admin/preset-filter-term-advanced.php:40
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "Image"
+msgstr "Εικόνα"
+
+#: templates/admin/preset-filter-term-advanced.php:58
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "+ Add color"
+msgstr "+ Προσθήκη χρώματος"
+
+#: templates/admin/preset-filter-term-advanced.php:94
+msgctxt "[Admin] Term edit field label (preset edit page)"
+msgid "Clear"
+msgstr "Καθαρισμός"
+
+#: templates/admin/preset-filter-term-advanced.php:84
+msgctxt "[Admin] Label to term image uploader"
+msgid "Click to upload image"
+msgstr "Κάντε κλικ για ανέβασμα εικόνας"
+
+#: templates/admin/preset-filter.php:89
+msgctxt "[Admin] Save filter button, in new/edit preset page"
+msgid "Save Filter"
+msgstr "Αποθήκευση Φίλτρου"
+
+#: templates/admin/preset-filter.php:90
+msgctxt "[Admin] Delete filter button, in new/edit preset page"
+msgid "Delete Filter"
+msgstr "Διαγραφή Φίλτρου"
+
+#: templates/admin/preset-filters.php:31
+msgctxt "[Admin] New filter button label"
+msgid "Add a new filter"
+msgstr "Προσθήκη νέου φίλτρου"
+
+#: templates/admin/preset-filters.php:55
+msgctxt "[Admin] Add new filter in new preset page"
+msgid "+ Add filter"
+msgstr "+ Προσθήκη φίλτρου"
+
+#. translators: 1. number of items to show.
+#: templates/admin/preset-load-more-filters.php:18
+msgctxt "[Admin] Add new filter in new preset page"
+msgid "See %d more filters"
+msgstr ""
+
+#: templates/admin/upgrade-note-modal.php:31
+msgctxt "[ADMIN] Upgrade note modal title"
+msgid "Use the new filter preset feature for your filters"
+msgstr ""
+"Χρησιμοποιήστε το νέο χαρακτηριστικό προρύθμισης φίλτρου για τα φίλτρα σας"
+
+#: templates/admin/upgrade-note-modal.php:36
+msgctxt "[ADMIN] Upgrade note modal content"
+msgid ""
+"From the version 4.0 we built a powerful system that allows you to create "
+"unlimited preset of filters. After the preset configuration, you can "
+"incorporate it in your shop using the widget, the shortcode, the Gutenberg "
+"block or the Elementor widget."
+msgstr ""
+"Με την έκδοση 4.0 χτίσαμε ένα ισχυρό σύστημα το οποίο σας επιτρέπει να "
+"δημιουργήσετε απεριόριστες προρυθμίσεις φίλτρων. Μετά την ρύθμιση της "
+"προρύθμισης, θα μπορείτε να το ενσωματώσετε στο κατάστημά σας "
+"χρησιμοποιώντας την μικροεφαρμογή, τον μικροκώδικα, το πλαίσιο Gutenberg ή "
+"την μικροεφαρμογή Elementor."
+
+#. translators: 1. Url to demo video. 2. Url to docs.
+#: templates/admin/upgrade-note-modal.php:49
+msgctxt "[ADMIN] Upgrade note modal content"
+msgid ""
+"We suggest you to <a href=\"%1$s\">check this video</a> or <a href=\"%2$s"
+"\">read the documentation</a> to learn how to use this new feature."
+msgstr ""
+"Σας προτείνουμε να <a href=\"%1$s\">δείτε αυτό το βίντεο</a> ή <a href=\"%2$s"
+"\">να διαβάσετε το εγχειρίδιο χρήσης</a> για να μάθετε πώς να "
+"χρησιμοποιήσετε αυτό το νέο χαρακτηριστικό."
+
+#. translators: 1. Url to docs.
+#: templates/admin/upgrade-note-modal.php:62
+msgctxt "[ADMIN] Upgrade note modal content"
+msgid ""
+"We suggest you to <a href=\"%1$s\">read the documentation</a> to learn how "
+"to use this new feature."
+msgstr ""
+"Σας προτείνουμε να <a href=\"%1$s\">διαβάσετε το εγχειρίδιο χρήσης</a> για "
+"να μάθετε πώς να χρησιμοποιήσετε αυτό το νέο χαρακτηριστικό."
+
+#: templates/admin/upgrade-note-modal.php:76
+msgctxt "[ADMIN] Upgrade note modal content"
+msgid ""
+"We offer a tool to automatically convert the widget filters of your shop in "
+"a preset. If you convert the widgets now all the settings of your widget "
+"will be moved inside the filter presets table.<br/><b>Don’t worry, no data "
+"will be lost during the process.</b>"
+msgstr ""
+
+#: templates/admin/upgrade-note-modal.php:87
+msgctxt "[ADMIN] Upgrade note modal content"
+msgid ""
+"After converting the widgets into presets, go to <b>WordPress Dashboard -> "
+"Appearance -> Widgets</b> and replace classic widgets with new <b>YITH AJAX "
+"Filter Preset</b>, selecting the appropriate preset for current sidebar."
+msgstr ""
+
+#: templates/admin/upgrade-note-modal.php:96
+msgctxt "[ADMIN] Upgrade note modal button label"
+msgid "Convert your widgets in a preset now"
+msgstr "Μετατρέψτε τις μικροεφαρμογές σας σε προρύθμιση τώρα"
+
+#: templates/admin/upgrade-note-modal.php:97
+msgctxt "[ADMIN] Upgrade note modal dismiss label"
+msgid "No thanks"
+msgstr "Όχι, ευχαριστώ"
+
+#: templates/filters/filter-price-range/filter-start.php:25
+#, fuzzy
+msgctxt "[FRONTEND] General option for reviews dropdown"
+msgid "Any price"
+msgstr "Οποιαδήποτε αξιολόγηση"
+
+#: templates/filters/filter-review/filter-start.php:25
+msgctxt "[FRONTEND] General option for reviews dropdown"
+msgid "Any rating"
+msgstr "Οποιαδήποτε αξιολόγηση"
+
+#: templates/filters/filter-price-slider.php:35
+#, fuzzy
+msgctxt "[FRONTEND] Label used in price slider filter"
+msgid "From"
+msgstr "Από"
+
+#: templates/filters/filter-price-slider.php:50
+#, fuzzy
+msgctxt "[FRONTEND] Label used in price slider filter"
+msgid "To"
+msgstr "Σε"
+
+#: templates/filters/filter-stock-sale.php:39
+msgctxt "[FRONTEND] On sale filter label"
+msgid "On sale"
+msgstr "Σε προσφορά"
+
+#: templates/filters/filter-stock-sale.php:57
+msgctxt "[FRONTEND] On sale filter label"
+msgid "In stock"
+msgstr "Σε απόθεμα"
+
+#: templates/filters/filter-stock-sale.php:75
+msgctxt "[FRONTEND] On sale filter label"
+msgid "Featured"
+msgstr ""
+
+#: templates/filters/global/apply-filters.php:22
+msgctxt "[FRONTEND] Filter button for preset shortcode"
+msgid "Apply filters"
+msgstr "Εφαρμογή φίλτρων"
+
+#: templates/filters/global/reset-filters.php:23
+msgctxt "[FRONTEND] Reset button for preset shortcode"
+msgid "Reset filters"
+msgstr "Επαναφορά φίλτρων"
+
+#: templates/woocommerce/loop/list-price-filter.php:56
+msgctxt "Price filter option: price starts from"
+msgid "From"
+msgstr "Από"
+
+#: templates/woocommerce/loop/list-price-filter.php:56
+msgctxt "Price filter option: price ends to"
+msgid "To"
+msgstr "Σε"
