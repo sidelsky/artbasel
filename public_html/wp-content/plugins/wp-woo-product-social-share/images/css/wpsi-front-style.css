@@ -1,0 +1,171 @@
+/* Theme settings page. */
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.wpsi_social_share_buttons {
+    margin: 14px 0px;
+    clear: both;
+    visibility: hidden;
+}
+.wpsi_social_share_buttons a{
+	box-shadow: none!important;
+	text-decoration: none!important;
+	padding:0!important;
+    margin-bottom: 3px!important;
+    margin-top: 3px!important;
+    white-space: normal;
+}
+.wpsi_social_share_buttons.not_before_tab a:nth-child(odd){
+	border-right: 5px solid white;
+}
+
+.wpsi_social_share_buttons.before_tab a{
+	border-right: 5px solid white;
+}
+.icons_only{
+	width: auto!important;
+	border-right: 5px solid white;
+}
+.text_only {
+    line-height: 32px !important;
+    color: white !important;
+    padding: 2px 5px !important;
+    white-space: nowrap;
+}
+.wpsi_social_background_css {
+    background-repeat:  no-repeat;
+    background-position: left 12px;
+    background-size: 25px;
+    padding-left: 30px;
+}
+.wpsi_social_share_buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wpsi_social_share_buttons a {
+    background: #c2c2c2 !important;
+    padding: 5px !important;
+    font-size: 17px;
+    transition: all 500ms ease-in-out;
+    border-radius: 8px;
+    font-family: 'poppinsregular';
+}
+
+.wpsi_social_share_buttons a span {
+    display: inline-block;
+     
+    background: #d8d8d8 !important;
+    transition: all 500ms ease-in-out;
+}
+.wpsi_social_share_buttons a.a2a_button_facebook:hover,
+.wpsi_social_share_buttons a.a2a_button_facebook:hover span{
+    background: #3B5998 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_twitter:hover,
+.wpsi_social_share_buttons a.a2a_button_twitter:hover span{
+    background: #55ACEE !important;
+}
+.wpsi_social_share_buttons a.a2a_button_pinterest:hover,
+.wpsi_social_share_buttons a.a2a_button_pinterest:hover span{
+    background: #BD081C !important;
+}
+.wpsi_social_share_buttons a.a2a_button_google_gmail:hover,
+.wpsi_social_share_buttons a.a2a_button_google_gmail:hover span{
+    background: #DD5347 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_email:hover,
+.wpsi_social_share_buttons a.a2a_button_email:hover span{
+    background: #0166FF !important;
+}
+
+.wpsi_social_share_buttons a.a2a_button_linkedin:hover,
+.wpsi_social_share_buttons a.a2a_button_linkedin:hover span{
+    background: #007BB5 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_reddit:hover,
+.wpsi_social_share_buttons a.a2a_button_reddit:hover span{
+    background: #ff4500 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_tumblr:hover,
+.wpsi_social_share_buttons a.a2a_button_tumblr:hover span{
+    background: #35465C !important;
+}
+.wpsi_social_share_buttons a.a2a_button_facebook_messenger:hover,
+.wpsi_social_share_buttons a.a2a_button_facebook_messenger:hover span{
+    background: #0084FF !important;
+}
+.wpsi_social_share_buttons a.a2a_button_wordpress:hover,
+.wpsi_social_share_buttons a.a2a_button_wordpress:hover span{
+    background: #464646 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_gmail:hover,
+.wpsi_social_share_buttons a.a2a_button_gmail:hover span{
+    background: #DD5347 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_whatsapp:hover,
+.wpsi_social_share_buttons a.a2a_button_whatsapp:hover span{
+    background: #12AF0A !important;
+}
+.wpsi_social_share_buttons a.a2a_button_blogger:hover,
+.wpsi_social_share_buttons a.a2a_button_blogger:hover span{
+    background: #FDA352 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_buffer:hover,
+.wpsi_social_share_buttons a.a2a_button_buffer:hover span{
+    background: #2A2A2A !important;
+}
+.wpsi_social_share_buttons a.a2a_button_digg:hover,
+.wpsi_social_share_buttons a.a2a_button_digg:hover span{
+    background: #2A2A2A !important;
+}
+.wpsi_social_share_buttons a.a2a_button_skype:hover,
+.wpsi_social_share_buttons a.a2a_button_skype:hover span{
+    background: #00AFF0 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_telegram:hover,
+.wpsi_social_share_buttons a.a2a_button_telegram:hover span{
+    background: #2CA5E0 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_vk:hover,
+.wpsi_social_share_buttons a.a2a_button_vk:hover span{
+    background: #587EA3 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_yahoo_bookmarks:hover,
+.wpsi_social_share_buttons a.a2a_button_yahoo_bookmarks:hover span{
+    background: #400090 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_yahoo_mail:hover,
+.wpsi_social_share_buttons a.a2a_button_yahoo_mail:hover span{
+    background: #400090 !important;
+}
+.wpsi_social_share_buttons a.a2a_button_yahoo_messenger:hover,
+.wpsi_social_share_buttons a.a2a_button_yahoo_messenger:hover span{
+    background: #400090 !important;
+}

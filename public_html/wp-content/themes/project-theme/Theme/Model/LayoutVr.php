@@ -59,6 +59,7 @@ class LayoutVr {
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
 
+
             //Kuula
 			   case 'kuula':
                $kuula = new Kuula($layout);
@@ -66,7 +67,7 @@ class LayoutVr {
             break;
 
             //parallax image
-                             case 'kuula1':
+                              case 'kuula1':
                                        $kuula1 = new Kuula1($layout);
                                        $currentLayout = $kuula1->getKuula1();
                             break;
@@ -77,6 +78,7 @@ class LayoutVr {
                            $anchor = new Anchor($layout);
                            $currentLayout = $anchor->getAnchor();
                         break;
+ 
 
             //text iframe
    				  //   case 'text_iframe_content':

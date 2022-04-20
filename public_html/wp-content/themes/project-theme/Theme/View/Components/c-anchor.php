@@ -25,4 +25,4 @@
 						</section>
 	   		<?php endif; ?>
     <?php endwhile; ?>
-<?php endif; ?>
+ <?php endif; ?> 
