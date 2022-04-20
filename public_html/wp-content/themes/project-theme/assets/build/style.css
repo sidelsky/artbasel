@@ -7787,3 +7787,8 @@ scroll-behavior: smooth;
 .anchorlink {
   scroll-margin-top: 6rem;
 }
+
+.anchor-top-link {
+  float: right;
+  margin-top: -10px;
+}
