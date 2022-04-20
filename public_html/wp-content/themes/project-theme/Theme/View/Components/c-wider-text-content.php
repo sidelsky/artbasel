@@ -8,9 +8,12 @@
 					  	</a>
 						<?php } ?>
                <?php if( $data['widerTextTitle'] ) { ?>
+ 
                   <h2 class="l-content__block__title <?= $args['altFontClass'] ? 'l-content__block__title--alt-font' : ''?>"><?= $data['widerTextTitle'] ?></h2>
                <?php } ?>
-               <?= $data['widerTextContent'] ?>
+
+
+							 <?= $data['widerTextContent'] ?>
             </div>
 		</div>
    </section>

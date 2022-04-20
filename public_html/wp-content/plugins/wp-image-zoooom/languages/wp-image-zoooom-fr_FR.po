@@ -1,0 +1,548 @@
+# Copyright (C) 2017 WP Image Zoom
+# This file is distributed under the same license as the WP Image Zoom package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Image Zoom 1.12\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-image-zoooom\n"
+"POT-Creation-Date: 2017-07-10 05:01+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-07-10 06:47+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Language: fr_FR\n"
+
+#: image-zoooom.php:51 image-zoooom.php:58 includes/image-zoom.php:36
+#: includes/image-zoom.php:43
+msgid "Cheatin&#8217; huh?"
+msgstr "Cheatin&#8217; huh?"
+
+#: image-zoooom.php:158
+msgid "WP Image Zoooom"
+msgstr "WP Image Zoooom"
+
+#: image-zoooom.php:481
+msgid "Settings"
+msgstr "Paramètres"
+
+#: includes/image-zoom-admin-general.php:33
+#: includes/image-zoom-admin-template.php:22
+msgid "WP Image Zoom by %1$s"
+msgstr "WP Image Zoom par %1$s"
+
+#: includes/image-zoom-admin-general.php:40
+#: includes/image-zoom-admin-template.php:29
+msgid "General Settings"
+msgstr "Paramètres généraux"
+
+#: includes/image-zoom-admin-general.php:42
+#: includes/image-zoom-admin-template.php:31
+msgid "Zoom Settings"
+msgstr "Paramètres de Zoom"
+
+#: includes/image-zoom-admin-general.php:80
+#: includes/image-zoom-admin-template.php:195
+msgid "Save changes"
+msgstr "Enregistrer les changements"
+
+#: includes/image-zoom-admin-template.php:47
+msgid "Step 1"
+msgstr "Étape N°1"
+
+#: includes/image-zoom-admin-template.php:47
+msgid "Choose the Lens Shape"
+msgstr "Choisissez la forme de la lentille"
+
+#: includes/image-zoom-admin-template.php:72
+msgid "Step 2"
+msgstr "Étape N°2"
+
+#: includes/image-zoom-admin-template.php:72
+msgid "Check your configuration changes on the image"
+msgstr "Vérifiez les changements de configuration sur cette image"
+
+#: includes/image-zoom-admin-template.php:78
+msgid "Step 3"
+msgstr "Étape N°3"
+
+#: includes/image-zoom-admin-template.php:78
+msgid "Make more fine-grained configurations on the zoom"
+msgstr "Affinez la configuration du zoom"
+
+#: includes/image-zoom-admin-template.php:82
+msgid "General"
+msgstr "Général"
+
+#: includes/image-zoom-admin-template.php:85
+msgid "Lens"
+msgstr "Lentille"
+
+#: includes/image-zoom-admin-template.php:88
+msgid "Zoom Window"
+msgstr "Fenètre de Zoom"
+
+#: includes/image-zoom-admin-template.php:91
+msgid "Custom Text"
+msgstr "Customisation du texte"
+
+#: includes/image-zoom-admin-template.php:192
+msgid "Step 4"
+msgstr "Étape N°4"
+
+#: includes/image-zoom-admin-template.php:192
+msgid "Don't forget to save the changes in order to apply them on the website"
+msgstr ""
+"N'oubliez pas de sauvegarder les changements dans chaque onglet pour qu'ils "
+"soient appliqués"
+
+#. Plugin Name of the plugin/theme
+#: includes/admin-side.php:31 includes/admin-side.php:32
+msgid "WP Image Zoom"
+msgstr "WP Image Zoom"
+
+#: includes/admin-side.php:113 includes/admin-side.php:130
+msgid "Your settings have been saved."
+msgstr "Vos paramètres ont été sauvegardés."
+
+#: includes/admin-side.php:302 includes/admin-side.php:319
+msgid "Unrecognized <b>%1$s</b>. The value was reset to <b>%2$s</b>"
+msgstr "Ignoré <b>%1$s</b>. La valeur a été réinitialisé à <b>%2$s</b>"
+
+#: includes/admin-side.php:339
+msgid ""
+"<b>%1$s</b> accepts values between %2$s and %3$s. Your value was reset to <b>"
+"%4$s</b>"
+msgstr ""
+"<b>%1$s</b> accepte les valeurs entre %2$s and %3$s. Votre valeur a été "
+"réinitialisé à <b>%4$s</b>"
+
+#: includes/image-zoom-notices.php:173
+msgid "Dismiss this notice"
+msgstr "Ne tenez pas compte de cet avertissement"
+
+#: includes/image-zoom-warnings.php:58
+msgid ""
+"<b>If the zoom does not show up</b> on your website, it could be because you "
+"need to add the “image_zoooom-init” and the “image_zoooom” to the “Scripts "
+"to NOT minify” option in the BWP Minify settings, as shown in <a href=\"%1$s"
+"\" target=\"_blank\">this screenshot</a>."
+msgstr ""
+"<b>Si le zoom ne s'affiche pas</b> sur votre site, cela pourrait être dû au "
+"fait que vous devriez ajouter “image_zoooom-init” et “image_zoooom” au "
+"“Scripts to NOT minify” option dans les paramètres de réduction de BWP, "
+"montré dans la capture d'écran <a href=\"%1$s\" target=\"_blank\"></a>."
+
+#: includes/image-zoom-warnings.php:120
+msgid ""
+"The WP Image Zoom plugin <b>will not work</b> on the WooCommerce products "
+"gallery with the Avada theme. The Avada theme changes entirely the default "
+"WooCommerce gallery with the <a href=\"%1$s\" target=\"_blank\">Flexslider "
+"gallery</a> and the zoom plugin does not support the Flexslider gallery. "
+"Please check the <a href=\"%2$s\" target=\"_blank\">PRO version</a> of the "
+"plugin for compatibility with the Flexslider gallery."
+msgstr ""
+"Le plugin WP Image Zoom <b>ne fonctionnera pas</b> sur les produits de la "
+"galerie de WooCommerce avec le Thème Avada.  Le Thème Avada change "
+"complètement la galerie par défaut de WooCommerce avec la <a href=\"%1$s\" "
+"target=\"_blank\">gallerie Flexslider</a> et WP Image Zoom ne supporte pas "
+"la galerie Flexslider. S'il vous plait vérifier <a href=\"%2$s\" target="
+"\"_blank\"> en version PRO</a> de ce plugin pour obtenir la compatibilité "
+"avec la gallerie Flexslider."
+
+#: includes/image-zoom-warnings.php:137
+msgid ""
+"The WP Image Zoom plugin <b>will not work</b> on the WooCommerce products "
+"gallery with the Shopkeeper theme. The Shopkeeper theme changes entirely the "
+"default WooCommerce gallery with a custom made gallery not supported by the "
+"free version of the WP Image Zoom plugin. Please check the <a href=\"%1$s\" "
+"target=\"_blank\">PRO version</a> of the plugin for compatibility with the "
+"Shopkeeper's gallery."
+msgstr ""
+"Le plugin WP Image Zoom <b>ne fonctionnera pas</b> sur les produits de la "
+"galerie de WooCommerce avec le Thème Shopkeeper.  Le Thème Shopkeeper change "
+"complètement la galerie par défaut de WooCommerce avec une customisation de "
+"la gallerie qui n'est pas supporté par la version gratuite de WP Image Zoom "
+"plugin. S'il vous plait vérifier <a href=\"%2$s\" target=\"_blank\"> en "
+"version PRO</a> de ce plugin pour obtenir la compatibilité avec la gallerie "
+"Shopkeeper."
+
+#: includes/image-zoom-warnings.php:173
+msgid ""
+"WP Image Zoom plugin is not compatible with the <a href=\"admin.php?"
+"page=jetpack\">Jetpack Photon</a> module. If you find that the zoom is not "
+"working, try to deactivate the Photon module and see if that solves it."
+msgstr ""
+"Le plugin WP Image Zoom n'est pas compatible avec le module <a href=\"admin."
+"php?page=jetpack\">Jetpack Photon</a>. Si vous constater que le zoom ne "
+"fonctionne pas, essayer de désactiver le module Photon pour voir si cela "
+"peut résoudre le problème."
+
+#: includes/premium-tooltips.php:3
+msgid "Only available in <a href=\"%1$s\" target=\"_blank\">PRO version</a>"
+msgstr ""
+"Seulement disponible dans <a href=\"%1$s\" target=\"_blank\">en version PRO</"
+"a>"
+
+#: includes/right_columns.php:48
+msgid "WP Image Zoooom Pro"
+msgstr "WP Image Zoooom Pro"
+
+#: includes/right_columns.php:61
+msgid "Upgrade to PRO"
+msgstr "Débloquer en PRO"
+
+#: includes/right_columns.php:92
+msgid "Like this Plugin?"
+msgstr "Vous aimez ce plugin ?"
+
+#: includes/right_columns.php:95
+msgid ""
+"Share your opinion with the world on the WordPress.org Plugin Repository."
+msgstr ""
+"Partagez votre opinion avec le monde sur <a href=\"https://wordpress.org"
+"\">WordPress.org</a>."
+
+#: includes/right_columns.php:96
+msgid "Rate it on WordPress.org"
+msgstr "Évaluez nous sur WordPress.org"
+
+#: includes/settings.php:18
+msgid "Lens Shape"
+msgstr "Forme de la lentille"
+
+#: includes/settings.php:20
+msgid "No Lens"
+msgstr "Pas de lentille"
+
+#: includes/settings.php:21
+msgid "Circle Lens"
+msgstr "Cercle sur l'image"
+
+#: includes/settings.php:22
+msgid "Square Lens"
+msgstr "Carré sur l'image"
+
+#: includes/settings.php:23
+msgid "With Zoom Window"
+msgstr "Fenêtre à coté de l'image"
+
+#: includes/settings.php:30
+msgid "Cursor Type"
+msgstr "Type de curseur lors du survol de l'image"
+
+#: includes/settings.php:32 includes/settings.php:234
+msgid "Default"
+msgstr "Par défaut"
+
+#: includes/settings.php:33
+msgid "Pointer"
+msgstr "Main qui pointe du doight"
+
+#: includes/settings.php:34
+msgid "Crosshair"
+msgstr "Croix"
+
+#: includes/settings.php:35
+msgid "Zoom"
+msgstr "Zoom"
+
+#: includes/settings.php:42
+msgid "Animation Easing Effect"
+msgstr "Faciliter l'effet d'animation"
+
+#: includes/settings.php:44
+msgid ""
+"A number between 0 and 200 to represent the degree of the Animation Easing "
+"Effect"
+msgstr "Un nombre entre 0 et 200 pour représenter le degré d'effet d'animation"
+
+#: includes/settings.php:49
+msgid "Lens Size"
+msgstr "Taille de la lentille"
+
+#: includes/settings.php:52
+msgid ""
+"For Circle Lens it means the diameters, for Square Lens it means the width"
+msgstr ""
+"Pour le cercle sur l'image cela signifie les diamètres, pour le carré sur "
+"l'image cela signifie la largeur"
+
+#: includes/settings.php:56 includes/settings.php:109
+msgid "Border Thickness"
+msgstr "Épaisseur de la bordure"
+
+#: includes/settings.php:62 includes/settings.php:122
+msgid "Border Color"
+msgstr "Couleur de la bordure"
+
+#: includes/settings.php:67 includes/settings.php:133
+msgid "Fade Time"
+msgstr "Temps de fonte"
+
+#: includes/settings.php:70
+msgid "The amount of time it takes for the Lens to slowly appear or dissapear"
+msgstr ""
+"Temps nécessaire pour que la lentille apparaisse lentement ou disparaisse"
+
+#: includes/settings.php:74
+msgid "Tint"
+msgstr "Teinte"
+
+#: includes/settings.php:76
+msgid ""
+"A color that will layed on top the of non-magnified image in order to "
+"emphasize the lens"
+msgstr ""
+"Une couleur sera placée au dessus de l'image originale afin de souligner la "
+"lentille"
+
+#: includes/settings.php:80
+msgid "Tint Color"
+msgstr "Couleur de la teinte"
+
+#: includes/settings.php:85
+msgid "Tint Opacity"
+msgstr "Opacité de la teinte"
+
+#: includes/settings.php:91
+msgid "Zoom Window Width"
+msgstr "Largeur de la fenêtre de zoom"
+
+#: includes/settings.php:97
+msgid "Zoom Window Height"
+msgstr "Hauteur de la fenêtre de zoom"
+
+#: includes/settings.php:103
+msgid "Distance from the Main Image"
+msgstr "Distance entre la fenêtre de zoom et l'image originale"
+
+#: includes/settings.php:115
+msgid "Shadow Thickness"
+msgstr "Épaisseur de l'ombre"
+
+#: includes/settings.php:119
+msgid "Use 0px to remove the shadow"
+msgstr "Utiliser 0px pour enlever l'ombre"
+
+#: includes/settings.php:127
+msgid "Rounded Corners"
+msgstr "Coins arrondis"
+
+#: includes/settings.php:136
+msgid ""
+"The amount of time it takes for the Zoom Window to slowly appear or disappear"
+msgstr "Temps pour que la fenêtre de Zoom apparaisse ou disparaisse lentement"
+
+#: includes/settings.php:140
+msgid "Enable the zoom on WooCommerce products"
+msgstr "Activer le zoom sur les produits WooCommerce"
+
+#: includes/settings.php:145
+msgid "Exchange the thumbnail with main image on WooCommerce products"
+msgstr ""
+"Échangez la vignette avec l'image principale sur les produits WooCommerce"
+
+#: includes/settings.php:148
+msgid ""
+"On a WooCommerce gallery, when clicking on a thumbnail, not only the main "
+"image will be replaced with the thumbnail's image, but also the thumbnail "
+"will be replaced with the main image"
+msgstr ""
+"Sur une galerie WooCommerce, en cliquant sur une vignette, non seulement "
+"l'image principale sera remplacée par l'image miniature, mais aussi la "
+"vignette sera remplacée par l'image principale"
+
+#: includes/settings.php:151
+msgid "Enable the zoom on mobile devices"
+msgstr "Activer le zoom sur les appareils mobiles"
+
+#: includes/settings.php:154
+msgid "Tablets are also considered mobile devices"
+msgstr "Les tablettes sont également considéres comme des appareils mobiles"
+
+#: includes/settings.php:157
+msgid "Enable the zoom on WooCommerce category pages"
+msgstr "Activez le zoom sur les pages de catégorie WooCommerce"
+
+#: includes/settings.php:163
+msgid "Force it to work on WooCommerce"
+msgstr "Forcez-le à travailler sur WooCommerce"
+
+#: includes/settings.php:173
+msgid "Remove the Lightbox on thumbnail images"
+msgstr "Supprimez la Lightbox sur les images miniatures"
+
+#: includes/settings.php:179
+msgid "Remove the Lightbox"
+msgstr "Supprimer la Lightbox"
+
+#: includes/settings.php:185
+msgid "Enable on WooCommerce variation products"
+msgstr "Activer sur WooCommerce la variation des produits"
+
+#: includes/settings.php:191
+msgid "Enable on attachments pages"
+msgstr "Activer sur les pages attachées"
+
+#: includes/settings.php:197
+msgid "FlexSlider container class"
+msgstr "Classe de conteneur FlexSlider"
+
+#: includes/settings.php:203
+msgid ""
+"Enable inside <a href=\"http://fancyapps.com/fancybox/\" target=\"_blank"
+"\">fancyBox</a> lightbox"
+msgstr ""
+"Activer <a href=\"http://fancyapps.com/fancybox/\" target=\"_blank"
+"\">fancyBox</a> à l'intérieur de la lightbox"
+
+#: includes/settings.php:209
+msgid ""
+"Enable inside <a href=\"https://jetpack.com/ support/carousel/\" target="
+"\"_blank\">Jetpack Carousel</a> lightbox"
+msgstr ""
+"Activer <a href=\"https://jetpack.com/ support/carousel/\" target=\"_blank"
+"\">Jetpack Carousel</a> à l'intérieur de la lightbox"
+
+#: includes/settings.php:216
+msgid "Huge IT Gallery id"
+msgstr "Énorme IT Gallery id"
+
+#: includes/settings.php:222
+msgid "Enable the zoom on ..."
+msgstr "Activer le zoom sur ..."
+
+#: includes/settings.php:232
+msgid "Zoom Level"
+msgstr "Niveau de zoom"
+
+#: includes/settings.php:235
+msgid "1,5 times"
+msgstr "X 1,5 fois"
+
+#: includes/settings.php:236
+msgid "2 times"
+msgstr "X 2 fois"
+
+#: includes/settings.php:237
+msgid "2,5 times"
+msgstr "X 2,5 fois"
+
+#: includes/settings.php:238
+msgid "3 times"
+msgstr "X 3 fois"
+
+#: includes/settings.php:246
+msgid "Lens Color"
+msgstr "X 3 fois"
+
+#: includes/settings.php:252
+msgid "Show as Grid"
+msgstr "Afficher comme une grille"
+
+#: includes/settings.php:258
+msgid "Responsive"
+msgstr ""
+"Responsive (adaptatif sur tout les supports, mobiles, tablettes, site "
+"Internet, etc)"
+
+#: includes/settings.php:264
+msgid "Responsive Threshold"
+msgstr ""
+"Seuil adaptatif sur tout les supports, mobiles, tablettes, site Internet, etc"
+
+#: includes/settings.php:271
+msgid "Positioning"
+msgstr "Positionnement"
+
+#: includes/settings.php:273
+msgid "Right Top"
+msgstr "En haut à droite"
+
+#: includes/settings.php:274
+msgid "Right Bottom"
+msgstr "Bouton à droite"
+
+#: includes/settings.php:275
+msgid "Right Center"
+msgstr "Centrer à droite"
+
+#: includes/settings.php:276
+msgid "Left Top"
+msgstr "En haut à gauche"
+
+#: includes/settings.php:277
+msgid "Left Bottom"
+msgstr "Bouton à gauche"
+
+#: includes/settings.php:278
+msgid "Left Center"
+msgstr "Centrer à gauche"
+
+#: includes/settings.php:287
+msgid "Mousewheel Zoom"
+msgstr "Zoom avec la roulette de la souris"
+
+#: includes/settings.php:293
+msgid "Text on the image"
+msgstr "Texte sur l'image"
+
+#: includes/settings.php:299
+msgid "Text Size"
+msgstr "Taille du texte"
+
+#: includes/settings.php:306
+msgid "Text Color"
+msgstr "Couleur du texte"
+
+#: includes/settings.php:312
+msgid "Text Align"
+msgstr "Alignement du texte"
+
+#: includes/settings.php:314
+msgid "Top Left"
+msgstr "En haut à gauche"
+
+#: includes/settings.php:315
+msgid "Top Center"
+msgstr "En haut au centre"
+
+#: includes/settings.php:316
+msgid "Top Right"
+msgstr "En haut à droite"
+
+#: includes/settings.php:317
+msgid "Bottom Left"
+msgstr "Bouton à gauche"
+
+#: includes/settings.php:318
+msgid "Bottom Center"
+msgstr "Bouton au centre"
+
+#: includes/settings.php:319
+msgid "Bottom Right"
+msgstr "Bouton à droite"
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/wp-image-zoooom/"
+msgstr "https://wordpress.org/plugins/wp-image-zoooom/"
+
+#. Description of the plugin/theme
+msgid ""
+"Add zoom effect over the an image, whether it is an image in a post/page or "
+"the featured image of a product in a WooCommerce shop"
+msgstr ""
+"Ajouter un effet de zoom sur une image, qu'il s'agisse d'une image dans un "
+"article ou une page ou sur l'image en vedette d'un produit de vente en ligne "
+"dans WooCommerce"
+
+#. Author of the plugin/theme
+msgid "SilkyPress"
+msgstr "SilkyPress"
+
+#. Author URI of the plugin/theme
+msgid "https://www.silkypress.com"
+msgstr "https://www.silkypress.com"

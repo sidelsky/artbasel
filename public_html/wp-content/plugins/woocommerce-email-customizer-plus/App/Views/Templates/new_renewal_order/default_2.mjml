@@ -1,0 +1,54 @@
+<mjml><mj-head><mj-font name="Lato" href="https://fonts.googleapis.com/css?family=Lato:400,700"/><mj-font name="Oswald" href="https://fonts.googleapis.com/css?family=Oswald:500,600,700"/></mj-head><mj-body><mj-section padding-bottom="20px" id="iq561w"><mj-column>
+        </mj-column></mj-section><mj-section background-color="#FFFFFF" border-radius="4px 4px 0px 0px" id="i8ach" border-top="1px solid #e5e5e5" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" padding-top="0" padding-bottom="0"><mj-column><mj-image src="https://www.dropbox.com/s/opaoa7xzkbxc0c6/your-logo.png?raw=1" id="iwa1q" width="220px" padding-top="2%" padding-bottom="2%"/></mj-column></mj-section><mj-section background-color="#628feb" padding-bottom="0" id="idg2k"><mj-column><mj-image src="https://raw.githubusercontent.com/retainful/emailCustomizer/master/images/shopping-cart-min.png" id="iyx2j" width="80px"/></mj-column></mj-section><mj-section background-color="#628feb" padding-top="0" id="i5fsq"><mj-column><mj-text padding-top="2%" padding-bottom="2%" font-size="30px" font-weight="500" color="#fff" id="i4ke3" align="center">
+            <p>New Renewal Order
+            </p>
+          </mj-text><mj-text padding-top="0%" padding-bottom="0%" color="#fff" line-height="2em" id="iwm05">
+            <p>Hey {{customer.name}},
+            </p>
+            <p>You have received a subscription renewal order from {{customer.name}}. Their order is as follows:
+            </p>
+          </mj-text></mj-column></mj-section><mj-section background-color="#FFFFFF" padding-bottom="0" padding-top="0" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" id="iooa4"></mj-section><mj-section background-color="#FFFFFF" padding-bottom="0" padding-top="0" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" id="io8za">
+      </mj-section><mj-section background-color="#fff" border-top="0 none rgb(0, 0, 0)" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" padding-top="0" padding-bottom="0" id="imjaf">
+      </mj-section><mj-section background-color="#FFFFFF" padding-bottom="0" padding-top="1" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" id="ipkol" css-class=" align-text">
+      </mj-section><mj-section background-color="#FFFFFF" padding-bottom="0" padding-top="0" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" id="iooa4-2"><mj-column width="100%" id="itxvz"><mj-text cr-editable="false" padding-top="0" padding-right="0" padding-bottom="0" padding-left="0" id="i3xn2">
+            <div data-cr-id="line_item" class="cr_sc_cnt">
+              <img data-cr-id="line_item" src="https://www.dropbox.com/s/ebek9iih9p0746k/cart-summary.png?raw=1" alt=""><table role="presentation" style="font-size:0px;width:100%;" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tbody>
+                  <tr>
+                  
+                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </mj-text></mj-column></mj-section><mj-section background-color="#FFFFFF" padding-bottom="0" padding-top="1" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" id="ipkol-2" css-class=" align-text"><mj-column width="50%"><mj-text padding-top="8" padding-bottom="8px" font-weight="700" text-align="left" line-height="20px">
+              BILLING INFORMATION
+            </mj-text><mj-text line-height="31px" letter-spacing="0.2px" padding-bottom="0px" padding-left="24px" padding-right="8px">
+                {{billing_address.name}}
+                {{billing_address.address1}}
+                {{billing_address.address2}}
+                {{billing_address.zip}}
+                {{billing_address.province}}, {{billing_address.country}}
+             </mj-text></mj-column><mj-column width="50%"><mj-text padding-top="8" align="right" padding-bottom="8px" font-weight="700" text-align="right" line-height="20px">
+              SHIPPING INFORMATION
+            </mj-text><mj-text line-height="31px" letter-spacing="0.2px" align="right" padding-bottom="0px" padding-right="24px" padding-left="8px">
+              {{shipping_address.name}}
+              {{shipping_address.address1}}
+              {{shipping_address.address2}}
+              {{shipping_address.zip}}
+              {{shipping_address.province}}, {{shipping_address.country}}
+            </mj-text></mj-column></mj-section><mj-section background-color="#fff" border-right="1px solid #e5e5e5" border-left="1px solid #e5e5e5" border-top="1px solid #e5e5e5" id="iaox6"><mj-column><mj-text padding-top="0%" padding-bottom="0%" font-size="15px" font-family="Helvetica, serif" id="i9grk">
+            <p>Feel free to contact us if you have any question
+            </p>
+            <p>Sincerely,
+            </p>
+            <p>{{shop.name}}
+            </p>
+          </mj-text></mj-column></mj-section><mj-section background-color="#efefef" id="iu40gp" padding-bottom="0" border-right="0 none #e5e5e5" border-left="0 none #e5e5e5" padding-top="0"><mj-column width="400px" id="i42ob7" border-radius="0 0 0 0"><mj-social google-content="+1" id="irt18t" color="#77797B" mode="horizontal" facebook-icon-color="#9b9b9b" twitter-icon-color="#9b9b9b" google-icon-color="#9b9b9b" border-radius="50% 50% 50% 50%" font-size="0" padding-top="10px" container-background-color="transparent" facebook-href="{{facebook}}" twitter-href="{{twitter}}" padding-bottom="0" facebook="true" instagram="true" twitter="true" linkedin="true" pinterest="true"> <mj-social-element name="facebook-noshare" href="{{facebook}}"></mj-social-element><mj-social-element name="instagram-noshare" href="{{instagram}}"></mj-social-element><mj-social-element name="twitter-noshare" href="{{twitter}}"></mj-social-element><mj-social-element name="pinterest-noshare" href="{{pinterest}}"></mj-social-element><mj-social-element name="linkedin-noshare" href="{{linkedin}}"></mj-social-element></mj-social></mj-column></mj-section><mj-section background-color="#efefef" id="iu40gp-2" padding-top="0" border-right="0 none #e5e5e5" border-left="0 none #e5e5e5" border-bottom="0 none"><mj-column width="400px" id="i42ob7-2" border-radius="0 0 0 0"><mj-text color="#8f8f8f" font-family="Open Sans, Helvetica, sans-serif" font-weight="500" line-height="1.8em" padding-top="0" padding-bottom="0" id="i8544p" font-size="14px" align="center">
+            <p>{{shop.name}} |{{shop.address1}} {{shop.address2}}
+            </p>
+          </mj-text><mj-text color="#8f8f8f" font-family="Open Sans, Helvetica, sans-serif" font-weight="500" line-height="1.8em" padding-top="0" padding-bottom="0" id="imjyvz" font-size="14px" align="center">
+            <p>If you have any quetions please contact us {{shop.email}} | {{shop.url}}
+            </p>
+          </mj-text></mj-column></mj-section><mj-section>
+      </mj-section></mj-body></mjml>
