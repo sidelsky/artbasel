@@ -29,8 +29,8 @@
 
 			<?php if( $data['textContentLink'] && $data['textContentLinkDescription'] ) : ?>
 
-			 <a href="<?= $data['textContentLink']['url'] ?>" target="<?= $data['textContentLink']['target'] ?>" class="cta-button"><?= $data['textContentLinkDescription']; ?></a>
-
+ <a href="<?= $data['textContentLink']['url'] ?>" target="<?= $data['textContentLink']['target'] ?>" class="cta-button"><?= $data['textContentLinkDescription']; ?></a>
+  
 			<?php endif; ?>
 
 			</span>

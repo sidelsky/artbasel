@@ -6249,7 +6249,7 @@ body.online-exhibitions-template-parallax-template {
 }
 
 .l-content__block--link a {
-  color: currentColor !important;
+  color: black !important;
 }
 
 .carouselViewButton {
@@ -7730,10 +7730,11 @@ a img.aligncenter {
   text-align: center;
 }
 
-body.is-scrolle
-d > .header {
+body.is-scrolled > .header {
   background-color: #3b5998;
 }
+
+
 
 .anchor-wrap {
   text-align: center;
@@ -7745,7 +7746,6 @@ d > .header {
     margin: 0 auto;
     text-align: center;
 }
-
 
 ul.link {
 
@@ -7780,11 +7780,10 @@ ul.link li:last-child {
   margin-bottom: 30px;
 }
 
+html { /* smoothscroll everywhere */
+scroll-behavior: smooth;
+}
 
 .anchorlink {
   scroll-margin-top: 6rem;
-}
-
-html { /* smoothscroll everywhere */
-scroll-behavior: smooth;
 }

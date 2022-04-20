@@ -60,7 +60,7 @@
           <h1><?php the_sub_field('vimeo_hero_title'); ?></h1>
           <p><?php the_sub_field('vimeo_hero_desc'); ?></p>
            <?php
-            if($link_title){
+             if($link_title){
               echo '<a href="'.esc_url( $link['url'] ).'" class="vimeo-anchor-link">'.esc_html( $link_title ).'</a>';
             }else{
               // Do nothing

@@ -21,7 +21,7 @@ class WiderTextContent {
       'widerTextTitle' => $widerTextTitle,
       'widerTextContent' => $widerTextContent,
       'widerTextAnchor' => $widerTextAnchor,
-
+ 
 	];
    }
 }

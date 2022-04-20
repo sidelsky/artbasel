@@ -67,18 +67,18 @@ class LayoutVr {
             break;
 
             //parallax image
-                   case 'kuula1':
-                             $kuula1 = new Kuula1($layout);
-                             $currentLayout = $kuula1->getKuula1();
-                  break;
+                              case 'kuula1':
+                                       $kuula1 = new Kuula1($layout);
+                                       $currentLayout = $kuula1->getKuula1();
+                            break;
 
 
-                  //anchor
-              case 'anchor':
-                 $anchor = new Anchor($layout);
-                 $currentLayout = $anchor->getAnchor();
-              break;
-
+              //anchor
+                        case 'anchor':
+                           $anchor = new Anchor($layout);
+                           $currentLayout = $anchor->getAnchor();
+                        break;
+ 
 
             //text iframe
    				  //   case 'text_iframe_content':
