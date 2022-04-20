@@ -6249,7 +6249,7 @@ body.online-exhibitions-template-parallax-template {
 }
 
 .l-content__block--link a {
-  color: black !important;
+  color: currentColor !important;
 }
 
 .carouselViewButton {
