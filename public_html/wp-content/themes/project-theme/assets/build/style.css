@@ -6249,7 +6249,7 @@ body.online-exhibitions-template-parallax-template {
 }
 
 .l-content__block--link a {
-  color: currentColor !important;
+  color: black !important;
 }
 
 .carouselViewButton {
@@ -7790,5 +7790,12 @@ scroll-behavior: smooth;
 
 a.anchor-top-link {
   float: right;
-  margin-top: -10px;
+  margin-top: 15px;
+  margin-right: -35px;
+}
+
+@media (min-width: 769px) {
+  .anchor-top-link {
+    margin-right: 0;
+  }
 }
