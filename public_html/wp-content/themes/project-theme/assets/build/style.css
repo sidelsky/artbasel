@@ -7778,13 +7778,15 @@ ul.link li:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 769px) {
   .parallax {
     background-size: 100% !important;
-    min-height: 220px;
+    min-height: 215px;
     background-attachment: inherit;
+    margin-bottom: 0;
   }
 }
 
