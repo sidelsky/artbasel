@@ -7780,7 +7780,7 @@ ul.link li:last-child {
   margin-bottom: 30px;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   .parallax {
     background-size: contain;
     padding: 10px;
