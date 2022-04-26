@@ -7776,7 +7776,7 @@ ul.link li:last-child {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: contain;
   margin-bottom: 30px;
 }
 
