@@ -7782,9 +7782,7 @@ ul.link li:last-child {
 
 @media (max-width: 769px) {
   .parallax {
-    background-size: contain;
-    padding: 10px;
-    border: 1px solid red;
+    background-size: 100% !important;
   }
 }
 
