@@ -7776,8 +7776,16 @@ ul.link li:last-child {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   margin-bottom: 30px;
+}
+
+@media (min-width: 769px) {
+  .parallax {
+    background-size: contain;
+    padding: 10px;
+    border: 1px solid red;
+  }
 }
 
 html { /* smoothscroll everywhere */
