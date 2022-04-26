@@ -7784,11 +7784,20 @@ ul.link li:last-child {
 @media (max-width: 769px) {
   .parallax {
     background-size: 100% !important;
+    min-height: 412px;
+    background-attachment: inherit;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .parallax {
     min-height: 215px;
     background-attachment: inherit;
     margin-bottom: 0;
   }
 }
+
 
 html { /* smoothscroll everywhere */
 scroll-behavior: smooth;
