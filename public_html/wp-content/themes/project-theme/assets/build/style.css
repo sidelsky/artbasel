@@ -7778,7 +7778,24 @@ ul.link li:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
 }
+
+@media (max-width: 769px) {
+  .parallax {
+    background-size: 100% !important;
+    min-height: 412px;
+    background-attachment: inherit;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .parallax {
+    min-height: 215px;
+  }
+}
+
 
 html { /* smoothscroll everywhere */
 scroll-behavior: smooth;
@@ -7808,7 +7825,7 @@ scroll-behavior: smooth;
   scroll-margin-top: 11rem;
 }
 
-.anchor-top-link { 
+.anchor-top-link {
   float: right;
   margin-top: 15px;
   margin-right: -35px;
