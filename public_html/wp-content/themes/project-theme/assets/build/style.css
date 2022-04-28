@@ -7831,8 +7831,8 @@ scroll-behavior: smooth;
   margin-right: -35px;
 }
 
-@media (min-width: 769px) {
+@media (max-width: 769px) {
   .anchor-top-link {
-    margin-right: 0;
+    margin-right: 10px;
   }
 }
