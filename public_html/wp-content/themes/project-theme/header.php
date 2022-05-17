@@ -35,6 +35,8 @@ $wordpress = new WordpressHelper;
 
 		<script src="https://player.vimeo.com/api/player.js"></script>
 
+<script type='text/javascript' src='https://vip-hauserwirth.com/wp-content/themes/project-theme/assets/build/app-1.js' id='app-js'></script>
+
 		<?php wp_head(); ?>
 		<!-- VPS Server -->
 	</head>
