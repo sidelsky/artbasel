@@ -1,3 +1,6 @@
+
+
+
 <footer class="u-section c-footer">
 
 <div class="c-footer__inner">
@@ -6,6 +9,10 @@
 		<p class="c-footer__copyright"><?= $themeData['copyright']['details'];?> &nbsp; | &nbsp; <a href="https://www.vip-hauserwirth.com/site-terms-of-use/" target="_blank">Terms &amp; Conditions</a><br><small>The artworks described above are subject to changes in availability and price without prior notice. Prices excl. VAT<br></small></p>
 	</div>
 
+ 
+<script type='text/javascript' src='/wp-content/themes/project-theme/assets/build/app-home.js' id='app-js'></script>
+
+ 
 	<div class="c-footer__column">
 		<div class="social ">
 		<a href="https://www.facebook.com/hauserwirth/" class="social__link" target="_blank">
