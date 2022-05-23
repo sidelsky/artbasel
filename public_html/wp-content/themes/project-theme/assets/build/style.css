@@ -7821,10 +7821,8 @@ scroll-behavior: smooth;
   }
 }
 
-.owl-hero-carousel .owl-dots:last-child {
+.owl-hero-carousel .owl-dots:nth-last-child(2) {
   display:none;
 }
 
-.owl-hero-carousel .owl-dots:first-child {
-  display: block;
-}
+ 
