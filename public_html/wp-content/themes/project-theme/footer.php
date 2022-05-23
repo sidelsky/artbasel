@@ -5,6 +5,7 @@ $wordpress = new WordpressHelper;
 
 </main>
 
+<script type='text/javascript' src='https://www.vip-hauserwirth.com/wp-content/themes/project-theme/assets/build/app.js' id='app-js'></script>
 
 <!-- The Modal -->
 <div id="weChatModal" class="modal wechat__modal">
@@ -22,6 +23,6 @@ $wordpress = new WordpressHelper;
 </div>
 
 <?php wp_footer(); ?>
-		
+
 	</body>
 </html>
