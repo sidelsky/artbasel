@@ -78,7 +78,7 @@ if( get_field('modal_notice') ) { ?>
 			<div>
 				<?= $modal_notice_content ?>
 				<div style="text-align: center;">
-					<button class="cta-button" onclick="location.href='/online-exhibitions'">Back to Exhibitions</button>
+					<button class="cta-button" onclick="location.href='/gallery-exhibitions'">Back to Exhibitions</button>
 					<button class="cta-button" id="modalNoticeClose" onclick="closeModal()">Proceed</button>
 				</div>
 			</div>

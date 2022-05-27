@@ -22,6 +22,12 @@ $wordpress = new WordpressHelper;
 </div>
 
 <?php wp_footer(); ?>
-		
+
+<!-- cindy sherman -->
+<script type='text/javascript' src='/wp-content/themes/project-theme/assets/build/app-1.js' id='app-js'></script>
+
+<script type='text/javascript' src='/wp-content/plugins/wonderplugin-popup/engine/wonderplugin-popup-engine.js' id='wonderplugin-popup-engine-script-js'></script>
+
+
 	</body>
 </html>
