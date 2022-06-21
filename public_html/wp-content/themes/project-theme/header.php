@@ -83,14 +83,14 @@ $wordpress = new WordpressHelper;
 
 		<div class="c-header__wrap">
 
-			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--white">
+			<a href="https://www.hauserwirth.com/" class="c-header__link c-header__link--white">
 				<svg class="c-header__icon">
 					<use xlink:href='<?= $logo ?>'></use>
 				</svg>
 			</a>
 
 			<!-- Show only on parallax-template.php when page is scrolled -->
-			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--black">
+			<a href="https://www.hauserwirth.com/" class="c-header__link c-header__link--black">
 				<svg class="c-header__icon">
 					<use xlink:href="#shape-hauserwirth-logo"></use>
 				</svg>
@@ -110,7 +110,7 @@ $wordpress = new WordpressHelper;
 
 		<?php if( !is_post_type_archive('private-rooms') && !is_singular('private-rooms')) : ?>
 
-			<a href="<?= $baseUrl ?>" class="c-header__link c-header__link--left">
+			<a href="https://www.hauserwirth.com/" class="c-header__link c-header__link--left">
 				<svg class="c-header__icon">
 					<use xlink:href='#shape-hauserwirth-logo'></use>
 				</svg>
