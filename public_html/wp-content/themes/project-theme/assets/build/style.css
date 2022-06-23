@@ -6188,7 +6188,7 @@ body.online-exhibitions-template-parallax-template {
 
 @media (min-width: 1281px) {
   .l-content__block__text-content {
-    padding: 9rem;
+    padding: 5rem;
   }
 }
 
@@ -7827,4 +7827,4 @@ scroll-behavior: smooth;
 
 .owl-hero-carousel .owl-dots:first-child {
   display: block;
-} */ 
+} */
