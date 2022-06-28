@@ -260,6 +260,15 @@ if($miniCarouselText) :?>
 				<?php if($miniCarouselContent) : ?>
 					<div style="margin-top: 20px"><?= $miniCarouselContent ?></div>
 				<?php endif; ?>
+
+<?php if( get_field('press-release-file') ) : ?>
+	<p style="padding:20px; text-align:center; margin: 0 auto;">
+	<a href="<?php the_field('press-release-file'); ?>" class="c-works__href" target="_blank">
+		    <?php the_field('press-release'); ?>
+		</a>
+	</p>
+<?php endif; ?>
+
 			</article>
 		</div>
 	<?php endif; ?>
