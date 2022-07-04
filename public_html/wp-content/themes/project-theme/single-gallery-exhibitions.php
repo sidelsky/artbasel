@@ -262,7 +262,7 @@ if($miniCarouselText) :?>
 				<?php endif; ?>
 
 <?php if( get_field('press-release-file') ) : ?>
-	<p class="file-link">>
+	<p class="file-link">
 	<a href="<?php the_field('press-release-file'); ?>" class="c-works__href" target="_blank">
 		    <?php the_field('press-release'); ?>
 		</a>
