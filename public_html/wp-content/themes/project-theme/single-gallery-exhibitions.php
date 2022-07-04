@@ -262,7 +262,7 @@ if($miniCarouselText) :?>
 				<?php endif; ?>
 
 <?php if( get_field('press-release-file') ) : ?>
-	<p style="padding:20px; text-align:center; margin: 0 auto;">
+	<p class="file-link">>
 	<a href="<?php the_field('press-release-file'); ?>" class="c-works__href" target="_blank">
 		    <?php the_field('press-release'); ?>
 		</a>
@@ -288,7 +288,7 @@ if($miniCarouselText) :?>
 						</a>
 					</p>
 				<?php endif; ?>
-				
+
 			</article>
 		</div>
 
