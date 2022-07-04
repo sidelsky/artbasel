@@ -7828,3 +7828,15 @@ scroll-behavior: smooth;
 .owl-hero-carousel .owl-dots:first-child {
   display: block;
 } */
+
+p.file-link {
+  padding:20px;
+  text-align:center;
+  margin: 30px 0 0;
+  width: 220px;
+  border: 1px solid black;
+}
+
+p.file-link a.c-works__href {
+  
+}
