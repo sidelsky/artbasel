@@ -7829,14 +7829,17 @@ scroll-behavior: smooth;
   display: block;
 } */
 
-p.file-link {
-  padding:20px;
+p.file-link a {
   text-align:center;
   margin: 30px 0 0;
-  width: 220px;
+  padding: 1rem 1.5rem;
   border: 1px solid black;
+      border-radius: 3px;
+      transition: all 0.15s ease-out;
+      display: inline-block;
 }
 
-p.file-link a.c-works__href {
-  
+p.file-link a:hover {
+  background: black,
+  color: white;
 }
