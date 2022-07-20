@@ -16,7 +16,7 @@
        * If there is a text iframe element
          */
       if( $data['iframe_html'] ) { ?>
-                <?= $data['iframe_html'] ?> 
+                <?= $data['iframe_html'] ?>
        <?php } ?>
 
       <?php
@@ -38,13 +38,13 @@
       /**
        * If no video content OR Carousel show a static image
        */
-      if( $data['image_content'] && !$data['video_content'] && !$data['carousel'] ) : ?>
+      if( $data['image_content'] && !$data['video_content'] && !$data['video_content_youtube'] && !$data['carousel'] ) : ?>
          <figure role="img" aria-label="<?= esc_attr( $data['image_content']['alt'] ); ?>" class="c-video-player__cover-image" style="background-image: url('<?= $data['image_content']['url'] ?>')"></figure>
       <?php endif; ?>
 
       <?php
       /**
-       * If video content show cover image, play button and video
+       * If VIMEO content show cover image, play button and video
        */
       if( $data['video_content']) : ?>
          <button class="c-video-player__button" data-id='playBtn'>
@@ -57,7 +57,32 @@
             <?= $data['video_content'] ?>
          </div>
       <?php endif; ?>
+
+    </div>
+    <div class="canvas l-content__block--center youtube">
+
+
+      <?php
+      /**
+       * If YOUTUBE content show cover image, play button and video
+       */
+      if( $data['video_content_youtube']) : ?>
+
+         <div data-id="vimeo1-content" class="u-video-aspect-ratio <?= $data['portrait_video1'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
+            <?= $data['video_content_youtube'] ?>
+         </div>
+
+
+
+     <?php endif; ?>
+
+
    </div>
+<style>
+[data-id="vimeo1-content"] a {
+  display: none;
+}
+</style>
 
 </div>
 
