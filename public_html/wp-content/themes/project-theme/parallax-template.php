@@ -335,7 +335,9 @@ if( $parallaxVideo ): ?>
 			elseif( get_row_layout() == 'image_content' ):
 				$carousel = get_sub_field('carousel');
 				$imageContent = get_sub_field('image_content');
+				$imageContentYT = get_sub_field('image_content_yt');
 				$videoContent = get_sub_field('video_content');
+				$videoContentYT = get_sub_field('video_content_youtube');
 				$portraitVideo = get_sub_field('portrait_video');
 				$iframe = get_sub_field('iframe');
 				$iframe_html = get_sub_field('iframe_html');
