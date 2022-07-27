@@ -4397,10 +4397,13 @@ h1 strong {
 }
 
 .online-exhibitions-template-parallax-template .menu-item:first-of-type a,
-.online-exhibitions-template-parallax-template .menu-item a {
+.online-exhibitions-template-parallax-template .menu-item a,
+body.postid-41469.online-exhibitions-template-default  .menu-item a,
+body.postid-41469.online-exhibitions-template-default   .menu-item:first-of-type a  {
   color: white;
 }
 
+body.postid-41469.online-exhibitions-template-default  .menu-item:first-of-type a:after,
 .online-exhibitions-template-parallax-template .menu-item:first-of-type a:after {
   background-color: white;
 }
