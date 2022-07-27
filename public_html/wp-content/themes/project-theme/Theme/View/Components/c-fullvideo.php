@@ -9,7 +9,7 @@ asd
             </svg>
          </button>
          <figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $data['coverimage']['alt'] ); ?>" style="background-image: url('<?= $data['coverimage']['url'] ?>')" data-id='cover'></figure>
-         <div data-id="vimeo-content" class="u-video-aspect-ratio">
+         <div data-id="vimeo-content" class="u-video-aspect-ratio <?= $data['portrait_video'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
             <?= $data['video'] ?>
          </div>
       <?php endif; ?>

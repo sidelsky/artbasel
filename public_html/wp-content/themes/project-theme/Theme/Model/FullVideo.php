@@ -11,6 +11,7 @@ class FullVideo {
    }
 
    public function getFullVideo() {
+      $fullvideo = $this->layout['fullvideo'];
       $video = $this->layout['video'];
       $videotitle = $this->layout['videotitle'];
       $videodesc = $this->layout['videodesc'];
