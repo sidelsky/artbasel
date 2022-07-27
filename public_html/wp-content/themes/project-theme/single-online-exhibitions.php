@@ -3,14 +3,39 @@
 use App\Helper\Render;
 use Theme\Model\LayoutVr;
 use Theme\Model\ViewingRoom;
+use Theme\Model\InquireForm;
 
 $render = new Render;
 $layout = new LayoutVr;
 $viewingRoom = new ViewingRoom;
+$inquireForm = new InquireForm;
 
 $allLayouts = $layout->getLayout();
 
 include("header.php");
+
+
+/**
+ * Parallax
+ */
+$parallax_hero_image = get_field('parallax_hero_image');
+$parallax_hero_title = get_field('parallax_hero_title');
+$parallax_introduction = get_field('parallax_introduction');
+$top_spacing_phone = get_field('top_spacing_phone');
+$top_spacing_tablet = get_field('top_spacing_tablet');
+$top_spacing_desktop = get_field('top_spacing_desktop');
+$top_spacing_desktop_large = get_field('top_spacing_desktop_large');
+$parallax_hero_image_shading = get_field('parallax_hero_image_shading');
+
+$parallax_hero_image_height_phone = get_field('parallax_hero_image_height');
+$parallax_hero_image_height_tablet = get_field('parallax_hero_image_height_tablet');
+$parallax_hero_image_height_desktop = get_field('parallax_hero_image_height_desktop');
+
+$parallax_second_hero_image_height = get_field('parallax_second_hero_image_height');
+
+$parallaxVideo = get_field('parallax_video');
+
+$speed = 1;
 
 $term_id = get_field('collection');
 $args =[
@@ -322,7 +347,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 			 case 'kuula1':
 				$templateName = 'c-img-parallax';
 			 break;
-			 
+
 					//Get anchor
 				case 'anchor':
 					$templateName = 'c-anchor';
