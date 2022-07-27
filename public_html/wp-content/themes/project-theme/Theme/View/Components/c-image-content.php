@@ -62,33 +62,12 @@
       <?php endif; ?>
 
     </div>
-    <div class="canvas l-content__block--center youtube">
-
-
-      <?php
-      /**
-       * If YOUTUBE content show cover image, play button and video
-       */
-      if( $data['video_content_youtube']) : ?>
-
-         <div data-id="vimeo1-content" class="u-video-aspect-ratio <?= $data['portrait_video1'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
-            <?= $data['video_content_youtube'] ?>
-         </div>
 
 
 
-     <?php endif; ?>
 
-
-   </div>
-
-
-<style>
-[data-id="vimeo1-content"] a {
-  display: none;
-}
-</style>
-
+<h2><?= $data['videotitle'] ?></h2>
+ <p><?= $data['videodesc'] ?></p>
 </div>
 
 <?php
@@ -98,8 +77,3 @@
 if($data['image_content']['caption']) { ?>
    <figcaption class="caption caption--no-margin-top"><?= esc_attr( $data['image_content']['caption'] ); ?></figcaption>
 <?php } ?>
-
- 
-
-<h2><?= $data['videotitle'] ?></h2>
- <p><?= $data['videodesc'] ?></p>
