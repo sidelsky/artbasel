@@ -19,7 +19,8 @@ class ImageContent {
        $carousel = $this->layout['carousel'];
        $iframe = $this->layout['iframe'];
        $iframe_html = $this->layout['iframe_html'];
-
+       $videotitle = $this->layout['videotitle'];
+        $videodesc = $this->layout['videodesc'];
 	return [
 		'layoutName' => 'image_content',
       'image_content' => $imageContent,
@@ -29,7 +30,9 @@ class ImageContent {
       'portrait_video' => $portraitVideo,
       'carousel' => $carousel,
       'iframe' => $iframe,
-      'iframe_html' => $iframe_html
+      'iframe_html' => $iframe_html,
+      'videotitle' => $videotitle,
+      'videodesc' => $videodesc
 	];
    }
 }
