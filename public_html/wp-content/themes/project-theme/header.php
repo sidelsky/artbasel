@@ -73,7 +73,7 @@ $wordpress = new WordpressHelper;
 		/**
 		 * Check for Parallax alpha template
 		 */
-		if( is_page_template( 'parallax-template.php' )  && is_single( '41469' )  ) {
+		if( is_page_template( 'parallax-template.php' ) || is_single( '41469' )  ) {
 			$logo = '#shape-hauserwirth-logo-white';
 		} else {
 			$logo = '#shape-hauserwirth-logo';
