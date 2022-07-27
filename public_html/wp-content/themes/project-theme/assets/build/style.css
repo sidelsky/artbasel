@@ -4410,11 +4410,19 @@ body.postid-41469.online-exhibitions-template-default  .menu-item:first-of-type 
 
 body.is-scrolled .menu-item:first-of-type a,
 body.is-scrolled .menu-item a {
-  color: black;
+  color: black !important;
 }
 
 body.is-scrolled .menu-item:first-of-type a:after {
   background-color: black;
+}
+
+body.postid-41469.online-exhibitions-template-default .c-site-nav {
+  border-bottom: 0;
+}
+
+body.postid-41469.online-exhibitions-template-default .menu-item.current_page_ancestor a:after {
+  background: transparent;
 }
 
 .social {
