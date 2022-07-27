@@ -22,7 +22,7 @@ class FullVideo {
       'video' => $video,
       'videotitle' => $videotitle,
       'videodesc' => $videodesc,
-      'coverimage' => $coverimage
+      'coverimage' => $coverimage,
     	];
    }
 }
