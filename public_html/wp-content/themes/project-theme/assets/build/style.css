@@ -6711,6 +6711,18 @@ Owl modal
   }
 }
 
+/* negative margin for online exbhn hybrid */
+
+body.postid-41469.online-exhibitions-template-default .main {
+  margin-top: -120px;
+}
+
+/* hide back arrow */
+
+body.postid-41469.online-exhibitions-template-default .c-works__href-wrap--back {
+  display: none;
+}
+
 /**
 * Parallax alpha
 */
