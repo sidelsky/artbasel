@@ -53,9 +53,12 @@
             </svg>
          </button>
          <figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $data['image_content']['alt'] ); ?>" style="background-image: url('<?= $data['image_content']['url'] ?>')" data-id='cover'></figure>
-         <div data-id="vimeo-content" class="u-video-aspect-ratio <?= $data['portrait_video'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
+         <div data-id="vimeo-content" class="u-video-aspect-ratio">
             <?= $data['video_content'] ?>
          </div>
+
+
+
       <?php endif; ?>
 
     </div>
@@ -78,6 +81,8 @@
 
 
    </div>
+
+
 <style>
 [data-id="vimeo1-content"] a {
   display: none;
@@ -93,3 +98,12 @@
 if($data['image_content']['caption']) { ?>
    <figcaption class="caption caption--no-margin-top"><?= esc_attr( $data['image_content']['caption'] ); ?></figcaption>
 <?php } ?>
+
+<div class="l-content__block l-content__block--image-content l-content__block--wide-i3mage">
+   <div class=" ">
+
+<h2><?= $data['videotitle'] ?></h2>
+ <p><?= $data['videodesc'] ?></p>
+
+   </div>
+ </div>
