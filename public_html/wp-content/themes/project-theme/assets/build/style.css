@@ -1727,11 +1727,13 @@ button[disabled]:hover {
 /**
 * Parallax alpha
 */
-body.online-exhibitions-template-parallax-template .c-header {
+body.online-exhibitions-template-parallax-template .c-header,
+body.postid-41469.online-exhibitions-template-default .c-header {
   background-color: transparent;
 }
 
-body.online-exhibitions-template-parallax-template .c-header__wrap {
+body.online-exhibitions-template-parallax-template .c-header__wrap,
+body.postid-41469.online-exhibitions-template-default .c-header__wrap {
   background-color: transparent;
   border-bottom: solid 1px rgba(255, 255, 255, 0.25);
 }
@@ -6712,34 +6714,43 @@ Owl modal
 /**
 * Parallax alpha
 */
-body.online-exhibitions-template-parallax-template .l-site-header__nav {
+body.online-exhibitions-template-parallax-template .l-site-header__nav,
+body.postid-41469.online-exhibitions-template-default .l-site-header__nav {
   background-color: transparent;
 }
 
-body.is-scrolled.online-exhibitions-template-parallax-template .l-site-header__nav {
+body.is-scrolled.online-exhibitions-template-parallax-template .l-site-header__nav,
+body.postid-41469.is-scrolled.online-exhibitions-template-default .l-site-header__nav {
   background-color: white;
 }
 
 /**
 * Parallax alpha
 */
-body.online-exhibitions-template-parallax-template .l-site-header__nav {
+body.online-exhibitions-template-parallax-template .l-site-header__nav,
+body.postid-41469.online-exhibitions-template-default .l-site-header__nav {
   background-color: transparent;
 }
 
-body.online-exhibitions-template-parallax-template.is-scrolled .c-header__link--black {
+
+
+body.online-exhibitions-template-parallax-template.is-scrolled .c-header__link--black,
+body.postid-41469.online-exhibitions-template-default.is-scrolled .c-header__link--black {
   display: block;
 }
 
-body.online-exhibitions-template-parallax-template.is-scrolled .c-header__link--white {
+body.online-exhibitions-template-parallax-template.is-scrolled .c-header__link--white,
+body.postid-41469.online-exhibitions-template-default.is-scrolled .c-header__link--white {
   display: none;
 }
 
-body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-header__link--black {
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-header__link--black,
+body.postid-41469.online-exhibitions-template-default.body--menu-is-expanded .c-header__link--black {
   display: block !important;
 }
 
-body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-header__link--white {
+body.online-exhibitions-template-parallax-template.body--menu-is-expanded .c-header__link--white,
+body.postid-41469.online-exhibitions-template-default.body--menu-is-expanded .c-header__link--white {
   display: none;
 }
 

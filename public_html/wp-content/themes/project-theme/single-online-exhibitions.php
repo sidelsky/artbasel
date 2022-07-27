@@ -3,14 +3,39 @@
 use App\Helper\Render;
 use Theme\Model\LayoutVr;
 use Theme\Model\ViewingRoom;
+use Theme\Model\InquireForm;
 
 $render = new Render;
 $layout = new LayoutVr;
 $viewingRoom = new ViewingRoom;
+$inquireForm = new InquireForm;
 
 $allLayouts = $layout->getLayout();
 
-include("header.php"); 
+include("header.php");
+
+
+/**
+ * Parallax
+ */
+$parallax_hero_image = get_field('parallax_hero_image');
+$parallax_hero_title = get_field('parallax_hero_title');
+$parallax_introduction = get_field('parallax_introduction');
+$top_spacing_phone = get_field('top_spacing_phone');
+$top_spacing_tablet = get_field('top_spacing_tablet');
+$top_spacing_desktop = get_field('top_spacing_desktop');
+$top_spacing_desktop_large = get_field('top_spacing_desktop_large');
+$parallax_hero_image_shading = get_field('parallax_hero_image_shading');
+
+$parallax_hero_image_height_phone = get_field('parallax_hero_image_height');
+$parallax_hero_image_height_tablet = get_field('parallax_hero_image_height_tablet');
+$parallax_hero_image_height_desktop = get_field('parallax_hero_image_height_desktop');
+
+$parallax_second_hero_image_height = get_field('parallax_second_hero_image_height');
+
+$parallaxVideo = get_field('parallax_video');
+
+$speed = 1;
 
 $term_id = get_field('collection');
 $args =[
@@ -58,7 +83,7 @@ endwhile;
 wp_reset_postdata();
 ?>
 
-<?php 
+<?php
 /**
  * Modal Notice
  */
@@ -119,19 +144,19 @@ if($hero) : ?>
 	<?php _e( 'Oops, please add a Hero image here.' ); ?>
 <?php endif; ?>
 
-<?php 
+<?php
 /**
  * Show email field at the Top
  */
 if( get_field('show_artist_inquiry_email') == "top") {
-	include("partials/ma-email-sub-vr.php"); 
+	include("partials/ma-email-sub-vr.php");
 } ?>
 
-<?php 
+<?php
 /**
  * Hero Content carousel
  */
-$miniCarouselText = get_field('mini_carousel_text'); 
+$miniCarouselText = get_field('mini_carousel_text');
 $hideMiniCarousel = get_field('hide_mini_carousel');
 $miniCarouselContent = get_field('mini_carousel_content');
 if($miniCarouselText) :?>
@@ -147,7 +172,7 @@ if($miniCarouselText) :?>
 			</article>
 		</div>
 	<?php endif; ?>
-		
+
 	<?php if(!$hideMiniCarousel) : ?>
 		<div class="u-column u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 			<article class="c-hero-carousel--inner-container">
@@ -157,10 +182,10 @@ if($miniCarouselText) :?>
 				<?php endif; ?>
 			</article>
 		</div>
-		
+
 			<div class="u-column--half-width c-hero-carousel--container c-hero-carousel--container--padding">
 				<div class="c-hero-carousel--inner-container">
-				
+
 				<div class="pre-loader">
 					<div class="lds-dual-ring"></div>
 					<div class="pre-loader__text">Loading carousel...</div>
@@ -178,9 +203,9 @@ if($miniCarouselText) :?>
 									<a href="<?= $art['link']; ?>">
 										<img src="<?= $art['image']; ?>" alt="<?= $art['title']; ?>" class="c-works__hero-image">
 									</a>
-								</figure> 
+								</figure>
 								<div class="c-works__hero-credit-line"><?= $art['creditLine']; ?></div>
-								
+
 								<?php if( $art['sold'] == 'sold' ) {
 									$availabilityMarker = 'c-sale-marker--sold';
 									$availabilityTitle = 'Sold';
@@ -192,12 +217,12 @@ if($miniCarouselText) :?>
 									$availabilityTitle = 'Available';
 								} ?>
 
-							<?php if( $art['sold'] == !NULL ) : ?>	
+							<?php if( $art['sold'] == !NULL ) : ?>
 								<div class="c-works__availability c-works__availability__hero">
 									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 								</div>
 							<?php endif; ?>
-								
+
 							</article>
 						<?php endforeach; ?>
 					</div>
@@ -208,7 +233,7 @@ if($miniCarouselText) :?>
 	</section>
 <?php endif; ?>
 
-<?php 
+<?php
 /**
  * Hero ContentKuula VR
  */
@@ -217,7 +242,7 @@ $kuulaVr = $fiftyFifty['fifty_fifty_kuula'];
 $kuulaImage = $fiftyFifty['kuula_image']['sizes']['large'];
 
 if( $kuulaImage) : ?>
-	<section class="u-section"> 
+	<section class="u-section">
 		<div class="c-kuula ">
 			<?php if( $kuulaVr) : ?>
 				<button class="c-kuula__button" id="touchButton" data-id="touch-button" >
@@ -232,8 +257,8 @@ if( $kuulaImage) : ?>
 </section>
 <?php endif; ?>
 
-<?php 
-/** 
+<?php
+/**
  * Image /Video content
  * */
 if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fifty_video'] ) : ?>
@@ -243,7 +268,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 		<?php if( !$fiftyFifty['fifty_fifty_video']) : ?>
 			<figure class="l-content__block l-content__block--wide-image" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')"></figure>
 		<?php endif; ?>
-		
+
 		<?php if( $fiftyFifty['fifty_fifty_video']) : ?>
 			<figure class="l-content__block l-content__block--dark-background">
 				<div class="canvas l-content__block--center">
@@ -253,7 +278,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 						</svg>
 					</button>
 
-					<div class="c-video-player__cover-image" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')" data-id='cover'></div>	
+					<div class="c-video-player__cover-image" style="background-image: url('<?= $fiftyFifty['fifty_fifty_image']['sizes']['large'] ?>')" data-id='cover'></div>
 
 					<div class="u-video-aspect-ratio u-video-aspect-ratio--full-width">
 						<?= $fiftyFifty['fifty_fifty_video'] ?>
@@ -272,7 +297,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				<div class="canvas l-content__block--center l-content__block__text-content">
 					<div>
 						<h2 class="l-content__block--title"><?= $fiftyFifty['fifty_fifty_title'] ?></h2>
-						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>	
+						<div class="l-content__block--body-text"><?= $fiftyFifty['fifty_fifty_content'] ?></div>
 					</div>
 				</div>
 			</article>
@@ -302,12 +327,12 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 					];
 					$templateName = 'c-title-break';
 					break;
-					
+
 					// Get Text content
 					case 'text_content':
 						$templateName = 'c-text-content';
 					break;
-					
+
 					// Get Image content
 					case 'image_content':
 						$templateName = 'c-image-content';
@@ -318,6 +343,21 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 						$templateName = 'c-works-content';
 					break;
 
+					//Get image parallax
+			 case 'kuula1':
+				$templateName = 'c-img-parallax';
+			 break;
+
+					//Get anchor
+				case 'anchor':
+					$templateName = 'c-anchor';
+						 break;
+
+						 //Get full width video
+	 				case 'fullvideo':
+	 					$templateName = 'c-fullvideo';
+	 						 break;
+
 					//Wider text content
 					case 'wider_text_content':
 						$templateName = 'c-wider-text-content';
@@ -326,7 +366,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 							'alignLeft' => true
          			];
 						break;
-				
+
 			}
 				$renderContent = $render->view('Components/' . $templateName, $value, $index);
 				echo $renderContent;
@@ -336,7 +376,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 	</section>
 <?php //endif; ?>
 
-<?php 
+<?php
 /**
  * Get a list of Works if no layout builder active
  */
@@ -357,14 +397,14 @@ if( empty($renderContent) ) : ?>
 								<a href="<?= $artworks['link']; ?>">
 									<img src="<?= $artworks['image']; ?>" alt="<?= $artworks['title']; ?>" class="c-works__image">
 								</a>
-							</figure> 
+							</figure>
 							<a href="<?= $artworks['link']; ?>">
 								<h2 class="c-works__title"><?= $artworks['title']; ?></h2>
 							</a>
 							<div class="c-works__name"><?= $artworks['fullName']; ?></div>
 							<div class="c-works__date"><?= $artworks['date']; ?></div>
 							<div class="c-works__medium"><?= $artworks['mediumText']; ?></div>
-							
+
 							<?php if($artworks['sold'] === 'available') : ?>
 								<div class="c-works__price"><span><?= $artworks['price']; ?></span></div>
 							<?php endif; ?>
@@ -380,8 +420,8 @@ if( empty($renderContent) ) : ?>
 								$availabilityTitle = 'Available';
 							} ?>
 
-							<?php if( $artworks['sold'] == !NULL ) : ?>		
-								<div class="c-works__availability">		
+							<?php if( $artworks['sold'] == !NULL ) : ?>
+								<div class="c-works__availability">
 									<span class="c-sale-marker <?= $availabilityMarker ?>"></span><span><?= $availabilityTitle ?></span>
 								</div>
 							<?php endif; ?>
@@ -394,15 +434,15 @@ if( empty($renderContent) ) : ?>
 	</section>
 <?php endif; ?>
 
-<?php 
+<?php
 /**
  * Show email field at the Bottom
  */
 if( get_field('show_artist_inquiry_email') == "bottom") {
-	include("partials/ma-email-sub-vr.php"); 
+	include("partials/ma-email-sub-vr.php");
 } ?>
 
-<?php 
+<?php
 /**
  * Footer paralax image
  */
@@ -411,11 +451,11 @@ if($footerParallaxImage) : ?>
 	<div class="parallax-window parallax-window__footer" data-parallax="scroll" data-image-src="<?= $footerParallaxImage['sizes']['large']; ?>"></div>
 <?php endif; ?>
 
-<?php 
+<?php
 	/**
 	 * Artist recommendations
 	 */
-	$recommendations = get_field('artist_recommendations'); 
+	$recommendations = get_field('artist_recommendations');
 	$recommendationsTitle = $recommendations[artist_recommendations_title];
 	$recommendationsSubtitle = $recommendations[artist_recommendations_subtitle];
 	$recommendationsContent = $recommendations[artist_recommendations_content];
@@ -440,7 +480,7 @@ if($footerParallaxImage) : ?>
 
 
 
-<?php 
+<?php
 /**
  * Footer content
  */
@@ -451,12 +491,12 @@ if( !empty($content) ):
 		<div class="u-l-container--center">
 			<div class="u-l-container u-l-container--shallow u-l-horizontal-padding u-l-vertical-padding u-l-vertical-padding--small">
 				<div class="s-content c-works__footer c-works__footer__hr">
-				<?php 
-					if ( have_posts() ) : 
-						while ( have_posts() ) : the_post(); 
+				<?php
+					if ( have_posts() ) :
+						while ( have_posts() ) : the_post();
 							the_content();
-						endwhile; 
-					endif; 
+						endwhile;
+					endif;
 					?>
 				</div>
 			</div>
