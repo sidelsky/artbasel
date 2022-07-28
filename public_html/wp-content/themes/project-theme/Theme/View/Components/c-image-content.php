@@ -63,20 +63,7 @@
 
     </div>
 
-
-      <?php
-      /**
-       * If YOUTUBE content show cover image, play button and video
-       */
-      if( $data['video_content_youtube']) : ?>
-      <div class="canvas l-content__block--center youtube">
-
-         <div data-id="vimeo1-content" class="u-video-aspect-ratio <?= $data['portrait_video1'] ? 'u-video-aspect-ratio--portrait' : 'u-video-aspect-ratio--full-width'?>">
-            <?= $data['video_content_youtube'] ?>
-         </div>
-       </div>
-
-     <?php endif; ?>
+ 
 
 
 </div>
