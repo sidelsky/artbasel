@@ -64,13 +64,6 @@
     </div>
 
  
-
-
-</div>
-
-<div id="videotitle">
-    <h2><?= $data['videotitle'] ?></h2>
-     <p><?= $data['videodesc'] ?></p>
 </div>
 
 <?php
