@@ -3452,6 +3452,11 @@ body.online-exhibitions-template-parallax-template.is-scrolled .c-hamburger__bar
   width: 100%;
 }
 
+/* height override for hero centered video */
+.postid-41469 .c-header-background-image {
+  height: calc(100vh);
+}
+
 .c-header-background-image__shading {
   bottom: 0;
   left: 0;
@@ -6233,7 +6238,9 @@ body.online-exhibitions-template-parallax-template {
 }
 
 .l-content__block .l-content__block--center .u-video-aspect-ratio iframe {
-  height: 652px;
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
 }
 
 .l-content__block--dark-background {
@@ -6356,6 +6363,15 @@ body.online-exhibitions-template-parallax-template {
     position: relative;
     left: calc(99.9% * -8/12 - (0px - 0px * -8/12) + 0px);
   }
+
+/* center override for content centered video */
+.postid-41469 .l-content__block--wide-text:nth-of-type(1n + 1) {
+    position: relative;
+    left:  inherit;
+    margin: 0 auto;
+  }
+
+
   .l-content__block--wide-text:nth-of-type(2n + 2) {
     position: relative;
     left: calc(99.9% * 0/12 - (0px - 0px * 0/12) + 0px);
@@ -6893,6 +6909,7 @@ body.postid-41469.online-exhibitions-template-default.body--menu-is-expanded .c-
  */
 .u-video-aspect-ratio {
   position: relative;
+  width: 100%;
 }
 
 .u-video-aspect-ratio--half-width {
