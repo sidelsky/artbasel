@@ -1,7 +1,7 @@
 <?php if( have_rows('content_builder') ): ?>
     <?php while( have_rows('content_builder') ): the_row(); ?>
         <?php if( get_row_layout() == 'anchor' ): ?>
-          <div class="l-content__block l-content__block--image-content l-content__block--wide-image">
+          <div class="l-content__block l-content__block--image-content l-content__block--wide-image video">
              <div class="canvas l-content__block--center">
 
                <button class="c-video-player__button" data-id='playBtn'>
@@ -14,14 +14,12 @@
                   <?= $data['video'] ?>
                </div>
 
-
-                <h2><?= $data['videotitle'] ?>  </h2>
-                <p><?= $data['videodesc'] ?></p>
-
-
 								 </div>
 								 </div>
-
+                 <div id="videometa" >
+                   <h2><?= $data['videotitle'] ?>  </h2>
+                   <p><?= $data['videodesc'] ?></p>
+               </div>
 	   		<?php endif; ?>
     <?php endwhile; ?>
 <?php endif; ?>
