@@ -6447,6 +6447,10 @@ body.online-exhibitions-template-parallax-template {
       margin: 0 auto  !important;
     }
 
+.postid-41469 .l-content__block--wide-image:first-child {
+  margin: 0 auto;
+}
+
   .l-content__block--wide-image:nth-of-type(2n + 2) {
     position: relative;
     left: calc(99.9% * 0/12 - (0px - 0px * 0/12) + 0px);
