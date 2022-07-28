@@ -4,11 +4,19 @@
           <div class="l-content__block l-content__block--image-content l-content__block--wide-image">
              <div class="canvas l-content__block--center">
 
+               <button class="c-video-player__button" data-id='playBtn'>
+                  <svg class="c-video-player__play-icon">
+                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#shape-play" viewBox="0 0 32 32"></use>
+                  </svg>
+               </button>
+               <figure class="c-video-player__cover-image" role="img" aria-label="<?= esc_attr( $data['coverimage']['alt'] ); ?>" style="background-image: url('<?= $data['coverimage']['url'] ?>')" data-id='cover'></figure>
+               <div data-id="vimeo-content" class="u-video-aspect-ratio">
+                  <?= $data['video'] ?>
+               </div>
 
-                <?= $data['coverimage'] ?>
-                <?= $data['video'] ?>
-                <?= $data['videotitle'] ?>
-                <?= $data['videodesc'] ?>
+
+                <h2><?= $data['videotitle'] ?>  </h2>
+                <p><?= $data['videodesc'] ?></p>
 
 
 								 </div>
