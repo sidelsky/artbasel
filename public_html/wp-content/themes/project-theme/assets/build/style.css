@@ -4401,6 +4401,10 @@ h1 strong {
   border: none;
 }
 
+.l-content__block--wide-image.video {
+  flex-direction: column;
+}
+
 .online-exhibitions-template-parallax-template .menu-item:first-of-type a,
 .online-exhibitions-template-parallax-template .menu-item a,
 body.postid-41469.online-exhibitions-template-default  .menu-item a,
