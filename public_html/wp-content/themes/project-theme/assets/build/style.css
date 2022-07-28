@@ -6445,11 +6445,11 @@ body.online-exhibitions-template-parallax-template {
 
   /* center override for content centered video */
   .postid-41469 .l-content__block--wide-text:nth-of-type(1n + 1) {
-      position: relative;
-      left:  inherit;
-      margin: 0 auto;
+      position: relative  !important;
+      left:  inherit !important;
+      margin: 0 auto  !important;
     }
-    
+
   .l-content__block--wide-image:nth-of-type(2n + 2) {
     position: relative;
     left: calc(99.9% * 0/12 - (0px - 0px * 0/12) + 0px);
