@@ -6437,7 +6437,7 @@ body.online-exhibitions-template-parallax-template {
   }
   .l-content__block--wide-image:nth-of-type(1n + 1) {
     position: relative;
-    left: calc(99.9% * 4/12 - (0px - 0px * 4/12) + 0px);
+    left: 0;
   }
 
   /* center override for content centered video */
