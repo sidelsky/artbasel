@@ -506,3 +506,18 @@ if( !empty($content) ):
 
 
 <?php include("footer.php"); ?>
+
+
+<style>
+/* center override for content centered video */
+.postid-41469 .l-content__block--wide-text:nth-of-type(1n + 1) {
+		position: relative  !important;
+		left:  inherit !important;
+		margin: 0 auto  !important;
+	}
+
+	.postid-41469 .l-content__block--wide-image:first-child {
+		margin: 0 auto;
+		left: inherit;
+	}
+</style>
