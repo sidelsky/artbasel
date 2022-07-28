@@ -5769,12 +5769,9 @@ select:focus {
 [type="reset"],
 [type="submit"],
 button {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   border: 0;
   border-radius: 0;
-  -webkit-box-shadow: 0;
-          box-shadow: 0;
+  box-shadow: none;
 }
 
 textarea {
@@ -7894,7 +7891,7 @@ p.file-link a {
 }
 
 p.file-link a:hover {
-  background: black,
+  background: black;
   color: white;
 }
 
