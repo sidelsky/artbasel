@@ -4403,6 +4403,8 @@ h1 strong {
 
 .l-content__block--wide-image.video {
   flex-direction: column;
+  left: inherit !important;
+  margin: -50px auto 30px;
 }
 
 #videometa {
@@ -4416,6 +4418,7 @@ h1 strong {
   font-size: 2.6rem;
   line-height: 1.25;
   margin-bottom: 2rem;
+  font-family: 'newtransport-medium';
 }
 
 #videometa p {
