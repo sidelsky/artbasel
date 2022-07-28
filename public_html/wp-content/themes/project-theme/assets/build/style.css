@@ -4407,6 +4407,11 @@ h1 strong {
   margin: -50px auto 30px;
 }
 
+.l-content__block--wide-image.video:nth-child(1n) {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 #videometa {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -4423,7 +4428,8 @@ h1 strong {
 
 #videometa p {
   color: #8a8a8a;
-  font-size: 1.4rem;
+  font-size: 1.45rem;
+    line-height: 1.6;
 }
 
 
