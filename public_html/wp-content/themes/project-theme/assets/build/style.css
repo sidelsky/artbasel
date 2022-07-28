@@ -4405,20 +4405,20 @@ h1 strong {
   flex-direction: column;
 }
 
-#video-meta {
+#videometa {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   margin: 0 auto;
   max-width: 980px;
 }
 
-#video-meta h2 {
+#videometa h2 {
   font-size: 2.6rem;
   line-height: 1.25;
   margin-bottom: 2rem;
 }
 
-#video-meta p {
+#videometa p {
   color: #8a8a8a;
   font-size: 1.4rem;
 }
