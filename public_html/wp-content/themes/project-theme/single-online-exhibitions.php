@@ -352,11 +352,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				case 'anchor':
 					$templateName = 'c-anchor';
 						 break;
-
-						 //Get full width video
-	 				case 'fullvideo':
-	 					$templateName = 'c-fullvideo';
-	 						 break;
+ 
 
 					//Wider text content
 					case 'wider_text_content':
@@ -506,5 +502,3 @@ if( !empty($content) ):
 
 
 <?php include("footer.php"); ?>
-
- 
