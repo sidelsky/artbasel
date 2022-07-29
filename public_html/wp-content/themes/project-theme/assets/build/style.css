@@ -4404,7 +4404,7 @@ h1 strong {
 .l-content__block--wide-image.video {
   flex-direction: column;
   left: inherit !important;
-  margin: -50px auto 30px;
+  margin: 50px auto 30px;
 }
 
 .l-content__block--wide-image.video:nth-child(1n) {

@@ -11,6 +11,7 @@ use Theme\Model\WiderTextContent;
 use Theme\Model\Kuula;
 use Theme\Model\Kuula1;
 use Theme\Model\Anchor;
+use Theme\Model\Magnify;
 
 class LayoutVr {
 
@@ -59,6 +60,12 @@ class LayoutVr {
                $currentLayout = $widerTextContent->getWiderTextContent();
             break;
 
+            //Magnify
+   			   case 'magnify':
+                  $magnify = new Magnify($layout);
+                  $currentLayout = $magnify->getMagnify();
+   			   break;
+
             //Kuula
 			   case 'kuula':
                $kuula = new Kuula($layout);
@@ -66,23 +73,17 @@ class LayoutVr {
             break;
 
             //parallax image
-                             case 'kuula1':
-                                       $kuula1 = new Kuula1($layout);
-                                       $currentLayout = $kuula1->getKuula1();
-                            break;
+			   case 'kuula1':
+               $kuula1 = new Kuula1($layout);
+               $currentLayout = $kuula1->getKuula1();
+			   break;
 
+         //anchor
+			   case 'anchor':
+               $anchor = new Anchor($layout);
+               $currentLayout = $anchor->getAnchor();
+			   break;
 
-              //anchor
-                        case 'anchor':
-                           $anchor = new Anchor($layout);
-                           $currentLayout = $anchor->getAnchor();
-                        break;
-
-            //text iframe
-   				  //   case 'text_iframe_content':
-   				    //       $text_iframe_content = new Text_iframe_content($layout);
-   				   //        $currentLayout = $text_iframe_content->getText_iframe_content();
-   				  //  break;
 
 
         }
