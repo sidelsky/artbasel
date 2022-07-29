@@ -11,6 +11,7 @@ use Theme\Model\WiderTextContent;
 use Theme\Model\Kuula;
 use Theme\Model\Kuula1;
 use Theme\Model\Anchor;
+use Theme\Model\Magnify;
 
 class LayoutVr {
 
@@ -77,6 +78,14 @@ class LayoutVr {
                            $anchor = new Anchor($layout);
                            $currentLayout = $anchor->getAnchor();
                         break;
+
+
+                        //Magnify
+                     case 'magnify':
+                           $magnify = new Magnify($layout);
+                           $currentLayout = $magnify->getMagnify();
+                    break;
+
 
             //text iframe
    				  //   case 'text_iframe_content':

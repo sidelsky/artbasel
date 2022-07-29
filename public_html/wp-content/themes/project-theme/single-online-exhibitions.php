@@ -306,6 +306,12 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 	</section>
 <?php endif; ?>
 
+
+
+
+
+
+
 <?php
 /**
  * Flexible Content Bulider
@@ -352,7 +358,12 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 				case 'anchor':
 					$templateName = 'c-anchor';
 						 break;
- 
+
+						 //Get magnify
+	 				case 'magnify':
+	 					$templateName = 'c-magnify';
+	 						 break;
+
 
 					//Wider text content
 					case 'wider_text_content':

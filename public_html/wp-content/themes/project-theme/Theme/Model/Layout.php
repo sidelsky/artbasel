@@ -14,6 +14,7 @@ use Theme\Model\Blockquote;
 use Theme\Model\VideoCentered;
 use Theme\Model\TwoImages;
 use Theme\Model\FullWidthImages;
+use Theme\Model\Magnify;
 
 class Layout {
 
@@ -97,6 +98,12 @@ class Layout {
                $kuula = new Kuula($layout);
                $currentLayout = $kuula->getKuula();
 				break;
+
+        //Magnify
+     case 'magnify':
+           $magnify = new Magnify($layout);
+           $currentLayout = $magnify->getMagnify();
+    break;
 
 
         }
