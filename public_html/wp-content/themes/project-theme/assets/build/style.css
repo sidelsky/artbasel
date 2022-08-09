@@ -7944,3 +7944,6 @@ p.file-link a:hover {
     width: 100%;
     height: 100%;
 }
+
+.postid-36643 .l-content__block.l-content__block--image-content.l-content__block--wide-image.video,
+.postid-36643 #videometa { display: none; }
