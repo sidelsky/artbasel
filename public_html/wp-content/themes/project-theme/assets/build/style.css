@@ -7947,3 +7947,7 @@ p.file-link a:hover {
 
 .postid-36643 .l-content__block.l-content__block--image-content.l-content__block--wide-image.video,
 .postid-36643 #videometa { display: none; }
+
+p.artfair-intro {
+  padding: 0 25rem;
+}

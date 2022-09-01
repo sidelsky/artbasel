@@ -132,7 +132,10 @@ if($hero) : ?>
 			<div class="parallax-window__content" data-id="title">
 				<h1 class="c-site-headings  c-site-headings--h1 c-site-headings--h1--hero c-text-align-centre "><?= $hero['title'] ?></h1>
 				<h2 class="c-site-headings c-site-headings--h1--sub c-site-headings--text-align-center"><?= $hero['subtitle'] ?></h2>
-					<?php if( get_field('view_all_works_link') ) : ?>
+
+				<p class="c-parallax-hero__h2 artfair-intro"><?= $hero['intro'] ?></p>
+
+				<?php if( get_field('view_all_works_link') ) : ?>
 					<span class="c-works__href-wrap c-works__href-wrap--center">
 						<a href="#top" class="c-works__href c-works__href--no-arrow"">View all works</a>
 					</span>
@@ -382,6 +385,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 			while ( have_rows('content_builder') ) : the_row();
 			$show_inquire_button = get_sub_field('show_inquire_button');
 			$show_magnifying_glass = get_sub_field('show_magnifying_glass');
+			$viewdetails = get_sub_field('view_details_link');
 
 					if( get_row_layout() == 'magnify_carousel' ):
 							$rows = get_sub_field('magnify_carousel_item');
@@ -453,6 +457,11 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 
 									}
 								echo '</div>';
+
+								if( $viewdetails ) {
+									echo '<a href="' . $view_details_link . '" ">View Details';
+										echo '</a>';
+								}
 
 								if( $show_inquire_button ) {
 									$message =  'I am interested in learning more about this piece. Please send me further details about this artwork, pricing, and availability.';
