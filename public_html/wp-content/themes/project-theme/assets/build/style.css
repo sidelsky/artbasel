@@ -7916,6 +7916,7 @@ a.details-link {
       border-radius: 3px;
       transition: all 0.15s ease-out;
       display: inline-block;
+      color: black;
 }
 
 p.file-link a:hover,
@@ -7924,6 +7925,9 @@ a.details-link:hover {
   color: white;
 }
 
+a.details-link {
+  margin: 15px 0 0;
+}
 
 /* youtube embed */
 
