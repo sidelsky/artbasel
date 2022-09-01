@@ -385,7 +385,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 			while ( have_rows('content_builder') ) : the_row();
 			$show_inquire_button = get_sub_field('show_inquire_button');
 			$show_magnifying_glass = get_sub_field('show_magnifying_glass');
-			$viewdetails = get_sub_field('view_details_link');
+			$view_details_link = get_sub_field('view_details_link');
 
 					if( get_row_layout() == 'magnify_carousel' ):
 							$rows = get_sub_field('magnify_carousel_item');
@@ -458,8 +458,8 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 									}
 								echo '</div>';
 
-								if( $viewdetails ) {
-									echo '<a href="' . $view_details_link . '" ">View Details';
+								if( $view_details_link ) {
+									echo '<a href="' . $view_details_link . '">View Details';
 										echo '</a>';
 								}
 

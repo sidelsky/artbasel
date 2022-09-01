@@ -20,8 +20,8 @@ class Magnify {
 		'magnify_carousel_item' => $magnify_carousel_item,
     'show_inquire_button' => $show_inquire_button,
     'show_magnifying_glass' => $show_magnifying_glass,
-
-
+    'view_details_link' => $viewdetails,
+    
     'magnify_carousel_item' => $magnify_carousel_item,
     'magnify_carousel_item' => $magnify_carousel_item,
     'magnify_carousel_item' => $magnify_carousel_item
