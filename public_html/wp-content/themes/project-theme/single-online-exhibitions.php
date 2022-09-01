@@ -459,7 +459,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 								echo '</div>';
 
 								if( $view_details_link ) {
-									echo '<a href="' . $view_details_link . '">View Details';
+									echo '<a href="' . $view_details_link . '" class="details-link">View Details';
 										echo '</a>';
 								}
 

@@ -7907,7 +7907,8 @@ scroll-behavior: smooth;
   display: block;
 } */
 
-p.file-link a {
+p.file-link a,
+a.details-link {
   text-align:center;
   margin: 30px 0 0;
   padding: 1rem 1.5rem;
@@ -7917,7 +7918,8 @@ p.file-link a {
       display: inline-block;
 }
 
-p.file-link a:hover {
+p.file-link a:hover,
+a.details-link:hover {
   background: black;
   color: white;
 }
