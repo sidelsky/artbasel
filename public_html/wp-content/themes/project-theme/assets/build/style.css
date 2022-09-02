@@ -4408,8 +4408,9 @@ h1 strong {
 }
 
 .l-content__block--wide-image.video:nth-child(1n) {
-  margin-right: auto;
-  margin-left: auto;
+    max-width: 100%;
+     width: 100%;
+     flex-basis: auto;
 }
 
 #videometa {
@@ -7952,8 +7953,24 @@ a.details-link {
 }
 
 .postid-36643 .l-content__block.l-content__block--image-content.l-content__block--wide-image.video,
-.postid-36643 #videometa { display: none; }
+.postid-36643 #videometa,
+.postid-41469 #videometa { display: none; }
 
 p.artfair-intro {
   padding: 0 25rem;
+}
+
+.c-hero-carousel.press {
+  flex-direction: column-reverse;
+}
+.c-hero-carousel.press p.file-link {
+  margin: -90px auto 10px auto;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+    z-index: 9999;
+}
+
+.online-exhibitions-template-default .l-content__block--wide-image.video:first-child{
+      display: none;
 }
