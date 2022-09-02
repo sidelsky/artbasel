@@ -4408,8 +4408,9 @@ h1 strong {
 }
 
 .l-content__block--wide-image.video:nth-child(1n) {
-  margin-right: auto;
-  margin-left: auto;
+    max-width: 100%;
+     width: 100%;
+     flex-basis: auto;
 }
 
 #videometa {
@@ -7907,7 +7908,8 @@ scroll-behavior: smooth;
   display: block;
 } */
 
-p.file-link a {
+p.file-link a,
+a.details-link {
   text-align:center;
   margin: 30px 0 0;
   padding: 1rem 1.5rem;
@@ -7915,13 +7917,18 @@ p.file-link a {
       border-radius: 3px;
       transition: all 0.15s ease-out;
       display: inline-block;
+      color: black;
 }
 
-p.file-link a:hover {
+p.file-link a:hover,
+a.details-link:hover {
   background: black;
   color: white;
 }
 
+a.details-link {
+  margin: 15px 0 0;
+}
 
 /* youtube embed */
 
@@ -7946,8 +7953,24 @@ p.file-link a:hover {
 }
 
 .postid-36643 .l-content__block.l-content__block--image-content.l-content__block--wide-image.video,
-.postid-36643 #videometa { display: none; }
+.postid-36643 #videometa,
+.postid-41469 #videometa { display: none; }
 
 p.artfair-intro {
   padding: 0 25rem;
+}
+
+.c-hero-carousel.press {
+  flex-direction: column-reverse;
+}
+.c-hero-carousel.press p.file-link {
+  margin: -90px auto 10px auto;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+    z-index: 9999;
+}
+
+.online-exhibitions-template-default .l-content__block--wide-image.video:first-child{
+      display: none;
 }

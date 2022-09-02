@@ -163,7 +163,15 @@ $miniCarouselText = get_field('mini_carousel_text');
 $hideMiniCarousel = get_field('hide_mini_carousel');
 $miniCarouselContent = get_field('mini_carousel_content');
 if($miniCarouselText) :?>
-	<section class="u-section c-hero-carousel">
+	<section class="u-section c-hero-carousel press">
+
+		<?php if( get_field('press-release-file') ) : ?>
+			<p class="file-link">
+			<a href="<?php the_field('press-release-file'); ?>" class="c-works__href" target="_blank">
+				    <?php the_field('press-release'); ?>
+				</a>
+			</p>
+		<?php endif; ?>
 
 	<?php if($hideMiniCarousel) : ?>
 		<div class="u-l-container u-l-horizontal-padding u-l-vertical-padding--carousel-text-only">
@@ -459,7 +467,7 @@ if( $fiftyFifty['fifty_fifty_image']['sizes']['large'] || $fiftyFifty['fifty_fif
 								echo '</div>';
 
 								if( $view_details_link ) {
-									echo '<a href="' . $view_details_link . '">View Details';
+									echo '<a href="' . $view_details_link . '" class="details-link">View Details';
 										echo '</a>';
 								}
 
